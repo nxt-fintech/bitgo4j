@@ -1,10 +1,28 @@
 # BitGo4j
-BitGo API Client Library for Java.  
+BitGo Wallets API Client Library for Java.  
 For more information on API definitions, please refer to [BitGo API document](https://api.bitgo.com/docs/).
 
 ## Introduction
 
-**To Be Added**
+### Build config
+
+Please refer to [BitGo4jConfig.java](nxt-fintech/bitgo4j/blob/main/src/main/java/bitgo4j/BitGo4jConfig.java).
+
+```java
+BitGo4jConfig config = BitGo4jConfig.builder().token(<BITGO_API_TOKEN>).build(); // For WireMock 
+BitGo4jConfig config = BitGo4jConfig.builder().token(<BITGO_API_TOKEN>).useTest().build(); // For BitGo Test API
+BitGo4jConfig config = BitGo4jConfig.builder().token(<BITGO_API_TOKEN>).useProd().build(); // For BitGo Prod API
+```
+
+### Initialize client
+
+Please refer to [BitGo4j.java](nxt-fintech/bitgo4j/blob/main/src/main/java/bitgo4j/BitGo4j.java).
+
+```java
+BitGo4j.api().initialize(config); // initialize
+client = BitGo4j.api().address();
+client = BitGo4j.api().auditLog();
+```
 
 ## Download
 
@@ -22,6 +40,7 @@ implementation 'com.nxt-fintech.bitgo4j:bitgo4j:(insert latest version)'
 `express` module is under maintenance.
 
 ## Test
+
 ### BitGo Express docker
 
 Please refer to [BitGo official document](https://github.com/BitGo/BitGoJS/blob/master/modules/express/README.md).
