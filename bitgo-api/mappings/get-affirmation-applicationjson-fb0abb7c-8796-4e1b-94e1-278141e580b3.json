@@ -1,0 +1,108 @@
+{
+  "id" : "fb0abb7c-8796-4e1b-94e1-278141e580b3",
+  "name" : "Get Affirmation (application/json)",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/8nhb/account/l7r6/affirmations/78u6",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"createdAt\" : \"2022-12-18T13:57:38.623291Z\",\n  \"payload\" : \"9b519gbwqarpu74tfywmf4qq1eeyp8nc2hk1tgs947nk8i1rv8p02jo0uiq3ok2dr3tnhv081yzo81285wfwvf3lqlj2dfbq3ahdpt39syyj4cw30s2hf4bq0sdzas6tij0ilrdrrdh3iwid52mvgfdvpnq25bvrlkdmx8zryl8v0okmvzfiwo4j4ywgshzrn\",\n  \"signature\" : \"29moat251d2d46pewccdu4qaztlp1b0i292wjvjsc71a7txgymsfel74qpfkaoe5n2z4gvkjpmnjrtms7momxd2d3hz1u1sv1f7fdvai6r0akgpt4lc7\",\n  \"counterpartyAccountId\" : \"e1143106-691b-4d15-90fc-cffea47a0805\",\n  \"counterpartyName\" : \"Giuseppe Bradtke\",\n  \"lock\" : {\n    \"accountId\" : \"73e2\",\n    \"createdAt\" : \"2022-06-01T09:16:39.623756Z\",\n    \"amount\" : \"fmpltgohpql370s12cc6mnw\",\n    \"currency\" : \"STD\",\n    \"id\" : \"e6ed060a-e9d6-41b2-8bd2-862bfc1b62c9\",\n    \"status\" : \"active\"\n  },\n  \"id\" : \"8ecd0365-fdfa-49b0-b894-c90e02d138b8\",\n  \"expireAt\" : \"2021-12-14T06:55:42.623922Z\",\n  \"partyAccountId\" : \"6efbd7ea-1126-44ae-8316-53bb85333872\",\n  \"status\" : \"rejected\",\n  \"settlement\" : \"f9ec8e6f-9ab0-496d-bcdb-495b5b2324b5\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "fb0abb7c-8796-4e1b-94e1-278141e580b3",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.625063Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.settlement.getAffirmation",
+        "schema" : {
+          "title" : "Affirmation",
+          "description" : "A record of agreement or rejection to a trade by a counterparty.",
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "string",
+              "description" : "Affirmation ID",
+              "format" : "uuid"
+            },
+            "counterpartyAccountId" : {
+              "type" : "string",
+              "description" : "The account ID of the counterparty",
+              "format" : "uuid"
+            },
+            "counterpartyName" : {
+              "type" : "string",
+              "description" : "The name of the counterparty's trading account"
+            },
+            "partyAccountId" : {
+              "type" : "string",
+              "description" : "Trading account that the Affirmation belongs to",
+              "format" : "uuid"
+            },
+            "status" : {
+              "$ref" : "#/components/schemas/AffirmationStatus"
+            },
+            "settlement" : {
+              "type" : "string",
+              "format" : "uuid",
+              "description" : "Settlement ID associated with this Affirmation"
+            },
+            "lock" : {
+              "$ref" : "#/components/schemas/Lock"
+            },
+            "payload" : {
+              "type" : "string",
+              "description" : "Stringified JSON of trade payload. If the Affirmation signature is not found, then `payload` is automatically calculated and populated here"
+            },
+            "signature" : {
+              "type" : "string",
+              "description" : "The `payload` cryptographically signed by trading account. Used to authorize the movement of funds"
+            },
+            "createdAt" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "ISO date string"
+            },
+            "expireAt" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "ISO date string"
+            }
+          },
+          "example" : {
+            "id" : "ff88a76c-af71-4f70-b136-ecb3e9b8dcbc",
+            "counterpartyAccountId" : "5e20faa843795147000da79b8a01f757",
+            "counterpartyName" : "Trader Account",
+            "partyAccountId" : "59cd72485007a239fb00282ed480da1f",
+            "status" : "pending",
+            "settlement" : "5be99b8a-6eb5-4ed6-b135-894bb22c5454",
+            "lock" : {
+              "id" : "b44616d8-142d-41d7-8037-b6b08f65919f",
+              "accountId" : "5ca309aa4b389efa274c7fbc8cfc1c72",
+              "status" : "active",
+              "amount" : "1000000",
+              "currency" : "ofctusd",
+              "createdAt" : "2019-05-02T00:37:48.696Z"
+            },
+            "payload" : "{\"version\":\"1.2.0\",\"accountId\":\"59cd72485007a239fb00282ed480da1f\",\"amounts\":[{\"accountId\":\"5e20faa843795147000da79b8a01f757\",\"sendSubtotal\":\"1000000\",\"sendAmount\":\"1000000\",\"sendCurrency\":\"ofctusd\",\"receiveAmount\":\"1000000\",\"receiveCurrency\":\"ofctbtc\"},{\"accountId\":\"59cd72485007a239fb00282ed480da1f\",\"sendSubtotal\":\"1000000\",\"sendAmount\":\"1000000\",\"sendCurrency\":\"ofctbtc\",\"receiveAmount\":\"1000000\",\"receiveCurrency\":\"ofctusd\"}],\"nonceHold\":\"zq/aCtZC4XOlDyRGFdlsww==\",\"nonceSettle\":\"FnG6xbzehNn0o/0Qt3UeUg==\"}",
+            "createdAt" : "2019-05-02T00:37:48.804Z",
+            "expireAt" : "2019-05-03T00:37:49.196Z"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 118
+}

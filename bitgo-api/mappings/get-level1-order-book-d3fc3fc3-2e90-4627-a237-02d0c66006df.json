@@ -1,0 +1,67 @@
+{
+  "id" : "d3fc3fc3-2e90-4627-a237-02d0c66006df",
+  "name" : "Get Level1 Order Book",
+  "request" : {
+    "urlPath" : "/api/prime/trading/v1/accounts/v3sg/products/8ufzosrqxsh0jx0rspuj3vicjlm0af919d6y9w9kkxop23jpfr5mi9imdy57w1bvcbn9oop0yjaf0y1br48qi8n9obuhnteyhh1kt77zw86aiea4rtewqdn8xtumkxmqtpwuxrrz08k2fme5vtvg3gzbyj3hvwir63gsw342n20uocccrh46g97flqo7jh4/level1",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"askPrice\" : \"j3c6xehn8yvv5ksiafd2eg9tyieg29vwh2pprz3cpvqnao59w2q4d\",\n  \"product\" : \"bll3eb1c9km8gdqtkw3vihe2r8yhdfemoy22224xgkvrbhhqwfnk1zha87jjdgryj0lbc9oc82ixhcav55apn5quzp9ydh7oab2pver6re\",\n  \"bidSize\" : \"92rw0wyzn07sm20ru60glcflo20buha2yum6exq869bm44c0icqo3359rcowtfpc60h48nbvbosg5jq0srmq7lt5eib5gh7ccgjnoavmdze8fny0m182flb28h\",\n  \"time\" : \"2021-12-21T19:20:04.565531Z\",\n  \"bidPrice\" : \"393lcr8jhfx4p4e8ksskmo84focsnzrd5hwcm6j093ipbttprz5euq6r6v7k6sn1c422ewaxlohlw0bkiv19zeeb566drol\",\n  \"askSize\" : \"aazcz3v8hvrj3vh31h9gap895knr5b1gvsmh74j9ntnyt7d5ovlaey5a98gq716ttqv53vev2o21oh8yq90pk3b6ouujlwk6r225g6f\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d3fc3fc3-2e90-4627-a237-02d0c66006df",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.566002Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "trade.products.product.level1",
+        "schema" : {
+          "required" : [ "askPrice", "askSize", "bidPrice", "bidSize", "product", "time" ],
+          "type" : "object",
+          "properties" : {
+            "time" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "product" : {
+              "type" : "string",
+              "description" : "Product name e.g. BTC"
+            },
+            "bidPrice" : {
+              "type" : "string",
+              "format" : "decimal"
+            },
+            "bidSize" : {
+              "type" : "string",
+              "format" : "decimal"
+            },
+            "askPrice" : {
+              "type" : "string",
+              "format" : "decimal"
+            },
+            "askSize" : {
+              "type" : "string",
+              "format" : "decimal"
+            }
+          },
+          "example" : {
+            "time" : "2020-01-14T00:00:00.123Z",
+            "product" : "BTC-USD",
+            "bidPrice" : "7090.96",
+            "bidSize" : "1.253433",
+            "askPrice" : "7090.97",
+            "askSize" : "25.23881"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 137
+}

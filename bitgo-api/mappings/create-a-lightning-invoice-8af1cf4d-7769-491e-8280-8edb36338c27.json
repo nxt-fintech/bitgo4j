@@ -1,0 +1,36 @@
+{
+  "id" : "8af1cf4d-7769-491e-8280-8edb36338c27",
+  "name" : "Create a lightning invoice",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/aaf5d37c8bb9cb20047a734e931fa43e/lightning/invoice",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "8af1cf4d-7769-491e-8280-8edb36338c27",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.507465Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.lightning.invoice",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 167
+}

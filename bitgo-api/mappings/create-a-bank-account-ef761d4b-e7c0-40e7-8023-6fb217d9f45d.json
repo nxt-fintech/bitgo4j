@@ -1,0 +1,36 @@
+{
+  "id" : "ef761d4b-e7c0-40e7-8023-6fb217d9f45d",
+  "name" : "Create a bank account",
+  "request" : {
+    "urlPath" : "/api/v2/bankaccounts",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ef761d4b-e7c0-40e7-8023-6fb217d9f45d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.433283Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.bankaccount.create",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidEnterpriseId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 226
+}

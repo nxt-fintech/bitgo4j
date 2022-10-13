@@ -1,0 +1,51 @@
+{
+  "id" : "09799724-6728-4054-88a1-b7b8f35dfe0d",
+  "name" : "List wallets by coin (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/xuvllsd56md8hg1pl6e0nju/wallet",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"wxu7\",\n  \"context\" : { },\n  \"name\" : \"Garrett Mayert DVM\",\n  \"error\" : \"tysdoz8crrk5t5nzoo1sxcwor9r6q9zqls632y0qn6u3ir7pi5eqo5t0xtc7ub5bt8nq3u3kosv7kq8bxe3icxvp8yynjkkqkfyd4vlpk60trckghjdpyk6bexxrvemou04xsttq\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "09799724-6728-4054-88a1-b7b8f35dfe0d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.300635Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.listbycoin",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 353
+}

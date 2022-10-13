@@ -1,0 +1,61 @@
+{
+  "id" : "842c54b8-5570-474b-97cd-5f94c863b28e",
+  "name" : "Account Balance Check",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/11tx/account/s9d8/tradingpartners/6035/balance",
+    "method" : "GET",
+    "queryParameters" : {
+      "amount" : {
+        "equalTo" : "wc6sxl60dvwi69xo4p7jeqfdl5thp6att1uyu3udsegvlmzny0qfzlpcfa7wimj"
+      },
+      "currency" : {
+        "equalTo" : "LAK"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"errorName\" : \"Melodi Purdy\",\n  \"error\" : \"lx8k7wrsfa3sdxr12qzr5s20382mzgzx3ywa2ev0v4ssrn68fb2ady1khvgv3bmg8\",\n  \"reqId\" : \"h6cq\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "842c54b8-5570-474b-97cd-5f94c863b28e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.700726Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.tradingPartner.accountBalanceCheck",
+        "schema" : {
+          "type" : "object",
+          "description" : "An API error returned by the service.",
+          "properties" : {
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "errorName" : {
+              "type" : "string",
+              "description" : "Immutable error code for API integration"
+            },
+            "reqId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "error", "errorName", "reqId" ],
+          "example" : {
+            "error" : "Missing required parameter: accountId",
+            "errorName" : "MissingRequiredParameter",
+            "reqId" : "3fa3fb673ce950a95fd2d395e245efbe"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 8
+}

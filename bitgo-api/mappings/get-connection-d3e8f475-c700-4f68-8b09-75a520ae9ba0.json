@@ -1,0 +1,64 @@
+{
+  "id" : "d3e8f475-c700-4f68-8b09-75a520ae9ba0",
+  "name" : "Get Connection",
+  "request" : {
+    "urlPath" : "/api/portfolio/v1/portfolios/785l/connections/6040",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"last_sync\" : \"2023-10-04T11:30:22.521056Z\",\n  \"name\" : \"Mrs. Arlena Carroll\",\n  \"sync_status\" : \"scheduled\",\n  \"id\" : \"b1bff847-d519-473d-b9ae-24153688c5e4\",\n  \"institution_name\" : \"Noella Veum\",\n  \"institution_id\" : \"f51c3459-33f5-45fd-a36e-3e394e211be8\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d3e8f475-c700-4f68-8b09-75a520ae9ba0",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.522299Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "portfolio.connection",
+        "schema" : {
+          "required" : [ "id", "name", "institution_id", "institution_name" ],
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "string",
+              "format" : "uuid"
+            },
+            "name" : {
+              "type" : "string"
+            },
+            "institution_id" : {
+              "type" : "string",
+              "format" : "uuid"
+            },
+            "institution_name" : {
+              "type" : "string"
+            },
+            "last_sync" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "sync_status" : {
+              "$ref" : "#/components/schemas/SyncStatus"
+            }
+          },
+          "example" : {
+            "id" : "35de9881-731b-475b-ab48-c39e3edd9985",
+            "name" : "CoinbasePro",
+            "institution_id" : "0911b966-3f6a-4320-8d64-a1d310a9d80e",
+            "institution_name" : "Coinbase Pro",
+            "last_sync" : "2018-03-28T16:58:30Z",
+            "sync_status" : "idle"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 158
+}

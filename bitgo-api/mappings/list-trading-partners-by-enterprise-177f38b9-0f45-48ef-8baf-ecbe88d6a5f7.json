@@ -1,0 +1,53 @@
+{
+  "id" : "177f38b9-0f45-48ef-8baf-ecbe88d6a5f7",
+  "name" : "List Trading Partners By Enterprise",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/g5ux/tradingpartners",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"errorName\" : \"Dr. Dee Jakubowski\",\n  \"error\" : \"q0v5upnoq4xd6lsmpcjg2dz4rzf43dc11\",\n  \"reqId\" : \"hm0y\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "177f38b9-0f45-48ef-8baf-ecbe88d6a5f7",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.695545Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.tradingPartner.listTradingPartnersByEnterprise",
+        "schema" : {
+          "type" : "object",
+          "description" : "An API error returned by the service.",
+          "properties" : {
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "errorName" : {
+              "type" : "string",
+              "description" : "Immutable error code for API integration"
+            },
+            "reqId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "error", "errorName", "reqId" ],
+          "example" : {
+            "error" : "Missing required parameter: accountId",
+            "errorName" : "MissingRequiredParameter",
+            "reqId" : "3fa3fb673ce950a95fd2d395e245efbe"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 12
+}

@@ -1,0 +1,46 @@
+{
+  "id" : "f4698f0a-52a5-4351-84cb-4cba298724ee",
+  "name" : "Create transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/2b77171d275bf88f5aa32d6f1bb992ef/txrequests",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"requestId\" : \"l11n\",\n  \"context\" : { },\n  \"name\" : \"Tuan Keeling\",\n  \"error\" : \"64z8jnp3wqbsmg7b9o36d8uavk2nxy11vk2uzxglk19tvvlmnx9hov4nvp2xor8n37oa1xup5svwkii0fmdfamrrpjsiz91ecsqgddqfibntk5nlg07993mo6btt463azksckcwknd7yns7irvmfw\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f4698f0a-52a5-4351-84cb-4cba298724ee",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.404591Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.create",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 265
+}

@@ -1,0 +1,37 @@
+{
+  "id" : "c9f41b1d-92a0-4a40-943a-fadd5fc4a8fa",
+  "name" : "Create transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/bb39a11fdd0fb349e8b00ab0d4616d26/txrequests",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "c9f41b1d-92a0-4a40-943a-fadd5fc4a8fa",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.403167Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.create",
+        "schema" : {
+          "anyOf" : [ {
+            "$ref" : "#/components/schemas/TransactionRequestLite"
+          }, {
+            "$ref" : "#/components/schemas/TransactionRequestFull"
+          } ],
+          "required" : [ "txRequestId", "version", "latest", "walletId", "state", "date", "userId", "intent" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 268
+}

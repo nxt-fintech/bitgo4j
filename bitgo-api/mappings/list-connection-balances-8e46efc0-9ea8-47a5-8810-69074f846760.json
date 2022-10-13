@@ -1,0 +1,35 @@
+{
+  "id" : "8e46efc0-9ea8-47a5-8810-69074f846760",
+  "name" : "List Connection Balances",
+  "request" : {
+    "urlPath" : "/api/portfolio/v1/portfolios/r69e/connections/khfs/balances",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"marketPrice\" : \"adly4iby91d2gzvqts30du8cnr6kysg00pf4blhx2guuncpjkje5op529hiccpi5lwr1oip3dvivdssl5\",\n  \"quantity\" : \"ibw2j6u3kk4p0xruk518wi1mjafukvhnt8n3ip8p6c2ud8s9p305o7nj4lcauq1o54aufp1za34ed49mi93zg7l7\",\n  \"instrument_symbol\" : \"y9sfute4ujdqh9r3qgnfwnw0ou09lj4ljxacwrzdgkuwjof1981r1c1enu365u2sthcw1kop4hpyhlcnyd9n4bfdx5q6r5v1fgf\",\n  \"marketValue\" : \"zc5vb37yg1e3m13ffg5z682udexgm9e4ak90yapt4ue7yxqeu0h6nrfh7snja6r96u\",\n  \"instrument_id\" : \"ae55ad6c-4cff-40a1-a0ed-72fd78339496\"\n}, {\n  \"marketPrice\" : \"lu606kcfihxylykuxqfr9hye3c8ou0d93emfk3yuow2he3vwcp9nzrga9kvugtsvqumwjhgxecf01azkkqge41bth4kphrid9taafw10uo191g80v8kwr3fu1lfpp2ntkvs2n5ycvsnwv1iufwy3516d4uhpp\",\n  \"quantity\" : \"fdschwq8a073lcjt7m\",\n  \"instrument_symbol\" : \"n3ddt9lq04uhhm7hjn59fjjyoxleer1pttlzmqlexmulnhpaota9alln0a6jpepa1zxezmqhlyiox9t0dth0lb599uyz2b4mvyceaozr5sfoexdyewueh7b9smp8t73gcqfi47j\",\n  \"marketValue\" : \"jit8qln79a3e29wbhrfszfhypuost58qsiubfhf9feuo\",\n  \"instrument_id\" : \"0e52154e-d2be-41d7-bde0-22d3e974d80e\"\n}, {\n  \"marketPrice\" : \"68h4ivtfy8u3ox00kho7aqi7snf3m4pcszc55\",\n  \"quantity\" : \"n2xii1sxi86c8lm2noltwahuh5wd44zyrmur7fuymuyjjnpsccshe8husgt81mkfag0zplyj2n0bbpcyltqi6bn0146tmpbw342jc96fdvo3dbopbmuh4qeszyuxretrzv5isgl8b7h4a8w\",\n  \"instrument_symbol\" : \"lxhamnp1k2jtofg7bk7t8cay7jwjurxovobq0fosbyd80o22e0d4m39pn\",\n  \"marketValue\" : \"y0vpxjebxn6flzwu342ea4xx83mrd1xwuf9t4pjii43tyupb0j7rwm1hydx4l7i5x65kmwn41yevu7ugkfwem5ea73qs9x13k4s7p2ade0am40rwgs23sr\",\n  \"instrument_id\" : \"bd146b41-85c8-40f1-aca5-9204b21f6c71\"\n}, {\n  \"marketPrice\" : \"v70jezphpecga47ffdv5dg13qthm5j53tf24hemjvvaxjg6n37c5x6y91ktcd7jwnzopztwur1spve0bpv2du7anjr77swpff0vhs5no0lins6su6qd1cf21g4aewg3b2\",\n  \"quantity\" : \"3pjnk8ucu8xb7t0k5qyo9tn9rdfrfdi8j9flt9qlw0h4mmqwf584uedl2i5d9n9ghe5ffirp2yq90xbhnv0p7hz7gi\",\n  \"instrument_symbol\" : \"u3pn6yzht4iiftc8g0rm15ybh7s5zjgn5prn6ex92vyo\",\n  \"marketValue\" : \"czrehpiynvv6tomp26ybcx5havi26hntfg4obamqzwm48btdgqu4azx1doblzqgazlp5cms6xol3rmnwi3ff0adzbqiqyd3uoo4zh90r5lsj7qz3ftmk46d0m9zaj266m9bwt7t93p0l36t96w6np\",\n  \"instrument_id\" : \"97b98ccd-a3fc-45b1-960c-068d4f3ff41a\"\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "8e46efc0-9ea8-47a5-8810-69074f846760",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.530381Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "portfolio.connection.balances",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/components/schemas/InstrumentBalance"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 154
+}

@@ -1,0 +1,53 @@
+{
+  "id" : "d4e94297-4ecb-41a1-b1a4-a876c9f93a6c",
+  "name" : "Add Trading Partner",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/9yxk/account/7kpp/tradingpartners",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"errorName\" : \"Nakita Will I\",\n  \"error\" : \"gc5t2hmo4q63p0lo99lwr25x0oz2kesbjgntftz2i076wutll1cxsw8ooaqj12kdm927t7cjnjeskxzmv39tc6kj3s54mqn5rqvb4yl\",\n  \"reqId\" : \"3w3j\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d4e94297-4ecb-41a1-b1a4-a876c9f93a6c",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.689019Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.tradingPartner.add",
+        "schema" : {
+          "type" : "object",
+          "description" : "An API error returned by the service.",
+          "properties" : {
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "errorName" : {
+              "type" : "string",
+              "description" : "Immutable error code for API integration"
+            },
+            "reqId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "error", "errorName", "reqId" ],
+          "example" : {
+            "error" : "Missing required parameter: accountId",
+            "errorName" : "MissingRequiredParameter",
+            "reqId" : "3fa3fb673ce950a95fd2d395e245efbe"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 14
+}

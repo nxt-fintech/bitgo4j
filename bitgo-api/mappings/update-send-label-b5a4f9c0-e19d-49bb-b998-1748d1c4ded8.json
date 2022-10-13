@@ -1,0 +1,51 @@
+{
+  "id" : "b5a4f9c0-e19d-49bb-b998-1748d1c4ded8",
+  "name" : "Update send label",
+  "request" : {
+    "urlPath" : "/api/v2/sendlabels/0ca54c97103ed2a92f7c9553e0eb3f50",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"address\" : \"i533klu80v55vpeaxmo9qfkehx9sz7q9zmo0ela26akco66r3w6idga5czl698129hmm232orkw58ql13zt2nczanz40t51q10dtsupy6z3lwdq847\",\n  \"id\" : \"fdbb9ca402f8b635cd4741084bc397b2\",\n  \"enterpriseId\" : \"ca67bf6133773adc93d390f4256b33d7\",\n  \"label\" : \"harum\",\n  \"coin\" : \"7lto9ujwewqpye64km0fpqoqwkamd49azdg1kk0uf1nzurc1tifxnlkw0uw96jhf2ik5m1svwpdoswymv3srydhhf2m8vjtt8vb7dl2yt\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "b5a4f9c0-e19d-49bb-b998-1748d1c4ded8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.399575Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.sendlabels.update",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "coin" : {
+              "$ref" : "#/components/schemas/Coin"
+            },
+            "address" : {
+              "$ref" : "#/components/schemas/AddressString"
+            },
+            "enterpriseId" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "label" : {
+              "type" : "string",
+              "maxLength" : 250
+            }
+          },
+          "required" : [ "id", "coin", "address", "enterpriseId", "label" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 274
+}

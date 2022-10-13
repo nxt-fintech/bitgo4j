@@ -1,0 +1,44 @@
+{
+  "id" : "82e42d95-e867-462a-9e1d-a71d2e51a616",
+  "name" : "Get transaction requests by enterprise",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/edd670a1a690e6be1b33e836a0f1c59c/txrequests",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"nextBatchPrevId\" : \"759m\",\n  \"txRequests\" : [ { }, { }, { } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "82e42d95-e867-462a-9e1d-a71d2e51a616",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.402089Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.enterprise.txrequest.get",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "txRequests" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/TransactionRequest"
+              }
+            },
+            "nextBatchPrevId" : {
+              "type" : "string"
+            }
+          },
+          "required" : [ "txRequests" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 270
+}

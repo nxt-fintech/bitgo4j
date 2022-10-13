@@ -1,0 +1,43 @@
+{
+  "id" : "6a153a02-c9eb-4ba9-b7b5-102badfb77d6",
+  "name" : "Get unspents",
+  "request" : {
+    "urlPath" : "/api/v2/qxj6y41dudj1h9dc0mma56hhqt6olcvujg2l4kyfa54u8okssxa347fw5rehtbb52wn4y7jhy2f437vs7rn6d1ck5swqbfe7g5gom6fh49xp9azd4nl814eyrh8z26dkra518bsdqtgvvx46o2p1rtiuu2v8ojiy14trmsglvfsgt/wallet/4fb0acd76de4951cc7b049fb90f862d3/unspents",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"unspents\" : [ {\n    \"date\" : \"2022-01-14T00:36:31.347768Z\",\n    \"chain\" : 1956749966256277327,\n    \"address\" : \"ruc8ot2x3doikqsjq7y7jktyuwjk6665uzgaru\",\n    \"wallet\" : \"9b0814f69c9305b7542f81501d23702e\",\n    \"fromWallet\" : \"de6c67c48e716ed77f8628f2927961c5\",\n    \"index\" : 7520367053027698849,\n    \"redeemScript\" : \"azghwehztu98emxzptluqnimxfm4vgos0e3n2gpp1x5swcxnhcez65ex3pguwgcvmfy8e39tma9lp3ujws46e5fwcw8n5v7ghapqnqu4prj3gzorpk4nxk83a38j6amfhbvkd6m56rdegtcusjiyjaici8qmjkjc1e6yfabxk1genwtpamasnhf1rhvw4t0q6zgs\",\n    \"coinbase\" : true,\n    \"valueString\" : \"717396594881799750061191552708764900027098751712187518004337910136552129456765015651653077\",\n    \"blockHeight\" : 6543382933746588007,\n    \"witnessScript\" : \"ll26ocq3nk4luaj66h69a5aqrgnbeuy7dr2z59tegovf7yza6r587y3gxgsar237d1ak3va0x\",\n    \"id\" : \"mxtu\",\n    \"value\" : 4996861291367483411,\n    \"isSegwit\" : true\n  }, {\n    \"date\" : \"2023-06-12T14:36:33.348325Z\",\n    \"chain\" : 6451294428949624562,\n    \"address\" : \"twcjteh92v3eyvycu0yi7rkhptjn984wwlft4zm94ljz4mf55eeufyq7u9bkg5gbu59e4lul2g9okb7fm6b5fg8ex0i7r2tpn\",\n    \"wallet\" : \"c6f0e50b69c0974b7ab671e1c8c89622\",\n    \"fromWallet\" : \"13aab8b49f969cb1acfa801e118d851b\",\n    \"index\" : 8218816173027937340,\n    \"redeemScript\" : \"jl7frenwp9abthdegj6kfteld1adhvt3xh1ib6xviapuhvq4onomgqc7yny8sol4c6vkuvllpiwlphtdsaf0ewve8654ayyrlv5wtuc2m\",\n    \"coinbase\" : false,\n    \"valueString\" : \"76009231407369245439274461\",\n    \"blockHeight\" : 1378670946198046823,\n    \"witnessScript\" : \"k1o9o5c6y5w0ewlvufcxwgm5vf9ojon2vdw3tf081wmgeo4fei0ehfk2apys65i2y7ezrbpx16jcdgtc5kkcqah18nt13oat9qu3ly6q2qks0a4exydiw54e9roxt4lnzcs2wfsj82owblc83caaq9m4hrl3sxbuizg426rnugv1gy6z7umrxwyv35r250edskb\",\n    \"id\" : \"ov18\",\n    \"value\" : 1666209827604706922,\n    \"isSegwit\" : false\n  } ],\n  \"coin\" : \"e22zpi0p2fpjcf0bo3hunma9pjs4q9m7f8fuewkh485hn5xn0mhqram7i4fapu9zfdqli5hadqhf632w0yojo9i4c5bc95lvl6\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "6a153a02-c9eb-4ba9-b7b5-102badfb77d6",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.349065Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.unspents",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "coin" : {
+              "$ref" : "#/components/schemas/Coin"
+            },
+            "unspents" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/Unspent"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 329
+}

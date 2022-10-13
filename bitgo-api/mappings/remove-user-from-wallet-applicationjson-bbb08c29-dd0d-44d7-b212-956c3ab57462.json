@@ -1,0 +1,45 @@
+{
+  "id" : "bbb08c29-dd0d-44d7-b212-956c3ab57462",
+  "name" : "Remove user from wallet (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/vqh58xfqmhqrp3t4pehkuyijjhxqs4r47zcxne6bgvo06l5ucsf6x4gdbpsqo8n0in2bequ2ythgc0zdwvl16wsv82c8jarq3di8quvczomctn6cbfj4u1ju1q2zhjfmynon3lxduye373w6r8fsovlq8c930njggod0gsg5xsu2qrnsry/wallet/7d6dacc155c2779a6b25709a60a21345/user/787c94fe1a527b5a3dbb53dba6c00148",
+    "method" : "DELETE",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "bbb08c29-dd0d-44d7-b212-956c3ab57462",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.344964Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.removeuser",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/CannotRemoveAdmin"
+          }, {
+            "$ref" : "#/components/schemas/InvalidUserId"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 335
+}

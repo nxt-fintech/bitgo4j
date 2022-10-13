@@ -1,0 +1,43 @@
+{
+  "id" : "6336f5b3-3158-42cb-a406-abee21e45f68",
+  "name" : "Retrieve Staking Wallet Delegations",
+  "request" : {
+    "urlPath" : "/api/staking/v1/nad6w0/wallets/xv0b/delegations",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 409,
+    "body" : "{\n  \"code\" : \"Conflict\",\n  \"message\" : \"Conflicting clientID\",\n  \"status\" : 409\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "6336f5b3-3158-42cb-a406-abee21e45f68",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.659631Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Wallet Delegations",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 53
+}

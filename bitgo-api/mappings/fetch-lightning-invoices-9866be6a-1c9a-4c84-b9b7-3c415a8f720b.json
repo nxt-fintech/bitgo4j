@@ -1,0 +1,80 @@
+{
+  "id" : "9866be6a-1c9a-4c84-b9b7-3c415a8f720b",
+  "name" : "Fetch lightning invoices",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/921005cef41cf20bc621a7c456e15277/lightning/invoices",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"invoices\" : [ {\n    \"createdAt\" : \"ame5zhnhob6t9uqqeytxg1xes9dv3u\",\n    \"walletId\" : \"3c3e1cacd6a52844d51eb8e40ea7a574\",\n    \"paymentHash\" : \"ekl1t0uey2mcjl2bica4s1sjid216fccj7g6evi3fpkro8u35lnhcz6f3ilph5kv9j4hzkaaqef0qbbav6ceehty5tflu5na9elcvoervfawg99c\",\n    \"value\" : 3.6951127595995595E306,\n    \"expiresAt\" : \"84reu4zhy389i55\",\n    \"updatedAt\" : \"2022-05-16T07:39:41.504683Z\",\n    \"status\" : \"open\",\n    \"amtPaidSats\" : 7.160873613191335E307\n  }, {\n    \"createdAt\" : \"2fubrq7al0w4y5mguob2axccyxia3uww4ayw1vrtxdxyt3p4u72sguk1lhez14xtc8wszuopgq9rghgfnltr6o8hi1j65ffxr68uvso1j1wwj72qox\",\n    \"walletId\" : \"cb19677aa7cf27180d1fde22ba6def2b\",\n    \"paymentHash\" : \"h3gtxz3nkd9rqwgeciw1hu3cddm39ixc98w02z24v644vozua2asm97fktxhstlje4dkntxi0nh7yzktf2c6ogiasfdjm2zjwho6kagzz2skk6tej25ss7q58\",\n    \"value\" : 1.041366880098289E308,\n    \"expiresAt\" : \"574w1g5g8iuul8obgf1q2l4nt6kqz3onc8t3nmx0wmjhsdppqllrmt1gpiitktmcid2ydl3fdbf5r6ga92s2oe0qgdr48qc38u1ejoq1b18np2yo\",\n    \"updatedAt\" : \"2022-10-04T04:59:41.504984Z\",\n    \"status\" : \"open\",\n    \"amtPaidSats\" : 9.47998854061974E307\n  }, {\n    \"createdAt\" : \"9gt93z41azpiufgbevsyvgg0xelds6x15pqr8ufoasbgn13mynm19v5vgoah36mecdrrc6f4lg3kdb0uij7v14tx6rmbtcfibiwlkhww1\",\n    \"walletId\" : \"ceedaee322dfdd04978cafd50f7d161f\",\n    \"paymentHash\" : \"4hlrok5vbpgvcej9bax5n0ntp1wgzg45o3er1ob3x97ies6ynmk4ns6gze9w9chehq7mkgc5hniwkoyofykrzeqdb8wuzwlz0o37yltropuih9m9evxnrnox3ehlfo7khl22ynhimi1r5krndkjzvm44bqjhlv8h0vcwwl1\",\n    \"value\" : 1.3896579945170108E308,\n    \"expiresAt\" : \"g4412jigv8jvnukv0dkketm444rj3lge3m1z8pam2ze48uzhbx1o22q60n37m2oznsvdadrz6v8l2p4von5ecjl6uu77ckki6nmwh4u2fl0o94k8vzgyk9sfbbgilp\",\n    \"updatedAt\" : \"2022-06-27T04:00:41.505241Z\",\n    \"status\" : \"canceled\",\n    \"amtPaidSats\" : 4.389981890837259E305\n  }, {\n    \"createdAt\" : \"0kpa4urll0dg32hsgcsiqhd4vjfe4h9ocmqkxtcylq6fm1tj0p3bp43g7h1m6r7g1e3p358kn7zdlydlsu24oqeuhmqnihb0phiccd7rtv0r3x6osvbmzarvnb0yneuweplpbqm3p3to410\",\n    \"walletId\" : \"76b5078ec5a13095ecbe651d4c1c31a6\",\n    \"paymentHash\" : \"ffp1x\",\n    \"value\" : 5.881413768475783E307,\n    \"expiresAt\" : \"oevflh8amphhm2aasixfic9p88khcq9x2poqugpnmxnl9mhjn2khmc0qqq97vla3bl5kfh74iuz6dim3frpy5ge0jwewhas3kyow9uj84te0zl2kij9drx0yign5j0jhhyfjr1kea468ubgwu1xeqzemck85wo2p1e4j9q28td4ha6cck1bxg1iap6d0oeh\",\n    \"updatedAt\" : \"2021-11-10T06:45:41.505492Z\",\n    \"status\" : \"settled\",\n    \"amtPaidSats\" : 3.867103745746121E307\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "9866be6a-1c9a-4c84-b9b7-3c415a8f720b",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.506208Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.lightning.getInvoices",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "invoices" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "paymentHash" : {
+                    "description" : "The payment hash of the invoice",
+                    "type" : "string",
+                    "example" : "63d9ce82e09d16761a85116ed8b65407db4fb22f85d03573de09c480f2c6d175"
+                  },
+                  "value" : {
+                    "description" : "The value of the invoice in satoshis",
+                    "type" : "number",
+                    "example" : 50000
+                  },
+                  "expiresAt" : {
+                    "description" : "ISO-8601 string representing when the invoice will expire",
+                    "type" : "string",
+                    "example" : "2022-04-01T18:46:24.677Z"
+                  },
+                  "createdAt" : {
+                    "description" : "ISO-8601 string representing when the invoice was created",
+                    "type" : "string",
+                    "example" : "2022-04-01T17:46:24.677Z"
+                  },
+                  "updatedAt" : {
+                    "description" : "ISO-8601 string representing when the invoice was updated last",
+                    "type" : "string",
+                    "example" : "2022-04-01T18:16:24.677Z"
+                  },
+                  "status" : {
+                    "description" : "The status of the invoice",
+                    "type" : "string",
+                    "enum" : [ "open", "settled", "canceled" ]
+                  },
+                  "walletId" : {
+                    "$ref" : "#/components/schemas/Id"
+                  },
+                  "amtPaidSats" : {
+                    "description" : "The actual amount paid to the invoice in satoshis",
+                    "type" : "number",
+                    "example" : 50000
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 170
+}

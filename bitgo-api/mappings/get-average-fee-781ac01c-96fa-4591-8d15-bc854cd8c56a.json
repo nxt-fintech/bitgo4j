@@ -1,0 +1,46 @@
+{
+  "id" : "781ac01c-96fa-4591-8d15-bc854cd8c56a",
+  "name" : "Get average fee",
+  "request" : {
+    "urlPath" : "/api/v2/nziudi4vkxr9vwcdv91jh5lw8272iluvfj68549h2g1qvlxckfr5ubymb7us26mjnoc3cy71xc2/wallet/averagefee",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"194x\",\n  \"context\" : { },\n  \"name\" : \"Wilfred Reilly\",\n  \"error\" : \"8x3qm4ewb8o1r03soaz0ev6xdvpowm5rgizemxcv6kdj52rtm6mjx4ops\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "781ac01c-96fa-4591-8d15-bc854cd8c56a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.175739Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.getaveragefee",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 399
+}

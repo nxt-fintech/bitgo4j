@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:33" hostname="ishtos-MacBook-Pro.local" time="0.004">
+  <properties/>
+  <testcase name="testSetSignatureShares()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.001"/>
+  <testcase name="testSetVersion()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.0"/>
+  <testcase name="testSetPendingApprovalId()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.0"/>
+  <testcase name="testSetTxHashes()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.0"/>
+  <testcase name="testSetTxRequestId()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.0"/>
+  <testcase name="testToString()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.0"/>
+  <testcase name="testSetEnterpriseId()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.0"/>
+  <testcase name="testSetIntents()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.0"/>
+  <testcase name="testSetWalletType()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.0"/>
+  <testcase name="testSetIntent()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.0"/>
+  <testcase name="testSetLatest()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.0"/>
+  <testcase name="testSetUserId()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.0"/>
+  <testcase name="testSetDate()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.001"/>
+  <testcase name="testSetWalletId()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.0"/>
+  <testcase name="testSetTxs()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.0"/>
+  <testcase name="testSetUnsignedTxs()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.0"/>
+  <testcase name="testSetState()" classname="bitgo4j.transactionrequest.response.TransactionRequestResponseTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

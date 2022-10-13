@@ -1,0 +1,41 @@
+{
+  "id" : "93bb6fa0-166d-4541-aaa7-d5856edb0560",
+  "name" : "Get key (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/bij6858zpufhx2hjd30cw7idpzyfy5cjjn1p0rh3v1qmak6whplkl7soeca5/key/500b166c52fddc837fd768b2dfb08c39",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "93bb6fa0-166d-4541-aaa7-d5856edb0560",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.182223Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.key.get",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/Key"
+          }, {
+            "$ref" : "#/components/schemas/KeyTSS"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 392
+}

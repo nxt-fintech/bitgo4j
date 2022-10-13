@@ -1,0 +1,55 @@
+{
+  "id" : "3d3fe9dc-1adc-49c2-b198-c691da7e7257",
+  "name" : "Get Current User",
+  "request" : {
+    "urlPath" : "/api/prime/trading/v1/user/current",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"firstName\" : \"Napoleon\",\n  \"lastName\" : \"Schmeler\",\n  \"id\" : \"5eca09b2-3a3f-48a2-beb1-65a674dfa7e1\",\n  \"email\" : \"Mamie.Simonis@email.example.mocklab.io\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "3d3fe9dc-1adc-49c2-b198-c691da7e7257",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.544299Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "trade.user.current",
+        "schema" : {
+          "required" : [ "email", "firstName", "id", "lastName" ],
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "string",
+              "format" : "uuid"
+            },
+            "firstName" : {
+              "type" : "string"
+            },
+            "lastName" : {
+              "type" : "string"
+            },
+            "email" : {
+              "type" : "string",
+              "format" : "email"
+            }
+          },
+          "example" : {
+            "id" : "a253c86c-1f0f-42cc-bcd0-2dcc5040b204",
+            "firstName" : "Uncle",
+            "lastName" : "MoneyPenny",
+            "email" : "uncle.moneypenny@bitgo.com"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 148
+}

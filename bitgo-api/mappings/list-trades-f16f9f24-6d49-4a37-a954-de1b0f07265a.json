@@ -1,0 +1,38 @@
+{
+  "id" : "f16f9f24-6d49-4a37-a954-de1b0f07265a",
+  "name" : "List Trades",
+  "request" : {
+    "urlPath" : "/api/prime/trading/v1/accounts/57m9/trades",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"data\" : [ {\n    \"product\" : \"5lqfa1r07h4ewzwogd42dxfeoi2423l5yywsq2b29vo4o96n60f4fjvu4jodsgat20oszbvdg23mp3wtuqmza8w\",\n    \"side\" : \"sell\",\n    \"quantity\" : \"odw8aoaytd2huxjbf1nvyqp8sin40d8ny6e7evcp2rfz5mvtd8xw8wruj1sz0im8q1amriz7i60hj4s4g18ht8\",\n    \"orderId\" : \"184920a6-1e79-4dcf-9a2a-f4bf2cbd19e0\",\n    \"price\" : \"a7rs6my1a8gvysdhe12tswi3mklfmhpdevnkgvrwrcwb9gmwl6l2dcmbdd2ot5dyy6tjozsvlomfj4prf7n0m4yt2gw331kdmu9avkyxcmovwalvqbqcfwg9z3fx1fz6l\",\n    \"settled\" : true,\n    \"id\" : \"44fdb433-4865-4d9a-9048-6f69864b22a5\",\n    \"time\" : \"2021-11-04T04:22:54.558769Z\"\n  }, {\n    \"product\" : \"j2la9v73s8ilp3few3l1gku9wspvfx77vpc84tqmrulm2mr9ezqx8y71arfst1muxo935fzhlur561mtnfslnl20k12mcg6sbpw4fhb07ck6484yreh8d2sk5shcu14xtbgmuymv\",\n    \"side\" : \"buy\",\n    \"quantity\" : \"x2sgfiqcgucags37l07mrmuzzdng7gmizgr4470zh86rl7al0c869o939033172fwf0hcgg6nt3h9k4zk0ytt6dhi5eai7szkynncj0jgybhfziiox3u6auzl\",\n    \"orderId\" : \"8bd9a960-ad72-49f1-be2f-b528b95ed6f8\",\n    \"price\" : \"hdqstt89dm1zcv4jlv2tctrd8lzaafb0bl4x0ethrmis3pag9fzg1emvkog2vi7muipag6vpfwtowiucoaav6v3095ck6gzku4bhi1q8pqo4s8z123476cc09a0rdzf2fapz6btnh6ljzqy1ffwjarzn9y3c0sakhc0ffs67n47bs87\",\n    \"settled\" : true,\n    \"id\" : \"c8260a14-1cb6-429d-b92f-c36482ebe437\",\n    \"time\" : \"2022-04-03T13:44:49.558976Z\"\n  }, {\n    \"product\" : \"do23tzvd86aygf8wya7xton61zvavm1x4h5j4b814kydzelrunl9boel1y92va4jydgght8r0a3glgqawaet862437ufrwc7knqnwehrdb99ebzvv0ok6sr\",\n    \"side\" : \"buy\",\n    \"quantity\" : \"tvi2ncmm3a3lz2teuoevpnlwfliz8x9\",\n    \"orderId\" : \"84f61a1e-2186-4795-b9d8-e610499914ff\",\n    \"price\" : \"hjnc6vujsrndacqwjwg4w4e8veaebupm96edy6gzz6lql1befhwve86usxeo5llsa7d8hzh8efgvrypvmbhj\",\n    \"settled\" : false,\n    \"id\" : \"0a1b7c58-163d-4b88-9c61-46488f2549e2\",\n    \"time\" : \"2022-09-01T09:27:57.559151Z\"\n  }, {\n    \"product\" : \"rdky1lzfv1rquhuydh0lboe2kvj8irraw9unsbqsy892hyaqmwbnci2mf991pk62fhfv\",\n    \"side\" : \"sell\",\n    \"quantity\" : \"8ww7ytai1uuk44c3w7rwt2ellhc2s8x97f1l903ywnibhd7k7fak7rc3wjkue2nourlbcnoklv3chgcugkkylutj7e68se0kdppylv5hoyke2c63jpfmmosbyy0q3bgf5ttdbf6xbvuh651f1tp8p0d3\",\n    \"orderId\" : \"4e0fa999-489d-473b-ae82-adf11485d813\",\n    \"price\" : \"o7v2i1mwjzrasx18z3odqflg45hg8jfkvogodj263pxdpnei77ifiujtx6i3pat6qvz\",\n    \"settled\" : false,\n    \"id\" : \"ca75da9d-fa3b-4803-a026-24c0e041e11c\",\n    \"time\" : \"2022-08-11T17:41:00.55932Z\"\n  }, {\n    \"product\" : \"g5gpmdtf2it4b9wcmjpij2v8fgo3\",\n    \"side\" : \"buy\",\n    \"quantity\" : \"a6m1enqw4i374e\",\n    \"orderId\" : \"4aa99eb6-1ff6-4fe6-8522-e98ee1b08aa5\",\n    \"price\" : \"kk6vnqfxt01csqeaayb5nt7pw\",\n    \"settled\" : false,\n    \"id\" : \"a57491df-cd3b-4ec9-91b1-8305cbf9453a\",\n    \"time\" : \"2022-05-02T02:31:21.559487Z\"\n  }, {\n    \"product\" : \"e1mewjdq5iapcr5bhbn45rlaywxvgl6fxp12cdeowck3w9m3m27pret1i1utpd8ft58gkimwyqzihcvlnf1xmv67nq378kcgfhqvxskqitvo4xjtfq23tmz949fh33etfkpzqeqxmx0ncf7gf7g9eope7v7fehdb4rlvjlddcei5ei3m4xle\",\n    \"side\" : \"sell\",\n    \"quantity\" : \"32eb3d7r1qor4t4094m14b4b9lb4bonfcfs75khwu6oi5qbwae7\",\n    \"orderId\" : \"b139c3c0-0076-4335-94a9-5780a1ec138b\",\n    \"price\" : \"tvbtg2jufn39k3ta27bphpoj36dgpjv6odqomp2ix2gjamdwe0743nl8ak6ialyb365povd79oq6l1lym9bfex0mkfk0wlo14pu3qzcuf184dnq65aa1nk0rr3\",\n    \"settled\" : false,\n    \"id\" : \"afd61f0d-6d5f-439f-84f6-179c8328da02\",\n    \"time\" : \"2022-01-12T19:49:10.559654Z\"\n  }, {\n    \"product\" : \"wuor0cthvzec8ar2mv9ynhmt2ttsbf3rhextzjtxs9sds9ylzpa8cz9s4fy4yztzsvxfoewk80as7w5cst70unz4vt6jbeby0spqkcsi7ogo70mna1msxfmhb2kuuczfom4rvgss1737683fzzvaltfxdeph3bzex570osghvrjgx4qvinp3donl0rsspox4toy6tw\",\n    \"side\" : \"buy\",\n    \"quantity\" : \"3cfjw6vavaia74p1r5fgf39j33jabporkxqrlfev7wzvhhxmzlqd26xe8trperra4h52s4453uydttlckpvs9eqvvkyngqc0uzmp3b1qmj6wz0hfdyvsamwzfw1r6ng2vves7yxscn8b2cho2uyeynb0167qtqpiatsih78yyb028jppszj1t5njncy4bn1xvm68\",\n    \"orderId\" : \"41736ae3-640f-437a-b40d-95e14ef70d30\",\n    \"price\" : \"42tzru9hgmivoz6998fmrrklmhrw9ybaqvkg28llwes6u1tppw4qzyco69n2zis1kjluvptihb57s4wjit97mbqlwnjn1h0zhn3t66mgqs9ht\",\n    \"settled\" : false,\n    \"id\" : \"0e2c1393-973a-4574-aa64-3ff9dc108ed8\",\n    \"time\" : \"2023-03-07T02:45:16.559821Z\"\n  }, {\n    \"product\" : \"h0az8jnpjged4xg6b4c0shfcv4tl5tkpoo42qzkovohbx60qp3z49ax18u2lfrg427nkmi4f2b9a02t04u3mck8rjuvr83mpq87ae8ket1jh5a5fbq\",\n    \"side\" : \"sell\",\n    \"quantity\" : \"9az8li3oluble0sn77qp8mga50gmvl7fqz9zibcyk6vhfv0itrjgo8erzs5mq2dxt7eua2ng1fbm22aqx0hxpzjfomd1wh8v8yadd5n3wbnfg5vv9y43gjjelym2kioll0essg9e\",\n    \"orderId\" : \"e6f38001-227e-4b19-b658-a913376925bc\",\n    \"price\" : \"uz6ljcvhc64jc4g50ytt3uo6e4ejhpe6o0mu3qtzww4le7asr8v3fionc5gkmxmkkg77blke7y5bc1aiab68wib53dhkamyisnfn2ukbr875i9zjazgxa58jcfd68r5u2mj3ksoi6nesxciyj1k4tko8n30m01\",\n    \"settled\" : true,\n    \"id\" : \"71955f99-b093-48ac-9b00-a3def6a8d310\",\n    \"time\" : \"2023-01-30T03:34:23.559989Z\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f16f9f24-6d49-4a37-a954-de1b0f07265a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.560334Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "trade.trades",
+        "schema" : {
+          "required" : [ "data" ],
+          "type" : "object",
+          "properties" : {
+            "data" : {
+              "$ref" : "#/components/schemas/Trades"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 141
+}

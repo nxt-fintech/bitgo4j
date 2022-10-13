@@ -1,0 +1,36 @@
+{
+  "id" : "ccb54506-5dc6-41b4-b054-dff4f7280fbf",
+  "name" : "Delete bank account",
+  "request" : {
+    "urlPath" : "/api/v2/bankaccounts/f93572632c4cc3a21dc21ec047986185",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ccb54506-5dc6-41b4-b054-dff4f7280fbf",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.444249Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.bankaccount.delete",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidBankAccountId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 218
+}

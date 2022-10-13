@@ -1,0 +1,43 @@
+{
+  "id" : "61650645-3155-44cc-8339-3f3620e4fb68",
+  "name" : "Staking Request Creation",
+  "request" : {
+    "urlPath" : "/api/staking/v1/4j7v0rahbszj2t3ojl793iguoo7eszs7xysl8sqvgn71owog2mx3/wallets/822e/requests",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 500,
+    "body" : "{\n  \"code\" : \"Internal_Server_Error\",\n  \"message\" : \"Database is down\",\n  \"status\" : 500\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "61650645-3155-44cc-8339-3f3620e4fb68",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.634925Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Create staking request",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 102
+}

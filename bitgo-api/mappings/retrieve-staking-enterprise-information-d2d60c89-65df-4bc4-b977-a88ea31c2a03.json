@@ -1,0 +1,43 @@
+{
+  "id" : "d2d60c89-65df-4bc4-b977-a88ea31c2a03",
+  "name" : "Retrieve Staking Enterprise Information",
+  "request" : {
+    "urlPath" : "/api/staking/v1/c21iq49gieg8v66yvo0ih0qyalfbd3puqttbit8z29bsu8dqt9ojewwat6w47guklhhtdddvolc2c8cjsh66j0quubxwv9saryyeri2wegaq2b8viwnzaje8n1dg5f5n1s3k7xt121/enterprises/eb40",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 500,
+    "body" : "{\n  \"code\" : \"Internal_Server_Error\",\n  \"message\" : \"Database is down\",\n  \"status\" : 500\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d2d60c89-65df-4bc4-b977-a88ea31c2a03",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.662898Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Enterprise Information",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 45
+}

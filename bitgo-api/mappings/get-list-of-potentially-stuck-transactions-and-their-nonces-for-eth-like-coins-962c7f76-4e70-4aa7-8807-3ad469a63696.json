@@ -1,0 +1,49 @@
+{
+  "id" : "962c7f76-4e70-4aa7-8807-3ad469a63696",
+  "name" : "Get list of potentially stuck transactions and their nonces for eth-like coins",
+  "request" : {
+    "urlPath": "/api/v2/c50d3231t36yqnc68na7n06vvr7g1743vf38ir805pbjv5m1dqgh0ggw7qqh2sdtn7xa4indi2s9de34ewv0qvif4lzfeqrlc0jrvbptuoapkujex1dv/wallet/5478ee9e9f7046ac2eb656b6e3de141a/potentialStuckTxs",
+    "method": "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"cause\" : \"3d1vhm2916agcmvbwc12yrm2deletuyr8v7ie2n1fi7tl9yo0vvrifiqrhkbaj81\",\n  \"message\" : \"Magnam voluptas et temporibus sit quia aut. Enim autem est tenetur sit ut dignissimos. Laborum quo ducimus soluta.\",\n  \"nonce\" : 3836516331752709628\n}, {\n  \"cause\" : \"xda3cnxnlpttn2heb9iaolre93dx8hh3n4jfjk1atkb559p7a5wd206ks4cpkamkkhsmergk9y2dgbl1lwltrt7nl1uvgutsvsislu6ec086pk\",\n  \"message\" : \"Aut numquam temporibus. Voluptatem porro similique voluptas qui provident repellat. Incidunt inventore sed.\",\n  \"nonce\" : 2846621708447680141\n}, {\n  \"cause\" : \"grlu\",\n  \"message\" : \"Saepe similique et eveniet impedit et aut. Laboriosam a ut quia ea perferendis neque tenetur. Voluptatum ex est. Aut quasi odio consequatur et reiciendis. Ea blanditiis laborum et aut ut quibusdam.\",\n  \"nonce\" : 5004478446554740296\n}, {\n  \"cause\" : \"1i9qit5861zjauxsgc1qcvwsr17thuvk5i1mkpsgfzgavmrqqqtnpz8iwbu6jnp0rw6aor6hauami95h9582pg6mznt24uxnfko1ln4tlbezj84ms4mqfi\",\n  \"message\" : \"Enim qui ut. Veniam ut natus inventore fugit qui totam. Ipsum laboriosam ducimus ullam officiis similique eos. Error totam et ipsam voluptatem.\",\n  \"nonce\" : 3720926972118013035\n}, {\n  \"cause\" : \"zfmdz52cv8wb8vyb79dahayrr\",\n  \"message\" : \"Rerum perspiciatis soluta aut deleniti. Dolorem ut dolorum autem eveniet tempora. Ipsam in voluptates laborum et nesciunt. Aliquid suscipit vitae qui.\",\n  \"nonce\" : 1428278535525333173\n}, {\n  \"cause\" : \"ynvhya1rxhcvwyphgdosoxckfsuhcp1tst425urmpd1fza478uhpzpuj9q7dvw522ubl9rvindowk9x4u0nkh09lzx8vmj6c8egn\",\n  \"message\" : \"Hic qui aut. Aperiam adipisci exercitationem est reiciendis sit nisi animi. Cupiditate porro reiciendis explicabo sint sunt. Ut similique qui sequi fuga voluptate ab numquam.\",\n  \"nonce\" : 7310701774476078363\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "962c7f76-4e70-4aa7-8807-3ad469a63696",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.937647Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.getpotentialstucktxs",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "nonce" : {
+                "type" : "integer",
+                "description" : "The nonce value of the potentially stuck transaction."
+              },
+              "cause" : {
+                "type" : "string",
+                "description" : "The reason this transaction is potentially stuck."
+              },
+              "message" : {
+                "type" : "string",
+                "description" : "Possible steps to remediate the stuck transaction."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 445
+}

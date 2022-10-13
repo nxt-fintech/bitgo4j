@@ -1,0 +1,35 @@
+{
+  "id" : "8be20b75-e9bf-4fc5-93ce-915724ba35f6",
+  "name" : "List Portfolios",
+  "request" : {
+    "urlPath" : "/api/portfolio/v1/portfolios",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"organization_id\" : \"c57b4e25-e788-4b1e-92b8-e1629b9c7ed1\",\n  \"name\" : \"Marget Muller\",\n  \"id\" : \"8069fc73-1485-4c66-bc26-c6d1ad865c4e\",\n  \"organization_name\" : \"Kurtis Lowe\"\n}, {\n  \"organization_id\" : \"818d3cb2-7f6b-49de-bf24-78111da9cec5\",\n  \"name\" : \"Santa Kulas\",\n  \"id\" : \"d1878fc8-c004-4040-8a23-bc632aced9db\",\n  \"organization_name\" : \"Williams Corkery\"\n}, {\n  \"organization_id\" : \"1bffe577-905d-4f3a-ac99-8536b1f1a455\",\n  \"name\" : \"Herta Ruecker\",\n  \"id\" : \"24e3a1de-4614-408c-8f61-b0f0dfa152d1\",\n  \"organization_name\" : \"Miss Dillon Kovacek\"\n}, {\n  \"organization_id\" : \"16a3b4ba-1659-40a4-967a-e188b395f85a\",\n  \"name\" : \"Micheal Cronin\",\n  \"id\" : \"311cf100-2d10-4d04-8924-733f41cb31f1\",\n  \"organization_name\" : \"Rochell Koss V\"\n}, {\n  \"organization_id\" : \"308f9360-dba1-4c90-a2ca-b2621c85f794\",\n  \"name\" : \"Samara Ankunding DVM\",\n  \"id\" : \"ad06cd03-6a1c-4ddd-8841-710733783fa2\",\n  \"organization_name\" : \"Gary Ratke\"\n}, {\n  \"organization_id\" : \"26b8caf4-a4c9-4524-a897-1c77b3b513c2\",\n  \"name\" : \"Mr. Valrie Larson\",\n  \"id\" : \"52fe0ec4-1682-4aff-8b59-10cd7f68ca6b\",\n  \"organization_name\" : \"Etsuko Ryan\"\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "8be20b75-e9bf-4fc5-93ce-915724ba35f6",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.515786Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "portfolio.portfolios",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/components/schemas/Portfolio"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 161
+}

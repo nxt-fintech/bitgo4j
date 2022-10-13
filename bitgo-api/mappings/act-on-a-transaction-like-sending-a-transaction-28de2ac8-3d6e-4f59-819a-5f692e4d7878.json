@@ -1,0 +1,43 @@
+{
+  "id" : "28de2ac8-3d6e-4f59-819a-5f692e4d7878",
+  "name" : "Act On A Transaction like sending a transaction",
+  "request" : {
+    "urlPath" : "/api/staking/v1/dbr25yi1qgc4apkqoe088tlhhvxazbzdf95bwxl/wallets/1pxf/requests/j070/transactions/1232",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"code\" : \"Unauthorized\",\n  \"message\" : \"Unauthorized\",\n  \"status\" : 401\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "28de2ac8-3d6e-4f59-819a-5f692e4d7878",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.650457Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Act On A Transaction",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 70
+}

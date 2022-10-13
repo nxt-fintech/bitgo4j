@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.transactionrequest.common.FeeOptionsTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:33" hostname="ishtos-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="testSetMaxPriorityFeePerGas()" classname="bitgo4j.transactionrequest.common.FeeOptionsTest" time="0.0"/>
+  <testcase name="testSetMaxFeePerGas()" classname="bitgo4j.transactionrequest.common.FeeOptionsTest" time="0.0"/>
+  <testcase name="testToString()" classname="bitgo4j.transactionrequest.common.FeeOptionsTest" time="0.001"/>
+  <testcase name="testSetGasLimit()" classname="bitgo4j.transactionrequest.common.FeeOptionsTest" time="0.0"/>
+  <testcase name="testSetGasPrice()" classname="bitgo4j.transactionrequest.common.FeeOptionsTest" time="0.0"/>
+  <testcase name="testSetFeeType()" classname="bitgo4j.transactionrequest.common.FeeOptionsTest" time="0.0"/>
+  <testcase name="testSetFormula()" classname="bitgo4j.transactionrequest.common.FeeOptionsTest" time="0.0"/>
+  <testcase name="testSetUnit()" classname="bitgo4j.transactionrequest.common.FeeOptionsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,53 @@
+{
+  "id" : "016fc00e-adbf-417b-88e0-a2939eac8007",
+  "name" : "Create Trade Payload",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/ed0j/account/5399/payload",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"errorName\" : \"Cordia Runte\",\n  \"error\" : \"6qthabigtc4p8hxbfmsq794wxkkwjc07d5uegye75hbpecwjbjw6q2r2ggta4m0s75xdnagag5b79yuun8c4m71c0gs1q9kdbj88ntvnnbi7brhi0ga1g4utblcn58omqj9vlewhyz1d6ycte4s0hirlz6bhft5wrg5ofte5we0ogdwzcj33m3fwgccrlrnafel1r\",\n  \"reqId\" : \"vmna\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "016fc00e-adbf-417b-88e0-a2939eac8007",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.568517Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.trade.createPayload",
+        "schema" : {
+          "type" : "object",
+          "description" : "An API error returned by the service.",
+          "properties" : {
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "errorName" : {
+              "type" : "string",
+              "description" : "Immutable error code for API integration"
+            },
+            "reqId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "error", "errorName", "reqId" ],
+          "example" : {
+            "error" : "Missing required parameter: accountId",
+            "errorName" : "MissingRequiredParameter",
+            "reqId" : "3fa3fb673ce950a95fd2d395e245efbe"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 134
+}

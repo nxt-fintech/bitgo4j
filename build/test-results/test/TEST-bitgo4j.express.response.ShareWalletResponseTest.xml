@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.express.response.ShareWalletResponseTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:32" hostname="ishtos-MacBook-Pro.local" time="0.018">
+  <properties/>
+  <testcase name="testSetPendingApprovalId()" classname="bitgo4j.express.response.ShareWalletResponseTest" time="0.011"/>
+  <testcase name="testSetId()" classname="bitgo4j.express.response.ShareWalletResponseTest" time="0.001"/>
+  <testcase name="testSetMessage()" classname="bitgo4j.express.response.ShareWalletResponseTest" time="0.0"/>
+  <testcase name="testToString()" classname="bitgo4j.express.response.ShareWalletResponseTest" time="0.0"/>
+  <testcase name="testSetWalletLabel()" classname="bitgo4j.express.response.ShareWalletResponseTest" time="0.001"/>
+  <testcase name="testSetFromUser()" classname="bitgo4j.express.response.ShareWalletResponseTest" time="0.0"/>
+  <testcase name="testSetToUser()" classname="bitgo4j.express.response.ShareWalletResponseTest" time="0.001"/>
+  <testcase name="testSetWallet()" classname="bitgo4j.express.response.ShareWalletResponseTest" time="0.001"/>
+  <testcase name="testSetEnterprise()" classname="bitgo4j.express.response.ShareWalletResponseTest" time="0.0"/>
+  <testcase name="testSetCoin()" classname="bitgo4j.express.response.ShareWalletResponseTest" time="0.001"/>
+  <testcase name="testSetPermissions()" classname="bitgo4j.express.response.ShareWalletResponseTest" time="0.0"/>
+  <testcase name="testSetKeychain()" classname="bitgo4j.express.response.ShareWalletResponseTest" time="0.001"/>
+  <testcase name="testSetState()" classname="bitgo4j.express.response.ShareWalletResponseTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

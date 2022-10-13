@@ -1,0 +1,63 @@
+{
+  "id" : "f9b7661d-984a-4f73-a2f5-74ee412276d2",
+  "name" : "Look up user accounts by their Stellar address or id",
+  "request" : {
+    "urlPath" : "/api/v2/xlm/federation",
+    "method" : "GET",
+    "queryParameters" : {
+      "q" : {
+        "equalTo" : "9tmru5cdeyldjp3e0e52e"
+      },
+      "type" : {
+        "equalTo" : "name"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"9b74\",\n  \"name\" : \"Dr. Mattie Conroy\",\n  \"detail\" : \"s2n60o6upw08pyycrq0wsztxvxnss\",\n  \"error\" : \"jfv4gwqtbf17ef4qoh1pleiowejj8iloepu8dzd7pjb3ujk05ycuxqy6wj6ytdmwiizfu0rbleznchg0cbvop8x0nq5vpfhl655pguywld6e0q63ix52jehquaxim2w7m30urtv3f4wam8z068zu0vp2khlcy5p1m\",\n  \"status\" : 1.7651783827473252E308\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f9b7661d-984a-4f73-a2f5-74ee412276d2",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.395769Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.federation",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "status" : {
+              "type" : "number",
+              "description" : "HTTP status code"
+            },
+            "detail" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "name" : {
+              "type" : "string",
+              "description" : "Error code"
+            },
+            "requestId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "status", "detail", "error", "name", "requestId" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 281
+}

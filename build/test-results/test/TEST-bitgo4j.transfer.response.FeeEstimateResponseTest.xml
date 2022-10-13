@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.transfer.response.FeeEstimateResponseTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:32" hostname="ishtos-MacBook-Pro.local" time="0.011">
+  <properties/>
+  <testcase name="testSetMinGasIncreaseBy()" classname="bitgo4j.transfer.response.FeeEstimateResponseTest" time="0.009"/>
+  <testcase name="testSetConfidence()" classname="bitgo4j.transfer.response.FeeEstimateResponseTest" time="0.0"/>
+  <testcase name="testToString()" classname="bitgo4j.transfer.response.FeeEstimateResponseTest" time="0.0"/>
+  <testcase name="testSetNumBlocks()" classname="bitgo4j.transfer.response.FeeEstimateResponseTest" time="0.0"/>
+  <testcase name="testSetCpfpFeePerkb()" classname="bitgo4j.transfer.response.FeeEstimateResponseTest" time="0.001"/>
+  <testcase name="testSetMultiplier()" classname="bitgo4j.transfer.response.FeeEstimateResponseTest" time="0.0"/>
+  <testcase name="testSetFeeEstimate()" classname="bitgo4j.transfer.response.FeeEstimateResponseTest" time="0.0"/>
+  <testcase name="testSetMinGasLimit()" classname="bitgo4j.transfer.response.FeeEstimateResponseTest" time="0.0"/>
+  <testcase name="testSetMinGasPrice()" classname="bitgo4j.transfer.response.FeeEstimateResponseTest" time="0.0"/>
+  <testcase name="testSetEip1559()" classname="bitgo4j.transfer.response.FeeEstimateResponseTest" time="0.0"/>
+  <testcase name="testSetMaxGasLimit()" classname="bitgo4j.transfer.response.FeeEstimateResponseTest" time="0.001"/>
+  <testcase name="testSetFeePerKb()" classname="bitgo4j.transfer.response.FeeEstimateResponseTest" time="0.0"/>
+  <testcase name="testSetGasLimitEstimate()" classname="bitgo4j.transfer.response.FeeEstimateResponseTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

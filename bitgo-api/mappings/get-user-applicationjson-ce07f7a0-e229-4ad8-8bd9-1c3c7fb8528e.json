@@ -1,0 +1,41 @@
+{
+  "id" : "ce07f7a0-e229-4ad8-8bd9-1c3c7fb8528e",
+  "name" : "Get user (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/user/35063ea3f3a601d2f5afe56c47ab0f66",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ce07f7a0-e229-4ad8-8bd9-1c3c7fb8528e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.17789Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "user.get",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidUserId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 397
+}

@@ -1,0 +1,37 @@
+{
+  "id" : "e9dc2499-dad5-4ca7-b2fe-c0d5b5d1ada8",
+  "name" : "Consolidate account",
+  "request" : {
+    "urlPath" : "/api/v2/algo/wallet/24743966beb4b144af3c680f4725b532/consolidateAccount/build",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"keyDerivationPath\" : \"x8sj0u3izu11d9ct8bd16z406hez82kafflgkfd4rnikdfh9drxe577qmd93tye1coh8nrysw62zn52p015bf0bk0wzykj7ahevgz6npdzt25c3jg33duftmm4arbwp2h44q7lu0nydqlr0zxbtxvzs31b3qo2motwowjwmlpygl96tm5vcm714kjamz\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "e9dc2499-dad5-4ca7-b2fe-c0d5b5d1ada8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.471278Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.consolidateaccount.build",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "keyDerivationPath" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 197
+}

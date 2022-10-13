@@ -1,0 +1,53 @@
+{
+  "id" : "d8ac6535-9d19-4d29-8900-bd2b03b7fc26",
+  "name" : "Update Trading Partner Request",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/p1fp/account/d8zi/tradingpartners/f4a8aa81-90f6-45f0-9e0b-0bfa70eac3b0",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"errorName\" : \"Esta Rodriguez DVM\",\n  \"error\" : \"7ecnwnh3k2rt05paf3mjc87ukyiyeazjw776ooym0pgknu4zos84st4smj1oawctop0695lrklagdvmbmoxfs8q1o85ljaozx1fx5ma6upcc22fdowmn983rwqodm6ankmagsk43ga7prpzvyjhh7johgwd8eh90i43y1phnluheztpdomg1\",\n  \"reqId\" : \"494j\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d8ac6535-9d19-4d29-8900-bd2b03b7fc26",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.698171Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.tradingPartner.update",
+        "schema" : {
+          "type" : "object",
+          "description" : "An API error returned by the service.",
+          "properties" : {
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "errorName" : {
+              "type" : "string",
+              "description" : "Immutable error code for API integration"
+            },
+            "reqId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "error", "errorName", "reqId" ],
+          "example" : {
+            "error" : "Missing required parameter: accountId",
+            "errorName" : "MissingRequiredParameter",
+            "reqId" : "3fa3fb673ce950a95fd2d395e245efbe"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 10
+}

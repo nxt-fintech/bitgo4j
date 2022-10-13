@@ -1,0 +1,46 @@
+{
+  "id" : "d9e4d8d5-62c1-44ba-b046-cd0c2dfba2b3",
+  "name" : "Create a signature share for a transaction on a transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/7f4fff1f7c588f014d83fc391f27e684/txrequests/a98480293dd13c2cdcb5dd45610762a1/transactions/s5bym9d66q0a76b7s4aj9zo5zlalfez7locwa38t2qt4gkjrv6vw1u8rmp6282qmn6nokcejq12ytiwzbkpt6par5pc97jq08cc09vi5w3ici7nnatn0gd74mamja5501xziogqjq8waykb036sz9hvjqjqi3l0veowwusz0l8eolsxyd3io/signatureshares",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"requestId\" : \"iou7\",\n  \"context\" : { },\n  \"name\" : \"Valentine Emard\",\n  \"error\" : \"nuoxgmvhsukv7qvg8q0h3nwvhh404896oz9gqeyegrh6i8likbl8w2o4q08ukinssff0r5xz0hpismkd5zayl32oqdp0smoy8n3hl97awr77ox8rc3265uz39t6uy98871dq4\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d9e4d8d5-62c1-44ba-b046-cd0c2dfba2b3",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.418048Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.transaction.signatureshare.create",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 243
+}

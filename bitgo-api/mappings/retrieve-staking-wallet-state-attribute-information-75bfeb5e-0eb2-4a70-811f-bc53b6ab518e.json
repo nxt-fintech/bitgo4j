@@ -1,0 +1,43 @@
+{
+  "id" : "75bfeb5e-0eb2-4a70-811f-bc53b6ab518e",
+  "name" : "Retrieve Staking Wallet State Attribute Information",
+  "request" : {
+    "urlPath" : "/api/staking/v1/zsvusotpt84sg6fjzguh7kboudkmq2f4o17mgermjteyvfl6oh47ccn3chptvvkgpo1kk4r1fy29zm5kujeewqv6ynqnrpixeu45twx9gryjxvpwzija7koozfg6onx2b6khj9422374suob61kz5xgacl74ckpbxpm/wallets/kx3f/attributes",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"permissionAttributes\" : {\n    \"walletPermissionAttributes\" : {\n      \"hasEnoughAdmins\" : false,\n      \"numberOfRequiredAdmin\" : 1721367225064493845\n    },\n    \"stakingPermissionAttributes\" : {\n      \"disabledReason\" : \"62rzzrbjw2mbuzwhjc2j73sya4oqwur6nj4z43ns9jcgrq0ro1jcsh9wnt89rs0lq8yiylavdhzh24d17tbd1rnm4icwuyre1r2i\",\n      \"enabled\" : \"o6erworexfc048uudy1p1iheu1ed72d5y2bdltkjxr42mw0z3zl8tlic0ev\"\n    },\n    \"unstakingPermissionAttributes\" : {\n      \"disabledReason\" : \"f2uctp5i8qr67anun7xjs6bixpjv1ksn70rs59011ars5b3ztmc23skirygg1vpukafjhdczx5uxc94gzbhxdnovqx6a9dcakuhgqglrxxxx1805mgple73ovmyaoq0sa1xjznv2shnw8ndxl6qttx9a1tbar1o430gtm1ip6k0n978e3mfxj5ups394m\",\n      \"enabled\" : \"r8amm\"\n    }\n  },\n  \"disclaimerAttributes\" : {\n    \"unstakingDisclaimerAttributes\" : {\n      \"transactionsNeeded\" : 6466405878766423356,\n      \"info\" : \"s1z3jcr3u2gdkti6gcbs7ahef3rj54x9xuo7odevzuuidrx153xlzsb7i6l6xy12vtlm0ofmlk5b3n7195ua5qdte8uq7t61f8uyotn4m85nbmgpl7fcgrrslv9nk5cbw52ak41p2fxirc5ogvnmagiwin3uo6ciuv60k\"\n    },\n    \"stakingDisclaimerAttributes\" : {\n      \"transactionsNeeded\" : 4224060765930749464,\n      \"info\" : \"kr6x0u1ldhy5cuytwa00abpu85xkltmwvuffb1use5rzqvhhn103o69yeydaexomk1\"\n    }\n  },\n  \"spendableAttributes\" : {\n    \"stakingSpendableAttributes\" : {\n      \"min\" : 3493319602310699541,\n      \"max\" : 8833940023453582395,\n      \"fee\" : 570766032154171807,\n      \"netMax\" : 4144111840328435923,\n      \"netMin\" : { }\n    },\n    \"unstakingSpendableAttributes\" : {\n      \"min\" : 1750000450340577221,\n      \"multipleDelegations\" : true,\n      \"max\" : 4852633713298960480,\n      \"fee\" : 4482703217850857106\n    }\n  }\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "75bfeb5e-0eb2-4a70-811f-bc53b6ab518e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.67115Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Wallet State Attribute Information",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "spendableAttributes" : {
+              "$ref" : "#/components/schemas/WalletStakingSpendableAttributes"
+            },
+            "permissionAttributes" : {
+              "$ref" : "#/components/schemas/WalletStakingPermissionAttributes"
+            },
+            "disclaimerAttributes" : {
+              "$ref" : "#/components/schemas/WalletStakingDisclaimerAttributes"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 30
+}

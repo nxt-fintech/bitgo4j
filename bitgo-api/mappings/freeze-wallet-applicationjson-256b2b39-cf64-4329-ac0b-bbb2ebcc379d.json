@@ -1,0 +1,51 @@
+{
+  "id" : "256b2b39-cf64-4329-ac0b-bbb2ebcc379d",
+  "name" : "Freeze wallet (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/8ln4by2onrgfsk9ck2y85i708vmbvd2cqo8dz3mp7a69doqdi8u3julhw1a39gj5r9sbov30ossg5bhg253pgjrpdcb3j4hzq7r1al2rbwiu256mx5d54741heebd9nlzb5t5lq07j7pe/wallet/7e65bf000aa7437cb25f9b03cbaa71e4/freeze",
+    "method" : "POST",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"requestId\" : \"tyns\",\n  \"context\" : { },\n  \"name\" : \"Sharyn Haley\",\n  \"error\" : \"qsbktd4xc281kd5lgjt0dzzrcecx2tm37m91mu1b5ooagjsjheoe3xlpr1xju95lc0fk7n1p3qpbx3o9cz78fu9z6o5o35z4y1v2ivl13ddfdjobtiw33sefpwle4rqagmr3tw1a9dn7alce5qdfx89t3z592pomjbsrnl4ho9bwiz1dsgk8gv9v8l6bi1hxvv6\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "256b2b39-cf64-4329-ac0b-bbb2ebcc379d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.34739Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.freeze",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 331
+}

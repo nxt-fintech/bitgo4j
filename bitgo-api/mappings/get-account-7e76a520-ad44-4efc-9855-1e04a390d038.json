@@ -1,0 +1,50 @@
+{
+  "id" : "7e76a520-ad44-4efc-9855-1e04a390d038",
+  "name" : "Get Account",
+  "request" : {
+    "urlPath" : "/api/portfolio/v1/portfolios/1346/accounts/4g0s",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"name\" : \"Brendon Effertz\",\n  \"id\" : \"b94b97ea-cccc-4836-8030-9dd732de4f3f\",\n  \"type\" : \"savings\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "7e76a520-ad44-4efc-9855-1e04a390d038",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.527027Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "portfolio.account",
+        "schema" : {
+          "required" : [ "id", "name", "type" ],
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "string",
+              "format" : "uuid"
+            },
+            "name" : {
+              "type" : "string"
+            },
+            "type" : {
+              "$ref" : "#/components/schemas/PortfolioAccountType"
+            }
+          },
+          "example" : {
+            "id" : "ca0eda2d-0b76-4aba-94dd-88bc06ea5b92",
+            "name" : "Coinbase Pro Main Account",
+            "type" : "exchange"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 156
+}

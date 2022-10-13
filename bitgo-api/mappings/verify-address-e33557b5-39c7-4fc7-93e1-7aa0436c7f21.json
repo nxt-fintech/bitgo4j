@@ -1,0 +1,37 @@
+{
+  "id" : "e33557b5-39c7-4fc7-93e1-7aa0436c7f21",
+  "name" : "Verify address",
+  "request" : {
+    "urlPath" : "/api/v2/ootsooojkzyg694qd9rsf0jgureufhfv7uqf2rzzu0cpuczlc9l81j94jr5w9gv8f2bw57ld37b0zxugbdq4x1bmtju7y41y5zopfp9qap3s8izvx4wpi09k7nxwh63ys50bttjzkhvn/verifyaddress",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"isValid\" : true\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "e33557b5-39c7-4fc7-93e1-7aa0436c7f21",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.493514Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.verifycoinaddress",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "isValid" : {
+              "type" : "boolean"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 181
+}

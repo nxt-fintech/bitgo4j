@@ -1,0 +1,98 @@
+{
+  "id" : "662a50fb-a30c-45ed-b120-77ae46ece8aa",
+  "name" : "Get a wallet share",
+  "request" : {
+    "urlPath" : "/api/v2/dy7eiwb8uodh9hn7mh9nefi4aa4mas1ypxyw2we1g8dszdnxsz94z0j5fdv0rpi05y01k6umzvtacte0/walletshare/3f7d560585f3d8233a62ca4c88ce9346",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"toUser\" : \"6zxdkfh9bhmld0ht3cxwps8vlby6lh9ggr8arn5pu8bju1d9copvklp4zp8g76jrk9mg0fh8tcbf7i6hdzz1c09yf6lub581rmsc46tfyjtkkc0eel229c3q\",\n  \"pendingApprovalId\" : \"311357f6ff484f3659d35f18129ce511\",\n  \"wallet\" : \"6d153896c71752682afa2c691ba6dafd\",\n  \"keychain\" : {\n    \"path\" : \"6pnkux5e0dnybsq50g60h9zm78zjh1cr2cjk3hvyvfhdrvoviwxty5dnene7dqk57baiqympndqropkjvn59wcysgqfjyll5ki85\",\n    \"encryptedPrv\" : \"k2v2b9zxaqjuazv49wvun8vfzo4rhcihyay1bhzp8k49ol9xh1nlp\",\n    \"toPubKey\" : \"f7n2u5vblyfcgnnodofjupjnqwv6ao632lhco7095muofbs48w06ehfyvzcz8fv5h8jf1v5ndzrmqhgmtvou6xgo8d9u0avkpoy71osmjfxd1aoy80r16k6tobd1aysm15luozqeyhctbm4gdxsucvxhb6g\",\n    \"fromPubKey\" : \"975x8lps6mb2fnojgw7tbolybpcfhp21hfmj60xq5mr9tjlrxe2gz4utom3cxf40kth25j42om2t4u1bvh68kbkc3lz53gwya9yyy7u97pgrv75ftn98vymcbh8x8td6mnlu01qknrlb365chz1eonma2q7toms4isbv\",\n    \"pub\" : \"8pw6gwq1dradukjfwsmwkvxtbao3mbdhyq0hw65t36tygtm8z50uwoyiomrkbk6eq91fmy2e4kd8oqvz2jsx8p9s6wmfjqmftf69tayz5uw2mvfamtby3ww8i3lhgm0abm8y4oegt74likr\"\n  },\n  \"fromUser\" : \"d8281f57ebf2a3dba8ed56377a362f01\",\n  \"permissions\" : \"gro209nf1sy87emhn7svoj6yh3010juosbatv7q64t7o05l2gt242vv1l1z08v7w0rz4h2pnanw7l29tf07l1qytb8cxbbkl2ismzeyixxjnmzf02s6h6t8k3hl1nsk2rxto8cefv73ovdq9xyi5k49spd53y6j4iuqdw\",\n  \"enterprise\" : \"d0792124e1427405b268dc48973d1edf\",\n  \"id\" : \"efe9705fed6327ac216d3e7e3d92aa91\",\n  \"state\" : \"active\",\n  \"message\" : \"Sit praesentium quasi maiores debitis ut qui nostrum. Enim omnis temporibus id quae unde reprehenderit. Ab minima laudantium ullam fugit distinctio architecto cumque.\",\n  \"coin\" : \"9ncd4zjojipzi450ndr0uhz22zxhrdtbhfofhaw3zkyft0pasbmec6739c5ud9nfe1gepe97l4hpzr5lu1cyfzcfj5814p3ka3dh0k\",\n  \"walletLabel\" : \"quo\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "662a50fb-a30c-45ed-b120-77ae46ece8aa",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.376779Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.sharing.getshare",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "coin" : {
+              "$ref" : "#/components/schemas/Coin"
+            },
+            "wallet" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "walletLabel" : {
+              "$ref" : "#/components/schemas/WalletLabel"
+            },
+            "fromUser" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "toUser" : {
+              "$ref" : "#/components/schemas/Coin"
+            },
+            "permissions" : {
+              "type" : "string",
+              "description" : "Comma-separated list of permissions which are granted by this share.",
+              "example" : "spend,view"
+            },
+            "message" : {
+              "type" : "string",
+              "description" : "User readable message to display to the share recipient"
+            },
+            "state" : {
+              "$ref" : "#/components/schemas/WalletShareState"
+            },
+            "enterprise" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "pendingApprovalId" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "keychain" : {
+              "description" : "Only set if this wallet share has an associated keychain",
+              "type" : "object",
+              "properties" : {
+                "pub" : {
+                  "description" : "Sharing user's root public key",
+                  "type" : "string"
+                },
+                "encryptedPrv" : {
+                  "description" : "Sharing user's private key encrypted under their wallet passphrase",
+                  "type" : "string"
+                },
+                "fromPubKey" : {
+                  "description" : "Sharing user's derived public key which will be used to calculate the wallet sharing secret.",
+                  "type" : "string"
+                },
+                "toPubKey" : {
+                  "description" : "Shared-to user's derived public key which will be used to calculate the wallet sharing secret.",
+                  "type" : "string"
+                },
+                "path" : {
+                  "description" : "BIP32 HD path of the derived public keys (fromPubKey and toPubKey)",
+                  "example" : "m/1234/1/1",
+                  "type" : "string"
+                }
+              }
+            }
+          },
+          "required" : [ "id", "coin", "wallet", "walletLabel", "fromUser", "toUser", "permissions", "message", "state", "enterprise" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 302
+}

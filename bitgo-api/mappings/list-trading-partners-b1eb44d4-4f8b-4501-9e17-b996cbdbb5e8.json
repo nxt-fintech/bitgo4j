@@ -1,0 +1,53 @@
+{
+  "id" : "b1eb44d4-4f8b-4501-9e17-b996cbdbb5e8",
+  "name" : "List Trading Partners",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/8m78/account/h769/tradingpartners",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"errorName\" : \"Rudolf Nicolas\",\n  \"error\" : \"f5wvvypg9icee1gs51js58jrnwpk6yml4l8yaf9lziv46105q25n78r1ri1o7q9sd4x8onuy6edeh5zasfnwxg9i3gqh6nn5ec8sbh3ne02oo4y0pk9pkxz7tb\",\n  \"reqId\" : \"v9g5\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "b1eb44d4-4f8b-4501-9e17-b996cbdbb5e8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.686332Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.tradingPartner.listTradingPartners",
+        "schema" : {
+          "type" : "object",
+          "description" : "An API error returned by the service.",
+          "properties" : {
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "errorName" : {
+              "type" : "string",
+              "description" : "Immutable error code for API integration"
+            },
+            "reqId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "error", "errorName", "reqId" ],
+          "example" : {
+            "error" : "Missing required parameter: accountId",
+            "errorName" : "MissingRequiredParameter",
+            "reqId" : "3fa3fb673ce950a95fd2d395e245efbe"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 16
+}

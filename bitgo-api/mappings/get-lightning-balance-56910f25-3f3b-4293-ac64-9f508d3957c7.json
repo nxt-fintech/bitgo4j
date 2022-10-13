@@ -1,0 +1,36 @@
+{
+  "id" : "56910f25-3f3b-4293-ac64-9f508d3957c7",
+  "name" : "Get lightning balance",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/a6b8144209d22ea31fdbf43fd98a8571/lightning/balance",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "56910f25-3f3b-4293-ac64-9f508d3957c7",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.50804Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.lightning.balance",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 165
+}

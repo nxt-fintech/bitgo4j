@@ -1,0 +1,36 @@
+{
+  "id" : "311f43ef-4dc3-4613-b31a-a0bee64ad102",
+  "name" : "Simulate wallet webhook",
+  "request" : {
+    "urlPath" : "/api/v2/hx1shodjlap1sx30u6uetqg6lj7xw9knogi93g9eaonffoh4g6nh99t11lp3im2jbro76bbn3sbmoox8ttrmjwhi9z0gechcuzzx5srb6opv1fngbeueskp77zitapggkafc470qp6g0g1pgvx013p8x8js1dbgtzic3savd1pigt344gbxl0ank363c3ylwhuiu/wallet/1ede0aa761dda7bd27c4a2707b439f81/webhooks/c582d8724d65af107b707001100d733c/simulate",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "311f43ef-4dc3-4613-b31a-a0bee64ad102",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.386786Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.simulatewebhook",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 288
+}

@@ -1,0 +1,46 @@
+{
+  "id" : "eef9f1bc-09fa-44df-ab89-d6a54e9c7578",
+  "name" : "Create a signature share for the transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/536873292a403690daae3bf4a3022513/txrequests/46fc197ba86d86d8a86709834fb81971/signatureshares",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 403,
+    "body" : "{\n  \"requestId\" : \"6tz0\",\n  \"context\" : { },\n  \"name\" : \"Sharda Erdman\",\n  \"error\" : \"2y8uocrve11h9d9ipqgk5xe9k05zwrc0d2r0mcytlh3hxnuze893stl8ja0nzxbyd1kkfoy9yntbpq6rhn7lj7rmyox44jodxt4mz2v78aro5rjymtp3odo419g2w4o556exu01nfm8v0u3o2xph611nilpo5mkiuina77tdwf5t\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "eef9f1bc-09fa-44df-ab89-d6a54e9c7578",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.412448Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.signatureshare.create",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 252
+}

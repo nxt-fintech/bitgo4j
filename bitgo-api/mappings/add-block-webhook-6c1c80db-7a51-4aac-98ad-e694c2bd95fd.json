@@ -1,0 +1,44 @@
+{
+  "id" : "6c1c80db-7a51-4aac-98ad-e694c2bd95fd",
+  "name" : "Add block webhook",
+  "request" : {
+    "urlPath" : "/api/v2/voh18eqh7263jx501z0dg75vy6efvsz8f41fxafl749lab8xaoxf4vq3key8h4usgucuobd4wo8poadpz00z7l2phslkrrdy9ik5g/webhooks",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"created\" : \"2022-06-07T06:15:10.386929Z\",\n  \"failingSince\" : \"2021-10-20T09:38:37.386956Z\",\n  \"label\" : \"voluptatibus\",\n  \"type\" : \"block\",\n  \"userId\" : \"68178f353cf52e3a75cb21cef7287fc2\",\n  \"version\" : 8978741145042555710,\n  \"numConfirmations\" : 617052247035545880,\n  \"url\" : \"https://web.example.mocklab.io/612005\",\n  \"successiveFailedAttempts\" : 5231610543870323809,\n  \"lastAttempt\" : \"2023-01-02T09:08:02.386945Z\",\n  \"id\" : \"83f77cfff9a711bbfc34c49934601cdb\",\n  \"state\" : \"active\",\n  \"coin\" : \"qjz5olabib9tvu54unb38ps30sk7hqff45nkzot7d7jqfe7o15zuju1ovs1xw853gox87spmw0kutba6ga71pyndssup3z6dzcnyw9bzns7pe7608i9zu5n3u4w9al2h1s7q3zeyi5kweif61cn6b7h9y022y8g\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "6c1c80db-7a51-4aac-98ad-e694c2bd95fd",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.387517Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.webhooks.add",
+        "schema" : {
+          "allOf" : [ {
+            "type" : "object",
+            "properties" : {
+              "type" : {
+                "$ref" : "#/components/schemas/WebhookTypeBlock"
+              },
+              "userId" : {
+                "$ref" : "#/components/schemas/Id"
+              }
+            }
+          }, {
+            "$ref" : "#/components/schemas/Webhook"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 287
+}

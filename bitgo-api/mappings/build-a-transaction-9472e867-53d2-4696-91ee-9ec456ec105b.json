@@ -1,0 +1,38 @@
+{
+  "id" : "9472e867-53d2-4696-91ee-9ec456ec105b",
+  "name" : "Build a transaction",
+  "request" : {
+    "urlPath" : "/api/v2/ch8frqzwg6yj372tpw22391f3rehzlmu45uzayo6yy8pohs8gzcxhz5384c1znj8iz9n877n6i0c/wallet/59dc4517669f7f68041b44ec9b556de5/tx/build",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "9472e867-53d2-4696-91ee-9ec456ec105b",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.424213Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.tx.build",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidAddress"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 237
+}

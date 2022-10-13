@@ -1,0 +1,36 @@
+{
+  "id" : "99c54571-071c-40d7-b004-9675ade3b6be",
+  "name" : "Send to many",
+  "request" : {
+    "urlPath" : "/api/v2/b7g5apyiv9v4n1avd14m93358ao9bioo2568i9q46z1mvx9t7ow/wallet/5d3fee166c8430b575004193fb2bbfe2/sendmany",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "99c54571-071c-40d7-b004-9675ade3b6be",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.457Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.wallet.sendmany",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 211
+}

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.walletshare.MockWalletShareClientImplTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:32" hostname="ishtos-MacBook-Pro.local" time="0.049">
+  <properties/>
+  <testcase name="resendTest_200()" classname="bitgo4j.walletshare.MockWalletShareClientImplTest" time="0.005"/>
+  <testcase name="resendTest_400()" classname="bitgo4j.walletshare.MockWalletShareClientImplTest" time="0.002"/>
+  <testcase name="resendTest_401()" classname="bitgo4j.walletshare.MockWalletShareClientImplTest" time="0.002"/>
+  <testcase name="updateTest_200()" classname="bitgo4j.walletshare.MockWalletShareClientImplTest" time="0.004"/>
+  <testcase name="createTest_200()" classname="bitgo4j.walletshare.MockWalletShareClientImplTest" time="0.004"/>
+  <testcase name="createTest_400()" classname="bitgo4j.walletshare.MockWalletShareClientImplTest" time="0.003"/>
+  <testcase name="listTest_200()" classname="bitgo4j.walletshare.MockWalletShareClientImplTest" time="0.005"/>
+  <testcase name="rejectTest_200()" classname="bitgo4j.walletshare.MockWalletShareClientImplTest" time="0.003"/>
+  <testcase name="rejectTest_400()" classname="bitgo4j.walletshare.MockWalletShareClientImplTest" time="0.003"/>
+  <testcase name="getTest_200()" classname="bitgo4j.walletshare.MockWalletShareClientImplTest" time="0.003"/>
+  <testcase name="getTest_400()" classname="bitgo4j.walletshare.MockWalletShareClientImplTest" time="0.003"/>
+  <testcase name="cancelTest_200()" classname="bitgo4j.walletshare.MockWalletShareClientImplTest" time="0.005"/>
+  <testcase name="requestTest_200()" classname="bitgo4j.walletshare.MockWalletShareClientImplTest" time="0.002"/>
+  <testcase name="requestTest_400()" classname="bitgo4j.walletshare.MockWalletShareClientImplTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[java.io.FileNotFoundException: src/test/resources/local.properties (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at bitgo4j.TestingUtils.getProperties(TestingUtils.java:14)
+	at bitgo4j.walletshare.MockWalletShareClientImplTest.setUp(MockWalletShareClientImplTest.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:128)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeAllMethod(TimeoutExtension.java:70)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllMethods$13(ClassBasedTestDescriptor.java:411)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllMethods(ClassBasedTestDescriptor.java:409)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:84)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/4vfz1wuhm94yb4rc9byc2lnct1z9zyzn1crycrhar43jfdl6v8lfkatrxup41oy0a6vnw6yp0r33mi6rgiuv5bf74w87bdezb4zyfruyxeoepjuoewuiyqybeoffnzsb7ru7gk4qkga4rc2gpbjxsq0bqilnrgbsja/walletshare/acdfd9790f2c87bdc48d41ea57c5bacb/resendemail (0-byte body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/4vfz1wuhm94yb4rc9byc2lnct1z9zyzn1crycrhar43jfdl6v8lfkatrxup41oy0a6vnw6yp0r33mi6rgiuv5bf74w87bdezb4zyfruyxeoepjuoewuiyqybeoffnzsb7ru7gk4qkga4rc2gpbjxsq0bqilnrgbsja/walletshare/acdfd9790f2c87bdc48d41ea57c5bacb/resendemail (2ms, unknown-length body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/c8bbj6l4w5re9121gxzec09ay3ajnxhppkfv1ht9toaq2fajkhj353ras5zxggz8y4j2g67qioe3z763pro56dtxlny5tyhxdtblwmabwdyoqdovc3uljqjt08cgv8/walletshare/95b4fbad0e4e8d0eb80b1b667d3865e7/resendemail (0-byte body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/c8bbj6l4w5re9121gxzec09ay3ajnxhppkfv1ht9toaq2fajkhj353ras5zxggz8y4j2g67qioe3z763pro56dtxlny5tyhxdtblwmabwdyoqdovc3uljqjt08cgv8/walletshare/95b4fbad0e4e8d0eb80b1b667d3865e7/resendemail (1ms, unknown-length body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/7zn8a4m0b9m01ei7y5j92357zvwbeodqn5rzln6ldubqcs1o8kpkjmotgoz2gxkecygvxf51k75wl8i7ha9lzsdkgi559/walletshare/86ca3219f436d60f3d34c2af61ee28ab/resendemail (0-byte body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: <-- 401 Unauthorized http://localhost:4040/api/v2/7zn8a4m0b9m01ei7y5j92357zvwbeodqn5rzln6ldubqcs1o8kpkjmotgoz2gxkecygvxf51k75wl8i7ha9lzsdkgi559/walletshare/86ca3219f436d60f3d34c2af61ee28ab/resendemail (1ms, unknown-length body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/kweri8izszhvxdl3rzpg18cup9837mviwxnf9nqdwll6ihymcv5zvz3ciari69vcatfkiotgvg0u50awbtyfkbo7zpkgitp4hhyp5j0uc8z27yb6ms7plrd6pq647e1h5w3h251nn9x87b/walletshare/ec27e5dd291455613d351b8637597332 (2-byte body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/kweri8izszhvxdl3rzpg18cup9837mviwxnf9nqdwll6ihymcv5zvz3ciari69vcatfkiotgvg0u50awbtyfkbo7zpkgitp4hhyp5j0uc8z27yb6ms7plrd6pq647e1h5w3h251nn9x87b/walletshare/ec27e5dd291455613d351b8637597332 (1ms, unknown-length body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/lhli/wallet/85389256fa6853ccdfe973c905470419/share (2-byte body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/lhli/wallet/85389256fa6853ccdfe973c905470419/share (1ms, unknown-length body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/90qgr0hk3iyrq9sdpr4nqxxivwvs56biocvuo1nacpkz8r28ztzrfzjevnvyifqmaolfdgvptotxjxf95h66w/wallet/b38de1c312c724945e2d325b7c12e23f/share (2-byte body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/90qgr0hk3iyrq9sdpr4nqxxivwvs56biocvuo1nacpkz8r28ztzrfzjevnvyifqmaolfdgvptotxjxf95h66w/wallet/b38de1c312c724945e2d325b7c12e23f/share (1ms, unknown-length body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/walletshares
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/walletshares (2ms, unknown-length body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/wallet/9123b912411d67acf58514f4882bada4/rejectreshare (2-byte body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/wallet/9123b912411d67acf58514f4882bada4/rejectreshare (1ms, unknown-length body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/wallet/4565a375877a0c60c215177826d2a8f7/rejectreshare (2-byte body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/wallet/4565a375877a0c60c215177826d2a8f7/rejectreshare (1ms, unknown-length body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/dy7eiwb8uodh9hn7mh9nefi4aa4mas1ypxyw2we1g8dszdnxsz94z0j5fdv0rpi05y01k6umzvtacte0/walletshare/3f7d560585f3d8233a62ca4c88ce9346
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/dy7eiwb8uodh9hn7mh9nefi4aa4mas1ypxyw2we1g8dszdnxsz94z0j5fdv0rpi05y01k6umzvtacte0/walletshare/3f7d560585f3d8233a62ca4c88ce9346 (1ms, unknown-length body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/j9udqiw1xg9d832v1f1w7u3i70okz74m4r16fu8d3l0ua3fcwugfe9kb5tgy4pjw4k9n1x246fudtzvyewyc0p4t164qv0yzzv/walletshare/a40bdf1a5e87d38a05d963e23e939a94
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: <-- 401 Unauthorized http://localhost:4040/api/v2/j9udqiw1xg9d832v1f1w7u3i70okz74m4r16fu8d3l0ua3fcwugfe9kb5tgy4pjw4k9n1x246fudtzvyewyc0p4t164qv0yzzv/walletshare/a40bdf1a5e87d38a05d963e23e939a94 (1ms, unknown-length body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: --> DELETE http://localhost:4040/api/v2/ze908df84q807dltd245orr6ka3tzfcm4x6p2z0rdhj7dd7ecdtu6brs5t03qeayyaf8i2x2ukd1iapur5zkxhtuyccyime27wn5cphyddf6u0g06s96wndm4lmrcskqxau519tvgm1jyp/walletshare/a85a7c17cfdfeaffb94552df882bb486
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/ze908df84q807dltd245orr6ka3tzfcm4x6p2z0rdhj7dd7ecdtu6brs5t03qeayyaf8i2x2ukd1iapur5zkxhtuyccyime27wn5cphyddf6u0g06s96wndm4lmrcskqxau519tvgm1jyp/walletshare/a85a7c17cfdfeaffb94552df882bb486 (1ms, unknown-length body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/ikh4fekub9sxdwgha6rgwu0kk07sjhzg21spusuqzac62wgrmps5z5y8hulm/wallet/a717454501a20e8b1441eb737e79a750/requestreshare (0-byte body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/ikh4fekub9sxdwgha6rgwu0kk07sjhzg21spusuqzac62wgrmps5z5y8hulm/wallet/a717454501a20e8b1441eb737e79a750/requestreshare (1ms, unknown-length body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/p130cqlacftnh8oy4b579kv95m2efp7/wallet/f030611aa21f60da535e82859c05609e/requestreshare (0-byte body)
+10月 13, 2022 6:51:32 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/p130cqlacftnh8oy4b579kv95m2efp7/wallet/f030611aa21f60da535e82859c05609e/requestreshare (1ms, unknown-length body)
+]]></system-err>
+</testsuite>

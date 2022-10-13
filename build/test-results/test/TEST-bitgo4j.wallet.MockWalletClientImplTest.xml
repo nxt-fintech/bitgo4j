@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.wallet.MockWalletClientImplTest" tests="68" skipped="9" failures="0" errors="0" timestamp="2022-10-13T09:51:33" hostname="ishtos-MacBook-Pro.local" time="0.222">
+  <properties/>
+  <testcase name="addTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.0"/>
+  <testcase name="getBalanceReserveDataTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.004"/>
+  <testcase name="getBalanceReserveDataTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.004"/>
+  <testcase name="freezeTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.004"/>
+  <testcase name="freezeTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="freezeTest_403()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="freezeTest_404()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="getAverageFeeTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="getAverageFeeTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="makeUnspentReservationTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.004"/>
+  <testcase name="makeUnspentReservationTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.002"/>
+  <testcase name="initiateTransactionTest_202()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.014"/>
+  <testcase name="initiateTransactionTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.004"/>
+  <testcase name="getTotalRewardsDataTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.004"/>
+  <testcase name="getTotalRewardsDataTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.002"/>
+  <testcase name="getMaximumSpendableTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="getMaximumSpendableTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="getMaximumSpendableTest_404()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.002"/>
+  <testcase name="listTransfersTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.0"/>
+  <testcase name="modifyUnspentReservationTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="modifyUnspentReservationTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.002"/>
+  <testcase name="releaseUnspentReservationTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="releaseUnspentReservationTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="getSpendingLimitAndCurrentAmountSpentTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.013"/>
+  <testcase name="getSpendingLimitAndCurrentAmountSpentTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.002"/>
+  <testcase name="getSpendingLimitAndCurrentAmountSpentTest_404()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.002"/>
+  <testcase name="initiateTrustLineTransactionTest_202()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.004"/>
+  <testcase name="initiateTrustLineTransactionTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.002"/>
+  <testcase name="updateTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.009"/>
+  <testcase name="updateTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="updateTest_403()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="updateTest_404()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="createTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.004"/>
+  <testcase name="createTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.002"/>
+  <testcase name="buildTransactionTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.004"/>
+  <testcase name="buildTransactionTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="listTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="listTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="listUnspentReservationTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.002"/>
+  <testcase name="listUnspentReservationTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="getPotentialStuckTxsTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="getPotentialStuckTxsTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="getStackedBalanceDataTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="getStackedBalanceDataTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="listTotalBalancesTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.004"/>
+  <testcase name="listTotalBalancesTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="removeUserTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="removeUserTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="removeUserTest_404()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="getTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.005"/>
+  <testcase name="getTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="getTest_404()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="getUnspentsTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="getUnspentsTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="getUnspentsTest_403()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="getUnspentsTest_404()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.002"/>
+  <testcase name="sendHalfSignedTransactionTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.007"/>
+  <testcase name="sendHalfSignedTransactionTest_202()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.002"/>
+  <testcase name="sendHalfSignedTransactionTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="listByCoinTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.008"/>
+  <testcase name="listByCoinTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="listByCoinTest_404()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="deleteTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="deleteTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.002"/>
+  <testcase name="deleteTest_403()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="getByAddressTest_200()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.003"/>
+  <testcase name="getByAddressTest_400()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.002"/>
+  <testcase name="getByAddressTest_404()" classname="bitgo4j.wallet.MockWalletClientImplTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[java.io.FileNotFoundException: src/test/resources/local.properties (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at bitgo4j.TestingUtils.getProperties(TestingUtils.java:14)
+	at bitgo4j.wallet.MockWalletClientImplTest.setUp(MockWalletClientImplTest.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:128)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeAllMethod(TimeoutExtension.java:70)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllMethods$13(ClassBasedTestDescriptor.java:411)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllMethods(ClassBasedTestDescriptor.java:409)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:84)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/cspr/requiredReserve
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/cspr/requiredReserve (2ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/tcspr/requiredReserve
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/tcspr/requiredReserve (2ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/5a4zpaep8819r16bvtwxa41ilkmvqdeza5hb0ys7ole5aawt72i7phz5k2fmmwqglaorobfoaph1nkimowbpbo1zy1d457umri515t995si659nl1rshgyk9vq34casnucv3e1lwxoy2twzvruk5f8uasweizyjqhuifcp7pjf5msl6rzqsad8k/wallet/6a712e978876b8dede76524c6f0dc9ab/freeze?duration=0 (0-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/5a4zpaep8819r16bvtwxa41ilkmvqdeza5hb0ys7ole5aawt72i7phz5k2fmmwqglaorobfoaph1nkimowbpbo1zy1d457umri515t995si659nl1rshgyk9vq34casnucv3e1lwxoy2twzvruk5f8uasweizyjqhuifcp7pjf5msl6rzqsad8k/wallet/6a712e978876b8dede76524c6f0dc9ab/freeze?duration=0 (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/073qb3stmq04c9kd/wallet/c21c76468fdbc2a1f838423acac210c6/freeze?duration=0 (0-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/073qb3stmq04c9kd/wallet/c21c76468fdbc2a1f838423acac210c6/freeze?duration=0 (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/8ln4by2onrgfsk9ck2y85i708vmbvd2cqo8dz3mp7a69doqdi8u3julhw1a39gj5r9sbov30ossg5bhg253pgjrpdcb3j4hzq7r1al2rbwiu256mx5d54741heebd9nlzb5t5lq07j7pe/wallet/7e65bf000aa7437cb25f9b03cbaa71e4/freeze?duration=0 (0-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 401 Unauthorized http://localhost:4040/api/v2/8ln4by2onrgfsk9ck2y85i708vmbvd2cqo8dz3mp7a69doqdi8u3julhw1a39gj5r9sbov30ossg5bhg253pgjrpdcb3j4hzq7r1al2rbwiu256mx5d54741heebd9nlzb5t5lq07j7pe/wallet/7e65bf000aa7437cb25f9b03cbaa71e4/freeze?duration=0 (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/wonanylv4is94kxgp10v0nt5ojlpu4dqp351zoinyh6gns16xbi8q3yy7kx69ckxx5s8ciur3yqvsqtkd9umbfi6jjetgvug2hnaumpfonkny1dsi8qi7sq71jq333h1v3v0xdzrokzcyoxxbabrqef30hyn/wallet/averagefee?numBlocks=0 (0-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/wonanylv4is94kxgp10v0nt5ojlpu4dqp351zoinyh6gns16xbi8q3yy7kx69ckxx5s8ciur3yqvsqtkd9umbfi6jjetgvug2hnaumpfonkny1dsi8qi7sq71jq333h1v3v0xdzrokzcyoxxbabrqef30hyn/wallet/averagefee?numBlocks=0 (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/nziudi4vkxr9vwcdv91jh5lw8272iluvfj68549h2g1qvlxckfr5ubymb7us26mjnoc3cy71xc2/wallet/averagefee?numBlocks=0 (0-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/nziudi4vkxr9vwcdv91jh5lw8272iluvfj68549h2g1qvlxckfr5ubymb7us26mjnoc3cy71xc2/wallet/averagefee?numBlocks=0 (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/wallet/80551f25df3e2ebb4ad48aa11b246488/reservedunspents (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/wallet/80551f25df3e2ebb4ad48aa11b246488/reservedunspents (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/wallet/e41d3feb0919b2e73c638a81505198a6/reservedunspents (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/wallet/e41d3feb0919b2e73c638a81505198a6/reservedunspents (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/fmp/wallet/5a0c091b8520e1e7e07923a8f1cf65c7/tx/initiate (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 202 Accepted http://localhost:4040/api/v2/fmp/wallet/5a0c091b8520e1e7e07923a8f1cf65c7/tx/initiate (2ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/41ru0gve74e2o34l1qvyw4ehfff5cnt1ey69kl3wwegs1ysema0dmxc60xaavsck0me9he56il39rea5454g27tufsloh4yzom30p3bhwkvauoa1k0zrk8yhtbgg24htk5k49g2sqldp6i8i9zwezb9y9recma43zdyb/wallet/2f67881380f805aefcee8ed7f4ee7e14/tx/initiate (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/41ru0gve74e2o34l1qvyw4ehfff5cnt1ey69kl3wwegs1ysema0dmxc60xaavsck0me9he56il39rea5454g27tufsloh4yzom30p3bhwkvauoa1k0zrk8yhtbgg24htk5k49g2sqldp6i8i9zwezb9y9recma43zdyb/wallet/2f67881380f805aefcee8ed7f4ee7e14/tx/initiate (2ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/5cft1ld7azsfmr6icts2knno6ly7d3o076tjbdpcq2dz6wbdto8r3h1mbmk2si15kfd3yc2jdllpte58q8h8frag61ru7k6fqj0ipv0l0lsn59xm7pv17j2bpaj/wallet/473bf0ded9126e74b871a3986f30712b/balances/totalrewards
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/5cft1ld7azsfmr6icts2knno6ly7d3o076tjbdpcq2dz6wbdto8r3h1mbmk2si15kfd3yc2jdllpte58q8h8frag61ru7k6fqj0ipv0l0lsn59xm7pv17j2bpaj/wallet/473bf0ded9126e74b871a3986f30712b/balances/totalrewards (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/sy6u16jbh1h7svpukak0i3cgg7ozpa8qck7ws6ggl8hs3tuoonveo2xrxf6uxy9gcdswv4e5739vw3cnu130l8oz5emyc65lc1kpz4zy2i5puff4l5gu0yo6orcvzoft9pbg3ewsuaytub3tv6ermg2zyb/wallet/9c673b3e591d66c79aa9466f7c623194/balances/totalrewards
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/sy6u16jbh1h7svpukak0i3cgg7ozpa8qck7ws6ggl8hs3tuoonveo2xrxf6uxy9gcdswv4e5739vw3cnu130l8oz5emyc65lc1kpz4zy2i5puff4l5gu0yo6orcvzoft9pbg3ewsuaytub3tv6ermg2zyb/wallet/9c673b3e591d66c79aa9466f7c623194/balances/totalrewards (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/bwd6niuk7c3zq52dsev1vwjvkbwcnmnawsf2k89votkykg63x69opryjot8uhbtydtmvkd83zk8grzbllei9tir9o3ggddmax1y6p03yhzdsqxdt4afyrip4g7tz9lerh2kmp6y6o42eerw8mq7byjpjosuhe2hheubwpat7e55m/wallet/9cd33e0e5799bd73b679eb4c05210ac6/maximumSpendable?allTokens=false&enforceMinConfirmsForChange=false&feeRate=0&limit=0&maxFeeRate=0&maxValue=0&minConfirms=0&minHeight=0&minValue=0&numBlocks=0
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/bwd6niuk7c3zq52dsev1vwjvkbwcnmnawsf2k89votkykg63x69opryjot8uhbtydtmvkd83zk8grzbllei9tir9o3ggddmax1y6p03yhzdsqxdt4afyrip4g7tz9lerh2kmp6y6o42eerw8mq7byjpjosuhe2hheubwpat7e55m/wallet/9cd33e0e5799bd73b679eb4c05210ac6/maximumSpendable?allTokens=false&enforceMinConfirmsForChange=false&feeRate=0&limit=0&maxFeeRate=0&maxValue=0&minConfirms=0&minHeight=0&minValue=0&numBlocks=0 (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/1emaiwsmptup4cthvofi5wyqf6ghokdq2ws11ofrvib00atkn28ehzv3me6ayit1niprmf4lo78kmav0ddu3s5o6jubxy4erfcp8lkf2eqhz8nthnzu1zhqje0y2quhoamp05lf7ndv339/wallet/732f10782dbcc61cdab475dfbf363a3c/maximumSpendable?allTokens=false&enforceMinConfirmsForChange=false&feeRate=0&limit=0&maxFeeRate=0&maxValue=0&minConfirms=0&minHeight=0&minValue=0&numBlocks=0
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/1emaiwsmptup4cthvofi5wyqf6ghokdq2ws11ofrvib00atkn28ehzv3me6ayit1niprmf4lo78kmav0ddu3s5o6jubxy4erfcp8lkf2eqhz8nthnzu1zhqje0y2quhoamp05lf7ndv339/wallet/732f10782dbcc61cdab475dfbf363a3c/maximumSpendable?allTokens=false&enforceMinConfirmsForChange=false&feeRate=0&limit=0&maxFeeRate=0&maxValue=0&minConfirms=0&minHeight=0&minValue=0&numBlocks=0 (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/jl5eqtbqh5cr5gro35nfzabfm25p4z8pdmgnfds1tvcdz1hrv1z3g3iduroumtesv9qni7e768kudkhq0cz4mg/wallet/e420675430ce04cb7b135403b78536be/maximumSpendable?allTokens=false&enforceMinConfirmsForChange=false&feeRate=0&limit=0&maxFeeRate=0&maxValue=0&minConfirms=0&minHeight=0&minValue=0&numBlocks=0
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 404 Not Found http://localhost:4040/api/v2/jl5eqtbqh5cr5gro35nfzabfm25p4z8pdmgnfds1tvcdz1hrv1z3g3iduroumtesv9qni7e768kudkhq0cz4mg/wallet/e420675430ce04cb7b135403b78536be/maximumSpendable?allTokens=false&enforceMinConfirmsForChange=false&feeRate=0&limit=0&maxFeeRate=0&maxValue=0&minConfirms=0&minHeight=0&minValue=0&numBlocks=0 (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> PUT http://localhost:4040/api/v2/wallet/0dc57dee34172b8338bef3e09b9c3ccd/reservedunspents (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/wallet/0dc57dee34172b8338bef3e09b9c3ccd/reservedunspents (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> PUT http://localhost:4040/api/v2/wallet/fe22a515c25c603eac211a011933433b/reservedunspents (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/wallet/fe22a515c25c603eac211a011933433b/reservedunspents (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> DELETE http://localhost:4040/api/v2/wallet/c2b064c606695b67f60d37d3089b1720/reservedunspents?id=53danw9vgfq18g7n1f1kzybq3ot4lo2
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/wallet/c2b064c606695b67f60d37d3089b1720/reservedunspents?id=53danw9vgfq18g7n1f1kzybq3ot4lo2 (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> DELETE http://localhost:4040/api/v2/wallet/a913fc04f1a1bf09add655e733241386/reservedunspents?id=1ekiw4nqkpisvv7ezyxcl4sl8wxi71ufwo8wnq6cp8uo4auqpb367rcrhaa3u1lkf4ib177ahblq6odgzcjeufbv13pzzsc
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/wallet/a913fc04f1a1bf09add655e733241386/reservedunspents?id=1ekiw4nqkpisvv7ezyxcl4sl8wxi71ufwo8wnq6cp8uo4auqpb367rcrhaa3u1lkf4ib177ahblq6odgzcjeufbv13pzzsc (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/zoh8w47v8x4toz6l3pr5ha5xxk2q0x1yigqezqt9mv6hyqupeiewfq3cqrdrz74o6qwrguofygjtqghh0uxtlqstyr52nqqc26kkjkc4vj45rqceza06/wallet/e4b8d811da1c9660573616ec18b28a2e/spending
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/zoh8w47v8x4toz6l3pr5ha5xxk2q0x1yigqezqt9mv6hyqupeiewfq3cqrdrz74o6qwrguofygjtqghh0uxtlqstyr52nqqc26kkjkc4vj45rqceza06/wallet/e4b8d811da1c9660573616ec18b28a2e/spending (11ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/vlaszm1gp5ly72d5yq7941ej6tgdok5uegp57u4qcks7u1v5tjs1ud9ujfbl3ey351gdyh1mkacqtvdotp2hr5x07ehluq9izwq2bgkw4s9t2eqirrvt9q1fhnea7cxllepxjheh1t/wallet/67cf9ff48cd4ad8681c4f3e2386eb07b/spending
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/vlaszm1gp5ly72d5yq7941ej6tgdok5uegp57u4qcks7u1v5tjs1ud9ujfbl3ey351gdyh1mkacqtvdotp2hr5x07ehluq9izwq2bgkw4s9t2eqirrvt9q1fhnea7cxllepxjheh1t/wallet/67cf9ff48cd4ad8681c4f3e2386eb07b/spending (2ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/igh8w92ngruqvjj6a2449hks1akvqrj089d8g9dwrytgmsv18okj16xy9gz3esygwdy8djl811xnjl1tm3r5h6yty4abf9g1xsot5ybkhg6xkwhagzlypelavvkj4jjuge3cqvx7wjido5c8doavd4glcvuob0jd43nze/wallet/a04ead651b0fa639dacbd65cf9eb96d6/spending
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 404 Not Found http://localhost:4040/api/v2/igh8w92ngruqvjj6a2449hks1akvqrj089d8g9dwrytgmsv18okj16xy9gz3esygwdy8djl811xnjl1tm3r5h6yty4abf9g1xsot5ybkhg6xkwhagzlypelavvkj4jjuge3cqvx7wjido5c8doavd4glcvuob0jd43nze/wallet/a04ead651b0fa639dacbd65cf9eb96d6/spending (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/qu7wig3cv4i4d20gz8yfolucm83v9ug8l5shcdl1za8drsd84fxg2u8ngisti5kyq69srltz3e9tsypr2qodzwmawejmba0pi0trsidbjtjar2gjhw9g4ubopaos9nhplozjdx043bglge0mk2/wallet/599c2d6c230c2341d21bec1bac89a878/trustline/initiate (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 202 Accepted http://localhost:4040/api/v2/qu7wig3cv4i4d20gz8yfolucm83v9ug8l5shcdl1za8drsd84fxg2u8ngisti5kyq69srltz3e9tsypr2qodzwmawejmba0pi0trsidbjtjar2gjhw9g4ubopaos9nhplozjdx043bglge0mk2/wallet/599c2d6c230c2341d21bec1bac89a878/trustline/initiate (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/rr69sdjzeo92sypyadyc72up060fcjzpgq0um6hen3a9poztj50yu1l1eeh3zm54e43ws/wallet/2ccb7bf398df019ce2bc0a20e888258d/trustline/initiate (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/rr69sdjzeo92sypyadyc72up060fcjzpgq0um6hen3a9poztj50yu1l1eeh3zm54e43ws/wallet/2ccb7bf398df019ce2bc0a20e888258d/trustline/initiate (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> PUT http://localhost:4040/api/v2/mn8vp92m0d7l2qc4mcn1yvkkthz3o5ig6ag8h8sqi1fjolc5yglezmwwi1yvcud45uw2db3r7s437p5421aey2zbqznlne3z032lcyqkt17frid4w4hmv1x/wallet/152417061585af31a1efd656dcbc6327 (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/mn8vp92m0d7l2qc4mcn1yvkkthz3o5ig6ag8h8sqi1fjolc5yglezmwwi1yvcud45uw2db3r7s437p5421aey2zbqznlne3z032lcyqkt17frid4w4hmv1x/wallet/152417061585af31a1efd656dcbc6327 (2ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> PUT http://localhost:4040/api/v2/rwkf2j1oq0cap7ecv0993bltsqpues7xzc71tyjw2vz5kz8tbo2us213r245po69ctf2h7t2lvsxwpbk6eflrtnwfct7zh8c7e5ndccrjxtelpgwegbixanbbn7ccidy80po9vvtz11bkw3a/wallet/5c4779fb0901066d039ef529ca1bea28 (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/rwkf2j1oq0cap7ecv0993bltsqpues7xzc71tyjw2vz5kz8tbo2us213r245po69ctf2h7t2lvsxwpbk6eflrtnwfct7zh8c7e5ndccrjxtelpgwegbixanbbn7ccidy80po9vvtz11bkw3a/wallet/5c4779fb0901066d039ef529ca1bea28 (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/ffx9qeipgsnp9y0w6y2lca491jslitlj1h97gn8b33mv0cys2znbkqmav/wallet/d250dee57d3421234696c21e932d7e3a/address (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/ffx9qeipgsnp9y0w6y2lca491jslitlj1h97gn8b33mv0cys2znbkqmav/wallet/d250dee57d3421234696c21e932d7e3a/address (2ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/uq2pn/wallet/42071f678c07cbf1dc644a75d1210801/address (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/uq2pn/wallet/42071f678c07cbf1dc644a75d1210801/address (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/nekapsr2dszcjkvz2lphl45oge5raezsz0p67989iyslrvbqse2pzhv7nd7sz80vg2qgmbgwgc4qx57hsxiithdpxjqiju3ygma5aexmjyi7hxhtu36wohnyzqpqv0rl9s2kzjhckfngzb75bn9z7r9/wallet/4ef321a93fa9874d4bb0761f2bb01548/tx/build (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/nekapsr2dszcjkvz2lphl45oge5raezsz0p67989iyslrvbqse2pzhv7nd7sz80vg2qgmbgwgc4qx57hsxiithdpxjqiju3ygma5aexmjyi7hxhtu36wohnyzqpqv0rl9s2kzjhckfngzb75bn9z7r9/wallet/4ef321a93fa9874d4bb0761f2bb01548/tx/build (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/ch8frqzwg6yj372tpw22391f3rehzlmu45uzayo6yy8pohs8gzcxhz5384c1znj8iz9n877n6i0c/wallet/59dc4517669f7f68041b44ec9b556de5/tx/build (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/ch8frqzwg6yj372tpw22391f3rehzlmu45uzayo6yy8pohs8gzcxhz5384c1znj8iz9n877n6i0c/wallet/59dc4517669f7f68041b44ec9b556de5/tx/build (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/wallets?coin=&deleted=false&enterprise=&enterpriseIsNull=false&id=&labelContains=&limit=0&prevId=&type=&expandCustodialWallet=false
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/wallets?coin=&deleted=false&enterprise=&enterpriseIsNull=false&id=&labelContains=&limit=0&prevId=&type=&expandCustodialWallet=false (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/wallet/45a81ba8321e4c65d19b2b6b6556d60e/reservedunspents?prevId=&limit=0&expireTimeGt=&expireTimeLte=
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/wallet/45a81ba8321e4c65d19b2b6b6556d60e/reservedunspents?prevId=&limit=0&expireTimeGt=&expireTimeLte= (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/wallet/3185a147d34a6bc42d2b5eeb832c98fe/reservedunspents?prevId=&limit=0&expireTimeGt=&expireTimeLte=
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/wallet/3185a147d34a6bc42d2b5eeb832c98fe/reservedunspents?prevId=&limit=0&expireTimeGt=&expireTimeLte= (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/c50d3231t36yqnc68na7n06vvr7g1743vf38ir805pbjv5m1dqgh0ggw7qqh2sdtn7xa4indi2s9de34ewv0qvif4lzfeqrlc0jrvbptuoapkujex1dv/wallet/5478ee9e9f7046ac2eb656b6e3de141a/potentialStuckTxs
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/c50d3231t36yqnc68na7n06vvr7g1743vf38ir805pbjv5m1dqgh0ggw7qqh2sdtn7xa4indi2s9de34ewv0qvif4lzfeqrlc0jrvbptuoapkujex1dv/wallet/5478ee9e9f7046ac2eb656b6e3de141a/potentialStuckTxs (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/fiifxeuipzgg4bbr16mgua9fcnjxl1xojb4uawrjl1hc15btvx9n9dsclp8azhjasbqenu6xg88ykpjhhz3pqb4pr9gqrtadvzsbtssoxbr2g6u326fyuq4lidj3sk7gw/wallet/dc9b0ffd78a03d9ca4cbf6fa154d0941/potentialStuckTxs
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/fiifxeuipzgg4bbr16mgua9fcnjxl1xojb4uawrjl1hc15btvx9n9dsclp8azhjasbqenu6xg88ykpjhhz3pqb4pr9gqrtadvzsbtssoxbr2g6u326fyuq4lidj3sk7gw/wallet/dc9b0ffd78a03d9ca4cbf6fa154d0941/potentialStuckTxs (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/l7952rd9fe46daoaxbz3z9jfuggs90vag9eo6zmeaz40zq85u4nfl5lyvkrwf97r4h2f2xmockv0nd4505iphacjoud3p0pwnbkdnux9mf6js0krp6jgc0gzzt8s3ogf9kmzdyo3ruwv4ood4nj52j2g7x9ktnudhnx00wltbsbgp21/wallet/f2ce4eeb5f8b7b424b54087100fac5cf/balances/staked
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/l7952rd9fe46daoaxbz3z9jfuggs90vag9eo6zmeaz40zq85u4nfl5lyvkrwf97r4h2f2xmockv0nd4505iphacjoud3p0pwnbkdnux9mf6js0krp6jgc0gzzt8s3ogf9kmzdyo3ruwv4ood4nj52j2g7x9ktnudhnx00wltbsbgp21/wallet/f2ce4eeb5f8b7b424b54087100fac5cf/balances/staked (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/d9xme1tyjxmhbi87s535l463gbvdj4250doivsw4gx78nw9tx9o1scgeqzoono1nli0qpjbs92tp8uud3fcgmr74qmcjab96cyhkcunuo00fjmjbojel60/wallet/8574b8b402e3c67d1cbcb696fc0d4f32/balances/staked
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/d9xme1tyjxmhbi87s535l463gbvdj4250doivsw4gx78nw9tx9o1scgeqzoono1nli0qpjbs92tp8uud3fcgmr74qmcjab96cyhkcunuo00fjmjbojel60/wallet/8574b8b402e3c67d1cbcb696fc0d4f32/balances/staked (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/wallet/balances?coin=&deleted=false&enterprise=&id=&labelContains=&type=&expandCustodialWallet=false
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/wallet/balances?coin=&deleted=false&enterprise=&id=&labelContains=&type=&expandCustodialWallet=false (2ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> DELETE http://localhost:4040/api/v2/4sc7takpddvcexvkzrq6z8cezf9v7bfhn0cknj0t4ib6qbmnrp5cq4h3qif6i2hmyx3n4s64gdbz5bkmm51xyoc0dk6mfomcq21f3zdcmgurdtr4ochqe28dvy2ey387y3x5eypr9lxho1hhn/wallet/38f4eef1901fa8ae7ff29ece562f9f0c/user/9a18b1744e7f5aa0c99ddea9541c5507
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/4sc7takpddvcexvkzrq6z8cezf9v7bfhn0cknj0t4ib6qbmnrp5cq4h3qif6i2hmyx3n4s64gdbz5bkmm51xyoc0dk6mfomcq21f3zdcmgurdtr4ochqe28dvy2ey387y3x5eypr9lxho1hhn/wallet/38f4eef1901fa8ae7ff29ece562f9f0c/user/9a18b1744e7f5aa0c99ddea9541c5507 (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> DELETE http://localhost:4040/api/v2/vqh58xfqmhqrp3t4pehkuyijjhxqs4r47zcxne6bgvo06l5ucsf6x4gdbpsqo8n0in2bequ2ythgc0zdwvl16wsv82c8jarq3di8quvczomctn6cbfj4u1ju1q2zhjfmynon3lxduye373w6r8fsovlq8c930njggod0gsg5xsu2qrnsry/wallet/7d6dacc155c2779a6b25709a60a21345/user/787c94fe1a527b5a3dbb53dba6c00148
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/vqh58xfqmhqrp3t4pehkuyijjhxqs4r47zcxne6bgvo06l5ucsf6x4gdbpsqo8n0in2bequ2ythgc0zdwvl16wsv82c8jarq3di8quvczomctn6cbfj4u1ju1q2zhjfmynon3lxduye373w6r8fsovlq8c930njggod0gsg5xsu2qrnsry/wallet/7d6dacc155c2779a6b25709a60a21345/user/787c94fe1a527b5a3dbb53dba6c00148 (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/cye76bs62tyzs2ef76vrquhca9rxh23pr8o0w4kjae4v4jtpwnpdacjyzxfva9rxgkjfvdo412gjzxdomc1gtr23hrrb6rgckfen74r4byxo7mptk5scjj2pttzx7pn7qwy5rqh9llol585anb2a/wallet/4743252dad4545f28a675b9876a38575?allTokens=false
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/cye76bs62tyzs2ef76vrquhca9rxh23pr8o0w4kjae4v4jtpwnpdacjyzxfva9rxgkjfvdo412gjzxdomc1gtr23hrrb6rgckfen74r4byxo7mptk5scjj2pttzx7pn7qwy5rqh9llol585anb2a/wallet/4743252dad4545f28a675b9876a38575?allTokens=false (2ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/jdyeqgdti8qf5f5u0dmv340fhl7on4416g7s73p22jbemh2u85itfg3u52nj1omg59y8mdc4m7l3akm1qhzjn9exchdvc550jwm1vysa3y8yhypn6dz9b3q1x9u0gt2a57yhb/wallet/03bd58c20e9378773d0f714a573e111f?allTokens=false
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/jdyeqgdti8qf5f5u0dmv340fhl7on4416g7s73p22jbemh2u85itfg3u52nj1omg59y8mdc4m7l3akm1qhzjn9exchdvc550jwm1vysa3y8yhypn6dz9b3q1x9u0gt2a57yhb/wallet/03bd58c20e9378773d0f714a573e111f?allTokens=false (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/qxj6y41dudj1h9dc0mma56hhqt6olcvujg2l4kyfa54u8okssxa347fw5rehtbb52wn4y7jhy2f437vs7rn6d1ck5swqbfe7g5gom6fh49xp9azd4nl814eyrh8z26dkra518bsdqtgvvx46o2p1rtiuu2v8ojiy14trmsglvfsgt/wallet/4fb0acd76de4951cc7b049fb90f862d3/unspents?limit=0&maxValue=0&minConfirms=0&enforceMinConfirmsForChange=false&minHeight=0&minValue=0&prevId=&segwit=false
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/qxj6y41dudj1h9dc0mma56hhqt6olcvujg2l4kyfa54u8okssxa347fw5rehtbb52wn4y7jhy2f437vs7rn6d1ck5swqbfe7g5gom6fh49xp9azd4nl814eyrh8z26dkra518bsdqtgvvx46o2p1rtiuu2v8ojiy14trmsglvfsgt/wallet/4fb0acd76de4951cc7b049fb90f862d3/unspents?limit=0&maxValue=0&minConfirms=0&enforceMinConfirmsForChange=false&minHeight=0&minValue=0&prevId=&segwit=false (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/mhl2psaghs6tgqodqltfxc5evm0mja8sv5i40vqlfch4lfjfb41x40lqfd4l5eyuscaqw2cyrroguio6i829dithgujmabw73a5d28foli75b80uttoq651vkl33tnqwy6b3slsio52jpjmk6uwuhxwr49efb2qs2i15l/wallet/521b1db5df97dcb049469c6edf40d514/unspents?limit=0&maxValue=0&minConfirms=0&enforceMinConfirmsForChange=false&minHeight=0&minValue=0&prevId=&segwit=false
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/mhl2psaghs6tgqodqltfxc5evm0mja8sv5i40vqlfch4lfjfb41x40lqfd4l5eyuscaqw2cyrroguio6i829dithgujmabw73a5d28foli75b80uttoq651vkl33tnqwy6b3slsio52jpjmk6uwuhxwr49efb2qs2i15l/wallet/521b1db5df97dcb049469c6edf40d514/unspents?limit=0&maxValue=0&minConfirms=0&enforceMinConfirmsForChange=false&minHeight=0&minValue=0&prevId=&segwit=false (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/jipix9kwg0zdew60wexelo3sr46tyq92spcfiyqu11yahsfazoc52ehyh7c4jg97kdx8vb1wlk701y587rz9kwx587eanbfkcebgs5bmsgfrr6d8mmfipwbrvp13zd9szbkk9kb892qjpkrltv1e4n8zvbt214jz35y0ft23kacft/wallet/4d1c32f938d153bf6655936080148986/unspents?limit=0&maxValue=0&minConfirms=0&enforceMinConfirmsForChange=false&minHeight=0&minValue=0&prevId=&segwit=false
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 403 Forbidden http://localhost:4040/api/v2/jipix9kwg0zdew60wexelo3sr46tyq92spcfiyqu11yahsfazoc52ehyh7c4jg97kdx8vb1wlk701y587rz9kwx587eanbfkcebgs5bmsgfrr6d8mmfipwbrvp13zd9szbkk9kb892qjpkrltv1e4n8zvbt214jz35y0ft23kacft/wallet/4d1c32f938d153bf6655936080148986/unspents?limit=0&maxValue=0&minConfirms=0&enforceMinConfirmsForChange=false&minHeight=0&minValue=0&prevId=&segwit=false (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/purezysynxb2e5cihvcag73rudyiwqzs8bs6ykp965myhkkwzi5smrfyw1egzd2h963tkyh6wjcmk7s88t/wallet/9dc4085d09a05fa0376ccba612cb17cc/unspents?limit=0&maxValue=0&minConfirms=0&enforceMinConfirmsForChange=false&minHeight=0&minValue=0&prevId=&segwit=false
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 404 Not Found http://localhost:4040/api/v2/purezysynxb2e5cihvcag73rudyiwqzs8bs6ykp965myhkkwzi5smrfyw1egzd2h963tkyh6wjcmk7s88t/wallet/9dc4085d09a05fa0376ccba612cb17cc/unspents?limit=0&maxValue=0&minConfirms=0&enforceMinConfirmsForChange=false&minHeight=0&minValue=0&prevId=&segwit=false (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/jna1h834ywp6bw21jq9c8r9htdib0yzk61lewkjedwnh69ablecytp5hgc9y8xzihj6j8i98go7l9zf6ykvn8dtyuao9wlfmcd3pkjkph1mfa7300f4iy85j6omznngj6cuzsbgc/wallet/3018c80c25d30c6c192937f4c59c5088/tx/send (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/jna1h834ywp6bw21jq9c8r9htdib0yzk61lewkjedwnh69ablecytp5hgc9y8xzihj6j8i98go7l9zf6ykvn8dtyuao9wlfmcd3pkjkph1mfa7300f4iy85j6omznngj6cuzsbgc/wallet/3018c80c25d30c6c192937f4c59c5088/tx/send (2ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/uu6rqdbpg8ds7xzkkso2gjf97ikkn8q0d0na22pdqm3i4cx9e7x5330x6akyh6cpgdxpcbs21lvlkzdgabuiqui8ck93cgpq6q99l04o0gm2zk1dbhy24qjmllns8c6obq7xz9bvnnns19ac9cn0z82z4chxlnldghn6flennvrgd71/wallet/e81ef0d05a00529cd8eb0abfea061e59/tx/send (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 202 Accepted http://localhost:4040/api/v2/uu6rqdbpg8ds7xzkkso2gjf97ikkn8q0d0na22pdqm3i4cx9e7x5330x6akyh6cpgdxpcbs21lvlkzdgabuiqui8ck93cgpq6q99l04o0gm2zk1dbhy24qjmllns8c6obq7xz9bvnnns19ac9cn0z82z4chxlnldghn6flennvrgd71/wallet/e81ef0d05a00529cd8eb0abfea061e59/tx/send (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> POST http://localhost:4040/api/v2/jt45kgddd6w9e5ri3qa5xlwve6iggtg2w7dmuwp25muyto6xwcxpjzvfm5mcnml3fxsc24kkuukd07bubvpqdyg9gnu3e16d6q13cw00n2wlloh1zbbrgjn/wallet/4552044e1209f97eb552053bd8e2df92/tx/send (2-byte body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/jt45kgddd6w9e5ri3qa5xlwve6iggtg2w7dmuwp25muyto6xwcxpjzvfm5mcnml3fxsc24kkuukd07bubvpqdyg9gnu3e16d6q13cw00n2wlloh1zbbrgjn/wallet/4552044e1209f97eb552053bd8e2df92/tx/send (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/r6ed1d1g4gyoz74ggqv17d8moogieziwie1q34wy3uruv2jkq5l04r/wallet?prevId=&limit=0&allTokens=false&searchLabel=&showAllWallets=false
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/r6ed1d1g4gyoz74ggqv17d8moogieziwie1q34wy3uruv2jkq5l04r/wallet?prevId=&limit=0&allTokens=false&searchLabel=&showAllWallets=false (3ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/xuvllsd56md8hg1pl6e0nju/wallet?prevId=&limit=0&allTokens=false&searchLabel=&showAllWallets=false
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/xuvllsd56md8hg1pl6e0nju/wallet?prevId=&limit=0&allTokens=false&searchLabel=&showAllWallets=false (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> DELETE http://localhost:4040/api/v2/6rjun9ll6iwkvkzfnshhdtshy1mtljqr8ce4mfldipcc9vpn41wk5n6crvkfleq7dqp5f6axqwdkpbzru4oo3rku7c5r6ty55r0x91qkqoq9b13o99mhyy205wwqz3b2cxldho0nylkqdoaitgtc04w5ofhu65auz37468rm2vm359/wallet/bd78ec160876dd3f4330ac397d7866a9
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/6rjun9ll6iwkvkzfnshhdtshy1mtljqr8ce4mfldipcc9vpn41wk5n6crvkfleq7dqp5f6axqwdkpbzru4oo3rku7c5r6ty55r0x91qkqoq9b13o99mhyy205wwqz3b2cxldho0nylkqdoaitgtc04w5ofhu65auz37468rm2vm359/wallet/bd78ec160876dd3f4330ac397d7866a9 (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> DELETE http://localhost:4040/api/v2/ht88rv5f/wallet/d71159d39eae4bc0cdd72164493d5cab
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/ht88rv5f/wallet/d71159d39eae4bc0cdd72164493d5cab (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> DELETE http://localhost:4040/api/v2/vbtmgyzpywerfx5ddewrc09f9o01faa89lqjol7t7cevtr3pk4zcg1cmyo6kzkud19tsqmas4bhsdx1vjjpazc870rrr7jno3vc14q481h5lyivxah2eurdu863wgsvu4fvxv19r/wallet/6ea217a6ca0cdf7437fb8ae7a456376a
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 403 Forbidden http://localhost:4040/api/v2/vbtmgyzpywerfx5ddewrc09f9o01faa89lqjol7t7cevtr3pk4zcg1cmyo6kzkud19tsqmas4bhsdx1vjjpazc870rrr7jno3vc14q481h5lyivxah2eurdu863wgsvu4fvxv19r/wallet/6ea217a6ca0cdf7437fb8ae7a456376a (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/ejdbjeoap1y7dqle1g7vam19wne9uy5uocz3lx7s78jtbjfzvnuhi05sexo8locvuxzfoirht3igxjc1qz/wallet/address/1e4jm14icx5mpljxo8uf40r2oacapquomcrhbfx4ug6oefwdh5uu2xc0cw8d7g4vhydeko3xeqf6umm0jnf53fw6u4dy9djsiuhd2d
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 200 OK http://localhost:4040/api/v2/ejdbjeoap1y7dqle1g7vam19wne9uy5uocz3lx7s78jtbjfzvnuhi05sexo8locvuxzfoirht3igxjc1qz/wallet/address/1e4jm14icx5mpljxo8uf40r2oacapquomcrhbfx4ug6oefwdh5uu2xc0cw8d7g4vhydeko3xeqf6umm0jnf53fw6u4dy9djsiuhd2d (1ms, unknown-length body)
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: --> GET http://localhost:4040/api/v2/tryr3eu8np6m2ybq5fe2en6sjuhpf9d7ovwgsnj3gzs14akcsi0f5hhrgvrao17ck00a2vcnvn4l07pw6lvocps8d72wtrfv4l6a63ambdf174l0an98a63zh/wallet/address/y19t6r1z8wq2vitwnipff59fxhdk0oqop4cjoya5tk139ntraayqcro5jcew6qhe25rrcfgchc5902ohqjkmtga6fymszc7huvavo62wm8a3j5wdz2x3otas59l6ubyw5npfr2pn2s8qr1psl9cmgakplb3azrz87u4mt4ckiwi8yxobjxc2paxe6f30mbdq7xwwugw
+10月 13, 2022 6:51:33 午後 okhttp3.internal.platform.Platform log
+情報: <-- 400 Bad Request http://localhost:4040/api/v2/tryr3eu8np6m2ybq5fe2en6sjuhpf9d7ovwgsnj3gzs14akcsi0f5hhrgvrao17ck00a2vcnvn4l07pw6lvocps8d72wtrfv4l6a63ambdf174l0an98a63zh/wallet/address/y19t6r1z8wq2vitwnipff59fxhdk0oqop4cjoya5tk139ntraayqcro5jcew6qhe25rrcfgchc5902ohqjkmtga6fymszc7huvavo62wm8a3j5wdz2x3otas59l6ubyw5npfr2pn2s8qr1psl9cmgakplb3azrz87u4mt4ckiwi8yxobjxc2paxe6f30mbdq7xwwugw (1ms, unknown-length body)
+]]></system-err>
+</testsuite>

@@ -1,0 +1,54 @@
+{
+  "id" : "2e79c05b-605e-41e2-a420-9834687a3452",
+  "name" : "Send transaction",
+  "request" : {
+    "urlPath" : "/api/v2/a5vfprkgctu074gfjvz6/wallet/8224a3c845b0439f4a54dee1928e051d/sendcoins",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 202,
+    "body" : "{\n  \"transfer\" : {\n    \"date\" : \"2023-04-12T09:44:52.447954Z\",\n    \"enterprise\" : \"fa04ff9e25d793a04e91ced2196b968d\",\n    \"usd\" : 6.236271548490424E307,\n    \"type\" : \"receive\",\n    \"sequenceId\" : \"1moh\",\n    \"baseValue\" : 8301317703589401318,\n    \"usdRate\" : 5.281578038937948E307,\n    \"id\" : \"6938bc27e06823f1580b5477859fbf20\",\n    \"state\" : \"removed\",\n    \"value\" : 7063956901488076238,\n    \"feeString\" : \"xg1c9755jtue82epm0xjn27ks871ziufmvpt1502yofgul3xcfm8f4lgolei9ke4m2p\",\n    \"height\" : 1897598855652723346,\n    \"payGoFee\" : 7750211023507053945,\n    \"payGoFeeString\" : \"tvp60vdru3s86o3kzqcqu53ua71jcc7jevi8cg9st0to4v4pi5lg5jhwclrhqzzg9pge3wzjfzw9aqciibqzxf7pjnlip0j620kg8dv0cxingj6\",\n    \"wallet\" : \"63e57b7afb0a7f3727a1a54ae5e7bf76\",\n    \"txid\" : \"ss31\",\n    \"baseValueString\" : { },\n    \"history\" : [ {\n      \"date\" : \"2021-11-22T15:24:51.448568Z\",\n      \"action\" : \"created\",\n      \"comment\" : \"uxsmof05kl85f61rata0udupl1yxsuxag84tucey3xl5d7ci\",\n      \"user\" : \"e3b288710d235e247faaea7670985228\"\n    }, {\n      \"date\" : \"2023-01-10T15:30:30.448677Z\",\n      \"action\" : \"commented\",\n      \"comment\" : \"k6m8nfzqhtiezyxg7ysbf98gzagdnlkpnfbc0e3gb5f05dtiad9sf8v4kodwnpttzpfnkjemwudp7v4gcfdqtjuxejlghes25su98233vakyj3bb246k9ai6s5fe\",\n      \"user\" : \"215b11d78ed869f0c299fb6ac2439c26\"\n    }, {\n      \"date\" : \"2022-11-26T20:43:09.448777Z\",\n      \"action\" : \"commented\",\n      \"comment\" : \"qym40q35lfqu77cb4givyhdgbt5ewwyfczp9o2wwh5mwavu2sryr8qndkb0vq5time7lvxlyq6edk66q5ba0dzhdjw525c3f0ebtd90n8m4flh329anjssha9f27h49nil97kcyxrwic102v\",\n      \"user\" : \"019f6cf88f2d217390709e8afcf9f5d2\"\n    } ],\n    \"tags\" : [ \"216059be517de8cdfdffc549790af7d1\", \"2bf0fe66af24b2e7e60826a135b28355\", \"1addd1d005f0e0d9a85c05ff7f78b895\", \"06a87aaedcef257a79d8586fb0857180\", \"096c86b2bdebf7788ff97fd4e8e39152\", \"0a5cdb89e204b49225c5bec5f2dcab6a\" ],\n    \"vSize\" : 2706816984513745829,\n    \"entries\" : [ {\n      \"address\" : \"lucd6\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : false,\n      \"value\" : 3880846323805536137,\n      \"isChange\" : false,\n      \"token\" : \"dgsxt4u4g\"\n    }, {\n      \"address\" : \"a9qj2035koho41vbpeu8ides7wpf350uscpmhjb43nu3q5v9k9jxu2yqykai8k68clkfao\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : true,\n      \"value\" : 4217573270178107681,\n      \"isChange\" : false,\n      \"token\" : \"wqw1zjklpa9cy4g4x27rgybmaqmt1kw5fkvifpl29shomsr21r\"\n    } ],\n    \"valueString\" : { },\n    \"usersNotified\" : false,\n    \"heightId\" : \"45l4\",\n    \"comment\" : \"orj3ojrr9ungbmbvyey9vr0041rqf451hpc6yv171kjjdponw120pm8xp1k07it5g1aqxslloly07u4k18qmneovn0t6vktck04brai0hqy0wide948fpgvu1dis13lxumrdyasy1z8d3s64l55orax8zreub6md1\",\n    \"nSegwitInputs\" : 9166630060255196798,\n    \"coin\" : \"gcj0v2mtywd4s9akjs2kl1tnbhvettl5puvvfhyy2qhnh70uojibl8\",\n    \"coinSpecific\" : { }\n  },\n  \"tx\" : \"wo4cjr3i16r9cia9r6\",\n  \"txid\" : \"g7l4\",\n  \"status\" : \"signed\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "2e79c05b-605e-41e2-a420-9834687a3452",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.449928Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.wallet.sendcoins",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "transfer" : {
+              "allOf" : [ {
+                "description" : "New transfer"
+              }, {
+                "$ref" : "#/components/schemas/Transfer"
+              } ]
+            },
+            "txid" : {
+              "type" : "string",
+              "description" : "Unique transaction identifier"
+            },
+            "tx" : {
+              "type" : "string",
+              "description" : "Encoded transaction hex (or base64 for XLM)"
+            },
+            "status" : {
+              "type" : "string",
+              "description" : "Transfer status",
+              "enum" : [ "signed", "signed (suppressed)", "pendingApproval" ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 215
+}

@@ -1,0 +1,39 @@
+{
+  "id" : "b46c332f-19a7-40c3-911b-0a07339bf9ad",
+  "name" : "Remove wallet webhook",
+  "request" : {
+    "urlPath" : "/api/v2/ywlklcmm6hh9szrda0qig8zmkjm6f3vxfcug6pawxa6w69okki/wallet/35e9982a964849d6085b1a16d81e2d3f/webhooks",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"removed\" : 3769325282148771015\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "b46c332f-19a7-40c3-911b-0a07339bf9ad",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.38525Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.removewebhook",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "removed" : {
+              "type" : "integer",
+              "example" : 1,
+              "description" : "Number of wallet webhooks removed."
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 291
+}

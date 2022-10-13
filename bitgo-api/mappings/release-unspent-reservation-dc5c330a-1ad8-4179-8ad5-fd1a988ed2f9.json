@@ -1,0 +1,51 @@
+{
+  "id" : "dc5c330a-1ad8-4179-8ad5-fd1a988ed2f9",
+  "name" : "Release unspent reservation",
+  "request" : {
+    "urlPath": "/api/v2/wallet/a913fc04f1a1bf09add655e733241386/reservedunspents",
+    "method": "DELETE",
+    "queryParameters": {
+      "id": {
+        "equalTo": "1ekiw4nqkpisvv7ezyxcl4sl8wxi71ufwo8wnq6cp8uo4auqpb367rcrhaa3u1lkf4ib177ahblq6odgzcjeufbv13pzzsc"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"5lpl\",\n  \"context\" : { },\n  \"name\" : \"Chang Lubowitz\",\n  \"error\" : \"0o4psdsnpvzbdewjojj3toq5ov850y1li7jc46v9k89v6xdf1vee3q9aoof0cucz0cwoyuge24mtt6f\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "dc5c330a-1ad8-4179-8ad5-fd1a988ed2f9",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.360493Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.reservedunspent.delete",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 316
+}

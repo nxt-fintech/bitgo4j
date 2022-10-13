@@ -1,0 +1,46 @@
+{
+  "id" : "6bfd0726-041b-4bdc-a570-90eeffd68c25",
+  "name" : "Get a wallet share",
+  "request" : {
+    "urlPath" : "/api/v2/j9udqiw1xg9d832v1f1w7u3i70okz74m4r16fu8d3l0ua3fcwugfe9kb5tgy4pjw4k9n1x246fudtzvyewyc0p4t164qv0yzzv/walletshare/a40bdf1a5e87d38a05d963e23e939a94",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"requestId\" : \"8nc6\",\n  \"context\" : { },\n  \"name\" : \"Ms. Jackson Ferry\",\n  \"error\" : \"6hx8vhkrhbai4avivbyudqa3pdylxd3ddamteqpppiysquzy22ux89tcpx7fkxtz9lvlm032ap0bmroa3p4lbn2qxfusu5y6hqvarb82huerktr2blc4wzacolcx1rrvh04cthj4ampsxh311cq4s53kvo5c4y39blctl11tn5cf7zs7e\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "6bfd0726-041b-4bdc-a570-90eeffd68c25",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.377609Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.sharing.getshare",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 301
+}

@@ -1,0 +1,43 @@
+{
+  "id" : "90f88165-d4bd-4bc5-842e-fcff3d464dc8",
+  "name" : "Retrieve Staking Delegation Accrual History",
+  "request" : {
+    "urlPath" : "/api/staking/v1/ccn6l4nu9yxlw8rb6cdwsxyzkncxzyilxjkca5tznuo8vuauero9pbnd0tgwoa1uogqdnxp/wallets/c9u3/delegations/accruals",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"code\" : \"NotFound\",\n  \"message\" : \"Wallet not found\",\n  \"status\" : 404\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "90f88165-d4bd-4bc5-842e-fcff3d464dc8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.669291Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Delegation Accrual History",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 33
+}

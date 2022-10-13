@@ -1,0 +1,36 @@
+{
+  "id" : "12604ea2-042f-48e2-ad5f-af1de3331b2f",
+  "name" : "Create address for lightning deposits",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/dd0449e3674d32c3f855862b02f9e8f7/lightning/address",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "12604ea2-042f-48e2-ad5f-af1de3331b2f",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.504368Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.lightning.newAddress",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 171
+}

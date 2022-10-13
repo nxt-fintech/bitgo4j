@@ -1,0 +1,36 @@
+{
+  "id" : "df2de15d-356d-4015-9f40-efefde6405a6",
+  "name" : "Retrieve Staking Wallet Information For A Wallet",
+  "request" : {
+    "urlPath" : "/api/staking/v1/1pz4qhxchvdubr3xrt16wmsun2xwtqm7hiysk5soegl6qg8w7z6lajresbnqcr8kb7tz3742iyqtcp7lno1o0ope6kw8tmluhopcdwht3ukt0ioslru8mf6pgct1eiifdelkn134mjcbfb62j45tqyt7/wallets/m383",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"code\" : \"BadRequest\",\n  \"message\" : \"Bad Request\",\n  \"status\" : 400\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "df2de15d-356d-4015-9f40-efefde6405a6",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.654713Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Wallet Information For A Wallet",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/StakingError"
+          }, {
+            "$ref" : "#/components/schemas/ValidationError"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 64
+}

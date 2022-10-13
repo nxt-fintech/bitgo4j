@@ -1,0 +1,116 @@
+{
+  "id" : "056e5a3b-1ac6-4e4c-9d62-050b4e518689",
+  "name" : "Update bank account",
+  "request" : {
+    "urlPath" : "/api/v2/bankaccounts/541fdaf1b90c069073570f974642c9a2",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"owner\" : {\n    \"address3\" : \"cj0kzqyqczexbvixcngq75cq3hdwg912i3jb0g4vhme763ix5e01i45050pi77zfqe26xetuc67e21ug9zbnzmbxza0oqlqhktdv60\",\n    \"address2\" : \"3ou6wndmiuedgv0x32n412f2hgn19h89a0d4f38w56kftojkurevnejnb63lp\",\n    \"address1\" : \"cmsw8glsw9f9lo3jbkqeqxk7mq2aenk26x4uhxmib6xb3ibwtb5or5q158303s71fs9\",\n    \"name\" : \"Miss Joanna Nolan\"\n  },\n  \"address3\" : \"lowzrxxhzkne1mihl8a8yh0245fhx9xdo4t281t27jgj2mysakcadxz3bzmwxjwwfdt96m5\",\n  \"address2\" : \"5p25oyykfu2crzasgcu0ofrmh81j788ni9s052an7belvpnwzst7pz70vuk9d7gqub5krnv8juy0h2aj7064eeepj\",\n  \"address1\" : \"5wmldubyl9a2pzp5ijjgoq49ydutvgdqm3x2k67lnvuzzh1azpftpgi9erg74jk9mdqmgi389x8v22c4srtxxa84v2yjar17\",\n  \"swiftCode\" : \"XSJKHDIZ\",\n  \"accountNumber\" : \"bk7uc9k5jn6tqhzsbkfl1ov538\",\n  \"shortCountryCode\" : \"MA\",\n  \"type\" : \"null\",\n  \"routingNumber\" : \"866909631\",\n  \"name\" : \"Ms. Brendon Franecki\",\n  \"idHash\" : \"rwruw5izr3a8n8dkc8z6ag40njhqeiblwmtn4ywkyseljeht9xyx707m1j0yy42gdz2hiyd7qob1vssykvv\",\n  \"enterpriseId\" : \"1a51b942a85ef788f6051558b101f7e7\",\n  \"id\" : \"0e26ace069e4139d4a3ab2702ac65c5d\",\n  \"verificationState\" : \"pending\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "056e5a3b-1ac6-4e4c-9d62-050b4e518689",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.442638Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.bankaccount.update",
+        "schema" : {
+          "type" : "object",
+          "description" : "An external bank account.  `routingNumber` must be set for US bank accounts.\n`swiftCode` must be set for banks outside the US.\n",
+          "properties" : {
+            "accountNumber" : {
+              "description" : "Bank account number or IBAN",
+              "type" : "string",
+              "minLength" : 1,
+              "maxLength" : 34,
+              "example" : "0114584906"
+            },
+            "address1" : {
+              "type" : "string",
+              "example" : "2390 El Camino Real"
+            },
+            "address2" : {
+              "type" : "string",
+              "example" : "Palo Alto, CA 94306"
+            },
+            "address3" : {
+              "type" : "string",
+              "example" : ""
+            },
+            "enterpriseId" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "idHash" : {
+              "$ref" : "#/components/schemas/BankAccountIdHash"
+            },
+            "name" : {
+              "type" : "string",
+              "example" : "America California Bank"
+            },
+            "owner" : {
+              "type" : "object",
+              "description" : "Bank account owner",
+              "properties" : {
+                "name" : {
+                  "type" : "string",
+                  "example" : "Donald E. Knuth"
+                },
+                "address1" : {
+                  "type" : "string",
+                  "example" : "Computer Science Department"
+                },
+                "address2" : {
+                  "type" : "string",
+                  "example" : "Stanford University"
+                },
+                "address3" : {
+                  "type" : "string",
+                  "example" : "Stanford, CA 94305-9045"
+                }
+              },
+              "required" : [ "name", "address1" ]
+            },
+            "routingNumber" : {
+              "description" : "US bank routing number",
+              "type" : "string",
+              "example" : "129131673",
+              "minLength" : 9,
+              "maxLength" : 9,
+              "pattern" : "^[0-9]+$"
+            },
+            "shortCountryCode" : {
+              "$ref" : "#/components/schemas/ShortCountryCode"
+            },
+            "swiftCode" : {
+              "description" : "Bank identifier code, as specified by ISO 9362.  Used by banks outside the US.",
+              "type" : "string",
+              "example" : "DEUTDEFF500",
+              "minLength" : 8,
+              "maxLength" : 11,
+              "pattern" : "^[A-Z]{6}[0-9A-Z]{2}([0-9A-Z]{3})?$"
+            },
+            "type" : {
+              "$ref" : "#/components/schemas/BankAccountType"
+            },
+            "verificationState" : {
+              "$ref" : "#/components/schemas/BankAccountVerificationState"
+            }
+          },
+          "required" : [ "accountNumber", "address1", "shortCountryCode", "name", "owner" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 221
+}

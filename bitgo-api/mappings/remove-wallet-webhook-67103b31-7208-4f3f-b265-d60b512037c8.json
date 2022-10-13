@@ -1,0 +1,36 @@
+{
+  "id" : "67103b31-7208-4f3f-b265-d60b512037c8",
+  "name" : "Remove wallet webhook",
+  "request" : {
+    "urlPath" : "/api/v2/emxrhuz1g1tddg3lsmbmcsicl5ylsv1yjh6znuv2qzqkn1us2mf966rn1271acd6menl52dg5fhmek0xct642yrss7kezl99lt9mn386l3untj37wknyr01vdxpbat97v1nw1cc8cw3qa8xumjv1esj9s4dmoglspjxwno8m8dzlnmhfopa3vz0q5jpylql/wallet/1f467cb34ae5ec49fc134f65cef40225/webhooks",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "67103b31-7208-4f3f-b265-d60b512037c8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.385529Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.removewebhook",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 290
+}

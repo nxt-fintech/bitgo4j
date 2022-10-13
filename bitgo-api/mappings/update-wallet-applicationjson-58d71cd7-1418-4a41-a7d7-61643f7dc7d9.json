@@ -1,0 +1,161 @@
+{
+  "id" : "58d71cd7-1418-4a41-a7d7-61643f7dc7d9",
+  "name" : "Update wallet (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/mn8vp92m0d7l2qc4mcn1yvkkthz3o5ig6ag8h8sqi1fjolc5yglezmwwi1yvcud45uw2db3r7s437p5421aey2zbqznlne3z032lcyqkt17frid4w4hmv1x/wallet/152417061585af31a1efd656dcbc6327",
+    "method" : "PUT",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status": 200,
+    "body": "{\n  \"enterprise\" : \"42e8a677150de48ecddac995e136d650\",\n  \"keys\" : [ \"a645224252d05fe1833778d19b55aabd\", \"ddb06f12135fb9068e0fe83d141c252b\", \"8662fee92f964d64968bdadfc1f5dd65\", \"960f6d6758e430093af4fc8b08862502\", \"86cd899ed298bca6b0e089afdefdb85b\", \"bb91a003340df0cccd72351e9fd1729a\", \"0526103e0ffaf24e330f49e723492c29\" ],\n  \"admin\" : {\n    \"policy\" : {\n      \"date\" : \"2022-06-11T06:59:47.325304Z\",\n      \"rules\" : [ {\n        \"condition\" : {\n          \"entries\" : [ {\n            \"item\" : \"\",\n            \"type\" : \"enterpriseId\"\n          }, {\n            \"item\" : \"\",\n            \"type\" : \"enterpriseId\"\n          }, {\n            \"item\" : \"\",\n            \"type\" : \"address\"\n          }, {\n            \"item\" : \"\",\n            \"type\" : \"walletId\"\n          }, {\n            \"item\" : \"\",\n            \"type\" : \"enterpriseId\"\n          } ]\n        },\n        \"mutabilityConstraint\" : \"permanent\",\n        \"action\" : {\n          \"approvalsRequired\" : 5983266169933727006,\n          \"userIds\" : [ \"4b5fc5ad21fd3b05dc018e18821960cc\", \"0445799e997090de43f18d76e516b942\", \"f3a1460464b4b65a848f2c408e63b96a\", \"5f3ba286bcafae993cab482b784c72ee\", \"c5020257904dd3d29c7e08988fbe13ee\", \"65c9ff60b78e40f63f4f7182620f0696\" ],\n          \"type\" : \"getIdVerification\"\n        },\n        \"id\" : \"0ox0\",\n        \"type\" : \"coinAddressBlacklist\",\n        \"lockDate\" : \"2023-08-23T07:56:26.326052Z\",\n        \"coin\" : \"i7mkab4djij5n3tyvr1by4l9e6zls6gqik8klxpus3ql79r9bmvhix7ffraa9mn49ailoermmxu2s38frnblpf757311i72spoxpbab4x48tuc72mfu\"\n      }, {\n        \"condition\" : {\n          \"timeWindow\" : 2237126,\n          \"amountString\" : \"-6148460510875943112435769776874978783200205324832200012274009990041151002561241636680142682941\"\n        },\n        \"mutabilityConstraint\" : \"managed\",\n        \"action\" : {\n          \"approvalsRequired\" : 5408444089298282652,\n          \"userIds\" : [ \"9dc31e843c943b8a984a0adc86daf699\", \"30fcb5346510f34ab91d0e42ca1eeef6\", \"eab3c2544b818f51b177748b02c08b10\", \"3f92154784b9e0cd31bbba45033ab7f3\", \"39053f46e4663e952e7be81719d6ed5d\", \"e2bd971b45ac69f1c0d059c0223858b3\", \"e2fd07ef5c9d9c3167f76857164b330f\", \"c443e16a8ecac669ecf5cc042b1f2745\" ],\n          \"type\" : \"getApproval\"\n        },\n        \"id\" : \"m2t5\",\n        \"type\" : \"webhook\",\n        \"lockDate\" : \"2023-05-22T04:38:39.326577Z\",\n        \"coin\" : \"63ybjpbp7qp9n3i4i5u2r3rmbysxyrpa\"\n      }, {\n        \"condition\" : {\n          \"addresses\" : [ \"\", \"\", \"\", \"\", \"\", \"\", \"\" ]\n        },\n        \"mutabilityConstraint\" : \"managed\",\n        \"action\" : {\n          \"approvalsRequired\" : 2575766444057772610,\n          \"userIds\" : [ \"a37f4b43429c5a8352c4bf0097f5c89a\", \"a7cdc3bf627d7860fcba0868a5ef5e5f\", \"3a00a739827e975134093d7ae5f0796e\" ],\n          \"type\" : \"getFinalApproval\"\n        },\n        \"id\" : \"685b\",\n        \"type\" : \"webhook\",\n        \"lockDate\" : \"2023-06-29T19:36:51.327033Z\",\n        \"coin\" : \"v9u0frcehmmwzrof0lqi5ex8oqau7am6pez4w5kenew5k9lrqi9z1yadf1i37tidltk\"\n      }, {\n        \"condition\" : {\n          \"timeWindow\" : 2455720,\n          \"amountString\" : \"-948300161237849\"\n        },\n        \"mutabilityConstraint\" : \"permanent\",\n        \"action\" : {\n          \"approvalsRequired\" : 2685987316715489989,\n          \"userIds\" : [ \"156b6f250909f722137ff44f3acbae7f\", \"f7724e7de8c2cbefbf6d9eee14a9f63c\", \"f0ee2ff84e1f960f6e992eebf1f27f80\" ],\n          \"type\" : \"getFinalApproval\"\n        },\n        \"id\" : \"j877\",\n        \"type\" : \"webhook\",\n        \"lockDate\" : \"2022-06-28T02:55:32.327482Z\",\n        \"coin\" : \"7067g2tk18l3rdshdlblerf7svfupb672ly8h789ze0a33exn33ghbu0qay1vjcjh679mqgs2tp7sxmmrk6lafgjsn248h7xjo1z8cuneiolffdvhjkwxg2fnodapcj9p5\"\n      }, {\n        \"condition\" : {\n          \"excludeTags\" : [ \"43f27b9e4d74ea6b5ed29495a96343bf\", \"9f5b846055add0abed7f58df40502e1a\", \"032cd60946a4186b24077aadaa725dd4\", \"4dc965f5781692f2b399c6f2b4aba1f3\", \"bf181d8ee917ccae13e6ff937731d6ee\" ],\n          \"timeWindow\" : 2622072,\n          \"groupTags\" : [ \"\", \"\", \"\", \"\" ],\n          \"amountString\" : \"-7700191410866526245560945247404993191363769700039890576394505927744230268286664070971\"\n        },\n        \"mutabilityConstraint\" : \"sticky\",\n        \"action\" : {\n          \"approvalsRequired\" : 7265843149633816523,\n          \"userIds\" : [ \"97efc66e2ddb12423a2e68f02d16b7d8\" ],\n          \"type\" : \"noop\"\n        },\n        \"id\" : \"rby4\",\n        \"type\" : \"coinAddressBlacklist\",\n        \"lockDate\" : \"2022-10-28T06:03:04.328016Z\",\n        \"coin\" : \"hhe2e5tlc5y1zz0paq2vwli8esl2wdfbej4h64u874gw6eket3\"\n      }, {\n        \"condition\" : {\n          \"addresses\" : [ \"\", \"\" ]\n        },\n        \"mutabilityConstraint\" : \"managed\",\n        \"action\" : {\n          \"approvalsRequired\" : 8861926669639226264,\n          \"userIds\" : [ \"f851f01b3a87a4b64d950fbe8ad95b7b\", \"31bad1835954d4c389858f2d871e47b9\", \"e7afe89f0d27f8a9162391572cd0fa3f\", \"02b36ba21864150cc0e7d6233dbd0c60\" ],\n          \"type\" : \"getCustodianApproval\"\n        },\n        \"id\" : \"9mqg\",\n        \"type\" : \"coinAddressBlacklist\",\n        \"lockDate\" : \"2023-05-23T18:36:38.328454Z\",\n        \"coin\" : \"nh411tjpsle3grec92295maivcrphhjw789tz5mk2rvzpmzrx89bpv3m1p7td2fvs6kavbjeqmnkl0w6hb5blzanof9k952zf3eycfovherj31p0v4q4dkmcvd0y35e8jhaa4y3yx3zal5aeh7nslxae3p9bhj4fgytmdayfsoe2ls7rrb8tgfwojkjv\"\n      } ],\n      \"id\" : \"86dead8cd42d288b557bdc81e8433536\",\n      \"label\" : \"quis\",\n      \"version\" : 747581214532280887,\n      \"latest\" : true\n    }\n  },\n  \"disableTransactionNotifications\" : false,\n  \"allowBackupKeySigning\" : true,\n  \"type\" : \"hot\",\n  \"custodialWalletId\" : \"09a8a5ab50e0e4987be55ff63f96b32c\",\n  \"isCold\" : true,\n  \"freeze\" : {\n    \"expires\" : \"qjfu6d8chfsvq9hjqyg79dcpucqmjg4q2bep05w79pfxb3xxoc8n92v6vves1drhigr3fz43ldmwk45yrh8lr4wjnxsojs1t2pvhqtzdumpi6ul6zgpjwbyv6rgazuhu94uutrl1oejd69msae7rm7tor9e\",\n    \"time\" : \"2022-06-12T04:29:41.329265Z\"\n  },\n  \"id\" : \"7db28114f5ab721507c749af9e1f8deb\",\n  \"balanceString\" : \"\",\n  \"approvalsRequired\" : 235869153544250040,\n  \"receiveAddress\" : {\n    \"chain\" : 10,\n    \"address\" : \"ytw7o0kzob6r2lh0pz21cde5miezgscqbcn1ngnr6iupe379rtyn998071lmg5krv24tedymb6muoobqpk1ygf205iijgxslt0846wyks5hzsq870dh2n2a8ltxdgqoa989d3jnprxokxhjge2mhzq5eluhw0fcgn3i0pm5k25eb78hllov9r\",\n    \"wallet\" : \"ee4283ec78797f11a00c49e7573dc89f\",\n    \"balance\" : {\n      \"balance\" : 3496241607123522323,\n      \"spendableBalanceString\" : \"zrb8cm6dnrd0t6npe426zk65b95zbnd9ah51echl43o89jge5dtzwqr7syepqqouedeum7d2gi0krt2wzqh8ljasrg1c2pej50io1vsg28bkt50k67ilm264qsa97vi7xxhdajy6vm722mny4\",\n      \"totalReceived\" : 8821253755051678521,\n      \"totalSent\" : 2228697029019808089,\n      \"confirmedBalanceString\" : \"no4u2s22ecg56115qqisa9jpwmjmmqubqn0b4d5he5bhrtjaz44xw340ut504q00tegpmpajjjhn79paeltgg19resb652248m2j5nc1g6dmb4pu6ox2ittrypyshhl6bthdws753fbutzsmk546\",\n      \"updated\" : \"2023-09-05T01:34:41.329576Z\",\n      \"balanceString\" : \"e4g3wu80e0n08vq2n5v7erhwmzcukjr4rmdkfgm046nlvgw1rn3pkfrmehios7raopkhs85szy7l6hoehge0a8btppx9r57ehudgz74jz5ue8spe1iup4pq5rl1rqo78at0m64sawjc7u3sgg72y37cjkh2zrcnhmhyc6v4p\"\n    },\n    \"addressType\" : \"p2wsh\",\n    \"lastNonce\" : 4053651278853543938,\n    \"index\" : 3176224616587698055,\n    \"id\" : \"ddcfb4afa64a6e3a3a8065610f829976\",\n    \"label\" : \"recusandae\",\n    \"coin\" : \"ohdzv605dnrub5ra0zui6uj34uw42tq2cta4wmeknw6i3y0mzkr4xdw5mmk5l0v9n9p\",\n    \"coinSpecific\" : {\n      \"txlm\" : {\n        \"rootAddress\" : \"po86txp59zwn22gai4rbk58wg5ygqxma821ffb9pylxz7aibg09w24np84n9etuhxdbog8bc6yp7jn\",\n        \"memoId\" : \"-195670393119248182874461709248770467218037933119284936010151758\"\n      },\n      \"xlm\" : {\n        \"rootAddress\" : \"5y3snan3gx6ke57nj3v3a3zddbt5ngyisijlzejfgiijz0k4p4xx30g4weidkhnyj10w7tb5a0guc4ddmyawhq3juwnzv1d1u0ez9033a7cpmtui6r63kbkdh43vro6i3r4gaotociern7k8swsr9yenfz8demmxnl88rbg9zp69oeuyow\",\n        \"memoId\" : \"2349501399770220421816470587900825309494298869329397157058343645\"\n      }\n    }\n  },\n  \"recoverable\" : false,\n  \"custodialWallet\" : \"\",\n  \"label\" : \"eeeet\",\n  \"m\" : 3158376016721632917,\n  \"n\" : 7318245347769397117,\n  \"users\" : [ {\n    \"permissions\" : [ \"admin\", \"view\", \"view\", \"admin\", \"spend\", \"spend\", \"spend\" ],\n    \"user\" : \"ca72e86c99987b8eee6f02c589cf587b\"\n  }, {\n    \"permissions\" : [ \"view\", \"admin\", \"admin\", \"view\", \"view\", \"view\" ],\n    \"user\" : \"0bce928dcf88ce18b01d484801cf6c44\"\n  }, {\n    \"permissions\" : [ \"spend\", \"view\", \"admin\", \"spend\", \"admin\", \"spend\" ],\n    \"user\" : \"0852956f226c8bca7888f3ee07db6bd8\"\n  } ],\n  \"tags\" : [ \"872abcb2d4d4b4fa32bbca0ce585d951\", \"b1917f8d4db8ee7d82be86710f347d11\", \"84c18fee18c845e4fefbd613f91f0e6d\", \"4f6bce5a3ae879851e50197ff12966e0\", \"6501eb0d89ba42dbb99a47adac018b2e\", \"8fd2513dd75df9c3cebfaff40c567a37\" ],\n  \"deleted\" : true,\n  \"spendableBalanceString\" : \"\",\n  \"nodeId\" : \"515c0470b8562088f299a2bf930eea0b\",\n  \"multisigType\" : \"onchain\",\n  \"buildDefaults\" : {\n    \"minFeeRate\" : 7590496711751722630\n  },\n  \"startDate\" : \"\",\n  \"coin\" : \"v2b6yr5mp7ozwsoygs4dawabh2o6jp5b93etnv4jnkik\",\n  \"coinSpecific\" : {\n    \"homeDomain\" : \"gglvktwp3wo3zto0fc2sccmfpnw6nt3wweeeyz98pta8idpyo3f9imf85moag1v0uwkm1h49tq1rbpz901jauyu937vdxw29eqig48abcl1wt0cogsc5wk9alj9pqim6fbsajqb7bw6r5745dx0vxc8ak6yw\",\n    \"rootAddress\" : \"n8ls60gn7goxqt5xrp5gxhtbbvmjudmvouulduq81epq6ez143gqudmdbpg9nl3h59l66bk74y1nt3n160050yr429qidzr5uymhi1v701kzjz5qaykubn6gclagdi7fe1en4mjl57mcdyo7wn4jt9buh18sma68zt71lxwoegn1uoh54c41p3k28r2y40tkb4v9rqp\",\n    \"pendingChainInitialization\" : false,\n    \"creationFailure\" : [ \"39bp9get29lig2r5xpsmjw1k2bsy9fqj1q4zqkhv5xex755pz90yj6apl4cm1m2wwe9a7xkrto3uswsx7or0mudvgmot1bpybves5ygvzei4bep4a0fxspvxulyuch\", \"9bhcij22nk24fe2u6ydkin8su5szwkqskt5zq5c1v3r5ddwnc3bpkofy49kpmg9y1amcgxwzpaqtqvlwh1cqfsduzg3ncg0rgysatn99hdfyzn3iak8aywujysulj1nvsd3x36fasfy6ydc02f7pxbetya5\", \"p9zp50a4tal1vq742u35748eiuc96711pp3ut13mh3s1w3ox9haz6wbtj2r5s3y4jgh1h1s5vzdq98yguwjwcg05jmjhllzka5wxp39qny0mys96nv44jhisgk3uol6\", \"jkr979vc31u4di05gmue37xagte8bk2esxbf89wg9oa00tk5xrrvqxrhkoezzh7lam13vxyi58yjrdr4sqw36p9r0avieaoaoz6w2mp2ul6wbrnma32qsp72kvamv2tvutu3jstwsc6ky\", \"u0c4qspsmmqywixao8qaxx0rkn5kxy3pj4ow3wyid4z05810tjrswt8vceckh78blfz2pxcpex12uclodyljzwc2wihpfnnal352azlhyt6zxu1bqt0a6tmgxcwfqoatvee9dpx\" ],\n    \"stellarUsername\" : \"moises.funk\",\n    \"stellarAddress\" : \"hg65mme819ic0i4jf6mp5msrjnan7o9d5rv78jg3w6t\"\n  },\n  \"customChangeKeySignatures\" : {\n    \"backup\" : \"z2kz3h7\",\n    \"bitgo\" : \"q48f98f7u1ml2q3vrdgcfeieixoxqoj7w9m6f7h93579c3ltasnhv5asks0lk6pglbyn9swfineqeblej7enn893g313v6z7y357ojw5lsqaoe2wal9634nofjvb3io5nxlimkdi104bkdlrqk0rocff5oqppgqmkhosvc6fevlrdjd6du0c1ofija\",\n    \"user\" : \"i3szteqjhxivfg6r62p5ltzoncrshtgtr0nrc7\"\n  }\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "58d71cd7-1418-4a41-a7d7-61643f7dc7d9",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.331761Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.update",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "admin" : {
+              "type" : "object",
+              "properties" : {
+                "policy" : {
+                  "$ref" : "#/components/schemas/Policy"
+                }
+              }
+            },
+            "allowBackupKeySigning" : {
+              "type" : "boolean"
+            },
+            "approvalsRequired" : {
+              "$ref" : "#/components/schemas/ApprovalsRequired"
+            },
+            "balanceString" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/IntegerString"
+              }, {
+                "description" : "Total balance in base units (e.g. Satoshis)"
+              } ]
+            },
+            "buildDefaults" : {
+              "$ref" : "#/components/schemas/WalletBuildDefaults"
+            },
+            "coin" : {
+              "$ref" : "#/components/schemas/Coin"
+            },
+            "coinSpecific" : {
+              "$ref" : "#/components/schemas/WalletCoinSpecific"
+            },
+            "custodialWallet" : {
+              "type" : "object",
+              "description" : "The associated custodial wallet object"
+            },
+            "custodialWalletId" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "deleted" : {
+              "type" : "boolean"
+            },
+            "disableTransactionNotifications" : {
+              "type" : "boolean"
+            },
+            "enterprise" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "freeze" : {
+              "type" : "object",
+              "properties" : {
+                "time" : {
+                  "type" : "string",
+                  "format" : "dateTime"
+                },
+                "expires" : {
+                  "type" : "string",
+                  "format" : "dateTime"
+                }
+              }
+            },
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "isCold" : {
+              "type" : "boolean"
+            },
+            "keys" : {
+              "$ref" : "#/components/schemas/Keys"
+            },
+            "label" : {
+              "$ref" : "#/components/schemas/WalletLabel"
+            },
+            "m" : {
+              "$ref" : "#/components/schemas/NumSignatures"
+            },
+            "n" : {
+              "$ref" : "#/components/schemas/NumKeychains"
+            },
+            "nodeId" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "receiveAddress" : {
+              "$ref" : "#/components/schemas/Address"
+            },
+            "recoverable" : {
+              "type" : "boolean"
+            },
+            "tags" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/Id"
+              }
+            },
+            "spendableBalanceString" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/IntegerString"
+              }, {
+                "description" : "Spendable balance in base units (e.g. Satoshis)"
+              } ]
+            },
+            "startDate" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/DateTime"
+              }, {
+                "description" : "Wallet creation time"
+              } ]
+            },
+            "type" : {
+              "$ref" : "#/components/schemas/WalletTypePublic"
+            },
+            "users" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/WalletUser"
+              }
+            },
+            "customChangeKeySignatures" : {
+              "$ref" : "#/components/schemas/CustomChangeKeySignatures"
+            },
+            "multisigType" : {
+              "$ref" : "#/components/schemas/WalletMultisigType"
+            }
+          },
+          "required" : [ "approvalsRequired", "coin", "deleted", "disableTransactionNotifications", "id", "label" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 343
+}

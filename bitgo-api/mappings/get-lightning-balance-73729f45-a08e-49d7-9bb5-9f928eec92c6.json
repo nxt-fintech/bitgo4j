@@ -1,0 +1,44 @@
+{
+  "id" : "73729f45-a08e-49d7-9bb5-9f928eec92c6",
+  "name" : "Get lightning balance",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/02e6946514ec8d6cc2a66b3498455983/lightning/balance",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"balance\" : 1.7918390854873898E308,\n  \"availableBalance\" : 6.647980640390954E307\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "73729f45-a08e-49d7-9bb5-9f928eec92c6",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.507818Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.lightning.balance",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "balance" : {
+              "type" : "number",
+              "description" : "The lightning balance for the wallet in satoshis",
+              "example" : 25000000
+            },
+            "availableBalance" : {
+              "type" : "number",
+              "description" : "The available lightning balance in satoshis minus holds\nfor pending payments or withdrawals.\n",
+              "example" : 24000000
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 166
+}

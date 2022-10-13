@@ -1,0 +1,38 @@
+{
+  "id" : "c6d1e024-2575-47f9-9356-ec7041bb9f40",
+  "name" : "Get fee estimate",
+  "request" : {
+    "urlPath" : "/api/v2/l88h4z59rgqoo1dy6lc3nu7l8lnsajhvtid9igna78bl8sdrq80qnh4kplbeb6htay08mbr411vel1sv9r3mus1q4ek/tx/fee",
+    "method" : "GET"
+  },
+  "response" : {
+    "status": 200,
+    "body": "{\n  \"minGasLimit\" : \"-32853360556\",\n  \"minGasPrice\" : \"-279089976040267946251815956\",\n  \"maxGasLimit\" : \"-19294172780788967634524082578093571871028528667114572838\",\n  \"minGasIncreaseBy\" : \"-536748218379659973736855393752505415050418721533393363807247113497215790146442549993\",\n  \"eip1559\" : {\n    \"safeLowMinerTip\" : \"\",\n    \"baseFee\" : \"\",\n    \"fastestMinerTip\" : \"\",\n    \"normalMinerTip\" : \"\",\n    \"standardMinerTip\" : \"\",\n    \"ludicrousMinerTip\" : \"\",\n    \"gasUsedRatio\" : \"l7di4ivorbf9nkpu6z8lb79e55hsnkskxz39wafuk0swrt49iiazsez0rcw8wv6djnubv1th8fcue5e1b4bpetmp7v3t3am1s7beiau4gq3smh03xkcn\"\n  },\n  \"feeEstimate\" : \"-9391292447647460981833099338110249916623\",\n  \"gasLimitEstimate\" : \"243541291493321897086769714815709216557690014435699753456092301847004710208\"\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "c6d1e024-2575-47f9-9356-ec7041bb9f40",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.172309Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.tx.getfeeestimate",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/EstimateTransactionFees"
+          }, {
+            "$ref" : "#/components/schemas/EstimateTransactionFeesEth"
+          }, {
+            "$ref" : "#/components/schemas/EstimateTransactionFeesAccountCoin"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 402
+}

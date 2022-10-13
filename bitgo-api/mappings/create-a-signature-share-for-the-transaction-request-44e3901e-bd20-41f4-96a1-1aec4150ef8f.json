@@ -1,0 +1,46 @@
+{
+  "id" : "44e3901e-bd20-41f4-96a1-1aec4150ef8f",
+  "name" : "Create a signature share for the transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/28ccec253da9ebb77d38f0e13455f98d/txrequests/c79e0b5e715ea8736dc0cea0bb038273/signatureshares",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"zx86\",\n  \"context\" : { },\n  \"name\" : \"Ms. Melania Dooley\",\n  \"error\" : \"ym5svrozz66s8qh8xj74c8xgmgnqkq4854mnrq540xrt3mdhnh6v4n9c8cm5uq4hj3uthqs1x9h703z6yt3dwk83pi32je14wydis2kmuqnlfqho3c6rbcbybffy2h\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "44e3901e-bd20-41f4-96a1-1aec4150ef8f",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.411047Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.signatureshare.create",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 254
+}

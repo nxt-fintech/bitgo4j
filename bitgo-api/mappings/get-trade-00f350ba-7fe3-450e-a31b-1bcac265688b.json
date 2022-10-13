@@ -1,0 +1,75 @@
+{
+  "id" : "00f350ba-7fe3-450e-a31b-1bcac265688b",
+  "name" : "Get Trade",
+  "request" : {
+    "urlPath" : "/api/prime/trading/v1/accounts/94pa/trades/kfpr",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"product\" : \"fzu0bkdp46c5figy1lifidz9nok0mkm1rmyadhjkwoiu3o30rfqs7tslathcnyisk08j7yc7otujv2a5vfuiijia11tznmdh5yzub6g4jo0owqmv2oscx0u1cnhrhqjh2c6ka345vbcgc\",\n  \"side\" : \"buy\",\n  \"quantity\" : \"swbaw8wrsqut67hpmv3zbw9pit6p78\",\n  \"orderId\" : \"77296a82-e8d2-4955-bde8-20d3ec30f9c7\",\n  \"price\" : \"q7snieca780xcf1x070upjge81ptxudvshgkxwv9kcdgepr6ap2k78sfvib14oyya16t3wskfjmv44nf9sxoecqh10jw1sq7xmuw3udvidqlpp8hz6w4c9bxnmgszk97vqkbpivxyd18x6z0ao3qguyqvi2vy2l99nx9mpt6jlrzde4rkxec\",\n  \"settled\" : true,\n  \"id\" : \"79aa4218-cfb7-4619-8c80-514d6a3e40bc\",\n  \"time\" : \"2022-12-07T12:47:09.560582Z\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "00f350ba-7fe3-450e-a31b-1bcac265688b",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.561185Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "trade.trades.trade",
+        "schema" : {
+          "required" : [ "id", "orderId", "time", "product", "side", "price", "quantity", "settled" ],
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "string",
+              "format" : "uuid"
+            },
+            "orderId" : {
+              "type" : "string",
+              "format" : "uuid"
+            },
+            "time" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "product" : {
+              "type" : "string",
+              "description" : "Product name e.g. BTC-USD"
+            },
+            "side" : {
+              "$ref" : "#/components/schemas/Side"
+            },
+            "price" : {
+              "type" : "string",
+              "format" : "decimal"
+            },
+            "quantity" : {
+              "type" : "string",
+              "format" : "decimal"
+            },
+            "settled" : {
+              "type" : "boolean"
+            }
+          },
+          "example" : {
+            "id" : "7e0c768e-2d16-4c1e-b39d-06fa20009397",
+            "orderId" : "d50ec984-77a8-460a-b958-66f114b0de9b",
+            "time" : "2014-11-07T22:19:28.578Z",
+            "side" : "buy",
+            "product" : "BTC-USD",
+            "price" : "10000.00",
+            "quantity" : "0.01",
+            "settled" : true
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 140
+}

@@ -1,0 +1,43 @@
+{
+  "id" : "de9ea7d5-64b9-49de-b7ed-0411c0fb99ed",
+  "name" : "Retrieve Staking Wallet State Attribute Information",
+  "request" : {
+    "urlPath" : "/api/staking/v1/xhu5uc9cfxb2vmqy/wallets/z1f4/attributes",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 500,
+    "body" : "{\n  \"code\" : \"Internal_Server_Error\",\n  \"message\" : \"Database is down\",\n  \"status\" : 500\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "de9ea7d5-64b9-49de-b7ed-0411c0fb99ed",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.674187Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Wallet State Attribute Information",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 24
+}

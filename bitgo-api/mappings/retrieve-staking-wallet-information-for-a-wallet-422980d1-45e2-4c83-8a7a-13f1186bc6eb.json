@@ -1,0 +1,43 @@
+{
+  "id" : "422980d1-45e2-4c83-8a7a-13f1186bc6eb",
+  "name" : "Retrieve Staking Wallet Information For A Wallet",
+  "request" : {
+    "urlPath" : "/api/staking/v1/ogdotjuglh8ku1yfizew3xz1o7by9g9yse6dggx5r8x0r7z/wallets/2a8k",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"code\" : \"Unauthorized\",\n  \"message\" : \"Unauthorized\",\n  \"status\" : 401\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "422980d1-45e2-4c83-8a7a-13f1186bc6eb",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.65514Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Wallet Information For A Wallet",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 63
+}

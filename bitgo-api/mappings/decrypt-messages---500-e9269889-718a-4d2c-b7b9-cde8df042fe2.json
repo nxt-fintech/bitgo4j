@@ -1,0 +1,25 @@
+{
+  "id" : "e9269889-718a-4d2c-b7b9-cde8df042fe2",
+  "name" : "Decrypt messages - 500",
+  "request" : {
+    "urlPath" : "/api/v2/decrypt",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 500
+  },
+  "uuid" : "e9269889-718a-4d2c-b7b9-cde8df042fe2",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.457861Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.decrypt"
+      }
+    }
+  },
+  "insertionIndex" : 208
+}

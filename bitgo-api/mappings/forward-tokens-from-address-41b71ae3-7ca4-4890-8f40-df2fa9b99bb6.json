@@ -1,0 +1,36 @@
+{
+  "id" : "41b71ae3-7ca4-4890-8f40-df2fa9b99bb6",
+  "name" : "Forward tokens from address",
+  "request" : {
+    "urlPath" : "/api/v2/dyfh6tr5xufwedjx589v7g9bom1q18/wallet/75c0f7055d17d0337de0cb0c10ecd671/address/d970a4a0f69071607b8db63e4c1c07d1/tokenforward",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "41b71ae3-7ca4-4890-8f40-df2fa9b99bb6",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.885212Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.forwardToken",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 452
+}

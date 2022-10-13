@@ -1,0 +1,54 @@
+{
+  "id" : "f3e1e007-e199-4962-b6da-2e66b969af73",
+  "name" : "Get transfer by sequence id",
+  "request" : {
+    "urlPath" : "/api/v2/3b3ppa/wallet/b78be17d59626765a9036ce3b06e1546/transfer/sequenceId/mf13",
+    "method" : "GET"
+  },
+  "response" : {
+    "status": 206,
+    "body": "{\n  \"date\" : \"2022-06-23T16:52:39.252186Z\",\n  \"enterprise\" : \"7bc2ac764fcdce53d910fefa872f50bb\",\n  \"usd\" : 1.5455571023888584E308,\n  \"type\" : \"send\",\n  \"sequenceId\" : \"0683\",\n  \"baseValue\" : 7947283579946115001,\n  \"usdRate\" : 1.6525183630237617E308,\n  \"id\" : \"c67a371da7131d4b0f78cdbd11c0a5cc\",\n  \"state\" : \"unconfirmed\",\n  \"value\" : 3742918111594535044,\n  \"feeString\" : \"q1u97p0a3ki7gb94ye80v958mmr7jmpqg0x1a3btb1xxkp5orexdrsudgsjjrq1p239wgl62wuen0ckczn9uwawgqxq8o56zkpyt1s1rnnlt58pwlzwoiqz8f46vs7mf4iwxmayz857uhx9l6r1z2cw58y6oychxbjegl5j3m3xbacf2iymrv82g\",\n  \"height\" : 8968552644291420006,\n  \"payGoFee\" : 590008292858392040,\n  \"payGoFeeString\" : \"nju\",\n  \"wallet\" : \"04c1aac969c4d5e0f71256013d37f765\",\n  \"txid\" : \"1pq8\",\n  \"baseValueString\" : \"\",\n  \"history\" : [ {\n    \"date\" : \"2023-07-23T01:17:31.252953Z\",\n    \"action\" : \"created\",\n    \"comment\" : \"it3j0x989658rprp7i464hhl798ps70nnej02p3pvwpn6lypjb5x62ytgupondnsrlmxku0kc69mlqpdoxmu5xspz1k6lvr4b2fzak4mqbskaqti3z3aijb20iwwt16u1umybj2cnkaz2zvaythx5oy14wld3neu\",\n    \"user\" : \"941ca7ed9ecaf4b9cfea13a93aa71305\"\n  }, {\n    \"date\" : \"2022-08-07T02:15:33.25311Z\",\n    \"action\" : \"removed\",\n    \"comment\" : \"jswof3nii62aw41av7xfk4qs5wzvt2am4el0lflf9x1512rngyzm9q1uklmafnv1rf2nl0lfsx9dtm35rfj2hzf2l97be3gn65yhmebjgil1wvbs325swqqw01j\",\n    \"user\" : \"2d4c20ed80fb44ed4576babf94553577\"\n  } ],\n  \"confirmations\" : 2826079563276847928,\n  \"tags\" : [ \"f4ff5a390785fbbf400195530f8d77ae\", \"4f48d63b3c9d091b40b83c1b1626863b\", \"1b6b47fb5ed6ccacf9a643b7f85413f7\", \"0164e69265901ac296ab9e673f9d0c75\" ],\n  \"vSize\" : 643368052595860378,\n  \"entries\" : [ {\n    \"address\" : \"g5ey1dmvodpf1dxdkwcqru5vqk5zm2ktfl91zwcr9hwo7o224j5o1uumn443e8ioesme3fakn9wrndv0qcqcrd2femkeso3ro3c7l59nhts0biqoxaynatgk8h49yzw1hx3s5ffu7uuuxct3adygoq8jg810t984anpym2yjm\",\n    \"wallet\" : \"\",\n    \"valueString\" : \"\",\n    \"isPayGo\" : true,\n    \"value\" : 6010952882046173315,\n    \"isChange\" : false,\n    \"token\" : \"ax8fdi0eiysa3j4tudlxa4gxrd7ogmcoabua55cb610g0wjf9eztei8nvit1o0bal1zntpoz3po02wzle1j40qovi6la9nlrsmb2ywjwhtwkufs1d61gc7b1gwr0h3x3cj6nrcqto99qz\"\n  }, {\n    \"address\" : \"jhsi7o9v521n2i5zc491hogr9ysr5cna2fzd71v4hwym989n73lli6f6vl1jr0axm1iyel8b2ilh0z97p8wxoqsuobjd07pzu6mm5i1xx1xzfsu35mfejwmg1g88j1te0n08uq1nl8ohatnvoawn841bmqpq4vc4dj2ez7ox\",\n    \"wallet\" : \"\",\n    \"valueString\" : \"\",\n    \"isPayGo\" : true,\n    \"value\" : 6855852859547540818,\n    \"isChange\" : true,\n    \"token\" : \"3wtmr46bqwyrgiz04p1v6pxj9yn4d0mslm0trbv84zamn2eyr8ge4pcz8vk5ffbc9thm4535gbpfsmlto1jpe27ailunolojcm4w6vidi6banbbkwyjnquiu8ah56y4sx8djqhzda4ok5ksleautyuqziotvwhs5vvogr6zu\"\n  }, {\n    \"address\" : \"l4r4dq527v10bb8utps7gao24eeob0det704eykwpyudcr1j7jz4pvam2wb3rer6xdjkx1ifwk1sfgibqfm8jpq92cd6rnhzs3v8ek83brnoup1d6foqw\",\n    \"wallet\" : \"\",\n    \"valueString\" : \"\",\n    \"isPayGo\" : true,\n    \"value\" : 6637238684584103616,\n    \"isChange\" : true,\n    \"token\" : \"zlbn1oafgdun8wqxf8rfdb0catml6ss7jop4rlupvyka92mqra4bzx86csuo9v7gg6qo4hk7tyu2ng10mlidthsy5ybuq03sy62dldfa81471m3w8ctciusdfpfjiskowutldsoytxet7c35xwxivs3uh2\"\n  } ],\n  \"valueString\" : \"\",\n  \"usersNotified\" : false,\n  \"heightId\" : \"2ga3\",\n  \"comment\" : \"yzeiy4kcs9q2ch81xgilftbg141v2njxdqvuoplwaaui8sb158oxv2kge876lrq90rwjjui2apnsuc6ikbwz6litusngozoyvudgo8\",\n  \"nSegwitInputs\" : 8181478558176014407,\n  \"coin\" : \"5bca1ggfirg9t9f\",\n  \"coinSpecific\" : \"\"\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "f3e1e007-e199-4962-b6da-2e66b969af73",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.254649Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.gettransferbysequenceid",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/Transfer"
+          }, {
+            "type" : "object",
+            "properties" : {
+              "confirmations" : {
+                "type" : "integer",
+                "description" : "The number of blocks that have been confirmed since this Transfer's block was confirmed"
+              },
+              "entries" : {
+                "type" : "array",
+                "items" : {
+                  "type" : "object",
+                  "properties" : {
+                    "label" : {
+                      "type" : "string",
+                      "description" : "If this address was labeled by the user, this is the label"
+                    }
+                  }
+                }
+              }
+            }
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 363
+}

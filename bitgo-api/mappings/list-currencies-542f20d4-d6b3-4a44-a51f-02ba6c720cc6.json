@@ -1,0 +1,38 @@
+{
+  "id" : "542f20d4-d6b3-4a44-a51f-02ba6c720cc6",
+  "name" : "List Currencies",
+  "request" : {
+    "urlPath" : "/api/prime/trading/v1/accounts/z0v3/currencies",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"data\" : [ {\n    \"symbol\" : \"sa6e16x5iukid6zzs83i83h6d7i1fetn18cdf1jwksnlmk\",\n    \"name\" : \"Porfirio McDermott\",\n    \"id\" : \"e197ac48-ea06-4c03-a7aa-50215d0c2cc6\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "542f20d4-d6b3-4a44-a51f-02ba6c720cc6",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.561922Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "trade.currencies",
+        "schema" : {
+          "required" : [ "data" ],
+          "type" : "object",
+          "properties" : {
+            "data" : {
+              "$ref" : "#/components/schemas/Currencies"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 139
+}

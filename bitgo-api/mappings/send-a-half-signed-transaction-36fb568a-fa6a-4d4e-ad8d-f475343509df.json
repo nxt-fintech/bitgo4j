@@ -1,0 +1,38 @@
+{
+  "id" : "36fb568a-fa6a-4d4e-ad8d-f475343509df",
+  "name" : "Send a half-signed transaction",
+  "request" : {
+    "urlPath" : "/api/v2/jt45kgddd6w9e5ri3qa5xlwve6iggtg2w7dmuwp25muyto6xwcxpjzvfm5mcnml3fxsc24kkuukd07bubvpqdyg9gnu3e16d6q13cw00n2wlloh1zbbrgjn/wallet/4552044e1209f97eb552053bd8e2df92/tx/send",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "36fb568a-fa6a-4d4e-ad8d-f475343509df",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.429567Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.tx.send",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          }, {
+            "$ref" : "#/components/schemas/InvalidOFAC"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 232
+}

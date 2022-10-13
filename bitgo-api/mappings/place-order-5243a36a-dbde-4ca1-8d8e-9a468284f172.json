@@ -1,0 +1,124 @@
+{
+  "id" : "5243a36a-dbde-4ca1-8d8e-9a468284f172",
+  "name" : "Place Order",
+  "request" : {
+    "urlPath" : "/api/prime/trading/v1/accounts/98y0/orders",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"product\" : \"jf2g03t5n3cn9jtsv456vbzkahqgqc7v77xmwn4abai67rhwnkvufu3b7oz4ovrwg02oaq\",\n  \"side\" : \"sell\",\n  \"quantity\" : \"9cfnwel3hbkuhpimja0rd2yoq9cj105qoiw8k8q1wm6kuxprt3v8uxkedo8q36oav15ty8chimp560yefhki5skotvnry70p4l3khkfyl8xa0vl7jan0p52dlot9tm7tt1deymf3nnjnhuxq\",\n  \"clientOrderId\" : \"d20q\",\n  \"scheduledDate\" : \"2022-10-19T00:36:55.554216Z\",\n  \"settleDate\" : \"2023-01-02T13:12:31.554262Z\",\n  \"creationDate\" : \"2022-01-05T07:40:05.554865Z\",\n  \"type\" : \"lk8bh5sj7ms\",\n  \"filledQuantity\" : \"vsz50czi1cmaek68qvqx8dre48oxr63up7tb801opw2tdvwt6tw1zw36fmc78qzblef8iv1u4xvgte7ghuso1c7g5gvw2xfddy2cx6xa0wpil9clw5y9vdpywtyhkxvzyax2mq3j68pg3zzg1nie8jynrd3p3na4l683pm1h\",\n  \"quantityCurrency\" : \"STD\",\n  \"lastFillDate\" : \"2021-12-05T03:28:33.55524Z\",\n  \"accountId\" : \"wiqx\",\n  \"fundingType\" : \"margin\",\n  \"completionDate\" : \"2021-11-15T22:07:39.555746Z\",\n  \"id\" : \"97c42d0b-6aba-4a49-9073-1010c488e134\",\n  \"time\" : \"2022-01-03T22:41:51.555781Z\",\n  \"averagePrice\" : \"wkfws6iqxodbraraspwijefqc0cqw7b2d4g\",\n  \"status\" : \"error\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "5243a36a-dbde-4ca1-8d8e-9a468284f172",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.556589Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "trade.orders.add",
+        "schema" : {
+          "required" : [ "id", "accountId", "time", "creationDate", "completionDate", "type", "fundingType", "status", "product", "side", "quantity", "quantityCurrency", "filledQuantity", "averagePrice" ],
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "string",
+              "format" : "uuid"
+            },
+            "accountId" : {
+              "type" : "string"
+            },
+            "clientOrderId" : {
+              "type" : "string"
+            },
+            "time" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "DEPRECATED"
+            },
+            "creationDate" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "scheduledDate" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "lastFillDate" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "completionDate" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "settleDate" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "type" : {
+              "type" : "string"
+            },
+            "fundingType" : {
+              "type" : "string",
+              "enum" : [ "margin", "funded" ]
+            },
+            "status" : {
+              "$ref" : "#/components/schemas/OrderStatus"
+            },
+            "product" : {
+              "type" : "string",
+              "description" : "Product name e.g. BTC-USD"
+            },
+            "side" : {
+              "$ref" : "#/components/schemas/Side"
+            },
+            "quantity" : {
+              "type" : "string",
+              "format" : "decimal",
+              "description" : "The specified quantity."
+            },
+            "quantityCurrency" : {
+              "type" : "string",
+              "description" : "The specified quantity currency."
+            },
+            "filledQuantity" : {
+              "type" : "string",
+              "format" : "decimal"
+            },
+            "averagePrice" : {
+              "type" : "string",
+              "format" : "decimal"
+            }
+          },
+          "example" : {
+            "id" : "67fd640c-cb6c-4218-80ae-49e79ec15646",
+            "accountId" : "60e740e7898f7d00064d43769a73dc48",
+            "clientOrderId" : "myorderid1",
+            "time" : "2021-08-05T18:05:23.431Z",
+            "creationDate" : "2021-08-05T18:05:22.286Z",
+            "scheduledDate" : "2021-08-05T18:05:00.000Z",
+            "lastFillDate" : "2021-08-05T18:05:23.302Z",
+            "completionDate" : "2021-08-05T18:05:23.431Z",
+            "settleDate" : "2021-08-05T20:00:00.000Z",
+            "fundingType" : "funded",
+            "type" : "market",
+            "status" : "completed",
+            "product" : "BTC-USD",
+            "side" : "buy",
+            "quantity" : "1000",
+            "quantityCurrency" : "USD",
+            "filledQuantity" : "0.02457152",
+            "averagePrice" : "40697.32"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 144
+}

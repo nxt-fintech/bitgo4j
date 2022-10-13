@@ -1,0 +1,116 @@
+{
+  "id" : "1b485f4c-109c-4a19-a9de-1215c68aca28",
+  "name" : "Delete bank account",
+  "request" : {
+    "urlPath" : "/api/v2/bankaccounts/c9b40e89e74d5ce67088821e4ba4290e",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"owner\" : {\n    \"address3\" : \"c15du9lnugcbttcli3nv7wz8db9fquppuwsxzoi5f1q797hkzrkyecnkjaoxvkjyzrseu5qijgzmv2ipg2c0lehirmz50u1dm3xyiem1oshckskijo8q0ocz8xa2ls4esbrss5qq8ji5vcvfq56omi12kglkn3fku1bgzm1a8vlgsmioewg236\",\n    \"address2\" : \"vrubmmzg6hlqb6vfd00ln72hsf3sysj1jfqrtit6hlpx1o83rj6w7288dbjyj5zzi5u520prh1unyjhn46xrim675w2to9tqouq1dmf2u8w05p1aqynhiju3r28hr7\",\n    \"address1\" : \"7rsmzcrnsbw1nn12a4m5bd4x3uz64mohjuwl658jqznkhxxdfzypfkb5xrou87g1uqefnfm18yveohjvisml6vbut86f0w7age4ryrn1u26bigxhxg8lxdq7e4wh1xpti7ct2gbs08svjh33hf6qz\",\n    \"name\" : \"Mr. Darron Kiehn\"\n  },\n  \"address3\" : \"o1aw\",\n  \"address2\" : \"h74fwmsuh1j8l0blgoscuww0nr8djk238z2zvrpp7lw6u7lgybe782zzrdro3jeuyd1rxzrug1c1f2ezw4zwqp62trmjl8sh2cpapjzwoufc36t4ze8\",\n  \"address1\" : \"6dz7x5vtnibbkchk54zmf2icgcqawk1n2ux86dkgsbru75v3sug1hc3ralwwzkpy00zyaq36cys0a9nn22z0hvlawndvw\",\n  \"swiftCode\" : \"BARGUJ1VTGU\",\n  \"accountNumber\" : \"bbbqwp8oz0pdvajr230yx\",\n  \"shortCountryCode\" : \"VE\",\n  \"type\" : \"sen\",\n  \"routingNumber\" : \"015040983\",\n  \"name\" : \"Thaddeus Donnelly\",\n  \"idHash\" : \"zerdjceh4yjldoxpxqxyu6d591vkgca6kropktjiv9p6qk3ldcahkyiss1t10utdpv675otb7e1tt5rss0vutnb3h8sm628t6c5o2rtu30rop16nse6hg0z3myme9oncvl9qv4mlxrrlih43iz4ypmj5xzlluf7lfuywho1qr7d0\",\n  \"enterpriseId\" : \"4c97959f8c0d9c0f285dc8b405735378\",\n  \"id\" : \"fc2d2a464ef3bf2c66341e32738333c5\",\n  \"verificationState\" : \"rejected\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "1b485f4c-109c-4a19-a9de-1215c68aca28",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.443953Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.bankaccount.delete",
+        "schema" : {
+          "type" : "object",
+          "description" : "An external bank account.  `routingNumber` must be set for US bank accounts.\n`swiftCode` must be set for banks outside the US.\n",
+          "properties" : {
+            "accountNumber" : {
+              "description" : "Bank account number or IBAN",
+              "type" : "string",
+              "minLength" : 1,
+              "maxLength" : 34,
+              "example" : "0114584906"
+            },
+            "address1" : {
+              "type" : "string",
+              "example" : "2390 El Camino Real"
+            },
+            "address2" : {
+              "type" : "string",
+              "example" : "Palo Alto, CA 94306"
+            },
+            "address3" : {
+              "type" : "string",
+              "example" : ""
+            },
+            "enterpriseId" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "idHash" : {
+              "$ref" : "#/components/schemas/BankAccountIdHash"
+            },
+            "name" : {
+              "type" : "string",
+              "example" : "America California Bank"
+            },
+            "owner" : {
+              "type" : "object",
+              "description" : "Bank account owner",
+              "properties" : {
+                "name" : {
+                  "type" : "string",
+                  "example" : "Donald E. Knuth"
+                },
+                "address1" : {
+                  "type" : "string",
+                  "example" : "Computer Science Department"
+                },
+                "address2" : {
+                  "type" : "string",
+                  "example" : "Stanford University"
+                },
+                "address3" : {
+                  "type" : "string",
+                  "example" : "Stanford, CA 94305-9045"
+                }
+              },
+              "required" : [ "name", "address1" ]
+            },
+            "routingNumber" : {
+              "description" : "US bank routing number",
+              "type" : "string",
+              "example" : "129131673",
+              "minLength" : 9,
+              "maxLength" : 9,
+              "pattern" : "^[0-9]+$"
+            },
+            "shortCountryCode" : {
+              "$ref" : "#/components/schemas/ShortCountryCode"
+            },
+            "swiftCode" : {
+              "description" : "Bank identifier code, as specified by ISO 9362.  Used by banks outside the US.",
+              "type" : "string",
+              "example" : "DEUTDEFF500",
+              "minLength" : 8,
+              "maxLength" : 11,
+              "pattern" : "^[A-Z]{6}[0-9A-Z]{2}([0-9A-Z]{3})?$"
+            },
+            "type" : {
+              "$ref" : "#/components/schemas/BankAccountType"
+            },
+            "verificationState" : {
+              "$ref" : "#/components/schemas/BankAccountVerificationState"
+            }
+          },
+          "required" : [ "accountNumber", "address1", "shortCountryCode", "name", "owner" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 219
+}

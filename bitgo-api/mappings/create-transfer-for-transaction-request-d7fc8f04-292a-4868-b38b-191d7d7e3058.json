@@ -1,0 +1,216 @@
+{
+  "id" : "d7fc8f04-292a-4868-b38b-191d7d7e3058",
+  "name" : "Create transfer for transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/31bea4fe6e85809fd9fd425634589e68/txrequests/752d33c52b7b2d83a7e5772eaebf46ee/transfers",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"date\" : \"2023-06-13T04:42:07.419469Z\",\n  \"enterprise\" : \"e4b46d98925d8f29fc310014884efb34\",\n  \"usd\" : 5.297816884751058E307,\n  \"type\" : \"receive\",\n  \"sequenceId\" : \"88wz\",\n  \"baseValue\" : 1927091607642213553,\n  \"usdRate\" : 1.198480111949864E308,\n  \"id\" : \"5d9e2db4b7e86c9a198ef5de304841fc\",\n  \"state\" : \"signed\",\n  \"value\" : 64148132590818785,\n  \"feeString\" : \"5agq4dmd5a0ntw89ge7zoezm\",\n  \"height\" : 8058497691630292002,\n  \"payGoFee\" : 65868113773866720,\n  \"payGoFeeString\" : \"wo59nhm01bfc2y86fr8l4hhju31nquhrvd8a0h7f6kxc1iiqq2uixv90dyt4ddchmyvnnafjwykad4c7unrccoenbttgqcmf5xyhe53vgft5cliixwzpzlsdksor\",\n  \"wallet\" : \"4eeda61934babcd1409be7dcb0c97f33\",\n  \"txid\" : \"41e9\",\n  \"baseValueString\" : { },\n  \"history\" : [ {\n    \"date\" : \"2023-09-05T08:52:56.420277Z\",\n    \"action\" : \"approved\",\n    \"comment\" : \"847joszr1az3041xyhzp6mlsbalaz997s9iug0g68j7j9o1lq0\",\n    \"user\" : \"9f6e41d9395997a1a7acf65650073862\"\n  }, {\n    \"date\" : \"2022-08-11T14:30:52.420384Z\",\n    \"action\" : \"removed\",\n    \"comment\" : \"zffzkrqbdjflvbk7stb2z5t2863vt7l10n23nxd82x\",\n    \"user\" : \"684522637eefecf14a7adb2ebf53ad6e\"\n  }, {\n    \"date\" : \"2023-02-07T17:27:42.420477Z\",\n    \"action\" : \"rejected\",\n    \"comment\" : \"zliaz1oz1s1j0ao28qqq9e7785vp45hpnatdg85ftxiy1jiac5m678nbzu6rkvkf2t0usyc0xogsrdhbo4ttnt1u1cwt25c1594x5tbupi35eomi6b7llnuzhjmdv60tbw479sogl301a0h6p9zd5rze3j\",\n    \"user\" : \"0f1ac3fd764d9acda4964bbcb56120bf\"\n  }, {\n    \"date\" : \"2022-05-17T02:40:11.42057Z\",\n    \"action\" : \"failed\",\n    \"comment\" : \"1japva2otw\",\n    \"user\" : \"5309d1b2d0ba3899405c2060b4c2f296\"\n  }, {\n    \"date\" : \"2021-10-26T09:11:53.420661Z\",\n    \"action\" : \"failed\",\n    \"comment\" : \"utp9m2ku5xlitjb3aqwjp40byke2u11g07p90b9q2ttjqhl28f9orcht7nseb0c8n4ko3ufbc7yr89d7wd44obnpfnxfs7mulpv32fjs0c8x8lehyhg027ccijnww86o059ppis8cixulrz8261scqu4cop24h91q438qi5pd0bq041cw53wspivikgwn7765j\",\n    \"user\" : \"3d2f6e11f3643d12e1d88349df5e7241\"\n  }, {\n    \"date\" : \"2023-03-23T08:04:55.420754Z\",\n    \"action\" : \"unconfirmed\",\n    \"comment\" : \"epvxlab4fdy\",\n    \"user\" : \"2c7e0751ebaf86a136590328effd28f6\"\n  } ],\n  \"tags\" : [ \"c0be9d3ea9eeb0d1bf44a0c82eea79af\", \"cad64cc75f9cc343fce3b6e2ab45724f\" ],\n  \"vSize\" : 747873373912741849,\n  \"entries\" : [ {\n    \"address\" : \"vkvxtk4w388ia2rkocuews2jq70s1xzsov53358hnjuvhf71j2jv2x9msea\",\n    \"wallet\" : { },\n    \"valueString\" : { },\n    \"isPayGo\" : false,\n    \"value\" : 7566191941934224222,\n    \"isChange\" : true,\n    \"token\" : \"ma61zvgwt0t24dtvmmt3s23osrmfbguaqnojby2u8cuiyw4d8p67nj8oav8h92kr6iky4xzuion7gx9ezqaxjp38zdrjzats1mpt\"\n  }, {\n    \"address\" : \"3bps641fl2fn48idoajeh4bbuvjq54hugfh5t1myb8jzythupc6caqoraoqk7b0tc8x954xdpi1ghmhbijobqxf2vjw0d3lqzc6cu7stif05urgurl9o40r6tfxfelxn86csfwy0v8tjpzc\",\n    \"wallet\" : { },\n    \"valueString\" : { },\n    \"isPayGo\" : false,\n    \"value\" : 4184207386293400518,\n    \"isChange\" : false,\n    \"token\" : \"7eknyj54k7n13potwfa8slj9pioeisteg5avx9kb6yw9ee91rkyo00u1p1ruqtpzt08qnlbm139\"\n  }, {\n    \"address\" : \"yfo6a02pvw4fil5uhfs06f8kebxfaw7p2cbqykhml335ixnbnajgqdssjxevrhn3imvnomuluea0lvd8s7fii8kbon4elydbcjvcnmbyhe133lz8sh7aqyuc16kbvpkh3r5oks7mi3r4v6xkvtcou1l8r5mo61ms4499\",\n    \"wallet\" : { },\n    \"valueString\" : { },\n    \"isPayGo\" : false,\n    \"value\" : 1545381433203472475,\n    \"isChange\" : false,\n    \"token\" : \"50qe8bs5c6h7e19xuzd0c466hnits9uai8lt3384n7bmh73lsden3odizb89xgdrlm3bj4itk76bl8440f4clgc\"\n  }, {\n    \"address\" : \"3h5nel5awel0zjlfwp595789672kzzmhdgbq695n3l6g1uiinqs30w8f4pjcmliqi0jskdyvqy4c9vma\",\n    \"wallet\" : { },\n    \"valueString\" : { },\n    \"isPayGo\" : true,\n    \"value\" : 8759285153186890446,\n    \"isChange\" : true,\n    \"token\" : \"un6quv8114yl4x0x3ui9u2lhyi5kdi2rr1ca22jcht3u999h0wvp8y3zdo83nk4vrlu7bk4d9y1z526tkzetiztpbc9muwkkqsbnrl01xm4ycyucx7\"\n  }, {\n    \"address\" : \"uql2g9lfou065gdduihqecw182hizg0h77qti8772nnok41q5dkgyvt094kusitnmj2b8\",\n    \"wallet\" : { },\n    \"valueString\" : { },\n    \"isPayGo\" : true,\n    \"value\" : 3404034510038489588,\n    \"isChange\" : false,\n    \"token\" : \"zczkee4sfh7sbzw1kon2cus6eq9kp7r0ayprq4mpal6r5tdt3gpu7a2nhy41ruzyy9wwy40u4e6sj62uur94bst5eel2urrnlsalk42nlgq384h35wau8rf5hliweyhabtj8ozcjlhzvtlcthw92qb6e07s1dszgut0zg9mmdb96u7hzpfxlw4j\"\n  } ],\n  \"valueString\" : { },\n  \"usersNotified\" : true,\n  \"heightId\" : \"j3s6\",\n  \"comment\" : \"cw7k0i2azybe5gerahxsvvugqu76wcbi8t7qphj0myu0y6qqvud6o6uoii3ufk65i0kh792e0y4krmd6mksjx88xmzv3uipqxydpsqyfsqbzqh1yq7l7dia\",\n  \"nSegwitInputs\" : 3397341310144267737,\n  \"coin\" : \"piuz9xxyozvi6qu9xmcdy7nk0prw1bplzk7uo42nj0vdo9y0yj8xfrx8ktegbglr0c3xobq1h890nxa1brnfr4ct6z0zajivzetn649rnctbtgqq1c86iaccopjpgkqigjnxk3c4snv40n\",\n  \"coinSpecific\" : { }\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d7fc8f04-292a-4868-b38b-191d7d7e3058",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.422838Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.transfers.create",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "coin" : {
+              "$ref" : "#/components/schemas/Coin"
+            },
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "wallet" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "enterprise" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "txid" : {
+              "$ref" : "#/components/schemas/TxId"
+            },
+            "height" : {
+              "type" : "integer",
+              "description" : "The height of the block this Transfer was confirmed in (999999999 if unconfirmed)"
+            },
+            "heightId" : {
+              "type" : "string",
+              "description" : "The unique height id of the block"
+            },
+            "date" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "The date this Transfer was last updated"
+            },
+            "type" : {
+              "type" : "string",
+              "description" : "Defines whether or not this Transfer was sent or received by the user",
+              "enum" : [ "send", "receive" ]
+            },
+            "value" : {
+              "type" : "integer",
+              "description" : "The total value (in base units) sent by this Transfer (may be approximate for ETH and other coins where amounts in base units can exceed 2^53 - 1)"
+            },
+            "valueString" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/IntegerString"
+              }, {
+                "description" : "The total value (in base units) sent by this Transfer represented as a String"
+              } ]
+            },
+            "baseValue" : {
+              "type" : "integer",
+              "description" : "The value (in base units) sent by this Transfer without network fees, represented"
+            },
+            "baseValueString" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/IntegerString"
+              }, {
+                "description" : "The value (in base units) sent by this Transfer without network fees, represented as a String"
+              } ]
+            },
+            "feeString" : {
+              "type" : "string",
+              "description" : "The Transfer's fee (in base units) represented as a String"
+            },
+            "payGoFee" : {
+              "type" : "integer",
+              "description" : "The Transfer's BitGo fee (in base units)"
+            },
+            "payGoFeeString" : {
+              "type" : "string",
+              "description" : "The Transfer's BitGo fee (in base units) represented as a String"
+            },
+            "usd" : {
+              "type" : "number",
+              "description" : "The amount of USD of this Transfer (will be negative if it's a send)"
+            },
+            "usdRate" : {
+              "type" : "number",
+              "description" : "The USD price at the time this Transfer was created"
+            },
+            "state" : {
+              "$ref" : "#/components/schemas/TransferState"
+            },
+            "tags" : {
+              "type" : "array",
+              "description" : "The tags to be used on this Transfer (used in Policies)",
+              "items" : {
+                "$ref" : "#/components/schemas/Id"
+              }
+            },
+            "history" : {
+              "type" : "array",
+              "description" : "An audit log of events that have happened to the Transfer during its lifecycle",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "date" : {
+                    "type" : "string",
+                    "format" : "date-time",
+                    "description" : "The date of this history object"
+                  },
+                  "user" : {
+                    "$ref" : "#/components/schemas/Id"
+                  },
+                  "action" : {
+                    "type" : "string",
+                    "enum" : [ "created", "signed", "unconfirmed", "confirmed", "approved", "commented", "removed", "failed", "rejected" ]
+                  },
+                  "comment" : {
+                    "type" : "string",
+                    "description" : "If this history object is of action `commented`, this is the comment from the user"
+                  }
+                }
+              }
+            },
+            "comment" : {
+              "type" : "string",
+              "description" : "A comment from the user"
+            },
+            "vSize" : {
+              "type" : "integer",
+              "description" : "The size of the transaction"
+            },
+            "nSegwitInputs" : {
+              "type" : "integer",
+              "description" : "DEPRECATED. Number of segwit inputs on the transfer.",
+              "x-internal" : true
+            },
+            "coinSpecific" : {
+              "type" : "object",
+              "description" : "Transfer fields specific to each coin type"
+            },
+            "sequenceId" : {
+              "type" : "string",
+              "description" : "A `sequenceId` is a unique and arbitrary wallet identifier applied to transfers and transactions at creation. It is optional but highly recommended. With a `sequenceId` you can easily reference transfers and transactions&mdash;for example, to safely retry sending. Because the system only confirms one send request per `sequenceId` (and fails all subsequent attempts), you can retry sending without the risk of double spending. The `sequenceId` is only visible to users on the wallet and is not shared publicly.\n"
+            },
+            "entries" : {
+              "type" : "array",
+              "description" : "An array of objects describing the change in address balances made as a result of this Transfer",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "address" : {
+                    "type" : "string",
+                    "description" : "An address affected by this Transfer",
+                    "example" : "2NAUwNgXaoFj2VVnSEvNLGuez8CfdU2UCMZ"
+                  },
+                  "wallet" : {
+                    "allOf" : [ {
+                      "$ref" : "#/components/schemas/Id"
+                    }, {
+                      "description" : "Only visible when the user has access to the wallet"
+                    } ]
+                  },
+                  "value" : {
+                    "type" : "integer",
+                    "description" : "The change (in base units) in the address's balance"
+                  },
+                  "valueString" : {
+                    "allOf" : [ {
+                      "$ref" : "#/components/schemas/IntegerString"
+                    }, {
+                      "description" : "The change (in base units) in the address's balance represented as a String"
+                    } ]
+                  },
+                  "isChange" : {
+                    "type" : "boolean",
+                    "description" : "True if this address is a change address (only exists for UTXO coins) and if this is a `sent` Transfer"
+                  },
+                  "isPayGo" : {
+                    "type" : "boolean",
+                    "description" : "True if this address is the BitGo PayGo wallet"
+                  },
+                  "token" : {
+                    "type" : "string",
+                    "description" : "If this is a token entry, the token's symbol",
+                    "example" : "omg"
+                  }
+                }
+              },
+              "required" : [ "address", "valueString" ]
+            },
+            "usersNotified" : {
+              "type" : "boolean",
+              "description" : "Whether BitGo already sent notifications to the users of the transfer wallet"
+            }
+          },
+          "required" : [ "id", "coin", "wallet", "txid", "height", "date", "confirmations", "type", "valueString", "usd", "usdRate", "state", "tags", "history", "comment", "coinSpecific" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 240
+}

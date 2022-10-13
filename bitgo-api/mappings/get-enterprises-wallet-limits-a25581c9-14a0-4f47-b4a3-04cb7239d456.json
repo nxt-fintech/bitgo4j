@@ -1,0 +1,35 @@
+{
+  "id" : "a25581c9-14a0-4f47-b4a3-04cb7239d456",
+  "name" : "Get enterprise's wallet limits",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/53f57c618ac90dc535d3ceee33809059/walletLimits",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"isCustodial\" : false,\n  \"limit\" : 3943306241302291174,\n  \"count\" : 1105202447993685002,\n  \"coin\" : \"j67y0z4foryt9vgtg0l63q3ox8rqyn5xwydxj9nc8jzabaig6lftqod\"\n}, {\n  \"isCustodial\" : true,\n  \"limit\" : 4155710608157535863,\n  \"count\" : 6827107970721113869,\n  \"coin\" : \"m3a2eg79wruj8vtc45qmjnxisnngepskmoexpehw1fre335723vzjp935djpk85unhg4jzkgbqbeyyfowy8aof53yshltaiue0int4uwk60nxjo2kifqjrxhjd5spurnlqnrusld2xdh2vbyfzrt8o\"\n}, {\n  \"isCustodial\" : true,\n  \"limit\" : 6165699801297637088,\n  \"count\" : 1104140717821426550,\n  \"coin\" : \"rpm47rimjlh1u5h7l291tv9w7790jz3y8jcgo2vkyo3a6aenxc6f1cb3m8gt56ggb3dealgak3v3fnt41s\"\n}, {\n  \"isCustodial\" : true,\n  \"limit\" : 4614794408256477228,\n  \"count\" : 22794491327135242,\n  \"coin\" : \"ei92ful4xck4258vl5l34ik09dtsd1yxbe8skjehj5k68ovj6nu8xnq9cu\"\n}, {\n  \"isCustodial\" : false,\n  \"limit\" : 3086118839442234184,\n  \"count\" : 6356872186271595501,\n  \"coin\" : \"57tvtbl7d2hfi8rtc78yuos17h1gdeuokijyzuchgqkuelsix4pd5z3nvfwdccqu4e86w3kd1k\"\n}, {\n  \"isCustodial\" : true,\n  \"limit\" : 686249082973123054,\n  \"count\" : 4669232712709945560,\n  \"coin\" : \"ae7vx9v735czh9x58cy5q7l8up6btcngl6nz9pljwn\"\n}, {\n  \"isCustodial\" : true,\n  \"limit\" : 2506306072960071721,\n  \"count\" : 3421474866286323562,\n  \"coin\" : \"5c3nvn6cuq706ldz476b003kbwo1phqp811wjoclxdwuqv4qh6ie0g\"\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "a25581c9-14a0-4f47-b4a3-04cb7239d456",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.08162Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.walletLimits",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/components/schemas/WalletLimit"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 411
+}

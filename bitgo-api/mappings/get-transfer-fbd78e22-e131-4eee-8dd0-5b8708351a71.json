@@ -1,0 +1,38 @@
+{
+  "id" : "fbd78e22-e131-4eee-8dd0-5b8708351a71",
+  "name" : "Get transfer",
+  "request" : {
+    "urlPath" : "/api/v2/ze46q3zwt42wpmvlv2gaugy1dobo5iv3i24i291pyz9aou9b6jgmx106f7dgjbeb2yw44ifa2jwhb99mlnxhs2csuyqc7mc1xe3el1eaxpsbd9iloton8pqzm8yo1ol66761pkopjl9e7po9wngooltkomgk07hpqx1t7jakd650lxbdkap4ubrmf3d4dp4msg/wallet/afba0a0aa5ab3c2e96774890df454515/transfer/bt80bjdnp8lgb2kchzdle8myklactajph0jamox2yh5js6ok82xl1v2u9hr5k8aftz2hrxyxv6zuwyyinldcwnoh0sg9l4o6pt4lx239d",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "fbd78e22-e131-4eee-8dd0-5b8708351a71",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.246681Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.gettransfer",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidTransferId"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 365
+}

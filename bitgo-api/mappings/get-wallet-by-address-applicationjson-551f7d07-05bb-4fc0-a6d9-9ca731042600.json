@@ -1,0 +1,51 @@
+{
+  "id" : "551f7d07-05bb-4fc0-a6d9-9ca731042600",
+  "name" : "Get wallet by address (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/tryr3eu8np6m2ybq5fe2en6sjuhpf9d7ovwgsnj3gzs14akcsi0f5hhrgvrao17ck00a2vcnvn4l07pw6lvocps8d72wtrfv4l6a63ambdf174l0an98a63zh/wallet/address/y19t6r1z8wq2vitwnipff59fxhdk0oqop4cjoya5tk139ntraayqcro5jcew6qhe25rrcfgchc5902ohqjkmtga6fymszc7huvavo62wm8a3j5wdz2x3otas59l6ubyw5npfr2pn2s8qr1psl9cmgakplb3azrz87u4mt4ckiwi8yxobjxc2paxe6f30mbdq7xwwugw",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"1548\",\n  \"context\" : { },\n  \"name\" : \"Miss Dot Koelpin\",\n  \"error\" : \"y64gkhxlimnryvkaosmaueu14h9ufm9b04rirqher9rsfrokeavlyl7p6xh\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "551f7d07-05bb-4fc0-a6d9-9ca731042600",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.316994Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.getwalletbyaddress",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 348
+}

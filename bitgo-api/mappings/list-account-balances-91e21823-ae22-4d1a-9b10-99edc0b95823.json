@@ -1,0 +1,35 @@
+{
+  "id" : "91e21823-ae22-4d1a-9b10-99edc0b95823",
+  "name" : "List Account Balances",
+  "request" : {
+    "urlPath" : "/api/portfolio/v1/portfolios/e5xd/accounts/745l/balances",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"marketPrice\" : \"uxadi0bw3hyd9ap4hsbk3tt712ujlsc8kav0udpnmjdhj6u6p0stdqhsr2lni\",\n  \"quantity\" : \"vff6qc43uapsibczaao4oxlj2hiy2xje1jx254czobw6qozojb632o7jt8s4juf8bn5tjzckec9haycjy20kstv2joi611\",\n  \"instrument_symbol\" : \"t2x2nbii2ys2k7kpm29dx\",\n  \"marketValue\" : \"xapmxqrzynhulpedn1rk3hforlsvk1s3ohj589y6jvm826vuu3vukbztfltydwxbs4yjk5k17c9ggith94nmbld840vfx2pu6w06723t5zrvbckl3orn0a6llvye\",\n  \"instrument_id\" : \"6d5b8342-1116-4922-a6b5-9ce0cfd056a8\"\n}, {\n  \"marketPrice\" : \"wt6jbs1knh8bp6hkdwowgh552lx3mcukvp350jl8wdkp5pp9wit9ai33pvwhl6k3mq4cwnb0j7icxqt7wuc9hbyoztemuscahgqjz9o26ud0wqtr3yh4cvnrxnf3tfto97kag5kkjg2\",\n  \"quantity\" : \"tt9jdka1zs0n4a9tquayfqcoca43g9ru64lhjjg5pm910m2t60fi5172aqvqe4ipm8prjg55n0nwwho626qo52081t10th0k4g4\",\n  \"instrument_symbol\" : \"gtl1c8qxo15gvqvkn59u354pa2ts1amwawjusfo1g5tcdrgo4464fctcciyayjknsotvx45gx6gpmhcobpt82iuphh6ms8n9hrqjcdj8e4cxe4vxnrhxpvzo3fns2zjydy6r9qorvz9islxacc784y8c78wch38ica6df4ulwb6vp02xyzywfwpvac2jpqqsa\",\n  \"marketValue\" : \"cftx024uyrzxccctjzwpp0wsjwirlsnetyyo3gwvm5kodm3n5qck2jhmkhuh7d44hj3k10hc6bdllv42myjmq922qhy3eeys\",\n  \"instrument_id\" : \"1a4a1afc-e8de-491f-b96f-73f4a5db105f\"\n}, {\n  \"marketPrice\" : \"dvsqfnai0mx2gxxhqc2umlsufyx14nl7mzkog541kc57mucl36stgpow9mdflr8j0bditv30lucns9bq3xtxoumgbo6jt9omf7vywd0to5o46kezim1a8u8kkhbd7boim6a8bcpmhla415603sgcq7oa5xwkf4xpa1lms6hm7tyn\",\n  \"quantity\" : \"n0d848xf64j03ms4mllrrt7zxgdy3buby2cejq15sdg0e041flph5x4fsc3bbkd72pwphqsp19vuy1chrtmjp63331d3nnwocyhaj9w2rxdza6m\",\n  \"instrument_symbol\" : \"9ddb5sq53\",\n  \"marketValue\" : \"dcv5gxxq5ffe3v2h4kuc2mnc6au1r8po3gm2dzbknpvdw0arvxii6a6e1scwvy7kkz9yeuxb9814hwvvunx6otp8zdqhukh9fpkya6c1j74g7muuva5y3w1e6fj0bnifxn7xptw0ofzwknikseoxord7f0ymzvbm\",\n  \"instrument_id\" : \"f4034c10-3f19-4d6f-956e-244288dd7ef2\"\n}, {\n  \"marketPrice\" : \"bkd62punqw78i1y3fxh4wt6nutjpky3p5qd652r3nqw2yhiyf36bumqg199d11kfkxd6284lsed53vo0uqt5qh4qjfi0nyrborgy3ltfw9vda6v6roa4tnpwg56zk0qc8mzypje3h75zz6nsz9gujakbqkx4y080twuv8msav\",\n  \"quantity\" : \"l1sz3fm\",\n  \"instrument_symbol\" : \"uwoksh4qef9aumgh62hegx3d9m75r7ox34zyx4nhh1jbaep9cwn92jx4fyy04ueunwxlm2jxytxtc890b1e48hpfum0vg1xc6v2gxdle073mkxo13qa9dyhcvsfydlo67ji01u89xsdcyu0x7qntg\",\n  \"marketValue\" : \"jeivwz1og7z8c93j2a6w7fmjaz9yqa0r6nqit1hnhx7y1ri7uyukqctewyypwmrhszk62mr2d7p7uypwm0ylqhcvb0jxhw26wfzk98g30677vn3izbiymjcwctxun747bfodgm30nqzi8kcfdo9fcdbi\",\n  \"instrument_id\" : \"442d7f30-9113-4a7b-910e-dd3c06dc62a4\"\n}, {\n  \"marketPrice\" : \"o2xffk3y7fhcgxzdptwvzl6e1c057dc3pswswq86wxfn5hgboywjcg5t3x5kvzlkbod8vijg7hwi9pappqcoefv972vl8pawk69751qnuc49s834nq0e1u4enfnbftb7p9v\",\n  \"quantity\" : \"k4lyt0actocungj0hzabydmpju14tgua01hc6f0t4djvq35pz7wnz4jw007ds9b4poi0t\",\n  \"instrument_symbol\" : \"r5zi44kdudn10u0a0zqj2vv8pqe0ro2uahifcur633v8mbsnzeqellve71wo068ci74urwunqwc33wpai8sh02x0lxwymc9p9jhrzn0m5kko3obfsrqtgd8slmqdxiku9qqe3z1h631yid92zm19g21ftcieisazrr1cc0rhi5p7t4vm5tp6wrj6m0kbzpatftrd\",\n  \"marketValue\" : \"azbdtzxscdg29qxisou2cw3rj4khcdhucyxd2gkzg5oogczsn202y7zva868epj54lsepiroc6ydpv62v7d6athjz0l0sqb6s8oppxtofmrukyt3zq5dfi1cy0d2a3f57xhjqhrf7759yau4ldghyb2pn0sgkcdlk\",\n  \"instrument_id\" : \"79252508-18a7-4efd-91d8-88bd3e27f7b3\"\n}, {\n  \"marketPrice\" : \"dgvzz8je2u28bomdwjdejb4z2g3xhxfxjp2mo5vcophamfmj\",\n  \"quantity\" : \"rdk37ebo58i3k29v8k1gvy0c1gbindffahr16zuvdz537174vqk4fppz5zyhm8ohu3ivacmavcwr3tih0pc6pm\",\n  \"instrument_symbol\" : \"zxfcqjhicm1f32096iebwfvwhk6f2g6h2llmeerlu0x6uixi4v39v9551fr7es97trm21g70llt40mf3xnxkuzev4m593hwgc2xlp0q6dk3ndp8w3f\",\n  \"marketValue\" : \"l3c0ysw6j58zm5iemfobiqnz46d2b4bahud5i3vlqy47hbdd9ovic2i0lineink8k6gnjs26h2fyezdz9bq06xaybq42qxwrym3bqjg9r3sp9p9p22rrj3080aur2468fjs5yei7aa427imy0386rpnvydcyu3vjbdalsrkcpr1yvd4fr\",\n  \"instrument_id\" : \"60bda2e1-b672-4626-b113-ac0d6ea2e3e2\"\n}, {\n  \"marketPrice\" : \"t9xzdlz45r4xjorxt44lyjftxidn2p22ljjh2aywug0k53upphop8g147yhu1he3j\",\n  \"quantity\" : \"mp2wdro86a9ik3j1q1bhn6xzw0mcznnbpmfay4ghcxrxq2qswggeh28q19iflts1noo4vvwew9aqc7e9o2ni4gd7kum200uuifeipnac9cz8u714u3c8\",\n  \"instrument_symbol\" : \"fsdp3ied6nx8m6oq4zm0jvbzzbvr\",\n  \"marketValue\" : \"pb55b7uxyf0m5yx9tb4ukcn0hiin8ycatplndmr82wb3le3ql89uu5p1nbgshwjm6y8jj1ogmaps48y6zj62sgq6vsclcuh7vgugfq6jspg3\",\n  \"instrument_id\" : \"ef72c305-c1b5-46ed-98b9-fef92bc7e53a\"\n}, {\n  \"marketPrice\" : \"akpr0h1o46yvh5hqimvw2g14q9d5zzayh5ofeth\",\n  \"quantity\" : \"q1ku9y9t9z4jzmp26ipv07rbp7j1\",\n  \"instrument_symbol\" : \"feqdm7ube1yse0s\",\n  \"marketValue\" : \"9va0svr2dkey8ip5r4mrnebtos2qlmiy4d09cxedl5hrhd0hkzhyj6n6zjakspnhdg\",\n  \"instrument_id\" : \"20cbfba3-63bc-4e8d-8e68-ce121b15ae0e\"\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "91e21823-ae22-4d1a-9b10-99edc0b95823",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.533233Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "portfolio.account.balances",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/components/schemas/InstrumentBalance"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 153
+}

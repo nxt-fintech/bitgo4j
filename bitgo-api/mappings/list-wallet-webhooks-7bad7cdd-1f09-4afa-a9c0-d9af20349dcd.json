@@ -1,0 +1,53 @@
+{
+  "id" : "7bad7cdd-1f09-4afa-a9c0-d9af20349dcd",
+  "name" : "List wallet webhooks",
+  "request" : {
+    "urlPath" : "/api/v2/zteqqwgzgzibi6nme9bynio8vc9b3fmoivvd8sucmlojne88xcl3qfltvfe28f8by0md/wallet/ead984639a209e6b85ce69711faef0e2/webhooks",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"webhooks\" : [ {\n    \"walletId\" : \"8cdf648167c0b8e97d161c707f870f67\",\n    \"created\" : \"2022-03-19T15:11:41.381243Z\",\n    \"failingSince\" : \"2023-08-23T20:25:32.381279Z\",\n    \"allToken\" : true,\n    \"label\" : \"deserunt\",\n    \"type\" : \"lowFee\",\n    \"version\" : 2697212829406170849,\n    \"numConfirmations\" : 3964154659836637500,\n    \"url\" : \"https://web.example.mocklab.io/275311\",\n    \"successiveFailedAttempts\" : 6091750593201312613,\n    \"lastAttempt\" : \"2023-08-22T23:33:18.381262Z\",\n    \"id\" : \"befec1be26322f7b3a26afc55bc98aaf\",\n    \"state\" : \"suspended\",\n    \"coin\" : \"7cxna6swdtyj3tnm1\"\n  }, {\n    \"walletId\" : \"9fe8a61a234adab8abd5d0b6ddef5453\",\n    \"created\" : \"2023-01-11T20:02:30.381758Z\",\n    \"failingSince\" : \"2022-02-12T19:00:17.381799Z\",\n    \"allToken\" : false,\n    \"label\" : \"soluta\",\n    \"type\" : \"transaction\",\n    \"version\" : 2710379345326762268,\n    \"numConfirmations\" : 7702114802055172389,\n    \"url\" : \"https://web.example.mocklab.io/834324\",\n    \"successiveFailedAttempts\" : 5869747727728736469,\n    \"lastAttempt\" : \"2022-02-11T05:55:23.381785Z\",\n    \"id\" : \"79656afb1b8fc8b6eb330055db27755c\",\n    \"state\" : \"suspended\",\n    \"coin\" : \"ka7pzbfjnu4zu6mfa1uajttdueb0arnaqv\"\n  }, {\n    \"walletId\" : \"4d8cd4edd1af9cddc30f5923f75ca2d5\",\n    \"created\" : \"2023-02-26T05:50:52.382164Z\",\n    \"failingSince\" : \"2022-04-14T23:34:26.38219Z\",\n    \"allToken\" : true,\n    \"label\" : \"dolor\",\n    \"type\" : \"address_confirmation\",\n    \"version\" : 2412143068171500414,\n    \"numConfirmations\" : 5104290402938580663,\n    \"url\" : \"https://web.example.mocklab.io/149103\",\n    \"successiveFailedAttempts\" : 8674225553027268679,\n    \"lastAttempt\" : \"2023-03-16T10:09:04.382179Z\",\n    \"id\" : \"fee4a605e3c2d6534394e1177bbabe72\",\n    \"state\" : \"suspended\",\n    \"coin\" : \"l4k9aqvnjxy1awv1eoyhkxqq2v4ng819chbj1uwnlb80cp4jdj8lgdlfpjvlpfn1uq5j6oru5apmcygaf22i6771p5k0lkte75dpvbakxx2rhom8ezpajbt72aulcw8ylkkuptikosa0ovpqxo0kbohvowpeo6m3dpl9zevc23qsxqj3\"\n  }, {\n    \"walletId\" : \"3a1151810a9a0b4bd21495d781e0b94a\",\n    \"created\" : \"2022-08-12T22:38:28.38255Z\",\n    \"failingSince\" : \"2022-03-23T15:33:25.382579Z\",\n    \"allToken\" : true,\n    \"label\" : \"uuuut\",\n    \"type\" : \"transaction\",\n    \"version\" : 5329519641543940661,\n    \"numConfirmations\" : 8414339836371185203,\n    \"url\" : \"https://web.example.mocklab.io/544197\",\n    \"successiveFailedAttempts\" : 914728946831517287,\n    \"lastAttempt\" : \"2023-07-20T04:21:33.382565Z\",\n    \"id\" : \"49100eb39f1507055e38400836103c2b\",\n    \"state\" : \"active\",\n    \"coin\" : \"kv5janvmkufrr90vret11hv18p5bwwvzid8gfkhsgpf7n74kwwv8fxbimcvsmurhc4elipc1cx43da7mbg7449i1a6nkq3x9wy8mjv1vpusw2rdteu86tii2kj\"\n  }, {\n    \"walletId\" : \"59921a8a0ff3dd549238867ade983d2c\",\n    \"created\" : \"2022-10-19T07:46:04.382942Z\",\n    \"failingSince\" : \"2023-03-16T13:38:39.382968Z\",\n    \"allToken\" : true,\n    \"label\" : \"ratione\",\n    \"type\" : \"lowFee\",\n    \"version\" : 8234508819048389208,\n    \"numConfirmations\" : 5848213586615250537,\n    \"url\" : \"https://web.example.mocklab.io/898056\",\n    \"successiveFailedAttempts\" : 8289332907941218254,\n    \"lastAttempt\" : \"2022-04-09T05:02:36.382956Z\",\n    \"id\" : \"13334c42fc06b50e73c550797a5bc91a\",\n    \"state\" : \"active\",\n    \"coin\" : \"j1b2wk63s3ob15lyjjqmskvzkz989ghy6k43yqh3w6gruy5w60p4p6g0zht90du53wpesq9vbwt7b8gy5glyw1dvb4z0i3syx9i5p3795c2qma67z7b\"\n  }, {\n    \"walletId\" : \"96ae9611e2bd43588dbffe8a34ca441c\",\n    \"created\" : \"2023-03-21T18:45:12.383316Z\",\n    \"failingSince\" : \"2022-09-15T10:13:21.383343Z\",\n    \"allToken\" : true,\n    \"label\" : \"voluptatibus\",\n    \"type\" : \"transaction\",\n    \"version\" : 7213703282215951365,\n    \"numConfirmations\" : 3732926596902875077,\n    \"url\" : \"https://web.example.mocklab.io/448330\",\n    \"successiveFailedAttempts\" : 1608099096016821937,\n    \"lastAttempt\" : \"2023-09-23T06:41:40.383331Z\",\n    \"id\" : \"266d38e27a0f56003cd77b06d1878753\",\n    \"state\" : \"suspended\",\n    \"coin\" : \"ezv1cfsg0jp0zd7crqy5i5ykoadip18tg6lpj2a29s5qdh7rt5y60ef3s0q90w6i6np0xakc7n3oif5fton8ybrkunb28w4ygh77d5zlaepx6ew0mz3ww12mjqehqt6puaz83zeiu\"\n  }, {\n    \"walletId\" : \"4f7861f2791281e3f72487216ccda72c\",\n    \"created\" : \"2021-10-19T00:31:26.383813Z\",\n    \"failingSince\" : \"2021-10-26T14:19:21.383839Z\",\n    \"allToken\" : false,\n    \"label\" : \"eeeet\",\n    \"type\" : \"pendingapproval\",\n    \"version\" : 7437418236790217496,\n    \"numConfirmations\" : 82264762024422414,\n    \"url\" : \"https://web.example.mocklab.io/032212\",\n    \"successiveFailedAttempts\" : 3141382206042406015,\n    \"lastAttempt\" : \"2022-09-17T10:12:13.383828Z\",\n    \"id\" : \"0dc6ff220604dd289177cdaf47266668\",\n    \"state\" : \"active\",\n    \"coin\" : \"luu\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "7bad7cdd-1f09-4afa-a9c0-d9af20349dcd",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.384617Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.listwebhooks",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "webhooks" : {
+              "type" : "array",
+              "items" : {
+                "allOf" : [ {
+                  "$ref" : "#/components/schemas/Webhook"
+                }, {
+                  "type" : "object",
+                  "properties" : {
+                    "walletId" : {
+                      "$ref" : "#/components/schemas/Id"
+                    },
+                    "allToken" : {
+                      "type" : "boolean",
+                      "example" : false
+                    }
+                  }
+                } ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 293
+}

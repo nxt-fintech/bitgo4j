@@ -1,0 +1,46 @@
+{
+  "id" : "a5f92b8f-435e-4d13-9de4-f568094a0dfd",
+  "name" : "Delete wallet",
+  "request" : {
+    "urlPath" : "/api/v2/vbtmgyzpywerfx5ddewrc09f9o01faa89lqjol7t7cevtr3pk4zcg1cmyo6kzkud19tsqmas4bhsdx1vjjpazc870rrr7jno3vc14q481h5lyivxah2eurdu863wgsvu4fvxv19r/wallet/6ea217a6ca0cdf7437fb8ae7a456376a",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 403,
+    "body" : "{\n  \"requestId\" : \"es44\",\n  \"context\" : { },\n  \"name\" : \"Marquerite Miller\",\n  \"error\" : \"lsl1py5n94lpx502punjb8d8rfjwjknhk2aeppcbvg8j68mq4um3geltrvy1nn\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "a5f92b8f-435e-4d13-9de4-f568094a0dfd",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.339905Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.remove",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 337
+}

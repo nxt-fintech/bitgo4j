@@ -1,0 +1,51 @@
+{
+  "id" : "4bfaab57-2dba-4bd4-b84e-ceeb241e1b33",
+  "name" : "Get key (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/re269hq7ujepgvtjljzwfvjmocevvogysolgnz8hwvgwcjw8s29opacp31xhuaowqtycydgexfguffuc3778er8hb8tccykk2exmmeltqz9gysdkyc51hiye8au9fx3d15raen2sxigswdy8ue76rmonrx5ecumoy08xznptoyngnbcj5m2vwv0de691utul5hea8j4/key/bc864eb28335c744a5dac0ba2fa47819",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"33r9\",\n  \"context\" : { },\n  \"name\" : \"Bobbie Reilly\",\n  \"error\" : \"rte3e6dtwcbp4pjuiwgwm2dkooaq9zs6iodap0i1tb5xzunrvy7lgo5i573y50iombcr66m1zjh9urbhfi4grbrp213nj8umftdvzo2hvgrwsq0n98h735x2290i\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "4bfaab57-2dba-4bd4-b84e-ceeb241e1b33",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.18334Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.key.get",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 391
+}

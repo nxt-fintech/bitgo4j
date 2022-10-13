@@ -1,0 +1,43 @@
+{
+  "id" : "57b16e7f-8e8e-4099-8556-22588b441521",
+  "name" : "Retrieve Staking Delegation Accrual History",
+  "request" : {
+    "urlPath" : "/api/staking/v1/z1rrkpj1pdvolontvg1dmzbzflps4l095oew6ltwfgzn5ig9qfkbsftqjl2foaiozjyxpvdk73e2zfdkc2zz57g0jwbzg7pbt0wsh5/wallets/vy88/delegations/accruals",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 409,
+    "body" : "{\n  \"code\" : \"Conflict\",\n  \"message\" : \"Conflicting clientID\",\n  \"status\" : 409\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "57b16e7f-8e8e-4099-8556-22588b441521",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.669664Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Delegation Accrual History",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 32
+}

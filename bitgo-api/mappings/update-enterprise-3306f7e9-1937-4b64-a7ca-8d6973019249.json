@@ -1,0 +1,46 @@
+{
+  "id" : "3306f7e9-1937-4b64-a7ca-8d6973019249",
+  "name" : "Update enterprise",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/a32d5201b2d4c14a0621b648dc621744",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"2j0e\",\n  \"context\" : { },\n  \"name\" : \"Sherly Heathcote\",\n  \"error\" : \"2l96mo24k4b5oqvcev4pzqooq4o39guezybpmjnxez5nosoqxjk0nygpqhsg9uyy0z5dadai40xbxu485if1t7iadywoooewh8hknye1o9ukvb6rgn55p0hsqdw33dbf262h8lb7o0mrrsupsmabwm2cekgi570p6nc\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "3306f7e9-1937-4b64-a7ca-8d6973019249",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.98901Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.update",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 437
+}

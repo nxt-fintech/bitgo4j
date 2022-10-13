@@ -1,0 +1,39 @@
+{
+  "id" : "71a35341-4e54-47ae-9058-e4bce37d25e0",
+  "name" : "Remove block webhook",
+  "request" : {
+    "urlPath" : "/api/v2/fhvrw77uih44fmaaapsr2ytbemz5lbgjjiwprmbjji53ak030h21dtg103i4emgi4y3yeq6bqk83d47gdnqz/webhooks",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"removed\" : 4158735077725528826\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "71a35341-4e54-47ae-9058-e4bce37d25e0",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.392212Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.webhooks.remove",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "removed" : {
+              "type" : "integer",
+              "example" : 1,
+              "description" : "Number of block webhooks removed."
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 284
+}

@@ -1,0 +1,46 @@
+{
+  "id" : "1051c58b-189f-4566-9989-f9290705bf8b",
+  "name" : "Get another users public key for wallet sharing",
+  "request" : {
+    "urlPath" : "/api/v2/user/sharingkey",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"7n40\",\n  \"context\" : { },\n  \"name\" : \"Cynthia Torp\",\n  \"error\" : \"v3ebg7p2o2ctxijkjb4p2w6s64vgyf7os22szbtbeluncpt7qjnkl4kyro5b9vlk99pzvow85fw\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "1051c58b-189f-4566-9989-f9290705bf8b",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.18178Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "user.sharingkey",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 393
+}

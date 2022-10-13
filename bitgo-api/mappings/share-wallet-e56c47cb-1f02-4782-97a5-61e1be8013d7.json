@@ -1,0 +1,111 @@
+{
+  "id" : "e56c47cb-1f02-4782-97a5-61e1be8013d7",
+  "name" : "Share wallet",
+  "request" : {
+    "urlPath" : "/api/v2/4r75v7kb2nc6gkb196l8rrjep4z1zbxsfkuomc2qizmlk9hlbi0vj42j16x90ybh9rxzs22iand8j54fhmxbwwn1u6yg73sulqo95hhtiw9zbngc/wallet/e4a370fe645fb21673da7c9dea55426d/share",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"toUser\" : { },\n  \"pendingApprovalId\" : { },\n  \"wallet\" : { },\n  \"keychain\" : {\n    \"path\" : \"powytp81f2tpojwbnd2clqlltlxs3qkhuq0cqn1l6avsrlrxm1ihraz7ubp9w8dmvefpz65\",\n    \"encryptedPrv\" : \"ozxy00a0yzxcbkk7506xnxqmgul9duj4mf\",\n    \"toPubKey\" : \"xaoq7ffgipsnirsgv5ac1262m9oxnwjcw5ezu6mq7970cd166o4jfy75sraq01fp4p3zfzbm6hlmg62f8lhfwma82ze6h36v9g38tzklzzn4gab89ccxsat\",\n    \"fromPubKey\" : \"vxipxvtg7cswo877ccy3fpteqwfst7yl7vu8j58qww3w5xw3vr3mc62zkq9hb4z23w8r0f0gtt9y9s5xc3oo959o2urcax2mmogoqdkr7yxpwz4eq4osyyaf9x23a0l3s0lou2rki381ur4wuj4mylipn\",\n    \"pub\" : \"f0h8xsocas3i15h305ld4vqqyrecwnq5s9l8z05753z0x5ajw4f90xo4jcn32dedp66ettdp5ma6wfbvrgt741bz8709f65rjio01utu7i647l84xlla2z4f10t8i7m7p\"\n  },\n  \"fromUser\" : { },\n  \"permissions\" : \"spend\",\n  \"enterprise\" : { },\n  \"id\" : { },\n  \"state\" : \"rejected\",\n  \"message\" : \"Laboriosam quia animi. Aut sit quis amet occaecati rem error nobis. Doloremque iusto placeat odit. Qui pariatur est hic aspernatur incidunt. Ad consectetur quidem aperiam dolorem et.\",\n  \"coin\" : { },\n  \"walletLabel\" : \"sint\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "e56c47cb-1f02-4782-97a5-61e1be8013d7",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.4653Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.wallet.share",
+        "schema" : {
+          "type" : "object",
+          "description" : "Wallet share object",
+          "properties" : {
+            "id" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/Id"
+              }, {
+                "description" : "Wallet share id"
+              } ]
+            },
+            "coin" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/Coin"
+              }, {
+                "description" : "Coin of the wallet"
+              } ]
+            },
+            "wallet" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/Id"
+              }, {
+                "description" : "Wallet id"
+              } ]
+            },
+            "walletLabel" : {
+              "$ref" : "#/components/schemas/WalletLabel"
+            },
+            "fromUser" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/Id"
+              }, {
+                "description" : "Id of the user sharing the wallet"
+              } ]
+            },
+            "toUser" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/Id"
+              }, {
+                "description" : "Id of the user receiving the share"
+              } ]
+            },
+            "permissions" : {
+              "type" : "string",
+              "allOf" : [ {
+                "description" : "Comma-separated list of permissions which are granted by this share"
+              }, {
+                "$ref" : "#/components/schemas/WalletPermission"
+              } ],
+              "example" : "spend,view"
+            },
+            "message" : {
+              "type" : "string",
+              "description" : "Message for the user receiving the share"
+            },
+            "state" : {
+              "type" : "string",
+              "allOf" : [ {
+                "description" : "State of the share"
+              }, {
+                "$ref" : "#/components/schemas/WalletShareState"
+              } ]
+            },
+            "enterprise" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/Id"
+              }, {
+                "description" : "If the wallet belongs to an enterprise, the id of that enterprise"
+              } ]
+            },
+            "pendingApprovalId" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/Id"
+              }, {
+                "description" : "If the share generated a pending approval, the id of that pending approval"
+              } ]
+            },
+            "keychain" : {
+              "$ref" : "#/components/schemas/WalletShareKeychain"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 204
+}

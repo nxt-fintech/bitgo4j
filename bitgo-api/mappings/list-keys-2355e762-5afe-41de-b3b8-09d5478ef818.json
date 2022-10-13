@@ -1,0 +1,45 @@
+{
+  "id" : "2355e762-5afe-41de-b3b8-09d5478ef818",
+  "name" : "List keys",
+  "request" : {
+    "urlPath" : "/api/v2/d3lh4g1u9t377cgstpx2w52xumhjgyuzhippieebay6mrvyk40pl2p48u7qcs6y0mfvdlx2e28h6hy179xyqkl7cavf0u4c6hd0cifporju7zzrlyog1hpj8mxavw68ypan8pbrkrygxjr63exuaze4p3evcvya77r5z2tdyy2dvy/key",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"keys\" : [ { }, { } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "2355e762-5afe-41de-b3b8-09d5478ef818",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.184195Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.key.list",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "keys" : {
+              "type" : "array",
+              "items" : {
+                "oneOf" : [ {
+                  "$ref" : "#/components/schemas/Key"
+                }, {
+                  "$ref" : "#/components/schemas/KeyTSS"
+                } ]
+              }
+            }
+          },
+          "required" : [ "keys" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 389
+}

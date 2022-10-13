@@ -1,0 +1,36 @@
+{
+  "id" : "25b355e8-37b4-4bcb-96e5-48779afb4859",
+  "name" : "Initiate a transaction",
+  "request" : {
+    "urlPath" : "/api/v2/41ru0gve74e2o34l1qvyw4ehfff5cnt1ey69kl3wwegs1ysema0dmxc60xaavsck0me9he56il39rea5454g27tufsloh4yzom30p3bhwkvauoa1k0zrk8yhtbgg24htk5k49g2sqldp6i8i9zwezb9y9recma43zdyb/wallet/2f67881380f805aefcee8ed7f4ee7e14/tx/initiate",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "25b355e8-37b4-4bcb-96e5-48779afb4859",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.425719Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.tx.initiate",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 235
+}

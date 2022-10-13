@@ -1,0 +1,25 @@
+{
+  "id" : "d98e6578-6fac-4536-8658-84efcce6eaed",
+  "name" : "Update wallet - 404",
+  "request" : {
+    "urlPath" : "/api/v2/xwxqccfnsscpm97t1su7vn6zh38snkxk9xggqwbci6zvz7y1h1ki8n6xsb6dftbsjja9qxnouk1178h9t823gn3bz5q6ofg55guzw9alt3slywc1c8haxv512ur5xyz4/wallet/f447dc2c66bbb2f6154fc58c5bbe09cb",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "d98e6578-6fac-4536-8658-84efcce6eaed",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.332773Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.update"
+      }
+    }
+  },
+  "insertionIndex" : 340
+}

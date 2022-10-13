@@ -1,0 +1,56 @@
+{
+  "id" : "61b1eff6-bfd2-4b55-925c-cfda2e29ec87",
+  "name" : "Create send label",
+  "request" : {
+    "urlPath": "/api/v2/sendlabels",
+    "method": "POST",
+    "queryParameters": {
+      "coin": {
+        "contains": "200"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"address\" : \"9e2b2ifrw8z4lwik4ixyio7gz0d6wbj0yz3y1r8osdc9ahf1ftwgp9bad69cqen9f2q7mw885dcqi3wacww5ssghaguv48q4uqn5gd3842vs4m5poj3lnspn4io3bluiloq48qv0he6xtahkj0r9oqrblooamsv0cqf1hm7ckvrh02dsd0\",\n  \"id\" : \"d32b2074a122ceeb7aa46e25ae5fe895\",\n  \"enterpriseId\" : \"8bd37b3c191c0160420edc68ca2768a3\",\n  \"label\" : \"vitae\",\n  \"coin\" : \"ag8ujbhx9lz5ncix9qkp5fy7a3qyasjuqkl00z9s2hx96j9ybtt45333txtlc9sdbbkp9p050ded2pk9nxuvo78lsct6zb2gbh19nop3086ows6u9lvse6hz9s9p1pdodt7jqsv2x307ca3aemr5jl3ten2q\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "61b1eff6-bfd2-4b55-925c-cfda2e29ec87",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.39732Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.sendlabels.create",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "coin" : {
+              "$ref" : "#/components/schemas/Coin"
+            },
+            "address" : {
+              "$ref" : "#/components/schemas/AddressString"
+            },
+            "enterpriseId" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "label" : {
+              "type" : "string",
+              "maxLength" : 250
+            }
+          },
+          "required" : [ "id", "coin", "address", "enterpriseId", "label" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 278
+}

@@ -1,0 +1,25 @@
+{
+  "id" : "142a09da-d73b-4f56-9151-6be29bcc0cc1",
+  "name" : "Get wallet - 404",
+  "request" : {
+    "urlPath" : "/api/v2/ncsrwuyq5n68anezomrar8obwq/wallet/e148d942ddda3b4b6fa67bf5381c6ef0",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "142a09da-d73b-4f56-9151-6be29bcc0cc1",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.324975Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.get"
+      }
+    }
+  },
+  "insertionIndex" : 344
+}

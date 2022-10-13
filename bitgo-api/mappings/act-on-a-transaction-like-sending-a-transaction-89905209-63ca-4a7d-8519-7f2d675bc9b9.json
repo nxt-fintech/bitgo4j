@@ -1,0 +1,43 @@
+{
+  "id" : "89905209-63ca-4a7d-8519-7f2d675bc9b9",
+  "name" : "Act On A Transaction like sending a transaction",
+  "request" : {
+    "urlPath" : "/api/staking/v1/0ml1xovoeeitsuzrjgxjerjishk3uwoxrl3afy5o851hkviqg7w817rumpsbav9ls1akphhp5lqfmdqbukq4jlxdefukmt3pbd8f0bs8hivrhsx/wallets/hi61/requests/0612/transactions/0sf9",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"code\" : \"NotFound\",\n  \"message\" : \"Wallet not found\",\n  \"status\" : 404\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "89905209-63ca-4a7d-8519-7f2d675bc9b9",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.652024Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Act On A Transaction",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 68
+}

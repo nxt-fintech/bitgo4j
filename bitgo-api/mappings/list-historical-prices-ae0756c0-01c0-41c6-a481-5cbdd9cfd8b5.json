@@ -1,0 +1,40 @@
+{
+  "id" : "ae0756c0-01c0-41c6-a481-5cbdd9cfd8b5",
+  "name" : "List Historical Prices",
+  "request" : {
+    "urlPath" : "/api/portfolio/v1/portfolios/z027/historical_prices",
+    "method" : "GET",
+    "queryParameters" : {
+      "instrument" : {
+        "equalTo" : "z0zpfa998nlka7bwqfdj5"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"high\" : 7.283658711898287E36,\n  \"low\" : 2.192396332284567E38,\n  \"quote_volume\" : 2.3815262955570383E38,\n  \"base_volume\" : 1.3565399713113464E38,\n  \"time\" : \"2022-01-03T01:51:23.516071Z\",\n  \"close\" : 6.842291324838429E37,\n  \"open\" : 1.7344097274069742E36\n}, {\n  \"high\" : 7.05996993392483E36,\n  \"low\" : 1.720097995029827E38,\n  \"quote_volume\" : 1.0977691231351058E38,\n  \"base_volume\" : 2.2589113623066505E38,\n  \"time\" : \"2023-04-23T07:08:44.516248Z\",\n  \"close\" : 2.388723096890178E37,\n  \"open\" : 8.120243000192114E37\n}, {\n  \"high\" : 2.9633864575921676E38,\n  \"low\" : 2.7165625504232625E38,\n  \"quote_volume\" : 1.0290004666909742E37,\n  \"base_volume\" : 2.633206186824835E38,\n  \"time\" : \"2022-11-27T05:16:52.516676Z\",\n  \"close\" : 1.779274352023422E38,\n  \"open\" : 2.0913864474519696E38\n}, {\n  \"high\" : 3.568270045789321E36,\n  \"low\" : 6.570734211887877E37,\n  \"quote_volume\" : 1.0693395199367233E37,\n  \"base_volume\" : 2.26389498103058E37,\n  \"time\" : \"2022-08-26T21:50:47.516834Z\",\n  \"close\" : 1.5313583758399365E38,\n  \"open\" : 2.6027896225550467E38\n}, {\n  \"high\" : 2.8891866099913307E37,\n  \"low\" : 1.3249499469044546E38,\n  \"quote_volume\" : 1.5107632882542406E38,\n  \"base_volume\" : 2.9781394935872627E38,\n  \"time\" : \"2022-11-18T07:37:12.51695Z\",\n  \"close\" : 3.116725676338238E38,\n  \"open\" : 2.4195407288137128E38\n}, {\n  \"high\" : 3.89061450112306E37,\n  \"low\" : 3.0924612416367304E38,\n  \"quote_volume\" : 2.4811473623911038E38,\n  \"base_volume\" : 1.706068004044013E38,\n  \"time\" : \"2023-04-22T18:07:35.517085Z\",\n  \"close\" : 1.891417971943629E38,\n  \"open\" : 1.1522046879047148E38\n}, {\n  \"high\" : 1.394960995672831E38,\n  \"low\" : 3.289785555263854E38,\n  \"quote_volume\" : 1.0283251878956814E38,\n  \"base_volume\" : 2.6298710699432654E38,\n  \"time\" : \"2023-04-03T16:56:47.517207Z\",\n  \"close\" : 2.905256302193097E38,\n  \"open\" : 2.8348678175227207E38\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ae0756c0-01c0-41c6-a481-5cbdd9cfd8b5",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.519386Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "portfolio.prices",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/components/schemas/InstrumentPrice"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 160
+}

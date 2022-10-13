@@ -1,0 +1,37 @@
+{
+  "id" : "16b4008f-7308-41ce-ac0c-75e808f6ab90",
+  "name" : "Update transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/fd56179edf90629d9878a59b19e2051e/txrequests/b1c52eaa462f6afd024f084d136b82ec",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "16b4008f-7308-41ce-ac0c-75e808f6ab90",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.407498Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.update",
+        "schema" : {
+          "anyOf" : [ {
+            "$ref" : "#/components/schemas/TransactionRequestLite"
+          }, {
+            "$ref" : "#/components/schemas/TransactionRequestFull"
+          } ],
+          "required" : [ "txRequestId", "version", "latest", "walletId", "state", "date", "userId", "intent" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 260
+}

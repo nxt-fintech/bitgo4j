@@ -1,0 +1,36 @@
+{
+  "id" : "5d9d43d7-140c-4ca4-8e08-b3cd15046932",
+  "name" : "Retrieve staking requests and staking transactions for a given enterprise and query params",
+  "request" : {
+    "urlPath" : "/api/staking/v1/enterprises/i4rx/requests/transactions",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"code\" : \"BadRequest\",\n  \"message\" : \"Bad Request\",\n  \"status\" : 400\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "5d9d43d7-140c-4ca4-8e08-b3cd15046932",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.645831Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve staking requests for a given enterprise",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/StakingError"
+          }, {
+            "$ref" : "#/components/schemas/ValidationError"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 78
+}

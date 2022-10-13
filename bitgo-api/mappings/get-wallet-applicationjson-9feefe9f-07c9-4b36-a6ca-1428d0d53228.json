@@ -1,0 +1,41 @@
+{
+  "id" : "9feefe9f-07c9-4b36-a6ca-1428d0d53228",
+  "name" : "Get wallet (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/jdyeqgdti8qf5f5u0dmv340fhl7on4416g7s73p22jbemh2u85itfg3u52nj1omg59y8mdc4m7l3akm1qhzjn9exchdvc550jwm1vysa3y8yhypn6dz9b3q1x9u0gt2a57yhb/wallet/03bd58c20e9378773d0f714a573e111f",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "9feefe9f-07c9-4b36-a6ca-1428d0d53228",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.324766Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.get",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 345
+}

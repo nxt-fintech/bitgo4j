@@ -1,0 +1,40 @@
+{
+  "id" : "e8f86691-666d-4d88-9856-ebda64df41d2",
+  "name" : "List Trading Partners By Enterprise",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/645a/tradingpartners",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"tradingPartners\" : [ {\n    \"primaryEnterpriseName\" : \"Chas Kris II\",\n    \"primaryAccountId\" : \"5276\",\n    \"requesterAccountId\" : \"dy65\",\n    \"secondaryAccountId\" : \"0mnx\",\n    \"id\" : \"7220200a-cfda-4191-a8aa-1def013998a4\",\n    \"type\" : \"direct\",\n    \"secondaryEnterpriseName\" : \"Robin Lockman DVM\",\n    \"status\" : \"canceled\",\n    \"updatedAt\" : \"2023-08-18T10:46:16.692444Z\"\n  }, {\n    \"primaryEnterpriseName\" : \"Gearldine Durgan\",\n    \"primaryAccountId\" : \"w2t8\",\n    \"requesterAccountId\" : \"rqiv\",\n    \"secondaryAccountId\" : \"7t17\",\n    \"id\" : \"0aa87e1c-db4b-4941-a441-2c0666dc961b\",\n    \"type\" : \"direct\",\n    \"secondaryEnterpriseName\" : \"Joe Howell\",\n    \"status\" : \"pending\",\n    \"updatedAt\" : \"2022-07-18T18:33:13.693382Z\"\n  }, {\n    \"primaryEnterpriseName\" : \"Jackie Schaden\",\n    \"primaryAccountId\" : \"8nfb\",\n    \"requesterAccountId\" : \"6ws3\",\n    \"secondaryAccountId\" : \"50u4\",\n    \"id\" : \"db0ed373-4a74-4a90-96dc-facc155d9144\",\n    \"type\" : \"agency\",\n    \"secondaryEnterpriseName\" : \"Aurelio Carter\",\n    \"status\" : \"rejected\",\n    \"updatedAt\" : \"2023-08-22T01:28:42.694361Z\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "e8f86691-666d-4d88-9856-ebda64df41d2",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.694745Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.tradingPartner.listTradingPartnersByEnterprise",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "tradingPartners" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/TradingPartner"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 13
+}

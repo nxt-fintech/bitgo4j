@@ -1,0 +1,52 @@
+{
+  "id" : "43d7cebd-945f-4c09-84d0-3cac0021f85b",
+  "name" : "Get transfer by sequence id",
+  "request" : {
+    "urlPath" : "/api/v2/fm3xxfby4yrmq74r7q93hnh5lwr4imzhp8ad31kpg9mkwssijw1a5xa0t3g6ly5hwzj9rfh3h5j69151ionarw0xlg9l22ucflgzzxqwbha3zsqg7/wallet/b9c1eb1ac52d5862a6ef7da1428208cb/transfer/sequenceId/h55n",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"outputs\" : [ {\n    \"date\" : \"2023-02-23T16:33:30.246841Z\",\n    \"chain\" : 4090421933876132236,\n    \"address\" : \"6kk0stbjefx1i4mv6bbzd1fjb6djjswtorem90qipf8t73gdr0wbwo21bwxy1gvus2q2z0tgo8jffg6hxr3jmu6rlqqajvh\",\n    \"wallet\" : \"7b5cad510901ee4bebab1d94cb6a4311\",\n    \"fromWallet\" : \"e1a77cc55d2aafcef0bc98a180adc1f8\",\n    \"index\" : 4852518466192307763,\n    \"redeemScript\" : \"bvxr9qbhnafm359bfj9usxtq6068acta7nrrcpxobh6a2ibmy94zx\",\n    \"coinbase\" : true,\n    \"valueString\" : \"968455803708855311800110936416\",\n    \"blockHeight\" : 347503372335207901,\n    \"witnessScript\" : \"h4wr6exmvlg4aahau4yno3485ugbmoiyt2u8qwuvujw50y0cssgk4uotbmczll\",\n    \"id\" : \"nwle\",\n    \"value\" : 6414045831881335003,\n    \"isSegwit\" : true\n  }, {\n    \"date\" : \"2023-07-02T22:12:18.247371Z\",\n    \"chain\" : 6722520915043188286,\n    \"address\" : \"5lw2f3jdztucjffh3hmemeo2anxd1y8urcxlb5e75k57nf774disqe4zw0ftgstq49l3wd9tg8zirk736fbwl8y8wdyoj5p0wqw4lxbunrhaodb2ycko1cptz6o9ofrloghxtlwse7v52roccobyfg1dlnnkk538oz9\",\n    \"wallet\" : \"416820b06a0a05aa85568eb62922e4fa\",\n    \"fromWallet\" : \"851fe825a957efb2607534e521dffeb4\",\n    \"index\" : 438426356457921026,\n    \"redeemScript\" : \"l00qncbm317gwmduzulb9hrfsopnid8t3uq1u5dbt5v06oy85curfdp93kudyijdm9argwszrvydk\",\n    \"coinbase\" : false,\n    \"valueString\" : \"6717521423768185451122966194714259650230343853304571364\",\n    \"blockHeight\" : 3521951873178005829,\n    \"witnessScript\" : \"svn2vu6gowa3qej0hv9hqpnt90e4g6iys3u895az61t6ahdcnh5ilkhofw52j28ug1whqan6pxgs931xu7x4dcngccp1g4yw8kj9xqxt5nvek5uxc9179gud8ej7uj3hwttkeo8vhc4hnulnvatfltd5z817\",\n    \"id\" : \"pv3e\",\n    \"value\" : 8581083765383850575,\n    \"isSegwit\" : true\n  }, {\n    \"date\" : \"2023-10-02T12:17:10.24792Z\",\n    \"chain\" : 2517458681827091807,\n    \"address\" : \"4172aof2nrlrlnzy49ao3pmpxie22zm8m1vxwdu2fptge632igzj795fwhxgj6h7hh1eude16osdlyhx58wjlqnnst1zww3fjfquhpaad73096hbz62faazv67b4l82djhtnl807ia9nn37y98cfuybs88ueir8tl5fjyn\",\n    \"wallet\" : \"0c03c8592c19f956d0bb5a3a48ac0e9b\",\n    \"fromWallet\" : \"d5b66b3bdb3f12bac7fe194bffd4b38a\",\n    \"index\" : 3333090542138104599,\n    \"redeemScript\" : \"098f4z2nodu5zxvknstlat48jroesox6g7ozy3jbg4bnp7b36kwtg0wyy5b49ojc0m87xgzxyqdyawjwgrpjf2kn34m5oeyhwikw4\",\n    \"coinbase\" : true,\n    \"valueString\" : \"-832808499186443574035102928735353843341998000309611506514778618974808034064042487305592244958\",\n    \"blockHeight\" : 7411753711493232076,\n    \"witnessScript\" : \"92omuy7u5kia\",\n    \"id\" : \"v97c\",\n    \"value\" : 4424765246022727634,\n    \"isSegwit\" : false\n  }, {\n    \"date\" : \"2022-12-10T09:26:18.248402Z\",\n    \"chain\" : 4976801369779542121,\n    \"address\" : \"618bynxgu5j1tn991w6c1low2bckq7ylqdkt2xe2fur304vay09yb781apjz26uptzf5z62bsul82dpn0xms5fdj5lofsbaw3juuzl0uxqfckbd7wis6wgdw36h7u24vqq\",\n    \"wallet\" : \"9ed3c4295e936115e07b87a392b349b1\",\n    \"fromWallet\" : \"b940fb5cc0cb0da439c608aecb1d51f1\",\n    \"index\" : 1460188090147751462,\n    \"redeemScript\" : \"ifmmz1l5d2ry0g1nyjalqfwnllwmozrxggvv4ff31b7dj3z97zukdjv7xe59rllis2cqs2jku937vttn7w195bl9mkxxtrcuutxolbhkq77hwxad7z1xnfwg6usemmc8\",\n    \"coinbase\" : true,\n    \"valueString\" : \"-100932421014963292002196784797824483182893072905900106235926884458735862120275147014200730692\",\n    \"blockHeight\" : 1576472892764114798,\n    \"witnessScript\" : \"t3mylju2ru7s7isxo3ihy7mcu42eg2xdg7laa8q8ljwojee6lfoyh7442nrmr4urczw8dxqf\",\n    \"id\" : \"u5or\",\n    \"value\" : 2032294816326010161,\n    \"isSegwit\" : true\n  } ],\n  \"inputs\" : [ {\n    \"date\" : \"2023-04-13T16:07:03.24898Z\",\n    \"chain\" : 1588540069215041550,\n    \"address\" : \"5uvmonkgfkdocnti52mjn\",\n    \"wallet\" : \"762764a39dc911c780fea7d1944df743\",\n    \"fromWallet\" : \"b436668c43f8044a751368566460c111\",\n    \"index\" : 4105611439452937769,\n    \"redeemScript\" : \"igdg52ir5fvo6qe01l5iuth8h2dybrxhld6o75h\",\n    \"coinbase\" : true,\n    \"valueString\" : \"0641245980084503972721485061807607283529263677318652615613258291777961\",\n    \"blockHeight\" : 7990922790847862305,\n    \"witnessScript\" : \"4nht8s36ktsoouelhysfhfmob0asj48lvnnw375f3j1vrcg325hwka6wz3teqirjl2gvwb0na3n8dvgmtj063k5my0ei0w\",\n    \"id\" : \"m78h\",\n    \"value\" : 7977714179543199817,\n    \"isSegwit\" : true\n  }, {\n    \"date\" : \"2022-05-10T02:05:12.249517Z\",\n    \"chain\" : 2311065961027060397,\n    \"address\" : \"ec8d5p312hpqrui50q33mti5z28khxmpc9kohxfzk5zunftf3zuk4x7nfatk0e7uu84gtrjavih9ckkb1quoxemjpkp2psi2w7i9frqtzvzyjzw5pi8ks6rajlrwv63tiik4gx9w4ktyc25re0b0xmljs07enpkktkl1jlcgdmwgej226b0zx62yod9m\",\n    \"wallet\" : \"e6631f3dbb8be5e59ba68a4adeccb343\",\n    \"fromWallet\" : \"86b3b962898e982b2414c0bbbe53f567\",\n    \"index\" : 5591087268498158957,\n    \"redeemScript\" : \"qra3sjf4qx6wvh3yb2p9mj1gzzchkta2qxb0li66mtlfmm1ay5j68tz8epxc6dqyu36p9jwpg2lnv2zhgr7d7mqqvr1m1mvs3qorcy94mpzkdtp548lq7riccsxcqv3bv6vh5e55ui6bm6jf3lxmvznskqp1\",\n    \"coinbase\" : false,\n    \"valueString\" : \"-80726060340245936802350\",\n    \"blockHeight\" : 8333022067822775102,\n    \"witnessScript\" : \"mzyl2nd2r3305k8flgg441mbpurdj6zqs6lla5ogus2f7lsel5xbwueblybg7q74uzxx66i4z04lyt6w3mdep7k3cfng6b33a9qrdh9punocak191ol881cngl0pjidy7rx54vj9g9eem0sg26cp1w\",\n    \"id\" : \"9r7w\",\n    \"value\" : 1568993592079410592,\n    \"isSegwit\" : false\n  }, {\n    \"date\" : \"2022-06-05T03:11:09.250115Z\",\n    \"chain\" : 6442168634956207458,\n    \"address\" : \"ev4fy0zekhsrozrbvckwd4witrdbe4aoneoz30fwcs8w3tso1lmakmbsglzaldzjz2y7u69jo50unxr4cihji4d91brpg3t22gb9p5snf10yatgbv2aawqqu0yszsavpfoz3mnp9i4tdrgkjbufchxnaktcafaig7hzmvnrwc5xkbef24phhwvjped9kvn5\",\n    \"wallet\" : \"24689259640d9b25c4b6554e296e1199\",\n    \"fromWallet\" : \"6d43b3cbd36d0f42c0221c27e8a9a254\",\n    \"index\" : 1081433236807851016,\n    \"redeemScript\" : \"0rkmbz3v8qu6cy47o6ogc3ui0xnbnd1rxb2fde2f89goo2wv5ajplg4ohm3nbup3v2jqaokkm928t09g4eayxq3\",\n    \"coinbase\" : true,\n    \"valueString\" : \"7191126029732094028577463602354474973823360446917292151909237312152929045967126989363333\",\n    \"blockHeight\" : 4125819024545896195,\n    \"witnessScript\" : \"3xnvb2fgg8j6n\",\n    \"id\" : \"191p\",\n    \"value\" : 7777824139937006840,\n    \"isSegwit\" : true\n  }, {\n    \"date\" : \"2022-07-16T15:25:28.250739Z\",\n    \"chain\" : 2320046070338975586,\n    \"address\" : \"g352phrgte1vsoxnf207um99xav1a4hl8gkub635gmilahh9r91tl0lm0qvooh99pmzsbf07pjta66zs6jk034o77hewz8pty1jlta5bzq5qg8uu7nxc1k9uqocmeptd9c2swo4rgauvphsi\",\n    \"wallet\" : \"639ad1df1b2b3c1bfa0eb771aa076774\",\n    \"fromWallet\" : \"a8071dd2f48046b5f5d8d53baf874ea2\",\n    \"index\" : 8496249739207195872,\n    \"redeemScript\" : \"7uo8ms91pwaeipcko6svnxk8i3aaqdosb56mklyz0xdk8oefhu87ip1onb470qf913a1917fvdz6tlramqpxpr5lsjrch236\",\n    \"coinbase\" : false,\n    \"valueString\" : \"-81689490207245411992246759273638355313489676177428033050825705055283\",\n    \"blockHeight\" : 8601895924980277812,\n    \"witnessScript\" : \"dv9cyj153k8wxhe6eednw4n5bixwj3k2w2judgj7d4nvhabxvbrpggmqo6mmj5vq0pzkn3c8lh63bupbshikfcifxsoqosovecijth4bjm4l06i57x6aysvtaibtih7q\",\n    \"id\" : \"s348\",\n    \"value\" : 5272782798777578166,\n    \"isSegwit\" : false\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "43d7cebd-945f-4c09-84d0-3cac0021f85b",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.251898Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.gettransferbysequenceid",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/AnnotatedTransfer"
+          }, {
+            "type" : "object",
+            "properties" : {
+              "inputs" : {
+                "type" : "array",
+                "description" : "If this is a Transfer on a UTXO coin, the array of inputs",
+                "items" : {
+                  "$ref" : "#/components/schemas/Unspent"
+                }
+              },
+              "outputs" : {
+                "type" : "array",
+                "description" : "If this is a Transfer on a UTXO coin, the array of outputs",
+                "items" : {
+                  "$ref" : "#/components/schemas/Unspent"
+                }
+              }
+            }
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 364
+}

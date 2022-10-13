@@ -1,0 +1,40 @@
+{
+  "id" : "b731c1e2-0394-4e83-9f70-c87c605379dd",
+  "name" : "Withdraw from lightning balance",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/e2058632b37bae491178d48d34b4bde3/lightning/withdrawal",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"transfer\" : {\n    \"date\" : \"2023-01-01T12:27:55.501463Z\",\n    \"enterprise\" : \"43f465e6eff03e49439500867b2263b0\",\n    \"usd\" : 3.416661682964498E307,\n    \"type\" : \"receive\",\n    \"sequenceId\" : \"760z\",\n    \"baseValue\" : 4747360217460257070,\n    \"usdRate\" : 1.5045483962686063E308,\n    \"id\" : \"0112bafb27485bd90813422241e8cf08\",\n    \"state\" : \"pendingApproval\",\n    \"value\" : 2359716362354503223,\n    \"feeString\" : \"6r3uo9kl8wv12\",\n    \"height\" : 3849703983076772527,\n    \"payGoFee\" : 3263930315891406981,\n    \"payGoFeeString\" : \"w96mwv5vgcuv9dye8oegv8ig4e885aqr5ggbh4o0zdl1gr7ed2m2vsdbv4l0dhzzu9uay44tsf11pg9vrlbnewmsia45opn7ji423x02h588jg11cdhjjvpibhm7emad0fwoyxvjw30xr7klu\",\n    \"wallet\" : \"706216c5b05badefa8bceec1ba18101b\",\n    \"txid\" : \"377t\",\n    \"baseValueString\" : { },\n    \"history\" : [ {\n      \"date\" : \"2022-12-01T14:03:25.502327Z\",\n      \"action\" : \"approved\",\n      \"comment\" : \"q44cc3nrnrjqkcly6f7prpelu8rjxws3sq24evku0f38pzmu86yjutj13w5agux\",\n      \"user\" : \"46dca63e9076898a86d8e0e941a3ad80\"\n    } ],\n    \"tags\" : [ \"97999a2fbc7ed3325164af3ab12a8715\", \"9ca6c6ca4fe29001acf7cefb2ee00c54\", \"beaf9b461e31bd47aed91f9df5272843\", \"a73e41baffec1aadde88c4f2d1209d4e\", \"a00fbe4a93be30eaa6782c4f4e55ef5a\", \"816df7656a736109ed2906eb255b5e1f\", \"21c6eff2e502117f7449102ff3ec7a53\", \"7fb69db151c7fec7500fbd33c60425cc\" ],\n    \"vSize\" : 5878279345171541071,\n    \"entries\" : [ {\n      \"address\" : \"hwkt2doc32ooznrh1gla9jbycacj984s77p6blivo0c42ap1v1f3xgth9glgib6uunim53t\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : true,\n      \"value\" : 1839090981060675652,\n      \"isChange\" : false,\n      \"token\" : \"gck130ccksf9and7u9np4bp9hmg6wjcd3ld262pvfpaz7ai4p5h3twy07ffexxfhf9pfak7ydvdwp5shga0y5za36tyyyv9kdkztvimo6smp2hk2jwy9w4506azcjaokmug29vi4rdgh02zb2nm4x671n5ev3sfy1rbtvnavur0gvfjvdn545abvaia\"\n    }, {\n      \"address\" : \"42vffc1aktmp5ppozk1xoadtbzvvwayxi4gd3tudm2ak0i22d0mi7387ihhcz9tcyrguujcerze7vto2b8dkz657hhd6zkvff6a67po4aeyx5xuw599q6kv7yeqtczilai4sivwjcxefjfdgzidt6due7cia2dlkrg5wnz\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : true,\n      \"value\" : 769068475373811106,\n      \"isChange\" : false,\n      \"token\" : \"e6cpurtqhz2jcu6s7y286vlde1ld0mr9dzto704lo3yr\"\n    }, {\n      \"address\" : \"zc46obbad5t009yssumg62xdl2z6bgj5iluqlzm1u5tg2ftrl59dcqe46z5ky8w1rns0qjl5swuis69mw07t14l52duc44l5gn7v2rm5nylg7fzosik9\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : false,\n      \"value\" : 8008404111724365263,\n      \"isChange\" : false,\n      \"token\" : \"13iwhqc0fbzkx62qxsuqhiddrzn1s5v0zofvht9g9egjss7ujf980md4utczfvx356donn2a7wex5gc519jlqtim3flywy78ykdg61i24fz39238ptgrvney65erwhzylwh5j591qx2zn3hmpol90pv6mn4o1slyg43s62hrvj37sq9kfuhbpu6mlsef\"\n    }, {\n      \"address\" : \"peo6amaq82oo4qx7o255cweh3yw5fv62q1jdi0mmnw28kdr7loiq0xb103dwihvv7vz23loozdlvwv8mzuh3tjo28928bp5aj368cihlw\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : false,\n      \"value\" : 5182407294472596791,\n      \"isChange\" : true,\n      \"token\" : \"5b7bp6rtfrnbtbi9o1j2q5ux951bkeshcbg3j\"\n    }, {\n      \"address\" : \"5yhha1875uhh3j85l2uhexd0ijn0zbm2yrplza2ylywutkf2t2mj3npiw01znz2ynnk7wflfykmpbn5no4sik494anhvsiikd51jnxmr9uhu1s1mmhyvigvprqrzkx72bi5sxfbguuaaby3k\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : true,\n      \"value\" : 8525378927009295840,\n      \"isChange\" : false,\n      \"token\" : \"omgram95aysv35uqgab7y3yufmwi4jz3ssu8ndu0pxzsrpwq8gap1z8d34wifea90g27aztbqu979xyviusuc5ahnau2qp3m6thrdin\"\n    } ],\n    \"valueString\" : { },\n    \"usersNotified\" : false,\n    \"heightId\" : \"lj95\",\n    \"comment\" : \"5hqa5i9215uu0xzky52q8yuzcoym\",\n    \"nSegwitInputs\" : 2842703742466973329,\n    \"coin\" : \"cqet8jwf8116zlw0fhi1ujzh7n8wfh37ypsf8vw6xvsqh536grd0ufytz0ro7a3a4u5o9cusc8fl0cughk\",\n    \"coinSpecific\" : { }\n  },\n  \"status\" : \"rejected\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "b731c1e2-0394-4e83-9f70-c87c605379dd",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.50377Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.lightning.withdraw",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "transfer" : {
+              "$ref" : "#/components/schemas/Transfer"
+            },
+            "status" : {
+              "$ref" : "#/components/schemas/TransferState"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 174
+}

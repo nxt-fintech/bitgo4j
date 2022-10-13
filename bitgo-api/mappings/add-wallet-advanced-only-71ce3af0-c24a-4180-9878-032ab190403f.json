@@ -1,0 +1,46 @@
+{
+  "id" : "71ce3af0-c24a-4180-9878-032ab190403f",
+  "name" : "Add wallet (advanced only)",
+  "request" : {
+    "urlPath" : "/api/v2/ph7obo0dgs7luh3cdwxjxfb7dhggmpxls2v07220wj5qa737ngaxl86bo3ugt7kxm6b9wvj9ui4xh23qnwt79yyfdrfllnlywsn5zritwkckvomng5r555a34xz67pv5y53e5qkuumc5g2kgvveftxqzb8ao9h71jsep1w4a9sudh564nlv/wallet",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 403,
+    "body" : "{\n  \"requestId\" : \"k64h\",\n  \"context\" : { },\n  \"name\" : \"Bernarda Flatley\",\n  \"error\" : \"ltyi69fj1wttm9yr2m0cm7ab024vdn84lhvl1svbe88fv32wpu4e1wff4xqz6zazsrzyjia1f2v1axmkqa1otc5oqrmlnge87dabmrk1o\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "71ce3af0-c24a-4180-9878-032ab190403f",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.269222Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.add",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 355
+}

@@ -1,0 +1,58 @@
+{
+  "id" : "44886d90-f1bc-4da5-be45-3e7c98d85528",
+  "name" : "Update Affirmation (application/json)",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/p6or/account/b870/affirmations/2561",
+    "method" : "PUT",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"errorName\" : \"Alonzo Fisher II\",\n  \"error\" : \"g80mjeql1tj34al9ebhzwm15t36lot6rluvu2ic8f3uopjfcbxv4w9rfof3haohozhk18p82wuqpd0cedig28uli034oqxtlku2ndd1ukcdityorm7oa6cfgocyavqlrjgty4gsjbpbpcuykbzbww15med4ul1qv44awdz2bwwm8fabswny760uhpbep5z9w2\",\n  \"reqId\" : \"p8ll\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "44886d90-f1bc-4da5-be45-3e7c98d85528",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.629477Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.settlement.updateAffirmation",
+        "schema" : {
+          "type" : "object",
+          "description" : "An API error returned by the service.",
+          "properties" : {
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "errorName" : {
+              "type" : "string",
+              "description" : "Immutable error code for API integration"
+            },
+            "reqId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "error", "errorName", "reqId" ],
+          "example" : {
+            "error" : "Missing required parameter: accountId",
+            "errorName" : "MissingRequiredParameter",
+            "reqId" : "3fa3fb673ce950a95fd2d395e245efbe"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 114
+}

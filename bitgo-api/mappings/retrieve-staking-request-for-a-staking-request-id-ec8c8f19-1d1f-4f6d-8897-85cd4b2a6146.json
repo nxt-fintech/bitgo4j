@@ -1,0 +1,43 @@
+{
+  "id" : "ec8c8f19-1d1f-4f6d-8897-85cd4b2a6146",
+  "name" : "Retrieve Staking Request for a staking request id",
+  "request" : {
+    "urlPath" : "/api/staking/v1/requests/7023",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 403,
+    "body" : "{\n  \"code\" : \"AccessDenied\",\n  \"message\" : \"Stakingg license not added for enterprise\",\n  \"status\" : 403\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ec8c8f19-1d1f-4f6d-8897-85cd4b2a6146",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.643703Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve A Specific Staking Request",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 83
+}

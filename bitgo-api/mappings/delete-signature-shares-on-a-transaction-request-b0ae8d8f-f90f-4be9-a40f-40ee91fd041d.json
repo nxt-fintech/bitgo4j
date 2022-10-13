@@ -1,0 +1,46 @@
+{
+  "id" : "b0ae8d8f-f90f-4be9-a40f-40ee91fd041d",
+  "name" : "Delete signature shares on a transaction request.",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/4a1385bc6895c45b384a29112ed8f1e6/txrequests/f82be980b08bbf8f05c7260030d88a27/signatureshares",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"v067\",\n  \"context\" : { },\n  \"name\" : \"Danial Flatley\",\n  \"error\" : \"mh1u2uc0t5ou1ic0qp3sqhm2f08p9i3463bp0kdvnmarlya9aogdk7sojzc9qmgg0lw67mowjkdixfvlqy31o7i99\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "b0ae8d8f-f90f-4be9-a40f-40ee91fd041d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.416156Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.signatureshare.delete",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 246
+}

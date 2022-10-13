@@ -1,0 +1,46 @@
+{
+  "id" : "044e1033-95a4-449c-9a25-ee742556437a",
+  "name" : "Create transfer for transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/f96d6182a1ad59a7f09e1765c2a903c6/txrequests/45467485e842fe43b04b37912e3a9515/transfers",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"7aaf\",\n  \"context\" : { },\n  \"name\" : \"Otis Braun\",\n  \"error\" : \"k1498pjgnv8ek0cfzgjwgwftl63t8ydiux6celswm1yd4xsv8p20ui0oc9giftomb9iy43eo7gr1m36otqc26vjqk51\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "044e1033-95a4-449c-9a25-ee742556437a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.423545Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.transfers.create",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 239
+}

@@ -1,0 +1,37 @@
+{
+  "id" : "e471707a-c236-4cb8-ba23-ccbd053bf7b6",
+  "name" : "Get session",
+  "request" : {
+    "urlPath" : "/api/v2/user/session",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"session\" : {\n    \"expires\" : \"2022-03-26T08:51:24.25555Z\",\n    \"unlock\" : {\n      \"expires\" : \"2022-02-02T03:40:31.255599Z\",\n      \"txCount\" : 1382651758559270338,\n      \"time\" : \"2022-07-09T22:59:09.255682Z\",\n      \"txValue\" : 1810632597239400195\n    },\n    \"created\" : \"2023-02-06T16:38:33.255779Z\",\n    \"ip\" : \"6ix7zearr1zlllambwelhoomnfkwv34utm7zwkgctui6wkk9saej49v2k0i\",\n    \"origin\" : \"sin9qx00dqxkg7m8wbjjx9s1q533mkq8ztk0wvb5ind638k482mdxrxnb9c111spcire6q7ualfhr3vhrkd5q4lw86x2va26628wcyo45g11wfk7txla20rrh14elvbme8fe675x3th1vu66bkkloj4481f4p4bqox3clx2j3wgfijd79l\",\n    \"scope\" : [ \"c962v37k8l5cnuqk6oalssakq8n8saj98ddv3hvqf09yech0y9x4hn1rbhaou1oeygt1bufes3g6a5koie0u0mip1jqlsdg\", \"tj1ylj4wxa7fnkprcnb4esi2hiqblltoxorkyg06zesm18wgopuq16vgwos85gi323rnowz5vots1wrvjd4jnmsrmvcfejsukr64rws7h0ogvye6ptzkoryhop42mo8bb0\", \"p262axb5s2mrqho64jew9ckwg\", \"72suqx9yrane93h9gisw2oeebwwjupvgkw866depld2d6uxu5rahpam7h1hsndjkaawcnzzl495y04q3k2hxwpg2es8ynaiwbi07gvz80gh38t4ude9xw0s3q1xdrz0jxnakx5nsl4lxpsj9orbos6uumt4pjqlgaygbrdvz\" ],\n    \"ipRestrict\" : [ \"bq700ls0c5fqjx0uubh3v61qwcnqx60ql9ee2jxalhtf08esekcehhfkryijb38qgibydudtvtx18t8o0u3ed24qm1tilwgfvadm4j2mnxt\", \"2lid3yo05lapkpsc5xzn0tji7jpbrfakkd7rnexgwezq2w885rr67iplcksbda6w9aen5otat8qqo7ixv3ep3rvy3f\", \"noi2p143dtbp8yvo41coh1uba2gihjggz5jkzd96jlnfsweiibt\", \"pmr393hhc5sxiw3cekmmj84rvy3ha4eo4w74ah427tl90r3ooubp21tdj3gbrjk4sojxbusr8kq3ijafwxhtao5rbuuh7wh6dn56svm1kzf6gnwym998wjyzuqry5oc8n8zfsjy09a15znswkq6sjk6pi57lpmjuxh0w3mnjslri\", \"itevn60fni971ztywhmttv29gwp9kamfglti1in5ighzo926mv10shkk480yu3hqrmoeh803qwn56ejlqoi87jy3otiiq4x8usc9krc7fayg0q9px82onlt\", \"f4j3kmm9tqy7ita93vse\", \"onmtg0bq38t43qesntn5goy4hx1pinjehx0vgi5nrgumrvowqf7r1w55rhuqjkup57hxkx5ykffibhu4hh47gzs0z832bhfmlufk7lcdtlj0g9f7d3661hckpz6iyp2azcgc6a6j63u7104nzu7cz6dhawidri2bgtf1883dm0sj\", \"ixvj8p3wkp1rbz43quwzilab3qjvc1tytfix1oezgpz01w4m2dz8xt069qwf27fqmsq8apcfdrsoc0xf0cmfpxg53suvvm3mrq0t3yr95pzxo76rqvsun6mc2asrv7bbmqvzokpl\" ],\n    \"id\" : \"7bb568cc87ccb8b06e18372f0e3538a9\",\n    \"user\" : \"39cf2ce658b7050fafc94725a7a4a9d0\"\n  }\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "e471707a-c236-4cb8-ba23-ccbd053bf7b6",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.256386Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "user.getsession",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "session" : {
+              "$ref" : "#/components/schemas/Session"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 360
+}

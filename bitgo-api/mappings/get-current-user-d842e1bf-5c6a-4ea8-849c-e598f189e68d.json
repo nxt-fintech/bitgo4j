@@ -1,0 +1,55 @@
+{
+  "id" : "d842e1bf-5c6a-4ea8-849c-e598f189e68d",
+  "name" : "Get Current User",
+  "request" : {
+    "urlPath" : "/api/portfolio/v1/user/current",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"firstName\" : \"Reed\",\n  \"lastName\" : \"Yundt\",\n  \"id\" : \"2167acd0-5bdf-41d2-b70f-a93e42975346\",\n  \"email\" : \"Damion.Collier@email.example.mocklab.io\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d842e1bf-5c6a-4ea8-849c-e598f189e68d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.513167Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "portfolio.user.current",
+        "schema" : {
+          "required" : [ "email", "firstName", "id", "lastName" ],
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "string",
+              "format" : "uuid"
+            },
+            "firstName" : {
+              "type" : "string"
+            },
+            "lastName" : {
+              "type" : "string"
+            },
+            "email" : {
+              "type" : "string",
+              "format" : "email"
+            }
+          },
+          "example" : {
+            "id" : "a253c86c-1f0f-42cc-bcd0-2dcc5040b204",
+            "firstName" : "Uncle",
+            "lastName" : "MoneyPenny",
+            "email" : "uncle.moneypenny@bitgo.com"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 162
+}

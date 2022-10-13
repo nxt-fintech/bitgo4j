@@ -1,0 +1,53 @@
+{
+  "id" : "7d8f265d-eea6-41f3-91f5-0279b000502d",
+  "name" : "Retrieve Staking Delegation Accrual History",
+  "request" : {
+    "urlPath" : "/api/staking/v1/f8us4flzqujg6plttk2b/wallets/a2xl/delegations/accruals",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"accruals\" : [ {\n    \"date\" : \"2022-12-02T14:22:14.664333Z\",\n    \"walletId\" : \"g7l1\",\n    \"spendable\" : 8863307094665182430,\n    \"pendingDelegated\" : 5451261590227262307,\n    \"delegationAddress\" : \"5fvhuzek98ulpbmq7uu10sawju7dhv1mumbx\",\n    \"pendingUndelegated\" : 2092014566735947899,\n    \"delegated\" : 1195388963249184900,\n    \"enterpriseId\" : \"g1yf\",\n    \"rewardsReceived\" : 8634464899899707476,\n    \"locked\" : 2863947674665901499,\n    \"delegationId\" : \"b7wt\",\n    \"withdrawalAddress\" : \"x9dg13ug6zt5ddp395dmg7xuolv513ltlcvl3\",\n    \"coin\" : \"957h1\"\n  }, {\n    \"date\" : \"2022-07-09T13:03:22.665131Z\",\n    \"walletId\" : \"3c7s\",\n    \"spendable\" : 1143454174858249632,\n    \"pendingDelegated\" : 5582801719622323378,\n    \"delegationAddress\" : \"utwyq39o2cujhxdpup7y9awzset5sns7nrcyzo07sc96kdgmgof8cnguclgdeq9zjtbb1zm2f49sp8ssco35us6ib7paze91gh2ukzl1s5h8omd3e6pzrli5x8trojoig\",\n    \"pendingUndelegated\" : 5061592625822447590,\n    \"delegated\" : 5169209147627936279,\n    \"enterpriseId\" : \"okab\",\n    \"rewardsReceived\" : 2209945293210140550,\n    \"locked\" : 7671212329455963116,\n    \"delegationId\" : \"f85n\",\n    \"withdrawalAddress\" : \"mwnyjqedfk2oeqq2\",\n    \"coin\" : \"zo99eo08t1bmh514h1b4qigkth85w1w8dp7k6rl8dp3ptyvrd9q1hzxm4r6cfjnpptll4oafgdpikm8n5fwqzopnnmh83mms240j72tdh5h5q5icg9l6tk4tncz0kx\"\n  }, {\n    \"date\" : \"2021-12-05T00:44:38.665869Z\",\n    \"walletId\" : \"6yyq\",\n    \"spendable\" : 71152577219074125,\n    \"pendingDelegated\" : 7275103315286126971,\n    \"delegationAddress\" : \"u3rxglzsssqublbox5wenwttjt5wzq250ovgtffm14sg2hiwgff5a7wjw7di272g9ryt8xmnn0s4z1o7h5\",\n    \"pendingUndelegated\" : 1898987441558197602,\n    \"delegated\" : 8775403511938958525,\n    \"enterpriseId\" : \"28i4\",\n    \"rewardsReceived\" : 8749506735594372545,\n    \"locked\" : 7960683706723227094,\n    \"delegationId\" : \"8qj1\",\n    \"withdrawalAddress\" : \"n92qh2j0fao5tdh16qpzpzm0yhjorhf6nm4vg6io60rdsxo6qgyto42r3xygiqyzdl0zxi\",\n    \"coin\" : \"o7l4re\"\n  }, {\n    \"date\" : \"2023-08-07T19:33:04.666621Z\",\n    \"walletId\" : \"jllz\",\n    \"spendable\" : 7814295710095984080,\n    \"pendingDelegated\" : 8978164320833704577,\n    \"delegationAddress\" : \"ca28a77cy9p5x7gxjie0jki2cr37215m2fu1wru83nxgkvighv581b7j4gujwjdvch1p2yx9ozovos0p43tdlrdnbormu0ext7vw4wjhydja9qrpkxqcmp8m9wqzbrmomjj3nmkq8hu2y89b66njeggmhtuyjt5rqfr8hkpwn21txy4he2q084i5nh4bmht7qolh3k\",\n    \"pendingUndelegated\" : 3055334531171736587,\n    \"delegated\" : 2687404629828677923,\n    \"enterpriseId\" : \"5e5u\",\n    \"rewardsReceived\" : 6519568115463448729,\n    \"locked\" : 484821792943622505,\n    \"delegationId\" : \"dqhh\",\n    \"withdrawalAddress\" : \"toklrpj6t\",\n    \"coin\" : \"r55zil6nazcvb7c4ujycmqfvxzwxctey0w9eqmzeeuod094owr64d7zwgfy37w3h4ym88q333g15178j03sz063avsbrna2qxv6f9d6aola0t5zqp5s2zuowgn6y02ycl67jbeq\"\n  } ],\n  \"totalPages\" : 2459074738519803057,\n  \"page\" : 4959065395559743573,\n  \"totalElements\" : 1053392053775512833\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "7d8f265d-eea6-41f3-91f5-0279b000502d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.667936Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Delegation Accrual History",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "accruals" : {
+              "description" : "An array of delegation accruals",
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/DelegationAccrual"
+              }
+            },
+            "page" : {
+              "type" : "integer",
+              "description" : "Page number for paging purposes"
+            },
+            "totalPages" : {
+              "type" : "integer",
+              "description" : "Total number of pages for paging purposes"
+            },
+            "totalElements" : {
+              "type" : "integer",
+              "description" : "Number of elements per page used for paging purposes"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 37
+}

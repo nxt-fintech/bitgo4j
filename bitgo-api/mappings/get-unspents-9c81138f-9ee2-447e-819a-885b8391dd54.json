@@ -1,0 +1,46 @@
+{
+  "id" : "9c81138f-9ee2-447e-819a-885b8391dd54",
+  "name" : "Get unspents",
+  "request" : {
+    "urlPath" : "/api/v2/jipix9kwg0zdew60wexelo3sr46tyq92spcfiyqu11yahsfazoc52ehyh7c4jg97kdx8vb1wlk701y587rz9kwx587eanbfkcebgs5bmsgfrr6d8mmfipwbrvp13zd9szbkk9kb892qjpkrltv1e4n8zvbt214jz35y0ft23kacft/wallet/4d1c32f938d153bf6655936080148986/unspents",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 403,
+    "body" : "{\n  \"requestId\" : \"884y\",\n  \"context\" : { },\n  \"name\" : \"Amos Beer\",\n  \"error\" : \"6d8s64wysyugzyyyy7dkzglhyi1qin3f5wat00i\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "9c81138f-9ee2-447e-819a-885b8391dd54",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.350425Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.unspents",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 327
+}

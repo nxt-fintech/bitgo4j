@@ -1,0 +1,46 @@
+{
+  "id" : "fbc2779f-fd4a-4960-8643-ea508161a186",
+  "name" : "Get fee estimate",
+  "request" : {
+    "urlPath" : "/api/v2/7m3rc3hg2ski4zx3h4byiqb9tsmnc2rl7plus9n25q87j7dg1kybpxs91dq63tjh56xkjzxkfzpofrj93jb967wbnixdhjcd8h1rfxcruukcg9fk7mbftvbjbs0iito0d51o6kw2ob4m2zp0vop06t9ee67wm61nmjamhnl90kmopjtu5661wijvb/tx/fee",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"ocb3\",\n  \"context\" : { },\n  \"name\" : \"Dr. Darryl Lueilwitz\",\n  \"error\" : \"vydt0dj7h5zrufeqwjubyfd6dhudd8wrwkp6mofnf15fcimdwnqbn3sv6a87ajq1gvn1yj9lno5ghyv28itcct2373bgph9vp7elxh8tj9w16b4fcdkea60ouhv31y5bt9aw20evu9tjfkcugjefcs2oi7a17550at3y2b93z7s6rrm1w5wxu4n5jeadnsiqm2l0\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "fbc2779f-fd4a-4960-8643-ea508161a186",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.173581Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.tx.getfeeestimate",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 401
+}

@@ -1,0 +1,46 @@
+{
+  "id" : "f43777ed-a664-45e4-8196-9f75da3c6c2d",
+  "name" : "Create key",
+  "request" : {
+    "urlPath" : "/api/v2/ocv1kis43lm4py/key",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"byq7\",\n  \"context\" : { },\n  \"name\" : \"Oralee Schneider\",\n  \"error\" : \"49bvolb0xghcv0och9csauzyi0zxv2ik50jyi3gzwfd5gppmwdyflrvun1x879qpepup4dt\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f43777ed-a664-45e4-8196-9f75da3c6c2d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.18754Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.key.add",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 386
+}

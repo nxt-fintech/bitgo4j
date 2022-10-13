@@ -1,0 +1,25 @@
+{
+  "id" : "684f267e-c6fd-4907-b587-26d60f95f05f",
+  "name" : "Request wallet reshare - 200",
+  "request" : {
+    "urlPath" : "/api/v2/ikh4fekub9sxdwgha6rgwu0kk07sjhzg21spusuqzac62wgrmps5z5y8hulm/wallet/a717454501a20e8b1441eb737e79a750/requestreshare",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200
+  },
+  "uuid" : "684f267e-c6fd-4907-b587-26d60f95f05f",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.366629Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.sharing.requestreshare"
+      }
+    }
+  },
+  "insertionIndex" : 309
+}

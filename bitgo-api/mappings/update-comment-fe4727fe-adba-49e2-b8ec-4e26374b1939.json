@@ -1,0 +1,38 @@
+{
+  "id" : "fe4727fe-adba-49e2-b8ec-4e26374b1939",
+  "name" : "Update comment",
+  "request" : {
+    "urlPath" : "/api/v2/uej6ucgkna6sdhxlecwgty9vo7ki82tg25cldu5mdehvn6d9356wjgx6xhr20s6dkds3oexwawpda1j9rl1kzvxfaotr3eztze3fvgr/wallet/09c9e5be93ad3757629804d5a89aa307/transfer/p7hbrv9hkmyf9yo8wze8qjnv2x0u3g3woqf6o1095326luqsfndaoeuc8s78whsumhw59ro5zcyt3vf1o95ymg9bj1t1trxvqkkyd/comment",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "fe4727fe-adba-49e2-b8ec-4e26374b1939",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.491467Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.transfer.comment",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          }, {
+            "$ref" : "#/components/schemas/InvalidTransferId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 186
+}

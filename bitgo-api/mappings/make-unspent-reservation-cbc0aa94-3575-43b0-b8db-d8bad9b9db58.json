@@ -1,0 +1,46 @@
+{
+  "id" : "cbc0aa94-3575-43b0-b8db-d8bad9b9db58",
+  "name" : "Make unspent reservation",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/e41d3feb0919b2e73c638a81505198a6/reservedunspents",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"twn6\",\n  \"context\" : { },\n  \"name\" : \"Tiny Bartoletti\",\n  \"error\" : \"rw7ov\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "cbc0aa94-3575-43b0-b8db-d8bad9b9db58",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.357938Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.reservedunspent.add",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 318
+}

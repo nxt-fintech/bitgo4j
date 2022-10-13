@@ -1,0 +1,43 @@
+{
+  "id" : "10213c46-e26d-46b1-b5cb-b81384a4369a",
+  "name" : "Retrieve Staking Wallet Information For A Wallet",
+  "request" : {
+    "urlPath" : "/api/staking/v1/axli3oe2g45eh0g3qfw4hp6tk9dyw3q2nr8nudqr3w2e3tjbrdjppwzuql5vkz5bi6k6wu9a52p1jtnvaa5r5dmsextptvfqp2x3b5hsnpunhnzeddmo0uzbcxhwyovqiu3yzt74q2i8tjwsioumuzhi8txkf91cy/wallets/777b",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 409,
+    "body" : "{\n  \"code\" : \"Conflict\",\n  \"message\" : \"Conflicting clientID\",\n  \"status\" : 409\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "10213c46-e26d-46b1-b5cb-b81384a4369a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.656496Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Wallet Information For A Wallet",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 60
+}

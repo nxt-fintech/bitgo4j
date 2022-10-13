@@ -1,0 +1,43 @@
+{
+  "id" : "77875720-c3f7-408a-b4cd-cc14809fb71e",
+  "name" : "Retrieve Staking Wallet Delegations",
+  "request" : {
+    "urlPath" : "/api/staking/v1/s65vfmyfsq9bbfw3p8updsxar5worysq52g43ynm256dj2kx53puv9sa3xd7aifyw4cx1l5guad7un3px4gsaov290jxrozca7tiu0mvm6vh58cxxud8x4qi7xtedlgj9ng6hz441k3pgad1peqm9/wallets/nhhb/delegations",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"code\" : \"Unauthorized\",\n  \"message\" : \"Unauthorized\",\n  \"status\" : 401\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "77875720-c3f7-408a-b4cd-cc14809fb71e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.658403Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Wallet Delegations",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 56
+}

@@ -1,0 +1,36 @@
+{
+  "id" : "67a9650f-8ca9-4125-b346-bcf875fe653c",
+  "name" : "List all transfers on all wallets in an enterprise",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/f27c06b6b2dd99590b948186b6b3f94b/transfer",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "67a9650f-8ca9-4125-b346-bcf875fe653c",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.117891Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.enterprise.listtransfers",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidEnterpriseId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 407
+}

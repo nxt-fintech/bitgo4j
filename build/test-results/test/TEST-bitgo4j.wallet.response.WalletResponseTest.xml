@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.wallet.response.WalletResponseTest" tests="37" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:33" hostname="ishtos-MacBook-Pro.local" time="0.008">
+  <properties/>
+  <testcase name="testSetCoinSpecific()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.002"/>
+  <testcase name="testSetCustodialWalletId()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetCustomChangeKeySignatures()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetStakedBalance()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetUnsupportedTokens()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.001"/>
+  <testcase name="testSetId()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetM()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetN()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetAllowBackupKeySigning()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetConfirmedBalanceString()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetStakedBalanceString()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testToString()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetDeleted()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetSpendableBalance()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetSpendableBalanceString()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetApprovalsRequired()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.001"/>
+  <testcase name="testSetBalanceString()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetConfirmedBalance()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetDisableTransactionNotifications()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetBuildDefaults()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetStartDate()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetFreeze()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetMultisigType()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetReceiveAddress()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.001"/>
+  <testcase name="testSetIsCold()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetNodeId()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetRecoverable()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetTokens()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetEnterprise()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetCoin()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetKeys()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetTags()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetType()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetBalance()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetAdmin()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetLabel()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.0"/>
+  <testcase name="testSetUsers()" classname="bitgo4j.wallet.response.WalletResponseTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

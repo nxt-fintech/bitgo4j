@@ -1,0 +1,36 @@
+{
+  "id" : "d7acfbbc-9d8d-4642-97fe-ad459e3bfac0",
+  "name" : "Get spending limits and current amount spent",
+  "request" : {
+    "urlPath" : "/api/v2/vlaszm1gp5ly72d5yq7941ej6tgdok5uegp57u4qcks7u1v5tjs1ud9ujfbl3ey351gdyh1mkacqtvdotp2hr5x07ehluq9izwq2bgkw4s9t2eqirrvt9q1fhnea7cxllepxjheh1t/wallet/67cf9ff48cd4ad8681c4f3e2386eb07b/spending",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d7acfbbc-9d8d-4642-97fe-ad459e3bfac0",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.354513Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.spending",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 321
+}

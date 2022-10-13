@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.address.request.CreateAddressRequestTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:33" hostname="ishtos-MacBook-Pro.local" time="0.005">
+  <properties/>
+  <testcase name="testSetLowPriority()" classname="bitgo4j.address.request.CreateAddressRequestTest" time="0.004"/>
+  <testcase name="testToString()" classname="bitgo4j.address.request.CreateAddressRequestTest" time="0.0"/>
+  <testcase name="testSetGasPrice()" classname="bitgo4j.address.request.CreateAddressRequestTest" time="0.0"/>
+  <testcase name="testSetForwarderVersion()" classname="bitgo4j.address.request.CreateAddressRequestTest" time="0.0"/>
+  <testcase name="testSetEip1559()" classname="bitgo4j.address.request.CreateAddressRequestTest" time="0.0"/>
+  <testcase name="testSetFormat()" classname="bitgo4j.address.request.CreateAddressRequestTest" time="0.0"/>
+  <testcase name="testSetOnToken()" classname="bitgo4j.address.request.CreateAddressRequestTest" time="0.0"/>
+  <testcase name="testSetChain()" classname="bitgo4j.address.request.CreateAddressRequestTest" time="0.0"/>
+  <testcase name="testSetLabel()" classname="bitgo4j.address.request.CreateAddressRequestTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

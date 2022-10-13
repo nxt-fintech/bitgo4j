@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.wallet.common.TransactionRequestFullTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:33" hostname="ishtos-MacBook-Pro.local" time="0.025">
+  <properties/>
+  <testcase name="testSetPolicyUniquId()" classname="bitgo4j.wallet.common.TransactionRequestFullTest" time="0.023"/>
+  <testcase name="testSetTxRequestId()" classname="bitgo4j.wallet.common.TransactionRequestFullTest" time="0.0"/>
+  <testcase name="testToString()" classname="bitgo4j.wallet.common.TransactionRequestFullTest" time="0.001"/>
+  <testcase name="testSetVideoApprovers()" classname="bitgo4j.wallet.common.TransactionRequestFullTest" time="0.0"/>
+  <testcase name="testSetWalletRebalanceEventId()" classname="bitgo4j.wallet.common.TransactionRequestFullTest" time="0.001"/>
+  <testcase name="testSetTxRequest()" classname="bitgo4j.wallet.common.TransactionRequestFullTest" time="0.0"/>
+  <testcase name="testSetVerificationItems()" classname="bitgo4j.wallet.common.TransactionRequestFullTest" time="0.0"/>
+  <testcase name="testSetVerificationRuleId()" classname="bitgo4j.wallet.common.TransactionRequestFullTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

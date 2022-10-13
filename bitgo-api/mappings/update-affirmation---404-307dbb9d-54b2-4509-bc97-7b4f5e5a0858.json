@@ -1,0 +1,25 @@
+{
+  "id" : "307dbb9d-54b2-4509-bc97-7b4f5e5a0858",
+  "name" : "Update Affirmation - 404",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/k70a/account/5784/affirmations/6uw5",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "307dbb9d-54b2-4509-bc97-7b4f5e5a0858",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.630173Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.settlement.updateAffirmation"
+      }
+    }
+  },
+  "insertionIndex" : 113
+}

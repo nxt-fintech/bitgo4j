@@ -1,0 +1,36 @@
+{
+  "id" : "22e20a4c-7884-4893-87c0-14de7f968806",
+  "name" : "Withdraw from lightning balance",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/8dded0e58952c8d78f79cefef74abe97/lightning/withdrawal",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "22e20a4c-7884-4893-87c0-14de7f968806",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.503975Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.lightning.withdraw",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 173
+}

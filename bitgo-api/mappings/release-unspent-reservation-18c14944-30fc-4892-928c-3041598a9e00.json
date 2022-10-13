@@ -1,0 +1,45 @@
+{
+  "id" : "18c14944-30fc-4892-928c-3041598a9e00",
+  "name" : "Release unspent reservation",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/c2b064c606695b67f60d37d3089b1720/reservedunspents",
+    "method" : "DELETE",
+    "queryParameters" : {
+      "id" : {
+        "equalTo" : "53danw9vgfq18g7n1f1kzybq3ot4lo2"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"unspents\" : [ {\n    \"walletId\" : \"21ce181c80d910a67424c352863a649b\",\n    \"expireTime\" : \"2022-08-09T14:51:23.358062Z\",\n    \"id\" : \"h3g4\",\n    \"userId\" : \"3867d2e69d4ec37f2e9eada9c4d929e9\"\n  }, {\n    \"walletId\" : \"7501c7d76d0ef6d7ebc62f3dc849b8f9\",\n    \"expireTime\" : \"2021-10-22T11:51:16.358296Z\",\n    \"id\" : \"31b9\",\n    \"userId\" : \"706d4cec400a9d5536ecdcd18b278d29\"\n  }, {\n    \"walletId\" : \"6f9394a6c92186a37adfabed5a1ecf3f\",\n    \"expireTime\" : \"2022-03-09T13:23:56.358564Z\",\n    \"id\" : \"3t9d\",\n    \"userId\" : \"c1950416309413ed2cfc5ec1458bbb37\"\n  }, {\n    \"walletId\" : \"300b9f80c087963b469dc36ecf02c06f\",\n    \"expireTime\" : \"2023-07-13T12:01:39.358789Z\",\n    \"id\" : \"6y3w\",\n    \"userId\" : \"29bf69b0694833bf1a92366a10f11275\"\n  }, {\n    \"walletId\" : \"b8b370aa467988c5a1d54cc8c6d4ab59\",\n    \"expireTime\" : \"2023-06-17T22:24:38.359066Z\",\n    \"id\" : \"hhp4\",\n    \"userId\" : \"769e55a2e631002abe694d5010861d5a\"\n  }, {\n    \"walletId\" : \"42573ed2d13e251fa9b494c2dd3faea7\",\n    \"expireTime\" : \"2022-02-21T10:16:47.359295Z\",\n    \"id\" : \"6r8u\",\n    \"userId\" : \"691192994d4d62e5b4f4d5b1003b3400\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "18c14944-30fc-4892-928c-3041598a9e00",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.359811Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.reservedunspent.delete",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "unspents" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/ReservedUnspent"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 317
+}

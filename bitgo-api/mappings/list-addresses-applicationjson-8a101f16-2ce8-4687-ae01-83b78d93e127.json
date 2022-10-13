@@ -1,0 +1,64 @@
+{
+  "id" : "8a101f16-2ce8-4687-ae01-83b78d93e127",
+  "name" : "List addresses (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/3i1jf48pt30je4z30o1gu81viscqu83dv7hc2ht5l4y3e7smkg79ng0qyydawoaj7666exnhpnp2v76i1vkm6a6cwk1ucwd7v27ihi6qidfkwkvkk2v7unz/wallet/0bce534051ab666dcb5ee4c2d33fcdde/addresses",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"pendingAddressCount\" : 4258951087961709784,\n  \"nextBatchPrevId\" : \"82147682-4b03-4c92-9ba4-8b35fb73428c\",\n  \"addresses\" : [ {\n    \"chain\" : 11,\n    \"address\" : \"ujc6295075pz9wqbw05os19qvimgadro0b5jw7dtqjdvzssemq7tqnf1t7it5m6svl5pfvrqcbeqtj9lbhjj2easzvc78caqohdilw3p89bck9cwg6otrgs9201m5qjjm55ifol8btc6h5rj4v7f7enqtdsg9yxxlf9ghtap88r0elq6snkekb65\",\n    \"wallet\" : \"d159aef537d76058002a394691199a80\",\n    \"balance\" : {\n      \"balance\" : 7515937759503895804,\n      \"spendableBalanceString\" : \"927be5ek81boo2dus97ciitjl5e1muiq\",\n      \"totalReceived\" : 668424937071768037,\n      \"totalSent\" : 2930583166630418901,\n      \"confirmedBalanceString\" : \"cnjfg0c18ni021j4xtoe0hhrv250xqo0d5mww\",\n      \"updated\" : \"2022-03-04T20:26:44.783968Z\",\n      \"balanceString\" : \"qn8421i9n818mgyjslrx5plc6ggy3howd5b7mcokkda97kdarunb1kjvu41yr46ks3thkbv1\"\n    },\n    \"addressType\" : \"p2sh-p2wsh\",\n    \"lastNonce\" : 2817485429189991354,\n    \"index\" : 2943695534161593524,\n    \"id\" : \"ec08860a3a09cae5d19e37e589728a9d\",\n    \"label\" : \"quia\",\n    \"coin\" : \"343w0j9i646z188ks9waivtp1a74m9i4htwg65d49qyviga3asmrninz7qnwlighs\",\n    \"coinSpecific\" : {\n      \"txlm\" : {\n        \"rootAddress\" : \"funvk\",\n        \"memoId\" : \"982913357623\"\n      },\n      \"xlm\" : {\n        \"rootAddress\" : \"ib53owvze7n5dsa5ddbzce08plompmyhcjty4dguyq5sakdtr86xn42j3jcdc7lmw5x5fhb2ghj9zv83tsrdkgzlqk1sx2sa5fz3thw7gktes7hi2o44i8o9wu9tsk8tyrxuf02j16cxyccf\",\n        \"memoId\" : \"67369806533920285151351545667484807626\"\n      }\n    }\n  }, {\n    \"chain\" : 31,\n    \"address\" : \"276o7f0tkbl9wf2fut6nyxp5h22oaif4jhokf3tiysg4zazxeqcdisrradxtkqx1cblu7q4pvv4oulcy8fmtjw2kek2oq52ro3lwbw8qi4vbj461bixtet2lcbph2iytnz0pq624d2yz84j78ks\",\n    \"wallet\" : \"3d03a9686c41a2c8b12745c59c52eea8\",\n    \"balance\" : {\n      \"balance\" : 7580698348972449193,\n      \"spendableBalanceString\" : \"zek6n5kcdixxg1y7ce9mg6mot23ger0x0fbalpjkcpu80vb3ieyk2pzehq945jflq61saomlubbmz2o2jyjrnulv6vtdtekqror8xxcbbgkv1bmywml29bs205fbjlz3h0jbfe6pm9d7fl0zpfxajy55ydkj1c2z2dvxiczx4kxznprrhfdepvk\",\n      \"totalReceived\" : 8985176291945559937,\n      \"totalSent\" : 7636267238906327357,\n      \"confirmedBalanceString\" : \"clodxzzfzu1t33f33m0o8h41qb5pnxlk671ny6x6cy5cus1skik9dt01rt274rrjjh0rv8b7nvxfm8g1mv0msvida5sv94p7uiya96mf6bn9t6y134dvimfy2mw06z71reznob628vhm4w56pzqty\",\n      \"updated\" : \"2022-08-16T17:29:34.829511Z\",\n      \"balanceString\" : \"49o2nw9e6zetz7bi7glt2m6km05h45dglsnjv3d5pceplh4q9zx5pabpi3au1apg72c7u8o1edawe1772dl18kyt3alkn9f00ygtrxo2fw1r6qxbznyl4sao8jmsypbbm0nhayacmv11tlxcf6lqfoo6q9etng\"\n    },\n    \"addressType\" : \"p2wsh\",\n    \"lastNonce\" : 6806895744627829028,\n    \"index\" : 6723155657478898939,\n    \"id\" : \"e213b094fabfb045eb13745d7b2d814c\",\n    \"label\" : \"dignissimos\",\n    \"coin\" : \"nf04k23qmicnnrzci2xlbo7l9t9p2xicnb39fry7z219sxzt9jbs77bxyion2up95hi3ly8ry0\",\n    \"coinSpecific\" : {\n      \"txlm\" : {\n        \"rootAddress\" : \"lrmkw7oxyxxhg9orq8yas64yv6iqqza4oj10781jejti4op22lhrzudaiykm463uxmx0ri06xm1220uddgbk4mze214i2klhgld2eviu81r7dmfxgsqj4f6xgr8ubqtlswt9revhdyyzxdjpfaveqn6r630qkf3d7ntofsi4pb3sv5zemj7\",\n        \"memoId\" : \"594649481878935637435131367210675046845406099860120847427309959454492037332795910263664987882509\"\n      },\n      \"xlm\" : {\n        \"rootAddress\" : \"c4n1zntf9n\",\n        \"memoId\" : \"5051859297040607562349263761719645525986869811223559904990949486245866423911025687808284056\"\n      }\n    }\n  }, {\n    \"chain\" : 30,\n    \"address\" : \"lf12t7cynkmnakoop5bkivgyhuogu7p1ef2ujq0am3qjnhpdor9z2ik51f9b0gvthrc83ewhhb5ymoihsvfhqclk0k686dka0s7kwv0axhdokdgk675ge50ch43pwfwlti7aqisugdsa44e005pz1yth3k8z3hmlx182axvhnfl26eyy3lklf1v20k1q6wnf0tb0466a6yshfqhszdv8klokiknfpynnu57dfxklpvdn28ymgj\",\n    \"wallet\" : \"1cb9f8c40ec3ee11a5c831100a2d0e4c\",\n    \"balance\" : {\n      \"balance\" : 1537607142434847361,\n      \"spendableBalanceString\" : \"v1l3eyhn5gspa59f57sobyran299mbj3uenontnhpm6yz8i6976gmocboqbi8nrnj\",\n      \"totalReceived\" : 780266760877150279,\n      \"totalSent\" : 4827046151403460931,\n      \"confirmedBalanceString\" : \"pdlpbitwadrivsbmju3y54xx23pzurq2rbsuk800stnk13gg0l6mzky2vhzhnl8utij68nkwo6\",\n      \"updated\" : \"2022-04-07T05:51:19.83476Z\",\n      \"balanceString\" : \"o6bfcg4jt8eqgz42rhh2qfcgymiww55sclaxj03hn3nw192imdduvrthw4pptxzyzzskg9c7e94bbgkqil103a7ogcpu8su5xrwnmqovwjszdtpqbye6f0i7ipa7msyfqlqbrhrnrkc5bw2r9rnh6\"\n    },\n    \"addressType\" : \"p2sh\",\n    \"lastNonce\" : 6996166806619036751,\n    \"index\" : 8305063674006169674,\n    \"id\" : \"4b17c64d4792d6256c9a02ab49b9a1e4\",\n    \"label\" : \"aliquid\",\n    \"coin\" : \"z379708m9lu7ehtjr1cpm2rz4s22e7l0zq9vsjqtt1nmcjglj6vo5ijjhb9bouwk7b00ih4g0x5a3c35bwkwbz7q3jbmmq148uos5acv2v5e8xfije7mg9tynpa0gpkbp4swtu4b81bqc6mvkc1tv0rt0gkta\",\n    \"coinSpecific\" : {\n      \"txlm\" : {\n        \"rootAddress\" : \"2yogg5cjj2uju7cf7pxtjpoefz\",\n        \"memoId\" : \"-6672107499963787662616468861488308014369834375359760445006293173650008735763835559892026536\"\n      },\n      \"xlm\" : {\n        \"rootAddress\" : \"kpyoxvzjos02zoanukqmfgp7ycy6h2s0pyo1zizehh0nq4wztt0n\",\n        \"memoId\" : \"1639334819590339620527041129123188398459601102607519446691\"\n      }\n    }\n  }, {\n    \"chain\" : 0,\n    \"address\" : \"m5re324rg0mkz71q30togf7rmxi2vwnaplyntrubl5z9du6n76lxwydtnxei5u3xj1wg19lwr8gz27exwyq7h0n9n81q17wn0axt23fcts9w9dtkugdmdkt6ciu7pv60wqm42magr1fe2xbb5kdv07zx8rivlf1nzizf6uzjxrhdjqk3due97\",\n    \"wallet\" : \"47aa4b2f83ed2bb43ab8be27f4a02966\",\n    \"balance\" : {\n      \"balance\" : 6497931340911751096,\n      \"spendableBalanceString\" : \"8eumvzjjtsiod9der0h0bbugefpz70z7393se68qm5dfmnkpwwq7gl89le56fboa355p2c13g7diytht4d1bcspqcgj63pq1bank8pjkpvv47aj421nzoollnu1fzsvdl352blpzbwiyc88dkwvs89382\",\n      \"totalReceived\" : 431986847459427401,\n      \"totalSent\" : 3781766237141047736,\n      \"confirmedBalanceString\" : \"omnkmg4oqvc4ndu8lgjksztsbhzf10jkqgnbkxth1bpqpz54u3k8ga8uqbgjnuyr69mhzwfi9jyxp1aqpq7rirb3l7nqweyxasd048bck7ga8kxtfvzjkyqrokslrgrnf3rjpet6ge5jw34yoo3dl9wd73futl8kskoq\",\n      \"updated\" : \"2022-07-03T05:30:04.838532Z\",\n      \"balanceString\" : \"qd3kbp5vrmprdiv6guu6e9gue5ktdjzrt3jz5dv3evtmgrpk6je7bsjwklwn2a05qljaig58vl2wtwlb6b88fge12r7no6hrnc0bna0z714yx5b5y986v13xol9g7ptymvc33n5a8urcj1voxeeh7v3cufj3m960yi5ygzxjkt8lwm966hvw66lr0jskejuai\"\n    },\n    \"addressType\" : \"p2wsh\",\n    \"lastNonce\" : 1390659345622495633,\n    \"index\" : 2040053813892405148,\n    \"id\" : \"295853b5e12c85d3c468eac541a36476\",\n    \"label\" : \"eos\",\n    \"coin\" : \"0ruh3ytk0ui93wrbpr6fkds903l07yxpkhwkhzkx6h5e2pyeluq7bort1d0ru977xjjhyciufxxb5rtd434z7tlv2cjr\",\n    \"coinSpecific\" : {\n      \"txlm\" : {\n        \"rootAddress\" : \"ueozqmhmikfxjny3sixeu47wkmdtqadv0w3q5nquf5fwu7e608ee7xv5bnn5o9dxz43q94ydli0fjhwsrap3nspj1kssxe51n9y32uvacpaje8quw0mvbxy1mynyrkw7jlpn1gtqxjhp3w2g8e9ptp\",\n        \"memoId\" : \"-712020488963575204400740185200085763896599251246894791032918792917756454216141072418069149676772\"\n      },\n      \"xlm\" : {\n        \"rootAddress\" : \"k7iuxt8cs07mxe9njs5ag3j5dbsnm5852k3khzb1nvk95ntk4urqzclhjia\",\n        \"memoId\" : \"-1748125992698270585192465802425777531012681380195901675811262498833431638370188\"\n      }\n    }\n  }, {\n    \"chain\" : 1,\n    \"address\" : \"rvwoej1km276ay3cfjcg1529005pvqrwo6tikj69ejnif3fekf3wnzn2t9z616csrdjabb8jwq9hv3i58y1ih6qmam5pokl0iwhlh2mup940p46b4fcbq1sefi2pa4pxy4rvzzx7vbwa100vyb2mji15zueqeey1kpm\",\n    \"wallet\" : \"35bf80434031fb4a4cc6e68b7c975e54\",\n    \"balance\" : {\n      \"balance\" : 5055682315482875233,\n      \"spendableBalanceString\" : \"54m5j0y8fjvapyqoqfssvs624dlqdmat4wonylw6nje852c7pq11ifhkihic70eczo8shydph7yv238z2mn86zgk5aqtk0vboidun73owemnr47lmbfm0hm3btbibrpd5rcwxqnze\",\n      \"totalReceived\" : 3508611625878353660,\n      \"totalSent\" : 23954608908678828,\n      \"confirmedBalanceString\" : \"bgw1dr4oceootxldd8jxkijjh1np2261wa7o6q6vwj1mo5zqq73dvpp1wutvk1j8lmkn15jdtk213743g63kgmzcqcdth7qc51grdive112j3b9cue\",\n      \"updated\" : \"2022-04-27T11:10:53.841945Z\",\n      \"balanceString\" : \"he10bbwefx9xtymhjhb3ozlsh9dsyqc2e06e9wuqafduhc4337efh8jjwmahavd5aoq0u98xass4q868k2kpwrh3lkom4b4v1fojazcz58u176cnmlf539c4\"\n    },\n    \"addressType\" : \"p2wsh\",\n    \"lastNonce\" : 8969906174733648019,\n    \"index\" : 8993064755914044999,\n    \"id\" : \"1ea6354b662eb5b13faad6d7b68f06b2\",\n    \"label\" : \"esse\",\n    \"coin\" : \"wnebus4mwnausgihlsideb6rjvtmnvlyrelmw6312lrxwbr010702poiwr1c1p1hqgoiqgqqlduu2rczksl1d9xybg31rl9xxbuluz52qs93ylf55s1tj7\",\n    \"coinSpecific\" : {\n      \"txlm\" : {\n        \"rootAddress\" : \"5n3r9b661usp7wfzn6vdocd7jpbtv2fdk5n9hw4tsv8udja8k5kalnr9eqkce6cv4yq24jsentvnehptkq6pq\",\n        \"memoId\" : \"0526913239121984997917201173394666848953566694139523\"\n      },\n      \"xlm\" : {\n        \"rootAddress\" : \"4hc0bpqxhs2\",\n        \"memoId\" : \"165852240708\"\n      }\n    }\n  } ],\n  \"count\" : 8740694743582071684,\n  \"totalAddressCount\" : 4527320925905780494,\n  \"coin\" : \"29z5m33ijdbm9w5wqzsg04r0o1j1oy6hfdmzao4k8rep3udem4\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "8a101f16-2ce8-4687-ae01-83b78d93e127",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.858438Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.addresses",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "coin" : {
+              "type" : "string"
+            },
+            "totalAddressCount" : {
+              "type" : "integer",
+              "description" : "Total number of addresses which match the provided query parameters.\n**Note:** for wallets with many addresses (100,000 or more), this property may be omitted for performance reasons.\nIf the total address count is needed for a large wallet, the `includeTotalAddressCount` query parameter can be used to\nforce an address count to be returned with the initial page of addresses.\n"
+            },
+            "pendingAddressCount" : {
+              "description" : "Total number of addresses pending on-chain initialization on this wallet\n**Note:** for wallets with many addresses (100,000 or more), this property may be omitted for performance reasons.\nIf the pending address count is needed for a large wallet, the `includeTotalAddressCount` query parameter can be\nused to force an address count to be returned with the initial page of addresses.\n",
+              "type" : "integer"
+            },
+            "addresses" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/Address"
+              }
+            },
+            "nextBatchPrevId" : {
+              "$ref" : "#/components/schemas/NextBatchPrevId"
+            },
+            "count" : {
+              "description" : "Total number of addresses returned in this response",
+              "type" : "integer",
+              "x-internal" : true
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 460
+}

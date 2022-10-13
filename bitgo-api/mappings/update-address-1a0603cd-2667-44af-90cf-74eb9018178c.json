@@ -1,0 +1,46 @@
+{
+  "id" : "1a0603cd-2667-44af-90cf-74eb9018178c",
+  "name" : "Update address",
+  "request" : {
+    "urlPath" : "/api/v2/xiawt7nxex56q7dwhct1c73gokz6bd9uqr7xghj04nd9k65cc0gecienn23/wallet/107cd3d23289371d20d50cab4fde5f37/address/n1k4",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"1934\",\n  \"context\" : { },\n  \"name\" : \"Tegan Tromp\",\n  \"error\" : \"01olkwbcbi2h2w5wkd2sbo24dxhvzdjqlxt9dinfn92iu6pnhbgu0723pgb1se8gz2qmwzpqllu350vwpfhwu398yuc5myo667nnh7qf\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "1a0603cd-2667-44af-90cf-74eb9018178c",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.923523Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.updateaddress",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 448
+}

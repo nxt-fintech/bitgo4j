@@ -1,0 +1,42 @@
+{
+  "id" : "78efff94-3118-4f65-a99b-04fe6dfbaf25",
+  "name" : "Add wallet webhook",
+  "request" : {
+    "urlPath" : "/api/v2/gn4nli6qa4womx4m5tu8dataspdosu51wlzxh934yoxb4ystlzbf7sulaqrl3e2z10oafzs5yfhv9qgljlx7m6d2enm8/wallet/2d6142f170f9aa821897d0540afbc886/webhooks",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"created\" : \"2021-12-01T00:14:21.380095Z\",\n  \"allToken\" : false,\n  \"failingSince\" : \"2022-04-05T02:10:07.38013Z\",\n  \"label\" : \"recusandae\",\n  \"type\" : \"address_confirmation\",\n  \"version\" : 1711600995580938273,\n  \"numConfirmations\" : 4661498242004101374,\n  \"url\" : \"https://web.example.mocklab.io/604811\",\n  \"successiveFailedAttempts\" : 466705317182265124,\n  \"lastAttempt\" : \"2022-06-27T07:01:36.380117Z\",\n  \"id\" : \"44a0132c6ee388de20b422c10f8d6902\",\n  \"state\" : \"active\",\n  \"coin\" : \"nwab87u9s1ax49eodou18m908ghbueiup7duh63zmpv2rhoek487qvzlqkwz1tnnfgz76enz6bcu3f9kjb8hbg1ew9tdf49jfe9zfc8zg32noky2td1f1kbxvh5g8c9gkdf24w8dpplyigdsqjwups9532sx0tx4rmwu0ean4a8dxzkafc528wot3wlfnzbyj\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "78efff94-3118-4f65-a99b-04fe6dfbaf25",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.380797Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.addwebhook",
+        "schema" : {
+          "allOf" : [ {
+            "type" : "object",
+            "properties" : {
+              "allToken" : {
+                "type" : "boolean",
+                "example" : false
+              }
+            }
+          }, {
+            "$ref" : "#/components/schemas/Webhook"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 295
+}

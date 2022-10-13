@@ -1,0 +1,46 @@
+{
+  "id" : "29ac37e6-9fef-410b-b865-50023260dd87",
+  "name" : "Delete signature shares on a transaction request.",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/653332c5898648a628e24ea179719bb8/txrequests/ab88263bb4a7d228128785efaf0840cd/signatureshares",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 403,
+    "body" : "{\n  \"requestId\" : \"o97l\",\n  \"context\" : { },\n  \"name\" : \"Royce Nader\",\n  \"error\" : \"w041xhk\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "29ac37e6-9fef-410b-b865-50023260dd87",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.415541Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.signatureshare.delete",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 247
+}

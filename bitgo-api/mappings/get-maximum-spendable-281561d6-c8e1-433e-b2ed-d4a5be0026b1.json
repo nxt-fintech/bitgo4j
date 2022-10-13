@@ -1,0 +1,46 @@
+{
+  "id" : "281561d6-c8e1-433e-b2ed-d4a5be0026b1",
+  "name" : "Get maximum spendable",
+  "request" : {
+    "urlPath" : "/api/v2/jl5eqtbqh5cr5gro35nfzabfm25p4z8pdmgnfds1tvcdz1hrv1z3g3iduroumtesv9qni7e768kudkhq0cz4mg/wallet/e420675430ce04cb7b135403b78536be/maximumSpendable",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"07l9\",\n  \"context\" : { },\n  \"name\" : \"Chung Blanda PhD\",\n  \"error\" : \"j413qd4rlshmprw59bw4elnavsk7yxfkc9hiokswgzwrjru4\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "281561d6-c8e1-433e-b2ed-d4a5be0026b1",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.35334Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.maximumspendable",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 323
+}

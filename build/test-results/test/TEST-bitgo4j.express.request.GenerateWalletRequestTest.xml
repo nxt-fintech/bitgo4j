@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.express.request.GenerateWalletRequestTest" tests="11" skipped="1" failures="0" errors="0" timestamp="2022-10-13T09:51:32" hostname="ishtos-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="testSetPasscodeEncryptionCode()" classname="bitgo4j.express.request.GenerateWalletRequestTest" time="0.0"/>
+  <testcase name="testToString()" classname="bitgo4j.express.request.GenerateWalletRequestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testSetWalletVersion()" classname="bitgo4j.express.request.GenerateWalletRequestTest" time="0.0"/>
+  <testcase name="testSetBackupXpubProvider()" classname="bitgo4j.express.request.GenerateWalletRequestTest" time="0.0"/>
+  <testcase name="testSetColdDerivationSeed()" classname="bitgo4j.express.request.GenerateWalletRequestTest" time="0.0"/>
+  <testcase name="testSetGasPrice()" classname="bitgo4j.express.request.GenerateWalletRequestTest" time="0.0"/>
+  <testcase name="testSetDisableKRSEmail()" classname="bitgo4j.express.request.GenerateWalletRequestTest" time="0.0"/>
+  <testcase name="testSetDisableTransactionNotifications()" classname="bitgo4j.express.request.GenerateWalletRequestTest" time="0.0"/>
+  <testcase name="testSetBackupXpub()" classname="bitgo4j.express.request.GenerateWalletRequestTest" time="0.0"/>
+  <testcase name="testSetEnterprise()" classname="bitgo4j.express.request.GenerateWalletRequestTest" time="0.0"/>
+  <testcase name="testSetUserKey()" classname="bitgo4j.express.request.GenerateWalletRequestTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

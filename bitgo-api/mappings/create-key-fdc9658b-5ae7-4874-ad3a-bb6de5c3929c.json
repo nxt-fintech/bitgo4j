@@ -1,0 +1,43 @@
+{
+  "id" : "fdc9658b-5ae7-4874-ad3a-bb6de5c3929c",
+  "name" : "Create key",
+  "request" : {
+    "urlPath" : "/api/v2/9kudeo1613suua1b7tkf/keychain/local",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"prv\" : \"q69zva74nlasxbxhdsyc5trsbmt6vl4akrz0fv04fs7slte54s0iya4ltnruwxbdmgycdtunswat4g7o\",\n  \"pub\" : \"cy9rdx2y29pthsg2v56k2qoi4fc8lolvefo6rca4a2osmu85sklq5ryr3uoi5hfso9zs4fs3o5znbnsu4j2a9v6yw6gg32eai173v59bq64orrsgt45ldeqn0y3kuhknw53nl0dfx5aebp\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "fdc9658b-5ae7-4874-ad3a-bb6de5c3929c",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.458617Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.keychain.local",
+        "schema" : {
+          "type" : "object",
+          "description" : "Generated key pair",
+          "properties" : {
+            "prv" : {
+              "type" : "string",
+              "description" : "Private key",
+              "example" : "xprv9s21ZrQH143K2Y4th5Bn8sCRCMNjVr3sm9TLj9yw9SRKxYbJdB18bpc7cZFHKKWKuWZUBATfbDVE26u7w2iUhmWD8Gsp8UkaemhLEfopC35"
+            },
+            "pub" : {
+              "$ref" : "#/components/schemas/Pub"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 206
+}

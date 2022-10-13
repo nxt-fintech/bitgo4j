@@ -1,0 +1,41 @@
+{
+  "id" : "47172215-d874-4cff-a005-e036b571230d",
+  "name" : "Freeze wallet (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/073qb3stmq04c9kd/wallet/c21c76468fdbc2a1f838423acac210c6/freeze",
+    "method" : "POST",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "47172215-d874-4cff-a005-e036b571230d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.346216Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.freeze",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 332
+}

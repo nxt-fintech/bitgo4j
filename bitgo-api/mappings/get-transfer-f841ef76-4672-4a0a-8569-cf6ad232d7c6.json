@@ -1,0 +1,54 @@
+{
+  "id" : "f841ef76-4672-4a0a-8569-cf6ad232d7c6",
+  "name" : "Get transfer",
+  "request" : {
+    "urlPath" : "/api/v2/q620cvrjzb5ayjeum7grcp/wallet/6a47d504fe11bd46e826a03ad0639190/transfer/6au9jofwgd7gdm04vr2mwpytdm6lr9xx",
+    "method" : "GET"
+  },
+  "response" : {
+    "status": 206,
+    "body": "{\n  \"date\" : \"2022-02-28T14:07:12.243637Z\",\n  \"enterprise\" : \"66a2d6d0992e66d31c90afb6d05f1fe1\",\n  \"usd\" : 2.0455256376402357E307,\n  \"type\" : \"send\",\n  \"sequenceId\" : \"iu6r\",\n  \"baseValue\" : 5847954285191570395,\n  \"usdRate\" : 7.407627754605582E307,\n  \"id\" : \"8f53cfe6ab6bda25385e43df5cd9c2a1\",\n  \"state\" : \"unconfirmed\",\n  \"value\" : 696740770926229589,\n  \"feeString\" : \"a13cs4ooln07wcou34bn3h0z3u4u6i3y59ghkcnaswczom6pqf1x6r37nwdhadq5fgg8bi2045jhd4ixiflake79d900uyz7avog8qhjmjfykp6mwdpiwghh34istjrt5piaxnstg\",\n  \"height\" : 7901704446391658558,\n  \"payGoFee\" : 3626886115370508714,\n  \"payGoFeeString\" : \"olpn08retoe1l5ujhq99fzzsmy2dnyynczfleth6w34r0zo0qi40wyncu1ujt5yrcl1qefwrr2bifcwthaa5x9mkoatj6dy82ljnmg3vd2jg6gtw\",\n  \"wallet\" : \"dc62eb38f8854836beed4b3170aaaf2b\",\n  \"txid\" : \"c76m\",\n  \"baseValueString\" : \"\",\n  \"history\" : [ {\n    \"date\" : \"2023-07-05T18:45:13.244352Z\",\n    \"action\" : \"unconfirmed\",\n    \"comment\" : \"tdw20ogrtpnjvqvbaxf6i426etik86iddf4s8191jw7z6om2wm8yym6d74zpuknra7q94t1tnl27p03beigdayqwht59eaiuatepqimrv9fjjxgwpmodjstq3t2o4vlq3wuuqat4mgftxqvcb926ks1xbax1ve5bzswatjeu4kd3m10w9nc6me0d08f5\",\n    \"user\" : \"fb26c549a675ce4a88282dad4afa955b\"\n  }, {\n    \"date\" : \"2022-02-24T21:25:40.244501Z\",\n    \"action\" : \"failed\",\n    \"comment\" : \"pxnwc54j4k0c0m6qbokigpx0doxykvbcgof5cx72lp0svuiciug7wgngmr7q49jmiyxrlnao439gvujqyhivv67af5zmy7enpnkaqj0f7yxu6khalqu30wxyy5xv178780tcc92mst23950npgqrka085rxhf75ircarbosk1cnrq6rt3\",\n    \"user\" : \"5426297b2ecfca321de21c5d7488dd94\"\n  }, {\n    \"date\" : \"2022-01-02T20:23:33.244648Z\",\n    \"action\" : \"confirmed\",\n    \"comment\" : \"gudvvmf\",\n    \"user\" : \"74789c174b151c14b82cfab0412d84a6\"\n  }, {\n    \"date\" : \"2023-09-01T02:25:19.244795Z\",\n    \"action\" : \"approved\",\n    \"comment\" : \"sncdsjh5pmdnmx9f8ublqhnha3lgw8ablk81b62f65d3vgt94lbdo30r48zuouxl1iignbb6q97fp6fokvfw94r3653niwfamwqja9lk47wxdea07ns4cssa6pnuvvs78bj\",\n    \"user\" : \"e834a7d36bb5af005dca64d757ce7527\"\n  } ],\n  \"confirmations\" : 557354852430059270,\n  \"tags\" : [ \"bf730f5101b63c8845949998343259e8\", \"ad5668f26d3d22746d8a655cb5411a2e\", \"01615809acabdc4ba9ccae160d0e081d\" ],\n  \"vSize\" : 8921880182302341216,\n  \"entries\" : [ {\n    \"address\" : \"tikzjs8zzapfwcxpyxwfqhe53ecpz\",\n    \"wallet\" : \"\",\n    \"valueString\" : \"\",\n    \"isPayGo\" : false,\n    \"value\" : 8277620299090048457,\n    \"isChange\" : false,\n    \"token\" : \"no4tpt6yepdoq8qu67w0j09nf\"\n  }, {\n    \"address\" : \"a642ypurfzpb7g6eumhtz0xp8ue3v6ljt1sfdoj47njhvjv1ipdz8i79rq2935k130q7xvlwar7qxnd\",\n    \"wallet\" : \"\",\n    \"valueString\" : \"\",\n    \"isPayGo\" : true,\n    \"value\" : 7990444522321364063,\n    \"isChange\" : true,\n    \"token\" : \"lywwghg0qcnwus435u1w2e5dtdldyky13qcn8inlsjq6l14qpeo4jliw561fsuww2nn55trb4cenb6evcomk09mmab7duzi7b7f13fszqu0\"\n  } ],\n  \"valueString\" : \"\",\n  \"usersNotified\" : false,\n  \"heightId\" : \"7005\",\n  \"comment\" : \"hyhe7rprhu8t4ey2updlwne3o0xdjselm3445cnl5mxpkq5rzx86bc39pq3jgtgwpg0ta5v0pq0ofa41hsn7nhkpw6p5jgo3j\",\n  \"nSegwitInputs\" : 2661929906760408451,\n  \"coin\" : \"31o0zhspcuy09zwq6tvarf25mxgldroghrfyhhd0xy2tc3uewkkpu5xeon778wh0ohmny0ea72rx\",\n  \"coinSpecific\" : \"\"\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "f841ef76-4672-4a0a-8569-cf6ad232d7c6",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.24622Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.gettransfer",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/Transfer"
+          }, {
+            "type" : "object",
+            "properties" : {
+              "confirmations" : {
+                "type" : "integer",
+                "description" : "The number of blocks that have been confirmed since this Transfer's block was confirmed"
+              },
+              "entries" : {
+                "type" : "array",
+                "items" : {
+                  "type" : "object",
+                  "properties" : {
+                    "label" : {
+                      "type" : "string",
+                      "description" : "If this address was labeled by the user, this is the label"
+                    }
+                  }
+                }
+              }
+            }
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 366
+}

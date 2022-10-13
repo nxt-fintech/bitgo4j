@@ -1,0 +1,36 @@
+{
+  "id" : "210733a0-90c6-46fe-9ce1-3e832242c569",
+  "name" : "Add wallet webhook",
+  "request" : {
+    "urlPath" : "/api/v2/si7xp2r7yaogjq7bfd3tb0ju3eh0r5jqjerbt3m2x0lpzw3b21jrpmitmu/wallet/147c598238f78c9f1b1091ddcdc58bd8/webhooks",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "210733a0-90c6-46fe-9ce1-3e832242c569",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.381085Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.addwebhook",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 294
+}

@@ -1,0 +1,51 @@
+{
+  "id" : "3ae1ca00-a11c-4c57-85f3-8df5a9ab1de2",
+  "name" : "Update Trading Account Settings",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/qi92/account/389t/settings",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"accountId\" : \"do8u\",\n  \"affirmationExpirationTime\" : 1.7589976428417809E308,\n  \"feeRates\" : {\n    \"settlement\" : 4.009574387868016E307\n  },\n  \"referralCode\" : \"43o835u5kzeeepqm62t5m2j3kvuturdsgm4th369lxoy3ku4vnw3hlvnavqjjxce81rxh3bjlki20ow4zyosgaqor7ntm4bx01t6pjebhs7cuu5nl39t06cp8h672mma\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "3ae1ca00-a11c-4c57-85f3-8df5a9ab1de2",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.677711Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.trade.updateAccountSettings",
+        "schema" : {
+          "title" : "Trading Account Settings",
+          "type" : "object",
+          "properties" : {
+            "accountId" : {
+              "$ref" : "#/components/schemas/WalletId"
+            },
+            "affirmationExpirationTime" : {
+              "type" : "number",
+              "description" : "Expiration time for new settlements and affirmations, in milliseconds. If this amount of time passes before a settlement is affirmed, rejected, or canceled, the settlement will be marked as failed",
+              "example" : 86400000
+            },
+            "feeRates" : {
+              "$ref" : "#/components/schemas/FeeRates"
+            },
+            "referralCode" : {
+              "type" : "string",
+              "description" : "Referral code of given account",
+              "example" : "FC8G"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 20
+}

@@ -1,0 +1,36 @@
+{
+  "id" : "c6811c6a-1cf0-41a7-8182-bfc9a0e17282",
+  "name" : "Add wallet (advanced only)",
+  "request" : {
+    "urlPath" : "/api/v2/4pciu70odiupozxhloltrt37l56f0qlwnom4lemuoo0al054t5h3nm0t7833bjnn9aheujbhylyjxey49x3yudud7k4brirplis0cj8vg9vp2vmduelnjsajc9d4fjdabo4lfq3epxl4xt6ozqw5wfqv6wet2/wallet",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "c6811c6a-1cf0-41a7-8182-bfc9a0e17282",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.268288Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.add",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidEnterpriseId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 356
+}

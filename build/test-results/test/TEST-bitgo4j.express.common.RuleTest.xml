@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.express.common.RuleTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:32" hostname="ishtos-MacBook-Pro.local" time="0.02">
+  <properties/>
+  <testcase name="testSetId()" classname="bitgo4j.express.common.RuleTest" time="0.017"/>
+  <testcase name="testToString()" classname="bitgo4j.express.common.RuleTest" time="0.001"/>
+  <testcase name="testSetLockDate()" classname="bitgo4j.express.common.RuleTest" time="0.0"/>
+  <testcase name="testSetMutabilityConstraint()" classname="bitgo4j.express.common.RuleTest" time="0.001"/>
+  <testcase name="testSetAction()" classname="bitgo4j.express.common.RuleTest" time="0.0"/>
+  <testcase name="testSetCoin()" classname="bitgo4j.express.common.RuleTest" time="0.0"/>
+  <testcase name="testSetType()" classname="bitgo4j.express.common.RuleTest" time="0.001"/>
+  <testcase name="testSetCondition()" classname="bitgo4j.express.common.RuleTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

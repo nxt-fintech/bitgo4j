@@ -1,0 +1,120 @@
+{
+  "id" : "bb8b88b4-341f-416b-aed1-ab6b150ce62a",
+  "name" : "Get Line Item",
+  "request" : {
+    "urlPath" : "/api/portfolio/v1/portfolios/7ha6/line_items/hr2y",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"transaction_date\" : \"2021-12-05T11:05:12.542289Z\",\n  \"unitPrice\" : \"fc52g2pfnstzr0g690dmk1p7fk3gan86plmx1j7lp0a6e62733vl5nm2j21tyq0dszu1r7ontyt12n3thumhog47g5hvypofxnukksr7zvjv22wj6k30pax4dtr7s5iy3cxe53on0ifx7o8xqpe5s7fziw5w2egsn6km3kflj3bvqh\",\n  \"quantity\" : \"3et5bml9xpbrgh4ezuqkzxc6pl3ki81\",\n  \"exchange_trade_id\" : \"393g\",\n  \"received_address\" : \"gkjy7bsp8bu18qr6lmw9vlc9lfsehz6sydqi3n59ciqcdksp7stboj8rjilh5tf4fvth77u3ine3w3hbw2a17e6tgu8d7tuhzdmsmuqa8q1uj6urx205x\",\n  \"source\" : \"csv\",\n  \"block_height\" : \"o2pobcl68ufqi4nyl1e1a1s6yfct8u6pdzob9p2x8kpsfywx8wduaxeyi2viju0ks9kiwpyb1o9ft93stxbd8mffwkt3uwqwky2avjf0a9oj5flnhopzkf1dtdkg\",\n  \"type\" : \"sent\",\n  \"instrument_id\" : \"4e3d68b3-4b90-4bc3-9bd0-848aa066ea1a\",\n  \"exchange_order_id\" : \"11mm\",\n  \"sent_address\" : \"ecj13y33w5bab6p81zjsmiumf6jky4lkl3h3g0i0dkjp5zcqy7y7f4octybichhtlwpd4yvx0mkigx5amn64jmllm4l6\",\n  \"account_id\" : \"d3172355-c285-49f8-b56f-b23a14a6a2bc\",\n  \"connection_id\" : \"9760947b-40cc-4aae-8374-b137c518961d\",\n  \"instrument_symbol\" : \"8iornc6q13jk2hldt4fyyv4aslq0ctom644rnqe38rpnn7fwccukdnqke7eddiqu3o70xdu92q0gh3c6jw1tn8bom3c7a8qm6lkihn5lcbun6jm5zfuxwwfsja4orqprkrctln0eeesnoucvk2b7t8\",\n  \"transaction_completed_date\" : \"2022-05-26T08:33:24.543012Z\",\n  \"id\" : \"290301bf-7dd8-4998-a232-9d29bb77ec9e\",\n  \"value\" : \"0qyr0tjqweyd2gwpugtre\",\n  \"transaction_hash\" : \"6tasz7\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "bb8b88b4-341f-416b-aed1-ab6b150ce62a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.543783Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "portfolio.line_item",
+        "schema" : {
+          "required" : [ "id", "account_id", "connection_id", "transaction_date", "transaction_completed_date", "instrument_id", "instrument_symbol", "type", "source", "unitPrice", "quantity", "value" ],
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "string",
+              "format" : "uuid"
+            },
+            "exchange_order_id" : {
+              "type" : "string"
+            },
+            "exchange_trade_id" : {
+              "type" : "string"
+            },
+            "account_id" : {
+              "type" : "string",
+              "format" : "uuid"
+            },
+            "connection_id" : {
+              "type" : "string",
+              "format" : "uuid"
+            },
+            "transaction_date" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "transaction_completed_date" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "instrument_id" : {
+              "type" : "string",
+              "format" : "uuid"
+            },
+            "instrument_symbol" : {
+              "type" : "string",
+              "description" : "Currency symbol"
+            },
+            "type" : {
+              "$ref" : "#/components/schemas/LineItemType"
+            },
+            "source" : {
+              "$ref" : "#/components/schemas/LineItemSource"
+            },
+            "unitPrice" : {
+              "type" : "string",
+              "format" : "decimal"
+            },
+            "quantity" : {
+              "type" : "string",
+              "format" : "decimal"
+            },
+            "value" : {
+              "type" : "string",
+              "format" : "decimal"
+            },
+            "transaction_hash" : {
+              "type" : "string"
+            },
+            "block_height" : {
+              "type" : "string",
+              "format" : "integer"
+            },
+            "sent_address" : {
+              "type" : "string"
+            },
+            "received_address" : {
+              "type" : "string"
+            }
+          },
+          "example" : {
+            "id" : "9c9989f1-d9e3-4015-93bf-596396d9543d",
+            "exchange_order_id" : "ca20c088-c10d-440a-8b0d-73763170077f",
+            "exchange_trade_id" : "cb5f1d08-14f6-42a7-a54b-421941702722",
+            "account_id" : "7071983a-3349-4a16-98b5-e4b511aee328",
+            "connection_id" : "c549df20-1517-4308-b8cd-71a70df4ff67",
+            "transaction_date" : "2014-11-07T22:19:28.578Z",
+            "transaction_completed_date" : "2014-11-07T22:19:28.578Z",
+            "instrument_id" : "519824c6-b534-49b4-a636-22dfd0ade5cf",
+            "instrument_symbol" : "USD",
+            "type" : "received",
+            "source" : "api",
+            "unitPrice" : "1",
+            "quantity" : "466.21",
+            "value" : "466.21",
+            "transaction_hash" : "3c0cb5ac1472571e4b196b1d4a774e41628ae165b1bee6685346ef8bf3a550ac",
+            "block_height" : "",
+            "sent_address" : "6bf7dfe3f7b3eaffb91165edb7a81e1523e6490e2497067e7d81600dbbe79ba11e592e5c7fd8",
+            "received_address" : ""
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 149
+}

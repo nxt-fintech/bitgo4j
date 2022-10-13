@@ -1,0 +1,46 @@
+{
+  "id" : "6e5f8583-c994-43f5-97e6-ec914958b284",
+  "name" : "Login",
+  "request" : {
+    "urlPath" : "/api/v2/user/login",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"requestId\" : \"u306\",\n  \"context\" : { },\n  \"name\" : \"Lynwood Tromp\",\n  \"error\" : \"lfh5kc8js3kpwzeet1walatg50k74cn9p35jkddhmmiycpzdv7u8ucaun9743a8p5c3evbvwim7tjwjvvbldfkngx9suwvg2a003lyvi7fwznc9w5h9i6\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "6e5f8583-c994-43f5-97e6-ec914958b284",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.232901Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "user.login",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 371
+}

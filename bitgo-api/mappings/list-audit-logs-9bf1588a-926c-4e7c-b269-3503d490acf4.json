@@ -1,0 +1,44 @@
+{
+  "id" : "9bf1588a-926c-4e7c-b269-3503d490acf4",
+  "name" : "List audit logs",
+  "request" : {
+    "urlPath" : "/api/v2/auditlog",
+    "method" : "GET"
+  },
+  "response" : {
+    "status": 200,
+    "body": "{\n  \"nextBatchPrevId\" : \"57c1f032-04e0-4d79-a377-ae2b7216a062\",\n  \"logs\" : [ {\n    \"date\" : \"2023-09-26T14:29:20.494659Z\",\n    \"walletId\" : \"0738971d1ad7383cadfb263aee868634\",\n    \"data\" : \"\",\n    \"ip\" : \"\",\n    \"enterpriseId\" : \"e7bf7c1ad7e38f072a043548d12ad5c9\",\n    \"id\" : \"16fc766fb6238923b8cdc42c0c1acf66\",\n    \"type\" : \"rejectUser\",\n    \"user\" : \"\",\n    \"coin\" : \"nu60nvuq1egyaa0r7a4c309ec4j64mlm6e5wtx2i51\",\n    \"target\" : \"\"\n  }, {\n    \"date\" : \"2022-01-23T19:49:07.494878Z\",\n    \"walletId\" : \"b99cc86003eba076211a5d5bcfe1c725\",\n    \"data\" : \"\",\n    \"ip\" : \"\",\n    \"enterpriseId\" : \"743c155544a3c324c221a0dadae52e95\",\n    \"id\" : \"1e8a1a9e4a4f010e72c35a9c11cd466c\",\n    \"type\" : \"updateNotificationSettings\",\n    \"user\" : \"\",\n    \"coin\" : \"rm6p7im79\",\n    \"target\" : \"\"\n  }, {\n    \"date\" : \"2022-04-27T05:35:45.495176Z\",\n    \"walletId\" : \"4477a3f4804535c4d84d5bcb6a407666\",\n    \"data\" : \"\",\n    \"ip\" : \"\",\n    \"enterpriseId\" : \"087a59da2729b3295dcaa132cd367e6f\",\n    \"id\" : \"a1761cdf072d6685caa5bca6837df2a6\",\n    \"type\" : \"userSourceVerified\",\n    \"user\" : \"\",\n    \"coin\" : \"pb78t8ltdr0drz2onzrhd50w4ynodfjvihjymdqwvq0w87sbtu54cjca6jx4zo25zymv20d6expusfxt9y6fwd0oupvh\",\n    \"target\" : \"\"\n  }, {\n    \"date\" : \"2022-10-04T04:25:27.495377Z\",\n    \"walletId\" : \"fd7fdabc3c7dd939eca05cd896142ce2\",\n    \"data\" : \"\",\n    \"ip\" : \"\",\n    \"enterpriseId\" : \"4c034b91a99aaccaffabd3d55431687e\",\n    \"id\" : \"45a455da92f1e581751a14ab568e01b7\",\n    \"type\" : \"updateNotificationSettings\",\n    \"user\" : \"\",\n    \"coin\" : \"6q3771b0uxn9cg7znrg8wrwnaoql27ifaf14jdobgm0b0nzrg3mkncqmmb4qsspzjvrlmcgvc21dxemx7w9bjm0sq503duwrhywywz5kx62tyx74hlpjw61ky03jozd71vwz69npd9n\",\n    \"target\" : \"\"\n  }, {\n    \"date\" : \"2022-06-01T06:50:26.495574Z\",\n    \"walletId\" : \"a91cda5c047b26998daf2620c7a1e04b\",\n    \"data\" : \"\",\n    \"ip\" : \"\",\n    \"enterpriseId\" : \"5b8096fe5447ac1fcfdae3e6234b89da\",\n    \"id\" : \"82a49eda13ca3ad69d279b7b5aa32a38\",\n    \"type\" : \"createWallet\",\n    \"user\" : \"\",\n    \"coin\" : \"zyvmu9vwk1c8j3z4ia4njzu3pr2h0n2fvkg4mrh1a4kk7vkk945ge0nhjq8k64xdtzllitv860xvz1uyu8o2jgezerelijf2b0b50e0rc05egv8fmt\",\n    \"target\" : \"\"\n  } ]\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "9bf1588a-926c-4e7c-b269-3503d490acf4",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.496067Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.auditlog.list",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "logs" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/AuditLog"
+              }
+            },
+            "nextBatchPrevId" : {
+              "$ref" : "#/components/schemas/NextBatchPrevId"
+            }
+          },
+          "required" : [ "logs" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 179
+}

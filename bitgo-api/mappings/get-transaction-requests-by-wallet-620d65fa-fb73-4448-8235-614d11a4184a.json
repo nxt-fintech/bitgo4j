@@ -1,0 +1,46 @@
+{
+  "id" : "620d65fa-fb73-4448-8235-614d11a4184a",
+  "name" : "Get transaction requests by wallet",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/5974bf8095161ad5af4b49316a6b5943/txrequests",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"8x47\",\n  \"context\" : { },\n  \"name\" : \"Leandro Shields V\",\n  \"error\" : \"8ujuc71mo3bjdauoy85uesmq1r753f3drdw23xmcucm5fa1jok6fvlrlc9vke5pahic9pu4uw8s3k1ffvjuthjru2zcd6tvansmgolrzr3ik8fic5amxskapzjroo30pwcehfun8fkrec1fp8kv13ynpn7jeb9daem4dbanoos7\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "620d65fa-fb73-4448-8235-614d11a4184a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.40716Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.get",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 261
+}

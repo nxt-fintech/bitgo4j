@@ -1,0 +1,46 @@
+{
+  "id" : "d89e0f42-eb1f-4d5e-b775-4fd9375b30a2",
+  "name" : "Update send label",
+  "request" : {
+    "urlPath" : "/api/v2/sendlabels/c14f0cc3fd3c884c8978017ff45c9ec4",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"8v80\",\n  \"context\" : { },\n  \"name\" : \"Leah Braun\",\n  \"error\" : \"jnfo78pi11249ni2vykeems55jis1nvc35lxaqzodnat3dj04ll1lgblb09w5ivxgmjk1h7gzqs4yxvt8m1ryxm2az2v1v52s4xvh0nasia1za3989egxgnluoqboodctdjnhbld4ftgicjeg12svt3sr1\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d89e0f42-eb1f-4d5e-b775-4fd9375b30a2",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.400241Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.sendlabels.update",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 273
+}

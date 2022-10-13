@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.address.response.ProofResponseTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:33" hostname="ishtos-MacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="testToString()" classname="bitgo4j.address.response.ProofResponseTest" time="0.001"/>
+  <testcase name="testSetSignature()" classname="bitgo4j.address.response.ProofResponseTest" time="0.0"/>
+  <testcase name="testSetAddress()" classname="bitgo4j.address.response.ProofResponseTest" time="0.0"/>
+  <testcase name="testSetPrefix()" classname="bitgo4j.address.response.ProofResponseTest" time="0.0"/>
+  <testcase name="testSetAuxProofData()" classname="bitgo4j.address.response.ProofResponseTest" time="0.0"/>
+  <testcase name="testSetIou()" classname="bitgo4j.address.response.ProofResponseTest" time="0.0"/>
+  <testcase name="testSetProofType()" classname="bitgo4j.address.response.ProofResponseTest" time="0.0"/>
+  <testcase name="testSetChain()" classname="bitgo4j.address.response.ProofResponseTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

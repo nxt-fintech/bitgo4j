@@ -1,0 +1,25 @@
+{
+  "id" : "64eb1e27-a42b-4e04-97b8-19a22bd3b54f",
+  "name" : "Logout - 200",
+  "request" : {
+    "urlPath" : "/api/v2/user/logout",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200
+  },
+  "uuid" : "64eb1e27-a42b-4e04-97b8-19a22bd3b54f",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.255448Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "user.logout"
+      }
+    }
+  },
+  "insertionIndex" : 361
+}

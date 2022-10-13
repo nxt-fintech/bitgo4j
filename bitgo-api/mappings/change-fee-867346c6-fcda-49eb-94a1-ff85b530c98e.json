@@ -1,0 +1,37 @@
+{
+  "id" : "867346c6-fcda-49eb-94a1-ff85b530c98e",
+  "name" : "Change Fee",
+  "request" : {
+    "urlPath" : "/api/v2/29hg7hv6jso01w1409v2e0x3u4t098sl2xbhjsvcfhm1nz89e43kpzqfh9dgqagf42jh9wmz7niwt0twdkwe8anaytq860s0tr9rrcmaqugz0xi11usppicfocsuzwe1xcobkd/wallet/deb1940b7d313b5c41a6cc579724aab6/tx/changeFee",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"txid\" : \"2c9eefff8115be07f6dd2e594de2c2f4\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "867346c6-fcda-49eb-94a1-ff85b530c98e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.49265Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.changefee",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "txid" : {
+              "$ref" : "#/components/schemas/Id"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 184
+}

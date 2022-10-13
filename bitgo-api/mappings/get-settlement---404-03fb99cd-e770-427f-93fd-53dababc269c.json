@@ -1,0 +1,25 @@
+{
+  "id" : "03fb99cd-e770-427f-93fd-53dababc269c",
+  "name" : "Get Settlement - 404",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/2pc4/account/xt0a/settlements/vmj8",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "03fb99cd-e770-427f-93fd-53dababc269c",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.61065Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.settlement.getSettlement"
+      }
+    }
+  },
+  "insertionIndex" : 123
+}

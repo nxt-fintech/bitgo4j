@@ -1,0 +1,36 @@
+{
+  "id" : "d3c9d643-c06b-44f2-b125-7b8cda6a04f7",
+  "name" : "Create address",
+  "request" : {
+    "urlPath" : "/api/v2/uq2pn/wallet/42071f678c07cbf1dc644a75d1210801/address",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d3c9d643-c06b-44f2-b125-7b8cda6a04f7",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.870923Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.newaddress",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 456
+}

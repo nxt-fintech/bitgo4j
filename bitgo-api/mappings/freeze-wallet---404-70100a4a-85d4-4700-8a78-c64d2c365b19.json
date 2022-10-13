@@ -1,0 +1,25 @@
+{
+  "id" : "70100a4a-85d4-4700-8a78-c64d2c365b19",
+  "name" : "Freeze wallet - 404",
+  "request" : {
+    "urlPath" : "/api/v2/frqsuzrm5d23ypeq84x8ego1/wallet/ebe0e1ef37fb0535688fe71675c32f83/freeze",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "70100a4a-85d4-4700-8a78-c64d2c365b19",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.347618Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.freeze"
+      }
+    }
+  },
+  "insertionIndex" : 330
+}

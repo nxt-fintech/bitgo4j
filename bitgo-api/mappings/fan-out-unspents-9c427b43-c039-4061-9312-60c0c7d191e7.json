@@ -1,0 +1,36 @@
+{
+  "id" : "9c427b43-c039-4061-9312-60c0c7d191e7",
+  "name" : "Fan out unspents",
+  "request" : {
+    "urlPath" : "/api/v2/k3zq8dy92y3dd0zki96va4o9wh358v62v6f3r7v1wkqixg20o74v4cdk1wcnndef03421a9gol3afjf0txlaygio6555v3qv7rqqwjwjz2tzllmhewocwzhqnj67fx6e7is3aa95sj9i2tc278rdau8atkf9hfebhcgh9izb40zw9fosflox0c3n0/wallet/2c2d0f5272f0696611d6e0eea3fd9192/fanoutunspents",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "9c427b43-c039-4061-9312-60c0c7d191e7",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.477354Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.wallet.fanoutunspents",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 192
+}

@@ -1,0 +1,38 @@
+{
+  "id" : "61f8a2d7-3d81-451b-8e67-6d31dc3561ac",
+  "name" : "List Accounts",
+  "request" : {
+    "urlPath" : "/api/prime/trading/v1/accounts",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"data\" : [ {\n    \"name\" : \"Carmelo Kerluke\",\n    \"id\" : \"cdf82978-7d67-4eb3-9f09-b70864803609\"\n  }, {\n    \"name\" : \"Mr. Norma Gibson\",\n    \"id\" : \"51c1a39e-2a37-45c9-8ffc-a89c6a7db9e8\"\n  }, {\n    \"name\" : \"Mrs. Demarcus Smitham\",\n    \"id\" : \"a155fc83-e0c0-40e3-8983-c2b0b66f418d\"\n  }, {\n    \"name\" : \"Jammie Romaguera\",\n    \"id\" : \"9a977ce5-3cc3-4e03-8946-fc19780f9668\"\n  }, {\n    \"name\" : \"Steven Wintheiser\",\n    \"id\" : \"47b541c8-5932-4ba7-818c-a9dd9421a06e\"\n  }, {\n    \"name\" : \"Miss Berna Spencer\",\n    \"id\" : \"d3764df9-a48c-4e21-97c8-322aa0c71437\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "61f8a2d7-3d81-451b-8e67-6d31dc3561ac",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.545749Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "trade.accounts",
+        "schema" : {
+          "required" : [ "data" ],
+          "type" : "object",
+          "properties" : {
+            "data" : {
+              "$ref" : "#/components/schemas/Accounts"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 147
+}

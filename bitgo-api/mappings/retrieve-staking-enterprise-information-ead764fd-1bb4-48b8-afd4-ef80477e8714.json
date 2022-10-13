@@ -1,0 +1,43 @@
+{
+  "id" : "ead764fd-1bb4-48b8-afd4-ef80477e8714",
+  "name" : "Retrieve Staking Enterprise Information",
+  "request" : {
+    "urlPath" : "/api/staking/v1/rez11gyndq36kprphn8ouq20491z4ovb0p1rddurjzgsmv4b4gc068wd4n7llkgn6jtuvq/enterprises/gt1b",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"code\" : \"NotFound\",\n  \"message\" : \"Wallet not found\",\n  \"status\" : 404\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ead764fd-1bb4-48b8-afd4-ef80477e8714",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.662082Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Enterprise Information",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 47
+}

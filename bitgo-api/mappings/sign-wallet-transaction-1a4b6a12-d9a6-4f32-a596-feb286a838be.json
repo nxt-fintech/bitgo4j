@@ -1,0 +1,56 @@
+{
+  "id" : "1a4b6a12-d9a6-4f32-a596-feb286a838be",
+  "name" : "Sign wallet transaction",
+  "request" : {
+    "urlPath" : "/api/v2/yqxiu4ktk445ujatsymy64b69yz1bhtx9i93j91ip3b8t1y73yhseautyaw680eabkhvmx8l356vnvd1t3mtq1eauks3paglw0cck0izyjz086na74qv7t2ucn3iveglx0s7wiqfd1h8dk9mke7gvm7ri8w9ngpy218kuz855qs34jqm6tiqblwfledozs3/wallet/858cf3c9725dcd3e6b9a3f9107b12d6e/signtx",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"txInfo\" : {\n    \"halfSigned\" : {\n      \"txBase64\" : \"91hufw7ext7568sp82x4j93ryh11g4g4kq20skq48jdg7yedwxkcbsua8sach8hwb4crijpvto3gmdre4v38vpt8xjl8iikb7rl8tedo0yogb0s0ucqfvjsfzacokj0t007\"\n    }\n  }\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "1a4b6a12-d9a6-4f32-a596-feb286a838be",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.46664Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.wallet.signtx",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "txInfo" : {
+              "oneOf" : [ {
+                "type" : "object",
+                "properties" : {
+                  "txHex" : {
+                    "$ref" : "#/components/schemas/TxHex"
+                  }
+                }
+              }, {
+                "type" : "object",
+                "properties" : {
+                  "halfSigned" : {
+                    "type" : "object",
+                    "properties" : {
+                      "txBase64" : {
+                        "$ref" : "#/components/schemas/TxBase64"
+                      }
+                    }
+                  }
+                }
+              } ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 201
+}

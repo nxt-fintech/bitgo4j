@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.pendingapproval.common.TransactionRequestTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:34" hostname="ishtos-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="testSetComment()" classname="bitgo4j.pendingapproval.common.TransactionRequestTest" time="0.0"/>
+  <testcase name="testToString()" classname="bitgo4j.pendingapproval.common.TransactionRequestTest" time="0.0"/>
+  <testcase name="testSetSourceWallet()" classname="bitgo4j.pendingapproval.common.TransactionRequestTest" time="0.0"/>
+  <testcase name="testSetValidTransaction()" classname="bitgo4j.pendingapproval.common.TransactionRequestTest" time="0.001"/>
+  <testcase name="testSetValidTransactionHash()" classname="bitgo4j.pendingapproval.common.TransactionRequestTest" time="0.0"/>
+  <testcase name="testSetIsUnsigned()" classname="bitgo4j.pendingapproval.common.TransactionRequestTest" time="0.0"/>
+  <testcase name="testSetFee()" classname="bitgo4j.pendingapproval.common.TransactionRequestTest" time="0.0"/>
+  <testcase name="testSetRequestedAmount()" classname="bitgo4j.pendingapproval.common.TransactionRequestTest" time="0.0"/>
+  <testcase name="testSetTriggeredPolicy()" classname="bitgo4j.pendingapproval.common.TransactionRequestTest" time="0.0"/>
+  <testcase name="testSetRecipients()" classname="bitgo4j.pendingapproval.common.TransactionRequestTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,35 @@
+{
+  "id" : "2e534bb3-78e8-49d7-9361-fea525a65d88",
+  "name" : "Delete signature shares on a transaction request.",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/4b8c704c1a7a29a2199b81f0e52555a7/txrequests/462d4f9bc757d8a767e480aab484a055/signatureshares",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"from\" : \"backup\",\n  \"share\" : \"d7sqwbudsyx3329occbpphfo9izlkqdb2jtdauxvr1056qyyzvhp7dnhz7kky3zj5q2tjpallgppolmh6vjlsh6tdhibltqat1412a0zpn4jtb8pp8j8pgki0pf9tz00e6zzbs3ksyh8tbglaa1m7apk8s0g617w5i2iegr\",\n  \"to\" : \"backup\"\n}, {\n  \"from\" : \"backup\",\n  \"share\" : \"vu2o7fv01zy\",\n  \"to\" : \"backup\"\n}, {\n  \"from\" : \"bitgo\",\n  \"share\" : \"9hvjj0slyc216ogmpozg8l4\",\n  \"to\" : \"user\"\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "2e534bb3-78e8-49d7-9361-fea525a65d88",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.41385Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.signatureshare.delete",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/components/schemas/SignatureShare"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 250
+}

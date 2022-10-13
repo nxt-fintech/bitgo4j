@@ -1,0 +1,46 @@
+{
+  "id" : "3a91251b-2fb9-47f9-8e22-0c7d5b8cd554",
+  "name" : "Get unspents",
+  "request" : {
+    "urlPath" : "/api/v2/purezysynxb2e5cihvcag73rudyiwqzs8bs6ykp965myhkkwzi5smrfyw1egzd2h963tkyh6wjcmk7s88t/wallet/9dc4085d09a05fa0376ccba612cb17cc/unspents",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"zm18\",\n  \"context\" : { },\n  \"name\" : \"Devin Robel\",\n  \"error\" : \"lwg4us6oykdh89lvyozvbrepxif6709enz47q5t09f058oug2kmsswkauygvwlh46imgg6vjll9wng7f1co1vqmhfb2wlps4mfq36mjrom1pzl4ne33ayexasol5qvf4i102miqeg44sa6krzgpmkfp9l99z0clyck0rrqfli0mdvg\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "3a91251b-2fb9-47f9-8e22-0c7d5b8cd554",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.351289Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.unspents",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 326
+}

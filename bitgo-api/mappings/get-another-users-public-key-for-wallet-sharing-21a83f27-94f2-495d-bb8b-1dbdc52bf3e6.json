@@ -1,0 +1,79 @@
+{
+  "id" : "21a83f27-94f2-495d-bb8b-1dbdc52bf3e6",
+  "name" : "Get another users public key for wallet sharing",
+  "request" : {
+    "urlPath" : "/api/v2/user/sharingkey",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"country\" : \"Costa Rica\",\n  \"phone\" : {\n    \"phone\" : \"(598) 586-4768 x7050\",\n    \"verified\" : false\n  },\n  \"name\" : {\n    \"last\" : \"zkjoacjnkzcq8lrz850w7ab3lm7ujv8p12jnqy0ekhc5xix5izbhy7kme\",\n    \"first\" : \"giv0kaelwnz6lcmx0pevc\",\n    \"full\" : \"q32i5iepj2onq0gp7nhug6a55g\"\n  },\n  \"id\" : \"af4033e5205775896f7d8431c6cc579e\",\n  \"state\" : \"South Carolina\",\n  \"isActive\" : true,\n  \"email\" : {\n    \"verified\" : false,\n    \"email\" : \"Jacqueline.Rolfson@email.example.mocklab.io\"\n  },\n  \"username\" : \"Caterina.Crist@email.example.mocklab.io\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "21a83f27-94f2-495d-bb8b-1dbdc52bf3e6",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.179259Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "user.sharingkey",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "isActive" : {
+              "type" : "boolean"
+            },
+            "name" : {
+              "$ref" : "#/components/schemas/Name"
+            },
+            "username" : {
+              "$ref" : "#/components/schemas/Email"
+            },
+            "email" : {
+              "type" : "object",
+              "properties" : {
+                "email" : {
+                  "$ref" : "#/components/schemas/Email"
+                },
+                "verified" : {
+                  "type" : "boolean",
+                  "example" : true
+                }
+              }
+            },
+            "phone" : {
+              "type" : "object",
+              "properties" : {
+                "phone" : {
+                  "type" : "string",
+                  "example" : "408-718-6885"
+                },
+                "verified" : {
+                  "type" : "boolean",
+                  "example" : true
+                }
+              }
+            },
+            "country" : {
+              "type" : "string",
+              "example" : "USA"
+            },
+            "state" : {
+              "type" : "string",
+              "example" : "New York"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 395
+}

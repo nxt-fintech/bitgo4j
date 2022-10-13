@@ -1,0 +1,25 @@
+{
+  "id" : "4f916117-d8e1-42c5-941f-dc93cfd56ade",
+  "name" : "Reject a wallet reshare request - 200",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/9123b912411d67acf58514f4882bada4/rejectreshare",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200
+  },
+  "uuid" : "4f916117-d8e1-42c5-941f-dc93cfd56ade",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.369166Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.sharing.rejectreshare"
+      }
+    }
+  },
+  "insertionIndex" : 305
+}

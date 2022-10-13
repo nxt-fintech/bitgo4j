@@ -1,0 +1,46 @@
+{
+  "id" : "65aff8c7-b75e-4448-91ae-f991617f2d41",
+  "name" : "Create transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/165aa6057a98f5c30763d3b26c3d3399/txrequests",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"i9io\",\n  \"context\" : { },\n  \"name\" : \"Miss Elmira Kozey\",\n  \"error\" : \"snb5eyxin4sjo2wn0zr5rgyvcegfblonq9omqfgyfluhtjsmafpgxcxlhbzdeb5pxg74r7p21s3gbb\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "65aff8c7-b75e-4448-91ae-f991617f2d41",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.403949Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.create",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 266
+}

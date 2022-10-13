@@ -1,0 +1,36 @@
+{
+  "id" : "dc82b05e-2ca9-4727-80ca-42c2075f9cdd",
+  "name" : "Retrieve Staking Delegation Accrual History",
+  "request" : {
+    "urlPath" : "/api/staking/v1/uhnll0vyxq5esztqofr5gmlbmkl8n5mtqtkxg/wallets/l5e6/delegations/accruals",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"code\" : \"BadRequest\",\n  \"message\" : \"Bad Request\",\n  \"status\" : 400\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "dc82b05e-2ca9-4727-80ca-42c2075f9cdd",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.668274Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Delegation Accrual History",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/StakingError"
+          }, {
+            "$ref" : "#/components/schemas/ValidationError"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 36
+}

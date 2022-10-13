@@ -1,0 +1,40 @@
+{
+  "id" : "29f37900-810b-42a7-b1c0-b5ec616b1fbf",
+  "name" : "Update a wallet share",
+  "request" : {
+    "urlPath" : "/api/v2/kweri8izszhvxdl3rzpg18cup9837mviwxnf9nqdwll6ihymcv5zvz3ciari69vcatfkiotgvg0u50awbtyfkbo7zpkgitp4hhyp5j0uc8z27yb6ms7plrd6pq647e1h5w3h251nn9x87b/walletshare/ec27e5dd291455613d351b8637597332",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"state\" : \"canceled\",\n  \"changed\" : true\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "29f37900-810b-42a7-b1c0-b5ec616b1fbf",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.377919Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.sharing.updateshare",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "state" : {
+              "$ref" : "#/components/schemas/WalletShareState"
+            },
+            "changed" : {
+              "type" : "boolean"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 300
+}

@@ -1,0 +1,43 @@
+{
+  "id" : "ffb2b961-7e06-43fe-8e54-530ea432c2b5",
+  "name" : "Retrieve Staking Enterprise Information",
+  "request" : {
+    "urlPath" : "/api/staking/v1/p9ce7np0kg8vlr75mjjdioql3vit9f738y7zhk2jmud5aorh75jtc81e34olws58gupwo7iga/enterprises/2i06",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 409,
+    "body" : "{\n  \"code\" : \"Conflict\",\n  \"message\" : \"Conflicting clientID\",\n  \"status\" : 409\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ffb2b961-7e06-43fe-8e54-530ea432c2b5",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.662445Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Enterprise Information",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 46
+}

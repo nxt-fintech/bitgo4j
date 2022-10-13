@@ -1,0 +1,49 @@
+{
+  "id" : "4116b888-ec86-4c09-aaba-5387130617e4",
+  "name" : "Calculate mining fee",
+  "request" : {
+    "urlPath" : "/api/v2/calculateminerfeeinfo",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"size\" : 82882385032045614,\n  \"fee\" : 2355408148095616303,\n  \"feeRate\" : 8945545764066771299\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "4116b888-ec86-4c09-aaba-5387130617e4",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.458213Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.calculateminerfeeinfo",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "size" : {
+              "type" : "integer",
+              "description" : "Estimated size of the transaction in bytes",
+              "example" : 776
+            },
+            "fee" : {
+              "type" : "integer",
+              "description" : "Estimated fee in base units for the transaction",
+              "example" : 38800
+            },
+            "feeRate" : {
+              "type" : "integer",
+              "description" : "The fee rate in base units per kB used to estimate the fee for the transaction",
+              "example" : 50000
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 207
+}

@@ -1,0 +1,89 @@
+{
+  "id" : "a27e215b-7c7f-4b0a-9362-ec54f5a1a9d8",
+  "name" : "Get Transaction",
+  "request" : {
+    "urlPath" : "/api/portfolio/v1/portfolios/099r/transactions/sxhy",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"unitPrice\" : \"k1m88nom8jwph111706da2yrkc580q0a3zf4r8b0tj1zjya9w26bk41ffbe8vcxf1avlagerbukob1e7lkoh8o6l8ef7c4nnjb8p4di20v00nhnqfd5raiamkyv0485efhmm79nxr7hfg6min2dwm2a5efn233\",\n  \"totalAmount\" : \"ecgzn86l7xw6tiwydqyjxlpqdxrdxtzpd2mt0f7ae4wed5nog4xtjoulud2pgtty35awj16o9azskyo8mmheg8jboxz\",\n  \"product\" : \"cmmt4spytj6rkcl82ix9ix4nn43x1\",\n  \"fees\" : \"a9cwg4q56of697859et0apf7\",\n  \"settlement_date\" : \"2023-05-21T19:15:26.534974Z\",\n  \"quantity\" : \"1sn0oqpqtl7e1k6ahyijy66k5x741su42bc7e8wg9izy5q0483f04mgeulve7day8jrvsnqj4hvff1zz73t3o59rsc331lhf4jounfu2qdytx3bka92w6bcdzuleiljweojpa8hhi3jox016kqkmz412aonluilwu2f78jl1dmo3\",\n  \"subtype\" : \"6p3fixawykd2h0hpc92jvj1heerw3cyddlwppw1pt6zapy60u8elnakhktp1tsa5z81zq9lsn4yevq\",\n  \"id\" : \"4456a93b-d3b5-4fea-ab6f-97b0170dfa66\",\n  \"type\" : \"transfer\",\n  \"trade_date\" : \"2022-05-16T13:27:20.535105Z\",\n  \"transaction_hash\" : \"5li2z9qe8y9zw9roy4hhps3yxoz3iy3i6t5zz50zvvvgoduxgahblf9crri7acn9fnmbw532whkoqrzggyk2warpbrmdu7gxs4k6mv1u6eo5xb0ibuzmi39xzm6d\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "a27e215b-7c7f-4b0a-9362-ec54f5a1a9d8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.535869Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "portfolio.transaction",
+        "schema" : {
+          "required" : [ "id", "trade_date", "settlement_date", "instrument_id", "instrument_symbol", "type", "subtype", "fees", "unitPrice", "quantity", "totalAmount" ],
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "string",
+              "format" : "uuid"
+            },
+            "trade_date" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "settlement_date" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "product" : {
+              "type" : "string",
+              "description" : "Product name e.g. BTC-USD"
+            },
+            "type" : {
+              "$ref" : "#/components/schemas/TransactionType"
+            },
+            "subtype" : {
+              "type" : "string"
+            },
+            "transaction_hash" : {
+              "type" : "string"
+            },
+            "fees" : {
+              "type" : "string",
+              "format" : "decimal"
+            },
+            "unitPrice" : {
+              "type" : "string",
+              "format" : "decimal"
+            },
+            "quantity" : {
+              "type" : "string",
+              "format" : "decimal"
+            },
+            "totalAmount" : {
+              "type" : "string",
+              "format" : "decimal"
+            }
+          },
+          "example" : {
+            "id" : "7e0c768e-2d16-4c1e-b39d-06fa20009397",
+            "trade_date" : "2014-11-07T22:19:28.578Z",
+            "settlement_date" : "2014-11-07T22:19:28.578Z",
+            "product" : "BTC-USD",
+            "type" : "buy",
+            "subtype" : "deposit",
+            "transaction_hash" : "",
+            "fees" : "0",
+            "unitPrice" : "10000.00",
+            "quantity" : "0.001",
+            "totalAmount" : "1"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 151
+}

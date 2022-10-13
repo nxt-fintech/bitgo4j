@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.transactionrequest.response.TransferResponseTest" tests="29" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:33" hostname="ishtos-MacBook-Pro.local" time="0.004">
+  <properties/>
+  <testcase name="testSetCoinSpecific()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetSequenceId()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetPayGoFee()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.001"/>
+  <testcase name="testSetId()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetHistory()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetComment()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testToString()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetValueString()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetBaseValueString()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetUsersNotified()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetNSegwitInputs()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetHeightId()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetFeeString()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetEntries()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetBaseValue()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.001"/>
+  <testcase name="testSetPayGoFeeString()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetHeight()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetWallet()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetEnterprise()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetCoin()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetDate()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetTags()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetTxid()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetType()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetUsd()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetUsdRate()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetState()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetVSize()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <testcase name="testSetValue()" classname="bitgo4j.transactionrequest.response.TransferResponseTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,40 @@
+{
+  "id" : "7abae572-dc7b-461f-a997-bc9e6b88b914",
+  "name" : "List send labels",
+  "request" : {
+    "urlPath": "/api/v2/sendlabels",
+    "method": "GET",
+    "queryParameters": {
+      "coin": {
+        "contains": "200"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"address\" : \"5c0hun02d9yu15co1kd9dyc3jcyme603z8w30fvkmezvwyjmn38c7gtoc2jfky63qyflqvit4tlxgb0sn9lufwgax533zyb4eaqjy4mlhogcque9u8fpm2polhy6m9frhs9dyhuz6i806b2vsewnpf40tdjhl8vfukozj3est2cmt83jgtufqzqf43banm2hf27tmt2saudc5\",\n  \"id\" : \"867b411ee38cc5e5bd9f538aabb40e74\",\n  \"enterpriseId\" : \"500898f7173541bdd11e6f0a6d785693\",\n  \"label\" : \"eeeea\",\n  \"coin\" : \"10p2qtwb4sxt9fijq02djkluvgcf1onf5nxk87f50vmbq4vlxtcy4buoksqgxo97cejd5x4tzeebt3zz8ro3jlesqeta4mr40ro042td9pxf6qscjhf89zxg9zat3vlrr4vd7bnva41m4qkiqpviq875ipghmuf4jod4z\"\n}, {\n  \"address\" : \"1ktqwt8keujnsugyh3yspzjof6a6nnr5m688bd0cwfa3ma1f21jy6mpqw3iuxoww9hknvd9gkdxce97041xah9pqd3ctfpgt9cj56mmgb52qehufkcx35\",\n  \"id\" : \"4f89f74e6dcf00b360aec9a7b800dffa\",\n  \"enterpriseId\" : \"c426b1e7e30d48b4a4de489df674ff53\",\n  \"label\" : \"non\",\n  \"coin\" : \"iv2cgness5b0p0ywouj9e5ktba3kt469fdm9hif898f70w8fffx5eel9y394bg89pe29luit0vqpz1s6hdpgery3e9skfljhpij1i0u5yma4oe62jow6673ivhjk42tq\"\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "7abae572-dc7b-461f-a997-bc9e6b88b914",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.396312Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.sendlabels.list",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/components/schemas/SendLabel"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 280
+}

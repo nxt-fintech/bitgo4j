@@ -1,0 +1,46 @@
+{
+  "id" : "22a56db6-5d69-4d1b-b081-47d045575b86",
+  "name" : "Update transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/9c69bb9d50559027895dc68c64a1b0c5/txrequests/29c787f743138dabe6976f7c41f19c4f",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"c193\",\n  \"context\" : { },\n  \"name\" : \"Jeannette Hills V\",\n  \"error\" : \"a66v5pqvynpsng5vblgd1tf30fukwdmzx1xgouoehnnl4ws5dua7ve9j2i78l5zp2wbgtxz9wr0d94vsjpjqqg3yeca5z9la6flnyehgmgcvvvtpq1l1a6m3klsn0kgnxym3665pcq7hgujw9\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "22a56db6-5d69-4d1b-b081-47d045575b86",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.410084Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.update",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 256
+}

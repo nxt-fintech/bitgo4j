@@ -1,0 +1,43 @@
+{
+  "id" : "e756e330-e5c0-4199-a260-03006c974a27",
+  "name" : "Retrieve staking requests and staking transactions for a given enterprise and query params",
+  "request" : {
+    "urlPath" : "/api/staking/v1/enterprises/6f57/requests/transactions",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"code\" : \"NotFound\",\n  \"message\" : \"Wallet not found\",\n  \"status\" : 404\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "e756e330-e5c0-4199-a260-03006c974a27",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.647263Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve staking requests for a given enterprise",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 75
+}

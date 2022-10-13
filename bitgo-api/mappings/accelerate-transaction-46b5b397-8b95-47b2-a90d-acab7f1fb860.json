@@ -1,0 +1,36 @@
+{
+  "id" : "46b5b397-8b95-47b2-a90d-acab7f1fb860",
+  "name" : "Accelerate Transaction",
+  "request" : {
+    "urlPath" : "/api/v2/tbtc/wallet/d157b25e09abaf9715d270c57ace35be/acceleratetx",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "46b5b397-8b95-47b2-a90d-acab7f1fb860",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.487528Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.wallet.acceleratetx",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 188
+}

@@ -1,0 +1,46 @@
+{
+  "id" : "1f413632-8439-42aa-9e20-d49a683b4da2",
+  "name" : "Create a signature share for a transaction on a transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/111ac54d5641a8bd3436b6a5ba106c9b/txrequests/9911e74a456caf9a9d6c9b074f0f936d/transactions/y4aswl8tbgzl2go43kql8yg8jcz9r/signatureshares",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"hs8l\",\n  \"context\" : { },\n  \"name\" : \"Man Hermiston\",\n  \"error\" : \"hb57db310ui3vsi1725lmxgql9wkli2ypg64rc7cxfk38h7ocz7mub9dxxbvk7gjjxhi6cd7vq5ynb31n24r56u128vv0g4sxoii2guda318sezf956v30nv64czky9cbb18golwca4z4efp5yrvhe9uibagw8ke7k\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "1f413632-8439-42aa-9e20-d49a683b4da2",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.419365Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.transaction.signatureshare.create",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 241
+}

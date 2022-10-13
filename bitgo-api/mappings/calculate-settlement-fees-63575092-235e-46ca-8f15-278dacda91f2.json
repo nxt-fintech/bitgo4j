@@ -1,0 +1,45 @@
+{
+  "id" : "63575092-235e-46ca-8f15-278dacda91f2",
+  "name" : "Calculate Settlement Fees",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/125t/account/4hty/calculatefees",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"feeAmount\" : \"g2bh1jp6dtnh8dsbgb4txj806md6e4ef0kt33qhpixl19kkuwowqs9hotj0lcrylex08txg89fmw4twzczo1y69b1m97gbh6pb25nltrbyyx3w3tox85uqfwe5qbonwizaxmye574m\",\n  \"feeCurrency\" : \"XCD\",\n  \"feeRate\" : \"vmix040qwu0mutjd02dkgwgz08v0t2atdyjakh9adbxwfhmlrg1hhlice080g9b1lmx8fbex17n7j0be9fx6ix8ag20orphgmxbkrbpfnrvhbqrwi6z1napevuh5fxwl5aektk5a\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "63575092-235e-46ca-8f15-278dacda91f2",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.56949Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.settlement.calculateFees",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "feeRate" : {
+              "type" : "string"
+            },
+            "feeAmount" : {
+              "type" : "string",
+              "description" : "the fee amount that will be paid by this trading account for the given settlement amount"
+            },
+            "feeCurrency" : {
+              "type" : "string",
+              "description" : "the currency the given feeAmount will be paid in"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 133
+}

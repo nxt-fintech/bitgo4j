@@ -1,0 +1,43 @@
+{
+  "id" : "319b5f36-9666-4aa7-ae6b-a09440a092f8",
+  "name" : "Retrieve Staking Reward History",
+  "request" : {
+    "urlPath" : "/api/staking/v1/e7de4oyry1efsq1i1ba4ex3fvke1a8g2mf1welih87jb92osdff0fspnvifglbjscb00z7edri4qer4m0tdphphw7fhcl06u1geq3tg38i84f28i11o8outhyzp4seqdjhaxio7k6ow47s9hl03wc98twru1wfym9qh90kbquukm0ygwvtja8n6qmat/reward-accrual-report",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 500,
+    "body" : "{\n  \"code\" : \"Internal_Server_Error\",\n  \"message\" : \"Database is down\",\n  \"status\" : 500\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "319b5f36-9666-4aa7-ae6b-a09440a092f8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.664212Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Reward History",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 38
+}

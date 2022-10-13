@@ -1,0 +1,37 @@
+{
+  "id" : "90078837-30e2-4083-871f-7ddf6bc3ad15",
+  "name" : "Create Trade Payload",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/5418/account/87v7/payload",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"payload\" : \"25feao1wo7pm1hcao5ez2ed9avs2cujz4n4lam8soxs20tzxesmii77tlej2y1f3lg2c\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "90078837-30e2-4083-871f-7ddf6bc3ad15",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.567502Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.trade.createPayload",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "payload" : {
+              "$ref" : "#/components/schemas/TradePayload"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 135
+}

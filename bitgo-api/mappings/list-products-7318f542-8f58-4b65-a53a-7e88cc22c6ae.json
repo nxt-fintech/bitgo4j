@@ -1,0 +1,38 @@
+{
+  "id" : "7318f542-8f58-4b65-a53a-7e88cc22c6ae",
+  "name" : "List Products",
+  "request" : {
+    "urlPath" : "/api/prime/trading/v1/accounts/qk5b/products",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"data\" : [ {\n    \"quoteCurrency\" : \"TND\",\n    \"quoteIncrement\" : \"5xzkmp8p0swoewmp4dui2p3h6nfvnokfy9y9fho6ae1p05pp4nqj2nxnj99y8s\",\n    \"baseMinSize\" : \"25uc1cz5krd7t7ic0c8ga4ehoxsfyuv6aohxzvktwllgjg9oes46ljqr14vhl3zlnm7ytmjbvi1tqu36bsdqyjyc9ctjpmvc17snat0c7zhr9snuv2jw1wdkqfkb0jwxfedjr6ezx4db0ma7pwz5c3viyvyjlrinj4sgbr6egwur803q\",\n    \"isTradeDisabled\" : true,\n    \"quoteMinSize\" : \"otkr35yql7y0dncmty70whb9hnqal\",\n    \"name\" : \"Ms. Louis Morar\",\n    \"baseIncrement\" : \"sdzs5dwrbilsb94vmuokjtmd9bl8paf2\",\n    \"baseMaxSize\" : \"7peurdyjs1443ffginca3ajhykgemalu5r1vr6ku49fbl3vk4f1rhycsxldwn9xhrqxhuuo10bjs4x22urgw48z93xm6qboq7fiqur1xgz5ssk35myi5h8a03z6xk3jbjqmct7z18bxj1w6hrefqr7kqlpmld7zwjb0x8w6l9helrx3b2lqfc7\",\n    \"quoteCurrencyId\" : \"0c41acfa-fbe4-4f3d-9e5f-ae70bdd0bc6c\",\n    \"id\" : \"620a3bc6-d6e7-4e6b-83a6-92b39f1f8892\",\n    \"baseCurrencyId\" : \"0d5f929d-25b5-4b5c-9391-ed14403c7adb\",\n    \"baseCurrency\" : \"LYD\"\n  }, {\n    \"quoteCurrency\" : \"DOP\",\n    \"quoteIncrement\" : \"9skjyez37joy3fh7t41f46bwh3oybzp2s8r1fuax4chfdvw5jbca\",\n    \"baseMinSize\" : \"qowz5cwacyfbqi9u9tvh0asp7szrn5bwbnurom7gs03zdhkusz14utizbf4qm0l0t0xzt55xkcqcz0hyj4zyrnsaf216xxfh9u2jhbxryiai9gm12crdina9tpy2ul37gd4yzhe3s7tdy1xr5srm9sg0kc70pobasynxkbhex3uszfc5grvowflr7gd56m8m\",\n    \"isTradeDisabled\" : false,\n    \"quoteMinSize\" : \"ngvqsl0zfbfoftb2233adcthcro8a7rhsb9imjtx6lupy1pxm0s3377drsy0kth4wq11rf47xnoqozt2ry00lxlrf0xx4xx4edm13puq8a1p7tpc4bwukoz8xndcm36mv82ovm6yaipwmb0oad\",\n    \"name\" : \"Man Swaniawski\",\n    \"baseIncrement\" : \"7zggl3tqzs3xiwrf\",\n    \"baseMaxSize\" : \"w4ilmhc8vlkf2h9yk5rlliar5ia8ut7odrkq0l5h8ra9kj7aqz6ul1731sfrbrgwdixomhnt7t4v76zyknxbjeb8h7i85wsmbvk0ec6kuz1\",\n    \"quoteCurrencyId\" : \"e2092c75-08c3-47a9-ad14-6d028f2a675b\",\n    \"id\" : \"79bf8514-7737-4cda-abe8-866e11c21289\",\n    \"baseCurrencyId\" : \"410d4ae9-fcbc-4fbc-bbca-c27e854aad97\",\n    \"baseCurrency\" : \"ZAR\"\n  }, {\n    \"quoteCurrency\" : \"XDR\",\n    \"quoteIncrement\" : \"uy97avdb48nqy5\",\n    \"baseMinSize\" : \"gtke7t2wqzehjmyo7y201kooykv0gcghw04yy6juhyrxwckutbzkci7dx67t73bvk8yqvy93spuqoxwlxfnocw4k2dwvl3aw5mmwzcr4t6x3b1eknsw2tr0sy1hrfg0n9eoit0uwix7kuo9oyowwyibeyig2nrxdpzsyx6q80so9lfa\",\n    \"isTradeDisabled\" : true,\n    \"quoteMinSize\" : \"lmfp8e14xcw6t2piyl2903brl8pz9rah943np495exfj7dhncem8s4050qcr1e1zrdz8sg9qsbwwzfnjetngzd0qz8jqao8adjrwt8a5wiy0qtzt6nnw2gv7ayhlj0q8hi82rqwo36tojjt9avld1jtfguvf9yw7t89zbgftj028b60o4dqfjjeuf7vq4pqm\",\n    \"name\" : \"Reynaldo Koepp IV\",\n    \"baseIncrement\" : \"foq9jnehh2g0oh568zouznze231yhkydfi2drt83pmsi9v48gqp8gtwkpv7bp4vs8m4pjka2v4ayz9d5391x7b4ichbs55br2xwnqvk88ybtuj2ktc854uxojcmy7gqcpp5qtnuzjiiy1kwiyvjo2q5luju3kg8di07awb84jispk03j7ymuyuae18310i\",\n    \"baseMaxSize\" : \"f09wytngfl8396xjpxtqtjo5r93o1mn7lxmnw9ju62nzpnqxlv9r8akqinkwl6e843kouceu2m7sar2epo411olnld8yg7v89b4jg36dtoon7alcf847om6dt7jpalqp39pht5pcbgmreo32i3qyhcbhxac1v7psqf1qf05\",\n    \"quoteCurrencyId\" : \"2ed0fa28-4c8f-43d2-916f-ab71c6fd201d\",\n    \"id\" : \"c2b5597f-ea11-42a5-ba33-c63c8b95dbb0\",\n    \"baseCurrencyId\" : \"50779284-9abd-48f0-af9a-1d659e68b5c8\",\n    \"baseCurrency\" : \"BGN\"\n  }, {\n    \"quoteCurrency\" : \"UAH\",\n    \"quoteIncrement\" : \"ij6sxwwdea8sth0b7renggetcju8ehjvf6emqye91jyhz2bc587swqab4xhurg94arujtmo6zjk1o5sfyme5vcn11bva97libyoumya1g6m5o1x3v3d37r1pnn2f16oj9\",\n    \"baseMinSize\" : \"rjfj9af87dun9cm3qympwq5nxzuvmwkrwf58hxnlo8uytfrq7q7zmexxp\",\n    \"isTradeDisabled\" : true,\n    \"quoteMinSize\" : \"ivn3027euq262odod75sazuzhffmo0o3gieu5wwvj3fbl47jg1pus7tksaxss95h8s7bdsnx86rjfw0tbhk0ks93chw4uovazfd3tmgns65i\",\n    \"name\" : \"Nova Kessler\",\n    \"baseIncrement\" : \"nw85h2bnsfv6binyf78hc47n3oegnwayuztxs0s30r7s\",\n    \"baseMaxSize\" : \"rjd1jnwrfa4coqyohfxcwctt1izy20ud16l792lloya4i\",\n    \"quoteCurrencyId\" : \"fcd09ae1-892d-40c9-a229-f80eba048ec6\",\n    \"id\" : \"2070bfa5-5957-4704-a0b7-3a04c4f6fcee\",\n    \"baseCurrencyId\" : \"0bd8b984-5a58-4ec5-aac1-64d9610d2013\",\n    \"baseCurrency\" : \"BWP\"\n  }, {\n    \"quoteCurrency\" : \"XBA\",\n    \"quoteIncrement\" : \"cvpw20vde8vz0ax2yszzk7kdqa5y9s4iumviiuhm70s5oefes9wtlrqip312edv5ejzpqh1h0z8d8womvz5pguy99dayme0ydfa09t0w094y99m18mao5fapvdxqh3ja\",\n    \"baseMinSize\" : \"cxzj8awl6i092s87xw6ww5l9o4o8zrd6cxvphjdfmrbkzsulmvt2zp3x17391jw7jwtk2dy6ljt04ernsmr3anefkae2iz1vm5l0ud13dzf25phhsyyec0mlxvv26n3gr04051er923hk7qv4qiwbs2kw5p2czogja1t1qjr4o0iuqma9fpp3zcxh9sxkva26\",\n    \"isTradeDisabled\" : true,\n    \"quoteMinSize\" : \"gbdhjrzkf3i6zrmv8qbfd4jn8hfo5ykxl9zoljjuxv3cwncj23ko2itx1\",\n    \"name\" : \"Robbie Kub\",\n    \"baseIncrement\" : \"nmoum7co2xadtg547et9h45veboy2wuzns65zm\",\n    \"baseMaxSize\" : \"3vqcs2uhn4bjpoij9sig7po2cv\",\n    \"quoteCurrencyId\" : \"044262d5-4b82-468e-b9e7-fd0f893a2088\",\n    \"id\" : \"90065da6-d20b-4db8-a78e-2c3d59a6bf53\",\n    \"baseCurrencyId\" : \"96583945-64a7-4951-9526-ffa3d4d27051\",\n    \"baseCurrency\" : \"DKK\"\n  }, {\n    \"quoteCurrency\" : \"LKR\",\n    \"quoteIncrement\" : \"qh3em70qzv3bm15ud19xn8ppnllhchezzulhvdkwxx2fnp8vus18876bpzvyf5h6t4cgtrm0h8zqzd82t5jj53xpb435lnriwijtwrsouxcdm9qro54v44j1ehj\",\n    \"baseMinSize\" : \"s9qwttcededtc8xb884jk81i1lokkeb2wdx5o8ns1ubyhb\",\n    \"isTradeDisabled\" : false,\n    \"quoteMinSize\" : \"xyasejn6j63ompdiquh3ivhcjjaidww28o21amdqs9542jpc8gvxfhwyuxj2to14gzshlgx\",\n    \"name\" : \"Zachariah McGlynn\",\n    \"baseIncrement\" : \"d4xmp\",\n    \"baseMaxSize\" : \"q96xek43yiwqzi2jcp001lpyx6e1feraptf2u931nsiv12oalbjagtuyivsfnctkm7q4etm9d6iybtyopime1qsbzhbdd19fnb2g5v93umt8bgt59k8irnhfx02vmfwul1rdsccet19weutsvr5d0sjfm91\",\n    \"quoteCurrencyId\" : \"544eeeb2-df6b-4999-bc7d-5b9f36b9e447\",\n    \"id\" : \"0872cacc-ae0d-46b8-a747-6da266beb3f3\",\n    \"baseCurrencyId\" : \"fbf24d4d-9419-4066-a0a7-d25b44983e31\",\n    \"baseCurrency\" : \"BHD\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "7318f542-8f58-4b65-a53a-7e88cc22c6ae",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.565323Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "trade.products",
+        "schema" : {
+          "required" : [ "data" ],
+          "type" : "object",
+          "properties" : {
+            "data" : {
+              "$ref" : "#/components/schemas/Products"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 138
+}

@@ -1,0 +1,25 @@
+{
+  "id" : "18af8344-0342-426a-b692-674339cf0658",
+  "name" : "Get wallet by address - 404",
+  "request" : {
+    "urlPath" : "/api/v2/pl1dxo891rwcearjtkly8biw4r14edbhh8tuulcgwg753bo9zyywdo70p1o/wallet/address/iwrtayav1i9w1bmehllvps1fk4qn5b7vuekn0lcmja8gn972",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "18af8344-0342-426a-b692-674339cf0658",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.317273Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.getwalletbyaddress"
+      }
+    }
+  },
+  "insertionIndex" : 347
+}

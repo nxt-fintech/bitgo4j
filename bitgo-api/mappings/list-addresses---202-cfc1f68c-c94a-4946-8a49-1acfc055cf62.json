@@ -1,0 +1,25 @@
+{
+  "id" : "cfc1f68c-c94a-4946-8a49-1acfc055cf62",
+  "name" : "List addresses - 202",
+  "request" : {
+    "urlPath" : "/api/v2/56ok9jgzpzfumdlkgk708m252wf1gnuqrl1ug6fzm9fuicz0vbriudwrv0hiawxegqx/wallet/046e98a31db9ecfe3400fced549f3a75/addresses",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 202
+  },
+  "uuid" : "cfc1f68c-c94a-4946-8a49-1acfc055cf62",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.863971Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.addresses"
+      }
+    }
+  },
+  "insertionIndex" : 459
+}

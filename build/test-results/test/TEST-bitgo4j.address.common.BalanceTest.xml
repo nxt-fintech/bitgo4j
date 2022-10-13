@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.address.common.BalanceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:33" hostname="ishtos-MacBook-Pro.local" time="0.0">
+  <properties/>
+  <testcase name="testToString()" classname="bitgo4j.address.common.BalanceTest" time="0.0"/>
+  <testcase name="testSetTotalReceived()" classname="bitgo4j.address.common.BalanceTest" time="0.0"/>
+  <testcase name="testSetBalanceString()" classname="bitgo4j.address.common.BalanceTest" time="0.0"/>
+  <testcase name="testSetCoin()" classname="bitgo4j.address.common.BalanceTest" time="0.0"/>
+  <testcase name="testSetBalance()" classname="bitgo4j.address.common.BalanceTest" time="0.0"/>
+  <testcase name="testSetTotalSent()" classname="bitgo4j.address.common.BalanceTest" time="0.0"/>
+  <testcase name="testSetUpdated()" classname="bitgo4j.address.common.BalanceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

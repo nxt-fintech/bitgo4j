@@ -1,0 +1,35 @@
+{
+  "id" : "7a085957-c53f-47f7-a564-5996006757a3",
+  "name" : "List Accounts",
+  "request" : {
+    "urlPath" : "/api/portfolio/v1/portfolios/po4k/accounts",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"name\" : \"Hollis Klocko\",\n  \"id\" : \"31feb467-c68e-4959-98d1-46ff32596bdb\",\n  \"type\" : \"custodial_wallet\"\n}, {\n  \"name\" : \"Miss Latrice Leannon\",\n  \"id\" : \"4dc5bf6d-2b93-43cf-be81-d36c846391c1\",\n  \"type\" : \"broker\"\n}, {\n  \"name\" : \"Ms. Laticia Herman\",\n  \"id\" : \"65e1ae8d-6e1b-4194-83c5-817d1f59d262\",\n  \"type\" : \"broker\"\n}, {\n  \"name\" : \"Miss Jerilyn Ankunding\",\n  \"id\" : \"bf8a8ecc-f738-4355-9326-48f77c51717e\",\n  \"type\" : \"checking\"\n}, {\n  \"name\" : \"Young Haag\",\n  \"id\" : \"a03b996b-2b49-4119-9d46-4493238ca839\",\n  \"type\" : \"broker\"\n}, {\n  \"name\" : \"Lorette Mohr\",\n  \"id\" : \"200b2cb0-9c92-41f4-9ea5-01e89860323f\",\n  \"type\" : \"blockchain_multisig_wallet\"\n}, {\n  \"name\" : \"Lu Graham\",\n  \"id\" : \"f4c89fbb-f3c4-4a53-8027-475863efffd6\",\n  \"type\" : \"custom\"\n}, {\n  \"name\" : \"Miss Paris Homenick\",\n  \"id\" : \"0a4903e3-879a-4143-9b01-3981d856e789\",\n  \"type\" : \"blockchain_wallet\"\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "7a085957-c53f-47f7-a564-5996006757a3",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.52609Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "portfolio.accounts",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/components/schemas/PortfolioAccount"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 157
+}

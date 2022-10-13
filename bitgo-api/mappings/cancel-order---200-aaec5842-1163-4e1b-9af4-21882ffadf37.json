@@ -1,0 +1,25 @@
+{
+  "id" : "aaec5842-1163-4e1b-9af4-21882ffadf37",
+  "name" : "Cancel Order - 200",
+  "request" : {
+    "urlPath" : "/api/prime/trading/v1/accounts/9crd/orders/pzon/cancel",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 200
+  },
+  "uuid" : "aaec5842-1163-4e1b-9af4-21882ffadf37",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.558518Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "trade.orders.order.cancel"
+      }
+    }
+  },
+  "insertionIndex" : 142
+}

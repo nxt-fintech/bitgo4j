@@ -1,0 +1,43 @@
+{
+  "id" : "a53aab72-fcc2-493d-9b9d-b4f913d03ad0",
+  "name" : "Retrieve Staking Requests for a User's Wallet",
+  "request" : {
+    "urlPath" : "/api/staking/v1/tpl5mus29h05di3sb820k7rn8qwprgddpcchq39ah/wallets/4064/requests",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"code\" : \"NotFound\",\n  \"message\" : \"Wallet not found\",\n  \"status\" : 404\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "a53aab72-fcc2-493d-9b9d-b4f913d03ad0",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.639536Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Requests for a Users Wallet",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 93
+}

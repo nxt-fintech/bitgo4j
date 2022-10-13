@@ -1,0 +1,46 @@
+{
+  "id" : "0917663f-8d98-4961-803d-fb31a4d1c17e",
+  "name" : "Create transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/8e918a32531a2b37146c4839f023b8eb/txrequests",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"628s\",\n  \"context\" : { },\n  \"name\" : \"Dr. Merna Luettgen\",\n  \"error\" : \"uw17bphamzecyuzc4r11thj5j9em2r2xg9909lybl4noc5slzd3ac53jcdl0b5759tqe0qvgh8dxc7yh0bmejgbjl6zl72w7om6gw013ffobdd9dotwrp1kft0cx\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "0917663f-8d98-4961-803d-fb31a4d1c17e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.405935Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.create",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 263
+}

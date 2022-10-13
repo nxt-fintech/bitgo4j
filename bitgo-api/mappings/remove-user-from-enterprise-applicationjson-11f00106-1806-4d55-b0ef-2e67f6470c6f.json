@@ -1,0 +1,45 @@
+{
+  "id" : "11f00106-1806-4d55-b0ef-2e67f6470c6f",
+  "name" : "Remove user from enterprise (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/a91d6e0ed78bdf4b43dd291f793d524a/user",
+    "method" : "DELETE",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status": 202,
+    "body": "{\n  \"pendingApprovals\" : [ {\n    \"approvalsRequired\" : 6014415422948721968,\n    \"creator\" : \"39ff62375dd914f034ba485023828e93\",\n    \"wallet\" : \"78b2f52fdf7ff8e4e2a461e72bc4ef0a\",\n    \"enterprise\" : \"e832a18993455d85bd0c50a16c74119f\",\n    \"scope\" : \"wallet\",\n    \"userIds\" : [ \"b42b95c77f319a88b69fb3dd6c3050c8\", \"a794c87c2f6a8bf90d3c958e3953fca1\", \"fce09e1562002d124993662f0d22b864\", \"c307d48cfe694c498a4ef6a2d1dfc399\", \"03ee77b4d414e4bc07a1dc2c51ef548a\", \"2af1f024f1eec487962d9083ac63c2f5\", \"20a4dd1128e5bf1db4ad1caae52e83c5\" ],\n    \"id\" : \"bf9e1863eed07e5885f09b1dbf6d570d\",\n    \"state\" : \"\",\n    \"coin\" : \"fxpsjllybmsrqbsd51q5y6zdftr3xmjalvt3mj4gxstllgujhsdu1s0w6k1c3d1y1dzwln86x29aedp2upk8ag0halwr4yvwj94ves82dfsbkbil3yjm6qryr5dzp5xsf0ftq7qpkx33c9t3swnhpp1rh6v8pbee2zlhczhirrp2eoup50jratt6o1ivtwsp3oxg\",\n    \"createDate\" : \"2022-02-21T14:42:34.075235Z\",\n    \"info\" : {\n      \"transactionRequestFull\" : {\n        \"walletRebalanceEventId\" : \"7e43384da7193a638cce2aea1d7326d3\",\n        \"verificationRuleId\" : \"rvnc\",\n        \"verificationItems\" : [ \"eirgznnif7pujdaja97axrktxq1itihs1njreuytkl482u7851p5cyuitzkxtwfrxm3cu6bwrxs9htjt4vok51wws429hy2g35y7hg7a8nsi2vymy585kvefg1unvtmabut1p3wjos56fcosk6zhpxg6tu12d\", \"4kbpol9x3w9v9wrbzboypbo698c75pymzxtssazn2hnxk8wo8axmh17ac2hovlr3sf1ycq85dg72zg8urn1q2byw42278iiwksn5j7ncn3m\", \"9zmxj4c4v1z0kkkbh3pezjz96kjvk479dbe2vrgiegn4k561qdwjmiqrtm7n39xdjqsudsfqakn5im0ptenzgaaadt8jmrpfe8lepnd8hl2vjerp9gzkrdrpwki5ymm626192s61ye9me9ptnvzw9dhogh322iibkkvty0yk6cn6l33o5o89vhswot89c7kp6es5z\", \"t5ghow02qm95m4431arvdh5xcepvi11muakbns09y46xzpkcgminuzyn3e57nm6p8npb0yakpmx674u\", \"iflgrjm0khpqc8rv162d8i0fbjbv18dkgutzp4ji8mazuklr9f8wz2pi335i6k1xu9rfd9mnldr3je8emin\" ],\n        \"txRequestId\" : \"xl2d\",\n        \"videoApprovers\" : [ \"848b7d7d1dfe6451b81551506bff7131\", \"d8dcc9b17ca42aa237539775f7ecfbb0\", \"715442c764abf99cb4cfe1a11cefcedb\" ],\n        \"policyUniqueId\" : \"33db89496f291b46bbea239be7442116\",\n        \"txRequest\" : \"\"\n      },\n      \"type\" : \"transactionRequestFull\"\n    },\n    \"walletLabel\" : \"esse\"\n  } ]\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "11f00106-1806-4d55-b0ef-2e67f6470c6f",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.077588Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.enterprise.user.remove",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "pendingApprovals" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/PendingApproval"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 417
+}

@@ -1,0 +1,46 @@
+{
+  "id" : "9995c920-2061-4e62-87f4-c7a36281e98e",
+  "name" : "Get balance reserve data",
+  "request" : {
+    "urlPath" : "/api/v2/tcspr/requiredReserve",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"yaui\",\n  \"context\" : { },\n  \"name\" : \"Stormy Gislason\",\n  \"error\" : \"rg2v2g37vn3i3jyvfplihn3mhhuf71uxgbt3x4y17z7b43967spxcgdyn\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "9995c920-2061-4e62-87f4-c7a36281e98e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.431635Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.tx.fetchReserve",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 228
+}
