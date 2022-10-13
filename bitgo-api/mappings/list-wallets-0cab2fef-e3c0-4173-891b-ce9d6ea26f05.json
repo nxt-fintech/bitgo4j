@@ -1,0 +1,44 @@
+{
+  "id" : "0cab2fef-e3c0-4173-891b-ce9d6ea26f05",
+  "name" : "List wallets",
+  "request" : {
+    "urlPath" : "/api/v2/wallets",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"nextBatchPrevId\" : \"4f9d032a-689d-4a8a-83e9-77596c8e9533\",\n  \"wallets\" : [ {\n    \"enterprise\" : \"447be23566aacdf1fee90fc876e3f911\",\n    \"keys\" : [ \"8285691a90bb08241b44d587e062bf53\", \"8644f5fc95fc00f61cc00f2048fde3b7\", \"a9d4777883d4650ca3f491466c6d3a33\", \"6d268453ecda280e8d6bab3ba09459ae\", \"226be53ce7b6fa8132cb691bed1fbbf1\", \"d094db5bafbe30460e1695ff2f67914a\", \"5bb2dbb2d460a26ce2d4afc161b9b981\" ],\n    \"admin\" : {\n      \"policy\" : {\n        \"date\" : \"2022-03-25T19:33:42.301176Z\",\n        \"rules\" : [ {\n          \"action\" : {\n            \"type\" : \"getApproval\"\n          },\n          \"id\" : \"d83g\",\n          \"type\" : \"webhook\",\n          \"lockDate\" : \"2023-06-03T20:45:24.301526Z\"\n        } ],\n        \"id\" : \"f805eaaf8db051399e24026b8faa3022\",\n        \"label\" : \"dolor\",\n        \"version\" : 3402459662763680837,\n        \"latest\" : true\n      }\n    },\n    \"disableTransactionNotifications\" : true,\n    \"allowBackupKeySigning\" : false,\n    \"type\" : \"custodialPaired\",\n    \"custodialWalletId\" : \"47a0d7b536b9162f966470252aaf1aa3\",\n    \"isCold\" : true,\n    \"freeze\" : {\n      \"expires\" : \"5knqkf75tendi4isjdbra49d2gi\",\n      \"time\" : \"2022-08-11T06:34:41.301859Z\"\n    },\n    \"id\" : \"98b5771a2503833f98a779304b80115a\",\n    \"balanceString\" : { },\n    \"approvalsRequired\" : 6639666754290246235,\n    \"receiveAddress\" : {\n      \"chain\" : 30,\n      \"address\" : \"z9peo3tstehhfysply72vpv2iwnoj45p790vzy13qae9ccvsyv0pl8k83gpfqzgcrfs1xfvjw71blx2g6mrfk39mz0ytmagve6sb2xoj3bmtdc93fxtfzuniesnezuzl2tt2hpocvggd66orn7dh3oqe90ninvr0r6iwbazyxornpivttrwhwhuby8ml0gxq33zfo1p5b1ral5581flgp6b4n09gmueogapr\",\n      \"wallet\" : \"3eb4e1a6a81888535118d325c5f74ab9\",\n      \"balance\" : {\n        \"balance\" : 1745663580427981704,\n        \"spendableBalanceString\" : \"m7pl4vz1lzk43i2y3jz244yeam65ya0ejf4103jkujdw92ez0uquhzmpeiyif2efup5flhl7inxbkqfsaa\",\n        \"totalReceived\" : 2541626170890427417,\n        \"totalSent\" : 2468901364354838909,\n        \"confirmedBalanceString\" : \"ackgz32u05rr6x8uoqx6s9zalp0f4dyeqgxz496eul6q6bpv4awtfu5bzweabki4zyz2a9dil1rk0n8j37qgh9sopi44dmezcravd6xkmlbynt7ubt849cz8d5q\",\n        \"updated\" : \"2023-07-18T17:17:53.302137Z\",\n        \"balanceString\" : \"x50ycndxascq47dei6dv0fqglo3fnn4vxbea37mlgpl434gi3rhwbdm23hpmpytu1d\"\n      },\n      \"addressType\" : \"p2wsh\",\n      \"lastNonce\" : 1658809943005924821,\n      \"index\" : 6019431149412497342,\n      \"id\" : \"07c9446048dc6d2491dc952a08843520\",\n      \"label\" : \"aspernatur\",\n      \"coin\" : \"u01qapuk9mu42la1e2i5g9ys4fcql01ytmhqe7i\",\n      \"coinSpecific\" : {\n        \"txlm\" : {\n          \"rootAddress\" : \"ebp5wc0u2t69ilxguh1h70n6fxurhbpb7nle65euallwpl839l682ezsi7cbt6rqd4ksnhln9nx6b51ikbhymlh4mi7bfj8evdjbf4j2r6ml51ntkklzm1d8wbpjun0x\",\n          \"memoId\" : \"-6409353494783556738\"\n        },\n        \"xlm\" : {\n          \"rootAddress\" : \"p103oymbuiahah2b0jbgv7x1rfn09nurcj4qkc1fuf2iwxidnveazhd3q350x3mc4ugnd3folhbaneixi1wfyyuty4bc5vbhv88hjeknfgasgt5o1c8i78bi\",\n          \"memoId\" : \"-8751622196109957916933949015147652557085123903646427417085919689732068879478577013166959\"\n        }\n      }\n    },\n    \"recoverable\" : false,\n    \"custodialWallet\" : { },\n    \"label\" : \"rerum\",\n    \"m\" : 1688818322742580276,\n    \"n\" : 1953388839430368365,\n    \"users\" : [ {\n      \"permissions\" : [ \"admin\", \"spend\", \"view\", \"admin\", \"admin\", \"view\" ],\n      \"user\" : \"7094dc113972a1a48645b56625834b50\"\n    }, {\n      \"permissions\" : [ \"spend\", \"admin\", \"view\", \"view\" ],\n      \"user\" : \"06e7a6630897f2b1a07f35aa19abd3e1\"\n    }, {\n      \"permissions\" : [ \"spend\", \"admin\", \"spend\" ],\n      \"user\" : \"1f585c2fe2331fbe076ac778fd0c2d71\"\n    }, {\n      \"permissions\" : [ \"admin\", \"view\", \"view\", \"view\", \"view\" ],\n      \"user\" : \"0f0b71b8cc59a377ef89989cc139a622\"\n    }, {\n      \"permissions\" : [ \"view\", \"admin\", \"spend\", \"admin\" ],\n      \"user\" : \"9e9a9a148686fcd86c3e69d6cabf42c3\"\n    }, {\n      \"permissions\" : [ \"spend\", \"spend\", \"view\", \"admin\", \"admin\", \"admin\", \"admin\" ],\n      \"user\" : \"edb768044ffb9d238251a6065c246321\"\n    } ],\n    \"tags\" : [ \"b74599f6c0fb8512e7c1b103edfeb36d\", \"9df2540a44181ff3e763659fa9e0107a\", \"a37a2fb2f958e109fdfb91054f930908\", \"bbf41a1611f9d35dbc3b8d4e37173067\", \"c9b90de6783c476b74545e0e46e40a76\", \"635b8ca0e6ee61177b4ffafc4e7cce0d\", \"dd3f7533ee1f52469b5e80746e510241\", \"f207e033a25d6b87300cd9f788b1fa44\" ],\n    \"deleted\" : false,\n    \"spendableBalanceString\" : { },\n    \"nodeId\" : \"ec81d8f57f266f08445305460c5d7c9b\",\n    \"multisigType\" : \"tss\",\n    \"buildDefaults\" : {\n      \"minFeeRate\" : 6081497290551049915\n    },\n    \"startDate\" : { },\n    \"coin\" : \"kmizf5tvtjdo26r3mkq5mg3fndvt9x7o87jgvuvdvdw2nbcvaoew0ys76qnr2890wuy3w5d9pmhwt35fimxf5vk0ov623yalj5evqh3wa0wdqpi6sgrqykxqvsa2lhxjpivm2z02roeppatpf4g2yfjc\",\n    \"coinSpecific\" : {\n      \"homeDomain\" : \"ljthduqg5d1r5j68mr2f1dhq03se1ipij7xjt\",\n      \"rootAddress\" : \"0tewf3otwqjz0e2pr78irpvter3fa41ko1k61itn1vbxevthdhtapgb09pehlzor\",\n      \"pendingChainInitialization\" : true,\n      \"creationFailure\" : [ \"6y6ler8w0scul6dd9eyuzd680fu7mnow8n7cmmznz1gyr2og08h2xr\", \"l3kyjg0nhpkjzpjiy82ywpl4\", \"awz53ag1e4uszg8pqmcoc134zz197m6sugals064g515q4eu5f3i45r3iixusf9vhbhw0h9ax7fymku7c5m9rtuwrbezx24vq55c6u8epss68ocscg19orrp4\", \"58g214\", \"duyosg3i94ju4timbsyamvc8fktogzsg9tx7c60gvyfgjwmi73d857tbjs1ijr9go6c0f4abh2cdg9kw2r6yuxdhl6ty5txo284fjfd9sdb1\", \"nfyp1f05dyi85ry8jf49vjgj0m83ufbpf46wq14iz01qiuf1sak501k546ktjkd43nrl0gltzeuht2nnoefp42gdsz7swu40gl92mllwgk1zxdd1yvqmbq15fywq9j\", \"ubpdujswd3z8xgwsas5rxh5e4kyygqmae0fecqa5\" ],\n      \"stellarUsername\" : \"thao.bechtelar\",\n      \"stellarAddress\" : \"5k5yvlez0\"\n    },\n    \"customChangeKeySignatures\" : {\n      \"backup\" : \"x99rz0gys19bio0mng22vvaf70ag8pxtzfzd3a41cyn17k8h0z9sr2zl4yn2iafuozg4gzfesex4x7qpu9u1mhn9shf8hfr3kws7ypuofcvdhsz4gqjcwkylkski4uywabv\",\n      \"bitgo\" : \"m17965v43tlqenn8zz4l4d0pb94ccf3zvejo9pva9odpc5579iy9bo255zkojlhhplkxp4j69us\",\n      \"user\" : \"8bz1shxt44h0camxh6abmwnwzqc9dj81gev8dz15mqc\"\n    }\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "0cab2fef-e3c0-4173-891b-ce9d6ea26f05",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.304845Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.list",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "wallets" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/Wallet"
+              }
+            },
+            "nextBatchPrevId" : {
+              "$ref" : "#/components/schemas/NextBatchPrevId"
+            }
+          },
+          "required" : [ "wallets" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 351
+}

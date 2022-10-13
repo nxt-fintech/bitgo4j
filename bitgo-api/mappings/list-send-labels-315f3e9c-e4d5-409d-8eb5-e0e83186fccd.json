@@ -1,0 +1,51 @@
+{
+  "id" : "315f3e9c-e4d5-409d-8eb5-e0e83186fccd",
+  "name" : "List send labels",
+  "request" : {
+    "urlPath": "/api/v2/sendlabels",
+    "method": "GET",
+    "queryParameters": {
+      "coin": {
+        "contains": "400"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"wxsb\",\n  \"context\" : { },\n  \"name\" : \"Harland Pollich\",\n  \"error\" : \"qvk960dba4mnydydvt7b8853r21okgnbv0tb382k4sph9gwqb44dk3wczfyjhbm03pb53vbrfc394cs4tggkv09x5j5ln9cdztiggi1blobba8cpwdcjrqsxih4j5d8rm8w3j9u8xpaqn9afdrc8u2e859gwp500pmfi4fot8qz6mclkieb\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "315f3e9c-e4d5-409d-8eb5-e0e83186fccd",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.396923Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.sendlabels.list",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 279
+}

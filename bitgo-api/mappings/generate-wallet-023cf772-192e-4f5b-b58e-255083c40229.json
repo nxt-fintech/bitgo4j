@@ -1,0 +1,145 @@
+{
+  "id" : "023cf772-192e-4f5b-b58e-255083c40229",
+  "name" : "Generate wallet",
+  "request" : {
+    "urlPath" : "/api/v2/s0ug3r63x62l63mbjlydjht3chcly5c6lo6wixvo3k0zwccbretnps1nm91c6vlfubryjzru7tou8jdpqweyxvu1woiir83f79yj431mgxf8u9htabg6oxm0hok17yq4k5jba81g65h/wallet/generate",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"confirmedBalance\" : 1775938377123695156,\n  \"keySignatures\" : {\n    \"backupPub\" : \"5q3h40cla1kvppsotx2370wtit58hj3ik7qfhrtxzcv9ij361q586ux3o4f6js6zzhxfjc0zip7ih0e4h6lxyv3r947w3lmigx4iwjddglk\",\n    \"bitgoPub\" : \"hkz8lyrs6gc9194n30ey0ye9e\"\n  },\n  \"keys\" : [ \"83774694ca38ec91f896496d24a6bca0\", \"0eedd034a4c7b3f6072c7a7e394578f5\", \"950de489c7d60072c88347e966d8ebe2\" ],\n  \"hasLargeNumberOfAddresses\" : false,\n  \"disableTransactionNotifications\" : false,\n  \"admin\" : { },\n  \"allowBackupKeySigning\" : true,\n  \"isCold\" : true,\n  \"freeze\" : {\n    \"expires\" : \"2023-08-26T18:35:47.459052Z\",\n    \"time\" : \"2023-02-08T03:35:09.459081Z\"\n  },\n  \"balance\" : 1787356912651685514,\n  \"id\" : \"5226cc808091e8092950deebc2f841c3\",\n  \"confirmedBalanceString\" : \"qv42m1w4eg8uw2v0qk09jfc92fh9otamsdy1mxft1\",\n  \"balanceString\" : \"74vrp6h88aw256ofdojzjpuers42z52s01rkqa8c3vhf1nioj8sn540m7b68hrwr45msz5i5lmgfenw2dilbtkixgikjdvriuqeeqa972qy7r7hvo65npkgrnz70c43kziwapuf2fi79w\",\n  \"approvalsRequired\" : 7208602407038844909,\n  \"receiveAddress\" : {\n    \"chain\" : 11,\n    \"address\" : \"28nv4f25lc93mxaxosvtd8e3zdawgpu163ykieq7xjz13w11473cynnbkhd3o6nybxofrd5y861l8hhz0t40n4xqd7nvijbjzpc1mhkhx4zas7xz4kmgdktjcyb464tr4csdjiuuhp19\",\n    \"wallet\" : \"1a0207e66d5f4fe02ac2cd6702519b9e\",\n    \"balance\" : {\n      \"balance\" : 6383012925101710159,\n      \"spendableBalanceString\" : \"b3dckefhrh0wm06h1ah45v6roi6b6c6ur8rn1gh3se5ychhmsjhc2fobnggfl43h2v71541k5al1m9ic5l6tywxr53klelsru41qc2tlch1zv5gbouebnx5adesp\",\n      \"totalReceived\" : 3364209039701732598,\n      \"totalSent\" : 3205747559899380509,\n      \"confirmedBalanceString\" : \"07f0dr64aosukcd5gqnnyjk0t7yqfh9hp0iznssieoty30oequuctc4mq57j3bj48c67wxhp9lxxvgjcold5l1ejphe5ei3mp9s2cnnhsjjv6o586l4r6mjqxtxdrfk0eewjn0gtve0l2ea653qs4c\",\n      \"updated\" : \"2023-09-06T13:05:54.459531Z\",\n      \"balanceString\" : \"qo367osjznof8hznwlkzb757gvhkvmy1cl\"\n    },\n    \"addressType\" : \"p2sh-p2wsh\",\n    \"lastNonce\" : 2083389678061316254,\n    \"index\" : 1378238508526657393,\n    \"id\" : \"cba875d3ae7e4d94b38dda7523fd7db9\",\n    \"label\" : \"placeat\",\n    \"coin\" : \"6mxccudeq7m4k0y2wlfvtt9hapvxkibessio9l52r5ctxsw8krestsmpvsxgjvhpb6kklit3mx3nhb2o2bgglnh8wfjmqsxndinhv0b9hori9kw2un46musewdzcwe3pgqdi4w50mclj5ov11xm7g8kfz88kb96b3o9fg1hfsn5d0ehnpbzii5lqdbnsbc45\",\n    \"coinSpecific\" : {\n      \"txlm\" : {\n        \"rootAddress\" : \"bm2kc1nzjmyy8xeicx8rf393vjn85e8xutb9zklkedvu4oa9fhkcdemnkjczdz8esn3ax3aolvl4ks7irnhb0p90x3b96efmzju55lkfmhnksf5mb54qn\",\n        \"memoId\" : \"-4022000366666723897561249895\"\n      },\n      \"xlm\" : {\n        \"rootAddress\" : \"xg1x7jxl34ftlqbzwfcp\",\n        \"memoId\" : \"557303151961297990598909\"\n      }\n    }\n  },\n  \"recoverable\" : true,\n  \"label\" : \"uuuut\",\n  \"m\" : 3008812506355153672,\n  \"users\" : [ {\n    \"permissions\" : [ \"sgahk12jerg99umpbbhihgnd5fnjvwqzhfb2wi3hnf3ivqok235htjwdl2ux1wtum4vt1vl0l53a2cokemb0ngwc6tkwarog2voppkpzg2dmt63hbpwrern06pjodea5lzy8925vmuhki2n8lfficouox9k1n8t2rh4\", \"4bspl5fr1p5lmr6v4ks548t2anuboiuidi3dj7ramr\", \"g10h95gnmugt6ifo56uuzbif16dm5bdktni19fh8ml6dctri09tsf38km816a4jclzsdkf1yxo12lcwevlnan8pw19b82hp200yozxqp5fpzcxjq7mevtww42rdhrbuge3oqpckj0qtdu\", \"ze49lsrwohtd4qqg3osxkpu5pbrd2hq3x3agmnb88qog7yid37q6ulvwtbxwvauvg9alexmn2epidp8adag1wtjdpwn8ns31e9w2ntnus1ed\", \"i41bt0ylcrj7i73ejxpzzi2sx9kjg79bmi68y4j9w8eqwvot3gbl07i4voar50jor5fgsezo1etko6xkrbk3bfq2xfj0s2ra95srh55dtzoekr8zaeq34zq58n7z7cbzi6koinlm4v5z1s6\", \"0c6zdqi2v4ufk27iqjbvgxzl36xmouycncblznuchd0vjjjiscy6golnf97bbhhoacaph92m0bknrhz2u3dt9dv6yrdflbkp2b1x2ic3ou2jv08mqryh3w7yhgvkok\", \"g3fdmq55mdblbwga1ce59k4v6ij0ebv7g1ushmphhdobkhlc69tvj7vciaha8cxzl21qqqo8aa6l8emnbozu598jdtkuj8iqbouvjej3tce7sloj2xn5x5qvw3nbau2jdc0ee2h1tq\" ],\n    \"user\" : \"b3bbd57b83f021e291a805d2aabd7b07\"\n  }, {\n    \"permissions\" : [ \"ftzdskajbckxwswcv7zuluzt4y6lzygchyqe6cg5f8nwoj91xskrqwd6sgyysxuj344d1k428xtpx\", \"g0p1eiabezvdaumy44j2z5glnq2\" ],\n    \"user\" : \"2457bfc708488a86d594ff216b1abbd8\"\n  }, {\n    \"permissions\" : [ \"riwyw1lls338r36wibgfeohr516f\", \"yeydfmhuuy2z663ex9blddbyvdjoyv8ue6raftscoj80s09zftr6kbwekkqk3bt337cdwogzo9wx8id20ric5yh5sj3ew82dln93jh1q91lqjsrzs3v3zebec15y6gq3w\" ],\n    \"user\" : \"4f1a0734de3f761483f0bdf3eb73692b\"\n  }, {\n    \"permissions\" : [ \"p66fojakr6kxon4bnznogc5ose9zh3mgq\", \"q81wnooeupms8cvikrmo6a1zm1ve2168xsdczbbnuz2p3zcpiy0n45mc2g9hzemdvelhw6797bftrczhd\", \"ygthm9yk1vdeck7sd225qahm3tj1vrw3m1wqcqp9y1whvyjy18ywmxswdbdzmra9j8l\", \"fzxqcqje7o98268u010aj\", \"ghnbvf3e8rw6wepkggdhaja7kko9zywptcub14e2l7wfab0lkwlhlzylzot5mg87ofnrlgkckzodnnaxvaku36b8bz472v2m41q7vdlhdlaovi0htud29m1wmk0vfzijyzsreltgojlkh0n8j7mf7iso60evgow51dpb8usiql3ljxlegqzq5f84fu9yiaz5\", \"izfyjio63c72elx546yubas7r25hdbm74jetfhmy3fpx9dzp57m8d0umyqk7kcivxbxbxkv4gi8wt8dh7f96z9h\", \"nvdu52i60dm1ij0768kxjyvtsdakgyee688q1hvz917qxx19e7r1e8zirqzo3dnivaam8cwzqr9thqc8e8rwizarvurkbqkk304cqxdfqrwusksjmgkmbw3msydoqt055jm7uaqb\", \"0w21pt3ntmvb6pkbljzjkgrsf8m23nkzrjye9jo5dajz9ue5dddk\" ],\n    \"user\" : \"1be4b05c408e95f4ad323f2d8ea73378\"\n  } ],\n  \"n\" : 3858734480030447322,\n  \"tags\" : [ \"2cfe539a46a8cb476b2883b1bb380214\" ],\n  \"deleted\" : false,\n  \"spendableBalanceString\" : \"r86xgfb74ou6dxqoq9suhi6xnd01v3iq6tnrzfm9kv8obc1m6wwk6rn3v64cjvfnwtn3cqb6o62p1s87jfqn3t5w5bas3e1hmwohb1e6domt5fqneeuplgb2ejoh9bk5ftsk4ucv6p2cpf8vjyobbhppdjgi8\",\n  \"spendableBalance\" : 6610266513940055919,\n  \"pendingApprovals\" : [ {\n    \"approvalsRequired\" : 2269314073593280563,\n    \"creator\" : \"f0f6b6caeb9a289c492a4fd3c7452756\",\n    \"wallet\" : \"33d3870a251ccbf7bcf53d52e573e4e5\",\n    \"enterprise\" : \"d7eb90767f561c72163e13cb3bcfddcc\",\n    \"scope\" : \"enterprise\",\n    \"userIds\" : [ \"4f78548e171e9f4fcd5c17f330778391\", \"481605e8a4d7ed6a8e6cc7cdef38229a\", \"85e0608083e4b7e4e4783751a0023c50\" ],\n    \"id\" : \"23d29d55294f9cffdd2e1e78c5fd5f3d\",\n    \"state\" : { },\n    \"coin\" : \"v9tm794l9rlp9se6nx15s7uewl0kqqij9l85cffyymhr4sqf0853a38jqgwepwvl5g3tdlk9pqnr86iqslktn5ilchbk4iuqv72m\",\n    \"createDate\" : \"2022-09-11T14:36:56.460945Z\",\n    \"info\" : {\n      \"transactionRequest\" : {\n        \"recipients\" : [ { }, { }, { }, { }, { } ],\n        \"fee\" : { },\n        \"buildParams\" : { },\n        \"comment\" : \"6uu25ek949qv4fkm0klvk9\",\n        \"requestedAmount\" : { },\n        \"isUnsigned\" : false,\n        \"sourceWallet\" : \"ab6885031c10ae07100902e96b5df5f3\",\n        \"coinSpecific\" : { },\n        \"triggeredPolicy\" : \"bf5c0656b2eecfd24c0793367656cd8a\",\n        \"validTransaction\" : \"6ym8mkgowhigt1ntlc1a8kug102gtb69keebb4ko34l6yeeqo3szfjo8kdrwaeh4ls5iyephu4k915ze49caiuqrsv10oedmpvr7qawb8c3bar2to7ll08j9ptljhsdtnwgoyt8r6ieuloghh4jqlzf7lkzfr2llkvo6cp2vgil7a5osrxllpuj42zoqpxmggf\",\n        \"validTransactionHash\" : \"508jpphrjxese15xmaab8njdfaefagmni25vzdjb8vzigomw8e41b4icwey57gsivapyk3y6aue4q5in1m7pehhlg3ugmglfc0337g2hchlubaiyznxaiiiwat4yq2i6kjn4xvikwfbgje46riwrmc278zvxre3c18i4l4uqlng2eh03xq7iv9h1h2bvyyzghrazv\"\n      },\n      \"type\" : \"transactionRequest\"\n    },\n    \"walletLabel\" : \"nemo\"\n  }, {\n    \"approvalsRequired\" : 6989280580647549419,\n    \"creator\" : \"223f4b48f109df3ccf331e63301a48a5\",\n    \"wallet\" : \"73163a4d36a656851e72daeb67f9db28\",\n    \"enterprise\" : \"bd8582ed704bf6785fd145c46b7c7475\",\n    \"scope\" : \"wallet\",\n    \"userIds\" : [ \"20b3047eff46a0442517a46f988bfefe\" ],\n    \"id\" : \"3aa8531b6f5f601fe7a34c224380a55a\",\n    \"state\" : { },\n    \"coin\" : \"ucrr23pl4vxjv33mk0wxyoqbd50ls725oo8omax9c33bmot9swyu0hlg6dmevydpv0x735knc7ddqyzfs9ivlnxgo3fr\",\n    \"createDate\" : \"2023-09-18T19:49:10.46151Z\",\n    \"info\" : {\n      \"type\" : \"updateApprovalsRequiredRequest\",\n      \"updateApprovalsRequiredRequest\" : {\n        \"requestedApprovalsRequired\" : 1.1221369989694268E308\n      }\n    },\n    \"walletLabel\" : \"veniam\"\n  }, {\n    \"approvalsRequired\" : 2113591900687809591,\n    \"creator\" : \"74c3fbdb1a4b1645ef1735fedce7a2f0\",\n    \"wallet\" : \"1e3f373e922e8abcc91fa817dd19b91a\",\n    \"enterprise\" : \"d7f2dad0a447cd4d4f1471785eb251c5\",\n    \"scope\" : \"enterprise\",\n    \"userIds\" : [ \"7d601ce664bf8927d82678418348c680\", \"28f94aa1cc40702025b34a8d7838cee3\" ],\n    \"id\" : \"7a2889fee88131fb266f39cba057c5df\",\n    \"state\" : { },\n    \"coin\" : \"7yfcm5wxrdqaozwcga21sqbjk6g0hd1wg32aknca11mkhyrmgt1sptsx3lefm5\",\n    \"createDate\" : \"2022-11-19T09:34:31.461865Z\",\n    \"info\" : {\n      \"type\" : \"updateApprovalsRequiredRequest\",\n      \"updateApprovalsRequiredRequest\" : {\n        \"requestedApprovalsRequired\" : 1.1776279568080519E308\n      }\n    },\n    \"walletLabel\" : \"reiciendis\"\n  } ],\n  \"clientFlags\" : [ \"bspsqh9b3z2o9qkx68pjmwsvi6l71cjshap91sa0ewngpbj3wob61olosuwkvzlq12n9slc2ccdepsdq5534h1l7y8hof0n7ddt\", \"akov7ar9ki860qhl6ujqcwj7x3ct\" ],\n  \"config\" : { },\n  \"startDate\" : \"2023-02-07T23:07:25.462073Z\",\n  \"coin\" : \"dd8euc7zt75p73grjnstahpiptlxc54uffgcu4d2ilpm7p5bt58bspkl0sgahv9f0fmj7svlk244isn5bt0ryeebp9w6fka79nldm09rexu8zvr9wd0u7llch15uaj17hlq5sjjp4n794\",\n  \"coinSpecific\" : { }\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "023cf772-192e-4f5b-b58e-255083c40229",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.463507Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.wallet.generate",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ExpressWallet"
+          }, {
+            "type" : "object",
+            "description" : "Wallet with user, bitgo and backup keychains (when `includeKeychains` query param is `true`).",
+            "properties" : {
+              "wallet" : {
+                "$ref" : "#/components/schemas/ExpressWallet"
+              },
+              "userKeychain" : {
+                "type" : "object",
+                "description" : "User keychain",
+                "properties" : {
+                  "id" : {
+                    "$ref" : "#/components/schemas/Id"
+                  },
+                  "encryptedPrv" : {
+                    "type" : "string",
+                    "description" : "User private key encrypted with the user passphrase",
+                    "example" : "{\"iv\":\"TEd5eouui6hKashuVi5WHQ==\",\"v\":1,\"iter\":10000,\"ks\":256,\"ts\":64,\"mode\":\"ccm\",\"adata\":\"\",\"cipher\":\"aes\",\"salt\":\"dHu4PWoX2M8=\",\"ct\":\"fYr9Y/6kU40AosONkV0xi+fWsyhpYSew0L2YKH/qEZjOlxeDjpC2aTJ0Yc/KdmXheUGolcAxGSx93ykN21Zim1DGc/UGa25IUA/3ARgX7gBsYnYEy5e5Ol0YZYb9pa7KFeaDZSLMXrxxoahg5zL4AJsUx90Pwcg=\"}"
+                  },
+                  "prv" : {
+                    "type" : "string",
+                    "description" : "User private key",
+                    "example" : "xprv9s21ZrQH143K3e1981rUcbKjJ9G57SDCDZ9HY4Sqhx5ZqMoyK1j49kAf1vuM1G9nhRr6kzqbUQb3gj5zuzrsvNRQ84tYf32EcyapRgBNpp4"
+                  },
+                  "pub" : {
+                    "$ref" : "#/components/schemas/Pub"
+                  },
+                  "ethAddress" : {
+                    "type" : "string",
+                    "description" : "Ethereum address corresponding to this keychain",
+                    "example" : "0xf5b7cca8621691f9dde304cb7128b6bb3d409363"
+                  },
+                  "source" : {
+                    "type" : "string",
+                    "description" : "Party that created the key",
+                    "example" : "user"
+                  },
+                  "coinSpecific" : {
+                    "type" : "object",
+                    "description" : "Coin specific key data"
+                  }
+                }
+              },
+              "backupKeychain" : {
+                "type" : "object",
+                "description" : "Backup keychain",
+                "properties" : {
+                  "id" : {
+                    "$ref" : "#/components/schemas/Id"
+                  },
+                  "prv" : {
+                    "type" : "string",
+                    "description" : "Backup private key",
+                    "example" : "xprv9s21ZrQH143K47iEnAFZRJz36E5ZxuEDBJETFYxJTsTVxuPc9z7oGWADUK6icX5P3ruoe244yxMt9uZ2LjWhddvnJJ4zB7zK93qBtxYrmN6"
+                  },
+                  "pub" : {
+                    "$ref" : "#/components/schemas/Pub"
+                  },
+                  "source" : {
+                    "type" : "string",
+                    "description" : "Party that created the key",
+                    "example" : "backup"
+                  },
+                  "ethAddress" : {
+                    "type" : "string",
+                    "description" : "Ethereum address corresponding to this keychain",
+                    "example" : "0xf5b7cca8621691f9dde304cb7128b6bb3d409363"
+                  },
+                  "coinSpecific" : {
+                    "type" : "object",
+                    "description" : "Coin specific key data"
+                  }
+                }
+              },
+              "bitgoKeychain" : {
+                "type" : "object",
+                "description" : "BitGo keychain",
+                "properties" : {
+                  "id" : {
+                    "$ref" : "#/components/schemas/Id"
+                  },
+                  "pub" : {
+                    "$ref" : "#/components/schemas/Pub"
+                  },
+                  "isBitGo" : {
+                    "type" : "boolean",
+                    "description" : "Flag for identifying keychain as created by BitGo",
+                    "example" : true
+                  },
+                  "source" : {
+                    "type" : "string",
+                    "description" : "Party that created the key",
+                    "example" : "bitgo"
+                  },
+                  "ethAddress" : {
+                    "type" : "string",
+                    "description" : "Ethereum address corresponding to this keychain",
+                    "example" : "0xa487900d0de75107b1cc7ade0e2662980e5ce940"
+                  },
+                  "coinSpecific" : {
+                    "type" : "object",
+                    "description" : "Coin specific key data"
+                  }
+                }
+              },
+              "warning" : {
+                "type" : "string",
+                "description" : "If the backup key is held by the user, this is a message warning the user to securely backup their backup keychain.",
+                "example" : "Be sure to backup the backup keychain -- it is not stored anywhere else!"
+              }
+            }
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 205
+}

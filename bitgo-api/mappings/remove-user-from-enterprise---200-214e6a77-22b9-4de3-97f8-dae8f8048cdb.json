@@ -1,0 +1,25 @@
+{
+  "id" : "214e6a77-22b9-4de3-97f8-dae8f8048cdb",
+  "name" : "Remove user from enterprise - 200",
+  "request" : {
+    "urlPath" : "/api/v1/enterprise/cd0c0fbf538e441c378f5ee96dd94bd2/user",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 200
+  },
+  "uuid" : "214e6a77-22b9-4de3-97f8-dae8f8048cdb",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.047411Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.enterprise.user.remove"
+      }
+    }
+  },
+  "insertionIndex" : 426
+}

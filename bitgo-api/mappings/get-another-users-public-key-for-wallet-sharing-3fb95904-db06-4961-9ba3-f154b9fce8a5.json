@@ -1,0 +1,46 @@
+{
+  "id" : "3fb95904-db06-4961-9ba3-f154b9fce8a5",
+  "name" : "Get another users public key for wallet sharing",
+  "request" : {
+    "urlPath" : "/api/v2/user/sharingkey",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"j1wj\",\n  \"context\" : { },\n  \"name\" : \"Dave Towne\",\n  \"error\" : \"917z88x59otiabxg9qxv96ngoecdjfaeqb9tq9bytd4p60noey5qbk0inuzy9lhfsfjm5ok2w1s5ekx03yum7hlpfbpdlk1b48l6zouoxvt3oulsnmd2cqmdffe9ozbd97usx\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "3fb95904-db06-4961-9ba3-f154b9fce8a5",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.180531Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "user.sharingkey",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 394
+}

@@ -1,0 +1,46 @@
+{
+  "id" : "f906fd96-e395-476c-a26b-6e4b11bfca19",
+  "name" : "Get staked balance data",
+  "request" : {
+    "urlPath" : "/api/v2/d9xme1tyjxmhbi87s535l463gbvdj4250doivsw4gx78nw9tx9o1scgeqzoono1nli0qpjbs92tp8uud3fcgmr74qmcjab96cyhkcunuo00fjmjbojel60/wallet/8574b8b402e3c67d1cbcb696fc0d4f32/balances/staked",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"6j1c\",\n  \"context\" : { },\n  \"name\" : \"Benny Hills\",\n  \"error\" : \"amwwe84mdo5xupgun5zk22f3b0dl62065y9lti6m6whgky62olgdod4cgk3gurowdlrey5k9sxn26tcen5vaa9ky8bq8845s\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f906fd96-e395-476c-a26b-6e4b11bfca19",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.497441Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.staked",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 177
+}

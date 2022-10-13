@@ -1,0 +1,36 @@
+{
+  "id" : "95d3b5e9-f251-4c2e-a03d-27236a5dc579",
+  "name" : "Initiate a trustline transaction",
+  "request" : {
+    "urlPath" : "/api/v2/rr69sdjzeo92sypyadyc72up060fcjzpgq0um6hen3a9poztj50yu1l1eeh3zm54e43ws/wallet/2ccb7bf398df019ce2bc0a20e888258d/trustline/initiate",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "95d3b5e9-f251-4c2e-a03d-27236a5dc579",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.430512Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.trustline.initiate",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 230
+}

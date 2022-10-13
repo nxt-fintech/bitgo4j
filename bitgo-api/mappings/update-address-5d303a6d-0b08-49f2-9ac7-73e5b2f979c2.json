@@ -1,0 +1,61 @@
+{
+  "id" : "5d303a6d-0b08-49f2-9ac7-73e5b2f979c2",
+  "name" : "Update address",
+  "request" : {
+    "urlPath" : "/api/v2/sgt908jb38ydomnrhvfsv5538hfuec3af/wallet/176d23cdb21029620828feedb0aa2273/address/j3zl",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"chain\" : 21,\n  \"address\" : \"jb4mmlhwxlvovscnk12pb71zuwki6oyg68dsrg35jwjwoe7swpgsqhrzbjso72so8shgevhhczjgus84sy6jshbopgxugqlpf73v91dkwmf3zr78sjxqpjrmcegnx83tdsfoknhqfdi5ta7klyve\",\n  \"wallet\" : \"f4d1095ba903f5d3c7c29373881f5628\",\n  \"balance\" : {\n    \"balance\" : 5127038469576228851,\n    \"spendableBalanceString\" : \"1uwr8203bouhksy7y19e1fhrcc6n35zyxt6ahkksca1zlm0vptw6s8hp6zee\",\n    \"totalReceived\" : 6288771570310971427,\n    \"totalSent\" : 4902952092459581237,\n    \"confirmedBalanceString\" : \"knker06bgnwb7dxr0rkm42t7t78ry9lj4oycsqezd66526nrzzt4g3zgb936ul7aynu\",\n    \"updated\" : \"2023-09-20T04:17:26.893836Z\",\n    \"balanceString\" : \"04acry3bzvz5fp0nhj6bsok4df2870rxyiezgfy5vkfgixvl7niaqvqvwmojan\"\n  },\n  \"addressType\" : \"p2sh-p2wsh\",\n  \"lastNonce\" : 2524076715527843156,\n  \"index\" : 850199533922185417,\n  \"id\" : \"31f07b18f1bc726165970c4f69b1fe03\",\n  \"label\" : \"harum\",\n  \"coin\" : \"rtdf7vmxrbko1kr2a1cqeh3wl7n8lrw0jo4al3o1m1crykei\",\n  \"coinSpecific\" : {\n    \"txlm\" : {\n      \"rootAddress\" : \"u50tm19wcq87x9gsgdqqjxeyg5dklzcfhwz5rlr4db13mf3phbi567k1sbtt1zc1xpijx29k14w5ukxa21ey9pw3co852u0mnlue6l9sn1hp94lnaskvtqlixik60eoh3w3yxtfz8ag3zpjqig4j0ewmjz3r3v1fsysrav\",\n      \"memoId\" : \"-545099345494191890695\"\n    },\n    \"xlm\" : {\n      \"rootAddress\" : \"lhk5thy7um4qjiby46gs74bmtmaxv06hhry50i9ucvvrpvr5bmzdun9fwki4xmfgtj3u000nsfd65c5dx4rpwq1v9k\",\n      \"memoId\" : \"49017011922102403735333106995898958268658528424604509425572676846340489404789816802005032977315303\"\n    }\n  }\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "5d303a6d-0b08-49f2-9ac7-73e5b2f979c2",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.897193Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.updateaddress",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/Address"
+          }, {
+            "type" : "object",
+            "description" : "Extended address properties (not available for XRP addresses)",
+            "properties" : {
+              "balance" : {
+                "type" : "object",
+                "properties" : {
+                  "updated" : {
+                    "description" : "The last time a transaction affected the balance of this address",
+                    "type" : "string",
+                    "format" : "date-time"
+                  },
+                  "balance" : {
+                    "description" : "The cleared balance",
+                    "type" : "integer"
+                  },
+                  "totalReceived" : {
+                    "description" : "The total amount received on this address (in the chain's base unit)",
+                    "type" : "integer"
+                  },
+                  "totalSent" : {
+                    "description" : "The total amount send from this address (in the chain's base unit)",
+                    "type" : "integer"
+                  }
+                }
+              }
+            }
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 449
+}

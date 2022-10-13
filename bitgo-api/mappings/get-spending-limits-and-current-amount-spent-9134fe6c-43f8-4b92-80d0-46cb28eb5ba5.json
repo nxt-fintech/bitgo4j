@@ -1,0 +1,76 @@
+{
+  "id" : "9134fe6c-43f8-4b92-80d0-46cb28eb5ba5",
+  "name" : "Get spending limits and current amount spent",
+  "request" : {
+    "urlPath" : "/api/v2/zoh8w47v8x4toz6l3pr5ha5xxk2q0x1yigqezqt9mv6hyqupeiewfq3cqrdrz74o6qwrguofygjtqghh0uxtlqstyr52nqqc26kkjkc4vj45rqceza06/wallet/e4b8d811da1c9660573616ec18b28a2e/spending",
+    "method" : "GET"
+  },
+  "response" : {
+    "status": 200,
+    "body": "{\n  \"velocityLimitSpending\" : [ {\n    \"timeWindow\" : \"\",\n    \"limitAmountString\" : \"\",\n    \"amountSpentString\" : \"\",\n    \"coin\" : \"\"\n  }, {\n    \"timeWindow\" : \"\",\n    \"limitAmountString\" : \"\",\n    \"amountSpentString\" : \"\",\n    \"coin\" : \"\"\n  } ]\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "9134fe6c-43f8-4b92-80d0-46cb28eb5ba5",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.354135Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.spending",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "velocityLimitSpending" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "coin" : {
+                    "allOf" : [ {
+                      "$ref" : "#/components/schemas/Coin"
+                    }, {
+                      "example" : "btc"
+                    } ]
+                  },
+                  "timeWindow" : {
+                    "allOf" : [ {
+                      "$ref" : "#/components/schemas/IntegerString"
+                    }, {
+                      "description" : "String representation of the time window in seconds (ex: 0 = per transaction, 3600 = hourly,\n86400 = daily).\n"
+                    }, {
+                      "example" : "3600"
+                    } ]
+                  },
+                  "limitAmountString" : {
+                    "allOf" : [ {
+                      "$ref" : "#/components/schemas/IntegerString"
+                    }, {
+                      "description" : "String representation of the spending limit in base units.\n"
+                    }, {
+                      "example" : "1000000"
+                    } ]
+                  },
+                  "amountSpentString" : {
+                    "allOf" : [ {
+                      "$ref" : "#/components/schemas/IntegerString"
+                    }, {
+                      "description" : "String representation of the current amount spent in base units. Guaranteed to not lose\nprecision.\n"
+                    }, {
+                      "example" : "148310"
+                    } ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 322
+}

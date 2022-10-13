@@ -1,0 +1,43 @@
+{
+  "id" : "c3417a14-68fa-4def-a4c6-fcf86218c5ba",
+  "name" : "Retrieve Staking Enterprise Information",
+  "request" : {
+    "urlPath" : "/api/staking/v1/golhnndr7jxhy76mafbj17q0i9vwzv7f8rk549y6a3q0qcacv4ph6hkxp7e6hdv5puj/enterprises/c5h8",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"code\" : \"Unauthorized\",\n  \"message\" : \"Unauthorized\",\n  \"status\" : 401\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "c3417a14-68fa-4def-a4c6-fcf86218c5ba",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.661293Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Enterprise Information",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 49
+}

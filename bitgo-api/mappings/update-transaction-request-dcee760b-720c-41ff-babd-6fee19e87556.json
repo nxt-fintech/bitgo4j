@@ -1,0 +1,46 @@
+{
+  "id" : "dcee760b-720c-41ff-babd-6fee19e87556",
+  "name" : "Update transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/42dd68f47551c7de35e3a01f8ff6cd8a/txrequests/c103c46974f0cf9a8421077cc9b20833",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 403,
+    "body" : "{\n  \"requestId\" : \"4399\",\n  \"context\" : { },\n  \"name\" : \"Kristine Schiller\",\n  \"error\" : \"rk2ktvfubi5srya2qgob3u9txomn36qscqn72or88hs7vd2nx5bq1m9fj005p6ns9j1zi695pnrsnz68gaio8sf08h43ler7kum3xdrpal1j4mq\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "dcee760b-720c-41ff-babd-6fee19e87556",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.40947Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.update",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 257
+}

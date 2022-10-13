@@ -1,0 +1,36 @@
+{
+  "id" : "7462311f-1f76-47c8-b296-6df0f8891fdc",
+  "name" : "List bank accounts",
+  "request" : {
+    "urlPath" : "/api/v2/bankaccounts",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "7462311f-1f76-47c8-b296-6df0f8891fdc",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.439548Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.bankaccount.list",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidEnterpriseId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 224
+}

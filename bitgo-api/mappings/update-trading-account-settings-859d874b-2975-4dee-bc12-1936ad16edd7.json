@@ -1,0 +1,53 @@
+{
+  "id" : "859d874b-2975-4dee-bc12-1936ad16edd7",
+  "name" : "Update Trading Account Settings",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/6057/account/qjh7/settings",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"errorName\" : \"Mrs. Tisa Dach\",\n  \"error\" : \"pst63z19opwmb5ydnx3r342ro8xn0buf4zjbdfu0nqbgafqvuigvmtmklfudi03zjb8jt8d0rlbb4vlr67zxpjv81ryu60yb216g1a8dwqonyhlsla1x6o4657aznubj93thnzyqi6v9sm0ju8tc28bg3ztfnoamhr463028mnro9i0w96opsgu\",\n  \"reqId\" : \"la4o\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "859d874b-2975-4dee-bc12-1936ad16edd7",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.679513Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.trade.updateAccountSettings",
+        "schema" : {
+          "type" : "object",
+          "description" : "An API error returned by the service.",
+          "properties" : {
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "errorName" : {
+              "type" : "string",
+              "description" : "Immutable error code for API integration"
+            },
+            "reqId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "error", "errorName", "reqId" ],
+          "example" : {
+            "error" : "Missing required parameter: accountId",
+            "errorName" : "MissingRequiredParameter",
+            "reqId" : "3fa3fb673ce950a95fd2d395e245efbe"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 18
+}

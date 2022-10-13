@@ -1,0 +1,37 @@
+{
+  "id" : "c5d47125-7449-4ca6-b1b5-85707c5873c8",
+  "name" : "Encrypt messages",
+  "request" : {
+    "urlPath" : "/api/v2/encrypt",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"encrypted\" : \"k60b8q7tqgywb12q5k286prche52xa635y66otdhokknrvaqtjrd114l4sul33qiee68yf5o4kljx5yyg80fje2nz81yyejzplp3pr1tz26o5p69jjafpe096vhveqfxl82qvhk8owzmll2jpfc5r7svlxzn2uppmbqcuimev3ftromdrd\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "c5d47125-7449-4ca6-b1b5-85707c5873c8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.457342Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.encrypt",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "encrypted" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 210
+}

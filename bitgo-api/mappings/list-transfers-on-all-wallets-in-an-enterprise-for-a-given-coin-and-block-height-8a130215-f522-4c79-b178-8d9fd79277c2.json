@@ -1,0 +1,54 @@
+{
+  "id" : "8a130215-f522-4c79-b178-8d9fd79277c2",
+  "name" : "List transfers on all wallets in an enterprise for a given coin and block height",
+  "request" : {
+    "urlPath" : "/api/v2/nxfeezgpb6ittuelch/transfer",
+    "method" : "GET",
+    "queryParameters" : {
+      "enterpriseId" : {
+        "equalTo" : "419c7cc66e2c912d6af7a41e41e1bbc6"
+      },
+      "height" : {
+        "equalTo" : "-1207870207850221983437847555435862304603409779"
+      }
+    }
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"2030\",\n  \"context\" : { },\n  \"name\" : \"Delmer Renner\",\n  \"error\" : \"vdu923k5fx0lefdquh6r7q24xppqkcph50s83wd4ay741112fc13lfsdnc669un857l32vrnxtzdsebpztpvvupi7kmty1d178a0krk5uevc6o2lh9zpab8243vl6jqdstiy1h5bfc0d0naaa4rzlo0amp808yy7r2ywwaubko9oyl33ceob6mvgpcznn0l34\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "8a130215-f522-4c79-b178-8d9fd79277c2",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.171246Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.listtransfers",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 403
+}

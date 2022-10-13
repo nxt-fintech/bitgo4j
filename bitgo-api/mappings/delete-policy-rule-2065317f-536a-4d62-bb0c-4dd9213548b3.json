@@ -1,0 +1,89 @@
+{
+  "id" : "2065317f-536a-4d62-bb0c-4dd9213548b3",
+  "name" : "Delete policy rule",
+  "request" : {
+    "urlPath" : "/api/v2/zerf6ofmeq0jqme5se389pceuy3oeor7tux6zjkysavqwq3ce0dwyqrlwz2i9g3sk7fp2vxse5c15izn7ucb3h0glx0og76a87owpvrdznhl3pnaekxsujrrdsl8zqlu8w58ej1pl4abswx4kefzhvpwt4lo2z3g0jq3skffs05hi9s65z4srp9/wallet/97ac52d0a30ac891baac8bb6b886b514/policy/rule",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status": 202,
+    "body": "{\n  \"approvalsRequired\" : 2365073289704708843,\n  \"creator\" : \"b830ab1ba431b6ecf1d09ec6b455d15e\",\n  \"wallet\" : \"a1bf98ce1c1a15c5ee67a0dbd1b7b6ff\",\n  \"enterprise\" : \"c7e3cfaccb79de788062a0ed94cffdde\",\n  \"scope\" : \"wallet\",\n  \"userIds\" : [ \"3d1210e043fabffcafe6d99f83cd2a65\", \"53de95dcee16e3c19bfa85b2e710ed54\", \"12d26802ea9b23f38de4ce988fc67029\", \"7933bc94d67e2ce4ee39df00c29922d3\" ],\n  \"id\" : \"4e8f75ebc58be31116f06fba5bb657cb\",\n  \"state\" : \"\",\n  \"coin\" : \"hg7muxnt9342p5cxn6wu251l9eixmhn8gw1sp7no6xdbda4heosxy82uohcjp\",\n  \"createDate\" : \"2021-11-09T20:10:50.216177Z\",\n  \"info\" : {\n    \"type\" : \"updateApprovalsRequiredRequest\",\n    \"updateApprovalsRequiredRequest\" : {\n      \"requestedApprovalsRequired\" : 1.7115269921388966E308\n    }\n  },\n  \"walletLabel\" : \"non\"\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "2065317f-536a-4d62-bb0c-4dd9213548b3",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.216854Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.removepolicy",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "coin" : {
+              "$ref" : "#/components/schemas/Coin"
+            },
+            "wallet" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "enterprise" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "creator" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "createDate" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "info" : {
+              "anyOf" : [ {
+                "$ref" : "#/components/schemas/PendingApprovalTransactionRequest"
+              }, {
+                "$ref" : "#/components/schemas/PendingApprovalTransactionRequestFull"
+              }, {
+                "$ref" : "#/components/schemas/PendingApprovalUserChangeRequest"
+              }, {
+                "$ref" : "#/components/schemas/PendingApprovalPolicyRuleRequest"
+              }, {
+                "$ref" : "#/components/schemas/PendingApprovalUpdateApprovalsRequiredRequest"
+              }, {
+                "$ref" : "#/components/schemas/PendingApprovalEnterpriseModificationResponse"
+              } ]
+            },
+            "state" : {
+              "$ref" : "#/components/schemas/PendingApprovalState"
+            },
+            "scope" : {
+              "description" : "What kind of entity the Pending Approval is tied to",
+              "type" : "string",
+              "enum" : [ "enterprise", "wallet" ]
+            },
+            "userIds" : {
+              "description" : "All the Users who should see this Pending Approval",
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/Id"
+              }
+            },
+            "approvalsRequired" : {
+              "$ref" : "#/components/schemas/ApprovalsRequired"
+            },
+            "walletLabel" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 378
+}

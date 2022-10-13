@@ -1,0 +1,36 @@
+{
+  "id" : "bb5b41da-47f5-4a5e-b9bd-bcf761a883ba",
+  "name" : "Add policy rule",
+  "request" : {
+    "urlPath" : "/api/v2/5ydkj26q8gnmcim4xhpjlf8ckbcmb3dzts5ggveekldp51mva6a2bkasv0e8fr5x00ov7i3icyfzpvzr97u2t9sx9h90ogtzfjot5ftm51geskfn6srsn3zwnv5a330f6evyta8hkft4bxvr8c9eu1a83ueyrynp5o0zccfvvckv902wtcy/wallet/ba9a81666401c34d6f8c9efe935a04d3/policy/rule",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "bb5b41da-47f5-4a5e-b9bd-bcf761a883ba",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.198703Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.createpolicy",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 383
+}

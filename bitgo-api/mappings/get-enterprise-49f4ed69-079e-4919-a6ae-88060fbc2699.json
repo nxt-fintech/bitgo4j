@@ -1,0 +1,36 @@
+{
+  "id" : "49f4ed69-079e-4919-a6ae-88060fbc2699",
+  "name" : "Get enterprise",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/224e9314dad799333276d2960cb78287",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "49f4ed69-079e-4919-a6ae-88060fbc2699",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.940485Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.getById",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidEnterpriseId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 442
+}

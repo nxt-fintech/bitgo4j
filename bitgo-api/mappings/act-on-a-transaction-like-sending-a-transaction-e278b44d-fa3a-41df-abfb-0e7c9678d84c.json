@@ -1,0 +1,36 @@
+{
+  "id" : "e278b44d-fa3a-41df-abfb-0e7c9678d84c",
+  "name" : "Act On A Transaction like sending a transaction",
+  "request" : {
+    "urlPath" : "/api/staking/v1/uijpxh55tydtt4v47pl669zyy0g6myxx8x03limw9l76avaxipjbyfo52not8t54g8ewqr1j6lyw6eb0bswwa3g6m1zuiekok33vh6j06eudwatp8xnmdfrvabi49gzjyblp6kfa/wallets/b34e/requests/6212/transactions/6p0l",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"code\" : \"BadRequest\",\n  \"message\" : \"Bad Request\",\n  \"status\" : 400\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "e278b44d-fa3a-41df-abfb-0e7c9678d84c",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.649749Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Act On A Transaction",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/StakingError"
+          }, {
+            "$ref" : "#/components/schemas/ValidationError"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 71
+}

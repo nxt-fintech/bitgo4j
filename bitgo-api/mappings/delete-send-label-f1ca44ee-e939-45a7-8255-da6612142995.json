@@ -1,0 +1,46 @@
+{
+  "id" : "f1ca44ee-e939-45a7-8255-da6612142995",
+  "name" : "Delete send label",
+  "request" : {
+    "urlPath" : "/api/v2/sendlabels/2e9ee55fe9851bcfe82a3032cc158ba6",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"tj95\",\n  \"context\" : { },\n  \"name\" : \"Landon Hackett\",\n  \"error\" : \"yikxowpv0tns7s732xpd5rorb11bvmjan23svhrkmednuutk209r5y9blacyqyy0utan66fd6oppapvkp\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f1ca44ee-e939-45a7-8255-da6612142995",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.401541Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.sendlabels.delete",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 271
+}

@@ -1,0 +1,46 @@
+{
+  "id" : "c330edaa-1c65-4534-b765-6699b09d098d",
+  "name" : "List total balances",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/balances",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"096i\",\n  \"context\" : { },\n  \"name\" : \"Bridgett Bauch\",\n  \"error\" : \"awg18fd38lj75gtf8tqpqtua0xuntqwvrnux1jiglurk5w00\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "c330edaa-1c65-4534-b765-6699b09d098d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.366425Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.gettotalbalances",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 310
+}

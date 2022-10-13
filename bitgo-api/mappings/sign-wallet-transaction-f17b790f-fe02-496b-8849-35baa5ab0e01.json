@@ -1,0 +1,36 @@
+{
+  "id" : "f17b790f-fe02-496b-8849-35baa5ab0e01",
+  "name" : "Sign wallet transaction",
+  "request" : {
+    "urlPath" : "/api/v2/mq75i34qr00vmapgz2crmxh7na0pcw6gjcxexmd0at/wallet/697639fb4755522283cf7e230d75e998/signtx",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f17b790f-fe02-496b-8849-35baa5ab0e01",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.466839Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.wallet.signtx",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 200
+}

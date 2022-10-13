@@ -1,0 +1,67 @@
+{
+  "id" : "75ab9540-6382-46c4-bf7b-fff3ae7b8c5b",
+  "name" : "Create a lightning invoice",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/1660c6e18915d3f6d88be446f23b3e04/lightning/invoice",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"walletId\" : \"b6b98bd663984b866aa1c75ba7d627a2\",\n  \"memo\" : \"4yktry1vbgiaf4mgbaj6u1t6ltz40fwrb32sxtk8xe4whiarkja31ep8m1nufdryftg85wr8htu87h42pno7c844g0do46hf2ju1576g5h51osuampa2sfksn3qujc5ur6zfvwhb905s6geac6vspv7vvixkk554yun6gw0irctejn72mh1x\",\n  \"invoice\" : \"zhsau1es6nmxkg0fbk8tkmanf4pn3hlqf0sa07s6faj77idu8jbtz2hrysx8g8ckyuurlyyzggk3fbq6eqqwkd27jtngcicx8njt2qak\",\n  \"paymentHash\" : \"dz8fhty73vx4aa0mc63kgu5tqmrauwowpksaxdasbdiag5tgdmi8wgd3dgle2xu14gadu6ztvsrq8putorcgxnrx4hhb014pfz1lmy0g8zasvixb096lx57a4z4nys5m52v50ywr9ijzp3xw9x769s65zclitd1r74pefhmw\",\n  \"value\" : 8.958733955402324E307,\n  \"expiresAt\" : \"0uk1zd7doyf8r7drdlgs9wp8yie4iuxhsbz123jovm5dpi1a3w9mqushqssfgzr3q\",\n  \"status\" : \"settled\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "75ab9540-6382-46c4-bf7b-fff3ae7b8c5b",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.507242Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.lightning.invoice",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "invoice" : {
+              "description" : "The BOLT \\#11 encoded invoice",
+              "example" : "lnbc500n1p3zv5vkpp5x0thcaz8wep54clc2xt5895azjdzmthyskzzh9yslggy74qtvl6sdpdg3hkuct5d9hkugrxdaezqjn0dphk2fmnypkk2mtsdahkccqzpgxqyz5vqsp5v80q4vq4pwakq2l0hcqgtelgajsymv4ud4jdcrqtnzhvet55qlus9qyyssquqh2wl2m866qs5n72c5vg6wmqx9vzwhs5ypualq4mcu76h2tdkcq3jtjwtggfff7xwtdqxlnwqk8cxpzryjghrmmq3syraswp9vjr7cqry9l96",
+              "type" : "string"
+            },
+            "paymentHash" : {
+              "description" : "The payment hash of the invoice",
+              "type" : "string",
+              "example" : "63d9ce82e09d16761a85116ed8b65407db4fb22f85d03573de09c480f2c6d175"
+            },
+            "value" : {
+              "description" : "The value of the invoice in satoshis",
+              "type" : "number",
+              "example" : 50000
+            },
+            "memo" : {
+              "description" : "A memo or description for the invoice",
+              "type" : "string",
+              "example" : "Latte macchiato"
+            },
+            "expiresAt" : {
+              "description" : "ISO-8601 string representing when the invoice will expire",
+              "type" : "string",
+              "example" : "2022-04-01T18:46:24.677Z"
+            },
+            "status" : {
+              "description" : "The status of the invoice",
+              "type" : "string",
+              "enum" : [ "open", "settled", "canceled" ]
+            },
+            "walletId" : {
+              "$ref" : "#/components/schemas/Id"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 168
+}

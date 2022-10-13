@@ -1,0 +1,53 @@
+{
+  "id" : "c20c7bb2-7930-4564-87a0-0e70cfb229a4",
+  "name" : "Get Trading Account Settings",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/s1r7/account/ma73/settings",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"errorName\" : \"Ms. Cher Kovacek\",\n  \"error\" : \"7e7k8jbckrpgpte91k57vtighm62333o9liti3i7tvksp8az5q2y940g1ecq385e96n85ms\",\n  \"reqId\" : \"srsz\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "c20c7bb2-7930-4564-87a0-0e70cfb229a4",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.676836Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.trade.getAccountSettings",
+        "schema" : {
+          "type" : "object",
+          "description" : "An API error returned by the service.",
+          "properties" : {
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "errorName" : {
+              "type" : "string",
+              "description" : "Immutable error code for API integration"
+            },
+            "reqId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "error", "errorName", "reqId" ],
+          "example" : {
+            "error" : "Missing required parameter: accountId",
+            "errorName" : "MissingRequiredParameter",
+            "reqId" : "3fa3fb673ce950a95fd2d395e245efbe"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 21
+}

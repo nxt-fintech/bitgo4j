@@ -1,0 +1,36 @@
+{
+  "id" : "005ed50e-d2d5-45f5-96db-e901862fc62d",
+  "name" : "Get maximum spendable",
+  "request" : {
+    "urlPath" : "/api/v2/1emaiwsmptup4cthvofi5wyqf6ghokdq2ws11ofrvib00atkn28ehzv3me6ayit1niprmf4lo78kmav0ddu3s5o6jubxy4erfcp8lkf2eqhz8nthnzu1zhqje0y2quhoamp05lf7ndv339/wallet/732f10782dbcc61cdab475dfbf363a3c/maximumSpendable",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "005ed50e-d2d5-45f5-96db-e901862fc62d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.352241Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.maximumspendable",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 324
+}

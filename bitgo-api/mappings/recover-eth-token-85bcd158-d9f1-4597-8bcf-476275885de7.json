@@ -1,0 +1,36 @@
+{
+  "id" : "85bcd158-d9f1-4597-8bcf-476275885de7",
+  "name" : "Recover ETH token",
+  "request" : {
+    "urlPath" : "/api/v2/ywr6xfic5epqojnkpduvip5nggu8y6omxgzj4b4bmk8395tjq6kef919rg2gwgc4z0gav8txk4e7l5359y2qvt/wallet/dcde5da732ac6bb5d82f9163646ad18b/recovertoken",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "85bcd158-d9f1-4597-8bcf-476275885de7",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.470867Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.wallet.recovertoken",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 198
+}

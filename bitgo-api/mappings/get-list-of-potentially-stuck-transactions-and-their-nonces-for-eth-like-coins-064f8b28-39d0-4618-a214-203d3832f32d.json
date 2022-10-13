@@ -1,0 +1,38 @@
+{
+  "id" : "064f8b28-39d0-4618-a214-203d3832f32d",
+  "name" : "Get list of potentially stuck transactions and their nonces for eth-like coins",
+  "request" : {
+    "urlPath": "/api/v2/fiifxeuipzgg4bbr16mgua9fcnjxl1xojb4uawrjl1hc15btvx9n9dsclp8azhjasbqenu6xg88ykpjhhz3pqb4pr9gqrtadvzsbtssoxbr2g6u326fyuq4lidj3sk7gw/wallet/dc9b0ffd78a03d9ca4cbf6fa154d0941/potentialStuckTxs",
+    "method": "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "064f8b28-39d0-4618-a214-203d3832f32d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.938722Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.getpotentialstucktxs",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          }, {
+            "$ref" : "#/components/schemas/CoinOperationNotSupported"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 444
+}

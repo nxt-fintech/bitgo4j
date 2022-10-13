@@ -1,0 +1,45 @@
+{
+  "id" : "2e3b8e74-577c-4f44-8149-3b5fc3b8c68d",
+  "name" : "Create a signature share for the transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/efa0f58204b09303ed29ea239c3bfd41/txrequests/cafcecbbec25505fa8c4851f386f804c/signatureshares",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 201,
+    "body" : "{\n  \"from\" : \"user\",\n  \"share\" : \"a25fqh33wuyhawu69oh0tncas0hy12smblcq5tdqk\",\n  \"to\" : \"bitgo\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "2e3b8e74-577c-4f44-8149-3b5fc3b8c68d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.410442Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.signatureshare.create",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "from" : {
+              "$ref" : "#/components/schemas/KeyShareSource"
+            },
+            "to" : {
+              "$ref" : "#/components/schemas/KeyShareSource"
+            },
+            "share" : {
+              "type" : "string",
+              "description" : "The signature share."
+            }
+          },
+          "required" : [ "from", "to", "share" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 255
+}

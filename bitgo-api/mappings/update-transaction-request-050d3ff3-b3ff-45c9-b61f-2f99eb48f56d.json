@@ -1,0 +1,46 @@
+{
+  "id" : "050d3ff3-b3ff-45c9-b61f-2f99eb48f56d",
+  "name" : "Update transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/a91376f38be4a60cc23c52260955d306/txrequests/1322b7e7cfc5c6910bed90094658a495",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"lf90\",\n  \"context\" : { },\n  \"name\" : \"Eda Goyette\",\n  \"error\" : \"63shf8c1ils16wteyujcfnisf3n3wtu0di4qtyprl0oxcbnlb1ayg3hwocqfp5ms5yzatefla48pdtzyjfwxs1ve98pkm32jqajleqetwxasgs0lyjbhv4skjk7vkzifgrc2lk122g8rqu430x99fff95rkcngqrfocitaqg9o1yi85a21p2t7xda5\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "050d3ff3-b3ff-45c9-b61f-2f99eb48f56d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.408315Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.update",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 259
+}

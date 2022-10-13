@@ -1,0 +1,116 @@
+{
+  "id" : "a902b87a-31f7-42bf-acfe-a68edac09a01",
+  "name" : "Create a bank account",
+  "request" : {
+    "urlPath" : "/api/v2/bankaccounts",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"owner\" : {\n    \"address3\" : \"2718upxhpcy9jneefsxsd3x0m0pt82ahnkjy500bvcr9ecwbiz8hxqlunbwt9o46p2b7i571diz6s83g26n7h1gpcqq783ypyyd7i8bvhjee9wxipwm2d1ae3q\",\n    \"address2\" : \"thh806na03h9dicrl71hw9r3fc4bgqlt4ydb5zapxt4igrgvy9xgc4u45wigjfqxkhhl6kqpdh0xggqgp2\",\n    \"address1\" : \"fz6zszdk8g3cnxlg42v9iqdpj9sd7gsgdf9dpof1qh883ioixqvf3cvgn7g6thv4yt7sf83jk9460a7y728x8yazk\",\n    \"name\" : \"Myron Brakus\"\n  },\n  \"address3\" : \"4ocqm3ivqaw09dn8uulody628m1r60p5c9zuivv7j4f19pvh81uw3jlayw4l22zeidr76ftc3qq0rvbwbzxfintawklmiw9cllytrrvz1arxhmma1ay5l\",\n  \"address2\" : \"6xggz9b25u7obv7iwmwit63xlxi2hgfivuywqadp3gn0p76vmcainkjab0fjhe3rjpoyrule91bzvbgpe9dy8ztgos3xyu45ga69u1k9t6s5wzppz4bmu\",\n  \"address1\" : \"j6rnlx7xxirodlyo9b87ryrb4jnbzmv4r10pxs5qtp4yvafrcce4zn6xt10cpug8qawimhdd2n6zwv12tye57qxu9t82zpjlphpc220yf9cmocdnvgoarlxw4a\",\n  \"swiftCode\" : \"IRABXMLWC9F\",\n  \"accountNumber\" : \"70qgdtgf5pzk97j9q7yw4b\",\n  \"shortCountryCode\" : \"CK\",\n  \"type\" : \"sen\",\n  \"routingNumber\" : \"866265177\",\n  \"name\" : \"Suzanne Dietrich\",\n  \"idHash\" : \"1qn57gf9ls32xgc2mbwiiew2813kkqjlwa9ukslkysh7d8n55hqfg84vfc8sjxinvclj8l1zcbhhkyxfpvzua9pexr3svc0him4smwg08bmcrviawbu7difgqu\",\n  \"enterpriseId\" : \"52a083f8e9431003b56941e3deaa3145\",\n  \"id\" : \"6ff5c856eb1f13b7c505ef41fabe0571\",\n  \"verificationState\" : \"approved\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "a902b87a-31f7-42bf-acfe-a68edac09a01",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.433057Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.bankaccount.create",
+        "schema" : {
+          "type" : "object",
+          "description" : "An external bank account.  `routingNumber` must be set for US bank accounts.\n`swiftCode` must be set for banks outside the US.\n",
+          "properties" : {
+            "accountNumber" : {
+              "description" : "Bank account number or IBAN",
+              "type" : "string",
+              "minLength" : 1,
+              "maxLength" : 34,
+              "example" : "0114584906"
+            },
+            "address1" : {
+              "type" : "string",
+              "example" : "2390 El Camino Real"
+            },
+            "address2" : {
+              "type" : "string",
+              "example" : "Palo Alto, CA 94306"
+            },
+            "address3" : {
+              "type" : "string",
+              "example" : ""
+            },
+            "enterpriseId" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "idHash" : {
+              "$ref" : "#/components/schemas/BankAccountIdHash"
+            },
+            "name" : {
+              "type" : "string",
+              "example" : "America California Bank"
+            },
+            "owner" : {
+              "type" : "object",
+              "description" : "Bank account owner",
+              "properties" : {
+                "name" : {
+                  "type" : "string",
+                  "example" : "Donald E. Knuth"
+                },
+                "address1" : {
+                  "type" : "string",
+                  "example" : "Computer Science Department"
+                },
+                "address2" : {
+                  "type" : "string",
+                  "example" : "Stanford University"
+                },
+                "address3" : {
+                  "type" : "string",
+                  "example" : "Stanford, CA 94305-9045"
+                }
+              },
+              "required" : [ "name", "address1" ]
+            },
+            "routingNumber" : {
+              "description" : "US bank routing number",
+              "type" : "string",
+              "example" : "129131673",
+              "minLength" : 9,
+              "maxLength" : 9,
+              "pattern" : "^[0-9]+$"
+            },
+            "shortCountryCode" : {
+              "$ref" : "#/components/schemas/ShortCountryCode"
+            },
+            "swiftCode" : {
+              "description" : "Bank identifier code, as specified by ISO 9362.  Used by banks outside the US.",
+              "type" : "string",
+              "example" : "DEUTDEFF500",
+              "minLength" : 8,
+              "maxLength" : 11,
+              "pattern" : "^[A-Z]{6}[0-9A-Z]{2}([0-9A-Z]{3})?$"
+            },
+            "type" : {
+              "$ref" : "#/components/schemas/BankAccountType"
+            },
+            "verificationState" : {
+              "$ref" : "#/components/schemas/BankAccountVerificationState"
+            }
+          },
+          "required" : [ "accountNumber", "address1", "shortCountryCode", "name", "owner" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 227
+}

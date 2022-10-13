@@ -1,0 +1,51 @@
+{
+  "id" : "416e07fd-8f95-4fb7-843e-71118413dc55",
+  "name" : "Remove user from enterprise (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/2817821b19d053942f328bd669b2310f/user",
+    "method" : "DELETE",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"rlxg\",\n  \"context\" : { },\n  \"name\" : \"Ms. Jimmy O'Kon\",\n  \"error\" : \"2s3izwbyxyf60ztkop0cxrr9i\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "416e07fd-8f95-4fb7-843e-71118413dc55",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.079133Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.enterprise.user.remove",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 415
+}

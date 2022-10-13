@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.webhook.common.WebhookTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:30" hostname="ishtos-MacBook-Pro.local" time="0.005">
+  <properties/>
+  <testcase name="testSetVersion()" classname="bitgo4j.webhook.common.WebhookTest" time="0.0"/>
+  <testcase name="testSetId()" classname="bitgo4j.webhook.common.WebhookTest" time="0.0"/>
+  <testcase name="testSetAllToken()" classname="bitgo4j.webhook.common.WebhookTest" time="0.001"/>
+  <testcase name="testToString()" classname="bitgo4j.webhook.common.WebhookTest" time="0.0"/>
+  <testcase name="testSetCreated()" classname="bitgo4j.webhook.common.WebhookTest" time="0.0"/>
+  <testcase name="testSetFailingSince()" classname="bitgo4j.webhook.common.WebhookTest" time="0.001"/>
+  <testcase name="testSetSuccessiveFailedAttempts()" classname="bitgo4j.webhook.common.WebhookTest" time="0.0"/>
+  <testcase name="testSetCoin()" classname="bitgo4j.webhook.common.WebhookTest" time="0.0"/>
+  <testcase name="testSetType()" classname="bitgo4j.webhook.common.WebhookTest" time="0.001"/>
+  <testcase name="testSetWalletId()" classname="bitgo4j.webhook.common.WebhookTest" time="0.0"/>
+  <testcase name="testSetNumConfirmations()" classname="bitgo4j.webhook.common.WebhookTest" time="0.0"/>
+  <testcase name="testSetUrl()" classname="bitgo4j.webhook.common.WebhookTest" time="0.001"/>
+  <testcase name="testSetLastAttempt()" classname="bitgo4j.webhook.common.WebhookTest" time="0.0"/>
+  <testcase name="testSetLabel()" classname="bitgo4j.webhook.common.WebhookTest" time="0.0"/>
+  <testcase name="testSetState()" classname="bitgo4j.webhook.common.WebhookTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

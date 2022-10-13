@@ -1,0 +1,38 @@
+{
+  "id" : "12e6690c-0ebc-455e-9996-f45813cb6ba7",
+  "name" : "Consolidate account",
+  "request" : {
+    "urlPath" : "/api/v2/txtz/wallet/3a88cd1b2f51823657c79c87844cef89/consolidateAccount/build",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "12e6690c-0ebc-455e-9996-f45813cb6ba7",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.471547Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.consolidateaccount.build",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidAddress"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 196
+}

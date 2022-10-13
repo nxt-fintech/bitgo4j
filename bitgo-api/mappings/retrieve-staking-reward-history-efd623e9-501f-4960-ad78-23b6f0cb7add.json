@@ -1,0 +1,43 @@
+{
+  "id" : "efd623e9-501f-4960-ad78-23b6f0cb7add",
+  "name" : "Retrieve Staking Reward History",
+  "request" : {
+    "urlPath" : "/api/staking/v1/mbgsgusbr0acysoc4kza4fn2rbqon7xehoujm2ylym7ysaqwi1mehp1vnrwp1yni0hvxozc4rt4rzjdsjfbyhvg16mxrrng97hw8yfuj4sxfpfkbhbk53pi9fzsyt0nve/reward-accrual-report",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 409,
+    "body" : "{\n  \"code\" : \"Conflict\",\n  \"message\" : \"Conflicting clientID\",\n  \"status\" : 409\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "efd623e9-501f-4960-ad78-23b6f0cb7add",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.664003Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Reward History",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 39
+}

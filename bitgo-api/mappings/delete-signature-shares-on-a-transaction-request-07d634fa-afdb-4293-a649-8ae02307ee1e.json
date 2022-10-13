@@ -1,0 +1,46 @@
+{
+  "id" : "07d634fa-afdb-4293-a649-8ae02307ee1e",
+  "name" : "Delete signature shares on a transaction request.",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/763a1a5ae94c460b859439aaead5ec58/txrequests/380baa95f17ea11dbb5cc21568372047/signatureshares",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"requestId\" : \"mt2t\",\n  \"context\" : { },\n  \"name\" : \"Mitsue Sipes PhD\",\n  \"error\" : \"2vpdk6lkehf7qv8nsta3\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "07d634fa-afdb-4293-a649-8ae02307ee1e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.414978Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.signatureshare.delete",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 248
+}

@@ -1,0 +1,89 @@
+{
+  "id" : "609b57da-1ceb-40e0-8824-4c634b9436fc",
+  "name" : "Get pending approval",
+  "request" : {
+    "urlPath" : "/api/v2/pendingApprovals/599fbfc14473c656b301fc4c1196d049",
+    "method" : "GET"
+  },
+  "response" : {
+    "status": 200,
+    "body": "{\n  \"approvalsRequired\" : 4839456229106959103,\n  \"creator\" : \"7c710fe88dde8e707499323cdb554743\",\n  \"wallet\" : \"40297365baee2cd600781e781ce7964f\",\n  \"enterprise\" : \"ebb959ddad69374e59235817ecc15039\",\n  \"scope\" : \"enterprise\",\n  \"userIds\" : [ \"87886d072a59e83a839085d926b0dffa\", \"dd5e59325622c79ca8d71df5139dc5aa\", \"63b08277e9dbe87958600ad44663feac\", \"dad1bc1284a73cdf8d0ac2962fc117bc\", \"ed8ba6714c85b7e75741d0766e154407\", \"f58242f1ff4df1c3b8622cdfe74f6610\", \"357cbe8fb864fac3ab9da1593efe1a83\", \"d1652944b9089fb303a87d68ac152ed9\" ],\n  \"id\" : \"0f549eb35b88ff703ce51050b1cc4169\",\n  \"state\" : \"\",\n  \"coin\" : \"vtt4p5ijedix90nxjvkd45axu8rtgolak1p1twvzkjfb3huzz5bb7ebcpl87v93yi3b0plbidoej6ytcx751g1rncvyuujdsqvy9k9vmcjzh5f1n3hip3flloyg1z21aegnmz8zslinitmi97k3hrngsnajozn4lc45lql3w04yte6tifmv4dzyerf685iy9ze4m4on\",\n  \"createDate\" : \"2022-02-25T13:32:08.227061Z\",\n  \"info\" : {\n    \"userChangeRequest\" : {\n      \"userChanged\" : \"190d67c5c78f7d6f8dda414088eab17d\",\n      \"permissions\" : \"hf6tdknj3v273uqg4knn2k7pzw0ezww0g2jkanmrm756maq8djeqxb9alnanl6xo8iofoe5ifqiav7c55tmevjq363e363k2x8kmvpool0jkit71jg4986l6mo5vg0k1e8hmghssh5t2b1fdc7cm\",\n      \"action\" : \"5796ykw519hjshgk1c9d47h3allze2pd6pcwrvadyrs07cjusg7kgfnweje4cki4tr9xfppcnpl06fa6kps70zhcw00t9302fwcch17tjhgsppswxopn6onywoqsvdz8fugdr8iqr2n7g29fe52itm5vc7esoffqmka98ppb2so\"\n    },\n    \"type\" : \"userChangeRequest\"\n  },\n  \"walletLabel\" : \"exercitationem\"\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "609b57da-1ceb-40e0-8824-4c634b9436fc",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.227709Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.approval.get",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "coin" : {
+              "$ref" : "#/components/schemas/Coin"
+            },
+            "wallet" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "enterprise" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "creator" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "createDate" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "info" : {
+              "anyOf" : [ {
+                "$ref" : "#/components/schemas/PendingApprovalTransactionRequest"
+              }, {
+                "$ref" : "#/components/schemas/PendingApprovalTransactionRequestFull"
+              }, {
+                "$ref" : "#/components/schemas/PendingApprovalUserChangeRequest"
+              }, {
+                "$ref" : "#/components/schemas/PendingApprovalPolicyRuleRequest"
+              }, {
+                "$ref" : "#/components/schemas/PendingApprovalUpdateApprovalsRequiredRequest"
+              }, {
+                "$ref" : "#/components/schemas/PendingApprovalEnterpriseModificationResponse"
+              } ]
+            },
+            "state" : {
+              "$ref" : "#/components/schemas/PendingApprovalState"
+            },
+            "scope" : {
+              "description" : "What kind of entity the Pending Approval is tied to",
+              "type" : "string",
+              "enum" : [ "enterprise", "wallet" ]
+            },
+            "userIds" : {
+              "description" : "All the Users who should see this Pending Approval",
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/Id"
+              }
+            },
+            "approvalsRequired" : {
+              "$ref" : "#/components/schemas/ApprovalsRequired"
+            },
+            "walletLabel" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 375
+}

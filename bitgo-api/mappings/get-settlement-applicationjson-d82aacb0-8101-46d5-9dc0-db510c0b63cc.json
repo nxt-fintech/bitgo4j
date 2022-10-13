@@ -1,0 +1,58 @@
+{
+  "id" : "d82aacb0-8101-46d5-9dc0-db510c0b63cc",
+  "name" : "Get Settlement (application/json)",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/127k/account/4zrs/settlements/b802",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"errorName\" : \"Miss Yuko Blanda\",\n  \"error\" : \"b4qkjohe0vxp9s1rzbl8p2hidhkfu7cqbpzj2vohbq01s2lxejasef56aim5irre3xht\",\n  \"reqId\" : \"r8e3\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d82aacb0-8101-46d5-9dc0-db510c0b63cc",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.610018Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.settlement.getSettlement",
+        "schema" : {
+          "type" : "object",
+          "description" : "An API error returned by the service.",
+          "properties" : {
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "errorName" : {
+              "type" : "string",
+              "description" : "Immutable error code for API integration"
+            },
+            "reqId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "error", "errorName", "reqId" ],
+          "example" : {
+            "error" : "Missing required parameter: accountId",
+            "errorName" : "MissingRequiredParameter",
+            "reqId" : "3fa3fb673ce950a95fd2d395e245efbe"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 124
+}

@@ -1,0 +1,41 @@
+{
+  "id" : "5f13dadd-5368-4837-a8fa-22721084ecd8",
+  "name" : "Get maximum spendable",
+  "request" : {
+    "urlPath" : "/api/v2/bwd6niuk7c3zq52dsev1vwjvkbwcnmnawsf2k89votkykg63x69opryjot8uhbtydtmvkd83zk8grzbllei9tir9o3ggddmax1y6p03yhzdsqxdt4afyrip4g7tz9lerh2kmp6y6o42eerw8mq7byjpjosuhe2hheubwpat7e55m/wallet/9cd33e0e5799bd73b679eb4c05210ac6/maximumSpendable",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"maximumSpendable\" : \"aihzv7548spfnu77i5yz373h8fufmrve5b342zbpxxvrmplnuuhks7mn7u6gwwuh8\",\n  \"coin\" : \"tezrtrz89cnwlvc1caps032hztpt2tbhauhh5qwhbx\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "5f13dadd-5368-4837-a8fa-22721084ecd8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.351925Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.maximumspendable",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "coin" : {
+              "$ref" : "#/components/schemas/Coin"
+            },
+            "maximumSpendable" : {
+              "type" : "string",
+              "example" : "19948310"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 325
+}

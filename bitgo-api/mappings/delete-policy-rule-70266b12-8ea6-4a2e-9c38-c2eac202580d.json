@@ -1,0 +1,156 @@
+{
+  "id" : "70266b12-8ea6-4a2e-9c38-c2eac202580d",
+  "name" : "Delete policy rule",
+  "request" : {
+    "urlPath" : "/api/v2/yov0skwt9klbqvfvjlz1hzemk53jxsnjrv1nth4w1ukhdo5020kw2i/wallet/7d6c6b021788a2ec9e5b21bddf3c3559/policy/rule",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status": 200,
+    "body": "{\n  \"enterprise\" : \"dcd3bcd9ca8317fc34f401fe42ef053b\",\n  \"keys\" : [ \"fd1ad908e347374464bae0410556fc6e\", \"f65144150812de5f48d93714b2c3cb82\", \"6409ebe3313f30dbac77d0c8a696988e\" ],\n  \"admin\" : {\n    \"policy\" : {\n      \"date\" : \"2022-08-24T12:09:32.207923Z\",\n      \"rules\" : [ {\n        \"condition\" : {\n          \"timeWindow\" : 1242079,\n          \"amountString\" : \"-8079997500690049798582484000922477436190379021260908972753245216527319783693506417624409\"\n        },\n        \"mutabilityConstraint\" : \"permanent\",\n        \"action\" : {\n          \"approvalsRequired\" : 702760248813750895,\n          \"userIds\" : [ \"442e661f65b49fdca3acbff81e09be6f\", \"eb692f227a43b4be761a6f0b17520114\", \"1b9554b00337b2b33ba799f55de09969\" ],\n          \"type\" : \"getFinalApproval\"\n        },\n        \"id\" : \"3t4c\",\n        \"type\" : \"coinAddressBlacklist\",\n        \"lockDate\" : \"2022-01-25T16:18:24.208581Z\",\n        \"coin\" : \"9q49t31ycjoev4yiu3daar56keb1a82v6h4ezfxllms\"\n      }, {\n        \"condition\" : {\n          \"addresses\" : [ \"\", \"\", \"\", \"\", \"\" ]\n        },\n        \"mutabilityConstraint\" : \"managed\",\n        \"action\" : {\n          \"approvalsRequired\" : 7935820256799579035,\n          \"userIds\" : [ \"8de5a9b5d3e45cf504415058b67c432a\" ],\n          \"type\" : \"getApproval\"\n        },\n        \"id\" : \"1lhs\",\n        \"type\" : \"velocityLimit\",\n        \"lockDate\" : \"2022-06-25T14:04:51.209164Z\",\n        \"coin\" : \"72bhc4l6ufu342ahuowzdptttm4jy98b9n8w4r\"\n      }, {\n        \"condition\" : {\n          \"url\" : \"https://web.example.mocklab.io/252872\"\n        },\n        \"mutabilityConstraint\" : \"sticky\",\n        \"action\" : {\n          \"approvalsRequired\" : 2035884330121104509,\n          \"userIds\" : [ \"a5e71a98aa40a469b40675ed05c49bc7\", \"7a4d1dea4672d7ce7557cb91c8b85d75\", \"960e69c2c15c561252bf84de1c17b36a\", \"806b3bff46ada7f7cace48432285b6da\" ],\n          \"type\" : \"getFinalApproval\"\n        },\n        \"id\" : \"l689\",\n        \"type\" : \"velocityLimit\",\n        \"lockDate\" : \"2022-03-24T05:58:17.210042Z\",\n        \"coin\" : \"dczcm7bxn4i4m7ex5k1359hplj537jloyz5wwzzlc613gmqtttkqcxj1lev1nroqm075pvo6ore4n9k6y6ii920jzas06ryvtylgaoibh30pzuscx6mh7vtc4b03s2hc0ykp7lh1yl0ls0ag1alk4xsnqs8coov4i30foe5nk2a3p3y5uiq\"\n      }, {\n        \"condition\" : {\n          \"timeWindow\" : 686118,\n          \"amountString\" : \"7239481849790996085232644941923\"\n        },\n        \"mutabilityConstraint\" : \"sticky\",\n        \"action\" : {\n          \"approvalsRequired\" : 5915011053761179962,\n          \"userIds\" : [ \"eea78c854251ff6d6906b02a2a71603c\", \"39d8716a36defbe63bbdea80a17e004c\", \"65c6129f1a3b4ed9fd82551ac46f8fb5\" ],\n          \"type\" : \"noop\"\n        },\n        \"id\" : \"tb0j\",\n        \"type\" : \"coinAddressWhitelist\",\n        \"lockDate\" : \"2023-08-14T00:34:26.210744Z\",\n        \"coin\" : \"fwt816yghw4gr1wq1u5gdgcd333jsyoyw6jnn1lqb7hmtkyyfqehhyioxhpw2dbv410z7jfisea69fb9hlw1t8flwcqwsgngum8snn9i6uzf39qtloe0ca4mcks8n1qlr0ylpshg32vfv5voxv6tl\"\n      }, {\n        \"condition\" : {\n          \"addresses\" : [ \"\", \"\", \"\", \"\" ]\n        },\n        \"mutabilityConstraint\" : \"managed\",\n        \"action\" : {\n          \"approvalsRequired\" : 225326864305229532,\n          \"userIds\" : [ \"ed7461083d7759b451de2a1d39c6c0c0\", \"22e3df6d4686eeed22a03d7fbf2f92cd\", \"326b9bd4753b9f59053f1c95625e65ed\", \"b689dfdf9810edd835776df4e4d879df\", \"15ccce3c69e984d956817b5a7381f126\", \"177a2d630396f9d389c3817dadd93388\", \"5201d9210ccda589870a4823f3455ae0\", \"583e77c039404c4af944cead26fcddb8\" ],\n          \"type\" : \"noop\"\n        },\n        \"id\" : \"z4dg\",\n        \"type\" : \"velocityLimit\",\n        \"lockDate\" : \"2023-05-31T07:13:48.21173Z\",\n        \"coin\" : \"r0cknkpuvtip8pw9m\"\n      }, {\n        \"condition\" : {\n          \"addresses\" : [ \"\", \"\", \"\", \"\", \"\" ]\n        },\n        \"mutabilityConstraint\" : \"permanent\",\n        \"action\" : {\n          \"approvalsRequired\" : 7795645674948721076,\n          \"userIds\" : [ \"c7633661eb763ada3ecf92666d8757f0\", \"3a0ebba2a6dab0df90dadf3f6b73425a\", \"bc0bec2b9836d55b1f4bb56e2277951b\", \"27a18919f8243b8c5e18a545f0df6512\", \"372cf30941d9be85150cf539e659d7d7\", \"ea00fbebbef36620a2e49bff19ac0daa\" ],\n          \"type\" : \"noop\"\n        },\n        \"id\" : \"3723\",\n        \"type\" : \"advancedWhitelist\",\n        \"lockDate\" : \"2022-05-22T13:57:20.212443Z\",\n        \"coin\" : \"yoqw5xens0a5goz8h1mxd2d12h1ot96l4v767l2vv2pt8u6t5bvc422hndsk1i71qsekm598fdxiauhd35cs1tfpjvktu6k1hx602n1rwv4mqs2r7cxeouo43esp6zb2zjcznefffky67lnwuohs3v1yubkfe46bfd3agigo\"\n      } ],\n      \"id\" : \"a9605d5b5d8895823ceb961ac39e4791\",\n      \"label\" : \"quod\",\n      \"version\" : 7518771459846964394,\n      \"latest\" : false\n    }\n  },\n  \"disableTransactionNotifications\" : true,\n  \"allowBackupKeySigning\" : false,\n  \"type\" : \"custodialPaired\",\n  \"custodialWalletId\" : \"97e2be784ee967a2713f96b2d31aad64\",\n  \"isCold\" : true,\n  \"freeze\" : {\n    \"expires\" : \"h20zqjqei2w2wnibo8gnhnshxd1qe5gf4vdzaowgj3qbzrm9050d3ppzz8mmr3bj5xhwb44ojmbkcmpun4gds3uy5mka98wmft3cid3rx4v6k4t2uctv6dcl0bo419z1fu8o3phsmcj23h1m7ujyrrj53q99sblmcq3g\",\n    \"time\" : \"2022-02-21T07:44:41.212915Z\"\n  },\n  \"id\" : \"9d2e7dedcbbf1cadd48a0f89b11e714d\",\n  \"balanceString\" : \"\",\n  \"approvalsRequired\" : 8972958532993110488,\n  \"receiveAddress\" : {\n    \"chain\" : 30,\n    \"address\" : \"s2bz6dy8\",\n    \"wallet\" : \"c88e274d33e95672366a4abebfc8f372\",\n    \"balance\" : {\n      \"balance\" : 8623975183743123548,\n      \"spendableBalanceString\" : \"5aknf2xr5ec83q1q85pl1ng7d6sa1hpwjurdm9bwhaj6aqfk9bkr9h5lrcdkzbm85w7olqgtewj50sif0sak3qre8rme2ukoeaobylcv414u5sd7yd2307uugu9rj9obo9ozttvy3nronzjmtklozbl5nhtre12i725vgagdrfo08xaqfrdjmjae\",\n      \"totalReceived\" : 3926170820473455246,\n      \"totalSent\" : 615631661237181186,\n      \"confirmedBalanceString\" : \"hazl9xoafm6p91brxvt2h5kmd9bzyno36byp5typnbeskjrh17li36t9y5iudoliu0smmcv6uwzl7umi4tj90tusko5yb34tn4r43geo0ms99ftl8dnc2mlq7r36ciptyxaocosrphv2bxcegna1nmv4rbs99sjhv1xsup5g4hj57sbenjy6fs\",\n      \"updated\" : \"2022-06-12T14:02:13.213239Z\",\n      \"balanceString\" : \"vnvhs9rmhweb4o9w7ds2ayoqoq37pmoddm637ob8xbdi715szxdjb5n06n9s66coogl8fj3sqlir3g2o91nqfh9z8a55npjqjzk2\"\n    },\n    \"addressType\" : \"p2sh-p2wsh\",\n    \"lastNonce\" : 6532953908427451610,\n    \"index\" : 2185855464411307207,\n    \"id\" : \"16e6dafac69f03f3ed416f0e1b4a96d1\",\n    \"label\" : \"tempore\",\n    \"coin\" : \"d24xf86ukigll98xhcj57l1xyj4wneg2fjlgnhv9d7vtbxoeki92o75c619u582kmfd4a5z1on5wf2odhg6\",\n    \"coinSpecific\" : {\n      \"txlm\" : {\n        \"rootAddress\" : \"pv64n9f3bdx6gmuk\",\n        \"memoId\" : \"6108485464767872448023858539115909153389132138730580261\"\n      },\n      \"xlm\" : {\n        \"rootAddress\" : \"hpvlr16yn4ti27ou32hqlxh74b9wjd1w5o3nrnd7a44heymdaqovhulsqynhcu0vg9i4z1zthfflwy\",\n        \"memoId\" : \"489322659137929856392437861969657623529778\"\n      }\n    }\n  },\n  \"recoverable\" : false,\n  \"custodialWallet\" : \"\",\n  \"label\" : \"esse\",\n  \"m\" : 885158548485460348,\n  \"n\" : 8629040234084862272,\n  \"users\" : [ {\n    \"permissions\" : [ \"admin\" ],\n    \"user\" : \"75471b9470d700e8e251378cf8c343d5\"\n  }, {\n    \"permissions\" : [ \"spend\", \"admin\", \"spend\", \"admin\", \"admin\", \"admin\" ],\n    \"user\" : \"2ed9cd74e23aa21d683a933bc7b1947c\"\n  } ],\n  \"tags\" : [ \"292ce25248dd088d8b4365427180c1e4\" ],\n  \"deleted\" : false,\n  \"spendableBalanceString\" : \"\",\n  \"nodeId\" : \"0d6a2eac29b221789a1f93df7f1906d6\",\n  \"multisigType\" : \"tss\",\n  \"buildDefaults\" : {\n    \"minFeeRate\" : 7995058573957207466\n  },\n  \"startDate\" : \"\",\n  \"coin\" : \"d3brz5zm8qdozb14irfnu8\",\n  \"coinSpecific\" : {\n    \"homeDomain\" : \"ideqxcqy7dem4skq254cytlcrnm96y9dzj7ps35405npca\",\n    \"rootAddress\" : \"0bp14rl04xfzz2fxqq5ubxbh769imkrvfre10bdnrhsz6n6vtwfw6181z7\",\n    \"pendingChainInitialization\" : true,\n    \"creationFailure\" : [ \"hbi9gxtsttjlmuxfs6dxbsgrpl5px09dcradq0a2sgevuwgoslq0emcht1wgefqr23wg4d\", \"zwm5lzk5jy1wrh7eb6\", \"272htfbq7yv7\", \"91n3g6sbv58iqdnl79ydps4ot1nhg3xh1n6v1flshbzxfrkr2fttsomtx46021xc4j37836u0teiba5jtn0jzlnlf6lbpetb6rtosbs2zrvbeizib4r0ul2k4ihttybp72x6ivdi662fwariuqevhubz8w6u2olsstbo7j7neh90dzwg\", \"wan7qxnpvajwkzkzhj8v04orqo7squq3tfkpwtu6tw01tgygvflby7yg53li8wka48y1k0obfyzmqs4ydgi0m3wj6ebqlsqpfg3ikifhgap5asg64wa8qfespfme3pq8j4hv2d939au07khswmyp8rpspgm0r4c6eocdwjpiqjausbsv86vpqcw7zrbz28ir4d6tg\", \"ya6q2655lqjic0u4dnhczjryd7g34ttkycccw4to40jv0sou8x1e2u65xg3gvco6hezj1yf4aqg2pmiaz77ng0q0aculeedtx367rhlx3k6jjpzh20orfkqawj8rpk79s8t82c1tz85i7ycmpfaeurzvb09orsw14lciprg12s9zwoxlbnvcawtgn96to\", \"j7sihtmejoerbup2cbdr7hwad7ijsw6640r1cdlj6oqnuk09indqy07u7k2ft5jd0a69nwkz9g7\", \"x3o75dffetdlun7xknxt502uwqgdt04a9wvqpoqjhzwpogjixjf1w9jbyr53c48w4w4mjcrxnfj23cxtabp9xmsjyo7d6xdhud\" ],\n    \"stellarUsername\" : \"elliot.kessler\",\n    \"stellarAddress\" : \"rdtbxwgwkxs4krbusui20bixy99wn7m72i7phzhyg6t82d9bitf47yjht2twpw551n39wf3d3ol0crn6a9z6n98s2ii84byqe80b5ew8yjwfawv7xjv54xl9cd7ya3gb\"\n  },\n  \"customChangeKeySignatures\" : {\n    \"backup\" : \"6tv0d7lmcxtea44e15cghq50rb2kff1ckzrylx5rhd3gkxfkq0jbuq1tjef9jxj58ex7vcgh9g1dqsqlua7vf9tl8nfv3igm9knmkf8zsrjyvh9ji4nbgywzhgc4h7rulxkjrvyrddhm3j67q79flagp\",\n    \"bitgo\" : \"rfp79k581z83lke7swnommzbt7mbyzt3ru4bfyv15hsdzcq4qj02dh67b19mud3q039pyi1legbhumkqpsjd0vj2f5b5m54c8kelp4qmwfj93s1lvy\",\n    \"user\" : \"cgdkf0ey66u5nyvx3pkz3z8ghiparrjwi5zk031ykflh0u3yhi7sv7oksm1kif8o5zbmfeme4jvrzivsiq54yhj9ihifeqjyx6ltjw9am8800ctzihns01gpodwndzj6a\"\n  }\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "70266b12-8ea6-4a2e-9c38-c2eac202580d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.215638Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.removepolicy",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "admin" : {
+              "type" : "object",
+              "properties" : {
+                "policy" : {
+                  "$ref" : "#/components/schemas/Policy"
+                }
+              }
+            },
+            "allowBackupKeySigning" : {
+              "type" : "boolean"
+            },
+            "approvalsRequired" : {
+              "$ref" : "#/components/schemas/ApprovalsRequired"
+            },
+            "balanceString" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/IntegerString"
+              }, {
+                "description" : "Total balance in base units (e.g. Satoshis)"
+              } ]
+            },
+            "buildDefaults" : {
+              "$ref" : "#/components/schemas/WalletBuildDefaults"
+            },
+            "coin" : {
+              "$ref" : "#/components/schemas/Coin"
+            },
+            "coinSpecific" : {
+              "$ref" : "#/components/schemas/WalletCoinSpecific"
+            },
+            "custodialWallet" : {
+              "type" : "object",
+              "description" : "The associated custodial wallet object"
+            },
+            "custodialWalletId" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "deleted" : {
+              "type" : "boolean"
+            },
+            "disableTransactionNotifications" : {
+              "type" : "boolean"
+            },
+            "enterprise" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "freeze" : {
+              "type" : "object",
+              "properties" : {
+                "time" : {
+                  "type" : "string",
+                  "format" : "dateTime"
+                },
+                "expires" : {
+                  "type" : "string",
+                  "format" : "dateTime"
+                }
+              }
+            },
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "isCold" : {
+              "type" : "boolean"
+            },
+            "keys" : {
+              "$ref" : "#/components/schemas/Keys"
+            },
+            "label" : {
+              "$ref" : "#/components/schemas/WalletLabel"
+            },
+            "m" : {
+              "$ref" : "#/components/schemas/NumSignatures"
+            },
+            "n" : {
+              "$ref" : "#/components/schemas/NumKeychains"
+            },
+            "nodeId" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "receiveAddress" : {
+              "$ref" : "#/components/schemas/Address"
+            },
+            "recoverable" : {
+              "type" : "boolean"
+            },
+            "tags" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/Id"
+              }
+            },
+            "spendableBalanceString" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/IntegerString"
+              }, {
+                "description" : "Spendable balance in base units (e.g. Satoshis)"
+              } ]
+            },
+            "startDate" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/DateTime"
+              }, {
+                "description" : "Wallet creation time"
+              } ]
+            },
+            "type" : {
+              "$ref" : "#/components/schemas/WalletTypePublic"
+            },
+            "users" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/WalletUser"
+              }
+            },
+            "customChangeKeySignatures" : {
+              "$ref" : "#/components/schemas/CustomChangeKeySignatures"
+            },
+            "multisigType" : {
+              "$ref" : "#/components/schemas/WalletMultisigType"
+            }
+          },
+          "required" : [ "approvalsRequired", "coin", "deleted", "disableTransactionNotifications", "id", "label" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 379
+}

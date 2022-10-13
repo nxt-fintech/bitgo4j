@@ -1,0 +1,46 @@
+{
+  "id" : "77270ec5-ee6c-48e4-8217-9d71c76a200c",
+  "name" : "Create a wallet share",
+  "request" : {
+    "urlPath": "/api/v2/90qgr0hk3iyrq9sdpr4nqxxivwvs56biocvuo1nacpkz8r28ztzrfzjevnvyifqmaolfdgvptotxjxf95h66w/wallet/b38de1c312c724945e2d325b7c12e23f/share",
+    "method": "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"960m\",\n  \"context\" : { },\n  \"name\" : \"Laila Padberg\",\n  \"error\" : \"npjoiqpr4z4x1x5ttxcmofshoj88zk55muutuqjxnh8nvyxyunr71y2s0r5rp2wsd\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "77270ec5-ee6c-48e4-8217-9d71c76a200c",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.369006Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.sharing.createshare",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 306
+}

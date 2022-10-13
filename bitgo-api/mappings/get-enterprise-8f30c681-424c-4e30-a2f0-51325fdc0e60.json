@@ -1,0 +1,45 @@
+{
+  "id" : "8f30c681-424c-4e30-a2f0-51325fdc0e60",
+  "name" : "Get enterprise",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/1433e566bf9b416a55f202e7708abeee",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"wallets\" : [ \"jui70m25kqz0bq8qqhfz7xna52hfkq8t8qn4ddzjudzjqjoo1lxersko4tsxgwkbdjkpsxai9ar10c9c9gevz3vxpdza5nm6nhevmrxi6x1nu2tigy620dr9qkhzh\" ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "8f30c681-424c-4e30-a2f0-51325fdc0e60",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.93978Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.getById",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/EnterpriseResponse"
+          }, {
+            "type" : "object",
+            "properties" : {
+              "wallets" : {
+                "type" : "array",
+                "items" : {
+                  "type" : "string",
+                  "description" : "base address a v1 btc wallet"
+                }
+              }
+            }
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 443
+}

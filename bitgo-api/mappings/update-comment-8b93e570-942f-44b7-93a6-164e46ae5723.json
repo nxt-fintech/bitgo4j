@@ -1,0 +1,216 @@
+{
+  "id" : "8b93e570-942f-44b7-93a6-164e46ae5723",
+  "name" : "Update comment",
+  "request" : {
+    "urlPath" : "/api/v2/21525xhewxx6rqgbbyte5yvhb4hhkw5afcoakcs8fvnd2x02x3gq9tr4uow8i33yo/wallet/767720e6ced0853c75f237586bd48705/transfer/w09ze2g0vezgxrufid366ob2ygdztafh2y6vf9629lmky3ujyk6gnq0lzjnofsqxkcw4an276e0n24h3t3ppx95m3ruldtr8ws/comment",
+    "method" : "POST"
+  },
+  "response" : {
+    "status": 200,
+    "body": "{\n  \"date\" : \"2023-08-19T03:27:55.487736Z\",\n  \"enterprise\" : \"0d190752b5e1bcf485434bf14b783c4f\",\n  \"usd\" : 1.377441061222687E308,\n  \"type\" : \"send\",\n  \"sequenceId\" : \"1g3b\",\n  \"baseValue\" : 4008279649819692244,\n  \"usdRate\" : 1.3890359022996126E308,\n  \"id\" : \"1d18c03513bf87d39bceaedc3f63818d\",\n  \"state\" : \"failed\",\n  \"value\" : 685597914659343542,\n  \"feeString\" : \"asmhgu0dnoa36r29fpjhyg190apjrxlb66dta6vvh1hquv5hqix56h59nynoven5dv00hle9uaq1473py7f4d2nnnkkvoajqvu8mdq8nqeg2xbafaduobhma5g4p17xmfz1gpywluxomba9y3md1v4mcz89yxu24drein5pzl0\",\n  \"height\" : 1614523685140803690,\n  \"payGoFee\" : 1411797362263391383,\n  \"payGoFeeString\" : \"j7d125c0v7z39tyvlc313tt1vq3vmcaeej547jnue3sswn1lq6v5raawomzl1013m484484fuws0g5soivitjhhp467j8ydk3ydxfp8dfo657guzp7hpu5fkwu16gj6npdrw\",\n  \"wallet\" : \"7c7c222d72972a9a0990a738e4559eae\",\n  \"txid\" : \"k667\",\n  \"baseValueString\" : \"\",\n  \"history\" : [ {\n    \"date\" : \"2023-07-31T09:44:01.489008Z\",\n    \"action\" : \"approved\",\n    \"comment\" : \"oyxw3f3c1g5cn75vxgpue8ubz393m02qgraj9k7mhni3i4inaj4x7c9f92ewd34wu6x76ku6kn7r95hwuppjchah3995h35kjplw57perxl9461cjaskzjt8fj32rut35o8mst1dlhf9r7rut904mfm9\",\n    \"user\" : \"04c751890fa9949ebd256b5adaec1a9a\"\n  }, {\n    \"date\" : \"2023-01-09T01:06:52.489138Z\",\n    \"action\" : \"failed\",\n    \"comment\" : \"l5o11d8vcp3lmx92au1foy5g5x1dx2b\",\n    \"user\" : \"1ef57addff4bab92ac642da298b7b6cf\"\n  }, {\n    \"date\" : \"2022-01-13T11:35:53.489253Z\",\n    \"action\" : \"commented\",\n    \"comment\" : \"i3uo7yq270a9ycgf4fec0wgs44k\",\n    \"user\" : \"783bf23e32d2b74dd1765f35b5695314\"\n  }, {\n    \"date\" : \"2023-04-30T04:26:01.489363Z\",\n    \"action\" : \"approved\",\n    \"comment\" : \"mmkbyygpogwqw3o4wc9o84i2qr65ib10s86dzvw4ubdpebpzbrno0qm3eh7gd224p4ldzfkkgkoe9grhri09eukv4v4xqlj3tuozo8qxv0gyxdfnw4ftq4epkigi1j8iw50u8cwmqvaymcibn195\",\n    \"user\" : \"46b9cc258d054e07d233bb0e8331476d\"\n  } ],\n  \"tags\" : [ \"8f288690bb1cd3f8f85d57034a3ce958\", \"e711fdcee15ea6fd396fa0d43dad10df\" ],\n  \"vSize\" : 3011965785904412183,\n  \"entries\" : [ {\n    \"address\" : \"6yq7vv8k2dugo0wqxwjcm746aixb16atx5iixxbnjdv1h7008b6wlx1wl60p5x4nzhhctjbtgydzgv4vjcy1ntq8ipxmhvbw9g41661k5kus6tfbkb0n5oaqxfwaal3458yh2ml6fvgajsk8pos7vxnl6k\",\n    \"wallet\" : \"\",\n    \"valueString\" : \"\",\n    \"isPayGo\" : true,\n    \"value\" : 2278084476399509643,\n    \"isChange\" : true,\n    \"token\" : \"a3vcg8vnchlfvmur3vbhk9hi2q7yts3ilxqe0grv6pchiuqn86uo7r9elk4mpahuxj77kp00s5i0tg3458ekt4zothvp91a6nt2o5f9x34eom01b2wpvywg5hxey8rax3gfperyui7u9oetrqvdn4bv4v63ny26n\"\n  } ],\n  \"valueString\" : \"\",\n  \"usersNotified\" : true,\n  \"heightId\" : \"3j0p\",\n  \"comment\" : \"4cggw938jm6u7qy979xr9op0g4386wdrhwkcnaancz7g6zjkni2n1mcdaqwrr2kthymp0hrv9epwui6ys5sekw3x2okpco4nkdcfeulglobqh40299yguepkcrlzl3cqldxpqacet9s9ty3cv8ewgbzjsq0dz0l1hoo9\",\n  \"nSegwitInputs\" : 1515507123359383221,\n  \"coin\" : \"yhv3w4dfbyi0ltszp726meq47077lsyorm1vxlq1roi8ezr2l01yqkhl7g4p06mk4li4oq2upnhdp29lggk6kx3c7s6j43f4xwl3wnhr41fiu67exj0p76b43gpebm2m48djdrilxxo\",\n  \"coinSpecific\" : \"\"\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "8b93e570-942f-44b7-93a6-164e46ae5723",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.491118Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.transfer.comment",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "coin" : {
+              "$ref" : "#/components/schemas/Coin"
+            },
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "wallet" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "enterprise" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "txid" : {
+              "$ref" : "#/components/schemas/TxId"
+            },
+            "height" : {
+              "type" : "integer",
+              "description" : "The height of the block this Transfer was confirmed in (999999999 if unconfirmed)"
+            },
+            "heightId" : {
+              "type" : "string",
+              "description" : "The unique height id of the block"
+            },
+            "date" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "The date this Transfer was last updated"
+            },
+            "type" : {
+              "type" : "string",
+              "description" : "Defines whether or not this Transfer was sent or received by the user",
+              "enum" : [ "send", "receive" ]
+            },
+            "value" : {
+              "type" : "integer",
+              "description" : "The total value (in base units) sent by this Transfer (may be approximate for ETH and other coins where amounts in base units can exceed 2^53 - 1)"
+            },
+            "valueString" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/IntegerString"
+              }, {
+                "description" : "The total value (in base units) sent by this Transfer represented as a String"
+              } ]
+            },
+            "baseValue" : {
+              "type" : "integer",
+              "description" : "The value (in base units) sent by this Transfer without network fees, represented"
+            },
+            "baseValueString" : {
+              "allOf" : [ {
+                "$ref" : "#/components/schemas/IntegerString"
+              }, {
+                "description" : "The value (in base units) sent by this Transfer without network fees, represented as a String"
+              } ]
+            },
+            "feeString" : {
+              "type" : "string",
+              "description" : "The Transfer's fee (in base units) represented as a String"
+            },
+            "payGoFee" : {
+              "type" : "integer",
+              "description" : "The Transfer's BitGo fee (in base units)"
+            },
+            "payGoFeeString" : {
+              "type" : "string",
+              "description" : "The Transfer's BitGo fee (in base units) represented as a String"
+            },
+            "usd" : {
+              "type" : "number",
+              "description" : "The amount of USD of this Transfer (will be negative if it's a send)"
+            },
+            "usdRate" : {
+              "type" : "number",
+              "description" : "The USD price at the time this Transfer was created"
+            },
+            "state" : {
+              "$ref" : "#/components/schemas/TransferState"
+            },
+            "tags" : {
+              "type" : "array",
+              "description" : "The tags to be used on this Transfer (used in Policies)",
+              "items" : {
+                "$ref" : "#/components/schemas/Id"
+              }
+            },
+            "history" : {
+              "type" : "array",
+              "description" : "An audit log of events that have happened to the Transfer during its lifecycle",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "date" : {
+                    "type" : "string",
+                    "format" : "date-time",
+                    "description" : "The date of this history object"
+                  },
+                  "user" : {
+                    "$ref" : "#/components/schemas/Id"
+                  },
+                  "action" : {
+                    "type" : "string",
+                    "enum" : [ "created", "signed", "unconfirmed", "confirmed", "approved", "commented", "removed", "failed", "rejected" ]
+                  },
+                  "comment" : {
+                    "type" : "string",
+                    "description" : "If this history object is of action `commented`, this is the comment from the user"
+                  }
+                }
+              }
+            },
+            "comment" : {
+              "type" : "string",
+              "description" : "A comment from the user"
+            },
+            "vSize" : {
+              "type" : "integer",
+              "description" : "The size of the transaction"
+            },
+            "nSegwitInputs" : {
+              "type" : "integer",
+              "description" : "DEPRECATED. Number of segwit inputs on the transfer.",
+              "x-internal" : true
+            },
+            "coinSpecific" : {
+              "type" : "object",
+              "description" : "Transfer fields specific to each coin type"
+            },
+            "sequenceId" : {
+              "type" : "string",
+              "description" : "A `sequenceId` is a unique and arbitrary wallet identifier applied to transfers and transactions at creation. It is optional but highly recommended. With a `sequenceId` you can easily reference transfers and transactions&mdash;for example, to safely retry sending. Because the system only confirms one send request per `sequenceId` (and fails all subsequent attempts), you can retry sending without the risk of double spending. The `sequenceId` is only visible to users on the wallet and is not shared publicly.\n"
+            },
+            "entries" : {
+              "type" : "array",
+              "description" : "An array of objects describing the change in address balances made as a result of this Transfer",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "address" : {
+                    "type" : "string",
+                    "description" : "An address affected by this Transfer",
+                    "example" : "2NAUwNgXaoFj2VVnSEvNLGuez8CfdU2UCMZ"
+                  },
+                  "wallet" : {
+                    "allOf" : [ {
+                      "$ref" : "#/components/schemas/Id"
+                    }, {
+                      "description" : "Only visible when the user has access to the wallet"
+                    } ]
+                  },
+                  "value" : {
+                    "type" : "integer",
+                    "description" : "The change (in base units) in the address's balance"
+                  },
+                  "valueString" : {
+                    "allOf" : [ {
+                      "$ref" : "#/components/schemas/IntegerString"
+                    }, {
+                      "description" : "The change (in base units) in the address's balance represented as a String"
+                    } ]
+                  },
+                  "isChange" : {
+                    "type" : "boolean",
+                    "description" : "True if this address is a change address (only exists for UTXO coins) and if this is a `sent` Transfer"
+                  },
+                  "isPayGo" : {
+                    "type" : "boolean",
+                    "description" : "True if this address is the BitGo PayGo wallet"
+                  },
+                  "token" : {
+                    "type" : "string",
+                    "description" : "If this is a token entry, the token's symbol",
+                    "example" : "omg"
+                  }
+                }
+              },
+              "required" : [ "address", "valueString" ]
+            },
+            "usersNotified" : {
+              "type" : "boolean",
+              "description" : "Whether BitGo already sent notifications to the users of the transfer wallet"
+            }
+          },
+          "required" : [ "id", "coin", "wallet", "txid", "height", "date", "confirmations", "type", "valueString", "usd", "usdRate", "state", "tags", "history", "comment", "coinSpecific" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 187
+}

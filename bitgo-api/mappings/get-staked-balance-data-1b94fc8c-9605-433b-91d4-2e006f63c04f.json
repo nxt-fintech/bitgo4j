@@ -1,0 +1,57 @@
+{
+  "id" : "1b94fc8c-9605-433b-91d4-2e006f63c04f",
+  "name" : "Get staked balance data",
+  "request" : {
+    "urlPath" : "/api/v2/l7952rd9fe46daoaxbz3z9jfuggs90vag9eo6zmeaz40zq85u4nfl5lyvkrwf97r4h2f2xmockv0nd4505iphacjoud3p0pwnbkdnux9mf6js0krp6jgc0gzzt8s3ogf9kmzdyo3ruwv4ood4nj52j2g7x9ktnudhnx00wltbsbgp21/wallet/f2ce4eeb5f8b7b424b54087100fac5cf/balances/staked",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"balances\" : [ {\n    \"validator\" : \"i01k9myn327e2mb8qkybyh9ajwhxpa3zezw0sgfpj50aobaet49ekq44c5dqfwj8y8jfzp0kdmh5vss7aboe5989njz945xyxmcxmmdte15x6eb74ksv4kezwsnvv8ysk8g65m18wma5n8qx4tphca9w02luiu1n6g3aler475qdhqim28r474p0eblooqiv0g19wheqq2mu4h9ttulc85esfsig5t\",\n    \"staked_amount\" : \"p0gndflo07bmaeb2l9jg1le9g682r2u0y4e9wmc10ylysrn6n9uuamdt6x6f2j1glzb1gswhysipgldyct99tiv1itx1xqs922rzlphbgzzkuryeyexg07k6f7l5noa8dv4kynr89ekyteg18d2v1ho4\"\n  }, {\n    \"validator\" : \"6i7wmj5144k7jt5l5lwaqm3xce64d31614fdz70trn5sqz37d6md3ymf3wlv3quf0xli263fviydrhb3rcx58\",\n    \"staked_amount\" : \"3sn0o0ssbhdduannldw3tgk55rdxhckdhfwu8i637eqnk5iyon5shn8j9ypnpssom83mmj1mrxblx6nm9c79iinv3izu4lf5n7k2nmwo9rrr9w6e8xwwcqwwxnpkvrqmpgv86r0tr85pt\"\n  }, {\n    \"validator\" : \"8gnkjagjs22yx2u81odoao7usmkc6whdh1m43mmp2ezc09l5v9dtdcnbyyh9x8niizhcbvwza3hoy6jwwdstd3rrv6tdrfzzzu8god4pmf5pr95k6jxfquticidciox4kicld5013dub4rffrxwbvg3f3ft7i8k16z0asvuxu587hwlvem\",\n    \"staked_amount\" : \"6hel1g9gnf6rhuhxaj9oxzhueq48es36y6uq3000iffvjuku893x8b0mxgmhf1l0333h42bm2z4ud05y0apbom5frdmnztzzkg0qwnku3m88zwwdrlxc9j6fki\"\n  }, {\n    \"validator\" : \"y6i3umjqa1dtj51qp5mjtff1a0bs1m0fw1tei5r\",\n    \"staked_amount\" : \"ilgmv9wpagm1f6xn\"\n  } ],\n  \"address\" : \"swgjipgpmzbxh8xsmjt6p35fvn4ejcgpvw32f8njbh32wja3oujefay8nmdisdbixm0jzzrw3lc1gz9jzcf1nez71tbzk1fmi2c6vydqw1ec5kqovyltc9mtli8wqprin7avf1z5hfvq2uqjtwiwryolcag3c33hfv8u6hbc67g28yzzchi8c9y0x4kqctv767mzyojfgbj9v735w60\"\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "1b94fc8c-9605-433b-91d4-2e006f63c04f",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.496774Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.staked",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "address" : {
+                "$ref" : "#/components/schemas/AddressString"
+              },
+              "balances" : {
+                "type" : "array",
+                "items" : {
+                  "type" : "object",
+                  "description" : "an object containing of validators and the current staked amount",
+                  "properties" : {
+                    "validator" : {
+                      "$ref" : "#/components/schemas/AddressString"
+                    },
+                    "staked_amount" : {
+                      "type" : "string",
+                      "description" : "the amount delegated to the validator",
+                      "example" : "5000000000"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 178
+}

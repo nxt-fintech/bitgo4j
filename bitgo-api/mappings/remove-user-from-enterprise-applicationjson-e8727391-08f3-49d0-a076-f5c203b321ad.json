@@ -1,0 +1,41 @@
+{
+  "id" : "e8727391-08f3-49d0-a076-f5c203b321ad",
+  "name" : "Remove user from enterprise (application/json)",
+  "request" : {
+    "urlPath" : "/api/v1/enterprise/b481a60c5989c2e5c98f81f7a03f96ad/user",
+    "method" : "DELETE",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "e8727391-08f3-49d0-a076-f5c203b321ad",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.050203Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.enterprise.user.remove",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidEnterpriseId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 424
+}

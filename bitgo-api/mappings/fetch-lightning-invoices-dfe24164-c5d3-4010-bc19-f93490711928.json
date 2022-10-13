@@ -1,0 +1,36 @@
+{
+  "id" : "dfe24164-c5d3-4010-bc19-f93490711928",
+  "name" : "Fetch lightning invoices",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/8a6216ada180a8f256dec90bbcfc0fe7/lightning/invoices",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "dfe24164-c5d3-4010-bc19-f93490711928",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.506495Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.lightning.getInvoices",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 169
+}

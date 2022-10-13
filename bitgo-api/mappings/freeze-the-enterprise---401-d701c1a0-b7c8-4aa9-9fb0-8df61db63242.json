@@ -1,0 +1,25 @@
+{
+  "id" : "d701c1a0-b7c8-4aa9-9fb0-8df61db63242",
+  "name" : "Freeze the enterprise - 401",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/7d04cfdf7e0738dd5cc50b51991cee5f/freeze",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 401
+  },
+  "uuid" : "d701c1a0-b7c8-4aa9-9fb0-8df61db63242",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.080266Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.freeze"
+      }
+    }
+  },
+  "insertionIndex" : 412
+}

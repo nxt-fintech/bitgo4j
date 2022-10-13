@@ -1,0 +1,37 @@
+{
+  "id" : "494a5b6a-0fa7-45c1-8380-9e22a4230ba8",
+  "name" : "Resend a wallet share invitation email",
+  "request" : {
+    "urlPath" : "/api/v2/4vfz1wuhm94yb4rc9byc2lnct1z9zyzn1crycrhar43jfdl6v8lfkatrxup41oy0a6vnw6yp0r33mi6rgiuv5bf74w87bdezb4zyfruyxeoepjuoewuiyqybeoffnzsb7ru7gk4qkga4rc2gpbjxsq0bqilnrgbsja/walletshare/acdfd9790f2c87bdc48d41ea57c5bacb/resendemail",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"resent\" : true\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "494a5b6a-0fa7-45c1-8380-9e22a4230ba8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.378521Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.sharing.resendemail",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "resent" : {
+              "type" : "boolean"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 298
+}

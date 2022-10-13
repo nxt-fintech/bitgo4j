@@ -1,0 +1,53 @@
+{
+  "id" : "2e798a09-ccde-403e-b2ba-ed34767f3f7d",
+  "name" : "List Settlements by Enterprise",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/3qq4/settlements",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"errorName\" : \"Sandra Gislason Sr.\",\n  \"error\" : \"h3jbfc4d2pikf9fddv8uify0le8r0wb15nsggv4719i7qx1pjogsughlcyan\",\n  \"reqId\" : \"3cdz\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "2e798a09-ccde-403e-b2ba-ed34767f3f7d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.603087Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.settlement.listSettlementsByEnterprise",
+        "schema" : {
+          "type" : "object",
+          "description" : "An API error returned by the service.",
+          "properties" : {
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "errorName" : {
+              "type" : "string",
+              "description" : "Immutable error code for API integration"
+            },
+            "reqId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "error", "errorName", "reqId" ],
+          "example" : {
+            "error" : "Missing required parameter: accountId",
+            "errorName" : "MissingRequiredParameter",
+            "reqId" : "3fa3fb673ce950a95fd2d395e245efbe"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 126
+}

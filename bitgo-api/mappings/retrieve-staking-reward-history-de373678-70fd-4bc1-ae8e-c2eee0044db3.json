@@ -1,0 +1,53 @@
+{
+  "id" : "de373678-70fd-4bc1-ae8e-c2eee0044db3",
+  "name" : "Retrieve Staking Reward History",
+  "request" : {
+    "urlPath" : "/api/staking/v1/nl5ttjlzd09mqdkr84u1r1ie4ja5gh200ld47tg74qpmolvh8q4pc0h92x/reward-accrual-report",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"rewards\" : [ {\n    \"reward\" : 1000000000000000,\n    \"enterpriseId\" : \"1032e75c451052000436831deb797af1\",\n    \"date\" : \"2022-01-10T14:32:28Z\"\n  } ],\n  \"nextBatchPrevDate\" : \"2022-01-11T14:32:28Z\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "de373678-70fd-4bc1-ae8e-c2eee0044db3",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.663155Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Reward History",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "rewards" : {
+              "description" : "An array of rewards",
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/StakingReward"
+              }
+            },
+            "page" : {
+              "type" : "integer",
+              "description" : "Page number for paging purposes"
+            },
+            "totalPages" : {
+              "type" : "integer",
+              "description" : "Total number of pages for paging purposes"
+            },
+            "totalElements" : {
+              "type" : "integer",
+              "description" : "Number of elements per page used for paging purposes"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 44
+}

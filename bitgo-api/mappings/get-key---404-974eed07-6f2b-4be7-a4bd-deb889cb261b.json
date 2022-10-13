@@ -1,0 +1,25 @@
+{
+  "id" : "974eed07-6f2b-4be7-a4bd-deb889cb261b",
+  "name" : "Get key - 404",
+  "request" : {
+    "urlPath" : "/api/v2/v704f5q1ksq2bcksxiey0at524ecqe6aql46xd01hs2hhz8jmcpwwwjs8986gsag7cwb/key/8cb50fac29430da42ba9dbe4acb71615",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "974eed07-6f2b-4be7-a4bd-deb889cb261b",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.183708Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.key.get"
+      }
+    }
+  },
+  "insertionIndex" : 390
+}

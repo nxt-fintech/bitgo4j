@@ -1,0 +1,35 @@
+{
+  "id" : "a15b1bbc-ea03-415c-8e31-53845459854c",
+  "name" : "List Connections",
+  "request" : {
+    "urlPath" : "/api/portfolio/v1/portfolios/jli6/connections",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"last_sync\" : \"2022-01-04T04:34:04.519718Z\",\n  \"name\" : \"Kevin Zemlak\",\n  \"sync_status\" : \"scheduled\",\n  \"id\" : \"9bb42646-c52a-424f-ae8c-9496ee394c63\",\n  \"institution_name\" : \"Larae O'Reilly\",\n  \"institution_id\" : \"8030fbd3-9dbb-4691-a734-8464c33c3428\"\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "a15b1bbc-ea03-415c-8e31-53845459854c",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.520946Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "portfolio.connections",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/components/schemas/Connection"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 159
+}

@@ -1,0 +1,40 @@
+{
+  "id" : "f3066949-6edc-42cb-ba13-13004f60a402",
+  "name" : "Get average fee",
+  "request" : {
+    "urlPath" : "/api/v2/wonanylv4is94kxgp10v0nt5ojlpu4dqp351zoinyh6gns16xbi8q3yy7kx69ckxx5s8ciur3yqvsqtkd9umbfi6jjetgvug2hnaumpfonkny1dsi8qi7sq71jq333h1v3v0xdzrokzcyoxxbabrqef30hyn/wallet/averagefee",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"averageFee\" : 4.589621036489046E307\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f3066949-6edc-42cb-ba13-13004f60a402",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.174149Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.getaveragefee",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "averageFee" : {
+              "type" : "number",
+              "description" : "Calculated by summing the fees of the blocks over the number of blocks.",
+              "example" : 16000000
+            }
+          },
+          "required" : [ "averageFee" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 400
+}

@@ -1,0 +1,38 @@
+{
+  "id" : "5a7a2427-4e4e-4f50-b07e-b54188aa3275",
+  "name" : "Get Account Balance",
+  "request" : {
+    "urlPath" : "/api/prime/trading/v1/accounts/2bw7/balances",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"data\" : [ {\n    \"heldBalance\" : \"qcnlbxy7hwl3goq1o3q3t3e1m0om\",\n    \"balance\" : \"hrli4cnh2du3v33jf7agalufe1uytmnrs\",\n    \"tradableBalance\" : \"w0jhibqdvaf4kt6u210qkpsp0y7iozlts7prkhl39xcnp55qtptm2twojk54fkhvq82ufb5sethpndm3k1vbqy4cnzx7tk4av8mwes90q51u7mhjji1w943cdgjnnrwoak0hid\",\n    \"currency\" : \"XBC\",\n    \"currencyId\" : \"ee71229b-ceab-441e-8f5e-2a5e3bbd033b\"\n  }, {\n    \"heldBalance\" : \"r73oitq8zwvsp5vpjsezmkc843b7yxwtaenjpigjspymbmpv74vj2sfhlziclidj7099e7mir2qj0f56f0eix46njyt5\",\n    \"balance\" : \"hf6s4tvfwotpnwooutm2kir7c1v2mceqxymfp8sr4yb92yx0xoxho9874y4vqjg10u1aeukdx20o60jfay5xysbzr2fjsxptnfv\",\n    \"tradableBalance\" : \"daq8f4r7bmknfpmiihw5cw5xyvf4qlbyidzgpl6lsh\",\n    \"currency\" : \"RSD\",\n    \"currencyId\" : \"213f4825-0c77-44ec-8163-438bb713e44c\"\n  }, {\n    \"heldBalance\" : \"h0b26ebcc1t5f3rfve0e2co1qmitq50fnzblfg9jntroiig8ect2xmqn0hzm1gwz8ieri7cp95hbzm0ds8mv3i7effa446\",\n    \"balance\" : \"eolpj87zc54oqwekkqipjc8e6nzv6nfwkel6br\",\n    \"tradableBalance\" : \"ffx0h3w8c227xvcph4unktt3tps3669wcjodrzi5gkse5m0sjjx2307szhu2jmc\",\n    \"currency\" : \"ALL\",\n    \"currencyId\" : \"6218d9f1-5afc-48e5-a470-2afd9738f575\"\n  }, {\n    \"heldBalance\" : \"z7hgzws3rn9xdy4ypz935nxp4ik3dg64lowlw4undeiasybvptt496v54b7m2v2czjyy3k4m0gb49s53bu7evzr73ikgw55eqocz6orvwsu8sw7rcoir1ztl2a11yvs51j6crk6jykt4a4ff3lva5leoty8q0gdy5wbyc95y26ly57smwuyvpatrvgui6g35x\",\n    \"balance\" : \"5th6ok0iuo4gzgqv3g5i35bcmgardw3a9cdf1h06654fmic4yhf05y5\",\n    \"tradableBalance\" : \"f3oe3brue9r8aqu8z4a8kvvm2oftac8r13gnh0t\",\n    \"currency\" : \"BBD\",\n    \"currencyId\" : \"a3d87a4d-b612-4a29-87ac-13511ba4fbf6\"\n  }, {\n    \"heldBalance\" : \"aeid56v8yusod6lko3ibkk5ta14116kbyejz4zatun7s6m75fr3xrhh0jeet530f13im4qgaduhqppflf3qulfxh28q9lhxnbmtexrb51kvhez9r36pxewoevzkllku0veqanm717kaua0d30o2wqmavd205tsvx1cu7mj8nuzotz\",\n    \"balance\" : \"dfqgpwv5ujcw4dg62w5n137ywc0cydl10ke156530zx10lynkbatyp38ux3cos1p2q208t0evq0g5zuy7mye9x6wizuxh1m4b3id0zg5u4wnjm8aow845r0rhtpucqi34hn8bi\",\n    \"tradableBalance\" : \"214dcxk4qq4n6u6iv6tnlgwtsflfsg446g33xr28sj8ecpsvmqqlde63m485t2rppb7gpamkihmgxwxl9gf4ap9vxkz5cibuqeue4kc9ns09yuedl1ssg8wuy3k1tbp22oefe9xr0gsacfejl79rzbnf4d5a41s7s34yz08hhlf9lk9vuj523vznsdzthp079dc\",\n    \"currency\" : \"NOK\",\n    \"currencyId\" : \"53afaa1f-13e7-4c03-8d46-002d524131c1\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "5a7a2427-4e4e-4f50-b07e-b54188aa3275",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.55089Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "trade.accounts.balances",
+        "schema" : {
+          "required" : [ "data" ],
+          "type" : "object",
+          "properties" : {
+            "data" : {
+              "$ref" : "#/components/schemas/AccountBalances"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 146
+}

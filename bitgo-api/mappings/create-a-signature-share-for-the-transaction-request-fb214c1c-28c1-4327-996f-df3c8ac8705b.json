@@ -1,0 +1,46 @@
+{
+  "id" : "fb214c1c-28c1-4327-996f-df3c8ac8705b",
+  "name" : "Create a signature share for the transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/fa809af108921f8e07394dafe617e217/txrequests/ae56c76fd1fa4c77b65d6c0132dbb219/signatureshares",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"6l7z\",\n  \"context\" : { },\n  \"name\" : \"Dr. Gala Schoen\",\n  \"error\" : \"5h3ee7j2cxpsfi8n3gicx3gbbl9v786ky0comtmmy8hsvixbeqb14g2tdsfec8d20m5xh\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "fb214c1c-28c1-4327-996f-df3c8ac8705b",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.413179Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.signatureshare.create",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 251
+}

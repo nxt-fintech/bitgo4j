@@ -1,0 +1,36 @@
+{
+  "id" : "9caff167-e535-4840-8e71-9947efe3297d",
+  "name" : "List wallet webhooks",
+  "request" : {
+    "urlPath" : "/api/v2/83dlywk60iojeuabsh5oilwhhot1gj90q6ygb3ee74hwkrn4fx1rkelv05tiko4haz9ao37vj16439ij85cuqquh6kmegx53tg6vqwdqgu8ogitkrafy6mriz88vryz91rpv5mma27en7k20cci7hw827uyyzzh3hc8alq802fazfx3y06kwvieqna986t1y942c6r5f/wallet/5f70e1296501bff2695e26d6fe6f4ce5/webhooks",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "9caff167-e535-4840-8e71-9947efe3297d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.384948Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.listwebhooks",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 292
+}

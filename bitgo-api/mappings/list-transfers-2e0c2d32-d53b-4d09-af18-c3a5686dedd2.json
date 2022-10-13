@@ -1,0 +1,46 @@
+{
+  "id" : "2e0c2d32-d53b-4d09-af18-c3a5686dedd2",
+  "name" : "List transfers",
+  "request" : {
+    "urlPath" : "/api/v2/p61g2rzq2epkgx8v8lav8oyd3ybwi8kmkiif89zu2q23fet42n6sbgq60mco7e2z6vnmihdcj3xsvb0e6opblp2o21u777kr58pip3g2t1vy8jqwru049q6eg70hmcbo7phmv88vckyx64ftnvho/wallet/432bc17b1d3a1bf73c1f966c628b4838/transfer",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"h084\",\n  \"context\" : { },\n  \"name\" : \"Josef Gibson\",\n  \"error\" : \"qsdfgh0owg07upv4lxr3ty4o9la7iwq4lclciteilqowfbslel68q9wgo530h85u0h8nyophv93ea6rxlffrbt70yovvteok9ismki5639q\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "2e0c2d32-d53b-4d09-af18-c3a5686dedd2",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.239737Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.listtransfers",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 368
+}

@@ -1,0 +1,60 @@
+{
+  "id" : "bccff580-2c8a-4f6b-89b9-4a142b84f56a",
+  "name" : "Retrieve staking requests and staking transactions for a given enterprise and query params - EthStakingRequestResultsExample",
+  "request" : {
+    "urlPath" : "/api/staking/v1/enterprises/27cp/requests/transactions",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"page\" : 1,\n  \"totalPages\" : 1,\n  \"totalElements\" : 1,\n  \"requests\" : [ {\n    \"id\" : \"e055adbc-66a3-4ccd-9a9d-726a05bca0cf\",\n    \"clientId\" : \"f054adbc-26a3-4acd-8a9d-726a05bca0dr\",\n    \"requestUserId\" : \"6092e75c451052000636831deb797bd1\",\n    \"enterpriseId\" : \"1032e75c451052000436831deb797af1\",\n    \"walletId\" : \"2032e75g451052000636831abd797bd3\",\n    \"walletType\" : \"custodial\",\n    \"type\" : \"STAKE\",\n    \"coin\" : \"eth\",\n    \"createdDate\" : \"2022-01-10T14:32:28Z\",\n    \"statusModifiedDate\" : \"2022-01-10T14:32:28Z\",\n    \"status\" : \"NEW\",\n    \"withdrawalAddress\" : \"0x5a6406c9710f588ca733360bfa8033d0ef9ecd7c\",\n    \"delegations\" : [ {\n      \"id\" : \"e0225adbc-66a3-4ccd-9a9d-726a05bca0cf\",\n      \"delegationAddress\" : \"0x5a6406c9710f588ca733360bfa8033d0ef9ecdy5\",\n      \"withdrawalAddress\" : \"0x5a6406c9710f588ca733360bfa8033d0ef9ecd7c\",\n      \"delegated\" : 3200000000000000000,\n      \"status\" : \"PENDING\",\n      \"rewards\" : 0,\n      \"pendingUnstake\" : 3200000000000000000,\n      \"apy\" : 8.3,\n      \"coin\" : \"eth\",\n      \"walletId\" : \"2032e75g451052000636831abd797bd3\",\n      \"unstakingFee\" : 100000000000000,\n      \"unstakingMin\" : 0\n    }, {\n      \"id\" : \"e0225adbc-55b43-5tta-9a9d-726a05bca0ai\",\n      \"delegationAddress\" : \"0x3b6406c9710f588ca733360bfa8033d0ef9ecre4\",\n      \"withdrawalAddress\" : \"0x5a6406c9710f588ca733360bfa8033d0ef9ecd7c\",\n      \"delegated\" : 3200000000000000000,\n      \"status\" : \"PENDING\",\n      \"rewards\" : 0,\n      \"pendingUnstake\" : 3200000000000000000,\n      \"apy\" : 8.3,\n      \"coin\" : \"eth\",\n      \"walletId\" : \"2032e75g451052000636831abd797bd3\",\n      \"unstakingFee\" : 1000000000000000,\n      \"unstakingMin\" : 0\n    } ],\n    \"transactions\" : [ {\n      \"id\" : \"d0355adbc-55b43-5tta-9a9d-726a05bca0ai\",\n      \"stakingRequestId\" : \"e055adbc-66a3-4ccd-9a9d-726a05bca0cf\",\n      \"createdDate\" : \"2022-01-10T14:32:28Z\",\n      \"statusModifiedDate\" : \"2022-01-10T14:32:28Z\",\n      \"status\" : \"PENDING\",\n      \"amount\" : 3200000000000000000,\n      \"transactionType\" : \"delegate\",\n      \"delegationId\" : \"e0225adbc-66a3-4ccd-9a9d-726a05bca0cf\",\n      \"buildParams\" : {\n        \"recipients\" : {\n          \"amount\" : 3200000000000000000,\n          \"address\" : \"0xff50ed3d0ec03aC01D4C79aAd74928BFF48a7b2b\",\n          \"data\" : \"fds0934rnnio390nw\"\n        },\n        \"stakingParams\" : {\n          \"requestId\" : \"e055adbc-66a3-4ccd-9a9d-726a05bca0cf\",\n          \"amount\" : 3200000000000000000,\n          \"validator\" : \"0x5a6406c9710f588ca733360bfa8033d0ef9ecdy5\",\n          \"actionType\" : \"delegate\"\n        },\n        \"gasPrice\" : 1000000000000000,\n        \"gasLimit\" : 3000000000000000\n      }\n    }, {\n      \"id\" : \"i0500adbc-55b43-5tta-9a9d-726a05bca0op\",\n      \"stakingRequestId\" : \"e055adbc-66a3-4ccd-9a9d-726a05bca0cf\",\n      \"createdDate\" : \"2022-01-10T14:32:28Z\",\n      \"statusModifiedDate\" : \"2022-01-10T14:32:28Z\",\n      \"status\" : \"PENDING\",\n      \"amount\" : 3200000000000000000,\n      \"transactionType\" : \"delegate\",\n      \"delegationId\" : \"e0225adbc-55b43-5tta-9a9d-726a05bca0ai\",\n      \"buildParams\" : {\n        \"recipients\" : {\n          \"amount\" : 3200000000000000000,\n          \"address\" : \"0xff50ed3d0ec03aC01D4C79aAd74928BFF48a7b2b\",\n          \"data\" : \"fds0934rnnio390nw\"\n        },\n        \"stakingParams\" : {\n          \"requestId\" : \"e055adbc-66a3-4ccd-9a9d-726a05bca0cf\",\n          \"amount\" : 3200000000000000000,\n          \"validator\" : \"0x3b6406c9710f588ca733360bfa8033d0ef9ecre4\",\n          \"actionType\" : \"delegate\"\n        },\n        \"gasPrice\" : 1000000000000000,\n        \"gasLimit\" : 3000000000000000\n      }\n    } ],\n    \"amount\" : 6400000000000000000,\n    \"gasPrice\" : 1000000000000000\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "bccff580-2c8a-4f6b-89b9-4a142b84f56a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.645425Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve staking requests for a given enterprise",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "requests" : {
+              "type" : "array",
+              "minItems" : 1,
+              "maxItems" : 500,
+              "items" : {
+                "oneOf" : [ {
+                  "$ref" : "#/components/schemas/EthStakingRequestWithTransactions"
+                }, {
+                  "$ref" : "#/components/schemas/NearStakingRequestWithTransactions"
+                }, {
+                  "$ref" : "#/components/schemas/SolStakingRequestWithTransactions"
+                } ]
+              }
+            },
+            "page" : {
+              "type" : "integer",
+              "description" : "Page number for paging purposes"
+            },
+            "totalPages" : {
+              "type" : "integer",
+              "description" : "Total number of pages for paging purposes"
+            },
+            "totalElements" : {
+              "type" : "integer",
+              "description" : "Number of elements per page used for paging purposes"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 79
+}

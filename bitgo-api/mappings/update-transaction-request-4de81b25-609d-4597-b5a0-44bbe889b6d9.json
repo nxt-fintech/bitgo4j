@@ -1,0 +1,46 @@
+{
+  "id" : "4de81b25-609d-4597-b5a0-44bbe889b6d9",
+  "name" : "Update transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/f5f3b55664d733bcc6629081752ee9a8/txrequests/2a0f0ded7861367d200d66a3afd3d7c1",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"requestId\" : \"268u\",\n  \"context\" : { },\n  \"name\" : \"Ike Maggio\",\n  \"error\" : \"l534x4cyhhzcl9q5v1n5x1cnuiofg1i44e81xepkgpn7ab3t0aju39mbc8sljdx4g30j76en9r9qt5i2955n5ab2dy8hj7l4atldfhv\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "4de81b25-609d-4597-b5a0-44bbe889b6d9",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.408887Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.update",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 258
+}

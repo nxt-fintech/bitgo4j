@@ -1,0 +1,58 @@
+{
+  "id" : "645beb3e-97a4-46ab-9b5f-1e3cb0669737",
+  "name" : "Get Affirmation (application/json)",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/g6pm/account/cxm0/affirmations/m5p7",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"errorName\" : \"Robyn Marquardt III\",\n  \"error\" : \"kv6t03fu1ewt3wx7ml6xa8c69iuqcivswglc4be0ng3a7dyklecr9jswzqgg4tiwrxjrfisghsqj82fndl7ei8tebrw176zcx0p0fp9q4ykxywtpz8\",\n  \"reqId\" : \"1123\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "645beb3e-97a4-46ab-9b5f-1e3cb0669737",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.626275Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.settlement.getAffirmation",
+        "schema" : {
+          "type" : "object",
+          "description" : "An API error returned by the service.",
+          "properties" : {
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "errorName" : {
+              "type" : "string",
+              "description" : "Immutable error code for API integration"
+            },
+            "reqId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "error", "errorName", "reqId" ],
+          "example" : {
+            "error" : "Missing required parameter: accountId",
+            "errorName" : "MissingRequiredParameter",
+            "reqId" : "3fa3fb673ce950a95fd2d395e245efbe"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 117
+}

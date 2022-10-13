@@ -1,0 +1,36 @@
+{
+  "id" : "af7643f9-6bc1-4bfd-ab38-16181ba6c44e",
+  "name" : "Delete policy rule",
+  "request" : {
+    "urlPath" : "/api/v2/ipugg2iccbrn0kp8hlqkexlyc8fk9oo88ng32ky27nvywic2x7xstcuxinwwmuh5ryqvzhyqxxbf4hw0u7/wallet/576823bc71e804fe54c579be03c4d8f4/policy/rule",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "af7643f9-6bc1-4bfd-ab38-16181ba6c44e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.217169Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.removepolicy",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 377
+}

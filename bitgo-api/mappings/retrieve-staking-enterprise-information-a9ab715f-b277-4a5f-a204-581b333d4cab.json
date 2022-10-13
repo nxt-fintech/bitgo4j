@@ -1,0 +1,54 @@
+{
+  "id" : "a9ab715f-b277-4a5f-a204-581b333d4cab",
+  "name" : "Retrieve Staking Enterprise Information",
+  "request" : {
+    "urlPath" : "/api/staking/v1/ka7n64kio39auik68upro37i4roh91w4bflwl16ahjy4pd8m958ut95xk4by3hpiznrbhni542kv3ez6eiamu77hwndk95m25x2kouicq5vdjywreffgvhco1ovj11cd1ja1tz/enterprises/t521",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"enterpriseId\" : \"1032e75c451052000436831deb797af1\",\n  \"coin\" : \"eth\",\n  \"delegated\" : 6400000000000000000,\n  \"rewards\" : 1000000000000000,\n  \"apy\" : 8.2\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "a9ab715f-b277-4a5f-a204-581b333d4cab",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.660505Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Enterprise Information",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "enterpriseId" : {
+              "description" : "The id of the enterprise where the the staking request was created from",
+              "type" : "string"
+            },
+            "coin" : {
+              "description" : "The coin to be staked (ETH, NEAR, SOL)",
+              "type" : "string"
+            },
+            "delegated" : {
+              "description" : "Delegated staked amount in “base units”",
+              "type" : "integer"
+            },
+            "rewards" : {
+              "description" : "Reward accrual ammount in “base units”",
+              "type" : "integer"
+            },
+            "apy" : {
+              "description" : "Reward accrual annual percentage rate.  Estimated yearly based on the last 7 days.  Same methodology as leading beacon chain validator aggregators (e.g. https://beaconcha.in/validators)",
+              "type" : "number"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 51
+}

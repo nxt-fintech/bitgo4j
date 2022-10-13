@@ -1,0 +1,46 @@
+{
+  "id" : "94011d40-4d91-4bdd-9a13-8d9c346f4bb9",
+  "name" : "Resend a wallet share invitation email",
+  "request" : {
+    "urlPath" : "/api/v2/7zn8a4m0b9m01ei7y5j92357zvwbeodqn5rzln6ldubqcs1o8kpkjmotgoz2gxkecygvxf51k75wl8i7ha9lzsdkgi559/walletshare/86ca3219f436d60f3d34c2af61ee28ab/resendemail",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"requestId\" : \"373t\",\n  \"context\" : { },\n  \"name\" : \"Efrain Wyman\",\n  \"error\" : \"es9ltzls8g2eo083ftp3ehlnqqfzhb4j9tz9egt8atfw\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "94011d40-4d91-4bdd-9a13-8d9c346f4bb9",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.379976Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.sharing.resendemail",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 296
+}

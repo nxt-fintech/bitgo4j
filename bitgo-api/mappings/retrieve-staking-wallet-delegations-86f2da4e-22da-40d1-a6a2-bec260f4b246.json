@@ -1,0 +1,36 @@
+{
+  "id" : "86f2da4e-22da-40d1-a6a2-bec260f4b246",
+  "name" : "Retrieve Staking Wallet Delegations",
+  "request" : {
+    "urlPath" : "/api/staking/v1/os9uypzu5nuwdpk4lbo8tve4zv25pwbddxbgdenyaohx3gihi4rmeeznpn6q27yo0cfnlkm5pw397jvu29p4yyxoqfjqyozymv98m1wxeiw8xfsl15gx1xofkct4nsdyekx/wallets/amv7/delegations",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"code\" : \"BadRequest\",\n  \"message\" : \"Bad Request\",\n  \"status\" : 400\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "86f2da4e-22da-40d1-a6a2-bec260f4b246",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.65794Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Wallet Delegations",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/StakingError"
+          }, {
+            "$ref" : "#/components/schemas/ValidationError"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 57
+}

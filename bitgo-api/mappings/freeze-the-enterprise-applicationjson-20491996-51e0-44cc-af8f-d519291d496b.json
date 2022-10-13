@@ -1,0 +1,41 @@
+{
+  "id" : "20491996-51e0-44cc-af8f-d519291d496b",
+  "name" : "Freeze the enterprise (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/d18e10e4f5eda399b7c1baf34e3484eb/freeze",
+    "method" : "POST",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "20491996-51e0-44cc-af8f-d519291d496b",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.079977Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.freeze",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidEnterpriseId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 413
+}

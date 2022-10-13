@@ -1,0 +1,36 @@
+{
+  "id" : "3d6de7d6-35fd-4753-8264-b8c2eb08cb4e",
+  "name" : "Get unspents",
+  "request" : {
+    "urlPath" : "/api/v2/mhl2psaghs6tgqodqltfxc5evm0mja8sv5i40vqlfch4lfjfb41x40lqfd4l5eyuscaqw2cyrroguio6i829dithgujmabw73a5d28foli75b80uttoq651vkl33tnqwy6b3slsio52jpjmk6uwuhxwr49efb2qs2i15l/wallet/521b1db5df97dcb049469c6edf40d514/unspents",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "3d6de7d6-35fd-4753-8264-b8c2eb08cb4e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.349479Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.unspents",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 328
+}

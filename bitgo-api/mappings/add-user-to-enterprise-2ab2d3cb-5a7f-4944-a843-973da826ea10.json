@@ -1,0 +1,36 @@
+{
+  "id" : "2ab2d3cb-5a7f-4944-a843-973da826ea10",
+  "name" : "Add user to enterprise",
+  "request" : {
+    "urlPath" : "/api/v1/enterprise/3da06246636173f5e3f5e3d7d883e812/user",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 202,
+    "body" : "{\n  \"approvalsRequired\" : 7.898542121618099E307,\n  \"walletId\" : \"v0a7\",\n  \"creator\" : \"72fb726fb209985cacbd6c08abe83f44\",\n  \"enterprise\" : \"75a8bcd8f10b0283ec87ec2331fa843e\",\n  \"bitcoinAddress\" : \"pogv84lyj3t51axqgm2r1ewpkvn1th64lmaffu7hu2zh4mf7drgeqef4p30bh1yxkfz75tc6ulsj7x25j194j5350p6p460wunno3kc3p7wqa08a2bv53momdwq7t2j9s982lpnitkkri6a0euqwfrdlctvchfotclsse64h4x35nqkeo\",\n  \"id\" : \"55ae5ab2d52faa70f9058a2cc74f6325\",\n  \"state\" : \"rejected\",\n  \"walletUserIds\" : [ \"fd4415c2375ab3b33e1d1febf60b9aab\", \"c8ab3ee12af4912292552939fee64a5d\", \"1a4fe4715d87db64eb33ad6c0b583d78\", \"ea52d04a5f1a48caa130e77f523aa7dd\", \"974f1486a80777a99e639bd87ff31ee0\", \"9ec9daad24fbc7aad0b6c9be66bc4bf9\" ],\n  \"createDate\" : \"2022-04-28T09:48:12.044007Z\",\n  \"info\" : {\n    \"type\" : \"updateEnterpriseRequest\",\n    \"updateApprovalsRequiredRequest\" : {\n      \"requestedApprovalsRequired\" : 5.875005378024538E307\n    },\n    \"updateEnterpriseRequest\" : {\n      \"permissions\" : [ \"admin\", \"admin\", \"admin\", \"admin\", \"admin\", \"admin\", \"admin\" ],\n      \"action\" : \"remove\",\n      \"userId\" : \"ae125cd6162d1c29ae8c36539eedbf3d\",\n      \"email\" : \"Latrisha.Olson@email.example.mocklab.io\"\n    }\n  }\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "2ab2d3cb-5a7f-4944-a843-973da826ea10",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.04514Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.enterprise.user.add",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/V1PendingApproval"
+          }, {
+            "$ref" : "#/components/schemas/V1PendingApprovals"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 429
+}

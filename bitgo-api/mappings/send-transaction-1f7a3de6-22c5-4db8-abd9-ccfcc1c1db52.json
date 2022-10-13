@@ -1,0 +1,36 @@
+{
+  "id" : "1f7a3de6-22c5-4db8-abd9-ccfcc1c1db52",
+  "name" : "Send transaction",
+  "request" : {
+    "urlPath" : "/api/v2/ty47pytcmi0z08ct47hhnbwueb5l6szb3/wallet/08334f1408b1eb87e9b16df6e2abdc7f/sendcoins",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "1f7a3de6-22c5-4db8-abd9-ccfcc1c1db52",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.450194Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.wallet.sendcoins",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 214
+}

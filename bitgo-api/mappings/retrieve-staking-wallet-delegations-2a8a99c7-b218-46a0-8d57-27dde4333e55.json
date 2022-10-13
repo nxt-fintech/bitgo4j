@@ -1,0 +1,43 @@
+{
+  "id" : "2a8a99c7-b218-46a0-8d57-27dde4333e55",
+  "name" : "Retrieve Staking Wallet Delegations",
+  "request" : {
+    "urlPath" : "/api/staking/v1/syr0ljz6hs467w4f7t28q66g3rvhcsvz9r620939crdzw3pklomc8cpnr2qtq362arzqmwf72nrohvju2i4xn8r5vbubzaknci86nqqcx788igxwux94z2hfnnhr170rad68f5h9ukb032cmc1p2p61jie8xa7qhi0hwvkvt09v0ou3w17/wallets/bi3i/delegations",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 500,
+    "body" : "{\n  \"code\" : \"Internal_Server_Error\",\n  \"message\" : \"Database is down\",\n  \"status\" : 500\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "2a8a99c7-b218-46a0-8d57-27dde4333e55",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.660031Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Wallet Delegations",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 52
+}

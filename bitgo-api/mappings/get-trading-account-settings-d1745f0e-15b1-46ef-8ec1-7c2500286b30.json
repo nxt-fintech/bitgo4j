@@ -1,0 +1,51 @@
+{
+  "id" : "d1745f0e-15b1-46ef-8ec1-7c2500286b30",
+  "name" : "Get Trading Account Settings",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/1bqv/account/0i2p/settings",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"accountId\" : \"6hd4\",\n  \"affirmationExpirationTime\" : 5.199459193563244E307,\n  \"feeRates\" : {\n    \"settlement\" : 4.180024784452103E307\n  },\n  \"referralCode\" : \"1ftek0m9cw77vf8x170368ms2eitwdp4rvyt8ubq94wuqfesnr5uy0siv6q66svog881684q22oxsu96nq5ehn85aij\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d1745f0e-15b1-46ef-8ec1-7c2500286b30",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.675081Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.trade.getAccountSettings",
+        "schema" : {
+          "title" : "Trading Account Settings",
+          "type" : "object",
+          "properties" : {
+            "accountId" : {
+              "$ref" : "#/components/schemas/WalletId"
+            },
+            "affirmationExpirationTime" : {
+              "type" : "number",
+              "description" : "Expiration time for new settlements and affirmations, in milliseconds. If this amount of time passes before a settlement is affirmed, rejected, or canceled, the settlement will be marked as failed",
+              "example" : 86400000
+            },
+            "feeRates" : {
+              "$ref" : "#/components/schemas/FeeRates"
+            },
+            "referralCode" : {
+              "type" : "string",
+              "description" : "Referral code of given account",
+              "example" : "FC8G"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 23
+}

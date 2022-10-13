@@ -1,0 +1,37 @@
+{
+  "id" : "65f08a41-74f4-49e6-ac3b-d0b4ea454e20",
+  "name" : "Build a transaction",
+  "request" : {
+    "urlPath" : "/api/v2/nekapsr2dszcjkvz2lphl45oge5raezsz0p67989iyslrvbqse2pzhv7nd7sz80vg2qgmbgwgc4qx57hsxiithdpxjqiju3ygma5aexmjyi7hxhtu36wohnyzqpqv0rl9s2kzjhckfngzb75bn9z7r9/wallet/4ef321a93fa9874d4bb0761f2bb01548/tx/build",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"keyDerivationPath\" : \"d9hdq36chx7948diq6zdrsk8x3mt9jnk2kqdsywtp05p1h93o0vq87pluwkh5b3k62613ecwncy25mtnl40uvqm8u7\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "65f08a41-74f4-49e6-ac3b-d0b4ea454e20",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.424009Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.tx.build",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "keyDerivationPath" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 238
+}

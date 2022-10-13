@@ -1,0 +1,44 @@
+{
+  "id" : "024646eb-4983-4949-b544-3b59cefd278e",
+  "name" : "Get transaction requests by wallet",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/09262f6226fb1f181bc7685da4cc4b0d/txrequests",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"nextBatchPrevId\" : \"a32l\",\n  \"txRequests\" : [ { } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "024646eb-4983-4949-b544-3b59cefd278e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.406447Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.get",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "txRequests" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/TransactionRequest"
+              }
+            },
+            "nextBatchPrevId" : {
+              "type" : "string"
+            }
+          },
+          "required" : [ "txRequests" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 262
+}

@@ -1,0 +1,46 @@
+{
+  "id" : "aab67bea-8e62-4975-b763-7d9d7eff078f",
+  "name" : "Modifying unspent reservation",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/fe22a515c25c603eac211a011933433b/reservedunspents",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"9191\",\n  \"context\" : { },\n  \"name\" : \"Elvin Morissette\",\n  \"error\" : \"phsdbyx1apkqo305iq3a7eww3smy1e6rjqcldlnksonpqe92wueoongwo6jkjz7pblr6xanhyemmu0k2rkylnxkr7c9dmqds25a82h7une91oll0r3j\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "aab67bea-8e62-4975-b763-7d9d7eff078f",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.365312Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.reservedunspent.put",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 312
+}

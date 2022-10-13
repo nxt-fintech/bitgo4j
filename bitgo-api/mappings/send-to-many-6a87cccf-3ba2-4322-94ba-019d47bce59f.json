@@ -1,0 +1,54 @@
+{
+  "id" : "6a87cccf-3ba2-4322-94ba-019d47bce59f",
+  "name" : "Send to many",
+  "request" : {
+    "urlPath" : "/api/v2/bp5rb88687tny5f06rk2luhvuqsvydlsfnndfbbpcsmapywhmsp25u5dvn5ylioe/wallet/7382897354341d0417da73bb5599df38/sendmany",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 202,
+    "body" : "{\n  \"transfer\" : {\n    \"date\" : \"2022-10-24T01:46:08.453211Z\",\n    \"enterprise\" : \"f08526c54974d78be227eed9240ddeac\",\n    \"usd\" : 1.634969405656721E308,\n    \"type\" : \"receive\",\n    \"sequenceId\" : \"c2v5\",\n    \"baseValue\" : 6699849652520184994,\n    \"usdRate\" : 5.118982897286682E307,\n    \"id\" : \"adaeae8c592d583312ef8b98a4ea738c\",\n    \"state\" : \"failed\",\n    \"value\" : 1531458168290657935,\n    \"feeString\" : \"y9ugvknoo63fn9a0oxavnqzun864jkbzin55l74beo55gkkzeqjaxafo9ui0jpgh606qkqwgt23p04wot54vm0tsy9m0o2cympksh45tc0fvi1trapxy8gmvl7b0qkzk9pduhnajsn9uov3x82hwm5\",\n    \"height\" : 2027976021471411721,\n    \"payGoFee\" : 7850184758985846215,\n    \"payGoFeeString\" : \"a2m7xqvm3s2vmdcyvz5ftos0h375dtprheoq5t7g22joqg6w74hz0lt2lsx2kw4rywnlt6fwtkkuudtcz9f9xq61f8va60wdea\",\n    \"wallet\" : \"984d60410c87a1a6049c0c8f90845e67\",\n    \"txid\" : \"013j\",\n    \"baseValueString\" : { },\n    \"history\" : [ {\n      \"date\" : \"2021-11-01T11:13:07.454026Z\",\n      \"action\" : \"rejected\",\n      \"comment\" : \"x1rqbh35wn7i9tv6nbwb9xl7j9e4oqyqife0a13g7plbtqyibgm5mqtpd1\",\n      \"user\" : \"d347c29febefca683d5aba67f8750b30\"\n    }, {\n      \"date\" : \"2022-01-15T03:47:01.454158Z\",\n      \"action\" : \"removed\",\n      \"comment\" : \"xzocbt1ae79uuz710gab1zut3pa6momh1p0fwqoyr407d37ot1yeudxm1y5b9\",\n      \"user\" : \"16b049c92b6789d8584e879b8898a495\"\n    }, {\n      \"date\" : \"2022-10-02T05:23:05.454434Z\",\n      \"action\" : \"commented\",\n      \"comment\" : \"9koqoul3lghtozn4mk5uqtcprzoqxivnw57wgylew6mxeicss9s45mcezeke9vj12cgrg8qiqr23u1savytx0n3uga2b60cv609z2h530u6m4a22efytq4aqomirqf8mlewgxbdiikykgry9auc8jxwgtif3ryu9mpeht0i6rgunby5daa317p\",\n      \"user\" : \"b239c941a3c2b8b939546aa5dcf14e6e\"\n    }, {\n      \"date\" : \"2023-01-17T20:33:21.454589Z\",\n      \"action\" : \"rejected\",\n      \"comment\" : \"1frl0b2gso4educ2apssa1mvhjnhryyy2rqqq1tgesc4al0nkjfe5h09kcx7rln4ywrqg3nlsjdetc1nj07mz67rrl93mpdvh2rqql9w0f505riy8o4iahw04um13ciyk1mdcmppv55n27jry3hwopudrvulgi4u\",\n      \"user\" : \"971aa0ee287684287c3d65830b46dffb\"\n    }, {\n      \"date\" : \"2023-08-17T05:09:54.454709Z\",\n      \"action\" : \"commented\",\n      \"comment\" : \"q9lb8inhv9yae758z5hgtj6vy7gfbsjjtjlddhjxj18p2ix0b4o\",\n      \"user\" : \"d79c97a2ba725a218469ee11ad37d8d9\"\n    }, {\n      \"date\" : \"2021-12-23T23:21:02.454808Z\",\n      \"action\" : \"signed\",\n      \"comment\" : \"x0uhium8gsuns9d0l4oooo0doslqtrp5q6emnjkqby773smvxb8dtlkbh4ciky\",\n      \"user\" : \"f99c3548b567bb13ef260e479077e4f5\"\n    }, {\n      \"date\" : \"2023-09-13T11:59:56.454902Z\",\n      \"action\" : \"removed\",\n      \"comment\" : \"7pvvm3ul3gdc9cphkay7lz3yvxss7e6pr09utbcqfam8sel3cwzg01q6z8lx6l59nyuq6b6tt70y01fiil6b3do60cgpt33b4djp84kjc7js\",\n      \"user\" : \"803f241e3dd2f59de59359048396c644\"\n    }, {\n      \"date\" : \"2022-09-19T21:04:07.454997Z\",\n      \"action\" : \"confirmed\",\n      \"comment\" : \"znltn2dalhj2xjxkk7wd9msuj97hn8mrwsehbmsqqusctzxtroxub1hnuos3uqtcem8n14wupsmi0svsl4xzp8twuis6mmvmxg9kw61cibmzx8a1umusbd8oxboru4l3dbsz9nffxoj41l0seimicylv5wfi6w3pu66pbe1biyxtnxvp6sw9kc\",\n      \"user\" : \"4db47da74496f2e507c35122672d4a45\"\n    } ],\n    \"tags\" : [ \"8fef49b4a4ed37083614fb025af8edcb\", \"e8cbc79ef855603251a7580c292fb4d2\", \"9f49dff8ea8f07e2275bf149e04ad1a6\", \"2216cfc5c0526fc53ca2e97385e97bd8\", \"e2725f63f161cbbdd3aa5330d90d2604\" ],\n    \"vSize\" : 307559021184528111,\n    \"entries\" : [ {\n      \"address\" : \"tujmvk42vyenx55fk6cncz81wadfif5oyh3l6wpuxa16znutv0fik5yqezngvi0ermxl0x99ulzf64bkjm9f2q9wvy6mdwxan2ldqnzbnj4idmwbocosdelny9erefjlu4vib6h05l1\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : true,\n      \"value\" : 1261163852904315469,\n      \"isChange\" : true,\n      \"token\" : \"3qxvib58xmqulxtbag5wzm11jms8jfmduybgoxf77uuqdux9n0cuihqhqp4dvur0zyuyejjogai0bg0m5\"\n    }, {\n      \"address\" : \"gky3dq1ngrk229in3qu2m2fy3jlr2wav5tsrfzw2w47etbqmkxns19o0g003ankbgfdsjmf4mz8rb\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : false,\n      \"value\" : 3297243012520040736,\n      \"isChange\" : true,\n      \"token\" : \"j2ub9at1ei6b52xq9jpfl31yrkiuzzhs73pvyt0fcxlnli5pqu2k9iptfx8bp9ixxyw7n6wcodvayac5a9cun9b14u52yrg8s5qsksr8z4jtsgesxbw1rzsi2nceimk10m4lw4kz8\"\n    } ],\n    \"valueString\" : { },\n    \"usersNotified\" : true,\n    \"heightId\" : \"9b9f\",\n    \"comment\" : \"z67z7zmf2sbhri8nz567h226ly58i49gf0n8ng195ishr88kj11hd9b20965zlnf4jahgdgt2rfy2vt1a9m2ozab35q4g6wb2hy2lkw80z6gq3wi3thtpq\",\n    \"nSegwitInputs\" : 1754422551949722632,\n    \"coin\" : \"4ri48t95gcsgqzz7sex347gul8uuer0wt3qgmfe3d6yfnpe8lg30s7f01xtjrkgl05wocfhjiexf6l0qryucqvamvirj5yxuqwx18ldgvunxnhkrq3qb4cwfvk2czp6rugpv5kmqrfogq4zitgnx\",\n    \"coinSpecific\" : { }\n  },\n  \"tx\" : \"q5vduatcaoucg3xhs69z0frdzb7np7ub06qz5ra16jy5x3xo5lu2k1chmw0tl51l2ff00nll0m8t1ltiu1iieef68vklbjvtm74wac4wwq396861truvd8nlep0nc7gfp3ernxij9rtlbbrweygwxxk4\",\n  \"txid\" : \"3z15\",\n  \"status\" : \"signed\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "6a87cccf-3ba2-4322-94ba-019d47bce59f",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.456654Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.wallet.sendmany",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "transfer" : {
+              "allOf" : [ {
+                "description" : "New transfer"
+              }, {
+                "$ref" : "#/components/schemas/Transfer"
+              } ]
+            },
+            "txid" : {
+              "type" : "string",
+              "description" : "Unique transaction identifier"
+            },
+            "tx" : {
+              "type" : "string",
+              "description" : "Encoded transaction hex (or base64 for XLM)"
+            },
+            "status" : {
+              "type" : "string",
+              "description" : "Transfer status",
+              "enum" : [ "signed", "signed (suppressed)", "pendingApproval" ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 212
+}

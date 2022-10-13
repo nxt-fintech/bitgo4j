@@ -1,0 +1,53 @@
+{
+  "id" : "786e85d7-e9c9-4f2b-9ea5-e28f420c6bf4",
+  "name" : "Create Settlement",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/3qjp/account/xo46/settlements",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"errorName\" : \"Mrs. Marylouise Ankunding\",\n  \"error\" : \"zjvruqts5s9hnyfcka7s9b7tf6zrjkwwgthbhvh3unvmm647k8iey0dvwomoi35xc45zb\",\n  \"reqId\" : \"bj68\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "786e85d7-e9c9-4f2b-9ea5-e28f420c6bf4",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.585401Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.settlement.createSettlement",
+        "schema" : {
+          "type" : "object",
+          "description" : "An API error returned by the service.",
+          "properties" : {
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "errorName" : {
+              "type" : "string",
+              "description" : "Immutable error code for API integration"
+            },
+            "reqId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "error", "errorName", "reqId" ],
+          "example" : {
+            "error" : "Missing required parameter: accountId",
+            "errorName" : "MissingRequiredParameter",
+            "reqId" : "3fa3fb673ce950a95fd2d395e245efbe"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 130
+}

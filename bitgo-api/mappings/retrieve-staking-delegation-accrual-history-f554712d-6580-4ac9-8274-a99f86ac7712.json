@@ -1,0 +1,43 @@
+{
+  "id" : "f554712d-6580-4ac9-8274-a99f86ac7712",
+  "name" : "Retrieve Staking Delegation Accrual History",
+  "request" : {
+    "urlPath" : "/api/staking/v1/lgszcr34mj4tk0ppcp1kxxmab6kw0zqlwyqo6609zpxqkoisu04n2fu240yhni6pizzuf6dthihvdievpzoww1w8nuhlp8o/wallets/0772/delegations/accruals",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"code\" : \"Unauthorized\",\n  \"message\" : \"Unauthorized\",\n  \"status\" : 401\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f554712d-6580-4ac9-8274-a99f86ac7712",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.668619Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Delegation Accrual History",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 35
+}

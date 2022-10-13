@@ -1,0 +1,25 @@
+{
+  "id" : "622a11fd-b606-4bf8-ad55-50fcaa893426",
+  "name" : "Remove user from wallet - 404",
+  "request" : {
+    "urlPath" : "/api/v2/q6mrrbsksplpietndjyz9tyotqhwp8323gwltdtcqux9lmu5sfhffbc51spc0a16lfs33zdd5ibanop15s74fw6gpwmm4147viikffjw5372ic0b9h95ywwffefqvkk4trhr6/wallet/167c676fd767f0dd6a723f562426ecd5/user/a290d4d9495e06015f68fd3505f39fe2",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "622a11fd-b606-4bf8-ad55-50fcaa893426",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.34533Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.removeuser"
+      }
+    }
+  },
+  "insertionIndex" : 334
+}

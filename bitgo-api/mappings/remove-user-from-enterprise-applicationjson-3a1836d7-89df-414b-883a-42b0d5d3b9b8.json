@@ -1,0 +1,51 @@
+{
+  "id" : "3a1836d7-89df-414b-883a-42b0d5d3b9b8",
+  "name" : "Remove user from enterprise (application/json)",
+  "request" : {
+    "urlPath" : "/api/v1/enterprise/ce7ba51f643820343c800b8d6426ba03/user",
+    "method" : "DELETE",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"7s45\",\n  \"context\" : { },\n  \"name\" : \"Hanna Lindgren\",\n  \"error\" : \"j78aijg7xu0hdml3jkxvsxmbs9l7cpnb2fm4a7b4j41rcajddg2atf8w96pkdkw0b4k59zuxzaew6a552wslv3sv6xf2ajc4x80wz5z07af10pzzudocpaty1w4u1uadlm0trmlfd5fh1lq7jpw0boobspmbhkv9vmi141icyc\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "3a1836d7-89df-414b-883a-42b0d5d3b9b8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.05161Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.enterprise.user.remove",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 423
+}

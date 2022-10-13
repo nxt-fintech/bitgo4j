@@ -1,0 +1,36 @@
+{
+  "id" : "c4c1336c-aca9-47ce-aa89-b8983be8c3de",
+  "name" : "Update bank account",
+  "request" : {
+    "urlPath" : "/api/v2/bankaccounts/9692ab513f65d767f3b0c6f219d2c782",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "c4c1336c-aca9-47ce-aa89-b8983be8c3de",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.44292Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.bankaccount.update",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidBankAccountId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 220
+}

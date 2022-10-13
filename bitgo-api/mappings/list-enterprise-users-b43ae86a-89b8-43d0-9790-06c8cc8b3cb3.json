@@ -1,0 +1,46 @@
+{
+  "id" : "b43ae86a-89b8-43d0-9790-06c8cc8b3cb3",
+  "name" : "List enterprise users",
+  "request" : {
+    "urlPath" : "/api/v1/enterprise/f3d0bfcc8e411a9d16e26af98c11ba53/user",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"k6k7\",\n  \"context\" : { },\n  \"name\" : \"Dr. Son Tromp\",\n  \"error\" : \"loy66zrywg02um3ergrrbq6p4rprzivhprtr5vdocpiqczxwnxqqwc5404gg20d9ermts99cxjjbfs5ddl94ef7v707b9xo0qoww32zzfeyy75r2lef07z14p\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "b43ae86a-89b8-43d0-9790-06c8cc8b3cb3",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.04242Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.user.list",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 431
+}

@@ -1,0 +1,40 @@
+{
+  "id" : "537bac1d-4cee-4fd1-8b20-aa32260b380a",
+  "name" : "Modifying unspent reservation",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/0dc57dee34172b8338bef3e09b9c3ccd/reservedunspents",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"unspents\" : [ {\n    \"walletId\" : \"b63a0a2aebcf9325983582d056456fe5\",\n    \"expireTime\" : \"2022-09-16T11:57:14.361848Z\",\n    \"id\" : \"l2z2\",\n    \"userId\" : \"65f9ad02682db48122ca969f35fee6f1\"\n  }, {\n    \"walletId\" : \"132bfc1da9c197c11ae0c7a9b1702a8b\",\n    \"expireTime\" : \"2021-11-25T17:19:32.362081Z\",\n    \"id\" : \"75ij\",\n    \"userId\" : \"896d95e994014b002cbeb16ef05ad5c3\"\n  }, {\n    \"walletId\" : \"cfb3c9b77547ea9e101c5c5ad3a6abe7\",\n    \"expireTime\" : \"2023-03-16T17:15:46.362301Z\",\n    \"id\" : \"sy4e\",\n    \"userId\" : \"d4043404e516c35afa22cacdfcf5eee4\"\n  }, {\n    \"walletId\" : \"ccc468ac3b08c94519b61214b4e3bad2\",\n    \"expireTime\" : \"2023-07-23T06:34:18.362512Z\",\n    \"id\" : \"4xp2\",\n    \"userId\" : \"8c325de2479d1f38c195bde93e044646\"\n  }, {\n    \"walletId\" : \"b7d3260a80280bcf12138f33f04817a5\",\n    \"expireTime\" : \"2022-10-25T09:00:29.36273Z\",\n    \"id\" : \"5r6f\",\n    \"userId\" : \"0766cdb4756bff8ca46fee1c003d02e3\"\n  }, {\n    \"walletId\" : \"21dfc1136edd514964745cec0437df3e\",\n    \"expireTime\" : \"2022-09-15T19:33:14.362944Z\",\n    \"id\" : \"mlph\",\n    \"userId\" : \"24c95f83846e83c5d61cbd5fe362938a\"\n  }, {\n    \"walletId\" : \"532affd35317616aa9930698cead1477\",\n    \"expireTime\" : \"2022-12-31T16:28:26.363365Z\",\n    \"id\" : \"l02e\",\n    \"userId\" : \"dd11615ea08040671cb59e00c7d6c8ff\"\n  }, {\n    \"walletId\" : \"23859969cdadaa64f135eed5202e31b8\",\n    \"expireTime\" : \"2022-02-27T20:07:58.363581Z\",\n    \"id\" : \"f36z\",\n    \"userId\" : \"75f90eac0ab5dad32055768dcd869d0f\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "537bac1d-4cee-4fd1-8b20-aa32260b380a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.364011Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.reservedunspent.put",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "unspents" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/ReservedUnspent"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 313
+}

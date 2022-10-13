@@ -1,0 +1,59 @@
+{
+  "id" : "c33d5bdf-bd7a-46b0-809f-817924182bfc",
+  "name" : "List enterprise users",
+  "request" : {
+    "urlPath" : "/api/v1/enterprise/dcf09be5e3808be5529cc53c81247cb5/user",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"incomplete\" : true,\n  \"walletUsers\" : [ {\n    \"id\" : \"1604f0e22c4222c28d92fac76b0c96df\",\n    \"username\" : \"Jared.O'Hara@email.example.mocklab.io\"\n  } ],\n  \"nonAdminUsers\" : [ {\n    \"verified\" : false,\n    \"id\" : \"f9c4e996d235233a197f24cae0e90c3b\",\n    \"username\" : \"Reed.Gleichner@email.example.mocklab.io\"\n  }, {\n    \"verified\" : true,\n    \"id\" : \"30326a32315a62f2758e595961bd2378\",\n    \"username\" : \"Andrea.Pfeffer@email.example.mocklab.io\"\n  }, {\n    \"verified\" : false,\n    \"id\" : \"fcbb040a931f72abcf7e5ae6e6d11dc8\",\n    \"username\" : \"Stuart.Tillman@email.example.mocklab.io\"\n  }, {\n    \"verified\" : true,\n    \"id\" : \"3fcde405964c1323f8256f321e301c89\",\n    \"username\" : \"Lupe.Morissette@email.example.mocklab.io\"\n  } ],\n  \"kycState\" : \"unverified\",\n  \"adminUsers\" : [ {\n    \"verified\" : true,\n    \"id\" : \"1fde75ce657d5d3ec1361e0d4d37d4d7\",\n    \"username\" : \"Vern.Gerhold@email.example.mocklab.io\"\n  }, {\n    \"verified\" : true,\n    \"id\" : \"06cdb53f19a76bcc19cb55645746fc91\",\n    \"username\" : \"Reba.Schuppe@email.example.mocklab.io\"\n  }, {\n    \"verified\" : false,\n    \"id\" : \"446b40970722d2262ab7a252ea585aa3\",\n    \"username\" : \"Tequila.McGlynn@email.example.mocklab.io\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "c33d5bdf-bd7a-46b0-809f-817924182bfc",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.040605Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.user.list",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "adminUsers" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/EnterpriseUserWithVerified"
+              }
+            },
+            "nonAdminUsers" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/EnterpriseUserWithVerified"
+              }
+            },
+            "walletUsers" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/EnterpriseUser"
+              }
+            },
+            "kycState" : {
+              "$ref" : "#/components/schemas/EnterpriseKycState"
+            },
+            "incomplete" : {
+              "type" : "boolean",
+              "description" : "Set to true if the Enterprise has at least 500 v1 or v2 wallets . If there are more than 500 wallets (either v1 or v2) it could mean that some Wallets were not considered for finding all Users in the walletUsers field."
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 433
+}

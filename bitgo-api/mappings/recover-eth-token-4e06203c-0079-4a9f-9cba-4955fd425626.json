@@ -1,0 +1,83 @@
+{
+  "id" : "4e06203c-0079-4a9f-9cba-4955fd425626",
+  "name" : "Recover ETH token",
+  "request" : {
+    "urlPath" : "/api/v2/2f1dkdcisx5qty75m4d7j2wgzlim707qnuyyh22rnp0jxkka4oz3cqeftl6pgnhwo5iarum657pels1vmrpxw3qmb8rgf6yw3scz3oi35ovx7v9f7n09x7qmxmm52r0d3i5z54cn6fomgyuu31jn1ocfgummy88ok8oz1y21368nw0vpi4bb9gq771jh3r/wallet/7fff7da1ebf07478ed35462603dc7fa6/recovertoken",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"halfSigned\" : {\n    \"operationHash\" : \"frcq0vddg6c5e9br33ap86t0dtfokheijstjpm8fv3q9wz6fisc\",\n    \"gasLimit\" : 2336145183104516353,\n    \"walletId\" : \"d5822eadfb40ecefc0e13ef47ce0cee2\",\n    \"expireTime\" : 5423020965719787801,\n    \"contractSequenceId\" : 1391659596468826226,\n    \"signature\" : \"w71uq8a676wwe78qx9vihubghi94xkjry5o2lgrlqj23xzzf46t5ylqnjeoxswjt3qe7yzeupmn0p3tfjeklr8gub6mbjtzvjc3h3bl7j4dacel40ygtyjiwl69gz64t5jrbmiqappz71r7c9650x7olkc6531hz6wlv2uhv\",\n    \"tokenContractAddress\" : \"ujy2x13339e5gj4gzba0eofisy7tnrfnj2in0an3shdihsoky8aa4jvxp1l427t62xbf34ovzrr4zzh85fu25uyfwn0vo22pnlesd0hnh38rylnec0e0frbb2d8blyv35tfccozre4zj2wzp38h0ofy5\",\n    \"recipient\" : {\n      \"amount\" : \"3ft0113h6o867zxicagfrb17qqeyl80bc2i3bmh10mb9f\",\n      \"address\" : \"xc1ighqcowg93kmxesukafknqfko4fpp\"\n    },\n    \"gasPrice\" : 9084468130336665277\n  }\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "4e06203c-0079-4a9f-9cba-4955fd425626",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.469084Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.wallet.recovertoken",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "halfSigned" : {
+              "type" : "object",
+              "properties" : {
+                "contractSequenceId" : {
+                  "type" : "integer",
+                  "example" : 1101
+                },
+                "expireTime" : {
+                  "type" : "integer",
+                  "example" : 1550088020
+                },
+                "gasLimit" : {
+                  "type" : "integer",
+                  "example" : 500000
+                },
+                "gasPrice" : {
+                  "type" : "integer",
+                  "example" : 20000000000
+                },
+                "operationHash" : {
+                  "type" : "string",
+                  "example" : 94479202072599900000000000000000000000000000000000000000000000000000000000000
+                },
+                "recipient" : {
+                  "type" : "object",
+                  "properties" : {
+                    "address" : {
+                      "type" : "string",
+                      "example" : 472612950883136450000000000000000000000000000000
+                    },
+                    "amount" : {
+                      "type" : "string",
+                      "example" : "2400"
+                    }
+                  }
+                },
+                "signature" : {
+                  "type" : "string",
+                  "example" : 1951958881271255700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+                },
+                "tokenContractAddress" : {
+                  "type" : "string",
+                  "example" : 38941146273864216000000000000000000000000000000
+                },
+                "walletId" : {
+                  "$ref" : "#/components/schemas/Id"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 199
+}

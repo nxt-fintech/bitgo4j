@@ -1,0 +1,54 @@
+{
+  "id" : "0c3bd7df-f54a-4feb-8a60-c58b209bd685",
+  "name" : "Look up user accounts by their Stellar address or id",
+  "request" : {
+    "urlPath" : "/api/v2/xlm/federation",
+    "method" : "GET",
+    "queryParameters" : {
+      "q" : {
+        "equalTo" : "t8iskuzpoov82hnlpw8ckxxk"
+      },
+      "type" : {
+        "equalTo" : "name"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"account_id\" : \"s8p0\",\n  \"memo_type\" : \"cozfptup7stite8n6sggg9v2z16zszjw0turxhg6d6816p78mm65jz9ofj20yl\",\n  \"stellar_address\" : \"g4uoi9v2y8smdij5mtj2dsu1a45bq1uhzhqm81qzc7q6wbyx9it1hswfhp2mk903vahzb3j79e4e1mhwgc52lor2xdxtuddsgq2gxncipj1bicgyl3t4chbx1zmahrg5nad98hsfygy2x64kitt58lg5pswq5xx432jut5b6a9v9znfpi\",\n  \"memo\" : \"nytwt7gmy6wq9e0wbf9vpy4n0fou9ou9c4r8g79xuaeycnypt6hsvn6e4nugtawj0chzu1dmjsmvfvx8l43z5v0g7rcmb54lt50jnwz7pb7x95zhfgfkdig1dk5evwymu3f3ah9tw5dtraa080q45as5akdi4wivnxuoww1jc9pipiwpfbj2t064eo5lfozo\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "0c3bd7df-f54a-4feb-8a60-c58b209bd685",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.394989Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.federation",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "account_id" : {
+              "type" : "string"
+            },
+            "stellar_address" : {
+              "type" : "string"
+            },
+            "memo_type" : {
+              "type" : "string"
+            },
+            "memo" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 282
+}

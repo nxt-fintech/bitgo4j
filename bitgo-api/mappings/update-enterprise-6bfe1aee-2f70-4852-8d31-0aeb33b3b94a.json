@@ -1,0 +1,46 @@
+{
+  "id" : "6bfe1aee-2f70-4852-8d31-0aeb33b3b94a",
+  "name" : "Update enterprise",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/ca6aff1f07168b0ed6ae818389753f95",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"05r3\",\n  \"context\" : { },\n  \"name\" : \"Tequila Considine\",\n  \"error\" : \"r07iduuauf9c4tudv4v1aqqr081p2ouoi051l30rpnc9dkungjdhdncs2d4ufqz593gwpojdbfif8ppg3qbr7iixj3l5dvqal86pu70ldy28xssv0ftlc1s4woqiy1148c\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "6bfe1aee-2f70-4852-8d31-0aeb33b3b94a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.985781Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.update",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 438
+}

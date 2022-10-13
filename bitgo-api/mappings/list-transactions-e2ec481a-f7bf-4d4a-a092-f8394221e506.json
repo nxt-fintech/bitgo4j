@@ -1,0 +1,41 @@
+{
+  "id" : "e2ec481a-f7bf-4d4a-a092-f8394221e506",
+  "name" : "List Transactions",
+  "request" : {
+    "urlPath" : "/api/portfolio/v1/portfolios/8a4p/transactions",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"data\" : [ {\n    \"unitPrice\" : \"pnddxpf2337ay4s6usibqsi5v\",\n    \"totalAmount\" : \"kcqzs73y6wx3j0vfsbkdz3lz6d97e4ir1z0v6syan4hs1dpvkffc6u16phaqtha94e1zqvokiww26cnsz5j1wia1ds00lkz1xcln0xx9rqr1qzmr1t7le2swo9pli0n9uqzebc90yjd94i8ujuk6gyjg5c61bq\",\n    \"product\" : \"gdn7yad25bm2va7pfrq7itdobzck7o9e43us7gbzl8un7w6329rriqdi8bbmbfu3rantgqdyeo2s7tufvit4t5aja74fdsl8qq785riughetx7d6hace1yw7c\",\n    \"fees\" : \"8cf2vxv1bl97yn01wqrv5d\",\n    \"settlement_date\" : \"2022-10-26T04:29:55.533592Z\",\n    \"quantity\" : \"z72klsjvx2udziwpr42h2zc\",\n    \"subtype\" : \"3d3iht9eifsnw5xdisnhqi97g6pnjy4107gtu5xa2ywnagtaar59g5k4o2ht1d0hiwkriovhzg78xgcxkfsrzp\",\n    \"id\" : \"e040c88d-5cdf-48d2-9737-07966c3d2c0b\",\n    \"type\" : \"blockchain_action\",\n    \"trade_date\" : \"2022-08-03T04:59:55.53374Z\",\n    \"transaction_hash\" : \"900zilerfnktjfhk0uvahtjejirus48hull9yb56ho5ih7xyt8l6e0aiebjgiz5uou\"\n  }, {\n    \"unitPrice\" : \"ud9jqdj5sccwz8bzjbzd5ac9nwhkx2g272eyhb7c2liqowrhnaung7596guxq639cwjgi1a67tg09haz1q29c1n\",\n    \"totalAmount\" : \"xrh7w7u83wolidq6ls7rrfj9s3zc6538qg2mdvedqnyn6696rug5ftvcsp6vyajolb\",\n    \"product\" : \"lpqrt45z1dp6bzoja6x2aa1c9yse7qqr3jecxreteqm2ujkjpxtetb9srulzyqevpfv3pfzb211l3wx0efg9zd59ouilxdqaxo849yu637tegj4jc5dh6qvq23yju0ld1j2vxxd954vbf\",\n    \"fees\" : \"yt3otpgbxftsfc\",\n    \"settlement_date\" : \"2022-12-12T10:41:08.533984Z\",\n    \"quantity\" : \"hx5z2ipmde0hlljqtitl4w42w8i9gqlu11pn1ng93ph4jdagfmnhht65omwex98btb5k507imjaw4fhtr2a34vfmbleye2u1e29dt63jfwk5m6vumuncjhyza9i1vvbuojkmfgu9tsv8be5rvpmbd5b91a1gwww4qb8wlmabh3vjagtzb9249j73bsj\",\n    \"subtype\" : \"th2a3a124u6z1y5vptgrbmvwr74sqry78jpxau46onv15xg3p7o0x3j0zkdfoj58zikcn8ifiyx42gfxss3b7nvzzxmfggtkjqokn8i1471wqgll15pcyftx5fu9dh\",\n    \"id\" : \"e9b5efce-6a2f-43b7-93a1-40db72363cc4\",\n    \"type\" : \"buy\",\n    \"trade_date\" : \"2023-08-28T20:09:31.534137Z\",\n    \"transaction_hash\" : \"n2cknfemkedw1p7iog57rlgowiik3wy7oux37kfcpeij45eoagm6vh2etzep9zgr5\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "e2ec481a-f7bf-4d4a-a092-f8394221e506",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.534662Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "portfolio.transactions",
+        "schema" : {
+          "required" : [ "data" ],
+          "type" : "object",
+          "properties" : {
+            "data" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/Transaction"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 152
+}

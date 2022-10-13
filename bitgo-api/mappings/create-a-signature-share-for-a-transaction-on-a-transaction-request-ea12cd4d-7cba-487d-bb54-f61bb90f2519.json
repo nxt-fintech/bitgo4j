@@ -1,0 +1,45 @@
+{
+  "id" : "ea12cd4d-7cba-487d-bb54-f61bb90f2519",
+  "name" : "Create a signature share for a transaction on a transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/7c26fbb65b7f4c120c55ddf9be982085/txrequests/ffa33b7c39a0a8fdf646810c68c4c229/transactions/qut22jy9b9lg4erizi/signatureshares",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 201,
+    "body" : "{\n  \"from\" : \"user\",\n  \"share\" : \"usbrnzacaucpem0xvdoyi9co222flaq4z9aplggxf28moewjv0l6j3wfnsjvh83j2xfprf7quvv73aitejb74m7qecxdlkggfhjsrzftp4titznqi7l4by9m6ats5\",\n  \"to\" : \"user\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ea12cd4d-7cba-487d-bb54-f61bb90f2519",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.416639Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.transaction.signatureshare.create",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "from" : {
+              "$ref" : "#/components/schemas/KeyShareSource"
+            },
+            "to" : {
+              "$ref" : "#/components/schemas/KeyShareSource"
+            },
+            "share" : {
+              "type" : "string",
+              "description" : "The signature share."
+            }
+          },
+          "required" : [ "from", "to", "share" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 245
+}

@@ -1,0 +1,25 @@
+{
+  "id" : "320e99ec-fc29-4130-8882-1ddbf8f6f4c7",
+  "name" : "Update wallet - 403",
+  "request" : {
+    "urlPath" : "/api/v2/bd0bf503j8ab8mjduutx3mmntqr3idxuhgcs6koeajhko7obk63q71v8agwkjcnd19hnfkuyc0m6gkjc7x5qnyfp3ieoq5xxjsrb7v6x5p55bi1hi8py35cv9h4rzloaformhash2vz4uhes4mp15d8k00q0d0j9hp0dqlzwxwn0gh9zvkkdqn011c53g/wallet/bcf1ec163d7b98cd128fac3c8b15fab2",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 403
+  },
+  "uuid" : "320e99ec-fc29-4130-8882-1ddbf8f6f4c7",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.332481Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.update"
+      }
+    }
+  },
+  "insertionIndex" : 341
+}

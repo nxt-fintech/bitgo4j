@@ -1,0 +1,36 @@
+{
+  "id" : "d50676ed-6804-445f-a99a-c1d352efc802",
+  "name" : "Deploy address",
+  "request" : {
+    "urlPath" : "/api/v2/g6nk5q3t5oha3u6etlq9dqq84ttbp8men056jun191sg6yte46uii0m8a5l9uwsvno13dm9h3mr721ytirshhnfa1vg2dzyosj1hht/wallet/6b73798cc2bde508509a9b0d93323a26/address/a066cc70e2ebee9c416306d0afa4c7c3/deployment",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d50676ed-6804-445f-a99a-c1d352efc802",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.882323Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.deployForwarder",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 454
+}

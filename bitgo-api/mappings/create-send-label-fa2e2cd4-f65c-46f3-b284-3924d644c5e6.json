@@ -1,0 +1,51 @@
+{
+  "id" : "fa2e2cd4-f65c-46f3-b284-3924d644c5e6",
+  "name" : "Create send label",
+  "request" : {
+    "urlPath": "/api/v2/sendlabels",
+    "method": "POST",
+    "queryParameters": {
+      "coin": {
+        "contains": "400"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"1672\",\n  \"context\" : { },\n  \"name\" : \"Garland Goyette\",\n  \"error\" : \"btuu4c7disi7t7tiu3cptne598d2mbqunau7m6tuer2d\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "fa2e2cd4-f65c-46f3-b284-3924d644c5e6",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.397929Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.sendlabels.create",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 277
+}

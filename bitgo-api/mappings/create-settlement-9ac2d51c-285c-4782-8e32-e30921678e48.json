@@ -1,0 +1,87 @@
+{
+  "id" : "9ac2d51c-285c-4782-8e32-e30921678e48",
+  "name" : "Create Settlement",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/9tek/account/w8p7/settlements",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"createdAt\" : \"2023-09-16T08:08:41.571756Z\",\n  \"finalizedAt\" : \"2022-06-24T18:30:22.571839Z\",\n  \"requesterAccountId\" : \"5994\",\n  \"trades\" : [ {\n    \"quoteReceiveAmount\" : \"289qe34g68ejc3s3mzb41t0g2o0jo31spvd5qnl62zptvobaa1puxfwgm3br2h65r6u6kb6i8iuguhn23hyyx2vkpkw7xnmqh4crjrf6lhvpj30leyv9p7wiqvd2p3\",\n    \"externalId\" : \"te6q\",\n    \"baseReceiveAmount\" : \"94cfvfxj3f57dwhr4echwwr4eqbx260ddcwn45migble93sz35w28f00cdpmalg3w\",\n    \"baseAccountId\" : \"06mb\",\n    \"baseAmount\" : \"56vis11djw7d9mkpjum1v410dtgw3qln3e7fb1ypkswj82gbzi0odo3bz2t933z9ub05c6f97ne6id7q1tlpvnby3f90glsz8pdr\",\n    \"baseCurrency\" : \"TOP\",\n    \"quoteCurrency\" : \"XPF\",\n    \"baseReceiveCurrency\" : \"MDL\",\n    \"quoteReceiveCurrency\" : \"FKP\",\n    \"costBasisCurrency\" : \"XPT\",\n    \"quoteAmount\" : \"uvw0ofj23ofxf70fw719lcvavgd99nbiwvwy48q8i6g7tuypgrhsergthxw8thnw4nusvtlhgyt30g6nw5vrke228lh2n5r8yk5fpd8ad4bkmfumtm\",\n    \"quoteAccountId\" : \"lere\",\n    \"costBasis\" : \"3rg12aqfgf77ugesl158brrklvlp4aetbjp70qaa5wicv5vgayahf1je5mg8nwx748olbawgjzb32gnldl4ua94qu9og30kc6j\",\n    \"id\" : \"788e6bec-d2cf-44ad-b188-c46cba87ed17\",\n    \"status\" : \"failed\",\n    \"timestamp\" : \"2021-12-20T13:10:04.573804Z\"\n  }, {\n    \"quoteReceiveAmount\" : \"mc1d9jp0l2k6r19t4aetc5cwx8fl8u4km5wwv622mt6ed5jbniylzu8qvnpernnfxe7h2texeghlxpj4ed5oywh8i1e4t4vbdjij1slqh1pquv\",\n    \"externalId\" : \"wa5x\",\n    \"baseReceiveAmount\" : \"2xzloufjvzmr19morclkd0ffkt0ab3ri7iow1fh2xt6r4yuwfr8v7ckah8r9\",\n    \"baseAccountId\" : \"tb71\",\n    \"baseAmount\" : \"lwg0vyzox437ch1xxdigzom5uaimn4jl4r85w\",\n    \"baseCurrency\" : \"PAB\",\n    \"quoteCurrency\" : \"XFU\",\n    \"baseReceiveCurrency\" : \"LKR\",\n    \"quoteReceiveCurrency\" : \"KHR\",\n    \"costBasisCurrency\" : \"ERN\",\n    \"quoteAmount\" : \"kotcqw6o59tvkuh7bqvh7lp508lk6qldjixn7c8hw3076tep7v7z0d6n0670p5ro6au9gs61a1unglf3ixup6fp3gioxnnpue3vh913l5k1ri6txoh41i3pcg9adjkglbbu485vk24in8\",\n    \"quoteAccountId\" : \"psfb\",\n    \"costBasis\" : \"8xcj328ie71wo2na\",\n    \"id\" : \"7b923ed7-5eca-4d33-9aa9-567fb084d09e\",\n    \"status\" : \"failed\",\n    \"timestamp\" : \"2023-06-16T00:46:35.574848Z\"\n  }, {\n    \"quoteReceiveAmount\" : \"vi8nvbo\",\n    \"externalId\" : \"d3ru\",\n    \"baseReceiveAmount\" : \"kvpcntkp3j120fbcvwpgexobmyjvepqwhizuksa8knyw8upx8ltmi5q5wtao3lv1j7sxdtxyeqoyl1ussffvv2wdnyn97wlamn4kt\",\n    \"baseAccountId\" : \"w04i\",\n    \"baseAmount\" : \"dfu0beesyte6dt498gzq3jnieiefbaq8vebexfuz8nx22xpf3o1toe96qfjv3by1k4hoadv4edge3gtlmpeyuwp5cnz124asjmqp2pofojxf5uatfkpwyv8wvxdagnx3q275a76j2mzcfe9scw5bax6z0hftj647jeotk6omzxem99leesw04emibfoa\",\n    \"baseCurrency\" : \"IQD\",\n    \"quoteCurrency\" : \"PLN\",\n    \"baseReceiveCurrency\" : \"WST\",\n    \"quoteReceiveCurrency\" : \"ZWL\",\n    \"costBasisCurrency\" : \"AFN\",\n    \"quoteAmount\" : \"dqepgwv7a42y8d974ldwalc73qnb713dwkc6h0hw9f3fsntlxhdbq0lx1aapoeuo3zwgic5du9qzmzotsk6ueyl6y6if9l2xjrzrdcnu9g0tnqjquy7jthn0ruwemmkqwcrsxj4qux6d67tkezsl7uocwiu58z0al65bfmgbcp6ogsfuaj0hlg\",\n    \"quoteAccountId\" : \"13qq\",\n    \"costBasis\" : \"30iqzdo65l8pph9br232qgcv9yhxypok3lvworlhwcl58efoyqng8v9ornmv3cynh5je4y3y3u7xg52d9ntj3o09j5be6c7ezs084jdghiqlnnn8peh7zqy2tay8o4x6eyg4ua49o1yenz\",\n    \"id\" : \"bdc1da7a-1d2a-49c4-98ff-85b5bfddb796\",\n    \"status\" : \"settled\",\n    \"timestamp\" : \"2022-01-13T14:30:46.575942Z\"\n  }, {\n    \"quoteReceiveAmount\" : \"fohbpylbhmn1wkva0g69swb98r119n06mfitt3e0aqow1r4s8w5hvgeujazv2bbvwtr3cjf6rulyftud5x12nfjub01klsd9p2c42n9yw63\",\n    \"externalId\" : \"47l8\",\n    \"baseReceiveAmount\" : \"br6w6ju51716g1rjpckpqek7lpwaf6dwi6axckxm1swct2qerb99tdd9mif81exk4hry1hne5y8f4tkb9310f9nu8epd6pycbg7ggez37dm8spe3f2javoa4\",\n    \"baseAccountId\" : \"343p\",\n    \"baseAmount\" : \"9iyhlulwr43dkqnbdocu6s3kk2bph6fksfbh4i1cpc305txca6czuiygdlucf21ktn3mdz0pqkenlevsvph\",\n    \"baseCurrency\" : \"CHF\",\n    \"quoteCurrency\" : \"AED\",\n    \"baseReceiveCurrency\" : \"INR\",\n    \"quoteReceiveCurrency\" : \"ZMK\",\n    \"costBasisCurrency\" : \"BBD\",\n    \"quoteAmount\" : \"0anyqldxx0m9tsyabse4dn79gau14ibvp835dhxp2eveq1bi2fcl5xgoq59t1h7q7caurarjqvpu747isttvrykc453v4awkmtge2h7dw7ove6imqqjanwtsnlvarvy8vcn0gmhuscj2askabj2hd9eiy53nlpxt1ot9nlam30bmebtacnk9hi7px9ke\",\n    \"quoteAccountId\" : \"l8n6\",\n    \"costBasis\" : \"yucdjs94e1xkfb012kxvfs4cjr5tos1cqhe355affv1cnt0lj924qbixqig3yi58yfvlz76ilc8ivgr1ick4nul2c64dagolgbuccqcffc6tf\",\n    \"id\" : \"57fd26ab-c515-43d0-8d9c-2663e78bcc01\",\n    \"status\" : \"overdue\",\n    \"timestamp\" : \"2022-12-08T22:23:22.577041Z\"\n  }, {\n    \"quoteReceiveAmount\" : \"82b6nmt1qtiguzbpozqr0xtxw8sw9k5kjodex4k036bm4km5o3kn2yz8r5hoqpkplnvfmleqg99ltcm2gibmcgrf7vofdlidlm9s7usgsd7ejkj2h\",\n    \"externalId\" : \"e87y\",\n    \"baseReceiveAmount\" : \"e6l8uy2ed6k54bjsxskfcth62f69ij1ifo29ctehmp4el6myepqydwq8ga40lha82pqrz5daiy0a5siuna5ihu5oiyb3nmmi6chhlagndyh2cnuc\",\n    \"baseAccountId\" : \"rnm8\",\n    \"baseAmount\" : \"s841ju34kpvleu8v8ae4hb6ec2wjkk9rwnwsyz0afehdn5sg6hf423e2tcbesdfp2zpmy6vp0shk6ligsa1kzvg9v38mwg\",\n    \"baseCurrency\" : \"BRL\",\n    \"quoteCurrency\" : \"BAM\",\n    \"baseReceiveCurrency\" : \"BHD\",\n    \"quoteReceiveCurrency\" : \"UZS\",\n    \"costBasisCurrency\" : \"GHS\",\n    \"quoteAmount\" : \"607cfupsldxz4fbr3evpuher8xolj59ewdyb04fedpbdyc8xobgeurplcum92iq9fnaf783tarew0ox66vkxlhsz72vtnsp0avba0ge1wfjga1zzjy2jqiczljgvyv1uer3ydvdq8ex2bqozdxy6nj6pv0kh7648pscb8fy4wyo54p1dmi5klnsjzkzi9m4ugi\",\n    \"quoteAccountId\" : \"86t2\",\n    \"costBasis\" : \"v1exwou093suasn3spxr2swnt6xcv51xc7vwl4rrjcplhe204cgsolx6bg1gbf\",\n    \"id\" : \"708cc70b-3299-4653-8f75-e40f6c71a13b\",\n    \"status\" : \"pending\",\n    \"timestamp\" : \"2022-11-13T22:04:06.578257Z\"\n  }, {\n    \"quoteReceiveAmount\" : \"s4oq48x5r39no36rczu9smd7hsq358sprevv1sc1cpq7jyfmd1nnzw33juz\",\n    \"externalId\" : \"w2od\",\n    \"baseReceiveAmount\" : \"iy5i2emckhgumufawfyxfh70pfgm86kpuv9xm2qs44m4ot04574dojfyo5jvkvjiqjng02zase6tclt\",\n    \"baseAccountId\" : \"82n0\",\n    \"baseAmount\" : \"z14ll7x5rucdavp2u4v5sl3slm3ny9rswv2v0en77r1bfpm9x2w5vd4ts6n9sv71yg41kla95zdpr93hk5ilb00pnzdwfhr3eag489fwmear2eq4uwp5zmg5bd9o4ap0szrm9l0la0j3hx\",\n    \"baseCurrency\" : \"CAD\",\n    \"quoteCurrency\" : \"NPR\",\n    \"baseReceiveCurrency\" : \"BRL\",\n    \"quoteReceiveCurrency\" : \"SDG\",\n    \"costBasisCurrency\" : \"SVC\",\n    \"quoteAmount\" : \"wvhwi23ytyetzbx52zjt9s56i2l5yilz1bfkklds9lxey9fajt6tae590wgcf9gfzs8qyh9hzi1z6n0c7y7y55u5jutgbic4yrlvkbb1sdh3fn3uuzxsrvb7nc9hizhjavavhvsdnfyrh67wlzdvuq85nnworov0c4alb8ank3z64f1pf\",\n    \"quoteAccountId\" : \"sdjc\",\n    \"costBasis\" : \"l8wyd8jni4zpsdriulm3oujmatfue84ljdywhoa2p1qfwu70c8ywsyytxi8xf115yqx5mb9qh3qsb8135l4u\",\n    \"id\" : \"4107ff21-44d7-4cb8-9f57-2a0b12bfe597\",\n    \"status\" : \"failed\",\n    \"timestamp\" : \"2022-02-22T20:47:49.579439Z\"\n  } ],\n  \"id\" : \"5e7d6b78-90fe-4382-bb24-c4f176e51263\",\n  \"affirmations\" : [ {\n    \"createdAt\" : \"2023-06-11T15:33:04.579549Z\",\n    \"payload\" : \"wogkrlcjvcwa21lt\",\n    \"signature\" : \"ntntvyuq1mhz9b052v1h5dvfqaw2znb3f0jbgmh7yixz122v1xxktzn6tv8s5o54nzlylrkix448xii3riyzefb2gbtzchglo3lm44dn4kc111cuvi32wb5y6noma6ez1zd4xjz66kv8t14t27d8blb2rlgmlad3ajn02yywcqexsizy3v86yq0hgru666w3o\",\n    \"counterpartyAccountId\" : \"82a872f6-e719-439a-bdda-1ecc5f117155\",\n    \"counterpartyName\" : \"Tricia Herman\",\n    \"lock\" : {\n      \"accountId\" : \"8m1p\",\n      \"createdAt\" : \"2023-04-12T09:09:40.580006Z\",\n      \"amount\" : \"x7m2jcu05raq2wvu1a7oqb07r7plgwvpas0\",\n      \"currency\" : \"PEN\",\n      \"id\" : \"bf812915-883a-4bd7-8920-b9dc878744f2\",\n      \"status\" : \"released\"\n    },\n    \"id\" : \"bf549d5b-3592-4f76-a40f-e2186452f0b3\",\n    \"expireAt\" : \"2023-04-24T13:50:09.580196Z\",\n    \"partyAccountId\" : \"49a4bc24-e9c7-4508-b920-28301444bfe0\",\n    \"status\" : \"affirmed\",\n    \"settlement\" : \"900fb61c-a052-45c6-968c-bd71a83c04d8\"\n  }, {\n    \"createdAt\" : \"2023-02-13T11:03:02.580314Z\",\n    \"payload\" : \"mygf79fp9vc62jtszxfvj1men57lyr2e6sg1ajb3diar6zd1rmhpznovag71bud4xd5xp5hw1bxwm9nzbrtn9nu6w8af7ncm4v1fg7r6m62\",\n    \"signature\" : \"cxentzk2fvn2a4sp7kj2o2ts8c\",\n    \"counterpartyAccountId\" : \"45c6259f-fc45-4a0f-9a26-912576cc6c1f\",\n    \"counterpartyName\" : \"Ricky Hoeger DVM\",\n    \"lock\" : {\n      \"accountId\" : \"eczy\",\n      \"createdAt\" : \"2022-12-31T10:40:07.581Z\",\n      \"amount\" : \"gt7mu20q3ppygwb7t8kqf6cftk43wbvlh0kbzzi3nf4ipteyw50wp3yh4glchkxlv8oqo06nwbb5m8bzhlxd97sms8nuw1ryl4y2rjzwawdingfkdz2tplm42jaw4ppr4tgot26cmqn2\",\n      \"currency\" : \"ANG\",\n      \"id\" : \"88fd5cea-1a73-4bc2-8884-3e82b3fbd7ef\",\n      \"status\" : \"active\"\n    },\n    \"id\" : \"dcfe3111-5bab-4292-af46-68ba0e498162\",\n    \"expireAt\" : \"2023-04-09T18:53:43.581196Z\",\n    \"partyAccountId\" : \"45314f26-51b9-4aa1-965d-8dc789a54b71\",\n    \"status\" : \"canceled\",\n    \"settlement\" : \"4141696a-0627-47b8-84ad-747bfd23ae1d\"\n  }, {\n    \"createdAt\" : \"2023-07-23T13:30:41.581291Z\",\n    \"payload\" : \"llq\",\n    \"signature\" : \"ohcdfc9f0c57dbeis1md0ysa7q1jmj6np7q3p103st9nl4g6xeiwi8xweucw75u9vb4ks38ffx1ilw5iymzol9er5mmqs0yh3c6bu0bu031hyyeuhxaojqjix32mv7vj8uz10mccw777t8hydcv93alrewxohoiy6yoemm392idlg\",\n    \"counterpartyAccountId\" : \"e15e1244-5d9a-4111-b2de-679e4d7cea58\",\n    \"counterpartyName\" : \"Ms. Louis Wolf\",\n    \"lock\" : {\n      \"accountId\" : \"knoj\",\n      \"createdAt\" : \"2022-03-11T21:23:29.581778Z\",\n      \"amount\" : \"gvuwfz0cicssjjcw27tnxduet5mfsthnqcz4izmwds2sv7bpz2ld2kl24qs05254j\",\n      \"currency\" : \"DZD\",\n      \"id\" : \"9fc238c3-e2d1-4fcd-9cb2-827810996763\",\n      \"status\" : \"settled\"\n    },\n    \"id\" : \"c2716c9d-fcfc-4827-b744-65ee35b126e1\",\n    \"expireAt\" : \"2023-01-18T00:45:02.581959Z\",\n    \"partyAccountId\" : \"7ed4e972-3ef9-4d7d-b910-a9cd146aa635\",\n    \"status\" : \"overdue\",\n    \"settlement\" : \"f5b299da-2d2e-46f8-b27a-8fa2b98de31a\"\n  }, {\n    \"createdAt\" : \"2023-03-01T13:17:02.582048Z\",\n    \"payload\" : \"qfzzvotuadi6jmblubtiskces0q0e90032lxmhp8ouysbq7phua6rus21gq8qi368lto7eqjxzlcj7hn8del7muegjgcmn190b3cynrfr5idtg0b97amidnodgt8ry\",\n    \"signature\" : \"jc0i2ejxs7qtnwrytx9be87cpriz0hafnhjl3suc4n70sah4okl9u7cbhzc4sj3jurvru2u9o0e8o1ewv239y8l7qreviwdxmz12kwp8rhkkwxuoz0prm8ayzg491f0r988k5adxcnwd8u86u9ai8hziu9juaavv9jk5wfk81kyrr758xafrd4ge\",\n    \"counterpartyAccountId\" : \"88b3c202-e74d-4e82-a3f3-85ea8481b95d\",\n    \"counterpartyName\" : \"Ms. Kelsie Cruickshank\",\n    \"lock\" : {\n      \"accountId\" : \"p9ic\",\n      \"createdAt\" : \"2021-11-28T20:44:18.582474Z\",\n      \"amount\" : \"ovc4gpaxk1dv13hkyxfgbsk4cbds6f8qhk8fynxx6lrusz4nbw1vi6hgxg62vqp8au5fc5wt3k6nfh5wtnim418u8itwub757am2i0x6p9fnkf4awd95fzb3dwhb9cgxqgwnsi7jn6qnlb4hprypgnd6tz78a7pt1fnlp5ah1kaxbozy3xywz1anfz2x6ajgz\",\n      \"currency\" : \"MYR\",\n      \"id\" : \"70e6fe58-c2e6-406c-9e07-f42aeb20f9bc\",\n      \"status\" : \"settled\"\n    },\n    \"id\" : \"77572b06-dbb7-4840-91bd-c40a3063ceb7\",\n    \"expireAt\" : \"2023-01-27T11:16:28.582667Z\",\n    \"partyAccountId\" : \"636302aa-3c12-46e8-b4ad-0a65436a64eb\",\n    \"status\" : \"overdue\",\n    \"settlement\" : \"5d094018-4681-45c9-809b-904abb7e98ff\"\n  }, {\n    \"createdAt\" : \"2023-01-31T08:13:35.582765Z\",\n    \"payload\" : \"268v9d8j6hwjqfq2dt40nhqppir09\",\n    \"signature\" : \"xyrbnr05ep7hz276y\",\n    \"counterpartyAccountId\" : \"0896f994-899d-405e-855f-cfe5de500aca\",\n    \"counterpartyName\" : \"Gayle Price\",\n    \"lock\" : {\n      \"accountId\" : \"9f0q\",\n      \"createdAt\" : \"2023-04-17T15:03:38.583168Z\",\n      \"amount\" : \"o72yv19ismzfmtzya0b4nznuexwzbs16q496gyt9hf1w36r96ctk8n9ggey2uk93936v6mpf0jxg63d6tru3z01yl75cg3hql8wpqtiqu60q4ov63zat75yj71hb5rf1mgn5ztqnx4xzgse9sbir9nylio4q4w01p94dnl257d\",\n      \"currency\" : \"AFN\",\n      \"id\" : \"c89eb171-e31f-4e99-8bef-da7974ba03af\",\n      \"status\" : \"requested\"\n    },\n    \"id\" : \"9d46a6e3-93a7-4f2f-999c-1c3db9883e27\",\n    \"expireAt\" : \"2023-06-16T06:28:01.583342Z\",\n    \"partyAccountId\" : \"f0e16161-ea0e-4475-8c85-3e417c7be4cf\",\n    \"status\" : \"canceled\",\n    \"settlement\" : \"6797cac9-bfc2-496c-8a2b-d4c8b7b92fe3\"\n  } ],\n  \"type\" : \"direct\",\n  \"expireAt\" : \"2023-04-17T15:36:48.583475Z\",\n  \"requesterAccountName\" : \"Kamilah Barrows\",\n  \"status\" : \"canceled\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "9ac2d51c-285c-4782-8e32-e30921678e48",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.584379Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.settlement.createSettlement",
+        "schema" : {
+          "title" : "Settlement",
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "string",
+              "format" : "uuid",
+              "description" : "Settlement ID",
+              "example" : "5be99b8a-6eb5-4ed6-b135-894bb22c5454"
+            },
+            "requesterAccountId" : {
+              "type" : "string",
+              "description" : "Trading account that is requesting settlement",
+              "example" : "5caed8b6e9abd8e865e3a942a74967d3"
+            },
+            "requesterAccountName" : {
+              "type" : "string",
+              "description" : "Name of trading account that is requesting settlement",
+              "example" : "Enterprise A Trading Account"
+            },
+            "status" : {
+              "$ref" : "#/components/schemas/SettlementStatus"
+            },
+            "type" : {
+              "description" : "The current status of the settlement",
+              "type" : "string",
+              "enum" : [ "direct", "agency" ],
+              "example" : "direct"
+            },
+            "affirmations" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/Affirmation"
+              }
+            },
+            "expireAt" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "ISO date string"
+            },
+            "finalizedAt" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "ISO date string"
+            },
+            "createdAt" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "ISO date string"
+            },
+            "trades" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/Trade-2"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 131
+}

@@ -1,0 +1,43 @@
+{
+  "id" : "9be28564-c4f5-4eef-8c61-bb90b251a33d",
+  "name" : "Act On A Transaction like sending a transaction",
+  "request" : {
+    "urlPath" : "/api/staking/v1/x99o2kh5b0z21av1o2gjn8vn08fo7ghxm9k88i26wl9z3y89bx20q81hifwka5w87g1d6t1ah1a5d4dpq98v/wallets/7k27/requests/yp4p/transactions/99i3",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 500,
+    "body" : "{\n  \"code\" : \"Internal_Server_Error\",\n  \"message\" : \"Database is down\",\n  \"status\" : 500\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "9be28564-c4f5-4eef-8c61-bb90b251a33d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.653469Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Act On A Transaction",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 66
+}

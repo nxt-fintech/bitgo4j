@@ -1,0 +1,44 @@
+{
+  "id" : "70cc816a-d68f-42a0-adf9-e46566975948",
+  "name" : "List transfers on all wallets in an enterprise for a given coin and block height",
+  "request" : {
+    "urlPath" : "/api/v2/lpqwifq6w9sk6bh088/transfer",
+    "method" : "GET",
+    "queryParameters" : {
+      "enterpriseId" : {
+        "equalTo" : "b3bc2f58b15d2e3d32dd4fa3e0082191"
+      },
+      "height" : {
+        "equalTo" : "-950493025011124184556649153680528665057955214951311288557541959129629617467818323376931630"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "70cc816a-d68f-42a0-adf9-e46566975948",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.170063Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.listtransfers",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidEnterpriseId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 404
+}

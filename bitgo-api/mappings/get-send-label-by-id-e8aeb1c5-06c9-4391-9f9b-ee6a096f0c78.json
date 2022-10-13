@@ -1,0 +1,46 @@
+{
+  "id" : "e8aeb1c5-06c9-4391-9f9b-ee6a096f0c78",
+  "name" : "Get send label by id",
+  "request" : {
+    "urlPath" : "/api/v2/sendlabels/f2af46f44434273337407c54efc7dd0c",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"qpg5\",\n  \"context\" : { },\n  \"name\" : \"Delorse Leannon\",\n  \"error\" : \"hf148szahm8p86n8ly1tpi786jmw4gc23wn2i9b8fenwlfcxbuojv\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "e8aeb1c5-06c9-4391-9f9b-ee6a096f0c78",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.399173Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.sendlabels.get",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 275
+}

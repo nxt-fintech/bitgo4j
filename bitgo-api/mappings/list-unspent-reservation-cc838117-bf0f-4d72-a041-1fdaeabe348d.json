@@ -1,0 +1,46 @@
+{
+  "id" : "cc838117-bf0f-4d72-a041-1fdaeabe348d",
+  "name" : "List unspent reservation",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/3185a147d34a6bc42d2b5eeb832c98fe/reservedunspents",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"0m84\",\n  \"context\" : { },\n  \"name\" : \"Claudia West\",\n  \"error\" : \"zuphem0gb77l\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "cc838117-bf0f-4d72-a041-1fdaeabe348d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.361726Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.reservedunspent.list",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 314
+}

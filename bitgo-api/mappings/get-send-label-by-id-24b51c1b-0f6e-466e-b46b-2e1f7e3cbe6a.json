@@ -1,0 +1,51 @@
+{
+  "id" : "24b51c1b-0f6e-466e-b46b-2e1f7e3cbe6a",
+  "name" : "Get send label by id",
+  "request" : {
+    "urlPath" : "/api/v2/sendlabels/5d496a4d3eca1072a73357059eea3987",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"address\" : \"2ohnscubxetcnjh3yi6cdmp1wf7ub0cwvqstthpdpy9f4vwpdqm52xpt631jhmh4chazgc8hiu9uzzfzususn1nildk7gtbpjrf045yfub1vqqawn3kd0kibjqli39g4n0qyysn4kl09bk9low5oww9dqufb7un3xmjf266fdfznnh0xkjn1p8u3x8r4o0jhovzt4\",\n  \"id\" : \"ce890d8c7c5aebf00b2a5713d4bfec80\",\n  \"enterpriseId\" : \"2847004d6c26607ba4528a0e5b643958\",\n  \"label\" : \"eius\",\n  \"coin\" : \"s1uil54q\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "24b51c1b-0f6e-466e-b46b-2e1f7e3cbe6a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.398344Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.sendlabels.get",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "coin" : {
+              "$ref" : "#/components/schemas/Coin"
+            },
+            "address" : {
+              "$ref" : "#/components/schemas/AddressString"
+            },
+            "enterpriseId" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "label" : {
+              "type" : "string",
+              "maxLength" : 250
+            }
+          },
+          "required" : [ "id", "coin", "address", "enterpriseId", "label" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 276
+}

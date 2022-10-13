@@ -1,0 +1,37 @@
+{
+  "id" : "cbc6d387-b2a7-4c27-9711-7ba87189ba8b",
+  "name" : "Lock session",
+  "request" : {
+    "urlPath" : "/api/v2/user/lock",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"session\" : {\n    \"expires\" : \"2023-07-08T12:18:54.256498Z\",\n    \"created\" : \"2022-10-29T04:30:55.256545Z\",\n    \"ip\" : \"uwlkv93ml1sed2d6hojkqi5hwevjz7fkufubbj9az26e4beelz9t9axggn43729rfby3xtk1ugsh2myi3sg18pwunfj61hnnk6scj5gl6s9f5icgwjz1hmq5ar3bdkm5uilvc19nsk93nksy\",\n    \"origin\" : \"40do7hd3t9dmvqhz8e3mzncrhb1y1s4\",\n    \"scope\" : [ \"knrbzx7rzuubgur5ej69qamoc6g7hh2879m5iv1ymic6bmidpxos642mhjcz8a1hizb6v1k1d4etq43nkl3sdgeefzxavmps3elra86fpvkffsn1l336cay84qt6jmvus8xvib6a573n35ywjul5j4ek4krxg\", \"bwn0g1ezxrh3arpjnt8yk0067fisdvoqz2ol1a7oaw3ua1akk7r2ux60bwoj1uxmqsvexc08yese69wv8z3hy1jx0gocgku41jk7ybe2wez68n8zw6m9ksugt40puri6nf3snsovxkxc7ntkwvxftukxzg60jplcmjgc8p6dtajew9w68b4vjc44l\", \"ehjd3rv40l\", \"1m9zg9wakks250iuheol6q9f1z17o2l9dljuxb359ao340u1s6q0wu92llbi0n2wyon59v4rwxpazfmi90x8lz2soq2h192xlupb2edgmootwlura44x68vv5972z0wn0oi1setahkfegqrcylwdk5en1bi36o8raaekl1o7r1qnaa3gdwkbtzqvyv\", \"scly6ittj2n6wleme0cn2rp70jxvm83tmohr2s5pf5ed46qlgghxc6yjo8dx6wkykubuf549ch5yz35ds762iezsbq3nevqmbg0itupcj4j6twjunmnui45kujpdy121zzvol2xg7pv0gnx0030y6cwx5tx8q1j7zor7qab0usn9\", \"hagys6oxxhzfgd93k7iks5kwbzkoqbn7ugj1he721h5x82880fpdzbnmzj2tvqu82ampmw8um1pzgc4xpxno7j2c6qoesuueednsnt2sbbuju1kl9xbt\", \"v4h7zu0vsabk7lu48gbllnepd8ykfe5jaal29hldsk3td93p2iycwoy38hlgzf2vj6zzmtxs7uukbfthzsxo7z3o0kq9fvxr2r8mgpd95ua\" ],\n    \"ipRestrict\" : [ \"1v5ibhcbgbkx6469ulzzql9l7g0vmacpml5y7k7be4a525id5o947vm7deptm35o1rti6ic4ygbeyy6y7k44yjj736cukp754vcupsa1ntd8n\", \"skqmwod7c91qi3girk4qa8vl2reeaj8w9uzh4hpw5wkhpj4bq5z50r34knw8wnxpa6xd0zfht27e20ssdeyeb5l8tp8l0r57dliqg3t2e01pvww96bxa4qb1zbd6r\", \"xr8pzjrqen3isebkgdx6wii423y2l8phcrxengdiicdi48b2c3kl6mqoxkzplpaoygs89s4r9dw7\", \"019sijm81lty8f7akxohfa6hp6pof8vmtx46v7ygdy89p89si2gprqz9sg1td5woan3ov0phy111moroelrvo2gs72jl94r2zxzqabzbc6reiyoltzdndhjeqsl4vb8kkdv1v4reja64u22dqhldfgzenxvbeyrmxlkg3u\", \"o7qcwb7u516eb7fy9kil62irk15d6fy2qhndjc\" ],\n    \"id\" : \"5ac57496f451ad2ebe3375804f30722c\",\n    \"user\" : \"db00fbd57dff36d66aa060138b45f61d\"\n  }\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "cbc6d387-b2a7-4c27-9711-7ba87189ba8b",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.257092Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "user.lock",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "session" : {
+              "$ref" : "#/components/schemas/LockedSession"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 359
+}

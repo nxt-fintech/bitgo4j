@@ -1,0 +1,36 @@
+{
+  "id" : "5b7466a0-3602-4025-a6aa-136eca198df1",
+  "name" : "Consolidate unspents",
+  "request" : {
+    "urlPath" : "/api/v2/4338t3vjio59dbpm3c1zqaxgvihhig12lkwqht7b4hut8os96tcgb7kko21f8gpsardox3n6dg5ua257jys307u2067cai0o0ru6ji8/wallet/0742b7c29bc4188cb2a90ae13e27176f/consolidateunspents",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "5b7466a0-3602-4025-a6aa-136eca198df1",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.474343Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.wallet.consolidateunspents",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 194
+}

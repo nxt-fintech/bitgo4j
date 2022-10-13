@@ -1,0 +1,32 @@
+{
+  "id" : "8cf8d8e0-cf76-4027-bda1-1e8af0691636",
+  "name" : "Add user to enterprise",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/5c73b8f95cadb1a10875856371c0d517/user",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "8cf8d8e0-cf76-4027-bda1-1e8af0691636",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.052147Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.enterprise.user.add",
+        "schema" : {
+          "type" : "object"
+        }
+      }
+    }
+  },
+  "insertionIndex" : 422
+}

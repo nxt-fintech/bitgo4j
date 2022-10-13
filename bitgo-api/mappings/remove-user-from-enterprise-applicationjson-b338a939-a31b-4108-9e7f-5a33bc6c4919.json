@@ -1,0 +1,45 @@
+{
+  "id" : "b338a939-a31b-4108-9e7f-5a33bc6c4919",
+  "name" : "Remove user from enterprise (application/json)",
+  "request" : {
+    "urlPath" : "/api/v1/enterprise/404101a7e634623e0cb733bcc964d968/user",
+    "method" : "DELETE",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 202,
+    "body" : "{\n  \"pendingApprovals\" : [ {\n    \"approvalsRequired\" : 1.5748715077626378E308,\n    \"walletId\" : \"9f93\",\n    \"creator\" : \"88112de26ff40cd25039721cdcd9caeb\",\n    \"enterprise\" : \"f985295c91cadd0330ab278858fac0eb\",\n    \"bitcoinAddress\" : \"v55o799aohexbthfs\",\n    \"id\" : \"75ed54f9c7bb70006989e355d74ccaf8\",\n    \"state\" : \"approved\",\n    \"walletUserIds\" : [ \"19474a8a39f39e56e649b2884fec2b4d\", \"78eeed074a5bf4bf1269622b154a1117\" ],\n    \"createDate\" : \"2023-03-28T01:52:29.048502Z\",\n    \"info\" : {\n      \"type\" : \"updateEnterpriseRequest\",\n      \"updateApprovalsRequiredRequest\" : {\n        \"requestedApprovalsRequired\" : 7.800512573535955E307\n      },\n      \"updateEnterpriseRequest\" : {\n        \"permissions\" : [ \"admin\", \"admin\", \"admin\", \"admin\", \"admin\" ],\n        \"action\" : \"remove\",\n        \"userId\" : \"3767115f2bcf44eaf7142c707ceea6d4\",\n        \"email\" : \"Forrest.Stehr@email.example.mocklab.io\"\n      }\n    }\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "b338a939-a31b-4108-9e7f-5a33bc6c4919",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.049774Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.enterprise.user.remove",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "pendingApprovals" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/V1PendingApproval"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 425
+}

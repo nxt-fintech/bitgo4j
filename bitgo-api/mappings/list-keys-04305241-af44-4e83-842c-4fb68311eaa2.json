@@ -1,0 +1,46 @@
+{
+  "id" : "04305241-af44-4e83-842c-4fb68311eaa2",
+  "name" : "List keys",
+  "request" : {
+    "urlPath" : "/api/v2/nvb8xbx9uipilkn8wt9dgmnvyp75twjyhzdet/key",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"yk6i\",\n  \"context\" : { },\n  \"name\" : \"Melia Predovic\",\n  \"error\" : \"rw0vbjdjtsddlbpibydn5hcjv4pkludnnxsqbygl5mng785hlb5djk7ueeklxg69oris0y3pbgdczybzescx0ukp8grpyieg6gh3mum0iotl\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "04305241-af44-4e83-842c-4fb68311eaa2",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.185738Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.key.list",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 388
+}

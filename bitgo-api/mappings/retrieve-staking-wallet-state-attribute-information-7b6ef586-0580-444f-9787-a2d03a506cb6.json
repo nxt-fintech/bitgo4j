@@ -1,0 +1,43 @@
+{
+  "id" : "7b6ef586-0580-444f-9787-a2d03a506cb6",
+  "name" : "Retrieve Staking Wallet State Attribute Information",
+  "request" : {
+    "urlPath" : "/api/staking/v1/bvv5c7d1l5ow2hqfl0mdejhwfopyj7dlpj4zqkrhah2gc07w41aay51w3jnzzhggfacrgj9i54/wallets/exzn/attributes",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"code\" : \"NotFound\",\n  \"message\" : \"Wallet not found\",\n  \"status\" : 404\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "7b6ef586-0580-444f-9787-a2d03a506cb6",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.673528Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Wallet State Attribute Information",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 26
+}

@@ -1,0 +1,92 @@
+{
+  "id" : "ee59b01a-7baa-4391-8d23-0d17101d2628",
+  "name" : "Get Settlement (application/json)",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/g580/account/8il3/settlements/4611",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"createdAt\" : \"2022-05-12T04:21:32.603192Z\",\n  \"finalizedAt\" : \"2022-08-30T22:08:40.603213Z\",\n  \"requesterAccountId\" : \"iycv\",\n  \"trades\" : [ {\n    \"quoteReceiveAmount\" : \"ylvtj7jveozh3066clzimojh4gtdsdii11qa35hdpzb4lzxdb4gm4p9wepobo4712k33v9ln91y8s4ct4buyr80pp6\",\n    \"externalId\" : \"91qc\",\n    \"baseReceiveAmount\" : \"kcb9zev9h3jugdyh6ib2q3ozwkw91e5a58d0ir4zq0bs0h\",\n    \"baseAccountId\" : \"v9vn\",\n    \"baseAmount\" : \"xljwqegdbusmo39e0ay1rsg69o1wvhq380ob5o5ip15knbxpl8wybbzkelregh3hpvlf687ai6azmg9szm8hjfpjdq8rifne8blsqsh5f9os4x\",\n    \"baseCurrency\" : \"JMD\",\n    \"quoteCurrency\" : \"TOP\",\n    \"baseReceiveCurrency\" : \"KRW\",\n    \"quoteReceiveCurrency\" : \"BDT\",\n    \"costBasisCurrency\" : \"KRW\",\n    \"quoteAmount\" : \"3bo339wutrftzh2akvqjisdbullfs2sw0op1p76e0c81kfrymfyr07vt1d7tcqvrdxscgtl8nhvi9vhxm9h96w37qome9up9oxxvmq0irfx5cbwd6086wzujlx9zrkns383i1kjen4a9a8osx5vde87br9wsa5bs6b7me9b7beif2uec4u9jkniyj61gyk\",\n    \"quoteAccountId\" : \"njac\",\n    \"costBasis\" : \"gfy\",\n    \"id\" : \"afff53b0-c870-4393-804b-14cb96da219e\",\n    \"status\" : \"failed\",\n    \"timestamp\" : \"2021-11-15T20:30:28.604583Z\"\n  }, {\n    \"quoteReceiveAmount\" : \"5eq5d2e998l1aaisf3yytj66jhyrjf2fya9d01i9598ynr3grm1oz3oiavty0cpqyw10yz7rg9hszpu03gvlxxxzylwcqg67royme6uftrkvzrl3beh3shz8n0kkl\",\n    \"externalId\" : \"ivg4\",\n    \"baseReceiveAmount\" : \"s47zzm4toxtu34ilinh69xflya4ht1cwqj8znvps1r08gi3cd04bc6kdeyyo3fqwh3xu3utqp\",\n    \"baseAccountId\" : \"jz9p\",\n    \"baseAmount\" : \"73y0ok29acpbj7rsdggcovx8x1pkwrfeg9k4tzy1192pgogguhe0r25jghdipsqdr3jpnxbkouv9y6rn8g14hmk23suyhkmi0ci0hjw6lr39l1xmxw0od3unow97dy20zwye4l7a20ygv8\",\n    \"baseCurrency\" : \"CAD\",\n    \"quoteCurrency\" : \"CHF\",\n    \"baseReceiveCurrency\" : \"TND\",\n    \"quoteReceiveCurrency\" : \"PHP\",\n    \"costBasisCurrency\" : \"ZAR\",\n    \"quoteAmount\" : \"0xblhlg1r78c4mjt4py6mlqqzn5vhqg4vhw4muzankrq8nno1u2f9wnovzvqrzn09g7acgsw4wtra5x6er1m7qdv3tefpoq4s9kfm7n77o2x1i7y05o6rvr051embtz1v5eq64tsewxaud34h8ee\",\n    \"quoteAccountId\" : \"aov5\",\n    \"costBasis\" : \"rqxk0kfl5tvspubtced7ivphi2lnr1816i2qbn9df1fh378kej3n1eu13le5d0t9opmlmj3p45mp5xinpl6exhw1qicnhr8jpj\",\n    \"id\" : \"f18387f1-ba3d-44d0-a64f-1a0bdd0b8559\",\n    \"status\" : \"rejected\",\n    \"timestamp\" : \"2021-11-24T10:18:19.605851Z\"\n  } ],\n  \"id\" : \"f15bd7f3-884d-41f9-8413-72194e30ed28\",\n  \"affirmations\" : [ {\n    \"createdAt\" : \"2022-09-20T14:58:11.605969Z\",\n    \"payload\" : \"m8xx36p6wt8jigbxeduf4ebzp2lgvapenibnyqg8pl3kw1b2d74z7uu2q7bgqbzg5cqndzfaff9glz\",\n    \"signature\" : \"l335ux2vfcoynra4uy8rcemh\",\n    \"counterpartyAccountId\" : \"12e00016-5f12-41c9-8eed-87b89534f1f5\",\n    \"counterpartyName\" : \"Johna Berge\",\n    \"lock\" : {\n      \"accountId\" : \"k7q0\",\n      \"createdAt\" : \"2021-12-06T15:11:40.606362Z\",\n      \"amount\" : \"0e2iwjy6iserg993q31pf836pd4p921a0ovc5nkdd8ijzalcd5lagy6pivjzncezjki9v2ddzpxr6bt8275o3risjp\",\n      \"currency\" : \"BSD\",\n      \"id\" : \"6940decc-c6c5-4d75-9f3a-ca95846c346e\",\n      \"status\" : \"requested\"\n    },\n    \"id\" : \"52916909-bd36-43d2-b691-deb2bf095d31\",\n    \"expireAt\" : \"2022-04-25T03:31:30.606535Z\",\n    \"partyAccountId\" : \"91574ff7-2005-441e-811a-ea6bc8d1f3e4\",\n    \"status\" : \"failed\",\n    \"settlement\" : \"7db09598-24fc-48b4-9a31-282fa4cfc6d6\"\n  }, {\n    \"createdAt\" : \"2021-11-23T18:22:04.606622Z\",\n    \"payload\" : \"rg6dmvveperjpr94jlwd6tqm5y4hx5xb90lq5xjj330lohxa0y92pir5y7qdp0u6hzrrmaubf95guykrsd6wlj1tavtc2kc6mmschsoopvocfaz7kebl00syj1maz1hc9dnlh0h15ys5713ne093udsjw2prejo3hgdq8jx\",\n    \"signature\" : \"ox8l9e5hsvatpzg3n9t52yvdn5v0jyq9od63l8k3t8bnc57z26vn5fzvitq37766okhxseiaz718zfc2j09bod9sbfy10bx8jeagofxe5drls9ar6by9r2ls73unuy7x2r4vbwobc47g0dx\",\n    \"counterpartyAccountId\" : \"b0b8aa95-609f-4b7e-922e-fedd77cd7fac\",\n    \"counterpartyName\" : \"Lashonda Labadie\",\n    \"lock\" : {\n      \"accountId\" : \"yuiq\",\n      \"createdAt\" : \"2023-05-04T07:00:46.607011Z\",\n      \"amount\" : \"45byovy28urwjd2z5m4cqhgyy88tdj8bppmnsxbporqoljbdf1iwo8p0p90pdb05zcckuaigzwt1z6jgedxvk02p4r2wnd13i1qy072gf9sfmpeppt5khanx3b7yvy3zuhu3hjwd5iz6xhbjriyf45njllm7it1o\",\n      \"currency\" : \"SHP\",\n      \"id\" : \"c1d86a54-d378-4efb-85de-562565e1f845\",\n      \"status\" : \"requested\"\n    },\n    \"id\" : \"68ee6cec-dee8-4ea0-9afe-417ec36c8a59\",\n    \"expireAt\" : \"2023-09-03T07:02:00.60718Z\",\n    \"partyAccountId\" : \"8668233b-7a8f-484a-adf5-8125441f8c4c\",\n    \"status\" : \"rejected\",\n    \"settlement\" : \"0aba2a70-a49c-4ec6-a383-9e972b1d2fdc\"\n  }, {\n    \"createdAt\" : \"2023-03-12T18:52:18.607261Z\",\n    \"payload\" : \"0arnid56ysi3kc29yz5qnu97c3278feyw9n1wx2bibvt60j3siawu57cjvprdyn9kd0gpvia2wdjjl9gm8lm8ne6lqgbzwj2eqeu2qdjj6aw220xuxf9aczwd9zdcrt0s3qy1ixzzux8sc31ekh7np\",\n    \"signature\" : \"se27x5yak8x7372cv9tot7zq7a8eh57wbfdfsjky59m7dixai1bth8k0eicu3y7c62noyra0s8xdj7opfb3729r5gif2aoe8uxeqitu672d4hno2exys\",\n    \"counterpartyAccountId\" : \"5cabfb00-7405-4bbd-8198-2d6c486aff1d\",\n    \"counterpartyName\" : \"Sylvester Gerhold\",\n    \"lock\" : {\n      \"accountId\" : \"9nlg\",\n      \"createdAt\" : \"2022-11-12T02:46:34.607669Z\",\n      \"amount\" : \"xxisaxwewdb8ubyf6ljdrlaw99gqxnztx7aelxyibz9l56uvp9iadhal1hjqnsvibx57cspx616ietcnntmj7otunj3scj8av2ne065eg3euw61jizil2c3p2mp4gdhnxmrz9kpawput4qfq92vilpz4i03gdalmy4tjuq799blg232ycestq0j4\",\n      \"currency\" : \"MVR\",\n      \"id\" : \"7acef497-6d68-4b1a-be30-7a6f4ab304c4\",\n      \"status\" : \"active\"\n    },\n    \"id\" : \"870c0173-8bc0-426d-8ee4-3fd41b8b2991\",\n    \"expireAt\" : \"2022-03-09T18:41:33.607838Z\",\n    \"partyAccountId\" : \"0724e80c-5735-4da7-8a9b-010678f1df62\",\n    \"status\" : \"rejected\",\n    \"settlement\" : \"c233983d-ff5e-4394-a4bd-5352e6848ce7\"\n  } ],\n  \"type\" : \"agency\",\n  \"expireAt\" : \"2022-02-04T16:14:09.607952Z\",\n  \"requesterAccountName\" : \"Antonia Welch\",\n  \"status\" : \"settled\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ee59b01a-7baa-4391-8d23-0d17101d2628",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.608896Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.settlement.getSettlement",
+        "schema" : {
+          "title" : "Settlement",
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "string",
+              "format" : "uuid",
+              "description" : "Settlement ID",
+              "example" : "5be99b8a-6eb5-4ed6-b135-894bb22c5454"
+            },
+            "requesterAccountId" : {
+              "type" : "string",
+              "description" : "Trading account that is requesting settlement",
+              "example" : "5caed8b6e9abd8e865e3a942a74967d3"
+            },
+            "requesterAccountName" : {
+              "type" : "string",
+              "description" : "Name of trading account that is requesting settlement",
+              "example" : "Enterprise A Trading Account"
+            },
+            "status" : {
+              "$ref" : "#/components/schemas/SettlementStatus"
+            },
+            "type" : {
+              "description" : "The current status of the settlement",
+              "type" : "string",
+              "enum" : [ "direct", "agency" ],
+              "example" : "direct"
+            },
+            "affirmations" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/Affirmation"
+              }
+            },
+            "expireAt" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "ISO date string"
+            },
+            "finalizedAt" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "ISO date string"
+            },
+            "createdAt" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "ISO date string"
+            },
+            "trades" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/Trade-2"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 125
+}

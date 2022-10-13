@@ -1,0 +1,46 @@
+{
+  "id" : "b8c5303f-cd0f-4d3d-a109-f563a18cc230",
+  "name" : "Get spending limits and current amount spent",
+  "request" : {
+    "urlPath" : "/api/v2/igh8w92ngruqvjj6a2449hks1akvqrj089d8g9dwrytgmsv18okj16xy9gz3esygwdy8djl811xnjl1tm3r5h6yty4abf9g1xsot5ybkhg6xkwhagzlypelavvkj4jjuge3cqvx7wjido5c8doavd4glcvuob0jd43nze/wallet/a04ead651b0fa639dacbd65cf9eb96d6/spending",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"7xau\",\n  \"context\" : { },\n  \"name\" : \"Jewel Abernathy\",\n  \"error\" : \"sq8d8nkalu0c3u15uze7ed9riffuajxmk7as2682y2f0sidx415kli70qp0us7bmxyrtnx55yc6aorjund15hb377bfuoh9w25n2nru8xzqasr12u42o66ifa5p2qptkw9bwp83uso7j0s5khy2ez2e0xi5qtsd71xz0rc4o6vwvc9udkeuv\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "b8c5303f-cd0f-4d3d-a109-f563a18cc230",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.355256Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.spending",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 320
+}

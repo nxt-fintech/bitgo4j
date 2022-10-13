@@ -1,0 +1,49 @@
+{
+  "id" : "a6281249-bedd-429c-8ce1-fb8fb4499e9f",
+  "name" : "Freeze the enterprise (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/042935737e8c3948cf564287c88d10e1/freeze",
+    "method" : "POST",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"expires\" : \"2021-11-29T07:16:08.0793Z\",\n  \"time\" : \"2022-11-08T00:47:05.079365Z\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "a6281249-bedd-429c-8ce1-fb8fb4499e9f",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.079655Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.freeze",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "time" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "When the freeze started"
+            },
+            "expires" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "When the freeze will end"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 414
+}

@@ -1,0 +1,43 @@
+{
+  "id" : "92235728-7601-4927-961c-04493f77a99d",
+  "name" : "Retrieve Staking Requests for a User's Wallet",
+  "request" : {
+    "urlPath" : "/api/staking/v1/fitrdtfv4tg19ghti2m6djwdramw4jtqub1j54gtz8l767hf19krl2v14gw7kbehyplethu342fotthdkvndup7dlvbnmkwvo85k67r8rqa5c/wallets/4y5o/requests",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"code\" : \"Unauthorized\",\n  \"message\" : \"Unauthorized\",\n  \"status\" : 401\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "92235728-7601-4927-961c-04493f77a99d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.638737Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Requests for a Users Wallet",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 95
+}

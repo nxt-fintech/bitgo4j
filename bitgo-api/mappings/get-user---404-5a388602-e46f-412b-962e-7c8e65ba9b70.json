@@ -1,0 +1,25 @@
+{
+  "id" : "5a388602-e46f-412b-962e-7c8e65ba9b70",
+  "name" : "Get user - 404",
+  "request" : {
+    "urlPath" : "/api/v2/user/b6b38c9cd06807a5423f8a219a3067b4",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "5a388602-e46f-412b-962e-7c8e65ba9b70",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.178107Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "user.get"
+      }
+    }
+  },
+  "insertionIndex" : 396
+}

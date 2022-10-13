@@ -1,0 +1,36 @@
+{
+  "id" : "eba814ae-8e83-45e9-bd84-76041e4a6336",
+  "name" : "Retrieve Staking Wallet State Attribute Information",
+  "request" : {
+    "urlPath" : "/api/staking/v1/kz5tq0b6pdc3qxo47mv0h47aek79b5g0uct5l1arn2ptcr8uxz34iizfksqfv39wph7tymrw6p539p4dhy4vjm7lq41xo3cnwcfgfqftvm1azwrx49xd7w0dnv9fea5p4cxvy6ule6jgocieabunirp8grfqvkjett6gmx/wallets/nyky/attributes",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"code\" : \"BadRequest\",\n  \"message\" : \"Bad Request\",\n  \"status\" : 400\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "eba814ae-8e83-45e9-bd84-76041e4a6336",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.671915Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Wallet State Attribute Information",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/StakingError"
+          }, {
+            "$ref" : "#/components/schemas/ValidationError"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 29
+}

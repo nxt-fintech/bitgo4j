@@ -1,0 +1,48 @@
+{
+  "id" : "c1b502a8-8646-4fb3-9ac6-33e4423cd194",
+  "name" : "Send a half-signed transaction",
+  "request" : {
+    "urlPath" : "/api/v2/jna1h834ywp6bw21jq9c8r9htdib0yzk61lewkjedwnh69ablecytp5hgc9y8xzihj6j8i98go7l9zf6ykvn8dtyuao9wlfmcd3pkjkph1mfa7300f4iy85j6omznngj6cuzsbgc/wallet/3018c80c25d30c6c192937f4c59c5088/tx/send",
+    "method" : "POST"
+  },
+  "response" : {
+    "status": 200,
+    "body": "{\n  \"transfer\" : {\n    \"date\" : \"2023-07-15T03:56:10.425819Z\",\n    \"enterprise\" : \"eac472e1fe66f2be2285ad5f5edce8d0\",\n    \"usd\" : 2.261037751366289E307,\n    \"type\" : \"receive\",\n    \"sequenceId\" : \"6698\",\n    \"baseValue\" : 2044191463005782376,\n    \"usdRate\" : 1.5527558630896294E308,\n    \"id\" : \"3ee0585d9dc94a5e60be91e1b3ca5de5\",\n    \"state\" : \"rejected\",\n    \"value\" : 1884143930267245542,\n    \"feeString\" : \"lkyihfr3jeu0mbr7gwyspm02vghf7pgcu1eaf7dihsyvpsf1ma66dadxv3vsq8h31cwo8lfa52co8x6y3smgxsdck8am7clft5naymlsfqd4spzfuxy48t62d9advdo8\",\n    \"height\" : 3224061555283348284,\n    \"payGoFee\" : 3070649319939417474,\n    \"payGoFeeString\" : \"mkptwk9cm9dru82337u7g87vmjrg8flp8xy8uedf2vwrfyz0zyszbvu\",\n    \"wallet\" : \"4b637217644f3a9671d41efe4e4c51b4\",\n    \"txid\" : \"723l\",\n    \"baseValueString\" : \"\",\n    \"history\" : [ {\n      \"date\" : \"2023-04-28T15:10:14.426606Z\",\n      \"action\" : \"unconfirmed\",\n      \"comment\" : \"tb8kunfrmas1i91pjub96q2wtazu2x2gifo0oehh8uf1z0pwjc7l9rgw68gqu3v2awh1ajz4ogcnguwd1d2khg2mdf6iga6jf2yatdgwd8z5xu085tn41pm8c52lgt7gnynnghzceiutpd3oj46b7hah2smz\",\n      \"user\" : \"095dc0a95c32378df94bb4a9bf85c372\"\n    } ],\n    \"tags\" : [ \"a810bff49f907b15fd013d2637f322da\" ],\n    \"vSize\" : 7953830937569706145,\n    \"entries\" : [ {\n      \"address\" : \"f9tip1ozpfwi1n84tk3lsipx5qmulvpqnxc9txt4vx4qn6o8y4hda9k7l2nlaj7an6mjawj9ikamzlaevz52fty4taeez1xi58hjxey4s5oxm8i23cgz8inl9\",\n      \"wallet\" : \"\",\n      \"valueString\" : \"\",\n      \"isPayGo\" : false,\n      \"value\" : 2616948578143942201,\n      \"isChange\" : true,\n      \"token\" : \"u7v9xmhywnq4yz11hq55u7fnuvbj8bty8t2d2k4lx034z8slteke35unniyc4p7fzockhagina8jjfhlgkrna90r7om162hquvhk35txq\"\n    } ],\n    \"valueString\" : \"\",\n    \"usersNotified\" : true,\n    \"heightId\" : \"n44h\",\n    \"comment\" : \"0ai0c2o5sion1nld27x7909gm1wsory6c9prn18700ntqsh33chgp8wlko4p3gut0y2et8fcw82bzyd0r1xxkyxa82ud4w0h7vavsqietyd2ighjng640tryv8mflh3euud8fr4mu5n89iaixnc3uqa2sb4\",\n    \"nSegwitInputs\" : 441627299350611577,\n    \"coin\" : \"p755osgw8owvxcks1dtzticr1biqpt1tuai961oq0z81khk5zytneh6cy96l5ha5cypqcw41q46q3htlt3se6dqkzvj0cnd2rlxw6a83m5jwy1rcuoexjqj8sbsvtyz7b564vqoe51ypftfxilgrdzbbxfeqyrc68\",\n    \"coinSpecific\" : \"\"\n  },\n  \"tx\" : \"i36m0ie3n0mga8fv7fexfif9kyv4n6mi7n3q\",\n  \"txid\" : \"87nm\",\n  \"status\" : \"rejected\"\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "c1b502a8-8646-4fb3-9ac6-33e4423cd194",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.4279Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.tx.send",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "transfer" : {
+              "$ref" : "#/components/schemas/Transfer"
+            },
+            "txid" : {
+              "type" : "string",
+              "description" : "The transaction's unique identifier"
+            },
+            "tx" : {
+              "type" : "string",
+              "description" : "The encoded transaction, either base64 for XLM or hex for other coins"
+            },
+            "status" : {
+              "$ref" : "#/components/schemas/TransferState"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 234
+}

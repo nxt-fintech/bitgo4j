@@ -1,0 +1,148 @@
+{
+  "id" : "f7750c34-4dc9-418a-bdae-b15f1b929d9e",
+  "name" : "Update enterprise",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/71dc32bcffa01ba535c04cd2514956d4",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status": 200,
+    "body": "{\n  \"mutablePolicyWindow\" : 5840819797252213829,\n  \"admin\" : {\n    \"policy\" : {\n      \"date\" : \"2023-03-14T12:29:16.943058Z\",\n      \"rules\" : [ {\n        \"condition\" : {\n          \"timeWindow\" : 1251471,\n          \"amountString\" : \"5394676900144907122489486512653009858091634649488652973653962591692445\"\n        },\n        \"mutabilityConstraint\" : \"sticky\",\n        \"action\" : {\n          \"approvalsRequired\" : 7388975574969141523,\n          \"userIds\" : [ \"9a40af52df321c18cf8bc4a602e8ad4a\", \"ac2fb68f0c9ac24d2843838a5e2c7d42\", \"bc007177dc573e0e1004f9af7a36bcf7\", \"8789dd400504856ce80a67b2fd607da7\", \"c527be96f43a3c2fdc097fc5e95bf9b3\", \"9db65c915db5cf4bea5289750c528fe9\", \"9ce449df1e32e147d30d350db52dd9a5\" ],\n          \"type\" : \"getCustodianApproval\"\n        },\n        \"id\" : \"854p\",\n        \"type\" : \"allTx\",\n        \"lockDate\" : \"2021-10-13T13:16:57.944991Z\",\n        \"coin\" : \"5jzb0uyce1qwxstlctu1om6lyyaofztkd6geem58y209mpsuwnm0vivbh4xk00tnqd0432khppoiw7xk48pokw2jxpljctbhd1dntcv2vtsg70vzffda4enqle1lnvd3653d3rvnn7n\"\n      }, {\n        \"condition\" : {\n          \"excludeTags\" : [ \"45d1eb250e24090ccc4f9dc78b438243\", \"48d07cc73b48b3dc77a4aaea334b4689\", \"a08879841865f1a0656b5cc28c742946\" ],\n          \"timeWindow\" : 1243955,\n          \"groupTags\" : [ \"\", \"\", \"\", \"\", \"\" ],\n          \"amountString\" : \"-5392723817888200083535132088298463211730\"\n        },\n        \"mutabilityConstraint\" : \"sticky\",\n        \"action\" : {\n          \"approvalsRequired\" : 234620679354471274,\n          \"userIds\" : [ \"d2c102e7d0c0805bfd6f9fa9e82b6ac1\", \"43dbd9f0de3360e4e3f630259515aa98\" ],\n          \"type\" : \"deny\"\n        },\n        \"id\" : \"5e64\",\n        \"type\" : \"webhook\",\n        \"lockDate\" : \"2021-12-09T15:05:02.947167Z\",\n        \"coin\" : \"82crpc6k1xesoz1ju7dpildlckjt5nla634bd6c8rq49725akt36fnc0si6v0gc1w4574j8rbzclmqs6010cigkwkzoatk1y7g68jgc9o4u6u7wejyrjenli8yvc835eyr9pdic3juueyxp2w1\"\n      }, {\n        \"condition\" : {\n          \"excludeTags\" : [ \"bf647b07008687e17fb13b85a45a7e63\", \"d53e555381aa6cb7760ad03dbf1311a8\", \"2f22606887e9e7123d3807165998606c\", \"8dadbd24cfd4605798c83df36157343d\" ],\n          \"timeWindow\" : 977436,\n          \"groupTags\" : [ \"\", \"\", \"\", \"\" ],\n          \"amountString\" : \"985682640261288277810968196465901543502942622210294671661786875572661105290\"\n        },\n        \"mutabilityConstraint\" : \"sticky\",\n        \"action\" : {\n          \"approvalsRequired\" : 3532942704787204038,\n          \"userIds\" : [ \"49106313276876b37b21bd60584fb35c\", \"ecb9e4bcb60b1392aa374d79ddc8ec34\", \"c4b7b63ef58412bf7f2a9467a51181d5\", \"18cb3c2df17c88f41349fa57d9c391d4\", \"cbcaba342e8959f2df44a7869cdfe290\", \"f59d0e898bb4fd04f9fa773e91bfa794\", \"1c4c375e2af95dc84a6003765014d16a\", \"2269191834e78a46af0f96293036615c\" ],\n          \"type\" : \"getFinalApproval\"\n        },\n        \"id\" : \"7tl0\",\n        \"type\" : \"webhook\",\n        \"lockDate\" : \"2023-05-24T02:30:34.949763Z\",\n        \"coin\" : \"jhxinyx4a1qw8dm3v97fn94kwi6u9xr9hv1j387nqgphf3dbtx78c51\"\n      } ],\n      \"id\" : \"dfc2f8dc44a691fc63686d5c09e4d451\",\n      \"label\" : \"quod\",\n      \"version\" : 5190078640813867999,\n      \"latest\" : true\n    }\n  },\n  \"canAccessBorrowing\" : true,\n  \"videoIdWaived\" : true,\n  \"canAccessLending\" : true,\n  \"pricingPlan\" : \"4d3va1zc12oij5mr4zlpnh7aznyb42hd4vtfn4kujpbi1ltz14fc0h64t9kzlr4gkr\",\n  \"ethFeeAddress\" : \"0ec6bvnqtxlyfx37q8obhlr9agksru4md3pekg4r53x0foueduvheau398auldl98e5brzy4cru4s7uy16imwxz354nxcihy59xxoqj4qg8qcf025w8pzxig3cif65ce5otjdw\",\n  \"freeze\" : {\n    \"expires\" : \"2022-01-21T08:17:17.950804Z\",\n    \"time\" : \"2023-05-13T00:27:23.950958Z\"\n  },\n  \"canAccessTrading\" : false,\n  \"canCreateCustodialWallets\" : true,\n  \"canCreateOffchainWallet\" : false,\n  \"id\" : \"23e640e86df0a23122360b26ca517184\",\n  \"bitgoOrg\" : \"BitGo New York\",\n  \"latestSAVersionSigned\" : 4325283475773974610,\n  \"canAccessSettlement\" : true,\n  \"approvalsRequired\" : 3151825408614048587,\n  \"additionalEnterpriseInfo\" : {\n    \"contact\" : {\n      \"country\" : \"Brazil\",\n      \"suite\" : \"fadixa6zs7k5nokntbh0zohhfm499yrar1fn5u2nxnrm06rhq0congl5hp1oj75z9tlb7xnccnvy3wya1nq5ve8ozkx0l6rw708ymn1aels7hpow3c2j65y2x2sa07513pm33vjp5x2nu7b5\",\n      \"city\" : \"Port Eddy\",\n      \"street\" : \"Timmy Parkway\",\n      \"postalCode\" : \"98787-3474\",\n      \"name\" : \"Katrice Parker\",\n      \"street2\" : \"Sergio Heights\",\n      \"state\" : \"Mississippi\"\n    },\n    \"regulator\" : \"wlsny401da2khcr1k0ttuxrly8fp5ff54a4outbyiqupzcz89j594i0ptrn3i7xlf4srvzrq4ie02bgsfzeshz3bb5t5in19qckbsvmfbnrishl9wtd3\",\n    \"regulatorId\" : \"39qj\"\n  },\n  \"usersViewAllWallets\" : false,\n  \"approvedVideoIdUsers\" : [ \"3e3dfafc6a13f88feb13555f6750df15\", \"ff055c6346de72931147ae07b5291a74\", \"188b534ce7f299e4531adc0ae3c7c9db\", \"dbe7f79dcd3ad10a15dfc92f59367511\", \"e375925edbaf66a468de781b8dc12f2e\", \"b232d153acccf7b9257040d2fbcf9f9f\" ],\n  \"canCreateHotWallet\" : false,\n  \"canCreateColdWallet\" : false,\n  \"licenses\" : \"cryptoCompare\",\n  \"bitgoEthKey\" : \"hofl9ofi3ed2fi91x5a6ce270nhkwbb16uscsjujp26w12svrmtdxkmtxkn1mjikxfrswapwugbm9rg2o2kq0yxy78vtsjo86mgrzvkmxvu1hqdul8jh9m2q1bv0tuaq0xymnkgfzcok3s0w65vhsmtr7qoypun0swjdrz4qciupa71rak2j2kz3fpmqki8\",\n  \"primaryContact\" : \"d90bd8b7656eea344e4e57ebb6cb4a69\",\n  \"name\" : \"Belia Franecki\",\n  \"kycState\" : \"approved\",\n  \"emergencyPhone\" : \"483.104.6423 x89445\",\n  \"pricingType\" : {\n    \"name\" : \"starter\"\n  }\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "f7750c34-4dc9-418a-bdae-b15f1b929d9e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.975357Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.update",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "additionalEnterpriseInfo" : {
+              "$ref" : "#/components/schemas/AdditionalEnterpriseInfo"
+            },
+            "admin" : {
+              "type" : "object",
+              "properties" : {
+                "policy" : {
+                  "$ref" : "#/components/schemas/Policy"
+                }
+              }
+            },
+            "approvedVideoIdUsers" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/Id"
+              },
+              "description" : "IDs of users on the enterprise that are approved for custodial video ID"
+            },
+            "approvalsRequired" : {
+              "type" : "integer",
+              "description" : "How many Enterprise Admins are required for action to fire",
+              "example" : 1
+            },
+            "bitgoEthKey" : {
+              "type" : "string",
+              "description" : "The public portion of the ethererum key generated for the enterprise fee address"
+            },
+            "bitgoOrg" : {
+              "$ref" : "#/components/schemas/BitGoOrg"
+            },
+            "canAccessBorrowing" : {
+              "type" : "boolean",
+              "description" : "whether the enterprise has the licence for BitGo Prime Borrowing"
+            },
+            "canAccessLending" : {
+              "type" : "boolean",
+              "description" : "whether the enterprise has the licence for BitGo Prime Lending"
+            },
+            "canAccessSettlement" : {
+              "type" : "boolean",
+              "description" : "whether the enterprise has the licence to utilize settlement functionality"
+            },
+            "canAccessTrading" : {
+              "type" : "boolean",
+              "description" : "whether the enterprise has the licence to access BitGo Trading"
+            },
+            "canCreateColdWallet" : {
+              "type" : "boolean",
+              "description" : "whether the enterprise has the license to create cold wallets"
+            },
+            "canCreateCustodialWallets" : {
+              "type" : "boolean",
+              "description" : "whether the enterprise has the license to create custodial wallets"
+            },
+            "canCreateHotWallet" : {
+              "type" : "boolean",
+              "description" : "whether the enterprise has the license to create hot wallets"
+            },
+            "canCreateOffchainWallet" : {
+              "type" : "boolean",
+              "description" : "whether the enterprise has the license to create trading accounts",
+              "x-internal" : true
+            },
+            "emergencyPhone" : {
+              "$ref" : "#/components/schemas/EmergencyPhone"
+            },
+            "ethFeeAddress" : {
+              "type" : "string",
+              "description" : "The eth fee address used to pay for network transaction fees of this enterprise"
+            },
+            "freeze" : {
+              "$ref" : "#/components/schemas/Freeze"
+            },
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "kycState" : {
+              "$ref" : "#/components/schemas/EnterpriseKycState"
+            },
+            "latestSAVersionSigned" : {
+              "type" : "integer",
+              "example" : 0,
+              "x-internal" : true
+            },
+            "licenses" : {
+              "$ref" : "#/components/schemas/EnterpriseLicenses"
+            },
+            "mutablePolicyWindow" : {
+              "type" : "integer",
+              "description" : "Time in seconds after which policies on this Enterprise cannot be updated",
+              "example" : 172800
+            },
+            "name" : {
+              "type" : "string",
+              "example" : "Small Company"
+            },
+            "pricingPlan" : {
+              "type" : "string",
+              "description" : "The pricing plan of the enterprise",
+              "x-internal" : true
+            },
+            "pricingType" : {
+              "$ref" : "#/components/schemas/EnterprisePricingType"
+            },
+            "primaryContact" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "usersViewAllWallets" : {
+              "$ref" : "#/components/schemas/ViewAllWallets"
+            },
+            "videoIdWaived" : {
+              "$ref" : "#/components/schemas/VideoIdWaived"
+            }
+          },
+          "required" : [ "id" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 440
+}

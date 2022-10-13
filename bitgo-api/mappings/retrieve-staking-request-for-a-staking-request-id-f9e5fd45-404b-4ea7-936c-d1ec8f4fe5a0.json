@@ -1,0 +1,43 @@
+{
+  "id" : "f9e5fd45-404b-4ea7-936c-d1ec8f4fe5a0",
+  "name" : "Retrieve Staking Request for a staking request id",
+  "request" : {
+    "urlPath" : "/api/staking/v1/requests/54n8",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"code\" : \"Unauthorized\",\n  \"message\" : \"Unauthorized\",\n  \"status\" : 401\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f9e5fd45-404b-4ea7-936c-d1ec8f4fe5a0",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.643314Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve A Specific Staking Request",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 84
+}

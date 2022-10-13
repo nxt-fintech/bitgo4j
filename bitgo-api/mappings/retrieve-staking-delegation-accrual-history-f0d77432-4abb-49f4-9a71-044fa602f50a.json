@@ -1,0 +1,43 @@
+{
+  "id" : "f0d77432-4abb-49f4-9a71-044fa602f50a",
+  "name" : "Retrieve Staking Delegation Accrual History",
+  "request" : {
+    "urlPath" : "/api/staking/v1/5uv2ho4ep7g4mrgeirv96dxqdslfw44xjdctmdx3wp0atb9vlpnu6633wy135x56ss61mg5wb89ufteajzc2rnenq4cnne7vulspls4jpibvujnyurg8hgyx3yvemo/wallets/z3bd/delegations/accruals",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 403,
+    "body" : "{\n  \"code\" : \"AccessDenied\",\n  \"message\" : \"Stakingg license not added for enterprise\",\n  \"status\" : 403\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f0d77432-4abb-49f4-9a71-044fa602f50a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.668956Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Delegation Accrual History",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 34
+}

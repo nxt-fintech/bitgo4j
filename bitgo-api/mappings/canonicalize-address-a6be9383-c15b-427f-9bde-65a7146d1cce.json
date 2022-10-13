@@ -1,0 +1,34 @@
+{
+  "id" : "a6be9383-c15b-427f-9bde-65a7146d1cce",
+  "name" : "Canonicalize address",
+  "request" : {
+    "urlPath" : "/api/v2/xyyvvijq9yn9oec2wshyayujjn9vyqjxtkk0orxygn8mk9m7vg5pqr3nzm3ayxrxgb4yfp3175wtbi9f7qc818av5dtzwl56yf4acwcf9y6gkawzbk2irjm/canonicaladdress",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "\"mlez6b489eab3i1dcgtabrhdsqx2c66by2lkytm6xx\"",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "a6be9383-c15b-427f-9bde-65a7146d1cce",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.493134Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.canonicaladdress",
+        "schema" : {
+          "type" : "string",
+          "example" : "2MvrwRYBAuRtPTiZ5MyKg42Ke55W3fZJfZS",
+          "maxLength" : 250
+        }
+      }
+    }
+  },
+  "insertionIndex" : 182
+}

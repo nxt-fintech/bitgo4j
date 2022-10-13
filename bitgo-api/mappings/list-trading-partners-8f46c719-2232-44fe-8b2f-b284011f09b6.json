@@ -1,0 +1,40 @@
+{
+  "id" : "8f46c719-2232-44fe-8b2f-b284011f09b6",
+  "name" : "List Trading Partners",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/awi7/account/7i1a/tradingpartners",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"tradingPartners\" : [ {\n    \"primaryEnterpriseName\" : \"Miss Millicent Watsica\",\n    \"primaryAccountId\" : \"s9f9\",\n    \"requesterAccountId\" : \"m3xq\",\n    \"secondaryAccountId\" : \"5f9j\",\n    \"id\" : \"ecde1ad3-ba6b-4bbe-bb30-fbfb1473258f\",\n    \"type\" : \"direct\",\n    \"secondaryEnterpriseName\" : \"Young Herzog\",\n    \"status\" : \"pending\",\n    \"updatedAt\" : \"2022-12-01T01:51:38.680761Z\"\n  }, {\n    \"primaryEnterpriseName\" : \"Ali Hilpert\",\n    \"primaryAccountId\" : \"0cm2\",\n    \"requesterAccountId\" : \"69kd\",\n    \"secondaryAccountId\" : \"me59\",\n    \"id\" : \"feb06097-a9bd-4b13-9e5f-4abba7dd028d\",\n    \"type\" : \"direct\",\n    \"secondaryEnterpriseName\" : \"Maureen Bins\",\n    \"status\" : \"canceled\",\n    \"updatedAt\" : \"2022-04-26T08:22:53.681686Z\"\n  }, {\n    \"primaryEnterpriseName\" : \"Newton Fay\",\n    \"primaryAccountId\" : \"p35q\",\n    \"requesterAccountId\" : \"c7j6\",\n    \"secondaryAccountId\" : \"9yjo\",\n    \"id\" : \"ddf7371b-e717-48f0-8acf-99917cf12b75\",\n    \"type\" : \"direct\",\n    \"secondaryEnterpriseName\" : \"Laraine Wehner\",\n    \"status\" : \"rejected\",\n    \"updatedAt\" : \"2022-03-20T08:58:19.682643Z\"\n  }, {\n    \"primaryEnterpriseName\" : \"Nada Bode\",\n    \"primaryAccountId\" : \"g3oo\",\n    \"requesterAccountId\" : \"zf4g\",\n    \"secondaryAccountId\" : \"8ws1\",\n    \"id\" : \"2e866c2f-19a9-4d28-8cc5-5be2d3fe136a\",\n    \"type\" : \"direct\",\n    \"secondaryEnterpriseName\" : \"Elin Grady\",\n    \"status\" : \"canceled\",\n    \"updatedAt\" : \"2022-09-30T21:37:53.683577Z\"\n  }, {\n    \"primaryEnterpriseName\" : \"Brent Schuppe\",\n    \"primaryAccountId\" : \"a9j3\",\n    \"requesterAccountId\" : \"t4j7\",\n    \"secondaryAccountId\" : \"yl77\",\n    \"id\" : \"a138bd57-7260-43a7-bf19-68b217b21268\",\n    \"type\" : \"direct\",\n    \"secondaryEnterpriseName\" : \"Dr. Cinda Abbott\",\n    \"status\" : \"canceled\",\n    \"updatedAt\" : \"2022-10-12T03:41:56.68455Z\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "8f46c719-2232-44fe-8b2f-b284011f09b6",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.685341Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.tradingPartner.listTradingPartners",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "tradingPartners" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/TradingPartner"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 17
+}

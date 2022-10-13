@@ -1,0 +1,46 @@
+{
+  "id" : "c27373f8-e5aa-4493-b075-8fb1205d67ff",
+  "name" : "List enterprises",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"4182\",\n  \"context\" : { },\n  \"name\" : \"Mr. Allie Buckridge\",\n  \"error\" : \"xui16q4x5q9jydlwsze0p5wjpub2gd1zxg3io0mhuobrk8xuuffqvgunv2o343neqj5qmmlyibs7juue09c2vjrie1iz05wzt2xbsex790g34xt\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "c27373f8-e5aa-4493-b075-8fb1205d67ff",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.036422Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.list",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 435
+}

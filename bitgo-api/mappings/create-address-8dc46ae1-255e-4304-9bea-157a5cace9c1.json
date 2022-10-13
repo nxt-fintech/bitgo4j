@@ -1,0 +1,77 @@
+{
+  "id" : "8dc46ae1-255e-4304-9bea-157a5cace9c1",
+  "name" : "Create address",
+  "request" : {
+    "urlPath" : "/api/v2/ffx9qeipgsnp9y0w6y2lca491jslitlj1h97gn8b33mv0cys2znbkqmav/wallet/d250dee57d3421234696c21e932d7e3a/address",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"chain\" : 11,\n  \"address\" : \"w8w9p1iorh1ougarf1wpb5ovbmrhjjy0wepin1or9pq8eb7jnx1jzxjwl6rvs4yfkizqaqxrmhdtp3f53xpj22z3yf64gj5huwlqe7hev5y7ti8\",\n  \"wallet\" : \"a6faf1b958516d92cb0794c8f50986e2\",\n  \"balance\" : {\n    \"balance\" : 6376221754661324243,\n    \"spendableBalanceString\" : \"nlcbt3zumuaa2lpy1omqu8rq5jwqfl8u7e0rbg49d9z4maqy2foriex7qod5531ewb5y5ow6mc12pb7m1n1sunpi3jmni9z0yzfbpl8sksq4055bz8hroxhbz0ji5\",\n    \"totalReceived\" : 7499354754298413200,\n    \"totalSent\" : 8298080729035708675,\n    \"confirmedBalanceString\" : \"uzk8t0r91poh6r7kgci0qfjafra36plh9rvn6k3nrukfpnnvw5vwdgsfobu942xwu6nofcikrp9wb3jye8f1wfmh3hmi\",\n    \"updated\" : \"2023-03-28T08:36:11.867017Z\",\n    \"balanceString\" : \"mk6r1nr1x58y289xerdhbmk8v89c23bdnxnmiv1msngbff3x9ifyy8n6ox0jo79r1n2w7vdyenisae2u9xzbjqbemra\"\n  },\n  \"addressType\" : \"p2sh\",\n  \"lastNonce\" : 7143510462956554902,\n  \"index\" : 5004708024278198958,\n  \"id\" : \"109e87a9399ce3db2be6713f436cdd7b\",\n  \"label\" : \"corporis\",\n  \"coin\" : \"r4lrzcf93dyqq50bbdod47m5l5zvytz1pf08wqcqjnf27de2kqcnszbix1jkcocwhihhx5qrtzqjpjyiw4zv3mi56hzh6a8aa2g2hdoobscwknnbwqumv04yg140nt\",\n  \"coinSpecific\" : {\n    \"txlm\" : {\n      \"rootAddress\" : \"57k1grrya25fnf8754w32ia0fstov6cenzg8a2qa42aw3daxbb379khp7w\",\n      \"memoId\" : \"-907713740124282951212946319089678614551451269\"\n    },\n    \"xlm\" : {\n      \"rootAddress\" : \"dob9qky2n672l3erv5xh2xtff90n5w2oe638tg20vbk8vqjfyffo378po6itot1xu8j46413adbga2pqqanm3jnmmeec9d53r9wlytm0jc6arbxkaqh7qp7jtlei617i6qsz4a9e0cvyu2a01p5kj20gkytdrjn9qfxqlbo63sxgdqavs9fzq51c8bjzr2lw5sy678ln\",\n      \"memoId\" : \"1917355805205557596530358753732719205139476716242903506767584315239842774608861\"\n    }\n  }\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "8dc46ae1-255e-4304-9bea-157a5cace9c1",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.869929Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.newaddress",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "address" : {
+              "$ref" : "#/components/schemas/AddressString"
+            },
+            "chain" : {
+              "$ref" : "#/components/schemas/Chain"
+            },
+            "index" : {
+              "type" : "integer"
+            },
+            "coin" : {
+              "type" : "string"
+            },
+            "lastNonce" : {
+              "type" : "integer",
+              "default" : -1
+            },
+            "wallet" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "coinSpecific" : {
+              "type" : "object",
+              "description" : "Properties which are specific to certain coin types",
+              "properties" : {
+                "xlm" : {
+                  "$ref" : "#/components/schemas/AddressCoinSpecificXlm"
+                },
+                "txlm" : {
+                  "$ref" : "#/components/schemas/AddressCoinSpecificXlm"
+                }
+              }
+            },
+            "balance" : {
+              "$ref" : "#/components/schemas/AddressBalance"
+            },
+            "label" : {
+              "$ref" : "#/components/schemas/AddressLabel"
+            },
+            "addressType" : {
+              "$ref" : "#/components/schemas/AddressType"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 457
+}

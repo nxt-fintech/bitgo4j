@@ -1,0 +1,53 @@
+{
+  "id" : "5246795a-d2e4-4a19-8f60-eaf50f13fbea",
+  "name" : "List Affirmations by Trading Account",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/sbv6/account/guw1/affirmations",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"errorName\" : \"Clorinda Nienow\",\n  \"error\" : \"uvb7sewl6j4zs9z6p9pu0m3\",\n  \"reqId\" : \"6kd6\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "5246795a-d2e4-4a19-8f60-eaf50f13fbea",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.615614Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.settlement.listAffirmationsByAccount",
+        "schema" : {
+          "type" : "object",
+          "description" : "An API error returned by the service.",
+          "properties" : {
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "errorName" : {
+              "type" : "string",
+              "description" : "Immutable error code for API integration"
+            },
+            "reqId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "error", "errorName", "reqId" ],
+          "example" : {
+            "error" : "Missing required parameter: accountId",
+            "errorName" : "MissingRequiredParameter",
+            "reqId" : "3fa3fb673ce950a95fd2d395e245efbe"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 121
+}

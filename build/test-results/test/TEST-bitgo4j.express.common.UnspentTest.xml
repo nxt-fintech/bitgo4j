@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.express.common.UnspentTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:32" hostname="ishtos-MacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="testSetId()" classname="bitgo4j.express.common.UnspentTest" time="0.0"/>
+  <testcase name="testSetRedeemScript()" classname="bitgo4j.express.common.UnspentTest" time="0.0"/>
+  <testcase name="testToString()" classname="bitgo4j.express.common.UnspentTest" time="0.0"/>
+  <testcase name="testSetValueString()" classname="bitgo4j.express.common.UnspentTest" time="0.0"/>
+  <testcase name="testSetWitnessScript()" classname="bitgo4j.express.common.UnspentTest" time="0.0"/>
+  <testcase name="testSetFromWallet()" classname="bitgo4j.express.common.UnspentTest" time="0.0"/>
+  <testcase name="testSetCoinbase()" classname="bitgo4j.express.common.UnspentTest" time="0.0"/>
+  <testcase name="testSetIsSegwit()" classname="bitgo4j.express.common.UnspentTest" time="0.0"/>
+  <testcase name="testSetAddress()" classname="bitgo4j.express.common.UnspentTest" time="0.0"/>
+  <testcase name="testSetBlockHeight()" classname="bitgo4j.express.common.UnspentTest" time="0.0"/>
+  <testcase name="testSetWallet()" classname="bitgo4j.express.common.UnspentTest" time="0.0"/>
+  <testcase name="testSetDate()" classname="bitgo4j.express.common.UnspentTest" time="0.0"/>
+  <testcase name="testSetChain()" classname="bitgo4j.express.common.UnspentTest" time="0.0"/>
+  <testcase name="testSetIndex()" classname="bitgo4j.express.common.UnspentTest" time="0.0"/>
+  <testcase name="testSetValue()" classname="bitgo4j.express.common.UnspentTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,46 @@
+{
+  "id" : "9e468404-5d6b-43df-b5d4-c757b1be6de2",
+  "name" : "Update comment",
+  "request" : {
+    "urlPath" : "/api/v2/8lgzkr/wallet/5fa4e40de0a7c809a6a5f95a0cf99f3f/transfer/jpju1/comment",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"requestId\" : \"i968\",\n  \"context\" : { },\n  \"name\" : \"Tracy Frami\",\n  \"error\" : \"u8eh48zw6wkr5lzm3w6hgie31nkwgwa2\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "9e468404-5d6b-43df-b5d4-c757b1be6de2",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.492327Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.transfer.comment",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 185
+}

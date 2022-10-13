@@ -1,0 +1,46 @@
+{
+  "id" : "f6f8455a-ce11-4ba4-9002-14046fbd3334",
+  "name" : "Get total rewards data",
+  "request" : {
+    "urlPath" : "/api/v2/sy6u16jbh1h7svpukak0i3cgg7ozpa8qck7ws6ggl8hs3tuoonveo2xrxf6uxy9gcdswv4e5739vw3cnu130l8oz5emyc65lc1kpz4zy2i5puff4l5gu0yo6orcvzoft9pbg3ewsuaytub3tv6ermg2zyb/wallet/9c673b3e591d66c79aa9466f7c623194/balances/totalrewards",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"7m2b\",\n  \"context\" : { },\n  \"name\" : \"Mabelle Kohler V\",\n  \"error\" : \"1i0uozswje0cl5ybeiukd7d6bqoabkttomaqntmmqpct75t4\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f6f8455a-ce11-4ba4-9002-14046fbd3334",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.501343Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.totalrewards",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 175
+}

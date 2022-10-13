@@ -1,0 +1,51 @@
+{
+  "id" : "4e3d736d-2d88-40ae-aebc-8d3c4cfb6864",
+  "name" : "Reject a wallet reshare request (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/4565a375877a0c60c215177826d2a8f7/rejectreshare",
+    "method" : "POST",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"47m9\",\n  \"context\" : { },\n  \"name\" : \"Nadia Wintheiser\",\n  \"error\" : \"nfjo3rne\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "4e3d736d-2d88-40ae-aebc-8d3c4cfb6864",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.369725Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.sharing.rejectreshare",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 304
+}

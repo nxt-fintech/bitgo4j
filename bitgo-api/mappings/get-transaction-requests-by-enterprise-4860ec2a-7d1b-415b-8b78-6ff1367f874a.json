@@ -1,0 +1,46 @@
+{
+  "id" : "4860ec2a-7d1b-415b-8b78-6ff1367f874a",
+  "name" : "Get transaction requests by enterprise",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/7c9f50377bad6dd6d563e3864b99919b/txrequests",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"707q\",\n  \"context\" : { },\n  \"name\" : \"Estefana Sauer\",\n  \"error\" : \"6e4fru44a5wbvpb7vijhs23l2i2qczcpbsmix4b1d8i4uqhar5z5fdbtjj9wuu7v4yhnml1qtwex1809e6yps6kjc3stvcz49bog7feej5d9hrb4zon7ldme4dvfmtavfnx7a83l\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "4860ec2a-7d1b-415b-8b78-6ff1367f874a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.402804Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.enterprise.txrequest.get",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 269
+}

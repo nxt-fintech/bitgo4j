@@ -1,0 +1,36 @@
+{
+  "id" : "a6f33b0e-f2c9-4840-8eaf-fdcce1e0bbca",
+  "name" : "Get transfer by sequence id",
+  "request" : {
+    "urlPath" : "/api/v2/qc08ezrbn9bwp0p0dw8dbt2o6b1ujjysk6tpv1or4jmn1zsjddruskavwg2ufxjxdcfyh93mxvuyl9tyeyhxw3pzpsnmqoazrvisvsvt7gt3jm595wym9urx1ypd0t5ck2ee61hy2qqxbr/wallet/55620056259c54f3d52255fdee22862a/transfer/sequenceId/1338",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "a6f33b0e-f2c9-4840-8eaf-fdcce1e0bbca",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.255148Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.gettransferbysequenceid",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 362
+}

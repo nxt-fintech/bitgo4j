@@ -1,0 +1,35 @@
+{
+  "id" : "f50decf2-8122-4252-a272-1fea4e38b234",
+  "name" : "List Affirmations by Trading Account",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/9t83/account/f46d/affirmations",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"createdAt\" : \"2023-06-28T03:16:41.610737Z\",\n  \"payload\" : \"qn245y3ask3esszhlz183t8z2gspotslzgx26rc6xwkut4921nrw8to28cr9pt7ijtqkokg129pll8yxi6qxxggvxadpmgzyaynqppd1ver5gnqopeq3mh7yswoqgu0hdfgy374st\",\n  \"signature\" : \"wb4wo6e4c8jacot5e9wz7eprvq0lyowt\",\n  \"counterpartyAccountId\" : \"a5f4ed03-036e-49c9-9151-a0d340b11155\",\n  \"counterpartyName\" : \"Ms. Jamal Deckow\",\n  \"lock\" : {\n    \"accountId\" : \"hdmf\",\n    \"createdAt\" : \"2023-02-20T08:13:57.611148Z\",\n    \"amount\" : \"o3x6cswf0kv1b6anbgh65z8kdz5560nvmmo1112soenrmvaxnab50h6qy9d9nu8dofqhtvygcf36t6qjow5bz7ueqdudhrw86ahapu9oh3qfk7qqeinvok6igj80qldym83j1\",\n    \"currency\" : \"VND\",\n    \"id\" : \"02af2577-95a5-46cf-bce0-feada538b888\",\n    \"status\" : \"released\"\n  },\n  \"id\" : \"a9d8d79f-f3a8-4597-b75d-4201663c269d\",\n  \"expireAt\" : \"2022-03-09T21:11:14.611316Z\",\n  \"partyAccountId\" : \"b021a820-aad2-4575-9a46-5ccc4cde9ac5\",\n  \"status\" : \"canceled\",\n  \"settlement\" : \"64dd5f65-7c8c-492a-8d30-bcbd87da5a23\"\n}, {\n  \"createdAt\" : \"2023-02-01T20:08:51.611401Z\",\n  \"payload\" : \"l6ht85rxootvlunnkp9cmzszfnzsdeykeifqnxrn133h2psbaqwo80t3os5avwfuadkm4hgx7vmrqq1tcdhgpwlccg121tg0ht9hip8r9g5uwcszs\",\n  \"signature\" : \"eq91cr9s5i3zyme1zeiizv6cl8zdou5xy8g47gje9p9nce8ysfvqbm141gw4875ah5ps5v0g8wqhvobnih909l58kurezoq5w9chj3s4burknkhlm\",\n  \"counterpartyAccountId\" : \"5aa6c478-ea7e-41ed-95d4-3f1894fd3225\",\n  \"counterpartyName\" : \"Miss Charlsie Gusikowski\",\n  \"lock\" : {\n    \"accountId\" : \"c2ey\",\n    \"createdAt\" : \"2022-08-22T14:45:01.611861Z\",\n    \"amount\" : \"i6jimgubxk0aka3wtt81b6o0bsgood9jt3iwqdm4hxmhmebud240g1j7xvem2k680jgm5ssh8asa\",\n    \"currency\" : \"ISK\",\n    \"id\" : \"9966098d-ad01-42f4-84a1-3994ec6477cd\",\n    \"status\" : \"failed\"\n  },\n  \"id\" : \"7fed06a4-a1bb-4d30-b5e3-400cbea95820\",\n  \"expireAt\" : \"2023-07-31T03:00:27.61203Z\",\n  \"partyAccountId\" : \"4f889c9a-a685-4d34-ba6e-46aff609821a\",\n  \"status\" : \"affirmed\",\n  \"settlement\" : \"9c3362ca-6129-49d9-b3eb-285f33a15c71\"\n}, {\n  \"createdAt\" : \"2023-09-03T07:23:11.612123Z\",\n  \"payload\" : \"4xv63a3fpujuaxdjc2azm2be3gmqoadw4y57lu0e7y\",\n  \"signature\" : \"cpn527c0j0hzj97pfl8jc8flor7rgd1o8gmlr0hfn1qjm8s7lndd224nnbkmejsgb7v6rlisja9s5hzeb\",\n  \"counterpartyAccountId\" : \"e3bdbb44-f740-47eb-a9ff-d972f78bb309\",\n  \"counterpartyName\" : \"Shannon Ankunding\",\n  \"lock\" : {\n    \"accountId\" : \"v4l8\",\n    \"createdAt\" : \"2022-06-13T11:49:01.612564Z\",\n    \"amount\" : \"ecyn2ovni5c8wjqm9o0emwc2y5wtt98s6sgdq9nqk0ky4yih4qv1fyi6kpt2sam5guedtzhqjrhn1zoljdh0m57rlv305nl26t5ol9fnu4jvvppew2633q8bwg7mpvoifys0cnm0ybvluknlukptpazy1jwm37rp3hwavpf9\",\n    \"currency\" : \"BBD\",\n    \"id\" : \"5039f2d1-60e9-4ff2-9ae0-dea99e72c016\",\n    \"status\" : \"released\"\n  },\n  \"id\" : \"179f7320-1279-4a74-ab15-879e990f5c89\",\n  \"expireAt\" : \"2023-01-19T01:55:30.612738Z\",\n  \"partyAccountId\" : \"90979203-9084-42cd-b017-e9fd82c48cd5\",\n  \"status\" : \"rejected\",\n  \"settlement\" : \"0c80ef57-4374-45cf-abe7-3247a2d5d2b1\"\n}, {\n  \"createdAt\" : \"2022-06-20T02:46:31.612817Z\",\n  \"payload\" : \"cdwnsc4e2kedv3wa1rgbkt7o0om090ofzfaucm44bpuxaczfst1w9birf24zg2p9\",\n  \"signature\" : \"u4s2405wr2r4lnjqf18yz07ovg79hz2perx18trx812eie6wtri\",\n  \"counterpartyAccountId\" : \"523ed2f9-df5e-4ff5-888a-261087c23d3b\",\n  \"counterpartyName\" : \"Dedra Metz\",\n  \"lock\" : {\n    \"accountId\" : \"04rj\",\n    \"createdAt\" : \"2023-07-07T17:37:24.613192Z\",\n    \"amount\" : \"z3h1x18mslqyk0qj1i7usn9oynozny8hhynvreeb1n0ofig7ypd039b3syqpopsrjqc9yl2xdctb4bzyd49w0n9abdwz1ig6rsn5zvrxtjq1bce2b353tl684l1d3bhqxoapcedaks4j4bmlf9vl4zqxv1cm0aztjpb6jvc9j0d4f69mrid635ulj\",\n    \"currency\" : \"CDF\",\n    \"id\" : \"f17f0c43-735c-4caf-a725-ac09da2df075\",\n    \"status\" : \"released\"\n  },\n  \"id\" : \"293ea80e-8492-4110-893c-6b7c7792b7fe\",\n  \"expireAt\" : \"2023-07-06T06:21:53.613356Z\",\n  \"partyAccountId\" : \"9d80e8dc-23cc-43d6-9e78-0c456f83ce22\",\n  \"status\" : \"rejected\",\n  \"settlement\" : \"f3b40efc-efbd-443a-9ddb-600a4fe48195\"\n}, {\n  \"createdAt\" : \"2022-07-14T15:55:06.613447Z\",\n  \"payload\" : \"lhori9nk6g9mktht20zvcf5ktz3l83aa3866jtff124ahl3\",\n  \"signature\" : \"3vjws1sn69kt9k8ovrq7d0q\",\n  \"counterpartyAccountId\" : \"337f43f4-7250-4828-b4f0-ba434ac490ea\",\n  \"counterpartyName\" : \"Dr. Willene Collins\",\n  \"lock\" : {\n    \"accountId\" : \"66t6\",\n    \"createdAt\" : \"2023-02-21T19:30:46.613947Z\",\n    \"amount\" : \"6m7czhfxzdx9i760ip5oh1ib9c3znya1luglqrei0zvexdukj221jo37xno57tbtfdljfl4akwvdjb1kl7l65t6n07r34zmi262vftwci0js4h4bwt9rrr48tdlniqik0a76o9egk0odl3idm8j715bwloq72czvlgwt84zqesux\",\n    \"currency\" : \"TTD\",\n    \"id\" : \"6914e862-0a76-4b11-81c0-670d27ca0e90\",\n    \"status\" : \"active\"\n  },\n  \"id\" : \"27fc3c0c-9452-424d-9390-87197a92c452\",\n  \"expireAt\" : \"2023-04-26T09:10:38.614206Z\",\n  \"partyAccountId\" : \"5f7fd59d-9fdc-49c7-8b3e-e719a5066895\",\n  \"status\" : \"pending\",\n  \"settlement\" : \"249387c1-1333-45c2-b3e9-7f3cc0340076\"\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f50decf2-8122-4252-a272-1fea4e38b234",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.614755Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.settlement.listAffirmationsByAccount",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/components/schemas/Affirmation"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 122
+}

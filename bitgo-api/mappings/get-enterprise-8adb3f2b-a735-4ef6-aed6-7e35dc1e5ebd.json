@@ -1,0 +1,46 @@
+{
+  "id" : "8adb3f2b-a735-4ef6-aed6-7e35dc1e5ebd",
+  "name" : "Get enterprise",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/c5d7e4afd77a406958d4d1646503f5b5",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"6v8o\",\n  \"context\" : { },\n  \"name\" : \"Rex Lindgren\",\n  \"error\" : \"2qj82vw0irimgp724jf7vbktl84ll2ehb5oudwqqde1u477xg9f0v5luns3jimrhb0dfoflbjlt78nin5s1x9iqju7loujcaqtd3qw\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "8adb3f2b-a735-4ef6-aed6-7e35dc1e5ebd",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.942448Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.getById",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 441
+}

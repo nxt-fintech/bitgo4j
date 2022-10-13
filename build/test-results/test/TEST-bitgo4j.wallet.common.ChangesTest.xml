@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.wallet.common.ChangesTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:33" hostname="ishtos-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="testToString()" classname="bitgo4j.wallet.common.ChangesTest" time="0.001"/>
+  <testcase name="testSetExpireTime()" classname="bitgo4j.wallet.common.ChangesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

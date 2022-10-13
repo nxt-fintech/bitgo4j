@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.transfer.common.Eip1559Test" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:32" hostname="ishtos-MacBook-Pro.local" time="0.0">
+  <properties/>
+  <testcase name="testToString()" classname="bitgo4j.transfer.common.Eip1559Test" time="0.0"/>
+  <testcase name="testSetStandardMinerTip()" classname="bitgo4j.transfer.common.Eip1559Test" time="0.0"/>
+  <testcase name="testSetLudicrousMinerTip()" classname="bitgo4j.transfer.common.Eip1559Test" time="0.0"/>
+  <testcase name="testSetFastestMinerTip()" classname="bitgo4j.transfer.common.Eip1559Test" time="0.0"/>
+  <testcase name="testSetGasUsedRatio()" classname="bitgo4j.transfer.common.Eip1559Test" time="0.0"/>
+  <testcase name="testSetNormalMinerTip()" classname="bitgo4j.transfer.common.Eip1559Test" time="0.0"/>
+  <testcase name="testSetBaseFee()" classname="bitgo4j.transfer.common.Eip1559Test" time="0.0"/>
+  <testcase name="testSetSafeLowMinerTip()" classname="bitgo4j.transfer.common.Eip1559Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

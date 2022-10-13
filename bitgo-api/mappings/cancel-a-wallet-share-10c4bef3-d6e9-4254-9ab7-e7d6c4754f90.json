@@ -1,0 +1,40 @@
+{
+  "id" : "10c4bef3-d6e9-4254-9ab7-e7d6c4754f90",
+  "name" : "Cancel a wallet share",
+  "request" : {
+    "urlPath" : "/api/v2/ze908df84q807dltd245orr6ka3tzfcm4x6p2z0rdhj7dd7ecdtu6brs5t03qeayyaf8i2x2ukd1iapur5zkxhtuyccyime27wn5cphyddf6u0g06s96wndm4lmrcskqxau519tvgm1jyp/walletshare/a85a7c17cfdfeaffb94552df882bb486",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"state\" : \"active\",\n  \"changed\" : false\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "10c4bef3-d6e9-4254-9ab7-e7d6c4754f90",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.378253Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.sharing.cancelshare",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "state" : {
+              "$ref" : "#/components/schemas/WalletShareState"
+            },
+            "changed" : {
+              "type" : "boolean"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 299
+}

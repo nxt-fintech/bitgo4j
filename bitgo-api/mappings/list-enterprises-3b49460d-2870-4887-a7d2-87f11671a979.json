@@ -1,0 +1,46 @@
+{
+  "id" : "3b49460d-2870-4887-a7d2-87f11671a979",
+  "name" : "List enterprises",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"3879\",\n  \"context\" : { },\n  \"name\" : \"Miss Daren Hackett\",\n  \"error\" : \"uh41ftmg1utacw7dmbzaj9ojyhxrsoxwg2fmuhqnerybay6i01bgxpnu6pcki4nzeuc89i9qjrb9k1twvvzulczt9nz4p084vk8a3gqn8vusvmgdiizqjen6pm0oknnvulmxpnbopaq2a97ffqwduupoc2jg5zv4psadayekad05pi\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "3b49460d-2870-4887-a7d2-87f11671a979",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.037908Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.list",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 434
+}

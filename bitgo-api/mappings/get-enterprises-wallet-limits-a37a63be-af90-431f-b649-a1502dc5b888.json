@@ -1,0 +1,36 @@
+{
+  "id" : "a37a63be-af90-431f-b649-a1502dc5b888",
+  "name" : "Get enterprise's wallet limits",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/8845b96646ca4091482e463a4c5a29d1/walletLimits",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "a37a63be-af90-431f-b649-a1502dc5b888",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.08199Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.walletLimits",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidEnterpriseId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 410
+}

@@ -1,0 +1,53 @@
+{
+  "id" : "d5d5fe0c-8e93-44ac-a560-fa3310373fb4",
+  "name" : "Update Trading Account Settings",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/z921/account/re9o/settings",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"errorName\" : \"Clyde Huel\",\n  \"error\" : \"qi8nqc77q2e7zraqp0mg25k3b5j840jhw9oyg5igkj2ymxzfmzsuaba6\",\n  \"reqId\" : \"547y\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d5d5fe0c-8e93-44ac-a560-fa3310373fb4",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.678612Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.trade.updateAccountSettings",
+        "schema" : {
+          "type" : "object",
+          "description" : "An API error returned by the service.",
+          "properties" : {
+            "error" : {
+              "type" : "string",
+              "description" : "Human-readable error message"
+            },
+            "errorName" : {
+              "type" : "string",
+              "description" : "Immutable error code for API integration"
+            },
+            "reqId" : {
+              "type" : "string",
+              "description" : "Client request id"
+            }
+          },
+          "required" : [ "error", "errorName", "reqId" ],
+          "example" : {
+            "error" : "Missing required parameter: accountId",
+            "errorName" : "MissingRequiredParameter",
+            "reqId" : "3fa3fb673ce950a95fd2d395e245efbe"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 19
+}

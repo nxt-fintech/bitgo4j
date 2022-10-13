@@ -1,0 +1,43 @@
+{
+  "id" : "5443667e-6bd8-448c-88f5-8b742bfed638",
+  "name" : "Retrieve staking requests and staking transactions for a given enterprise and query params",
+  "request" : {
+    "urlPath" : "/api/staking/v1/enterprises/xidp/requests/transactions",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"code\" : \"Unauthorized\",\n  \"message\" : \"Unauthorized\",\n  \"status\" : 401\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "5443667e-6bd8-448c-88f5-8b742bfed638",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.646343Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve staking requests for a given enterprise",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 77
+}

@@ -1,0 +1,46 @@
+{
+  "id" : "f54fa9fa-b385-44d8-8fcf-2b463f677a2e",
+  "name" : "Create a signature share for a transaction on a transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/7b6b2d87f9f055c2a6c3f7d05f6d8894/txrequests/f3222834232c8e4980ca68970c92f84c/transactions/3iqf3tu80gjd03oz4fquda6lho2fc3qs30ldyjbvqxn1qtml7gzl4yipwe4p2qoqipk2yqr2uij3app8pipw1qwzpnzc4e1num28izkxucgj3dhsoewmp9jopbxjl2d7iiro3688fqdet892p480s5dr55eb6kvruas99zrv21u459r4/signatureshares",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 403,
+    "body" : "{\n  \"requestId\" : \"i4x2\",\n  \"context\" : { },\n  \"name\" : \"Yen Lockman\",\n  \"error\" : \"p0484cv0wvsdxlp4bxnajmo4icd5nox\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f54fa9fa-b385-44d8-8fcf-2b463f677a2e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.41877Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.transaction.signatureshare.create",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 242
+}

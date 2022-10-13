@@ -1,0 +1,36 @@
+{
+  "id" : "73335560-273f-4e80-a550-8d5edcac76f7",
+  "name" : "Update policy rule",
+  "request" : {
+    "urlPath" : "/api/v2/svmexdnv039mj03oih8emmybxsh3cxi5tqenctnzucr0en075qoc8v59z2558mgnetbqupmx1th8wnttdv9i62o0oibgdd87nmfryrraxloneqwnz/wallet/b4046427102f17763eb5cde2faa0faf0/policy/rule",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "73335560-273f-4e80-a550-8d5edcac76f7",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.207674Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.updatepolicy",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 380
+}

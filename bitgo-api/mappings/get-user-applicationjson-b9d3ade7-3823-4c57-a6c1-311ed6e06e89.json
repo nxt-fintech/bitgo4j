@@ -1,0 +1,84 @@
+{
+  "id" : "b9d3ade7-3823-4c57-a6c1-311ed6e06e89",
+  "name" : "Get user (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/user/1cc8c3a5b01952d3d288e0099dea8c0a",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"country\" : \"Guyana\",\n  \"phone\" : {\n    \"phone\" : \"221-542-0702\",\n    \"verified\" : false\n  },\n  \"name\" : {\n    \"last\" : \"uc9nlp72xair517uzm21xlanohstkgwtejcmb21386nnb2dayo70fd2es0a6kpuro48y0e7di0baigcpjaw6yif59vhw\",\n    \"first\" : \"bflwuf660ikgq0exp09gmf86kws6f84v9e01kfcojt0jdjv9sb8qkvbg9lh5jpuxzpw6fgw8i0e\",\n    \"full\" : \"tt9lxmptvq0rc36awfdaqyyh1773inz9ct984rvslivczg0c528a1y5rlzftbkpqkk44zalhaydbz07x9xfg1qbc0wfvauikmwfex8q4ptpd4cvlxkom2yml0t4x1tenhzolz9g86yv1944bo4\"\n  },\n  \"id\" : \"90348d2c529d12346be5ba84d19a15e1\",\n  \"state\" : \"Kansas\",\n  \"isActive\" : true,\n  \"email\" : {\n    \"verified\" : true,\n    \"email\" : \"Lula.Gusikowski@email.example.mocklab.io\"\n  },\n  \"username\" : \"Bryant.Nitzsche@email.example.mocklab.io\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "b9d3ade7-3823-4c57-a6c1-311ed6e06e89",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.177545Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "user.get",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "isActive" : {
+              "type" : "boolean"
+            },
+            "name" : {
+              "$ref" : "#/components/schemas/Name"
+            },
+            "username" : {
+              "$ref" : "#/components/schemas/Email"
+            },
+            "email" : {
+              "type" : "object",
+              "properties" : {
+                "email" : {
+                  "$ref" : "#/components/schemas/Email"
+                },
+                "verified" : {
+                  "type" : "boolean",
+                  "example" : true
+                }
+              }
+            },
+            "phone" : {
+              "type" : "object",
+              "properties" : {
+                "phone" : {
+                  "type" : "string",
+                  "example" : "408-718-6885"
+                },
+                "verified" : {
+                  "type" : "boolean",
+                  "example" : true
+                }
+              }
+            },
+            "country" : {
+              "type" : "string",
+              "example" : "USA"
+            },
+            "state" : {
+              "type" : "string",
+              "example" : "New York"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 398
+}

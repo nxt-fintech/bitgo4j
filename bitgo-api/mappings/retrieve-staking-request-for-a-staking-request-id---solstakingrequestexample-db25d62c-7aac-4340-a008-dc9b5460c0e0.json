@@ -1,0 +1,38 @@
+{
+  "id" : "db25d62c-7aac-4340-a008-dc9b5460c0e0",
+  "name" : "Retrieve Staking Request for a staking request id - SolStakingRequestExample",
+  "request" : {
+    "urlPath" : "/api/staking/v1/requests/n75c",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"id\" : \"e055adbc-66a3-4ccd-9a9d-726a05bca0cf\",\n  \"clientId\" : \"f054adbc-26a3-4acd-8a9d-726a05bca0dr\",\n  \"requestUserId\" : \"6092e75c451052000636831deb797bd1\",\n  \"enterpriseId\" : \"1032e75c451052000436831deb797af1\",\n  \"walletId\" : \"2032e75g451052000636831abd797bd3\",\n  \"withdrawalAddress\" : \"3Lwg4hE19Kg4BdUkuDh4v8xXoyoRQkbDMM6wX7zjQP6i\",\n  \"walletType\" : \"custodial\",\n  \"type\" : \"STAKE\",\n  \"coin\" : \"sol\",\n  \"createdDate\" : \"2022-01-10T14:32:28Z\",\n  \"statusModifiedDate\" : \"2022-01-10T14:32:28Z\",\n  \"status\" : \"NEW\",\n  \"delegations\" : [ {\n    \"id\" : \"e0225adbc-66a3-4ccd-9a9d-726a05bca0cf\",\n    \"delegationAddress\" : \"string\",\n    \"withdrawalAddress\" : \"3Lwg4hE19Kg4BdUkuDh4v8xXoyoRQkbDMM6wX7zjQP6i\",\n    \"delegated\" : 1000000000,\n    \"status\" : \"ACTIVE\",\n    \"rewards\" : 0,\n    \"pendingUnstake\" : 0,\n    \"apy\" : 8.3,\n    \"unstakingFee\" : 1000000,\n    \"unstakingMin\" : 0\n  } ],\n  \"transactions\" : [ {\n    \"id\" : \"i0500adbc-55b43-5tta-9a9d-726a05bca0op\",\n    \"stakingRequestId\" : \"e055adbc-66a3-4ccd-9a9d-726a05bca0cf\",\n    \"createdDate\" : \"2022-01-10T14:32:28Z\",\n    \"statusModifiedDate\" : \"2022-01-10T14:32:28Z\",\n    \"status\" : \"CONFIRMED\",\n    \"amount\" : 1000000000,\n    \"transactionType\" : \"delegate\",\n    \"delegationId\" : \"e0225adbc-66a3-4ccd-9a9d-726a05bca0cf\"\n  } ],\n  \"amount\" : 1000000000\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "db25d62c-7aac-4340-a008-dc9b5460c0e0",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.64199Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve A Specific Staking Request",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/EthStakingRequest"
+          }, {
+            "$ref" : "#/components/schemas/NearStakingRequest"
+          }, {
+            "$ref" : "#/components/schemas/SolStakingRequest"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 87
+}

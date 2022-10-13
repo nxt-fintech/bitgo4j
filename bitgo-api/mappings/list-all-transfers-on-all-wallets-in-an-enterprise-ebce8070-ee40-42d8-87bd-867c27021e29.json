@@ -1,0 +1,46 @@
+{
+  "id" : "ebce8070-ee40-42d8-87bd-867c27021e29",
+  "name" : "List all transfers on all wallets in an enterprise",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/d6de3d7578a8e389f08617b07be1b693/transfer",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"hmou\",\n  \"context\" : { },\n  \"name\" : \"Mr. Jody Kirlin\",\n  \"error\" : \"kk46nhqgx4dcp9p1cc4zmeqv8f3t5en7jswnt0i0ucfix1i4wglo4eoib2zphejjls4oci7v8yi538j3iaeap76e5z34xf9awwa93ry1booetoem6eajjkn7ucfzc1umuptvuauumsvg1rj07ocjk2fktsfd6u047xlhqkspjhtjy9bbqsqpkdsrn37f78vglalwe\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ebce8070-ee40-42d8-87bd-867c27021e29",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.118961Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.enterprise.listtransfers",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 406
+}

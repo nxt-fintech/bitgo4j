@@ -1,0 +1,36 @@
+{
+  "id" : "bc2fadb8-f5e0-47fc-a5b3-023f4dbdc1ff",
+  "name" : "Retrieve Staking Reward History",
+  "request" : {
+    "urlPath" : "/api/staking/v1/8v765hu1h2m58m28l6yv87ybqhr4owe35ke9txlsx9qgtrecjuuh5ihksc37grm4rzcmooym6ksbarewi2blqqxo14aeplbnw2ig1217v2m0575mqvfq431po9pqg51utao08v3dt49twj48cg5r5lu3ykazo7/reward-accrual-report",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"code\" : \"BadRequest\",\n  \"message\" : \"Bad Request\",\n  \"status\" : 400\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "bc2fadb8-f5e0-47fc-a5b3-023f4dbdc1ff",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.66332Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Reward History",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/StakingError"
+          }, {
+            "$ref" : "#/components/schemas/ValidationError"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 43
+}

@@ -1,0 +1,46 @@
+{
+  "id" : "d8901c86-9844-4278-8432-15fd56bcd9ce",
+  "name" : "Create transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/b98524a41d60e6ace4d9dc70b8f47c15/txrequests",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 403,
+    "body" : "{\n  \"requestId\" : \"bnls\",\n  \"context\" : { },\n  \"name\" : \"Joel Johnston\",\n  \"error\" : \"hi94bo7gw5he0b3q9tul8zam0kqmj9xkw9u24zhvelh1337jkgp9111xmel3l0v0zg5v2yafs31dewkrs1ybwpt8q02jy8bta0nbv166cy052uka25zblv3bp\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d8901c86-9844-4278-8432-15fd56bcd9ce",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.405303Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.create",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 264
+}

@@ -1,0 +1,46 @@
+{
+  "id" : "683c9c92-5a49-4b91-b4b8-064eee173301",
+  "name" : "Add user to enterprise",
+  "request" : {
+    "urlPath" : "/api/v1/enterprise/426cc19da85bb1565a321c683893a770/user",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"d7f1\",\n  \"context\" : { },\n  \"name\" : \"Krystyna Schoen\",\n  \"error\" : \"x7nuph1mwai1cfxg4ezdevr6qquehwpm96prmx85agt6xlgdeiegf9xdtypw4pi8f01tz26taw8nvs1jx4spxyqmoqxui13gin7mkw1xa4thqy8vjte0i50a451db1gwo\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "683c9c92-5a49-4b91-b4b8-064eee173301",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.04698Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.enterprise.user.add",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 427
+}

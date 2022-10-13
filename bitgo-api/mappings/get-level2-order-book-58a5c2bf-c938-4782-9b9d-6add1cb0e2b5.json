@@ -1,0 +1,65 @@
+{
+  "id" : "58a5c2bf-c938-4782-9b9d-6add1cb0e2b5",
+  "name" : "Get Level2 Order Book",
+  "request" : {
+    "urlPath" : "/api/prime/trading/v1/accounts/hg25/products/0x8kqlelpkb07y41b9ephq922901guyh8iazxary0yi8tv4bijd8p6b24vtj83r0d6f2px66qld9zr4kzb8tz29u2nn8orfo8vqdozhfmcfbnaod89kj2a9zpvrgtvgaw3k4cu6g/level2",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"product\" : \"4ayl9htdddqxr7f1sfvd5fom6m77gd3me5niynwbbeus2h62i5z5plv4irt61glgybejywg2nibt6v45g0bwa5dlnx9t5er5aox4toe10mfeji0p48h8pnrwjof2fqydo0vdozpp4r85vx7m3h8ih5x2jegn3p\",\n  \"asks\" : [ \"bg4jwm5hc6xvhz6tx9guozcf6x5k4ku814ew7zepstd9eseh5tw54smc12v2vl30eulbciqleeelfxrdykhfgrmi8zzwn0\", \"lrxjima2ziibvvc0w94qmum3ie1k3j8zmswyvpfj8std0rmqtm0voizpusqgxk4pjapun2o33wm9rbdqkrrc4aha5owhhjf5umbw4upk4z6kmq5lrcp39z1o9gzek8d9qcb3b9dzvag9m9ibhob64k7dh1p0uqepfw\", \"z7kgaz6349c7x4hjapj2kpqym6llm34gj5xput7c088rk6a3aqrbj0f78o8e27ckgdhb2e5ed3hdn4a41jwegboq94khm5hcqwkdtm1o81qnnu5rfsik6hscvtqkjdaf5lern9r3t7r3rh\", \"nnn3tnj5utpewdzlodwaz14zrpugspola113hdft75cpqlrc813v1gfxr32e4cwhzsua67uiy4y89xb249nllogehg4732l\", \"t54hgysnarh6wotc8l4kx5ujacg8lxfigsqnes8io9phw02iwgz4gdx6y89kb7oi2n67ggiqyocf0s6d14pktaw8nrrxumpxi60k1vufg0q5s0lui2cdbwbhax6oojc5hs0w4wh8x97t4ukt7nyp51isq69w7dcgivty\", \"n9dd2rywpbou1tyqw6g40bt82ncivwl72ogq44r1o6a72fl2z39ifdjsgkyt7o4juc9idks1iyi\" ],\n  \"bids\" : [ \"vru84hsao2j9xrumez83t\", \"w3vhuwpf5zwc49fyhb3ev5gp8h2lta113ljbrjp3tb6bc4ji1me8b1r08694723s6ernitje9u4rgu3l3icy3uez3obsewn4cmns3ms0j5z3jsvzj2no7o57cd49y87em\", \"tz0akcyeg9ij4ugbpqsloiqbm8zbfkmq1vpdyd1i5h9z0906unzyn7t5oy575t2yv8f5wvq39vzp7g29\", \"1ppv3dpib5o0lxz6nj55zlmboteam6ownviza0\", \"0cgzmj14ujjlhats5e3traev\", \"75bs6dg7i5d06124crf6idwxc49s366mpy1luh0mjonz9pm6uwcmt6krordjf0xczremxsh9a79okatpz51dtd7kz32u6wgtra63wiw9veiyobylazk6jc3bjl9w8rty44lc6ctla0ghkcavl69ka56ta1j1frqatlzybt7tr2r98\" ],\n  \"time\" : \"2021-12-28T03:28:30.566353Z\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "58a5c2bf-c938-4782-9b9d-6add1cb0e2b5",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.56692Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "products.product.level2",
+        "schema" : {
+          "required" : [ "asks", "bids", "product", "time" ],
+          "type" : "object",
+          "properties" : {
+            "time" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "product" : {
+              "type" : "string",
+              "description" : "Product name e.g. BTC"
+            },
+            "bids" : {
+              "type" : "array",
+              "description" : "An array of levels of [price, size]",
+              "items" : {
+                "type" : "string",
+                "format" : "decimal"
+              }
+            },
+            "asks" : {
+              "type" : "array",
+              "description" : "An array of levels of [price, size]",
+              "items" : {
+                "type" : "string",
+                "format" : "decimal"
+              }
+            }
+          },
+          "example" : {
+            "time" : "2020-01-14T00:00:00.123Z",
+            "product" : "BTC-USD",
+            "bids" : [ [ "7090.96", "1.253433" ] ],
+            "asks" : [ [ "7090.97", "25.23881" ] ]
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 136
+}

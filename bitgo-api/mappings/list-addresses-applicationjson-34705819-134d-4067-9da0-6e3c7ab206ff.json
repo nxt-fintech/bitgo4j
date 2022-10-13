@@ -1,0 +1,41 @@
+{
+  "id" : "34705819-134d-4067-9da0-6e3c7ab206ff",
+  "name" : "List addresses (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/bc664afxfy17ei0bestwngu6jqh2tu2aoc6dg8ys52hl0w37ysbkylhjnjhh0rnrx5g6vp1jwx0jhkoqcsyx2iyheofrsdoa2xkz1r9mvel9lgy2oo5emke9jzeyqwt8ae27t96gg66798mz23n572gj4yqwcp5ojtnqbgz21x6pov0omnah/wallet/d5fb03ebbad0ecd17cfdec0a3402ba2f/addresses",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "34705819-134d-4067-9da0-6e3c7ab206ff",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.865414Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.addresses",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 458
+}

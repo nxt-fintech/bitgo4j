@@ -1,0 +1,80 @@
+{
+  "id" : "9dc5c21d-708b-47ea-81d9-d3c998d0dbf0",
+  "name" : "Get proof of address ownership",
+  "request" : {
+    "urlPath" : "/api/v2/x2axycwuzy3cj8jpr12efpr7vgk8avcznz3rtn8oxxmes6y4uxxan1uygufs7zdxovumnu7fbone4sbi2fc8fzrd0r7cct6gx7yxrlfrajz3n3hyoenp7fyb3qkj6qymxa0twn2ctrthpfksgqtdvt7wzr1edul4o9/wallet/b22f6f1f58eeec09a100fa903a54c449/address/10g6/proof",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"chain\" : \"ph55n4vzymiow9f6mfgqgl76m6sn2h2fkqb0zj7l1o8fdesclse89ty8ol\",\n  \"address\" : \"jbs3vbgt2h43plt5fad01ywqwowgxkqmcg5smy3sc5uqdkzx9p0l5rdrn5lib4m94foy8tum2o4wetkhslphbbe09bon3znbf5uxuqb7tapurheisxx76uli13csnr6z1hmo8obs3ctrlyzi1uapvj4uvw1p0b31mns4lvur\",\n  \"signature\" : \"ke7iv2ql6eaet1o187xvz72kd5phkrb60lg2qcrfbgzua6gge5c3lt117av9zbu5lburwmc8u0n3f7k7v7madj1ld7i1kt4of\",\n  \"prefix\" : \"k4us904db7iyzvkbi7iokx7vsrri931ugbpmebu5n28n73s8cn1bgp7i33r3uxzysdoqe4i7bgvmhj0tfwdxklc8hkidjoeo4tnw8p1fg9j8qzk4klzz\",\n  \"proofType\" : \"zthrhcikapmm5tfd7ltcq61tiakqo48tp2310szn5qebve23h8hmqjznfg9x5jfvgj91yz4e1rbdtw9uyf31rarj71typmcgnj0szbnffkz6zg955loddf\",\n  \"auxProofData\" : [ {\n    \"data\" : {\n      \"script\" : \"te2mhx8a3v381yvp9rlf5eft3b50hqr8ubbxoq7tdhc3pwi5qds3jiw5vss76aw01vg8jd7i8rebyqa5kshhzlgkhbysgq1wb6dm8yztu1lrvqknjcrc44ysplbsdn9aconvh0o2kboj91gdb501iz67qpymcl10ghcodg1du9lofmxtbonz59\"\n    },\n    \"type\" : \"dfko8m75eemxzfskz6r0qb4gl6yngmp3rs3r0ch9vnk40m8auuhudtx3nlqo5gg7p10hk5wjgx4dz0qlzx6jr5s2of2yucvha6i4w01x6w1gv2nje15pf93rckma\"\n  }, {\n    \"data\" : {\n      \"script\" : \"np70huho1xivs2wvl9hx9d8xhj31f\"\n    },\n    \"type\" : \"o3n7afbejnfotwnsc\"\n  }, {\n    \"data\" : {\n      \"script\" : \"615s6jt2zjyliunh55qvyit5xvvlxtr7k38lau2ffl2z00dze113l30ad9jqi7sopitdgag2zu8m2ydsfctsomfg6pwg9kpqgj4gp9kb2hke3a9wcz3bgfxmgwdidsf5o5r3c9y20i6aczjr91dco684m4i6z\"\n    },\n    \"type\" : \"9o0cgvo1om9i21ura2t30z08d175k4zuueh5mn9djjlnbiuavcboxomv67nec7ynyy5r8aku2i6hbr57c2t7ltmwwdpvgqed97n5fq3hh82ihyqnef9xdauxcocrsfikjqt4swx9j9qopsids4x\"\n  }, {\n    \"data\" : {\n      \"script\" : \"71801noihkoycp3aoohoc9u90nu9ds8xcdqw0fawr8jzbrd6dnosiqsnal74mx02zizmdr9e\"\n    },\n    \"type\" : \"3x5whghp6xi9ho06fg54h3une1hy\"\n  }, {\n    \"data\" : {\n      \"script\" : \"cvqfl3sq14owgl7icmuced1uh7jkfsepk260skp8twbtnxjcdfir6o2vctwzo4hebhjaocck4w3w4em4aeklrnd7omsbkw9rjccp9het6agt1pxjrixus3w6p9gykmnxtbppqqnfrlizgwrp8osqaabh7ke90o3cx2\"\n    },\n    \"type\" : \"m62fme9fi4x4ro2nl0u3oc4verf05wti7zhzo83pzr791bz6rprnwcotgm59n5jex1b8277cf3e0t00z6r5ei21yvjiuhawid97yl6acyja5qdt\"\n  }, {\n    \"data\" : {\n      \"script\" : \"zefpyvwrz4l035yey0n1j5oj4zu9dr8fcrdzykxgwibicyd61v83mgc3r1c5h971gl2nobywtu6dlimavsjldp78f815bdqwqb\"\n    },\n    \"type\" : \"l1707kpbsc6zjhwozw3dyaht093rkemepqtaj1jcd87k8fd\"\n  } ],\n  \"iou\" : true\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "9dc5c21d-708b-47ea-81d9-d3c998d0dbf0",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.929729Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.addressProof",
+        "schema" : {
+          "type" : "object",
+          "description" : "Proof of address ownership",
+          "properties" : {
+            "address" : {
+              "description" : "The address",
+              "type" : "string"
+            },
+            "chain" : {
+              "description" : "The coin name ('BITCOIN' or 'ETHEREUM')",
+              "type" : "string"
+            },
+            "iou" : {
+              "description" : "True if this is an IOU",
+              "type" : "boolean"
+            },
+            "signature" : {
+              "description" : "The proof signature",
+              "type" : "string"
+            },
+            "prefix" : {
+              "description" : "A 64-character random string used to generate the proof",
+              "type" : "string"
+            },
+            "proofType" : {
+              "description" : "The type of proof",
+              "type" : "string"
+            },
+            "auxProofData" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "type" : {
+                    "description" : "The type of data",
+                    "type" : "string"
+                  },
+                  "data" : {
+                    "type" : "object",
+                    "properties" : {
+                      "script" : {
+                        "description" : "The REDEEM_SCRIPT or WITNESS_SCRIPT associated with the address",
+                        "type" : "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 447
+}

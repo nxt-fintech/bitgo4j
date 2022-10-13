@@ -1,0 +1,43 @@
+{
+  "id" : "959e5bca-59fa-497e-86dc-427d13f16d4d",
+  "name" : "Retrieve Staking Wallet Information For A Wallet",
+  "request" : {
+    "urlPath" : "/api/staking/v1/socxvn9yy46vyitcxug8wcyf2t0qnmueas4htkh6axrgrdvmm00qjlnx2gdgdcs5iu0v7irzrn549vqwns6mwyanwhdcur5p98tt/wallets/9n8q",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"code\" : \"NotFound\",\n  \"message\" : \"Wallet not found\",\n  \"status\" : 404\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "959e5bca-59fa-497e-86dc-427d13f16d4d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.656081Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Wallet Information For A Wallet",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 61
+}

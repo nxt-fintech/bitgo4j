@@ -1,0 +1,36 @@
+{
+  "id" : "6c903fed-da60-4ecc-a024-e8b37999d277",
+  "name" : "Create key",
+  "request" : {
+    "urlPath" : "/api/v2/jdjpuv056g2psbrqj8g4c2utv7qrufa3upa51cp2h1f8cbwghb40nu74qut4ig29wxoig2la5jpd111f1pdsdl5ggom6qphzf4pu83awiyusk67j3b4nsgprt8qt5bfzd3q6luydp0/key",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "6c903fed-da60-4ecc-a024-e8b37999d277",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.186196Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.key.add",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/Key"
+          }, {
+            "$ref" : "#/components/schemas/KeyTSSCreated"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 387
+}

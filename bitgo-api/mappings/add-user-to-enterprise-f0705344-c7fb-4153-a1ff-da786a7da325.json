@@ -1,0 +1,46 @@
+{
+  "id" : "f0705344-c7fb-4153-a1ff-da786a7da325",
+  "name" : "Add user to enterprise",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/66652e5178cf6ae03015c7b22256324a/user",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"fl28\",\n  \"context\" : { },\n  \"name\" : \"Alonzo Lockman\",\n  \"error\" : \"qsyi1u4ejbiiz68rrlw6cl1loxu25d09deq9jzez06s4vtw1udlopa9ki5tdk3hr2x1fo1v2zd2he74gtdrq7qy2h3m2c5hlsv4vrokpm6v5g6llwmb4s9gfsulj2ajnl7hp8gddfvhl17q97zz3iqwrg936o30hfi56vg11vr\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f0705344-c7fb-4153-a1ff-da786a7da325",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.072395Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.enterprise.user.add",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 419
+}

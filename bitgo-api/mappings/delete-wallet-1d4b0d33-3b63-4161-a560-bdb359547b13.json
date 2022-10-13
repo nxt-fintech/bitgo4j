@@ -1,0 +1,36 @@
+{
+  "id" : "1d4b0d33-3b63-4161-a560-bdb359547b13",
+  "name" : "Delete wallet",
+  "request" : {
+    "urlPath" : "/api/v2/ht88rv5f/wallet/d71159d39eae4bc0cdd72164493d5cab",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "1d4b0d33-3b63-4161-a560-bdb359547b13",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.33917Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.remove",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 338
+}

@@ -1,0 +1,59 @@
+{
+  "id" : "59c5cc16-6c3a-4bee-a385-505f5b0c09d8",
+  "name" : "Get balance reserve data",
+  "request" : {
+    "urlPath" : "/api/v2/cspr/requiredReserve",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"reserve\" : \"hz1lq8ptn8n3s\",\n  \"baseFee\" : \"lbki63bjcmq3m5rlcbg9a3lckka4hf74ael1neyg9wqt3iuha1h77iqdphclxh24vfksyf6afxw3yuvq7enb12m8ye0pyt\",\n  \"baseReserve\" : \"xdl4fbyjhdnj998t4wi181857snfs3z6uliy3swel99zr1yg4by5khph2x4kih418napxvo5r35e3ufcdgesfqq7klxltavr7x75kbf3ijljensx6163ys8oqqovpxfs31fn0a46gpkjftt220yhcleq06gxcztvrmsz5kshj1xtyk1h0vu7qbwu9b5gc\",\n  \"minimumFunding\" : \"89o7z92\",\n  \"height\" : 2535362323902859611\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "59c5cc16-6c3a-4bee-a385-505f5b0c09d8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.430984Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.tx.fetchReserve",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "baseFee" : {
+              "type" : "string",
+              "description" : "base fee used in transaction fees",
+              "example" : "100"
+            },
+            "baseReserve" : {
+              "type" : "string",
+              "description" : "base reserve used in minimum account balances",
+              "example" : "5000000"
+            },
+            "reserve" : {
+              "type" : "string",
+              "description" : "minimum account balance, calculated using base reserve",
+              "example" : "25000000"
+            },
+            "minimumFunding" : {
+              "type" : "string",
+              "description" : "minimum funding balance, calculated using reserve and base fee",
+              "example" : "25000500"
+            },
+            "height" : {
+              "type" : "integer",
+              "description" : "the height of the block that provides the base values",
+              "example" : 11228504
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 229
+}

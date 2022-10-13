@@ -1,0 +1,36 @@
+{
+  "id" : "318ba282-52c7-4899-82c2-2886003215b5",
+  "name" : "Get address",
+  "request" : {
+    "urlPath" : "/api/v2/iro9ufe4nqjty9rrxz5w0we7auual1kqniwsadac3rpp6n9jqdapt97bffo5lzk7wwv5kmsmrwvcu1iakg9yh34sj1thl3rqogn/wallet/6f19b40e3b7f628aebbd17664c25c849/address/5dv2",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "318ba282-52c7-4899-82c2-2886003215b5",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.892653Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.singlewalletaddress",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 450
+}

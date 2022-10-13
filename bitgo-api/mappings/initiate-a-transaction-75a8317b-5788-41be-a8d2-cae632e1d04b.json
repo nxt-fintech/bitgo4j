@@ -1,0 +1,89 @@
+{
+  "id" : "75a8317b-5788-41be-a8d2-cae632e1d04b",
+  "name" : "Initiate a transaction",
+  "request" : {
+    "urlPath" : "/api/v2/fmp/wallet/5a0c091b8520e1e7e07923a8f1cf65c7/tx/initiate",
+    "method" : "POST"
+  },
+  "response" : {
+    "status": 202,
+    "body": "{\n  \"approvalsRequired\" : 1522902601536874630,\n  \"creator\" : \"2f2642ee5f61c877f4fafe3824f8236c\",\n  \"wallet\" : \"34cbb4a59b4ef2824a94a2303857e6de\",\n  \"enterprise\" : \"344c0dea4dc90067761d2623cca95a2c\",\n  \"scope\" : \"enterprise\",\n  \"userIds\" : [ \"689042f2367bf7c3ce0f4fcc49f82c68\", \"171b7a4351fdc199e765fcf815375c8d\" ],\n  \"id\" : \"784c04463e7dcd57cb0c5a3e76c51057\",\n  \"state\" : \"\",\n  \"coin\" : \"48r4is9sy48ofb12od0rv4357vzchivsz3qiqi51i9ddoyfb7tn7gaqt9hoc66uic8iqxyhfko2tps5q6th7vyn24f10l0scmz3q4tcvcyom4bbg4wmxkxur3eu4n\",\n  \"createDate\" : \"2023-02-20T22:21:52.424518Z\",\n  \"info\" : {\n    \"policyRuleRequest\" : {\n      \"action\" : \"agv5m9s7wmtj6u8kuwauwtky648rtnompoh132tyn23ohih0htsmzmoumvfq9ufueb0v7goloujnjxohtspm1urcypxm\",\n      \"update\" : {\n        \"condition\" : {\n          \"excludeTags\" : [ \"d60fa40f79da9bc2c302e0dfb4692051\", \"db5bff9304beec7064c234f8e45dea6b\", \"cb2f8cbea7c8365162c51c7a19182c2e\" ],\n          \"groupTags\" : [ \"0f85026c2194393a2a4be4d1ece6b7f2\", \"c9540b04ca2865775c7925a64a07c353\", \"cafa30baa41caae87202b89aa6ba798d\", \"caccbd6501441ada962030aa0ff5daa7\" ]\n        },\n        \"action\" : {\n          \"approvalsRequired\" : 6844171997507633341,\n          \"userIds\" : [ \"11ecfb64674e0ce0774f18a223b7a428\", \"2a50d689192e56a361e9bef6d7a0c437\", \"d4e133264f5b16241102a6dd6ea28b74\", \"870f10248438556c4334288f352c2af9\", \"08a1abffeb0827e689697fca545b8331\" ],\n          \"type\" : \"getApproval\"\n        },\n        \"id\" : \"50zy\",\n        \"type\" : \"coinAddressBlacklist\",\n        \"coin\" : \"2022-06-12T04:04:41.425123Z\"\n      }\n    },\n    \"type\" : \"policyRuleRequest\"\n  },\n  \"walletLabel\" : \"hic\"\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "75a8317b-5788-41be-a8d2-cae632e1d04b",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.4255Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.tx.initiate",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "coin" : {
+              "$ref" : "#/components/schemas/Coin"
+            },
+            "wallet" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "enterprise" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "creator" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "createDate" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "info" : {
+              "anyOf" : [ {
+                "$ref" : "#/components/schemas/PendingApprovalTransactionRequest"
+              }, {
+                "$ref" : "#/components/schemas/PendingApprovalTransactionRequestFull"
+              }, {
+                "$ref" : "#/components/schemas/PendingApprovalUserChangeRequest"
+              }, {
+                "$ref" : "#/components/schemas/PendingApprovalPolicyRuleRequest"
+              }, {
+                "$ref" : "#/components/schemas/PendingApprovalUpdateApprovalsRequiredRequest"
+              }, {
+                "$ref" : "#/components/schemas/PendingApprovalEnterpriseModificationResponse"
+              } ]
+            },
+            "state" : {
+              "$ref" : "#/components/schemas/PendingApprovalState"
+            },
+            "scope" : {
+              "description" : "What kind of entity the Pending Approval is tied to",
+              "type" : "string",
+              "enum" : [ "enterprise", "wallet" ]
+            },
+            "userIds" : {
+              "description" : "All the Users who should see this Pending Approval",
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/Id"
+              }
+            },
+            "approvalsRequired" : {
+              "$ref" : "#/components/schemas/ApprovalsRequired"
+            },
+            "walletLabel" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 236
+}

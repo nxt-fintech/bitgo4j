@@ -1,0 +1,46 @@
+{
+  "id" : "6be2e6f6-1760-483f-85a5-d2be8c3e47a1",
+  "name" : "Resend a wallet share invitation email",
+  "request" : {
+    "urlPath" : "/api/v2/c8bbj6l4w5re9121gxzec09ay3ajnxhppkfv1ht9toaq2fajkhj353ras5zxggz8y4j2g67qioe3z763pro56dtxlny5tyhxdtblwmabwdyoqdovc3uljqjt08cgv8/walletshare/95b4fbad0e4e8d0eb80b1b667d3865e7/resendemail",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"9t3n\",\n  \"context\" : { },\n  \"name\" : \"Felisha Reichel\",\n  \"error\" : \"ngiwi9i81uicq5gg0eggm550vnrslt943ihiy5b6livvdtvs8s50c72fordxsx2x8iin32kcxsnnulo0yuzk3pto1hnld2\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "6be2e6f6-1760-483f-85a5-d2be8c3e47a1",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.379363Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.sharing.resendemail",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 297
+}

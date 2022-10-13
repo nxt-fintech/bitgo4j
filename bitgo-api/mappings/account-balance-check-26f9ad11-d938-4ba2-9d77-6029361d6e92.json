@@ -1,0 +1,45 @@
+{
+  "id" : "26f9ad11-d938-4ba2-9d77-6029361d6e92",
+  "name" : "Account Balance Check",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/r91r/account/4198/tradingpartners/k045/balance",
+    "method" : "GET",
+    "queryParameters" : {
+      "amount" : {
+        "equalTo" : "lp26ceh0r54795p27iiyysmgi5lje6unfaq20hgotd2edrpvugdwfekaxf676y7pkqgrvv0eteazs5k49ivslqu50pmptshhmms78xp6tisgqti006haz8xshc3qclnivc8b0v5ln94awha3bfi9x76n6n4muij8dcmiit65de7oq6"
+      },
+      "currency" : {
+        "equalTo" : "BRL"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"check\" : false\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "26f9ad11-d938-4ba2-9d77-6029361d6e92",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.6991Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.tradingPartner.accountBalanceCheck",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "check" : {
+              "type" : "boolean"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 9
+}

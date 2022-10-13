@@ -1,0 +1,43 @@
+{
+  "id" : "b56d49a2-169e-47c7-ba48-f5868c90fdba",
+  "name" : "Act On A Transaction like sending a transaction",
+  "request" : {
+    "urlPath" : "/api/staking/v1/t42cbjt7xz6j6ni/wallets/yhi3/requests/nbu9/transactions/614j",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 403,
+    "body" : "{\n  \"code\" : \"AccessDenied\",\n  \"message\" : \"Stakingg license not added for enterprise\",\n  \"status\" : 403\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "b56d49a2-169e-47c7-ba48-f5868c90fdba",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.65123Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Act On A Transaction",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 69
+}

@@ -1,0 +1,41 @@
+{
+  "id" : "c7b157e1-b0b7-4cb1-a06d-7dce2b5b0e5c",
+  "name" : "Update wallet (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/rwkf2j1oq0cap7ecv0993bltsqpues7xzc71tyjw2vz5kz8tbo2us213r245po69ctf2h7t2lvsxwpbk6eflrtnwfct7zh8c7e5ndccrjxtelpgwegbixanbbn7ccidy80po9vvtz11bkw3a/wallet/5c4779fb0901066d039ef529ca1bea28",
+    "method" : "PUT",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "c7b157e1-b0b7-4cb1-a06d-7dce2b5b0e5c",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.332164Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.update",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 342
+}

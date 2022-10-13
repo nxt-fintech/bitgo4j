@@ -1,0 +1,81 @@
+{
+  "id" : "65ba6a3d-9bfa-4310-a860-2f87bfb7a9b3",
+  "name" : "Add Trading Partner",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/wyhc/account/4clt/tradingpartners",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"primaryEnterpriseName\" : \"Lionel Kiehn\",\n  \"primaryAccountId\" : \"4v11\",\n  \"requesterAccountId\" : \"89tt\",\n  \"secondaryAccountId\" : \"9h91\",\n  \"id\" : \"489e192f-8844-4e58-9469-dd11611239e4\",\n  \"type\" : \"direct\",\n  \"secondaryEnterpriseName\" : \"Albert Hirthe MD\",\n  \"status\" : \"rejected\",\n  \"updatedAt\" : \"2021-12-12T17:10:55.687361Z\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "65ba6a3d-9bfa-4310-a860-2f87bfb7a9b3",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.688014Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.tradingPartner.add",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "string",
+              "format" : "uuid",
+              "description" : "unique ID of the trading partnership, used for updating partnerships"
+            },
+            "primaryAccountId" : {
+              "type" : "string",
+              "description" : "primary account ID of the partnership"
+            },
+            "primaryEnterpriseName" : {
+              "type" : "string",
+              "description" : "enterprise name of the primary account ID"
+            },
+            "secondaryAccountId" : {
+              "type" : "string",
+              "description" : "secondary account ID of the partnership"
+            },
+            "secondaryEnterpriseName" : {
+              "type" : "string",
+              "description" : "enterprise name of the secondary account ID"
+            },
+            "status" : {
+              "$ref" : "#/components/schemas/TradingPartnerStatus"
+            },
+            "type" : {
+              "$ref" : "#/components/schemas/TradingPartnerType"
+            },
+            "updatedAt" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "ISO date string"
+            },
+            "requesterAccountId" : {
+              "type" : "string",
+              "description" : "account ID that initiated the trading partner request"
+            }
+          },
+          "example" : {
+            "id" : "456ed60d-3fd7-4463-88ba-1e489a48c530",
+            "primaryEnterpriseName" : "Trading Partner Co.",
+            "primaryAccountId" : "585cf0c85573c3a8416ac85f",
+            "secondaryEnterpriseName" : "Requester Co.",
+            "secondaryAccountId" : "585ci0c855g3c3a8416ac85g",
+            "status" : "accepted",
+            "type" : "direct",
+            "updatedAt" : "2019-05-03T00:37:49.196Z",
+            "requesterAccountId" : "585ci0c855g3c3a8416ac85g"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 15
+}

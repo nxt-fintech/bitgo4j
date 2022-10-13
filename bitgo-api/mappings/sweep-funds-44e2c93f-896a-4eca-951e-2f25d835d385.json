@@ -1,0 +1,36 @@
+{
+  "id" : "44e2c93f-896a-4eca-951e-2f25d835d385",
+  "name" : "Sweep funds",
+  "request" : {
+    "urlPath" : "/api/v2/1461smgs11m3qsacnphi5chjpfn9wfxn342lgp46rejz077klwwpwnc88xv3x0ui7edqy47bcygg072eo5dsrr46s7qwr77rlj1zoqqo43m79nqn78oycc/wallet/038289759d62006dd5551ab6ad0e31ac/sweep",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "44e2c93f-896a-4eca-951e-2f25d835d385",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.480721Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.wallet.sweep",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 190
+}

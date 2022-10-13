@@ -1,0 +1,46 @@
+{
+  "id" : "43ee82b8-890c-4160-b378-211a19c6a6f0",
+  "name" : "Accept wallet share",
+  "request" : {
+    "urlPath" : "/api/v2/86s2paxfknw0nj5zuzto7onz3u7r6514vq38sibwpise4c8mqu4tlb4mdcd40axquaipyi/walletshare/851b2d7f41465040c0e785c12aad52bd/acceptshare",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"state\" : \"canceled\",\n  \"changed\" : false\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "43ee82b8-890c-4160-b378-211a19c6a6f0",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.465673Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.wallet.acceptshare",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "state" : {
+              "type" : "string",
+              "allOf" : [ {
+                "description" : "State of the share"
+              }, {
+                "$ref" : "#/components/schemas/WalletShareState"
+              } ]
+            },
+            "changed" : {
+              "type" : "boolean",
+              "description" : "Indicates if the share changed"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 203
+}

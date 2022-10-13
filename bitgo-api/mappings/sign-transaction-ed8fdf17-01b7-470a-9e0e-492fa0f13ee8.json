@@ -1,0 +1,56 @@
+{
+  "id" : "ed8fdf17-01b7-470a-9e0e-492fa0f13ee8",
+  "name" : "Sign transaction",
+  "request" : {
+    "urlPath" : "/api/v2/olab9g7vuy7ukbjuyn4sa0wvk58t3birinbjbbecs4x56m04n6w7rscyg48r3802r1nxpuyd1efwh9ju/signtx",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"txInfo\" : {\n    \"txHex\" : \"7sr5n1yty5fifzarxtsspen6vpjuhltywxilazhit431mugqgbvzc6yskwg685n1g8m7d5avl\"\n  }\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ed8fdf17-01b7-470a-9e0e-492fa0f13ee8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.466013Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.signtx",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "txInfo" : {
+              "oneOf" : [ {
+                "type" : "object",
+                "properties" : {
+                  "txHex" : {
+                    "$ref" : "#/components/schemas/TxHex"
+                  }
+                }
+              }, {
+                "type" : "object",
+                "properties" : {
+                  "halfSigned" : {
+                    "type" : "object",
+                    "properties" : {
+                      "txBase64" : {
+                        "$ref" : "#/components/schemas/TxBase64"
+                      }
+                    }
+                  }
+                }
+              } ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 202
+}

@@ -1,0 +1,25 @@
+{
+  "id" : "29065b2a-b9ce-45a9-a446-b600ab3681b1",
+  "name" : "List wallets by coin - 404",
+  "request" : {
+    "urlPath" : "/api/v2/ffrpg1ggk95hyglfbqtmxuzz72yj1pmmq8rditjn7v8xcyplrynm44ozfdk1dw4v4bupwquh98iiqm0qhm6wxxdratcjrb3y916uhsz6ww8uh8kszmmd0lvhyfg5bu8felpkmue6nsxjghvy27p1wnado63a3c2v5jmaiutpab5u47e83otja1t9kma44z7twg/wallet",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "29065b2a-b9ce-45a9-a446-b600ab3681b1",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.300888Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.listbycoin"
+      }
+    }
+  },
+  "insertionIndex" : 352
+}

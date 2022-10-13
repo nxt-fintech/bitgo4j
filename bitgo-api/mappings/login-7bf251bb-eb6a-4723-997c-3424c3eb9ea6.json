@@ -1,0 +1,50 @@
+{
+  "id" : "7bf251bb-eb6a-4723-997c-3424c3eb9ea6",
+  "name" : "Login",
+  "request" : {
+    "urlPath" : "/api/v2/user/login",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"access_token\" : \"fdgpttynv8bf5blmaavqjeboag2el58r1diff4ymedfy3sis1eg9zlyalzjasdy07f03j9k3t26fra2yenwr45l7izvi8e1ickuhdhtndubn74l24hxm8akueo6bld1m5w31l5k9aet6yuoqc3c4xxgwpf8xn2vzly1zofilwp8gs\",\n  \"expires_at\" : 4583537377958502099,\n  \"scope\" : [ \"xe3er29qdetiy0nli1bdt60j1zkfu5liqzzfgaraxg6kpbg5gwszfgda2ff6gzwi84io225acptm\", \"z52o0ycsqeaqybeu3j9p\", \"3sghadc4lx8o7mcsds7cvabwl65bl3or4xx61o4nrg2skxmwjgz23f34grnh3b7qcg5c4wa297\" ],\n  \"user\" : {\n    \"country\" : \"Tajikistan\",\n    \"phone\" : {\n      \"phone\" : \"(454) 202-1387 x23381\",\n      \"verified\" : true\n    },\n    \"name\" : {\n      \"last\" : \"tnbhyg0peh1it71129iiksgj2k299jsgu\",\n      \"first\" : \"v4z2jhr3e2jat14gzy7hcfroaize9xbymv3qsv8sk2ckni1baix91u1pxjk92l\",\n      \"full\" : \"l9gxqgl2pfib497z08bik97kpp2zusrjcgv17jqmjuxah0ipyfr06uut3u2a9qctqflqjabdx3wyiv2bhg9lljbr2c5x2n01u4vklg83j2nkj9fdc4sd9v9v7ge7g57f5t0z79qx7\"\n    },\n    \"id\" : \"f0eb91adf36bde08f3e9fab2acb07c1f\",\n    \"state\" : \"North Dakota\",\n    \"isActive\" : false,\n    \"email\" : {\n      \"verified\" : false,\n      \"email\" : \"Oliver.Bauch@email.example.mocklab.io\"\n    },\n    \"username\" : \"Malia.Okuneva@email.example.mocklab.io\"\n  }\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "7bf251bb-eb6a-4723-997c-3424c3eb9ea6",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.232135Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "user.login",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "access_token" : {
+              "type" : "string",
+              "example" : "9b72c68ef394f5146f0f3efc1feafb7a971752cb00e79fafcfd8c1d2db83639c"
+            },
+            "expires_at" : {
+              "type" : "integer",
+              "example" : 1534201288,
+              "description" : "Unix timestamp"
+            },
+            "scope" : {
+              "$ref" : "#/components/schemas/Scope"
+            },
+            "user" : {
+              "$ref" : "#/components/schemas/User"
+            }
+          },
+          "required" : [ "access_token", "expires_at", "scope", "user" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 372
+}

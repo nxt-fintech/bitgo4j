@@ -1,0 +1,36 @@
+{
+  "id" : "34d08e8b-d8db-44a1-a88f-fe4e6c0a9217",
+  "name" : "Staking Request Creation",
+  "request" : {
+    "urlPath" : "/api/staking/v1/u3l05czwfd8fyriskabzu4dufm35xkhfft1ihl212i6xjivluf64yjoy1r3c8idgymcf9lf2en0x5ifga9io76zcid0pll65xtut0tdjtg6hnup8dbnx9v5ybin61fsix8r3b8sp5x0re7jqzjhl/wallets/9111/requests",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"code\" : \"BadRequest\",\n  \"message\" : \"Bad Request\",\n  \"status\" : 400\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "34d08e8b-d8db-44a1-a88f-fe4e6c0a9217",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.632988Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Create staking request",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/StakingError"
+          }, {
+            "$ref" : "#/components/schemas/ValidationError"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 107
+}

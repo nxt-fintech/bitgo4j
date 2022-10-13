@@ -1,0 +1,51 @@
+{
+  "id" : "bca35308-6254-4996-9bdf-01d73469e4c3",
+  "name" : "Delete send label",
+  "request" : {
+    "urlPath" : "/api/v2/sendlabels/2235cfff42948d8daad9712198091c04",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"address\" : \"4btzqgkbmly9ejng1zyq57onk5lbh12uhfh5ovypetycrdyw3vdci9ruk5sf5ititc1cmczanec2mihvqm8e3mgdapqcgs2p0ubiue8toek23l15m3agbuyyu9phphm5a4y68dhbg3e6buqbikumb962sd4w979yiruz7ixz5yr9y5o1cfvli40vckv8uh2l6jnbng1qxrljibae6oab0ir5avm50sitcktt1rd8pd2jd\",\n  \"id\" : \"a27679cad8b73ae04bed6e7fe976786f\",\n  \"enterpriseId\" : \"580e7464fa1d15aea7d1fade7dc687e3\",\n  \"label\" : \"nostrum\",\n  \"coin\" : \"b7unnmyzhppdjek23je\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "bca35308-6254-4996-9bdf-01d73469e4c3",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.40064Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.sendlabels.delete",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "coin" : {
+              "$ref" : "#/components/schemas/Coin"
+            },
+            "address" : {
+              "$ref" : "#/components/schemas/AddressString"
+            },
+            "enterpriseId" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "label" : {
+              "type" : "string",
+              "maxLength" : 250
+            }
+          },
+          "required" : [ "id", "coin", "address", "enterpriseId", "label" ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 272
+}

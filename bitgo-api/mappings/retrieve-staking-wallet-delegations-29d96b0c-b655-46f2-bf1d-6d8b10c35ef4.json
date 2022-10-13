@@ -1,0 +1,43 @@
+{
+  "id" : "29d96b0c-b655-46f2-bf1d-6d8b10c35ef4",
+  "name" : "Retrieve Staking Wallet Delegations",
+  "request" : {
+    "urlPath" : "/api/staking/v1/ovsqvj2ju15a714d8y6v9i558sex13uvd95znrpg2oujvypz20jtj6dq0n7kmliqu/wallets/y65d/delegations",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 403,
+    "body" : "{\n  \"code\" : \"AccessDenied\",\n  \"message\" : \"Stakingg license not added for enterprise\",\n  \"status\" : 403\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "29d96b0c-b655-46f2-bf1d-6d8b10c35ef4",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.658802Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Retrieve Staking Wallet Delegations",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "code" : {
+              "type" : "string"
+            },
+            "message" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 55
+}

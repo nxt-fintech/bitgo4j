@@ -1,0 +1,46 @@
+{
+  "id" : "9d87c2bb-f074-4c85-8375-1c2967609601",
+  "name" : "Create a signature share for a transaction on a transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/6c892e8c96c99a38022a9369b149e10d/txrequests/4ec9bee89f1cd217edd8a5ca987ab6d5/transactions/xwc64z1n2smcd9u59qtv7iu4ep47eb7reje21y4iuvw/signatureshares",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"i7y8\",\n  \"context\" : { },\n  \"name\" : \"Fausto Krajcik\",\n  \"error\" : \"kq3car06y8t5z0iuijhivr87ka7tthgzq42oyr7palqn7o6umnt40cb468p6708t1mfsmra63tb440\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "9d87c2bb-f074-4c85-8375-1c2967609601",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.417319Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.transaction.signatureshare.create",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 244
+}

@@ -1,0 +1,46 @@
+{
+  "id" : "f0e83be3-0a6b-42eb-a0b8-799a5145fb31",
+  "name" : "Delete signature shares on a transaction request.",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/5516bb70ac3f8ab96f92f8fd8ce0bf10/txrequests/3f63fa346860998edacafff074fe3eea/signatureshares",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"2z3i\",\n  \"context\" : { },\n  \"name\" : \"Octavio Wuckert II\",\n  \"error\" : \"i62g5vwmdwjvidh6lysxnflwvfv5xhfpk73lwgsfzvx7rqd56vwdc83qxyfl3ilpvb4p29qqif0j8li498wafa30enjr\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f0e83be3-0a6b-42eb-a0b8-799a5145fb31",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.414418Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.signatureshare.delete",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 249
+}

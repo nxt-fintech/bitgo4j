@@ -1,0 +1,39 @@
+{
+  "id" : "5c42084f-9292-4a14-9da4-6bc99e61a7b4",
+  "name" : "Act On A Transaction like sending a transaction",
+  "request" : {
+    "urlPath" : "/api/staking/v1/ofz4n4oyf6zblaq9my1gj0ywyl0b8jcl1hc01b54uv839akmhfzkodh7pcby94a69fhaglxtm4uq7xzkrmm0sbbdvlh6lemrdnkp3wogr6/wallets/u2c5/requests/7k0o/transactions/3r8i",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"staingRequestId\" : \"e055adbc-66a3-4ccd-9a9d-726a05bca0cf\",\n  \"createdDate\" : \"2022-01-10T14:32:28Z\",\n  \"statusModifiedDate\" : \"2022-01-10T14:32:28Z\",\n  \"status\" : \"NEW\",\n  \"amount\" : 3200000000000000000,\n  \"transactionType\" : \"delegate\",\n  \"buildParams\" : {\n    \"recipients\" : {\n      \"amount\" : 3200000000000000000,\n      \"address\" : \"0xff50ed3d0ec03aC01D4C79aAd74928BFF48a7b2b\",\n      \"data\" : \"fds0934rnnio390nw\"\n    },\n    \"stakingParams\" : {\n      \"requestId\" : \"e055adbc-66a3-4ccd-9a9d-726a05bca0cf\",\n      \"amount\" : 3200000000000000000,\n      \"validator\" : \"0x5a6406c9710f588ca733360bfa8033d0ef9ecd7c\",\n      \"actionType\" : \"delegate\"\n    },\n    \"gasPrice\" : 1000000000000000,\n    \"gasLimit\" : 3000000000000000\n  }\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "5c42084f-9292-4a14-9da4-6bc99e61a7b4",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.648968Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "Act On A Transaction",
+        "schema" : {
+          "type" : "array",
+          "minItems" : 1,
+          "maxItems" : 500,
+          "items" : {
+            "oneOf" : [ {
+              "$ref" : "#/components/schemas/EthStakingTransaction"
+            } ]
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 72
+}

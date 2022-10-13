@@ -1,0 +1,46 @@
+{
+  "id" : "de9777af-03cb-4f42-a363-a4f286e46606",
+  "name" : "Create a signature share for the transaction request",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/e62a39aed3c8b51fe2bbc92b65653b2d/txrequests/4f2aa826f3aee5aa5ea689375e05ae64/signatureshares",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"requestId\" : \"40b5\",\n  \"context\" : { },\n  \"name\" : \"Suzi Reilly\",\n  \"error\" : \"ooafkm7s5l99njemkiw0mpamepypnwrjngzz6g20s4y8dyyjdqtlrmfgvjjfzdhp35pe9eu5wd426ab3d0k6atf2sg735g7zki2gy22ojnv8htah49tdu0pq18zlq8d62booh1g38a86ukcdekhsxg6ej4ug5fv8\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "de9777af-03cb-4f42-a363-a4f286e46606",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.411864Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.txrequest.signatureshare.create",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 253
+}

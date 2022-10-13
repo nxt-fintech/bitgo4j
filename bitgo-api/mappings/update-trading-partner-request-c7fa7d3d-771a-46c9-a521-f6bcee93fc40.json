@@ -1,0 +1,81 @@
+{
+  "id" : "c7fa7d3d-771a-46c9-a521-f6bcee93fc40",
+  "name" : "Update Trading Partner Request",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/409s/account/61v2/tradingpartners/7c1c6934-ade6-4ed7-b505-e17674cd2c50",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"primaryEnterpriseName\" : \"Hermila Baumbach\",\n  \"primaryAccountId\" : \"74g6\",\n  \"requesterAccountId\" : \"795o\",\n  \"secondaryAccountId\" : \"17o0\",\n  \"id\" : \"1c53ec42-4efc-420e-a53a-1f29c2775e71\",\n  \"type\" : \"agency\",\n  \"secondaryEnterpriseName\" : \"Jesus Veum\",\n  \"status\" : \"canceled\",\n  \"updatedAt\" : \"2022-04-07T05:08:43.696532Z\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "c7fa7d3d-771a-46c9-a521-f6bcee93fc40",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.697175Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.tradingPartner.update",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "string",
+              "format" : "uuid",
+              "description" : "unique ID of the trading partnership, used for updating partnerships"
+            },
+            "primaryAccountId" : {
+              "type" : "string",
+              "description" : "primary account ID of the partnership"
+            },
+            "primaryEnterpriseName" : {
+              "type" : "string",
+              "description" : "enterprise name of the primary account ID"
+            },
+            "secondaryAccountId" : {
+              "type" : "string",
+              "description" : "secondary account ID of the partnership"
+            },
+            "secondaryEnterpriseName" : {
+              "type" : "string",
+              "description" : "enterprise name of the secondary account ID"
+            },
+            "status" : {
+              "$ref" : "#/components/schemas/TradingPartnerStatus"
+            },
+            "type" : {
+              "$ref" : "#/components/schemas/TradingPartnerType"
+            },
+            "updatedAt" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "ISO date string"
+            },
+            "requesterAccountId" : {
+              "type" : "string",
+              "description" : "account ID that initiated the trading partner request"
+            }
+          },
+          "example" : {
+            "id" : "456ed60d-3fd7-4463-88ba-1e489a48c530",
+            "primaryEnterpriseName" : "Trading Partner Co.",
+            "primaryAccountId" : "585cf0c85573c3a8416ac85f",
+            "secondaryEnterpriseName" : "Requester Co.",
+            "secondaryAccountId" : "585ci0c855g3c3a8416ac85g",
+            "status" : "accepted",
+            "type" : "direct",
+            "updatedAt" : "2019-05-03T00:37:49.196Z",
+            "requesterAccountId" : "585ci0c855g3c3a8416ac85g"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 11
+}

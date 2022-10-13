@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bitgo4j.enterprise.response.EnterpriseResponseTest" tests="35" skipped="0" failures="0" errors="0" timestamp="2022-10-13T09:51:31" hostname="ishtos-MacBook-Pro.local" time="0.023">
+  <properties/>
+  <testcase name="testSetPricingPlan()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.002"/>
+  <testcase name="testSetEthFeeAddress()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetBitgoOrg()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetUsersViewAllWallets()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.001"/>
+  <testcase name="testSetCanAccessSettlement()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetWalletUserIds()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.001"/>
+  <testcase name="testSetId()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetBitgoEthKey()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.001"/>
+  <testcase name="testToString()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.001"/>
+  <testcase name="testSetCreator()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetWallets()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.001"/>
+  <testcase name="testSetCanAccessBorrowing()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetCreateDate()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetVideoIdWaived()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetAdditionalEnterpriseInfo()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetEmergencyPhone()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.001"/>
+  <testcase name="testSetLatestSAVersionSigned()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.001"/>
+  <testcase name="testSetApprovalsRequired()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetBitcoinAddress()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.001"/>
+  <testcase name="testSetPrimaryContact()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetCanAccessTrading()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.001"/>
+  <testcase name="testSetFreeze()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetCanCreateOffchainWallet()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetEnterprise()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetInfo()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.001"/>
+  <testcase name="testSetName()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetWalletId()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetCanAccessLending()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetCanCreateColdWallet()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.001"/>
+  <testcase name="testSetKycState()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetMutablePolicyWindow()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetCanCreateHotWallet()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetCanCreateCustodialWallets()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <testcase name="testSetAdmin()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.003"/>
+  <testcase name="testSetState()" classname="bitgo4j.enterprise.response.EnterpriseResponseTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

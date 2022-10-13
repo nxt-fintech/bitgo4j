@@ -1,0 +1,25 @@
+{
+  "id" : "7aaa6965-1d7d-49b3-bc46-5d007f11ec63",
+  "name" : "Get Affirmation - 404",
+  "request" : {
+    "urlPath" : "/api/trade/v1/enterprise/76mp/account/ztf1/affirmations/xt82",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "7aaa6965-1d7d-49b3-bc46-5d007f11ec63",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.626874Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v1.settlement.getAffirmation"
+      }
+    }
+  },
+  "insertionIndex" : 116
+}

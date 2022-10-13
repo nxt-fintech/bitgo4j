@@ -1,0 +1,42 @@
+{
+  "id" : "599b792d-f02b-4285-896a-e9321facc0b7",
+  "name" : "Decrypt messages (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/decrypt",
+    "method" : "POST",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"decrypted\" : \"nvfs16jxihgqjxei6d0ptjy7qcl9v7dlrkd2nfrtvh60hbu1pbfoixbh5py00i4vyquiyvdyxc4kt48npnv13a3ime52wqbh36qmdo4pux1y4tl2xcktnc67s82x1oin7ckjardxvgn\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "599b792d-f02b-4285-896a-e9321facc0b7",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.457662Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "express.decrypt",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "decrypted" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 209
+}

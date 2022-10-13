@@ -1,0 +1,36 @@
+{
+  "id" : "b47279bc-6cb2-4d75-80ba-cb009091bc8a",
+  "name" : "List transfers",
+  "request" : {
+    "urlPath" : "/api/v2/8uo2ymnx/wallet/b9069ac188c3aec9d53de96b9a091826/transfer",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "b47279bc-6cb2-4d75-80ba-cb009091bc8a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.238723Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.listtransfers",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 369
+}

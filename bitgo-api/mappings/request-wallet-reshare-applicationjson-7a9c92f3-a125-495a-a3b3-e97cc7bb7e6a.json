@@ -1,0 +1,51 @@
+{
+  "id" : "7a9c92f3-a125-495a-a3b3-e97cc7bb7e6a",
+  "name" : "Request wallet reshare (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/p130cqlacftnh8oy4b579kv95m2efp7/wallet/f030611aa21f60da535e82859c05609e/requestreshare",
+    "method" : "POST",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"requestId\" : \"p4hl\",\n  \"context\" : { },\n  \"name\" : \"Mrs. Jimmie Feil\",\n  \"error\" : \"u0lslgwgujn8uyv8q08calskey69dvh4l\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "7a9c92f3-a125-495a-a3b3-e97cc7bb7e6a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.367245Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.sharing.requestreshare",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 308
+}

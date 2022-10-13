@@ -1,0 +1,49 @@
+{
+  "id" : "9507a626-0e5d-4404-9f08-e1b5e784b32b",
+  "name" : "Freeze wallet (application/json)",
+  "request" : {
+    "urlPath" : "/api/v2/5a4zpaep8819r16bvtwxa41ilkmvqdeza5hb0ys7ole5aawt72i7phz5k2fmmwqglaorobfoaph1nkimowbpbo1zy1d457umri515t995si659nl1rshgyk9vq34casnucv3e1lwxoy2twzvruk5f8uasweizyjqhuifcp7pjf5msl6rzqsad8k/wallet/6a712e978876b8dede76524c6f0dc9ab/freeze",
+    "method" : "POST",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"expires\" : \"2023-10-03T20:41:47.345487Z\",\n  \"time\" : \"2022-08-21T20:40:00.345508Z\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "9507a626-0e5d-4404-9f08-e1b5e784b32b",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.345863Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.freeze",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "time" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "When the freeze started"
+            },
+            "expires" : {
+              "type" : "string",
+              "format" : "date-time",
+              "description" : "When the freeze will end"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 333
+}

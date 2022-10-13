@@ -1,0 +1,57 @@
+{
+  "id" : "3bb82117-896e-40b8-8006-5d0a79928a53",
+  "name" : "Get total rewards data",
+  "request" : {
+    "urlPath" : "/api/v2/5cft1ld7azsfmr6icts2knno6ly7d3o076tjbdpcq2dz6wbdto8r3h1mbmk2si15kfd3yc2jdllpte58q8h8frag61ru7k6fqj0ipv0l0lsn59xm7pv17j2bpaj/wallet/473bf0ded9126e74b871a3986f30712b/balances/totalrewards",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"address\" : \"zom7s7tvm2d5monksj7zge9tv50bkhq8ni7ukrj9h03m114uxaup5voikve9impkykabsgtip2dxqi9ts3fyhztlkbyfnfyrupu1kknguxw3kpg111eb7z5yra0ar6m19d096qsactiosbvackh34zquprg509l6xd9zryp83o1jel\",\n  \"rewards\" : [ {\n    \"reward_amount\" : \"3b5ewoh3avej7f9xz0dbb3m9u1tfo36d6t5piw3v8rre9yeo425wb5ssptzxqohjf0e64ifj8dklprebpjuapvjxoywdnj6g5s9iu22eiad39wpqt85pk5u2zzve77ki86l\",\n    \"reward_recipient\" : \"c79nsccnek5pug5jfzwfumha6gr9lb0nthzjtwpg7d0mmsozszfcyd8n9l5f5ctahj1e56v60zlhirobbc1jmzpkhx5f655ab5fhg6pvhpvje0ylaz8q\"\n  }, {\n    \"reward_amount\" : \"6lfd2mzqi0a59jchtkztz9j637lrlsyg0e9b9np7st2imfvjult1ttqk5lwifyzlxw6zf4rv3rpcw0ik0tr7ly3uak5vbuu3qbu42bk8m35mgsqck8xev9h7xrkfu975\",\n    \"reward_recipient\" : \"gpviynycdmtesnt2i1fbjrwoc9j76j24r8estt0jv8smqsozd7aaywfs20d7bn4aokudesx4qhu0zkfeq5gldnzs6v81dn9dd8sz3lasgvud3d32ftqsj625odajfr1u0lqnjv6nbbwqk1bx6cze4ohrjspjlwbgv3y2fim0lhwtkogr1uel1yvxxmvv8x8bcafi5f28nges7kqxtad\"\n  } ]\n}, {\n  \"address\" : \"whp7htahdks7qyhkoswny18kjpo8p3jx65psyjhwhd5k7p4uqpubgrv7m7ipki48y86g9484glom2x32l6flw1jg6u780zfh9gb4ksa8iotojo7mxkuw3cvo8mwnra1yi0dwgfy4w2z72r7g8x80qvxp749zimcd2\",\n  \"rewards\" : [ {\n    \"reward_amount\" : \"a9rhce939y6b99ge8vwaqza6i5x4qy4ajbwt8qj9tkv9yg7u7xe0jkgttlvfgdlxitxe0tkxgo8tu3fx7t21t39hh5opjul6n8tfpkd1mh1bvz45nkbwovgi7t3kx94ufrgqq2754kr37rqub16rcwd9eghi8iasl4z1\",\n    \"reward_recipient\" : \"evw3dzd88qnboc9ccw4j7bahmjd46y5ny80dqi2e\"\n  }, {\n    \"reward_amount\" : \"8x35hoizmk6ipdhyx8oofiddttzjltf0549o71b28ci78fgnp59yfjeeg87b4jhctspi6k4v6qh74qcvqilsuk9oly4wj119w9u5v0tqw6pzf0x37k8ydw96op9330v06voa1hullnbdp4q2uuqb3nb99juqr6x9uas1svmhv7cfd29xebv9hi2h04sz\",\n    \"reward_recipient\" : \"ulociuoyasj6\"\n  }, {\n    \"reward_amount\" : \"p1kppe12e0rkxfjpdkjiokg51lrgv6emfyq5fpamn7beq2o5n3bhr41smtm\",\n    \"reward_recipient\" : \"twjh5e60mz1je\"\n  }, {\n    \"reward_amount\" : \"s7u3zuddtvu1cumtk7qbx2cflyg0fjs855i2y77zmw1hyx2dgklf8tvwno30tmaeepth5ol0l3dy190xz\",\n    \"reward_recipient\" : \"1c0baivxj6u0kftjq00c5b9fer8x5zkwsmd0xeaonn5n1hljbawoq6xhqpdca4j4c5evwss7dz8yrxcjz7lo41lpzk8rqpbx21mpz0r8t9wo6kibonx8ofxag7a91vs5i6ppuix5s1tmyqg7rya9zaar5ijzjy32mtpc1q9xhk6jz7\"\n  }, {\n    \"reward_amount\" : \"96kcgbvpj888jmtlprnr9p3s5wljwkhvowuxx843kp2rkf5bpscarzc4h84c07jjyx\",\n    \"reward_recipient\" : \"48ttz5gm4w2ttiaz6uit9ay9cdu60a6rs5k5f3y8n3jjfgikobq8g70knwhg3knh4l5jas9eczq2hvm1k5s6oqb1u6l4h9zyliub89ef20bk7nqur8aul2ozhioixxd13ldjdqj7q5yah0fk4l6nfhy6vqr52c\"\n  }, {\n    \"reward_amount\" : \"ek15qs42da4t8gnt8kn0v56j5pxoxyasssun201rljf5ub33q7qol3dbf\",\n    \"reward_recipient\" : \"wovwst4ibg3h5lazbox6a\"\n  }, {\n    \"reward_amount\" : \"ls3x4wwl821sjv57nhm1ae2xtxmpyfywe2asat3j3pux1wq3he6uew0tepp\",\n    \"reward_recipient\" : \"6v8yeeq2jo1d1g5ex25xxbtgjuiu05aea10j3rsj5lwjm96ahg1e0y0ot6mb411gqle5xs10wna36efrbqayaerr3pc4owx6ohyo0lo5eozmkwflte\"\n  } ]\n}, {\n  \"address\" : \"p7kse6je60u70gmiydh0foh98mhtsi9emxpn91pag8cgfifljt2fauerkcmymn4v83av6jurj90qbacaqvtg6cpojiyzbssslzkvmpzle4ly1hx0s5qnvgwzp45zh5zlj7uvluy7rm7i8iv8nyept542e2fig7r2htdbun0jqxj9iuvn951tvdhv6ctk6ym6kfwoq7xj5vt8v8s6c4185lbr1and59y3un7d0vlfyqf95lh\",\n  \"rewards\" : [ {\n    \"reward_amount\" : \"i9zqma6cgboarwjk8bpe5cz6im1a6aax5ierb4nqtef5ws24ldretx5wezgq83jsbxxzv636nz5g605zxlfjzp8yicc8wn60ss6qsrzz1uczxg9dqtr639kfci6h3ljphwak58tar622ypp68n8l1zalwvicp6\",\n    \"reward_recipient\" : \"g00kn7zrzv2ssty2bjdzhqdigbn94w7waa4evo287r8xv22kqufedzd7ch60i9pffseidqbjgpil69op34n4fj4orczfvicjlf04edhkmlf05aw9z97uxi2yaxlqh0fk060v2lgzuhwdkwf0h38v3773s2eit46qf57cg9kbzf15j0oym46g3njgl9kqjldpqckeuaiq5il7lmqzxboxs23y2pbvr5dx2\"\n  }, {\n    \"reward_amount\" : \"2wz0at4tfb1mtjdc1zesye6h95mmehd7qdiu50ncxcyu3om5i3b2dyvndjxcv1ghituelmwpt9pzt856ht7rjj4pkh52we9uh2zdubqttcq29zjfiyunfl1cyywf0xegtntlqzxgi002e60kp4skdjk87qvfgu7dswkmf9i2j5xo5df\",\n    \"reward_recipient\" : \"ipj7alxf5d4w4adngq0zxv2cnitueew8btufrvqz6ik41ffr6qmo1eqk9w33fpbfbrk9ec96hbdbc1421j2c021j5ck1qu\"\n  }, {\n    \"reward_amount\" : \"ubysh3wze7x561qks9s03tztn3g0u11mzst4odw24ym49xjy46sbozt2luydt3\",\n    \"reward_recipient\" : \"nwkkwohmyz72cczl70gc8thwl9hlax7yf4q6mwhebjhr3vzhqkhnlosipqcbisxo7yb2bag21aakpy4iocuee7t5vjsgzbi0bp1munla4n6tfwunzwzfwz5ugtx6mdn7b6uxnuyt83tek1rsxnw8eakg4wovmz0grd9mrwnvl6fn4ale4zuv4qyo78nhcrk8fl2n93it7wl84qg91y3bj7qp0xgivoguuchzlpdvu0il7lecgpp3e3\"\n  }, {\n    \"reward_amount\" : \"h5efvn5zvwm33jp6kkrf2f5fm4xxvq3cn1dnrtl2yc82kccqebc7jjoo0u43xf2gxgko49816hyjb743pnpnhgh6yzydm2sfvuqo2mj86rk7o9t5bh17zg03f6ifbp8mdojkkya8k5\",\n    \"reward_recipient\" : \"bc9zoa8uo8by7axryip9us3xohin32o2rh3973wz6hce1xbip95w4f7qb82t3ntm174jpl6p27n3h5jrr349s\"\n  }, {\n    \"reward_amount\" : \"r4iy4lwz15p2tnodjzny9snd9mbwxvd2sf558zrdfqkx7bc4z8cahhr2kyacpa54rstdsw51cit6m7ua12ks\",\n    \"reward_recipient\" : \"vk7wtkzpta2cc5t1nfzp1ykl893vsa31w83kogyins34wtek607nz1w65nt3z39zkzssgrot206u995u\"\n  }, {\n    \"reward_amount\" : \"z14p0jhb6mguw2xupsufom9cg9oe27cnewgeq061nmsjtchoq7bufywx6n1ftazj036xf39fvm3a3cw73b7pjx4t2bnmuunbp9a\",\n    \"reward_recipient\" : \"duxr9d01hgyli06g9so2v9ieku7awz3i9835tt7l3pupwjsmhzvnsel2dsqomrfsz8ztw4qngtgnoun6t6hfaz5qagdmv1mkhfoybslqjo1vb0jirwfe3tci4kpt7odk57zodowfszoxwmgs57opsn4muhd8dxtuuh34326mnk6xdju1iekio6qpzk9b6gl8slthtyljx0ysvol9acsvpd\"\n  }, {\n    \"reward_amount\" : \"llwaof77fc27uv56t51smdbvnjpphoypt2wz41876wlun3w0zjpl4d723lf9flbum98e6ezez8d837conhqu2xvadzjef098xz06lel7fb20ne69801j5mn9l4u7795z5oot8ydepmcsiaosvvbo410ttqwmxpy0gfo9g4w\",\n    \"reward_recipient\" : \"22h2itt3rjqm9be02nzxqfzfb9qvxe1uli0dxxdno\"\n  } ]\n}, {\n  \"address\" : \"a18mptyaop1dg055r2pq30nkq5zug95s4tyc7wjlki889as0z9itwq1e9s20ch2rc9bl0i4938x28c1pznm5w5y2sb9swu4vhq14xjmbj061idvc6br54wy6fdmyc15yyq8adbspmpxrbvk1vuzy\",\n  \"rewards\" : [ {\n    \"reward_amount\" : \"4elbcgukm8445w7rko7fii7lebm14uqpl2inin8g41882nof0fm\",\n    \"reward_recipient\" : \"awjjwj9f5jcbitfh1hb58ckxisqynfunihk19e6md30sbu82ux8n6wef6ns6ju7wyour1rk0deepvzqgdo5qso07xeoplxn\"\n  }, {\n    \"reward_amount\" : \"k5pfpa116i60la5571obhte1pi4nfqgs0hb6qqo1mtk23h\",\n    \"reward_recipient\" : \"3opbpgeohz81yk4hl77ydsxaqgr9kgysb5m9gtva3rgy1e1vsy3npcweizx6iot9qye02t7ctuxtfbj85v6zio51sumk59exidsejmecxqz6olpqg435o\"\n  } ]\n}, {\n  \"address\" : \"bbdemgn2vv6coxfxsr92fwaenh39m8l7o6hr8jrsyg82k1x187ww7qyawra9z3utcnwur1kuj990wthie7vbwso35u63ena5hmgpmwh4lwdyvfnjuuua9mlqwmvyuxi01ffrbiz97ig8y5y1wl1\",\n  \"rewards\" : [ {\n    \"reward_amount\" : \"3ymc9un76y7z6mdqqjjntg8vbes3jcqz80snw3vy21ev2q21f4s8dczm10gxzz4yrh96vz52x7wgwta21oiflclw22yqkn2ldr5r801rjzjr4io98goy0kfach609k1ppm7oig2tqtd0nvobbos\",\n    \"reward_recipient\" : \"0au2pzoc51qgk088ehlw1olx02sohjk54hkce7lpawtk1gi0tut18kxhzs0on04obsik4kh9e9iflilj1l7uq8zuvxk0hdz1pkmi47x8r0imfrp29vaegrmj56b9c2dntx3bhv09wpj\"\n  }, {\n    \"reward_amount\" : \"ra62xm6nnbzlm5005n6qbx9r3x0w9v9oeijp0kmn8ty1lxsdu4a5e8ihbqpaoefyjdfa3k1o4gzjl0swo3axp7od9z3uhe2rew8xkreqwn39darty8xoeqhw02ertzmo9\",\n    \"reward_recipient\" : \"tmhjlhehrvq5qk0aqz7dkx49missiu5x1p4aogg8z82qnp9gas1oc6xut5ypyyvpqljm6cizdvjl7p27g4y6db49m1gyneg5imvvj2un0829avzkk76unb3zzkdemriozwr7fqpwgezmxccma5wo5bn3nv62fhzjwb7ol37q\"\n  }, {\n    \"reward_amount\" : \"td153hxg40hxf566yoq8kbrmmmccn7xe63e8yw3c6cfmvnfp77n3sx8dm41568vb053rvq0p1hfl6zo9ryads7qdp6456d4kexdrzwpqd4owpa5wkrfsgwyhnw89sinhk9vj2h41q6utrry8fwnaeg2fsmecs0b6iruofeygsda\",\n    \"reward_recipient\" : \"xwqqscxfncyq7lg4wxv9movsko6nk0a5o44fjftxp2zkh9p19o9n0snm48jo3nwhokwg2kvwggz1tjat8oj3xrovz1x6pm3m01c7uj7ptyo63gt72pgvt940h4kjk9nm0qblzudfy\"\n  }, {\n    \"reward_amount\" : \"yodbfb1n6jg4kjr27w71j7gj87t558javw9x9nbigvsa4oiguq0z166hkbd4urcld5w8p1ng43y8vt59wuljk\",\n    \"reward_recipient\" : \"gxyxwph4brx3ikjmwyvpol70blcvca0lcbba07idv1pzl6pus6nafnch532s9yg5cfvszbh3gcilschwfropov9hv3br0f9dq6ye6j1536vzkjfz9hyj64y\"\n  } ]\n}, {\n  \"address\" : \"pkvwzsb9dg114s3attqnn7fydg141k3axt639bup5savhdmkzgpm2ywlprmie22dhzf6hnytn23iaku4ra16oasy0e82sd8at3m4faj9d3bwewsrgxtjr5ul6tj4z5z1l8f9g7gcg2ayai30r71hjdz976b04vgclsf9vvy28po9cghhts5of1vfvjs6yhis159ctwx08a1nfojqwyhsb5pmm63qx13zc0s6hkw1ymqao9sopzd5g\",\n  \"rewards\" : [ {\n    \"reward_amount\" : \"o9c96mhhwx19yaikk891timsnegb88sa61epcnoylis51d5uqneihmv2ry5ag6ok777pv3pdxxb\",\n    \"reward_recipient\" : \"7vrylxhwow96fg55ybq45czcika7j3gk5llgblezxslaq\"\n  }, {\n    \"reward_amount\" : \"ffcicjf8y0jzhrg0ivqy6pd3zvj75py5rc0ilgacn6p4bvncbs90vok8hfe84lb9zz84ihyv7ux3zlx9ie3nxoxw2lwyxp7s9\",\n    \"reward_recipient\" : \"se5jsobuc1e9csl6uecvlpe5mukg579aokpafpxnyqt2s448mw5g9sf2idodikzn2jwzx1tcls6pszbdv36uq1ctrnwgi3ro2dkyyz0yeo2wgaxrw92vgxt3mg94gewp972fq7d50w9mtwereg35virvnwjx0we5fltz1yowhdfj1xe58abn7spehvqviu29byn8fvtc9rj7mqawv5aps67chpd\"\n  }, {\n    \"reward_amount\" : \"opfujakm1vnllf4e1ijn8kk6t8dwwlt0bo8bcpof5seym8zp2c3u9a7gfdrairfnnxbxynu3z74h901sqd2cedn4h3uwgfqsca4su44se02f726ttsa2u6f9jtu6arfdqdn9nxcc87arf0o22jpn5xfdxzk1xdl\",\n    \"reward_recipient\" : \"7o1pnji7ohal0qv7fvqcf8vgqq76qcxbxjmu2y6vkvtyu82hdm3bvsicdpdaojea4glbdn6xn92qxi2e6yk51kb18my7hd2mg8lv3vqojd1sxfravukatxvgzf1rovoq516rhy5ie1bhp4okia86f2rsaubsurmc409lbjk1vrrjexzxcenyywqc2926ix2a3i101n0y2l60b8m5axdxujnft6a3u0lp4h3s\"\n  }, {\n    \"reward_amount\" : \"93eikd2wxib1n9xig00dntmv174mknnpl3mwkc4vewc07v052xowq\",\n    \"reward_recipient\" : \"1qm51897cmmob306f3a09evg3ysi0\"\n  }, {\n    \"reward_amount\" : \"kweipdzgejln6feber3mrgmj\",\n    \"reward_recipient\" : \"egqigkpiiakkoy13dzpbk5zin2pmgvrbeyr33gqu8je4plzqnkrs0vq6rnnih4necrk0ekpnyl5ef99bqzowbba1nfcza48a0sdrykj1yfhlfmj2cg270lrk5mp3urzu1pibl9v99buvk8csym79o5oi73cfh50fdmoka63jo7xnzk91o22qm820yn3b4r69yipeqb46lsptm5i46cnpyww1m21wukma2fnprk1u\"\n  }, {\n    \"reward_amount\" : \"s5j1g\",\n    \"reward_recipient\" : \"mqvah41lfg7m15\"\n  } ]\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "3bb82117-896e-40b8-8006-5d0a79928a53",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.50042Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.totalrewards",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "address" : {
+                "$ref" : "#/components/schemas/AddressString"
+              },
+              "rewards" : {
+                "type" : "array",
+                "items" : {
+                  "type" : "object",
+                  "description" : "an object containing the reward recipient address and the total rewards received",
+                  "properties" : {
+                    "reward_recipient" : {
+                      "$ref" : "#/components/schemas/AddressString"
+                    },
+                    "reward_amount" : {
+                      "type" : "string",
+                      "description" : "the total rewards received",
+                      "example" : "5000000000"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 176
+}

@@ -1,0 +1,36 @@
+{
+  "id" : "2c7e8ec8-ca77-4a0e-91f8-48c6b021c6a8",
+  "name" : "Get proof of address ownership",
+  "request" : {
+    "urlPath" : "/api/v2/uqmjse36f3o7wibxp7s7u050k5p9zlbkrxoun/wallet/555aff65bc9cfe3bc8018f58d219167b/address/73x6/proof",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "2c7e8ec8-ca77-4a0e-91f8-48c6b021c6a8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.931651Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.addressProof",
+        "schema" : {
+          "oneOf" : [ {
+            "$ref" : "#/components/schemas/ApiError"
+          }, {
+            "$ref" : "#/components/schemas/InvalidWalletId"
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 446
+}

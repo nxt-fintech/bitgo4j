@@ -1,0 +1,55 @@
+{
+  "id" : "802b4801-f022-420d-aa4b-21a509e86925",
+  "name" : "Simulate wallet webhook",
+  "request" : {
+    "urlPath" : "/api/v2/g4z19yr5evgo7e/wallet/1e00a4d14c721204461ad11c1f595837/webhooks/c63040a33cebaad210938b0acd9e0406/simulate",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"webhookNotifications\" : [ {\n    \"wallet\" : \"271acea7726f5b56a0c7ad2478c19851\",\n    \"transfer\" : \"e3415a3afc3a7b7b4fd57ebe5661db31\",\n    \"webhook\" : \"1ba726ec24110dd4b78364c67f5fbf73\",\n    \"updateAt\" : \"2022-09-06T15:09:33.385971Z\",\n    \"id\" : \"e3069cb651c9c959d106bc266e1a858c\",\n    \"state\" : \"pending\",\n    \"type\" : \"pendingapproval\",\n    \"version\" : 5986427528983273130,\n    \"hash\" : \"2iqp8a4qkrrq9m189574x59tnel6419m477hn8fryrlb\",\n    \"url\" : \"https://web.example.mocklab.io/481980\",\n    \"coin\" : \"l9763x2w0jlimyxv8f83wvrdftu55g1z1vrrguku679xp1r27s9kklf8cdzuv7npifhwo7jmv4418od39s9q8pi3m6pqzo5c6dldtnoo\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "802b4801-f022-420d-aa4b-21a509e86925",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.386543Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.simulatewebhook",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "webhookNotifications" : {
+              "type" : "array",
+              "items" : {
+                "allOf" : [ {
+                  "type" : "object",
+                  "properties" : {
+                    "wallet" : {
+                      "$ref" : "#/components/schemas/Id"
+                    },
+                    "transfer" : {
+                      "$ref" : "#/components/schemas/Id"
+                    },
+                    "hash" : {
+                      "$ref" : "#/components/schemas/TxId"
+                    }
+                  }
+                }, {
+                  "$ref" : "#/components/schemas/WebhookNotification"
+                } ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 289
+}

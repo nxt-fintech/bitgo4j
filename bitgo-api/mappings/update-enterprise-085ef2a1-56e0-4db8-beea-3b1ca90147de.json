@@ -1,0 +1,112 @@
+{
+  "id" : "085ef2a1-56e0-4db8-beea-3b1ca90147de",
+  "name" : "Update enterprise",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/b987f4f96257b044c1e9d74801dfc28f",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status": 202,
+    "body": "{\n  \"approvalsRequired\" : 4101176384243787307,\n  \"walletId\" : \"98v2\",\n  \"creator\" : \"5cd917eca14aeae4477b64a7b59849e8\",\n  \"enterprise\" : \"053beb38f36ecee3805dad4bd5a2442a\",\n  \"bitcoinAddress\" : \"o1jzy5nfs478jivws6m5dpjpwrpj5psco54s9be8owl1xpqucd4uf065\",\n  \"id\" : \"ffbe7e25200dba3650450d43a395eefc\",\n  \"state\" : \"pending\",\n  \"walletUserIds\" : [ \"6c65bf124694775376f10427d3ddd37e\", \"4d428ce9215088a779d7d15aa264cbe9\", \"968561fd0785733502c5e176c6e90641\", \"bc1af251d585ef9a5e1ed0ca220248c8\", \"519b3d4499c55234680b736052360848\" ],\n  \"createDate\" : \"2022-07-21T11:43:35.979297Z\",\n  \"info\" : {\n    \"type\" : \"bitcoinAddressWhitelistRequest\",\n    \"updateApprovalsRequiredRequest\" : {\n      \"requestedApprovalsRequired\" : 6979743335532395307\n    },\n    \"updateEnterpriseRequest\" : {\n      \"permissions\" : [ \"admin\", \"admin\", \"admin\", \"admin\" ],\n      \"action\" : \"add\",\n      \"userId\" : \"b8d94b52422b7a7e5a33a2f7811c37bd\",\n      \"email\" : \"Benedict.Schuppe@email.example.mocklab.io\"\n    }\n  }\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "085ef2a1-56e0-4db8-beea-3b1ca90147de",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:40.982423Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.update",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "bitcoinAddress" : {
+              "type" : "string",
+              "example" : "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9",
+              "x-internal" : true
+            },
+            "enterprise" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "walletId" : {
+              "type" : "string",
+              "example" : "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9",
+              "description" : "The base address of the associated wallet"
+            },
+            "creator" : {
+              "$ref" : "#/components/schemas/Id"
+            },
+            "createDate" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "info" : {
+              "type" : "object",
+              "properties" : {
+                "type" : {
+                  "type" : "string",
+                  "enum" : [ "bitcoinAddressWhitelistRequest", "userChangeRequest", "policyRuleRequest", "dailyLimitPolicyRequest", "transactionRequest", "tagUpdateRequest", "updateEnterpriseRequest" ]
+                },
+                "updateEnterpriseRequest" : {
+                  "type" : "object",
+                  "properties" : {
+                    "action" : {
+                      "type" : "string",
+                      "enum" : [ "add", "remove" ]
+                    },
+                    "permissions" : {
+                      "type" : "array",
+                      "items" : {
+                        "$ref" : "#/components/schemas/EnterprisePermission"
+                      }
+                    },
+                    "userId" : {
+                      "$ref" : "#/components/schemas/Id"
+                    },
+                    "email" : {
+                      "$ref" : "#/components/schemas/Email"
+                    }
+                  }
+                },
+                "updateApprovalsRequiredRequest" : {
+                  "type" : "object",
+                  "properties" : {
+                    "requestedApprovalsRequired" : {
+                      "type" : "number",
+                      "minimum" : 1,
+                      "description" : "the number of approvalsRequired that should be changed to"
+                    }
+                  }
+                }
+              }
+            },
+            "state" : {
+              "type" : "string",
+              "enum" : [ "pending", "approved", "rejected" ]
+            },
+            "walletUserIds" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/Id"
+              },
+              "description" : "an array of all the Users on the Wallet who need to see this Pending Approval"
+            },
+            "approvalsRequired" : {
+              "type" : "number",
+              "minimum" : 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 439
+}

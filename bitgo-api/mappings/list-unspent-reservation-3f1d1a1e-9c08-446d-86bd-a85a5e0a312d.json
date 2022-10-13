@@ -1,0 +1,43 @@
+{
+  "id" : "3f1d1a1e-9c08-446d-86bd-a85a5e0a312d",
+  "name" : "List unspent reservation",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/45a81ba8321e4c65d19b2b6b6556d60e/reservedunspents",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"unspents\" : [ {\n    \"walletId\" : \"bf4fa15f0690e627a648d768d3be8efb\",\n    \"expireTime\" : \"2022-10-10T16:48:47.360619Z\",\n    \"id\" : \"jsqa\",\n    \"userId\" : \"bcbd13f8f6a3ee808510ccae2865e596\"\n  } ],\n  \"nextBatchPrevId\" : \"8485\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "3f1d1a1e-9c08-446d-86bd-a85a5e0a312d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.361151Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.reservedunspent.list",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "unspents" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/components/schemas/ReservedUnspent"
+              }
+            },
+            "nextBatchPrevId" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 315
+}

@@ -1,0 +1,52 @@
+{
+  "id" : "c8011aa1-0154-44f6-9415-191e65ddccfd",
+  "name" : "List total balances",
+  "request" : {
+    "urlPath" : "/api/v2/wallet/balances",
+    "method" : "GET"
+  },
+  "response" : {
+    "status": 200,
+    "body": "{\n  \"balances\" : [ {\n    \"balanceString\" : \"\",\n    \"coin\" : \"eozzgd5l2gez6c6vzih\"\n  }, {\n    \"balanceString\" : \"\",\n    \"coin\" : \"2rmqiepid4ukgpd1o2gucnh7e7a0jct6\"\n  }, {\n    \"balanceString\" : \"\",\n    \"coin\" : \"htwmn49amqdxmkw8vs5or7s6m9qqvhopko\"\n  }, {\n    \"balanceString\" : \"\",\n    \"coin\" : \"jgc71hk0xu9q\"\n  } ]\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid" : "c8011aa1-0154-44f6-9415-191e65ddccfd",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.365873Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "v2.wallet.gettotalbalances",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "balances" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "balanceString" : {
+                    "allOf" : [ {
+                      "$ref" : "#/components/schemas/IntegerString"
+                    }, {
+                      "description" : "String representation of the balance in base units. Guaranteed to not lose\nprecision.\n"
+                    } ]
+                  },
+                  "coin" : {
+                    "$ref" : "#/components/schemas/Coin"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 311
+}

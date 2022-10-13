@@ -1,0 +1,46 @@
+{
+  "id" : "85d744d7-21a2-4b69-b2a2-abed89fc391f",
+  "name" : "Get enterprise's wallet limits",
+  "request" : {
+    "urlPath" : "/api/v2/enterprise/0d0efa10125e6d98b6aaf3d7527e156f/walletLimits",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"requestId\" : \"1e71\",\n  \"context\" : { },\n  \"name\" : \"Ms. Emilia Larson\",\n  \"error\" : \"gbs5mnhctztlzshmbpefc\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "85d744d7-21a2-4b69-b2a2-abed89fc391f",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2022-10-10T07:44:41.08321Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "enterprise.walletLimits",
+        "schema" : {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ApiErrorNoName"
+          }, {
+            "properties" : {
+              "context" : {
+                "type" : "object",
+                "description" : "Properties that apply to a specific error name"
+              },
+              "name" : {
+                "type" : "string",
+                "description" : "Error code"
+              }
+            },
+            "required" : [ "name" ]
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 409
+}
