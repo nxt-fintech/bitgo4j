@@ -6,7 +6,7 @@ For more information on API definitions, please refer to [BitGo API document](ht
 
 ### Build config
 
-Please refer to [BitGo4jConfig.java](nxt-fintech/bitgo4j/blob/main/src/main/java/bitgo4j/BitGo4jConfig.java).
+Please refer to [BitGo4jConfig.java](src/main/java/bitgo4j/BitGo4jConfig.java).
 
 ```java
 BitGo4jConfig config = BitGo4jConfig.builder().token(<BITGO_API_TOKEN>).build(); // For WireMock 
@@ -16,7 +16,7 @@ BitGo4jConfig config = BitGo4jConfig.builder().token(<BITGO_API_TOKEN>).useProd(
 
 ### Initialize client
 
-Please refer to [BitGo4j.java](nxt-fintech/bitgo4j/blob/main/src/main/java/bitgo4j/BitGo4j.java).
+Please refer to [BitGo4j.java](src/main/java/bitgo4j/BitGo4j.java).
 
 ```java
 BitGo4j.api().initialize(config); // initialize
