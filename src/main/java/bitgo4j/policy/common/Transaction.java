@@ -17,7 +17,6 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Transaction {
-  // TODO: Enum
   private String state;
 
   private UnsignedTransaction unsignedTransaction;

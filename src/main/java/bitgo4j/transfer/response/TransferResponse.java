@@ -69,7 +69,6 @@ public class TransferResponse {
 
   private Integer nSegwitInputs;
 
-  // TODO: check
   //  private Object coinSpecific;
 
   private String sequenceId;

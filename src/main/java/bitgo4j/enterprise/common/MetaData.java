@@ -20,9 +20,6 @@ public class MetaData {
 
   private String owner;
 
-  // TODO: check document
-  //  private String name;
-
   @Override
   public String toString() {
     return new ToStringBuilder(this, BitGo4jConstant.TO_STRING_BUILDER_STYLE)

@@ -19,7 +19,6 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 public class AuditLog {
   private String coin;
 
-  //  TODO: check
   //  private Object data;
 
   private String date;
@@ -33,7 +32,6 @@ public class AuditLog {
 
   private String target;
 
-  // TODO: Enum
   private String type;
 
   private String user;

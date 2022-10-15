@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import bitgo4j.BitGo4j;
 import bitgo4j.BitGo4jConfig;
 import bitgo4j.BitGo4jError;
-import bitgo4j.TestingUtils;
 import bitgo4j.exception.BitGo4jException;
 import bitgo4j.transactionrequest.request.CreateTransactionRequestRequest;
 import bitgo4j.transactionrequest.request.SignatureShareRequest;
@@ -20,7 +19,6 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 public class MockTransactionRequestClientImplTest {
@@ -28,10 +26,7 @@ public class MockTransactionRequestClientImplTest {
 
   @BeforeAll
   static void setUp() throws IOException {
-    Properties props = TestingUtils.getProperties();
-    String token = props.getProperty("API_TOKEN");
-
-    BitGo4jConfig config = BitGo4jConfig.builder().token(token).build();
+    BitGo4jConfig config = BitGo4jConfig.builder().token("BitGo_API_TOKEN").build();
     BitGo4j.api().initialize(config);
     client = BitGo4j.api().transactionRequest();
   }
@@ -557,8 +552,6 @@ public class MockTransactionRequestClientImplTest {
     assertEquals("Man Hermiston", error.getName());
   }
 
-  // FIXME: request doesn't work correctly
-  @Disabled
   @Test
   void createTransferResponseTest_200() {
     TransferResponse response =
@@ -567,8 +560,6 @@ public class MockTransactionRequestClientImplTest {
     assertNotNull(response);
   }
 
-  // FIXME: request doesn't work correctly
-  @Disabled
   @Test
   void createTransferResponseTest_400() {
     SignatureShareRequest request = new SignatureShareRequest();

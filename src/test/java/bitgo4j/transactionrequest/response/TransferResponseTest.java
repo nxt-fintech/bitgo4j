@@ -18,7 +18,7 @@ class TransferResponseTest {
   void testToString() {
     String result = transferResponse.toString();
     Assertions.assertEquals(
-        "TransferResponse[coin=<null>,id=<null>,wallet=<null>,enterprise=<null>,txid=<null>,height=<null>,heightId=<null>,date=<null>,type=<null>,value=<null>,valueString=<null>,baseValue=<null>,baseValueString=<null>,feeString=<null>,payGoFee=<null>,payGoFeeString=<null>,usd=<null>,usdRate=<null>,state=<null>,tags=<null>,history=<null>,comment=<null>,vSize=<null>,nSegwitInputs=<null>,coinSpecific=<null>,sequenceId=<null>,entries=<null>,usersNotified=<null>]",
+"TransferResponse[coin=<null>,id=<null>,wallet=<null>,enterprise=<null>,txid=<null>,height=<null>,heightId=<null>,date=<null>,type=<null>,value=<null>,valueString=<null>,baseValue=<null>,baseValueString=<null>,feeString=<null>,payGoFee=<null>,payGoFeeString=<null>,usd=<null>,usdRate=<null>,state=<null>,tags=<null>,history=<null>,comment=<null>,vSize=<null>,nSegwitInputs=<null>,sequenceId=<null>,entries=<null>,usersNotified=<null>]",
         result);
   }
 
@@ -49,7 +49,7 @@ class TransferResponseTest {
 
   @Test
   void testSetHeight() {
-    transferResponse.setHeight(0);
+    transferResponse.setHeight(0L);
   }
 
   @Test
@@ -69,7 +69,7 @@ class TransferResponseTest {
 
   @Test
   void testSetValue() {
-    transferResponse.setValue(0);
+    transferResponse.setValue(0L);
   }
 
   @Test
@@ -79,7 +79,7 @@ class TransferResponseTest {
 
   @Test
   void testSetBaseValue() {
-    transferResponse.setBaseValue(0);
+    transferResponse.setBaseValue(0L);
   }
 
   @Test
@@ -94,7 +94,7 @@ class TransferResponseTest {
 
   @Test
   void testSetPayGoFee() {
-    transferResponse.setPayGoFee(0);
+    transferResponse.setPayGoFee(0L);
   }
 
   @Test
@@ -104,12 +104,12 @@ class TransferResponseTest {
 
   @Test
   void testSetUsd() {
-    transferResponse.setUsd(0);
+    transferResponse.setUsd((double) 0);
   }
 
   @Test
   void testSetUsdRate() {
-    transferResponse.setUsdRate(0);
+    transferResponse.setUsdRate((double) 0);
   }
 
   @Test
@@ -142,10 +142,10 @@ class TransferResponseTest {
     transferResponse.setNSegwitInputs(0);
   }
 
-  @Test
-  void testSetCoinSpecific() {
-    transferResponse.setCoinSpecific(new CoinSpecific());
-  }
+//  @Test
+//  void testSetCoinSpecific() {
+//    transferResponse.setCoinSpecific(new CoinSpecific());
+//  }
 
   @Test
   void testSetSequenceId() {

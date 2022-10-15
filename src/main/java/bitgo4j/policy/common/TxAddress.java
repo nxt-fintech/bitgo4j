@@ -18,7 +18,6 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 public class TxAddress {
   private String address;
 
-  // TODO: check
   //  private Object options;
 
   @Override

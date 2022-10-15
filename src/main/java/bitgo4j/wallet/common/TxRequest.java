@@ -25,12 +25,10 @@ public class TxRequest {
 
   private String walletId;
 
-  // TODO: Enum
   private String walletType;
 
   private String enterpriseId;
 
-  // TODO: Enum
   private String state;
 
   private String date;

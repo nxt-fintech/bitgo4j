@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import bitgo4j.BitGo4j;
 import bitgo4j.BitGo4jConfig;
-import bitgo4j.TestingUtils;
 import bitgo4j.pendingapproval.request.UpdatePendingApprovalRequest;
 import bitgo4j.pendingapproval.response.ListPendingApprovalsResponse;
 import bitgo4j.pendingapproval.response.PendingApprovalResponse;
@@ -18,10 +17,7 @@ public class MockPendingApprovalClientImplTest {
 
   @BeforeAll
   static void setUp() throws IOException {
-    Properties props = TestingUtils.getProperties();
-    String token = props.getProperty("API_TOKEN");
-
-    BitGo4jConfig config = BitGo4jConfig.builder().token(token).build();
+    BitGo4jConfig config = BitGo4jConfig.builder().token("BitGo_API_TOKEN").build();
     BitGo4j.api().initialize(config);
     client = BitGo4j.api().pendingApproval();
   }

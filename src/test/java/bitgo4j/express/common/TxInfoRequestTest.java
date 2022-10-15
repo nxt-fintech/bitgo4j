@@ -11,23 +11,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 class TxInfoRequestTest {
-  @Mock List<String> changeAddresses;
-
-  @Mock List<Unspent> unspents;
-
-  @Mock WalletAddressDetails walletAddressDetails;
-
-  @Mock List<Operation> operations;
-
   @InjectMocks TxInfoRequest txInfoRequest;
 
-  // TODO: fix random initialize
-  @Disabled
   @Test
   void testToString() {
     String result = txInfoRequest.toString();
     String expected =
-        "TxInfoRequest[changeAddresses=unspents,nOutputs=<null>,nP2SHInputs=<null>,unspents=unspents,walletAddressDetails=walletAddressDetails,fee=<null>,operations=unspents,sequence=<null>,source=<null>]";
+        "TxInfoRequest[changeAddresses=<null>,nOutputs=<null>,nP2SHInputs=<null>,unspents=<null>,walletAddressDetails=<null>,fee=<null>,operations=<null>,sequence=<null>,source=<null>]";
     Assertions.assertEquals(expected, result);
   }
 

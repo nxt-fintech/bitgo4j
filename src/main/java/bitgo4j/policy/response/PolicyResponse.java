@@ -74,14 +74,12 @@ public class PolicyResponse {
 
   private String startDate;
 
-  // TODO: Enum
   private String type;
 
   private List<User> users;
 
   private CustomChangeKeySignatures customChangeKeySignatures;
 
-  // TODO: Enum
   private String multisigType;
 
   // For 202

@@ -26,8 +26,7 @@ public class HalfSigned {
 
   private String operationHash;
 
-  // FIXME:
-  //  Recipient recipient;
+  private Recipient recipient;
 
   private String signature;
 
@@ -47,6 +46,7 @@ public class HalfSigned {
         .append("gasLimit", gasLimit)
         .append("gasPrice", gasPrice)
         .append("operationHash", operationHash)
+        .append("recipient", recipient)
         .append("signature", signature)
         .append("tokenContractAddress", tokenContractAddress)
         .append("walletId", walletId)

@@ -26,7 +26,7 @@ class EntryTest {
 
   @Test
   void testSetValue() {
-    entry.setValue(0);
+    entry.setValue(0L);
   }
 
   @Test

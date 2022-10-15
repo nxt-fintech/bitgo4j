@@ -43,10 +43,8 @@ public class SendHalfSignedTransactionResponse {
 
   private Info info;
 
-  // TODO: Enum
   private String state;
 
-  // TODO: Enum
   private String scope;
 
   private List<String> userIds;

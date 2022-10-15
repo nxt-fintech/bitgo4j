@@ -96,7 +96,7 @@ public class WalletClientImpl implements WalletClient {
             memoId));
   }
 
-  // FIXME:
+  // TODO: implement
   @Override
   public WalletResponse add(String coin, AddWalletRequest addWalletRequest) {
     return null;

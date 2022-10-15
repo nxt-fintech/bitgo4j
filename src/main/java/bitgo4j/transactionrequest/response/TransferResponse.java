@@ -30,7 +30,7 @@ public class TransferResponse {
 
   private String txid;
 
-  private Integer height;
+  private Long height;
 
   private String heightId;
 
@@ -38,23 +38,23 @@ public class TransferResponse {
 
   private String type;
 
-  private Integer value;
+  private Long value;
 
   private String valueString;
 
-  private Integer baseValue;
+  private Long baseValue;
 
   private String baseValueString;
 
   private String feeString;
 
-  private Integer payGoFee;
+  private Long payGoFee;
 
   private String payGoFeeString;
 
-  private Integer usd;
+  private Double usd;
 
-  private Integer usdRate;
+  private Double usdRate;
 
   private String state;
 
@@ -69,7 +69,7 @@ public class TransferResponse {
 
   private Integer nSegwitInputs;
 
-  private CoinSpecific coinSpecific;
+//  private Object coinSpecific;
 
   private String sequenceId;
 
@@ -104,7 +104,7 @@ public class TransferResponse {
         .append("comment", comment)
         .append("vSize", vSize)
         .append("nSegwitInputs", nSegwitInputs)
-        .append("coinSpecific", coinSpecific)
+//        .append("coinSpecific", coinSpecific)
         .append("sequenceId", sequenceId)
         .append("entries", entries)
         .append("usersNotified", usersNotified)

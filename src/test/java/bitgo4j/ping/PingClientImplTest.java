@@ -6,7 +6,6 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 
 import bitgo4j.BitGo4j;
 import bitgo4j.BitGo4jConfig;
-import bitgo4j.TestingUtils;
 import bitgo4j.ping.response.PingResponse;
 import java.io.IOException;
 import java.util.Properties;
@@ -18,10 +17,7 @@ public class PingClientImplTest {
 
   @BeforeAll
   static void setUp() throws IOException {
-    Properties props = TestingUtils.getProperties();
-    String token = props.getProperty("API_TOKEN");
-
-    BitGo4jConfig config = BitGo4jConfig.builder().token(token).useTest().build();
+    BitGo4jConfig config = BitGo4jConfig.builder().token("BitGo_API_TOKEN").useTest().build();
     BitGo4j.api().initialize(config);
     client = BitGo4j.api().ping();
   }

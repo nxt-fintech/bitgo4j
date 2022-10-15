@@ -16,13 +16,10 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class FeeOptions {
-  // TODO: Enum
   private String unit;
 
-  // TODO: Enum
   private String formula;
 
-  // TODO: Enum
   private String feeType;
 
   private Integer gasLimit;

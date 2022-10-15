@@ -8,7 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import bitgo4j.BitGo4j;
 import bitgo4j.BitGo4jConfig;
 import bitgo4j.BitGo4jError;
-import bitgo4j.TestingUtils;
 import bitgo4j.address.request.CreateAddressRequest;
 import bitgo4j.address.request.DeployAddressRequest;
 import bitgo4j.address.request.ForwardTokensFromAddressRequest;
@@ -20,7 +19,6 @@ import bitgo4j.address.response.ListAddressResponse;
 import bitgo4j.address.response.ProofResponse;
 import bitgo4j.exception.BitGo4jException;
 import java.io.IOException;
-import java.util.Properties;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -33,10 +31,7 @@ public class MockAddressClientImplTest {
 
   @BeforeAll
   static void setUp() throws IOException {
-    Properties props = TestingUtils.getProperties();
-    String token = props.getProperty("API_TOKEN");
-
-    BitGo4jConfig config = BitGo4jConfig.builder().token(token).build();
+    BitGo4jConfig config = BitGo4jConfig.builder().token("BitGo_API_TOKEN").build();
     BitGo4j.api().initialize(config);
     client = BitGo4j.api().address();
   }

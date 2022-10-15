@@ -20,7 +20,7 @@ public class Entry {
 
   private String wallet;
 
-  private Integer value;
+  private Long value;
 
   private String valueString;
 

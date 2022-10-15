@@ -28,7 +28,6 @@ public class CreateKeyRequest {
 
   private Boolean disableKRSEmail;
 
-  // TODO: check
   //  private Object krsSpecific;
 
   private String enterprise;
