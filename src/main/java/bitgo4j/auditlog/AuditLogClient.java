@@ -9,6 +9,6 @@ public interface AuditLogClient {
       String enterpriseId,
       Integer limit,
       String prevId,
-      List<String> type, // TODO: Enum
+      List<String> type,
       String walletId);
 }

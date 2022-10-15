@@ -39,7 +39,6 @@ public class WalletResponse {
 
   private CoinSpecific coinSpecific;
 
-  // TODO: check
   //  private Object custodialWallet;
 
   private String custodialWalletId;
@@ -76,14 +75,12 @@ public class WalletResponse {
 
   private String startDate;
 
-  // TODO: Enum
   private String type;
 
   private List<User> users;
 
   private CustomChangeKeySignatures customChangeKeySignatures;
 
-  // TODO: Enum
   private String multisigType;
 
   private Integer balance;

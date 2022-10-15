@@ -27,7 +27,6 @@ public class FeeEstimateResponse {
 
   private Integer multiplier;
 
-  // TODO: check
   //  private Object feeByBlockTarget;
 
   private String feeEstimate;

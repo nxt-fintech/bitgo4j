@@ -18,10 +18,8 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class TransactionRequest {
-  // FIXME:
   //  private Object buildParams;
 
-  // FIXME:
   //  private Object coinSpecific;
 
   private String comment;

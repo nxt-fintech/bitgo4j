@@ -18,7 +18,6 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 public class Address {
   private String address;
 
-  // FIXME:
   //  private Object options;
 
   @Override

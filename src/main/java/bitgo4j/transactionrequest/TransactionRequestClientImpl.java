@@ -84,6 +84,6 @@ public class TransactionRequestClientImpl implements TransactionRequestClient {
 
   @Override
   public TransferResponse createTransferResponse(String walletId, String id) {
-    return null;
+    return executeSync(service.createTransferResponse(walletId, id));
   }
 }
