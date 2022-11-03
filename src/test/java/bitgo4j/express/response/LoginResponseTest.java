@@ -19,7 +19,7 @@ class LoginResponseTest {
   @Test
   void testToString() {
     String result = loginResponse.toString();
-    Assertions.assertEquals("LoginResponse[accessToken=<null>,expiresAt=<null>,scope=<null>]", result);
+    Assertions.assertEquals("LoginResponse[accessToken=<null>,expiresAt=<null>,scope=<null>,user=<null>]", result);
   }
 
   @Test

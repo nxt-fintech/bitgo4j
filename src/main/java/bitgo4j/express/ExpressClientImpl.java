@@ -18,6 +18,7 @@ import bitgo4j.express.request.ResolvePendingApprovalRequest;
 import bitgo4j.express.request.SendToManyRequest;
 import bitgo4j.express.request.SendTransactionRequest;
 import bitgo4j.express.request.ShareWalletRequest;
+import bitgo4j.express.request.SignTSSTransactionRequest;
 import bitgo4j.express.request.SignTransactionRequest;
 import bitgo4j.express.request.SignWalletTransactionRequest;
 import bitgo4j.express.request.SweepFundsRequest;
@@ -130,9 +131,15 @@ public class ExpressClientImpl implements ExpressClient {
   }
 
   @Override
-  public RecoverETHTokenResponse recoverToken(
+  public SignTransactionResponse signTSSTransaction(
+      String coin, String walletId, SignTSSTransactionRequest signTSSTransactionRequest) {
+    return executeSync(service.signTSSTransaction(coin, walletId, signTSSTransactionRequest));
+  }
+
+  @Override
+  public RecoverETHTokenResponse recoverETHToken(
       String coin, String walletId, RecoverTokenRequest recoverTokenRequest) {
-    return executeSync(service.recoverToken(coin, walletId, recoverTokenRequest));
+    return executeSync(service.recoverETHToken(coin, walletId, recoverTokenRequest));
   }
 
   @Override

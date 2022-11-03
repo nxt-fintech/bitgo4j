@@ -14,6 +14,7 @@ import bitgo4j.express.request.ResolvePendingApprovalRequest;
 import bitgo4j.express.request.SendToManyRequest;
 import bitgo4j.express.request.SendTransactionRequest;
 import bitgo4j.express.request.ShareWalletRequest;
+import bitgo4j.express.request.SignTSSTransactionRequest;
 import bitgo4j.express.request.SignTransactionRequest;
 import bitgo4j.express.request.SignWalletTransactionRequest;
 import bitgo4j.express.request.SweepFundsRequest;
@@ -74,7 +75,8 @@ public interface ExpressClient {
   SignTransactionResponse signWalletTransaction(
       String coin, String walletId, SignWalletTransactionRequest signWalletTransactionRequest);
 
-  RecoverETHTokenResponse recoverToken(
+  SignTransactionResponse signTSSTransaction(String coin, String walletId, SignTSSTransactionRequest signTSSTransactionRequest);
+  RecoverETHTokenResponse recoverETHToken(
       String coin, String walletId, RecoverTokenRequest recoverTokenRequest);
 
   ConsolidateAccountResponse consolidateAccount(

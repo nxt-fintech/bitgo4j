@@ -14,6 +14,7 @@ import bitgo4j.express.request.ResolvePendingApprovalRequest;
 import bitgo4j.express.request.SendToManyRequest;
 import bitgo4j.express.request.SendTransactionRequest;
 import bitgo4j.express.request.ShareWalletRequest;
+import bitgo4j.express.request.SignTSSTransactionRequest;
 import bitgo4j.express.request.SignTransactionRequest;
 import bitgo4j.express.request.SignWalletTransactionRequest;
 import bitgo4j.express.request.SweepFundsRequest;
@@ -82,6 +83,7 @@ public interface ExpressService {
   @POST("/api/v2/decrypt")
   Call<DecryptResponse> decryptMessages(@Body CryptRequest cryptRequest);
 
+  // TODO: remove
   @Headers({"Accept: application/json"})
   @POST("/api/v2/calculateminerfeeinfo")
   Call<CalculateMiningFeeResponse> calculateMiningFee(
@@ -125,8 +127,15 @@ public interface ExpressService {
       @Body SignWalletTransactionRequest signWalletTransactionRequest);
 
   @Headers({"Accept: application/json"})
+  @POST("/api/v2/{coin}/wallet/{walletId}/signtxtss")
+  Call<SignTransactionResponse> signTSSTransaction(
+      @Path("coin") String coin,
+      @Path("walletId") String walletId,
+      @Body SignTSSTransactionRequest signTSSTransactionRequest);
+
+  @Headers({"Accept: application/json"})
   @POST("/api/v2/{coin}/wallet/{walletId}/recovertoken")
-  Call<RecoverETHTokenResponse> recoverToken(
+  Call<RecoverETHTokenResponse> recoverETHToken(
       @Path("coin") String coin,
       @Path("walletId") String walletId,
       @Body RecoverTokenRequest recoverTokenRequest);
