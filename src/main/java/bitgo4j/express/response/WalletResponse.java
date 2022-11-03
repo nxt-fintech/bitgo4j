@@ -9,14 +9,20 @@ import bitgo4j.express.common.CoinSpecific;
 import bitgo4j.express.common.CustomChangeKeySignatures;
 import bitgo4j.express.common.Freeze;
 import bitgo4j.express.common.User;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class WalletResponse {
   private Admin admin;
 

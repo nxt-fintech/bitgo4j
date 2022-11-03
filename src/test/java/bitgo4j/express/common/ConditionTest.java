@@ -10,21 +10,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 class ConditionTest {
-  @Mock List<String> excludeTags;
-
-  @Mock List<String> groupTags;
-
-  @Mock List<String> addresses;
-
-  @Mock List<Entry> entries;
-
   @InjectMocks Condition condition;
 
   @Test
   void testToString() {
     String result = condition.toString();
     String expected =
-        "Condition[amountString=<null>,timeWindow=<null>,excludeTags=excludeTags,groupTags=groupTags,addresses=addresses,entries=entries,url=<null>]";
+        "Condition[amountString=<null>,timeWindow=<null>,excludeTags=<null>,groupTags=<null>,addresses=<null>,entries=<null>,url=<null>]";
     Assertions.assertEquals(expected, result);
   }
 

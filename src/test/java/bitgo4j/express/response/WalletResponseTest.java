@@ -17,31 +17,12 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 class WalletResponseTest {
-  @Mock Admin admin;
-
-  @Mock BuildDefaults buildDefaults;
-
-  @Mock CoinSpecific coinSpecific;
-
-  @Mock Freeze freeze;
-
-  @Mock List<String> keys;
-
-  @Mock AddressResponse receiveAddress;
-
-  @Mock List<String> tags;
-
-  @Mock List<User> users;
-
-  @Mock CustomChangeKeySignatures customChangeKeySignatures;
-
   @InjectMocks WalletResponse walletResponse;
 
   @Test
   void testToString() {
     String result = walletResponse.toString();
-    String expected =
-        "WalletResponse[allowBackupKeySigning=<null>,approvalsRequired=<null>,balanceString=<null>,buildDefaults=buildDefaults,coin=<null>,coinSpecific=coinSpecific,custodialWalletId=<null>,deleted=<null>,disableTransactionNotifications=<null>,enterprise=<null>,freeze=freeze,id=<null>,isCold=<null>,keys=keys,label=<null>,m=<null>,n=<null>,nodeId=<null>,recoverable=<null>,tags=tags,spendableBalanceString=<null>,startDate=<null>,type=<null>,users=users,customChangeKeySignatures=customChangeKeySignatures]";
+    String expected = "WalletResponse[allowBackupKeySigning=<null>,approvalsRequired=<null>,balanceString=<null>,buildDefaults=<null>,coin=<null>,coinSpecific=<null>,custodialWalletId=<null>,deleted=<null>,disableTransactionNotifications=<null>,enterprise=<null>,freeze=<null>,id=<null>,isCold=<null>,keys=<null>,label=<null>,m=<null>,n=<null>,nodeId=<null>,recoverable=<null>,tags=<null>,spendableBalanceString=<null>,startDate=<null>,type=<null>,users=<null>,customChangeKeySignatures=<null>]";
     Assertions.assertEquals(expected, result);
   }
 

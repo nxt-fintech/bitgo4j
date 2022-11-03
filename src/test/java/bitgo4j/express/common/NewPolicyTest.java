@@ -9,17 +9,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 class NewPolicyTest {
-  @Mock Requirement signingRequirement;
-
-  @Mock Requirement updateRequirement;
-
   @InjectMocks NewPolicy newPolicy;
 
   @Test
   void testToString() {
     String result = newPolicy.toString();
     String expected =
-        "NewPolicy[version=<null>,keyId=<null>,signingRequirement=signingRequirement,updateRequirement=updateRequirement,lastUpdated=<null>]";
+        "NewPolicy[version=<null>,keyId=<null>,signingRequirement=<null>,updateRequirement=<null>,lastUpdated=<null>]";
     Assertions.assertEquals(expected, result);
   }
 

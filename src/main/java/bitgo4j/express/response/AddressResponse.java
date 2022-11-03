@@ -4,13 +4,19 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import bitgo4j.BitGo4jConstant;
 import bitgo4j.express.common.Balance;
 import bitgo4j.express.common.CoinSpecific;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class AddressResponse {
   private String id;
 
