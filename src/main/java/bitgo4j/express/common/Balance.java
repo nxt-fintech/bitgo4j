@@ -18,11 +18,11 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 public class Balance {
   private String updated;
 
-  private Integer balance;
+  private Long balance;
 
-  private Integer totalReceived;
+  private Long totalReceived;
 
-  private Integer totalSent;
+  private Long totalSent;
 
   private String balanceString;
 

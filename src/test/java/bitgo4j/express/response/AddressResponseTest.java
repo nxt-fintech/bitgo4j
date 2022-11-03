@@ -42,7 +42,7 @@ class AddressResponseTest {
 
   @Test
   void testSetIndex() {
-    addressResponse.setIndex(0);
+    addressResponse.setIndex(0L);
   }
 
   @Test
@@ -52,7 +52,7 @@ class AddressResponseTest {
 
   @Test
   void testSetLastNonce() {
-    addressResponse.setLastNonce(0);
+    addressResponse.setLastNonce(0L);
   }
 
   @Test

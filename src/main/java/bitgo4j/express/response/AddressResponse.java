@@ -24,11 +24,11 @@ public class AddressResponse {
 
   private Integer chain;
 
-  private Integer index;
+  private Long index;
 
   private String coin;
 
-  private Integer lastNonce;
+  private Long lastNonce;
 
   private String wallet;
 
