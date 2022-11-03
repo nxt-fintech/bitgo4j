@@ -1,13 +1,13 @@
 package bitgo4j.express.request;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import bitgo4j.BitGo4jConstant;
 import bitgo4j.express.common.Eip1559;
 import bitgo4j.express.common.Memo;
 import bitgo4j.express.common.Reservation;
 import bitgo4j.express.common.StakingOptions;
 import bitgo4j.express.common.Trustline;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

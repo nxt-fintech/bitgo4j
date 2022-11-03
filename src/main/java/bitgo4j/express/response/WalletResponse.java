@@ -1,6 +1,5 @@
 package bitgo4j.express.response;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import bitgo4j.BitGo4jConstant;
 import bitgo4j.address.response.AddressResponse;
 import bitgo4j.express.common.Admin;
@@ -9,6 +8,7 @@ import bitgo4j.express.common.CoinSpecific;
 import bitgo4j.express.common.CustomChangeKeySignatures;
 import bitgo4j.express.common.Freeze;
 import bitgo4j.express.common.User;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 import lombok.AllArgsConstructor;

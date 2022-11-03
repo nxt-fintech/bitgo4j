@@ -1,9 +1,9 @@
 package bitgo4j.express.response;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import bitgo4j.BitGo4jConstant;
 import bitgo4j.express.common.Balance;
 import bitgo4j.express.common.CoinSpecific;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

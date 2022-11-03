@@ -1,7 +1,7 @@
 package bitgo4j.express.common;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import bitgo4j.BitGo4jConstant;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 import lombok.AllArgsConstructor;
