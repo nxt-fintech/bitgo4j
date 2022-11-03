@@ -13,6 +13,7 @@ import bitgo4j.express.request.CreateAddressRequest;
 import bitgo4j.express.request.LoginRequest;
 import bitgo4j.express.response.AddressResponse;
 import bitgo4j.express.response.LoginResponse;
+import bitgo4j.express.response.PingResponse;
 import java.io.IOException;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
@@ -78,5 +79,11 @@ public class MockExpressClientImplTest {
         error.getError());
     assertEquals("u306", error.getRequestId());
     assertEquals("Lynwood Tromp", error.getName());
+  }
+
+  @Test
+  public void pingTest_200() {
+    PingResponse response = client.ping();
+    assertNotNull(response);
   }
 }
