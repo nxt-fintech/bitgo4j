@@ -11,6 +11,7 @@ import bitgo4j.BitGo4jError;
 import bitgo4j.exception.BitGo4jException;
 import bitgo4j.express.request.AccelerateTransactionRequest;
 import bitgo4j.express.request.AcceptWalletShareRequest;
+import bitgo4j.express.request.CanonicalizeAddressRequest;
 import bitgo4j.express.request.ConsolidateAccountRequest;
 import bitgo4j.express.request.CreateAddressRequest;
 import bitgo4j.express.request.CryptRequest;
@@ -27,6 +28,7 @@ import bitgo4j.express.request.SweepFundsRequest;
 import bitgo4j.express.request.UnspentsRequest;
 import bitgo4j.express.response.AcceptWalletShareResponse;
 import bitgo4j.express.response.AddressResponse;
+import bitgo4j.express.response.CanonicalizeAddressResponse;
 import bitgo4j.express.response.ConsolidateAccountResponse;
 import bitgo4j.express.response.DecryptResponse;
 import bitgo4j.express.response.EncryptResponse;
@@ -372,5 +374,12 @@ public class MockExpressClientImplTest {
     assertNull(error.getError());
     assertNull(error.getRequestId());
     assertNull(error.getName());
+  }
+
+  @Test
+  public void canonicalizeAddressTest_200() {
+    CanonicalizeAddressRequest request = new CanonicalizeAddressRequest();
+    CanonicalizeAddressResponse response = client.canonicalizeAddress("xyyvvijq9yn9oec2wshyayujjn9vyqjxtkk0orxygn8mk9m7vg5pqr3nzm3ayxrxgb4yfp3175wtbi9f7qc818av5dtzwl56yf4acwcf9y6gkawzbk2irjm", request);
+    assertNotNull(response);
   }
 }
