@@ -16,17 +16,23 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class FeeInfo {
+  // UtxoFeeInfo
   private Integer size;
 
   private Integer fee;
 
-  private Integer feeRate;
+  private String feeRate;
 
   private Integer payGoFee;
 
   private String payGoFeeString;
 
-  private String feeString;
+  // XlmFeeInfo
+  private Integer height;
+
+  private String xlmBaseFee;
+
+  private String xlmBaseReserve;
 
   @Override
   public String toString() {
@@ -36,7 +42,9 @@ public class FeeInfo {
         .append("feeRate", feeRate)
         .append("payGoFee", payGoFee)
         .append("payGoFeeString", payGoFeeString)
-        .append("feeString", feeString)
+        .append("height", height)
+        .append("xlmBaseFee", xlmBaseFee)
+        .append("xlmBaseReserve", xlmBaseReserve)
         .toString();
   }
 }

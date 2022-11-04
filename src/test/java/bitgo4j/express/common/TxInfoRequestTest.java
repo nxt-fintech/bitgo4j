@@ -14,8 +14,7 @@ class TxInfoRequestTest {
   @Test
   void testToString() {
     String result = txInfoRequest.toString();
-    String expected =
-        "TxInfoRequest[changeAddresses=<null>,nOutputs=<null>,nP2SHInputs=<null>,unspents=<null>,walletAddressDetails=<null>,fee=<null>,operations=<null>,sequence=<null>,source=<null>]";
+    String expected = "TxInfoRequest[changeAddresses=<null>,nOutputs=<null>,nP2SHInputs=<null>,nSegwitInputs=<null>,unspents=<null>,walletAddressDetails=<null>,fee=<null>,operations=<null>,sequence=<null>,source=<null>]";
     Assertions.assertEquals(expected, result);
   }
 
@@ -33,6 +32,9 @@ class TxInfoRequestTest {
   void testSetNP2SHInputs() {
     txInfoRequest.setNP2SHInputs(0);
   }
+
+  @Test
+  void testNSegwitInputs() { txInfoRequest.setNSegwitInputs(0); }
 
   @Test
   void testSetUnspents() {
