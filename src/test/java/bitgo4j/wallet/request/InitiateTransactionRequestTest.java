@@ -1,7 +1,7 @@
 package bitgo4j.wallet.request;
 
 import bitgo4j.wallet.common.Eip1559;
-import bitgo4j.wallet.common.FunctionArgs;
+import bitgo4j.wallet.common.FunctionArg;
 import bitgo4j.wallet.common.Memo;
 import bitgo4j.wallet.common.Recipient;
 import bitgo4j.wallet.common.RefundOptions;
@@ -11,46 +11,20 @@ import bitgo4j.wallet.common.Trustline;
 import bitgo4j.wallet.common.UnstakingOptions;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
-
 class InitiateTransactionRequestTest {
-  @Mock Eip1559 eip1559;
-
-  @Mock List<String> unspents;
-
-  @Mock Memo memo;
-
-  @Mock List<String> cpfpTxIds;
-
-  @Mock List<Trustline> trustlines;
-
-  @Mock StakingOptions stakingOptions;
-
-  @Mock UnstakingOptions unstakingOptions;
-
-  @Mock RefundOptions refundOptions;
-
-  @Mock Reservation reservation;
-
-  @Mock List<Recipient> recipients;
-
-  @Mock List<String> videoApprovers;
-
   @InjectMocks InitiateTransactionRequest initiateTransactionRequest;
 
-  @Disabled
   @Test
   void testToString() {
     String result = initiateTransactionRequest.toString();
     Assertions.assertEquals(
-        "InitiateTransactionRequest[numBlocks=<null>,feeRate=<null>,maxFeeRate=<null>,feeMultiplier=<null>,minConfirms=<null>,enforceMinConfirmsForChange=<null>,gasPrice=<null>,eip1559=eip1559,gasLimit=<null>,targetWalletUnspents=<null>,minValue=<null>,maxValue=<null>,sequenceId=<null>,nonce=<null>,noSplitChange=<null>,unspents=cpfpTxIds,changeAddress=<null>,instant=<null>,memo=memo,comment=<null>,addressType=<null>,startTime=<null>,consolidateId=<null>,lastLedgerSequence=<null>,ledgerSequenceDelta=<null>,cpfpTxIds=cpfpTxIds,cpfpFeeRate=<null>,maxFee=<null>,strategy=<null>,validFromBlock=<null>,validToBlock=<null>,type=<null>,trustlines=cpfpTxIds,stakingOptions=stakingOptions,unstakingOptions=unstakingOptions,refundOptions=refundOptions,messageKey=<null>,reservation=reservation,recipients=cpfpTxIds,videoApprovers=cpfpTxIds]",
+        "InitiateTransactionRequest[numBlocks=<null>,feeRate=<null>,maxFeeRate=<null>,feeMultiplier=<null>,minConfirms=<null>,enforceMinConfirmsForChange=<null>,gasPrice=<null>,eip1559=<null>,gasLimit=<null>,targetWalletUnspents=<null>,minValue=<null>,maxValue=<null>,sequenceId=<null>,nonce=<null>,noSplitChange=<null>,unspents=<null>,changeAddress=<null>,instant=<null>,memo=<null>,comment=<null>,addressType=<null>,startTime=<null>,consolidateId=<null>,lastLedgerSequence=<null>,ledgerSequenceDelta=<null>,cpfpTxIds=<null>,cpfpFeeRate=<null>,maxFee=<null>,strategy=<null>,validFromBlock=<null>,validToBlock=<null>,type=<null>,trustlines=<null>,stakingOptions=<null>,unstakingOptions=<null>,refundOptions=<null>,messageKey=<null>,reservation=<null>,recipients=<null>,videoApprovers=<null>]",
         result);
   }
 
@@ -222,7 +196,7 @@ class InitiateTransactionRequestTest {
   @Test
   void testSetStakingOptions() {
     initiateTransactionRequest.setStakingOptions(
-        new StakingOptions(0, "validator", "contractName", "functionName", new FunctionArgs()));
+        new StakingOptions(0, "validator", "contractName", "functionName",  List.of(new FunctionArg("type", "val"))));
   }
 
   @Test

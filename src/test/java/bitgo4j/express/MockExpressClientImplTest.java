@@ -11,10 +11,11 @@ import bitgo4j.BitGo4jError;
 import bitgo4j.exception.BitGo4jException;
 import bitgo4j.express.request.CreateAddressRequest;
 import bitgo4j.express.request.LoginRequest;
+import bitgo4j.express.request.SendTransactionRequest;
 import bitgo4j.express.response.AddressResponse;
 import bitgo4j.express.response.LoginResponse;
 import bitgo4j.express.response.PingResponse;
-import java.io.IOException;
+import bitgo4j.express.response.TransactionResponse;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -23,7 +24,7 @@ public class MockExpressClientImplTest {
   private static ExpressClientImpl client;
 
   @BeforeAll
-  static void setUp() throws IOException {
+  static void setUp() {
     BitGo4jConfig config = BitGo4jConfig.builder().token("BitGo_API_TOKEN").build();
     BitGo4j.api().initialize(config);
     client = BitGo4j.api().express();
@@ -86,4 +87,34 @@ public class MockExpressClientImplTest {
     PingResponse response = client.ping();
     assertNotNull(response);
   }
+
+  @Test
+  public void sendTransactionTest_200() {
+    SendTransactionRequest request = new SendTransactionRequest();
+    TransactionResponse response = client.sendTransaction("yd38titaq5u2dpakf9nv4oujjgn3gw1pk1upv5pzmrnhop4perhk0df4wzqgtdx2h6n2o2gihpym8zavad7bky477gn", "f7cbb7d69da8c689f51c1d354235cdb3", request);
+    assertNotNull(response);
+  }
+
+  @Test
+  public void sendTransactionTest_202() {
+    SendTransactionRequest request = new SendTransactionRequest();
+    TransactionResponse response = client.sendTransaction("a5vfprkgctu074gfjvz6", "8224a3c845b0439f4a54dee1928e051d", request);
+    assertNotNull(response);
+  }
+
+  @Test
+  public void sendTransactionTest_400() {
+    SendTransactionRequest request = new SendTransactionRequest();
+    BitGo4jException exception =
+        assertThrows(
+            BitGo4jException.class,
+            () -> client.sendTransaction("ty47pytcmi0z08ct47hhnbwueb5l6szb3", "08334f1408b1eb87e9b16df6e2abdc7f", request));
+    assertNotNull(exception);
+
+    BitGo4jError error = exception.getError();
+    assertNull(error.getError());
+    assertNull(error.getRequestId());
+    assertNull(error.getName());
+  }
+
 }

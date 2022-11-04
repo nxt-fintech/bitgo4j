@@ -1,4 +1,4 @@
-package bitgo4j.wallet.common;
+package bitgo4j.express.common;
 
 import bitgo4j.BitGo4jConstant;
 import bitgo4j.transfer.common.Entry;
@@ -75,12 +75,6 @@ public class Transfer {
   private List<Entry> entries;
 
   private Boolean usersNotified;
-
-  private Integer confirmations;
-
-  private List<InOut> inputs;
-
-  private List<InOut> outputs;
 
   @Override
   public String toString() {

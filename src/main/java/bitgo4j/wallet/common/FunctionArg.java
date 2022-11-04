@@ -1,7 +1,6 @@
-package bitgo4j.express.response;
+package bitgo4j.wallet.common;
 
 import bitgo4j.BitGo4jConstant;
-import bitgo4j.express.common.Transfer;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
@@ -16,22 +15,17 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class TransactionResponse {
-  private Transfer transfer;
+public class FunctionArg {
+  private String type;
 
-  private String txid;
-
-  private String tx;
-
-  private String status;
+  // TODO: has another definition
+  private String val;
 
   @Override
   public String toString() {
     return new ToStringBuilder(this, BitGo4jConstant.TO_STRING_BUILDER_STYLE)
-        //        .append("transfer", transfer)
-        .append("txid", txid)
-        .append("tx", tx)
-        .append("status", status)
+        .append("type", type)
+        .append("val", val)
         .toString();
   }
 }

@@ -1,17 +1,14 @@
 package bitgo4j.express.response;
 
-import bitgo4j.transfer.response.TransferResponse;
+import bitgo4j.express.common.Transfer;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 class TransactionResponseTest {
-  @Mock TransferResponse transfer;
-
   @InjectMocks TransactionResponse transactionResponse;
 
   @Test
@@ -23,7 +20,7 @@ class TransactionResponseTest {
 
   @Test
   void testSetTransfer() {
-    transactionResponse.setTransfer(new TransferResponse());
+    transactionResponse.setTransfer(new Transfer());
   }
 
   @Test

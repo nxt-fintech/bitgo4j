@@ -1,8 +1,8 @@
-package bitgo4j.wallet.common;
+package bitgo4j.express.common;
 
+import bitgo4j.BitGo4jConstant;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import bitgo4j.BitGo4jConstant;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,7 +15,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class FunctionArgs {
+public class FunctionArg {
   private String type;
 
   // TODO: has another definition
