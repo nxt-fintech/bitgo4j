@@ -1,10 +1,5 @@
 package bitgo4j.express.common;
 
-import bitgo4j.policy.common.Amount;
-import bitgo4j.policy.common.EnableToken;
-import bitgo4j.policy.common.FeeOptions;
-import bitgo4j.policy.common.HopParams;
-import bitgo4j.policy.common.RecipientEntry;
 import bitgo4j.policy.common.TxAddress;
 import bitgo4j.wallet.common.FeeInfo;
 import bitgo4j.wallet.common.Transaction;
@@ -73,15 +68,13 @@ class TxRequestTest {
 
     @Test
     void testSetIntent(){
-        txRequest.setIntent(new Intent("nonce", "memo", "intentType", "sequenceId", "comment", "stakingRequestId", "stakingAddress", new Amount("value", "symbol"), List.of(new EnableToken("name", "address")), List.of(new RecipientEntry(new TxAddress("address"), new Amount("value", "symbol"), "data")), "proxy", new FeeOptions("unit", "formula", "feeType",
-            0, 0), new HopParams("paymentId", "userRegSig", 0), Boolean.TRUE, Boolean.TRUE, "txid"));
+        txRequest.setIntent(new Intent("nonce", new DOTFeeOptions("amount", "unit", "formula", "type"), "memo", "intentType", "sequenceId", "comment", "stakingRequestId", "stakingAddress", "validatorAddress", new Amount("value", "symbol"), List.of(new EnableToken("name", "address")), List.of(new RecipientEntry(new TxAddress("address"), new bitgo4j.policy.common.Amount("value", "symbol"), "data", new TokenData("tokenType", "tokenQuantity", "tokenContractAddress", "tokenName", "tokenId", 0))), "proxy", new FeeOptions("unit", "formula", "feeType", 0, 0, 0, 0), new HopParams("paymentId", "userRegSig", 0), Boolean.TRUE, Boolean.TRUE, "custodianTransactionId", "txid", "pubKey", "withdrawalCredentials", "signature", "depositDataRoot", "poolKeyHash"));
     }
 
     @Test
     void testSetIntents(){
         txRequest.setIntents(
-            List.of(new Intent("nonce", "memo", "intentType", "sequenceId", "comment", "stakingRequestId", "stakingAddress", new Amount("value", "symbol"), List.of(new EnableToken("name", "address")), List.of(new RecipientEntry(new TxAddress("address"), new Amount("value", "symbol"), "data")), "proxy", new FeeOptions("unit", "formula", "feeType",
-                0, 0), new HopParams("paymentId", "userRegSig", 0), Boolean.TRUE, Boolean.TRUE, "txid")));
+            List.of(new Intent("nonce", new DOTFeeOptions("amount", "unit", "formula", "type"), "memo", "intentType", "sequenceId", "comment", "stakingRequestId", "stakingAddress", "validatorAddress", new Amount("value", "symbol"), List.of(new EnableToken("name", "address")), List.of(new RecipientEntry(new TxAddress("address"), new bitgo4j.policy.common.Amount("value", "symbol"), "data", new TokenData("tokenType", "tokenQuantity", "tokenContractAddress", "tokenName", "tokenId", 0))), "proxy", new FeeOptions("unit", "formula", "feeType", 0, 0, 0, 0), new HopParams("paymentId", "userRegSig", 0), Boolean.TRUE, Boolean.TRUE, "custodianTransactionId", "txid", "pubKey", "withdrawalCredentials", "signature", "depositDataRoot", "poolKeyHash")));
     }
 
     @Test
@@ -92,8 +85,7 @@ class TxRequestTest {
     @Test
     void testSetUnsignedTxs(){
         txRequest.setUnsignedTxs(
-            List.of(new UnsignedTransaction("serializedTxHex", "signableHex", "derivationPath", new FeeInfo("feeString",
-                0))));
+            List.of(new UnsignedTransaction("serializedTxHex", "signableHex", "derivationPath", new FeeInfo("feeString", 0))));
     }
 
     @Test
@@ -108,7 +100,6 @@ class TxRequestTest {
 
     @Test
     void testSetTransactions(){
-        txRequest.setTransactions(List.of(new Transaction("state", new bitgo4j.wallet.common.UnsignedTransaction("serializedTxHex", "signableHex", "derivationPath", new FeeInfo("feeString",
-            0)), List.of(new bitgo4j.wallet.common.SignatureShare("from", "to", "share")), "txHash")));
+        txRequest.setTransactions(List.of(new Transaction("state", new bitgo4j.wallet.common.UnsignedTransaction("serializedTxHex", "signableHex", "derivationPath", new FeeInfo("feeString", 0)), List.of(new bitgo4j.wallet.common.SignatureShare("from", "to", "share")), "txHash")));
     }
 }

@@ -12,6 +12,7 @@ class TxPrebuildTest {
     @InjectMocks
     TxPrebuild txPrebuild;
 
+
     @Test
     void testToString(){
         String result = txPrebuild.toString();
@@ -36,13 +37,12 @@ class TxPrebuildTest {
     @Test
     void testSetTxInfo(){
         txPrebuild.setTxInfo(new TxInfoRequest(List.of("String"), 0, 0, 0, List.of(new Unspent("id", "address", 0, "valueString", 0, "date", Boolean.TRUE, "wallet", "fromWallet", 0, 0, "redeemScript", "witnessScript", Boolean.TRUE)), new WalletAddressDetails("id", "address", 0, 0, "coin", 0, "wallet", new AddressCoinSpecific(new AddressCoinSpecificXlm("memoId", "rootAddress"), new AddressCoinSpecificXlm("memoId", "rootAddress")), new AddressBalance("updated",
-            1L, "balanceString", 1L,
-            1L, "confirmedBalanceString", "spendableBalanceString"), "label", "addressType"), 0, List.of(new Operation("amount", new Asset("code"), "destination", "type")), "sequence", "source"));
+            1L, "balanceString", 1L, 1L, "confirmedBalanceString", "spendableBalanceString"), "label", "addressType"), 0, List.of(new Operation("amount", new Asset("code"), "destination", "type")), "sequence", "source"));
     }
 
     @Test
     void testSetFeeInfo(){
-        txPrebuild.setFeeInfo(new FeeInfo(0, 0, "feeRate", 0, "payGoFeeString", 0, "xlmBaseFee", "xlmBaseReserve"));
+        txPrebuild.setFeeInfo(new FeeInfo("feeString", 0, 0, "feeRate", 0, "payGoFeeString", 0, "xlmBaseFee", "xlmBaseReserve"));
     }
 
     @Test
