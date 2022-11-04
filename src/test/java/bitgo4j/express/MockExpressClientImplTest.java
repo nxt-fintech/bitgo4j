@@ -10,6 +10,7 @@ import bitgo4j.BitGo4jConfig;
 import bitgo4j.BitGo4jError;
 import bitgo4j.exception.BitGo4jException;
 import bitgo4j.express.request.AcceptWalletShareRequest;
+import bitgo4j.express.request.ConsolidateAccountRequest;
 import bitgo4j.express.request.CreateAddressRequest;
 import bitgo4j.express.request.CryptRequest;
 import bitgo4j.express.request.GenerateWalletRequest;
@@ -23,6 +24,7 @@ import bitgo4j.express.request.SignTransactionRequest;
 import bitgo4j.express.request.SignWalletTransactionRequest;
 import bitgo4j.express.response.AcceptWalletShareResponse;
 import bitgo4j.express.response.AddressResponse;
+import bitgo4j.express.response.ConsolidateAccountResponse;
 import bitgo4j.express.response.DecryptResponse;
 import bitgo4j.express.response.EncryptResponse;
 import bitgo4j.express.response.KeyResponse;
@@ -251,6 +253,28 @@ public class MockExpressClientImplTest {
         assertThrows(
             BitGo4jException.class,
             () -> client.recoverETHToken("ywr6xfic5epqojnkpduvip5nggu8y6omxgzj4b4bmk8395tjq6kef919rg2gwgc4z0gav8txk4e7l5359y2qvt", "dcde5da732ac6bb5d82f9163646ad18b", request));
+    assertNotNull(exception);
+
+    BitGo4jError error = exception.getError();
+    assertNull(error.getError());
+    assertNull(error.getRequestId());
+    assertNull(error.getName());
+  }
+
+  @Test
+  public void consolidateAccountTest_200() {
+    ConsolidateAccountRequest request = new ConsolidateAccountRequest();
+    ConsolidateAccountResponse response = client.consolidateAccount("algo","24743966beb4b144af3c680f4725b532", request);
+    assertNotNull(response);
+  }
+
+  @Test
+  public void consolidateAccountTest_400() {
+    ConsolidateAccountRequest request = new ConsolidateAccountRequest();
+    BitGo4jException exception =
+        assertThrows(
+            BitGo4jException.class,
+            () -> client.consolidateAccount("txtz", "3a88cd1b2f51823657c79c87844cef89", request));
     assertNotNull(exception);
 
     BitGo4jError error = exception.getError();
