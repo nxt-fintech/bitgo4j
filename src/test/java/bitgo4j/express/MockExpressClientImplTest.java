@@ -9,6 +9,7 @@ import bitgo4j.BitGo4j;
 import bitgo4j.BitGo4jConfig;
 import bitgo4j.BitGo4jError;
 import bitgo4j.exception.BitGo4jException;
+import bitgo4j.express.request.AcceptWalletShareRequest;
 import bitgo4j.express.request.CreateAddressRequest;
 import bitgo4j.express.request.CryptRequest;
 import bitgo4j.express.request.GenerateWalletRequest;
@@ -16,6 +17,7 @@ import bitgo4j.express.request.LoginRequest;
 import bitgo4j.express.request.SendToManyRequest;
 import bitgo4j.express.request.SendTransactionRequest;
 import bitgo4j.express.request.ShareWalletRequest;
+import bitgo4j.express.response.AcceptWalletShareResponse;
 import bitgo4j.express.response.AddressResponse;
 import bitgo4j.express.response.DecryptResponse;
 import bitgo4j.express.response.EncryptResponse;
@@ -195,6 +197,13 @@ public class MockExpressClientImplTest {
   public void shareWalletTest_200() {
     ShareWalletRequest request = new ShareWalletRequest();
     ShareWalletResponse response = client.shareWallet("4r75v7kb2nc6gkb196l8rrjep4z1zbxsfkuomc2qizmlk9hlbi0vj42j16x90ybh9rxzs22iand8j54fhmxbwwn1u6yg73sulqo95hhtiw9zbngc", "e4a370fe645fb21673da7c9dea55426d", request);
+    assertNotNull(response);
+  }
+
+  @Test
+  public void acceptWalletShareTest_200() {
+    AcceptWalletShareRequest request = new AcceptWalletShareRequest();
+    AcceptWalletShareResponse response = client.acceptWalletShare("86s2paxfknw0nj5zuzto7onz3u7r6514vq38sibwpise4c8mqu4tlb4mdcd40axquaipyi", "851b2d7f41465040c0e785c12aad52bd", request);
     assertNotNull(response);
   }
 }

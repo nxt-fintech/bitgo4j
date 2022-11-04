@@ -16,6 +16,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+// TODO: critical: cope with another response definition
 @Getter
 @Setter
 @AllArgsConstructor
