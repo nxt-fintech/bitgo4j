@@ -22,6 +22,7 @@ import bitgo4j.express.request.ShareWalletRequest;
 import bitgo4j.express.request.SignTSSTransactionRequest;
 import bitgo4j.express.request.SignTransactionRequest;
 import bitgo4j.express.request.SignWalletTransactionRequest;
+import bitgo4j.express.request.SweepFundsRequest;
 import bitgo4j.express.request.UnspentsRequest;
 import bitgo4j.express.response.AcceptWalletShareResponse;
 import bitgo4j.express.response.AddressResponse;
@@ -320,6 +321,28 @@ public class MockExpressClientImplTest {
         assertThrows(
             BitGo4jException.class,
             () -> client.fanOutUnspents("k3zq8dy92y3dd0zki96va4o9wh358v62v6f3r7v1wkqixg20o74v4cdk1wcnndef03421a9gol3afjf0txlaygio6555v3qv7rqqwjwjz2tzllmhewocwzhqnj67fx6e7is3aa95sj9i2tc278rdau8atkf9hfebhcgh9izb40zw9fosflox0c3n0", "2c2d0f5272f0696611d6e0eea3fd9192", request));
+    assertNotNull(exception);
+
+    BitGo4jError error = exception.getError();
+    assertNull(error.getError());
+    assertNull(error.getRequestId());
+    assertNull(error.getName());
+  }
+
+  @Test
+  public void sweepFundsTest_200() {
+    SweepFundsRequest request = new SweepFundsRequest();
+    TransactionResponse response = client.sweepFunds("mh28qh5ekivo8t6apr0hso0khyvj9jz0bs24segwmr2dw37tpt1ywlha7o90vbuhjl2pusg3ozbaihy65ytutph6bq29hq2u2v25oa1qzttt4h7cs","dc67120d08f69c7e9188c7859568373c", request);
+    assertNotNull(response);
+  }
+
+  @Test
+  public void sweepFundsTest_400() {
+    SweepFundsRequest request = new SweepFundsRequest();
+    BitGo4jException exception =
+        assertThrows(
+            BitGo4jException.class,
+            () -> client.sweepFunds("1461smgs11m3qsacnphi5chjpfn9wfxn342lgp46rejz077klwwpwnc88xv3x0ui7edqy47bcygg072eo5dsrr46s7qwr77rlj1zoqqo43m79nqn78oycc", "038289759d62006dd5551ab6ad0e31ac", request));
     assertNotNull(exception);
 
     BitGo4jError error = exception.getError();
