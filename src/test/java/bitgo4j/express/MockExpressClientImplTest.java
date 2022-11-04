@@ -11,6 +11,7 @@ import bitgo4j.BitGo4jError;
 import bitgo4j.exception.BitGo4jException;
 import bitgo4j.express.request.CreateAddressRequest;
 import bitgo4j.express.request.LoginRequest;
+import bitgo4j.express.request.SendToManyRequest;
 import bitgo4j.express.request.SendTransactionRequest;
 import bitgo4j.express.response.AddressResponse;
 import bitgo4j.express.response.LoginResponse;
@@ -117,4 +118,32 @@ public class MockExpressClientImplTest {
     assertNull(error.getName());
   }
 
+  @Test
+  public void sendToManyTest_200() {
+    SendToManyRequest request = new SendToManyRequest();
+    TransactionResponse response = client.sendToMany("68tvgqvs", "eac4945655423dc8f20c08e04e600f75", request);
+    assertNotNull(response);
+  }
+
+  @Test
+  public void sendToManyTest_202() {
+    SendToManyRequest request = new SendToManyRequest();
+    TransactionResponse response = client.sendToMany("bp5rb88687tny5f06rk2luhvuqsvydlsfnndfbbpcsmapywhmsp25u5dvn5ylioe", "7382897354341d0417da73bb5599df38", request);
+    assertNotNull(response);
+  }
+
+  @Test
+  public void sendToManyTest_400() {
+    SendToManyRequest request = new SendToManyRequest();
+    BitGo4jException exception =
+        assertThrows(
+            BitGo4jException.class,
+            () -> client.sendToMany("b7g5apyiv9v4n1avd14m93358ao9bioo2568i9q46z1mvx9t7ow", "5d3fee166c8430b575004193fb2bbfe2", request));
+    assertNotNull(exception);
+
+    BitGo4jError error = exception.getError();
+    assertNull(error.getError());
+    assertNull(error.getRequestId());
+    assertNull(error.getName());
+  }
 }

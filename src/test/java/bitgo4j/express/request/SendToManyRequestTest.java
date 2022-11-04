@@ -3,6 +3,8 @@ package bitgo4j.express.request;
 import bitgo4j.express.common.Eip1559;
 import bitgo4j.express.common.FunctionArg;
 import bitgo4j.express.common.Memo;
+import bitgo4j.express.common.Recipient;
+import bitgo4j.express.common.RefundOptions;
 import bitgo4j.express.common.Reservation;
 import bitgo4j.express.common.StakingOptions;
 import bitgo4j.express.common.Trustline;
@@ -17,10 +19,16 @@ import org.mockito.junit.jupiter.MockitoExtension;
 class SendToManyRequestTest {
     @InjectMocks
     SendToManyRequest sendToManyRequest;
+
     @Test
     void testToString(){
         String result = sendToManyRequest.toString();
-        Assertions.assertEquals("SendToManyRequest[otp=<null>,walletPassphrase=<null>,prv=<null>,numBlocks=<null>,feeRate=<null>,maxFeeRate=<null>,minConfirms=<null>,enforceMinConfirmsForChange=<null>,gasPrice=<null>,eip1559=<null>,gasLimit=<null>,targetWalletUnspents=<null>,minValue=<null>,maxValue=<null>,sequenceId=<null>,noSplitChange=<null>,unspents=<null>,changeAddress=<null>,instant=<null>,memo=<null>,comment=<null>,addressType=<null>,startTime=<null>,consolidateId=<null>,lastLedgerSequence=<null>,ledgerSequenceDelta=<null>,cpfpTxIds=<null>,cpfpFeeRate=<null>,maxFee=<null>,idfVersion=<null>,idfSignedTimestamp=<null>,idfUserId=<null>,strategy=<null>,validFromBlock=<null>,validToBlock=<null>,type=<null>,trustlines=<null>,stakingOptions=<null>,messageKey=<null>,reservation=<null>,data=<null>]", result);
+        Assertions.assertEquals("SendToManyRequest[otp=<null>,walletPassphrase=<null>,prv=<null>,numBlocks=<null>,feeRate=<null>,maxFeeRate=<null>,feeMultiplier=<null>,minConfirms=<null>,enforceMinConfirmsForChange=<null>,gasPrice=<null>,eip1559=<null>,gasLimit=<null>,targetWalletUnspents=<null>,minValue=<null>,maxValue=<null>,sequenceId=<null>,nonce=<null>,noSplitChange=<null>,unspents=<null>,changeAddress=<null>,instant=<null>,memo=<null>,comment=<null>,addressType=<null>,startTime=<null>,consolidateId=<null>,lastLedgerSequence=<null>,ledgerSequenceDelta=<null>,cpfpTxIds=<null>,cpfpFeeRate=<null>,maxFee=<null>,strategy=<null>,validFromBlock=<null>,validToBlock=<null>,type=<null>,trustlines=<null>,stakingOptions=<null>,refundOptions=<null>,messageKey=<null>,reservation=<null>,data=<null>]", result);
+    }
+
+    @Test
+    void testSetRecipients(){
+        sendToManyRequest.setRecipients(List.of(new Recipient("address", "amount")));
     }
 
     @Test
@@ -45,12 +53,17 @@ class SendToManyRequestTest {
 
     @Test
     void testSetFeeRate(){
-        sendToManyRequest.setFeeRate(0);
+        sendToManyRequest.setFeeRate("feeRate");
     }
 
     @Test
     void testSetMaxFeeRate(){
-        sendToManyRequest.setMaxFeeRate(0);
+        sendToManyRequest.setMaxFeeRate("maxFeeRate");
+    }
+
+    @Test
+    void testSetFeeMultiplier(){
+        sendToManyRequest.setFeeMultiplier("feeMultiplier");
     }
 
     @Test
@@ -65,7 +78,7 @@ class SendToManyRequestTest {
 
     @Test
     void testSetGasPrice(){
-        sendToManyRequest.setGasPrice(0);
+        sendToManyRequest.setGasPrice("gasPrice");
     }
 
     @Test
@@ -75,7 +88,7 @@ class SendToManyRequestTest {
 
     @Test
     void testSetGasLimit(){
-        sendToManyRequest.setGasLimit(0);
+        sendToManyRequest.setGasLimit("gasLimit");
     }
 
     @Test
@@ -85,17 +98,22 @@ class SendToManyRequestTest {
 
     @Test
     void testSetMinValue(){
-        sendToManyRequest.setMinValue(0);
+        sendToManyRequest.setMinValue("minValue");
     }
 
     @Test
     void testSetMaxValue(){
-        sendToManyRequest.setMaxValue(0);
+        sendToManyRequest.setMaxValue("maxValue");
     }
 
     @Test
     void testSetSequenceId(){
         sendToManyRequest.setSequenceId("sequenceId");
+    }
+
+    @Test
+    void testSetNonce(){
+        sendToManyRequest.setNonce("nonce");
     }
 
     @Test
@@ -169,21 +187,6 @@ class SendToManyRequestTest {
     }
 
     @Test
-    void testSetIdfVersion(){
-        sendToManyRequest.setIdfVersion(0);
-    }
-
-    @Test
-    void testSetIdfSignedTimestamp(){
-        sendToManyRequest.setIdfSignedTimestamp("idfSignedTimestamp");
-    }
-
-    @Test
-    void testSetIdfUserId(){
-        sendToManyRequest.setIdfUserId("idfUserId");
-    }
-
-    @Test
     void testSetStrategy(){
         sendToManyRequest.setStrategy("strategy");
     }
@@ -211,6 +214,11 @@ class SendToManyRequestTest {
     @Test
     void testSetStakingOptions(){
         sendToManyRequest.setStakingOptions(new StakingOptions("amount", "validator", "contractName", "functionName", List.of(new FunctionArg("type", "val"))));
+    }
+
+    @Test
+    void testSetRefundOptions(){
+        sendToManyRequest.setRefundOptions(new RefundOptions("address"));
     }
 
     @Test
