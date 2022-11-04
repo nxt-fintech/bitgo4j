@@ -1,6 +1,5 @@
 package bitgo4j.transactionrequest.response;
 
-import bitgo4j.transactionrequest.common.CoinSpecific;
 import bitgo4j.transactionrequest.common.Entry;
 import bitgo4j.transactionrequest.common.History;
 import java.util.List;

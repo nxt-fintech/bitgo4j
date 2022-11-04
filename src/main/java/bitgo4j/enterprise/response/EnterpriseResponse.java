@@ -1,12 +1,12 @@
 package bitgo4j.enterprise.response;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import bitgo4j.BitGo4jConstant;
 import bitgo4j.enterprise.common.AdditionalEnterpriseInfo;
 import bitgo4j.enterprise.common.Admin;
 import bitgo4j.enterprise.common.Freeze;
 import bitgo4j.enterprise.common.Info;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

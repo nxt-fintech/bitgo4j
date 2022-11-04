@@ -1,7 +1,5 @@
 package bitgo4j.policy.response;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import bitgo4j.BitGo4jConstant;
 import bitgo4j.policy.common.Admin;
 import bitgo4j.policy.common.BuildDefaults;
@@ -11,6 +9,8 @@ import bitgo4j.policy.common.Freeze;
 import bitgo4j.policy.common.Info;
 import bitgo4j.policy.common.ReceiveAddress;
 import bitgo4j.policy.common.User;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

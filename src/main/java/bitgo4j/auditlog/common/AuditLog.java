@@ -1,9 +1,9 @@
 package bitgo4j.auditlog.common;
 
+import bitgo4j.BitGo4jConstant;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import bitgo4j.BitGo4jConstant;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -34,9 +34,7 @@ import bitgo4j.wallet.response.TotalRewardsDataResponse;
 import bitgo4j.wallet.response.UnspentReservationResponse;
 import bitgo4j.wallet.response.UnspentsResponse;
 import bitgo4j.wallet.response.WalletResponse;
-import java.io.IOException;
 import java.util.List;
-import java.util.Properties;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -45,7 +43,7 @@ public class MockWalletClientImplTest {
   private static WalletClientImpl client;
 
   @BeforeAll
-  static void setUp() throws IOException {
+  static void setUp() {
     BitGo4jConfig config = BitGo4jConfig.builder().token("BitGo_API_TOKEN").build();
     BitGo4j.api().initialize(config);
     client = BitGo4j.api().wallet();

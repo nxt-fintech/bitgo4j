@@ -10,8 +10,6 @@ import bitgo4j.BitGo4jError;
 import bitgo4j.exception.BitGo4jException;
 import bitgo4j.policy.request.PolicyRequest;
 import bitgo4j.policy.response.PolicyResponse;
-import java.io.IOException;
-import java.util.Properties;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -19,7 +17,7 @@ public class MockPolicyClientImplTest {
   private static PolicyClientImpl client;
 
   @BeforeAll
-  static void setUp() throws IOException {
+  static void setUp() {
     BitGo4jConfig config = BitGo4jConfig.builder().token("BitGo_API_TOKEN").build();
     BitGo4j.api().initialize(config);
     client = BitGo4j.api().policy();

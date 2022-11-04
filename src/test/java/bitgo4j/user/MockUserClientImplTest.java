@@ -12,8 +12,6 @@ import bitgo4j.user.request.LoginRequest;
 import bitgo4j.user.request.UnlockSessionRequest;
 import bitgo4j.user.response.SessionResponse;
 import bitgo4j.user.response.UserResponse;
-import java.io.IOException;
-import java.util.Properties;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -22,7 +20,7 @@ public class MockUserClientImplTest {
   private static UserClientImpl client;
 
   @BeforeAll
-  static void setUp() throws IOException {
+  static void setUp()  {
     BitGo4jConfig config = BitGo4jConfig.builder().token("BitGo_API_TOKEN").build();
     BitGo4j.api().initialize(config);
     client = BitGo4j.api().user();
