@@ -51,9 +51,9 @@ public interface ExpressClient {
 
   TransactionResponse sendToMany(String coin, String walletId, SendToManyRequest sendToManyRequest);
 
-  EncryptResponse encryptMessage(CryptRequest cryptRequest);
+  EncryptResponse encryptMessages(CryptRequest cryptRequest);
 
-  DecryptResponse decryptMessage(CryptRequest cryptRequest);
+  DecryptResponse decryptMessages(CryptRequest cryptRequest);
 
   CalculateMiningFeeResponse calculateMiningFee(
       CalculateMiningFeeRequest calculateMiningFeeRequest);

@@ -78,12 +78,12 @@ public class ExpressClientImpl implements ExpressClient {
   }
 
   @Override
-  public EncryptResponse encryptMessage(CryptRequest cryptRequest) {
+  public EncryptResponse encryptMessages(CryptRequest cryptRequest) {
     return executeSync(service.encryptMessages(cryptRequest));
   }
 
   @Override
-  public DecryptResponse decryptMessage(CryptRequest cryptRequest) {
+  public DecryptResponse decryptMessages(CryptRequest cryptRequest) {
     return executeSync(service.decryptMessages(cryptRequest));
   }
 

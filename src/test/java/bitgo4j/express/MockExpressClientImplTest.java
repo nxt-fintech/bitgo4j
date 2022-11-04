@@ -10,10 +10,13 @@ import bitgo4j.BitGo4jConfig;
 import bitgo4j.BitGo4jError;
 import bitgo4j.exception.BitGo4jException;
 import bitgo4j.express.request.CreateAddressRequest;
+import bitgo4j.express.request.CryptRequest;
 import bitgo4j.express.request.LoginRequest;
 import bitgo4j.express.request.SendToManyRequest;
 import bitgo4j.express.request.SendTransactionRequest;
 import bitgo4j.express.response.AddressResponse;
+import bitgo4j.express.response.DecryptResponse;
+import bitgo4j.express.response.EncryptResponse;
 import bitgo4j.express.response.LoginResponse;
 import bitgo4j.express.response.PingResponse;
 import bitgo4j.express.response.TransactionResponse;
@@ -145,5 +148,28 @@ public class MockExpressClientImplTest {
     assertNull(error.getError());
     assertNull(error.getRequestId());
     assertNull(error.getName());
+  }
+
+  @Test
+  public void encryptMessagesTest_200() {
+    CryptRequest request = new CryptRequest();
+    EncryptResponse response = client.encryptMessages(request);
+    assertNotNull(response);
+  }
+
+  @Test
+  public void decryptMessagesTest_200() {
+    CryptRequest request = new CryptRequest();
+    DecryptResponse response = client.decryptMessages(request);
+    assertNotNull(response);
+  }
+
+  // TODO: cope with same url path
+  @Disabled
+  @Test
+  public void decryptMessagesTest_500() {
+    CryptRequest request = new CryptRequest();
+    DecryptResponse response = client.decryptMessages(request);
+    assertNotNull(response);
   }
 }
