@@ -9,8 +9,7 @@ class FeeInfoTest {
   @Test
   void testToString() {
     String result = feeInfo.toString();
-    String expected =
-        "FeeInfo[size=<null>,fee=<null>,feeRate=<null>,payGoFee=<null>,payGoFeeString=<null>]";
+    String expected = "FeeInfo[size=<null>,fee=<null>,feeRate=<null>,payGoFee=<null>,payGoFeeString=<null>,feeString=<null>]";
     Assertions.assertEquals(expected, result);
   }
 
@@ -38,4 +37,7 @@ class FeeInfoTest {
   void testSetPayGoFeeString() {
     feeInfo.setPayGoFeeString("payGoFeeString");
   }
+
+  @Test
+  void testFeeString() { feeInfo.setFeeString("feeString"); }
 }

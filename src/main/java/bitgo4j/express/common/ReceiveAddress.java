@@ -1,9 +1,8 @@
-package bitgo4j.policy.common;
+package bitgo4j.express.common;
 
 import bitgo4j.BitGo4jConstant;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,28 +15,43 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class Policy {
+public class ReceiveAddress {
   private String id;
 
-  private String date;
+  private String address;
+
+  private Integer chain;
+
+  private Long index;
+
+  private String coin;
+
+  private Long lastNonce;
+
+  private String wallet;
+
+  private AddressCoinSpecific coinSpecific;
+
+  private AddressBalance balance;
 
   private String label;
 
-  private Boolean latest;
-
-  private List<Rule> rules;
-
-  private Long version;
+  private String addressType;
 
   @Override
   public String toString() {
     return new ToStringBuilder(this, BitGo4jConstant.TO_STRING_BUILDER_STYLE)
         .append("id", id)
-        .append("date", date)
+        .append("address", address)
+        .append("chain", chain)
+        .append("index", index)
+        .append("coin", coin)
+        .append("lastNonce", lastNonce)
+        .append("wallet", wallet)
+        .append("coinSpecific", coinSpecific)
+        .append("balance", balance)
         .append("label", label)
-        .append("latest", latest)
-        .append("rules", rules)
-        .append("version", version)
+        .append("addressType", addressType)
         .toString();
   }
 }

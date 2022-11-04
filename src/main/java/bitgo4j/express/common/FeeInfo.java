@@ -26,6 +26,8 @@ public class FeeInfo {
 
   private String payGoFeeString;
 
+  private String feeString;
+
   @Override
   public String toString() {
     return new ToStringBuilder(this, BitGo4jConstant.TO_STRING_BUILDER_STYLE)
@@ -34,6 +36,7 @@ public class FeeInfo {
         .append("feeRate", feeRate)
         .append("payGoFee", payGoFee)
         .append("payGoFeeString", payGoFeeString)
+        .append("feeString", feeString)
         .toString();
   }
 }

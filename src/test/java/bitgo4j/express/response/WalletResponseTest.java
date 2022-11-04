@@ -1,12 +1,26 @@
 package bitgo4j.express.response;
 
-import bitgo4j.address.response.AddressResponse;
+import bitgo4j.enterprise.common.Info;
+import bitgo4j.enterprise.common.UpdateApprovalsRequiredRequest;
+import bitgo4j.enterprise.common.UpdateEnterpriseRequest;
+import bitgo4j.express.common.Action;
+import bitgo4j.express.common.AddressBalance;
+import bitgo4j.express.common.AddressCoinSpecific;
 import bitgo4j.express.common.Admin;
-import bitgo4j.express.common.BuildDefaults;
-import bitgo4j.express.common.CoinSpecific;
-import bitgo4j.express.common.CustomChangeKeySignatures;
+import bitgo4j.express.common.Condition;
+import bitgo4j.express.common.Entry;
 import bitgo4j.express.common.Freeze;
+import bitgo4j.express.common.KeySignatures;
+import bitgo4j.express.common.MetaData;
+import bitgo4j.express.common.PendingApproval;
+import bitgo4j.express.common.Policy;
+import bitgo4j.express.common.ReceiveAddress;
+import bitgo4j.express.common.Rule;
 import bitgo4j.express.common.User;
+import bitgo4j.policy.common.AddressCoinSpecificXlm;
+import bitgo4j.user.common.Email;
+import bitgo4j.user.common.Name;
+import bitgo4j.user.common.Phone;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -16,147 +30,135 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 class WalletResponseTest {
-  @InjectMocks WalletResponse walletResponse;
+    @InjectMocks
+    WalletResponse walletResponse;
 
-  @Test
-  void testToString() {
-    String result = walletResponse.toString();
-    String expected = "WalletResponse[allowBackupKeySigning=<null>,approvalsRequired=<null>,balanceString=<null>,buildDefaults=<null>,coin=<null>,coinSpecific=<null>,custodialWalletId=<null>,deleted=<null>,disableTransactionNotifications=<null>,enterprise=<null>,freeze=<null>,id=<null>,isCold=<null>,keys=<null>,label=<null>,m=<null>,n=<null>,nodeId=<null>,recoverable=<null>,tags=<null>,spendableBalanceString=<null>,startDate=<null>,type=<null>,users=<null>,customChangeKeySignatures=<null>]";
-    Assertions.assertEquals(expected, result);
-  }
+    @Test
+    void testToString(){
+        String result = walletResponse.toString();
+        Assertions.assertEquals("WalletResponse[id=<null>,users=<null>,coin=<null>,label=<null>,m=<null>,n=<null>,keys=<null>,keySignatures=<null>,tags=<null>,receiveAddress=<null>,balance=<null>,balanceString=<null>,confirmedBalance=<null>,confirmedBalanceString=<null>,spendableBalance=<null>,spendableBalanceString=<null>,deleted=<null>,isCold=<null>,freeze=<null>,disableTransactionNotifications=<null>,admin=<null>,approvalsRequired=<null>,pendingApprovals=<null>]", result);
+    }
 
-  @Test
-  void testSetAdmin() {
-    walletResponse.setAdmin(new Admin());
-  }
+    @Test
+    void testSetId(){
+        walletResponse.setId("id");
+    }
 
-  @Test
-  void testSetAllowBackupKeySigning() {
-    walletResponse.setAllowBackupKeySigning(Boolean.TRUE);
-  }
+    @Test
+    void testSetUsers(){
+        walletResponse.setUsers(
+            List.of(new User("id", Boolean.TRUE, new Name("first", "full", "last"), "username", new Email("email", Boolean.TRUE), new Phone("phone", Boolean.TRUE), "country", "state", "user", List.of("String"))));
+    }
 
-  @Test
-  void testSetApprovalsRequired() {
-    walletResponse.setApprovalsRequired(0);
-  }
+    @Test
+    void testSetCoin(){
+        walletResponse.setCoin("coin");
+    }
 
-  @Test
-  void testSetBalanceString() {
-    walletResponse.setBalanceString("balanceString");
-  }
+    @Test
+    void testSetLabel(){
+        walletResponse.setLabel("label");
+    }
 
-  @Test
-  void testSetBuildDefaults() {
-    walletResponse.setBuildDefaults(new BuildDefaults());
-  }
+    @Test
+    void testSetM(){
+        walletResponse.setM(1L);
+    }
 
-  @Test
-  void testSetCoin() {
-    walletResponse.setCoin("coin");
-  }
+    @Test
+    void testSetN(){
+        walletResponse.setN(1L);
+    }
 
-  @Test
-  void testSetCoinSpecific() {
-    walletResponse.setCoinSpecific(new CoinSpecific());
-  }
+    @Test
+    void testSetKeys(){
+        walletResponse.setKeys(List.of("String"));
+    }
 
-  @Test
-  void testSetCustodialWalletId() {
-    walletResponse.setCustodialWalletId("custodialWalletId");
-  }
+    @Test
+    void testSetKeySignatures(){
+        walletResponse.setKeySignatures(new KeySignatures("backupPub", "bitgoPub"));
+    }
 
-  @Test
-  void testSetDeleted() {
-    walletResponse.setDeleted(Boolean.TRUE);
-  }
+    @Test
+    void testSetTags(){
+        walletResponse.setTags(List.of("String"));
+    }
 
-  @Test
-  void testSetDisableTransactionNotifications() {
-    walletResponse.setDisableTransactionNotifications(Boolean.TRUE);
-  }
+    @Test
+    void testSetReceiveAddress(){
+        walletResponse.setReceiveAddress(new ReceiveAddress("id", "address", 0, 1L, "coin",
+            1L, "wallet", new AddressCoinSpecific(new AddressCoinSpecificXlm("memoId", "rootAddress"), new AddressCoinSpecificXlm("memoId", "rootAddress")), new AddressBalance("updated",
+            1L, "balanceString", 1L, 1L, "confirmedBalanceString", "spendableBalanceString"), "label", "addressType"));
+    }
 
-  @Test
-  void testSetEnterprise() {
-    walletResponse.setEnterprise("enterprise");
-  }
+    @Test
+    void testSetBalance(){
+        walletResponse.setBalance(0L);
+    }
 
-  @Test
-  void testSetFreeze() {
-    walletResponse.setFreeze(new Freeze());
-  }
+    @Test
+    void testSetBalanceString(){
+        walletResponse.setBalanceString("balanceString");
+    }
 
-  @Test
-  void testSetId() {
-    walletResponse.setId("id");
-  }
+    @Test
+    void testSetConfirmedBalance(){
+        walletResponse.setConfirmedBalance(0L);
+    }
 
-  @Test
-  void testSetIsCold() {
-    walletResponse.setIsCold(Boolean.TRUE);
-  }
+    @Test
+    void testSetConfirmedBalanceString(){
+        walletResponse.setConfirmedBalanceString("confirmedBalanceString");
+    }
 
-  @Test
-  void testSetKeys() {
-    walletResponse.setKeys(List.of("String"));
-  }
+    @Test
+    void testSetSpendableBalance(){
+        walletResponse.setSpendableBalance(0L);
+    }
 
-  @Test
-  void testSetLabel() {
-    walletResponse.setLabel("label");
-  }
+    @Test
+    void testSetSpendableBalanceString(){
+        walletResponse.setSpendableBalanceString("spendableBalanceString");
+    }
 
-  @Test
-  void testSetM() {
-    walletResponse.setM(0);
-  }
+    @Test
+    void testSetDeleted(){
+        walletResponse.setDeleted(Boolean.TRUE);
+    }
 
-  @Test
-  void testSetN() {
-    walletResponse.setN(0);
-  }
+    @Test
+    void testSetIsCold(){
+        walletResponse.setIsCold(Boolean.TRUE);
+    }
 
-  @Test
-  void testSetNodeId() {
-    walletResponse.setNodeId("nodeId");
-  }
+    @Test
+    void testSetFreeze(){
+        walletResponse.setFreeze(new Freeze("time", "expires"));
+    }
 
-  @Test
-  void testSetReceiveAddress() {
-    walletResponse.setReceiveAddress(new AddressResponse());
-  }
+    @Test
+    void testSetDisableTransactionNotifications(){
+        walletResponse.setDisableTransactionNotifications(Boolean.TRUE);
+    }
 
-  @Test
-  void testSetRecoverable() {
-    walletResponse.setRecoverable(Boolean.TRUE);
-  }
+    @Test
+    void testSetAdmin(){
+        walletResponse.setAdmin(new Admin(new Policy("id", "date", "label", Boolean.TRUE, List.of(new Rule("id", "lockDate", "mutabilityConstraint", "coin", "type", new Condition("amountString",
+            0, List.of("String"), List.of("String"), List.of("String"), List.of(new Entry("item", new MetaData("label", "owner", "propertyName"), "type")), "url"), new Action("type",
+            0, List.of("String")))),
+            0)));
+    }
 
-  @Test
-  void testSetTags() {
-    walletResponse.setTags(List.of("String"));
-  }
+    @Test
+    void testSetApprovalsRequired(){
+        walletResponse.setApprovalsRequired(0L);
+    }
 
-  @Test
-  void testSetSpendableBalanceString() {
-    walletResponse.setSpendableBalanceString("spendableBalanceString");
-  }
-
-  @Test
-  void testSetStartDate() {
-    walletResponse.setStartDate("startDate");
-  }
-
-  @Test
-  void testSetType() {
-    walletResponse.setType("type");
-  }
-
-  @Test
-  void testSetUsers() {
-    walletResponse.setUsers(List.of(new User()));
-  }
-
-  @Test
-  void testSetCustomChangeKeySignatures() {
-    walletResponse.setCustomChangeKeySignatures(new CustomChangeKeySignatures());
-  }
+    @Test
+    void testSetPendingApprovals(){
+        walletResponse.setPendingApprovals(
+            List.of(new PendingApproval("id", "coin", "wallet", "enterprise", "creator", "createDate", new Info("type", new UpdateEnterpriseRequest("action", List.of("String"), "userId", "email"), new UpdateApprovalsRequiredRequest(
+                1L)), "state", "scope", List.of("String"), 1L, "walletLabel")));
+    }
 }

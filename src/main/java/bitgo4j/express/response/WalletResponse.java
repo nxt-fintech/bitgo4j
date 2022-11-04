@@ -1,12 +1,11 @@
 package bitgo4j.express.response;
 
 import bitgo4j.BitGo4jConstant;
-import bitgo4j.address.response.AddressResponse;
 import bitgo4j.express.common.Admin;
-import bitgo4j.express.common.BuildDefaults;
-import bitgo4j.express.common.CoinSpecific;
-import bitgo4j.express.common.CustomChangeKeySignatures;
 import bitgo4j.express.common.Freeze;
+import bitgo4j.express.common.KeySignatures;
+import bitgo4j.express.common.PendingApproval;
+import bitgo4j.express.common.ReceiveAddress;
 import bitgo4j.express.common.User;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -24,92 +23,78 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class WalletResponse {
-  private Admin admin;
-
-  private Boolean allowBackupKeySigning;
-
-  private Integer approvalsRequired;
-
-  private String balanceString;
-
-  private BuildDefaults buildDefaults;
-
-  private String coin;
-
-  private CoinSpecific coinSpecific;
-
-  // FIXME:
-  // CustodialWallet custodialWallet;
-
-  private String custodialWalletId;
-
-  private Boolean deleted;
-
-  private Boolean disableTransactionNotifications;
-
-  private String enterprise;
-
-  private Freeze freeze;
-
   private String id;
-
-  private Boolean isCold;
-
-  private List<String> keys;
-
-  private String label;
-
-  private Integer m;
-
-  private Integer n;
-
-  private String nodeId;
-
-  // TODO: remove the dependency on other module
-  private AddressResponse receiveAddress;
-
-  private Boolean recoverable;
-
-  private List<String> tags;
-
-  private String spendableBalanceString;
-
-  private String startDate;
-
-  private String type;
 
   private List<User> users;
 
-  private CustomChangeKeySignatures customChangeKeySignatures;
+  private String coin;
+
+  private String label;
+
+  private Long m;
+
+  private Long n;
+
+  private List<String> keys;
+
+  private KeySignatures keySignatures;
+
+  private List<String> tags;
+
+  private ReceiveAddress receiveAddress;
+
+  private Long balance;
+
+  private String balanceString;
+
+  private Long confirmedBalance;
+
+  private String confirmedBalanceString;
+
+  private Long spendableBalance;
+
+  private String spendableBalanceString;
+
+  private Boolean deleted;
+
+  private Boolean isCold;
+
+  private Freeze freeze;
+
+  private Boolean disableTransactionNotifications;
+
+  private Admin admin;
+
+  private Long approvalsRequired;
+
+  private List<PendingApproval> pendingApprovals;
 
   @Override
   public String toString() {
     return new ToStringBuilder(this, BitGo4jConstant.TO_STRING_BUILDER_STYLE)
-        .append("allowBackupKeySigning", allowBackupKeySigning)
-        .append("approvalsRequired", approvalsRequired)
-        .append("balanceString", balanceString)
-        .append("buildDefaults", buildDefaults)
-        .append("coin", coin)
-        .append("coinSpecific", coinSpecific)
-        .append("custodialWalletId", custodialWalletId)
-        .append("deleted", deleted)
-        .append("disableTransactionNotifications", disableTransactionNotifications)
-        .append("enterprise", enterprise)
-        .append("freeze", freeze)
         .append("id", id)
-        .append("isCold", isCold)
-        .append("keys", keys)
+        .append("users", users)
+        .append("coin", coin)
         .append("label", label)
         .append("m", m)
         .append("n", n)
-        .append("nodeId", nodeId)
-        .append("recoverable", recoverable)
+        .append("keys", keys)
+        .append("keySignatures", keySignatures)
         .append("tags", tags)
+        .append("receiveAddress", receiveAddress)
+        .append("balance", balance)
+        .append("balanceString", balanceString)
+        .append("confirmedBalance", confirmedBalance)
+        .append("confirmedBalanceString", confirmedBalanceString)
+        .append("spendableBalance", spendableBalance)
         .append("spendableBalanceString", spendableBalanceString)
-        .append("startDate", startDate)
-        .append("type", type)
-        .append("users", users)
-        .append("customChangeKeySignatures", customChangeKeySignatures)
+        .append("deleted", deleted)
+        .append("isCold", isCold)
+        .append("freeze", freeze)
+        .append("disableTransactionNotifications", disableTransactionNotifications)
+        .append("admin", admin)
+        .append("approvalsRequired", approvalsRequired)
+        .append("pendingApprovals", pendingApprovals)
         .toString();
   }
 }

@@ -15,16 +15,31 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class PolicyRuleRequest {
-  private String action;
+public class AddressBalance {
+  private String updated;
 
-  private Update update;
+  private Long balance;
+
+  private String balanceString;
+
+  private Long totalReceived;
+
+  private Long totalSent;
+
+  private String confirmedBalanceString;
+
+  private String spendableBalanceString;
 
   @Override
   public String toString() {
     return new ToStringBuilder(this, BitGo4jConstant.TO_STRING_BUILDER_STYLE)
-        .append("action", action)
-        .append("update", update)
+        .append("updated", updated)
+        .append("balance", balance)
+        .append("balanceString", balanceString)
+        .append("totalReceived", totalReceived)
+        .append("totalSent", totalSent)
+        .append("confirmedBalanceString", confirmedBalanceString)
+        .append("spendableBalanceString", spendableBalanceString)
         .toString();
   }
 }

@@ -36,6 +36,7 @@ public class Policy {
         .append("date", date)
         .append("label", label)
         .append("latest", latest)
+        .append("rules", rules)
         .append("version", version)
         .toString();
   }

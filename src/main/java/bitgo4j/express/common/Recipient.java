@@ -20,11 +20,14 @@ public class Recipient {
 
   private String amount;
 
+  private String data;
+
   @Override
   public String toString() {
     return new ToStringBuilder(this, BitGo4jConstant.TO_STRING_BUILDER_STYLE)
         .append("address", address)
         .append("amount", amount)
+        .append("data", data)
         .toString();
   }
 }

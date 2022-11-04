@@ -1,6 +1,12 @@
 package bitgo4j.express.common;
 
 import bitgo4j.BitGo4jConstant;
+import bitgo4j.wallet.common.EnterpriseModificationResponse;
+import bitgo4j.wallet.common.PolicyRuleRequest;
+import bitgo4j.wallet.common.TransactionRequest;
+import bitgo4j.wallet.common.TransactionRequestFull;
+import bitgo4j.wallet.common.UpdateApprovalRequiredRequest;
+import bitgo4j.wallet.common.UserChangeRequest;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
@@ -20,23 +26,26 @@ public class Info {
 
   private TransactionRequest transactionRequest;
 
+  private TransactionRequestFull transactionRequestFull;
+
   private UserChangeRequest userChangeRequest;
 
   private PolicyRuleRequest policyRuleRequest;
 
   private UpdateApprovalRequiredRequest updateApprovalRequiredRequest;
 
-  private SigningPolicyUpdateRequest signingPolicyUpdateRequest;
+  private EnterpriseModificationResponse enterpriseModificationResponse;
 
   @Override
   public String toString() {
     return new ToStringBuilder(this, BitGo4jConstant.TO_STRING_BUILDER_STYLE)
         .append("type", type)
         .append("transactionRequest", transactionRequest)
+        .append("transactionRequestFull", transactionRequestFull)
+        .append("userChangeRequest", userChangeRequest)
         .append("policyRuleRequest", policyRuleRequest)
         .append("updateApprovalRequiredRequest", updateApprovalRequiredRequest)
-        .append("signingPolicyUpdateRequest", signingPolicyUpdateRequest)
-        .append("policyRuleRequest", policyRuleRequest)
+        .append("enterpriseModificationResponse", enterpriseModificationResponse)
         .toString();
   }
 }

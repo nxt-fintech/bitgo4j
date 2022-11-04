@@ -11,6 +11,7 @@ import bitgo4j.BitGo4jError;
 import bitgo4j.exception.BitGo4jException;
 import bitgo4j.express.request.CreateAddressRequest;
 import bitgo4j.express.request.CryptRequest;
+import bitgo4j.express.request.GenerateWalletRequest;
 import bitgo4j.express.request.LoginRequest;
 import bitgo4j.express.request.SendToManyRequest;
 import bitgo4j.express.request.SendTransactionRequest;
@@ -21,6 +22,7 @@ import bitgo4j.express.response.KeyResponse;
 import bitgo4j.express.response.LoginResponse;
 import bitgo4j.express.response.PingResponse;
 import bitgo4j.express.response.TransactionResponse;
+import bitgo4j.express.response.WalletResponse;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -179,4 +181,12 @@ public class MockExpressClientImplTest {
     KeyResponse response = client.createKey("9kudeo1613suua1b7tkf");
     assertNotNull(response);
   }
+
+  @Test
+  public void generateWalletTest_200() {
+    GenerateWalletRequest request = new GenerateWalletRequest();
+    WalletResponse response = client.generateWallet("s0ug3r63x62l63mbjlydjht3chcly5c6lo6wixvo3k0zwccbretnps1nm91c6vlfubryjzru7tou8jdpqweyxvu1woiir83f79yj431mgxf8u9htabg6oxm0hok17yq4k5jba81g65h", false, request);
+    assertNotNull(response);
+  }
+
 }
