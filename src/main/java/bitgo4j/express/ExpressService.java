@@ -14,6 +14,7 @@ import bitgo4j.express.request.ResolvePendingApprovalRequest;
 import bitgo4j.express.request.SendToManyRequest;
 import bitgo4j.express.request.SendTransactionRequest;
 import bitgo4j.express.request.ShareWalletRequest;
+import bitgo4j.express.request.SignTSSTransactionRequest;
 import bitgo4j.express.request.SignTransactionRequest;
 import bitgo4j.express.request.SignWalletTransactionRequest;
 import bitgo4j.express.request.SweepFundsRequest;
@@ -32,6 +33,7 @@ import bitgo4j.express.response.PingResponse;
 import bitgo4j.express.response.RecoverETHTokenResponse;
 import bitgo4j.express.response.ResolvePendingApprovalResponse;
 import bitgo4j.express.response.ShareWalletResponse;
+import bitgo4j.express.response.SignTSSTransactionResponse;
 import bitgo4j.express.response.SignTransactionResponse;
 import bitgo4j.express.response.TransactionResponse;
 import bitgo4j.express.response.VerifyAddressResponse;
@@ -41,6 +43,7 @@ import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
@@ -82,6 +85,7 @@ public interface ExpressService {
   @POST("/api/v2/decrypt")
   Call<DecryptResponse> decryptMessages(@Body CryptRequest cryptRequest);
 
+  // TODO: Deprecated
   @Headers({"Accept: application/json"})
   @POST("/api/v2/calculateminerfeeinfo")
   Call<CalculateMiningFeeResponse> calculateMiningFee(
@@ -125,8 +129,15 @@ public interface ExpressService {
       @Body SignWalletTransactionRequest signWalletTransactionRequest);
 
   @Headers({"Accept: application/json"})
+  @POST("/api/v2/{coin}/wallet/{walletId}/signtxtss")
+  Call<SignTSSTransactionResponse> signTSSTransaction(
+      @Path("coin") String coin,
+      @Path("walletId") String walletId,
+      @Body SignTSSTransactionRequest signTSSTransactionRequest);
+
+  @Headers({"Accept: application/json"})
   @POST("/api/v2/{coin}/wallet/{walletId}/recovertoken")
-  Call<RecoverETHTokenResponse> recoverToken(
+  Call<RecoverETHTokenResponse> recoverETHToken(
       @Path("coin") String coin,
       @Path("walletId") String walletId,
       @Body RecoverTokenRequest recoverTokenRequest);
@@ -177,7 +188,7 @@ public interface ExpressService {
       @Path("coin") String coin, @Body VerifyAddressRequest verifyAddressRequest);
 
   @Headers({"Accept: application/json"})
-  @POST("/api/v2/{coin}/pendingapprovals/{approvalId}")
+  @PUT("/api/v2/{coin}/pendingapprovals/{approvalId}")
   Call<ResolvePendingApprovalResponse> resolvePendingApproval(
       @Path("coin") String coin,
       @Path("approvalId") String approvalId,

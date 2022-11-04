@@ -1,8 +1,9 @@
 package bitgo4j.wallet.common;
 
+import bitgo4j.BitGo4jConstant;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import bitgo4j.BitGo4jConstant;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -24,7 +25,7 @@ public class StakingOptions {
 
   private String functionName;
 
-  private FunctionArgs functionArgs;
+  private List<FunctionArg> functionArgs;
 
   @Override
   public String toString() {

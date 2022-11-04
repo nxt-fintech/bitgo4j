@@ -1,54 +1,61 @@
 {
-  "id" : "99e1dbca-6227-47e9-b969-7784905e692c",
-  "name" : "Send transaction",
-  "request" : {
-    "urlPath" : "/api/v2/yd38titaq5u2dpakf9nv4oujjgn3gw1pk1upv5pzmrnhop4perhk0df4wzqgtdx2h6n2o2gihpym8zavad7bky477gn/wallet/f7cbb7d69da8c689f51c1d354235cdb3/sendcoins",
-    "method" : "POST"
+  "id": "99e1dbca-6227-47e9-b969-7784905e692c",
+  "name": "Send transaction",
+  "request": {
+    "urlPath": "/api/v2/yd38titaq5u2dpakf9nv4oujjgn3gw1pk1upv5pzmrnhop4perhk0df4wzqgtdx2h6n2o2gihpym8zavad7bky477gn/wallet/f7cbb7d69da8c689f51c1d354235cdb3/sendcoins",
+    "method": "POST"
   },
-  "response" : {
-    "status" : 200,
-    "body" : "{\n  \"transfer\" : {\n    \"date\" : \"2023-03-29T16:07:50.445067Z\",\n    \"enterprise\" : \"70780b8863cf489495617c0627d4826d\",\n    \"usd\" : 5.460494759787553E307,\n    \"type\" : \"send\",\n    \"sequenceId\" : \"28hr\",\n    \"baseValue\" : 228600856826250089,\n    \"usdRate\" : 1.7507723015404965E308,\n    \"id\" : \"ab493129ac892c5994219c6b487cbfd0\",\n    \"state\" : \"signed\",\n    \"value\" : 9153240311519613504,\n    \"feeString\" : \"w0wgn3wr5aabsztikrrmfm1juolf6pz5uajq5mtp0cvepqoyn3md1m50jzoe5sh6j594u4qpkkcl7hz1g6zx2f3k\",\n    \"height\" : 2224302382310995929,\n    \"payGoFee\" : 5637546021077828424,\n    \"payGoFeeString\" : \"t6ykknmzff1depsayehuggegsz9jtvrd6paoo8flb4mxfuup54lyqhm208kerk6zorvr6t0hlriogtotqkgxynfip8crkdpaj6h1oyk95dr3i132rteaegnzpe4d7h94ibjpss302ku6cu6qagzbkij1s7vllk801gb58p9\",\n    \"wallet\" : \"5da43bb2c0c1efb14f69210d4fd81d46\",\n    \"txid\" : \"mk0g\",\n    \"baseValueString\" : { },\n    \"history\" : [ {\n      \"date\" : \"2022-01-21T18:17:45.445999Z\",\n      \"action\" : \"commented\",\n      \"comment\" : \"3ofx4umlc6412m8qad4my23m66fb65h4lexg5mkzx330461zm6uw2n4dm04bfhtcg606t1vkxz1rhqx3iy7cjqg0ze52dg\",\n      \"user\" : \"2f9005d877de4b4c6e519aa0366b7c38\"\n    }, {\n      \"date\" : \"2021-10-14T19:25:52.446114Z\",\n      \"action\" : \"confirmed\",\n      \"comment\" : \"6wjujl5896ox5da8rhlok8grdkqy2drbm9vj6l105ppjgmy87mojhoxgow835yr1njpf2r5wznsq4dn2jtehwjxozweorkifqp9fe9p055j28225yr9o5x3ebvdg8p9gab3u9wipl6wy796pt\",\n      \"user\" : \"ed6204bd1f0aa1b3c216095eb80708ce\"\n    }, {\n      \"date\" : \"2021-11-24T10:28:54.446215Z\",\n      \"action\" : \"approved\",\n      \"comment\" : \"0w3dbcisjncqk7qw2vglj4wgo1f8oj0zhz4iza0pnwu0t4ntogmtsgarmeuwql622yb266g441kjcpr6y2sbhxuyo1fbc5jl1hdui4kp8j5u7ssaza7bhte6uiywj2djpcm7go2tehyng3t5vga5664ftyegz\",\n      \"user\" : \"82de71e2f3ad46cbfcc16df284cf973d\"\n    }, {\n      \"date\" : \"2023-08-10T03:43:57.446312Z\",\n      \"action\" : \"rejected\",\n      \"comment\" : \"8pgq2ax1x6rk5k6tl8p7f901z8vnsvuhr8jrltejvkwb4fn68tdiptgw0d77hgocb06wza1k3w05xhn462flx98kxta92prtkmorlhrdeyywyenish39y08qzv75d7wxzcfofaz4gfw9kmhn1klpy7lkp\",\n      \"user\" : \"f6bcb78d07e5b5b5723832a2b87384d6\"\n    }, {\n      \"date\" : \"2022-11-17T22:06:37.446411Z\",\n      \"action\" : \"approved\",\n      \"comment\" : \"3j6ihwf3shwcpiwpptilrltg484e2m9b6sjet5rci6g6igz0tvmyt23c16exgup5swo4ylxw02x77upuam1mbxihld7hgfy8myt\",\n      \"user\" : \"173e0b147ab6fec4d44e32ccc38514d9\"\n    }, {\n      \"date\" : \"2022-10-31T17:51:36.446506Z\",\n      \"action\" : \"confirmed\",\n      \"comment\" : \"nlcghbaz4jutfolee7nmu0kfketygek24edhs3h1lihufsriq3b2455dsml0um927crcyvdsl86mm1jq1x0rb4ygpacwvt6u84a4jj4nhcxod7ftl3ziy2vfk7kotrdc81bry7gvbvve3etrdh22qdjl3d8u8vgrlgdyrjthcoydxe2g99kguujszblutfj70sg\",\n      \"user\" : \"6fffe70e37fb73f76e5bafac64960919\"\n    }, {\n      \"date\" : \"2021-12-11T08:38:17.446608Z\",\n      \"action\" : \"failed\",\n      \"comment\" : \"dyjajmnis4qpolug8jwa834x5tt17oqtyymr8sl0ky\",\n      \"user\" : \"0e64037a5ac01fe6ac0c76adec7405d5\"\n    } ],\n    \"tags\" : [ \"03297c1ea68823336fe74e5969bea21a\", \"ce012b4c2d911312da4c17481501d149\" ],\n    \"vSize\" : 9153065983677800711,\n    \"entries\" : [ {\n      \"address\" : \"o815xnrp218q5c6d2wg0fobm9r9rdo3m9z1wi0qb53p7avjwlv0dsri1q7a5u7p61r2pne5ld6wvbvzug63q38czq8fwmtrxx1orw46nth0eq4kcdgcnz8kjotjcoul4sx24tyndqay85y0c76849dolkbgl1njamas2twycaex1xe1pm\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : true,\n      \"value\" : 3325820251460628173,\n      \"isChange\" : true,\n      \"token\" : \"2vt4e105d6462xtevuecc8phdymi3tqv2zjqwtb74abienjz8frbvocnhph\"\n    }, {\n      \"address\" : \"1cusxlyrmc21wka17fr7f5zf51gdebd1i7yzfq9qemvuclt3e7191h1jnjn3q5oc8npbb6q84r6v66bq7ns16ujkhm0a7ez9ffdhrdyy4xx5uotmcqv67\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : true,\n      \"value\" : 306402499912827617,\n      \"isChange\" : true,\n      \"token\" : \"vz3wzt3bs27q5km6oaqv3uq04qvw8t1d2b91\"\n    } ],\n    \"valueString\" : { },\n    \"usersNotified\" : false,\n    \"heightId\" : \"4b29\",\n    \"comment\" : \"w805jb9wt5y9t5rz8lweshe3rskt8y3tu6m1gm6eudmoj1ftwgbx0h8icljsitiy7gwbot5g35ffrnrgkhw4r51br9ydhsbhstxt116ll70y93t1ipmtf6aa0xafpiwnor92ot17e5day87\",\n    \"nSegwitInputs\" : 7341674244723846667,\n    \"coin\" : \"cs1dgtvvd66zrzesnt9vibxa0ktlqr711dr3g8n3\",\n    \"coinSpecific\" : { }\n  },\n  \"tx\" : \"61o70jcu93w25tnug7xgin6tzgrwfenm825sl0u8okz9o4akdk6bgbgeeec3qsxock2f6seglbrz81waxssok3377fkbg204inrd2p4sds09wyco5fckibq2ndv8o5k994fh78tnwz2r6p17cyu1i21a8jorottd5mbov1f94pcs\",\n  \"txid\" : \"mz47\",\n  \"status\" : \"pendingApproval\"\n}",
-    "headers" : {
-      "Content-Type" : "application/json"
+  "response": {
+    "status": 200,
+    "body": "{\n  \"transfer\" : {\n    \"date\" : \"2023-03-29T16:07:50.445067Z\",\n    \"enterprise\" : \"70780b8863cf489495617c0627d4826d\",\n    \"usd\" : 5.460494759787553E307,\n    \"type\" : \"send\",\n    \"sequenceId\" : \"28hr\",\n    \"baseValue\" : 228600856826250089,\n    \"usdRate\" : 1.7507723015404965E308,\n    \"id\" : \"ab493129ac892c5994219c6b487cbfd0\",\n    \"state\" : \"signed\",\n    \"value\" : 9153240311519613504,\n    \"feeString\" : \"w0wgn3wr5aabsztikrrmfm1juolf6pz5uajq5mtp0cvepqoyn3md1m50jzoe5sh6j594u4qpkkcl7hz1g6zx2f3k\",\n    \"height\" : 2224302382310995929,\n    \"payGoFee\" : 5637546021077828424,\n    \"payGoFeeString\" : \"t6ykknmzff1depsayehuggegsz9jtvrd6paoo8flb4mxfuup54lyqhm208kerk6zorvr6t0hlriogtotqkgxynfip8crkdpaj6h1oyk95dr3i132rteaegnzpe4d7h94ibjpss302ku6cu6qagzbkij1s7vllk801gb58p9\",\n    \"wallet\" : \"5da43bb2c0c1efb14f69210d4fd81d46\",\n    \"txid\" : \"mk0g\",\n    \"baseValueString\" : \"\",\n    \"history\" : [ {\n      \"date\" : \"2022-01-21T18:17:45.445999Z\",\n      \"action\" : \"commented\",\n      \"comment\" : \"3ofx4umlc6412m8qad4my23m66fb65h4lexg5mkzx330461zm6uw2n4dm04bfhtcg606t1vkxz1rhqx3iy7cjqg0ze52dg\",\n      \"user\" : \"2f9005d877de4b4c6e519aa0366b7c38\"\n    }, {\n      \"date\" : \"2021-10-14T19:25:52.446114Z\",\n      \"action\" : \"confirmed\",\n      \"comment\" : \"6wjujl5896ox5da8rhlok8grdkqy2drbm9vj6l105ppjgmy87mojhoxgow835yr1njpf2r5wznsq4dn2jtehwjxozweorkifqp9fe9p055j28225yr9o5x3ebvdg8p9gab3u9wipl6wy796pt\",\n      \"user\" : \"ed6204bd1f0aa1b3c216095eb80708ce\"\n    }, {\n      \"date\" : \"2021-11-24T10:28:54.446215Z\",\n      \"action\" : \"approved\",\n      \"comment\" : \"0w3dbcisjncqk7qw2vglj4wgo1f8oj0zhz4iza0pnwu0t4ntogmtsgarmeuwql622yb266g441kjcpr6y2sbhxuyo1fbc5jl1hdui4kp8j5u7ssaza7bhte6uiywj2djpcm7go2tehyng3t5vga5664ftyegz\",\n      \"user\" : \"82de71e2f3ad46cbfcc16df284cf973d\"\n    }, {\n      \"date\" : \"2023-08-10T03:43:57.446312Z\",\n      \"action\" : \"rejected\",\n      \"comment\" : \"8pgq2ax1x6rk5k6tl8p7f901z8vnsvuhr8jrltejvkwb4fn68tdiptgw0d77hgocb06wza1k3w05xhn462flx98kxta92prtkmorlhrdeyywyenish39y08qzv75d7wxzcfofaz4gfw9kmhn1klpy7lkp\",\n      \"user\" : \"f6bcb78d07e5b5b5723832a2b87384d6\"\n    }, {\n      \"date\" : \"2022-11-17T22:06:37.446411Z\",\n      \"action\" : \"approved\",\n      \"comment\" : \"3j6ihwf3shwcpiwpptilrltg484e2m9b6sjet5rci6g6igz0tvmyt23c16exgup5swo4ylxw02x77upuam1mbxihld7hgfy8myt\",\n      \"user\" : \"173e0b147ab6fec4d44e32ccc38514d9\"\n    }, {\n      \"date\" : \"2022-10-31T17:51:36.446506Z\",\n      \"action\" : \"confirmed\",\n      \"comment\" : \"nlcghbaz4jutfolee7nmu0kfketygek24edhs3h1lihufsriq3b2455dsml0um927crcyvdsl86mm1jq1x0rb4ygpacwvt6u84a4jj4nhcxod7ftl3ziy2vfk7kotrdc81bry7gvbvve3etrdh22qdjl3d8u8vgrlgdyrjthcoydxe2g99kguujszblutfj70sg\",\n      \"user\" : \"6fffe70e37fb73f76e5bafac64960919\"\n    }, {\n      \"date\" : \"2021-12-11T08:38:17.446608Z\",\n      \"action\" : \"failed\",\n      \"comment\" : \"dyjajmnis4qpolug8jwa834x5tt17oqtyymr8sl0ky\",\n      \"user\" : \"0e64037a5ac01fe6ac0c76adec7405d5\"\n    } ],\n    \"tags\" : [ \"03297c1ea68823336fe74e5969bea21a\", \"ce012b4c2d911312da4c17481501d149\" ],\n    \"vSize\" : 9153065983677800711,\n    \"entries\" : [ {\n      \"address\" : \"o815xnrp218q5c6d2wg0fobm9r9rdo3m9z1wi0qb53p7avjwlv0dsri1q7a5u7p61r2pne5ld6wvbvzug63q38czq8fwmtrxx1orw46nth0eq4kcdgcnz8kjotjcoul4sx24tyndqay85y0c76849dolkbgl1njamas2twycaex1xe1pm\",\n      \"wallet\" : \"\",\n      \"valueString\" : \"\",\n      \"isPayGo\" : true,\n      \"value\" : 3325820251460628173,\n      \"isChange\" : true,\n      \"token\" : \"2vt4e105d6462xtevuecc8phdymi3tqv2zjqwtb74abienjz8frbvocnhph\"\n    }, {\n      \"address\" : \"1cusxlyrmc21wka17fr7f5zf51gdebd1i7yzfq9qemvuclt3e7191h1jnjn3q5oc8npbb6q84r6v66bq7ns16ujkhm0a7ez9ffdhrdyy4xx5uotmcqv67\",\n      \"wallet\" : \"\",\n      \"valueString\" : \"\",\n      \"isPayGo\" : true,\n      \"value\" : 306402499912827617,\n      \"isChange\" : true,\n      \"token\" : \"vz3wzt3bs27q5km6oaqv3uq04qvw8t1d2b91\"\n    } ],\n    \"valueString\" : \"\",\n    \"usersNotified\" : false,\n    \"heightId\" : \"4b29\",\n    \"comment\" : \"w805jb9wt5y9t5rz8lweshe3rskt8y3tu6m1gm6eudmoj1ftwgbx0h8icljsitiy7gwbot5g35ffrnrgkhw4r51br9ydhsbhstxt116ll70y93t1ipmtf6aa0xafpiwnor92ot17e5day87\",\n    \"nSegwitInputs\" : 7341674244723846667,\n    \"coin\" : \"cs1dgtvvd66zrzesnt9vibxa0ktlqr711dr3g8n3\",\n    \"coinSpecific\" : \"\"\n  },\n  \"tx\" : \"61o70jcu93w25tnug7xgin6tzgrwfenm825sl0u8okz9o4akdk6bgbgeeec3qsxock2f6seglbrz81waxssok3377fkbg204inrd2p4sds09wyco5fckibq2ndv8o5k994fh78tnwz2r6p17cyu1i21a8jorottd5mbov1f94pcs\",\n  \"txid\" : \"mz47\",\n  \"status\" : \"pendingApproval\"\n}",
+    "headers": {
+      "Content-Type": "application/json"
     }
   },
-  "uuid" : "99e1dbca-6227-47e9-b969-7784905e692c",
-  "persistent" : true,
-  "metadata" : {
-    "mocklab" : {
-      "created" : {
-        "at" : "2022-10-10T07:44:41.447849Z",
-        "via" : "OAS3_IMPORT"
+  "uuid": "99e1dbca-6227-47e9-b969-7784905e692c",
+  "persistent": true,
+  "metadata": {
+    "mocklab": {
+      "created": {
+        "at": "2022-10-10T07:44:41.447849Z",
+        "via": "OAS3_IMPORT"
       },
-      "oas" : {
-        "operationId" : "express.wallet.sendcoins",
-        "schema" : {
-          "type" : "object",
-          "properties" : {
-            "transfer" : {
-              "allOf" : [ {
-                "description" : "New transfer"
-              }, {
-                "$ref" : "#/components/schemas/Transfer"
-              } ]
+      "oas": {
+        "operationId": "express.wallet.sendcoins",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "transfer": {
+              "allOf": [
+                {
+                  "description": "New transfer"
+                },
+                {
+                  "$ref": "#/components/schemas/Transfer"
+                }
+              ]
             },
-            "txid" : {
-              "type" : "string",
-              "description" : "Unique transaction identifier"
+            "txid": {
+              "type": "string",
+              "description": "Unique transaction identifier"
             },
-            "tx" : {
-              "type" : "string",
-              "description" : "Encoded transaction hex (or base64 for XLM)"
+            "tx": {
+              "type": "string",
+              "description": "Encoded transaction hex (or base64 for XLM)"
             },
-            "status" : {
-              "type" : "string",
-              "description" : "Transfer status",
-              "enum" : [ "signed", "signed (suppressed)", "pendingApproval" ]
+            "status": {
+              "type": "string",
+              "description": "Transfer status",
+              "enum": [
+                "signed",
+                "signed (suppressed)",
+                "pendingApproval"
+              ]
             }
           }
         }
       }
     }
   },
-  "insertionIndex" : 216
+  "insertionIndex": 216
 }

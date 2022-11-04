@@ -1,28 +1,35 @@
 package bitgo4j.express.common;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import bitgo4j.BitGo4jConstant;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import java.util.List;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class TransactionRequest {
   //  BuildParams buildParams;
 
-  private CoinSpecific coinSpecific;
+  // private CoinSpecific coinSpecific;
 
   private String comment;
 
-  private Integer fee;
+  private String fee;
 
   private Boolean isUnsigned;
 
-  //  List<Recipient> recipients;
+  private List<Recipient> recipients;
 
-  private Integer requestedAmount;
+  private String requestedAmount;
 
   private String sourceWallet;
 
@@ -36,11 +43,11 @@ public class TransactionRequest {
   public String toString() {
     return new ToStringBuilder(this, BitGo4jConstant.TO_STRING_BUILDER_STYLE)
         //        .append("buildParams", buildParams)
-        .append("coinSpecific", coinSpecific)
+        //        .append("coinSpecific", coinSpecific)
         .append("comment", comment)
         .append("fee", fee)
         .append("isUnsigned", isUnsigned)
-        //        .append("recipients", recipients)
+        .append("recipients", recipients)
         .append("requestedAmount", requestedAmount)
         .append("sourceWallet", sourceWallet)
         .append("triggeredPolicy", triggeredPolicy)

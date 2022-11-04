@@ -1,8 +1,8 @@
 package bitgo4j.policy.common;
 
+import bitgo4j.BitGo4jConstant;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import bitgo4j.BitGo4jConstant;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -36,6 +36,7 @@ public class Policy {
         .append("date", date)
         .append("label", label)
         .append("latest", latest)
+        .append("rules", rules)
         .append("version", version)
         .toString();
   }

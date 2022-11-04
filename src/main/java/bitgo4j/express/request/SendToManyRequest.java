@@ -1,13 +1,16 @@
 package bitgo4j.express.request;
 
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import bitgo4j.BitGo4jConstant;
 import bitgo4j.express.common.Eip1559;
 import bitgo4j.express.common.Memo;
+import bitgo4j.express.common.Recipient;
+import bitgo4j.express.common.RefundOptions;
 import bitgo4j.express.common.Reservation;
 import bitgo4j.express.common.StakingOptions;
 import bitgo4j.express.common.Trustline;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,14 +18,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class SendToManyRequest {
-  // FIXME:
-  //  List<Recipients> recipients;
+  List<Recipient> recipients;
 
   private String otp;
 
@@ -32,27 +35,31 @@ public class SendToManyRequest {
 
   private Integer numBlocks;
 
-  private Integer feeRate;
+  private String feeRate;
 
-  private Integer maxFeeRate;
+  private String maxFeeRate;
+
+  private String feeMultiplier;
 
   private Integer minConfirms;
 
   private Boolean enforceMinConfirmsForChange;
 
-  private Integer gasPrice;
+  private String gasPrice;
 
   private Eip1559 eip1559;
 
-  private Integer gasLimit;
+  private String gasLimit;
 
   private Integer targetWalletUnspents;
 
-  private Integer minValue;
+  private String minValue;
 
-  private Integer maxValue;
+  private String maxValue;
 
   private String sequenceId;
+
+  private String nonce;
 
   private Boolean noSplitChange;
 
@@ -82,12 +89,6 @@ public class SendToManyRequest {
 
   private Integer maxFee;
 
-  private Integer idfVersion;
-
-  private String idfSignedTimestamp;
-
-  private String idfUserId;
-
   private String strategy;
 
   private Integer validFromBlock;
@@ -99,6 +100,8 @@ public class SendToManyRequest {
   private List<Trustline> trustlines;
 
   private StakingOptions stakingOptions;
+
+  private RefundOptions refundOptions;
 
   private String messageKey;
 
@@ -115,6 +118,7 @@ public class SendToManyRequest {
         .append("numBlocks", numBlocks)
         .append("feeRate", feeRate)
         .append("maxFeeRate", maxFeeRate)
+        .append("feeMultiplier", feeMultiplier)
         .append("minConfirms", minConfirms)
         .append("enforceMinConfirmsForChange", enforceMinConfirmsForChange)
         .append("gasPrice", gasPrice)
@@ -124,6 +128,7 @@ public class SendToManyRequest {
         .append("minValue", minValue)
         .append("maxValue", maxValue)
         .append("sequenceId", sequenceId)
+        .append("nonce", nonce)
         .append("noSplitChange", noSplitChange)
         .append("unspents", unspents)
         .append("changeAddress", changeAddress)
@@ -138,15 +143,13 @@ public class SendToManyRequest {
         .append("cpfpTxIds", cpfpTxIds)
         .append("cpfpFeeRate", cpfpFeeRate)
         .append("maxFee", maxFee)
-        .append("idfVersion", idfVersion)
-        .append("idfSignedTimestamp", idfSignedTimestamp)
-        .append("idfUserId", idfUserId)
         .append("strategy", strategy)
         .append("validFromBlock", validFromBlock)
         .append("validToBlock", validToBlock)
         .append("type", type)
         .append("trustlines", trustlines)
         .append("stakingOptions", stakingOptions)
+        .append("refundOptions", refundOptions)
         .append("messageKey", messageKey)
         .append("reservation", reservation)
         .append("data", data)

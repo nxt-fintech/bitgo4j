@@ -1,68 +1,65 @@
 package bitgo4j.express.common;
 
+import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 class TransactionRequestTest {
-  @Mock CoinSpecific coinSpecific;
+    @InjectMocks
+    TransactionRequest transactionRequest;
 
-  @InjectMocks TransactionRequest transactionRequest;
+    @Test
+    void testToString(){
+        String result = transactionRequest.toString();
+        Assertions.assertEquals("TransactionRequest[comment=<null>,fee=<null>,isUnsigned=<null>,recipients=<null>,requestedAmount=<null>,sourceWallet=<null>,triggeredPolicy=<null>,validTransaction=<null>,validTransactionHash=<null>]", result);
+    }
 
-  @Test
-  void testToString() {
-    String result = transactionRequest.toString();
-    String expected =
-        "TransactionRequest[coinSpecific=coinSpecific,comment=<null>,fee=<null>,isUnsigned=<null>,requestedAmount=<null>,sourceWallet=<null>,triggeredPolicy=<null>,validTransaction=<null>,validTransactionHash=<null>]";
-    Assertions.assertEquals(expected, result);
-  }
+    @Test
+    void testSetComment(){
+        transactionRequest.setComment("comment");
+    }
 
-  @Test
-  void testSetCoinSpecific() {
-    transactionRequest.setCoinSpecific(new CoinSpecific());
-  }
+    @Test
+    void testSetFee(){
+        transactionRequest.setFee("fee");
+    }
 
-  @Test
-  void testSetComment() {
-    transactionRequest.setComment("comment");
-  }
+    @Test
+    void testSetIsUnsigned(){
+        transactionRequest.setIsUnsigned(Boolean.TRUE);
+    }
 
-  @Test
-  void testSetFee() {
-    transactionRequest.setFee(0);
-  }
+    @Test
+    void testSetRecipients(){
+        transactionRequest.setRecipients(List.of(new Recipient("address", "amount", "data")));
+    }
 
-  @Test
-  void testSetIsUnsigned() {
-    transactionRequest.setIsUnsigned(Boolean.TRUE);
-  }
+    @Test
+    void testSetRequestedAmount(){
+        transactionRequest.setRequestedAmount("requestedAmount");
+    }
 
-  @Test
-  void testSetRequestedAmount() {
-    transactionRequest.setRequestedAmount(0);
-  }
+    @Test
+    void testSetSourceWallet(){
+        transactionRequest.setSourceWallet("sourceWallet");
+    }
 
-  @Test
-  void testSetSourceWallet() {
-    transactionRequest.setSourceWallet("sourceWallet");
-  }
+    @Test
+    void testSetTriggeredPolicy(){
+        transactionRequest.setTriggeredPolicy("triggeredPolicy");
+    }
 
-  @Test
-  void testSetTriggeredPolicy() {
-    transactionRequest.setTriggeredPolicy("triggeredPolicy");
-  }
+    @Test
+    void testSetValidTransaction(){
+        transactionRequest.setValidTransaction("validTransaction");
+    }
 
-  @Test
-  void testSetValidTransaction() {
-    transactionRequest.setValidTransaction("validTransaction");
-  }
-
-  @Test
-  void testSetValidTransactionHash() {
-    transactionRequest.setValidTransactionHash("validTransactionHash");
-  }
+    @Test
+    void testSetValidTransactionHash(){
+        transactionRequest.setValidTransactionHash("validTransactionHash");
+    }
 }

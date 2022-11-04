@@ -1,20 +1,24 @@
 package bitgo4j.express.request;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import bitgo4j.BitGo4jConstant;
 import bitgo4j.express.common.Keychain;
+import bitgo4j.express.common.Recipient;
 import bitgo4j.express.common.TxPrebuild;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@AllArgsConstructor
-@RequiredArgsConstructor
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class SignWalletTransactionRequest {
   private Keychain keychain;
 
@@ -26,8 +30,7 @@ public class SignWalletTransactionRequest {
 
   private String walletPassphrase;
 
-  // FIXME:
-  //  List<Recipient> recipients;
+  private List<Recipient> recipients;
 
   @Override
   public String toString() {
@@ -37,6 +40,7 @@ public class SignWalletTransactionRequest {
         .append("txPrebuild", txPrebuild)
         .append("coldDerivationSeed", coldDerivationSeed)
         .append("walletPassphrase", walletPassphrase)
+        .append("recipients", recipients)
         .toString();
   }
 }

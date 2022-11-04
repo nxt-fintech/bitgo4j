@@ -1,28 +1,36 @@
 package bitgo4j.express.common;
 
 import bitgo4j.BitGo4jConstant;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-@AllArgsConstructor
-@RequiredArgsConstructor
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class TxInfoRequest {
+  // UtxoTxInfo
   private List<String> changeAddresses;
 
   private Integer nOutputs;
 
   private Integer nP2SHInputs;
 
+  private Integer nSegwitInputs;
+
   private List<Unspent> unspents;
 
   private WalletAddressDetails walletAddressDetails;
 
+  // XlmTxInfo
   private Integer fee;
 
   private List<Operation> operations;
@@ -37,6 +45,7 @@ public class TxInfoRequest {
         .append("changeAddresses", changeAddresses)
         .append("nOutputs", nOutputs)
         .append("nP2SHInputs", nP2SHInputs)
+        .append("nSegwitInputs", nSegwitInputs)
         .append("unspents", unspents)
         .append("walletAddressDetails", walletAddressDetails)
         .append("fee", fee)

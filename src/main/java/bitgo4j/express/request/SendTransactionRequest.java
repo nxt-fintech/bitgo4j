@@ -1,26 +1,32 @@
 package bitgo4j.express.request;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import bitgo4j.BitGo4jConstant;
 import bitgo4j.express.common.Eip1559;
 import bitgo4j.express.common.Memo;
+import bitgo4j.express.common.RefundOptions;
 import bitgo4j.express.common.Reservation;
 import bitgo4j.express.common.StakingOptions;
 import bitgo4j.express.common.Trustline;
+import bitgo4j.express.common.UnstakingOptions;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@AllArgsConstructor
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class SendTransactionRequest {
   private String address;
 
-  private Integer amount;
+  private String amount;
 
   private String walletPassphrase;
 
@@ -28,27 +34,31 @@ public class SendTransactionRequest {
 
   private Integer numBlocks;
 
-  private Integer feeRate;
+  private String feeRate;
 
-  private Integer maxFeeRate;
+  private String maxFeeRate;
+
+  private String feeMultiplier;
 
   private Integer minConfirms;
 
   private Boolean enforceMinConfirmsForChange;
 
-  private Integer gasPrice;
+  private String gasPrice;
 
   private Eip1559 eip1559;
 
-  private Integer gasLimit;
+  private String gasLimit;
 
   private Integer targetWalletUnspents;
 
-  private Integer minValue;
+  private String minValue;
 
-  private Integer maxValue;
+  private String maxValue;
 
   private String sequenceId;
+
+  private String nonce;
 
   private Boolean noSplitChange;
 
@@ -78,12 +88,6 @@ public class SendTransactionRequest {
 
   private Integer maxFee;
 
-  private Integer idfVersion;
-
-  private String idfSignedTimestamp;
-
-  private String idfUserId;
-
   private String strategy;
 
   private Integer validFromBlock;
@@ -95,6 +99,10 @@ public class SendTransactionRequest {
   private List<Trustline> trustlines;
 
   private StakingOptions stakingOptions;
+
+  private UnstakingOptions unstakingOptions;
+
+  private RefundOptions refundOptions;
 
   private String messageKey;
 
@@ -137,15 +145,14 @@ public class SendTransactionRequest {
         .append("cpfpTxIds", cpfpTxIds)
         .append("cpfpFeeRate", cpfpFeeRate)
         .append("maxFee", maxFee)
-        .append("idfVersion", idfVersion)
-        .append("idfSignedTimestamp", idfSignedTimestamp)
-        .append("idfUserId", idfUserId)
         .append("strategy", strategy)
         .append("validFromBlock", validFromBlock)
         .append("validToBlock", validToBlock)
         .append("type", type)
         .append("trustlines", trustlines)
         .append("stakingOptions", stakingOptions)
+        .append("unstakingOptions", unstakingOptions)
+        .append("refundOptions", refundOptions)
         .append("messageKey", messageKey)
         .append("reservation", reservation)
         .append("data", data)

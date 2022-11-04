@@ -1,54 +1,61 @@
 {
-  "id" : "4f242ad2-f96a-4b91-b276-e85dd969f608",
-  "name" : "Accelerate Transaction",
-  "request" : {
-    "urlPath" : "/api/v2/btc/wallet/f1a2c7ee582abe82ff15129bc6fb70ba/acceleratetx",
-    "method" : "POST"
+  "id": "4f242ad2-f96a-4b91-b276-e85dd969f608",
+  "name": "Accelerate Transaction",
+  "request": {
+    "urlPath": "/api/v2/btc/wallet/f1a2c7ee582abe82ff15129bc6fb70ba/acceleratetx",
+    "method": "POST"
   },
-  "response" : {
-    "status" : 200,
-    "body" : "{\n  \"transfer\" : {\n    \"date\" : \"2022-10-26T16:46:23.480874Z\",\n    \"enterprise\" : \"2eb3e05239466d1772b6eaffc1409e2c\",\n    \"usd\" : 6.490359919501596E307,\n    \"type\" : \"receive\",\n    \"sequenceId\" : \"97fi\",\n    \"baseValue\" : 651956469052390203,\n    \"usdRate\" : 3.2016532347776947E307,\n    \"id\" : \"d5f3c7babe3526226c6a0375e5a40937\",\n    \"state\" : \"rejected\",\n    \"value\" : 2772182646372643059,\n    \"feeString\" : \"dwx8ais3u1mjgotvi9ftjcznnz738d1d7pwakidyk6befrox12bayz2zyqikth290qt2x9s79nsh6e1klpjmie6p3v1lkz9lcfx0diq4axrjaf62p9yjzq6uxzts56p96gl88h55ishchgigqcqgxan9xyms7e6cudgz2jskishw011p785s02g7ig4l8wtf2it773g\",\n    \"height\" : 4994435294422184141,\n    \"payGoFee\" : 7934559613080209904,\n    \"payGoFeeString\" : \"iaxiwhd9p72olo8f6q9qaal1jszspvyhaxy88x1wjkx0huybwcp5wrnyaj8thff24r8i88xogbu0z48bveta40m5r8t910umsym7ipsf1m4cbduc2s34n3eulq2vyfk5mhhrw9qrattxsn4qtfwoauzyxi3oa8v7811b7ggv16ujko6pdij2fqir2vj7yv9lf\",\n    \"wallet\" : \"43df435a66f24b6bf9e057bec0e61ff6\",\n    \"txid\" : \"i524\",\n    \"baseValueString\" : { },\n    \"history\" : [ {\n      \"date\" : \"2022-09-17T14:57:41.481507Z\",\n      \"action\" : \"commented\",\n      \"comment\" : \"slfwm7wfdjyebh1mreru8d73zdmcs85ognkk8v49w40ezpn3jjxyxf3v231jthnd8htubo4bwthl14pp1ys2h9pcclyfxvfdtekdmfop9vrv1q1ctm1x830glcqolq6spun2d9sf3mu3eq1g7\",\n      \"user\" : \"e9f0a92a1f7ccb40c1442ea6314f7f58\"\n    }, {\n      \"date\" : \"2022-12-21T15:18:35.481611Z\",\n      \"action\" : \"commented\",\n      \"comment\" : \"lle1k7mdna6sj365b4ao7w66q77l6vi0mjco499sk32zurn3gre80gio2mnqp1bhggaybbzec18q5s9igjg939wjp8rpm2q9b5qieu1fh3ctplv8m9lqeljn5kwphac8alaa3knsnq1kc0xbgdt5j3n90mwbix44ipvcwuv7w9py4oo73alc9ft4m7cbdr6jnk1dwpj\",\n      \"user\" : \"9a69b3469a18ebb42f3b0d448876506a\"\n    }, {\n      \"date\" : \"2022-09-10T10:38:31.481706Z\",\n      \"action\" : \"unconfirmed\",\n      \"comment\" : \"ypupxa46qrfavby6k4g3nen3z8mmr5\",\n      \"user\" : \"36b06059cfa86e5b2c40b3b69c8b7d0d\"\n    }, {\n      \"date\" : \"2022-04-11T08:31:19.484151Z\",\n      \"action\" : \"removed\",\n      \"comment\" : \"0zl6cqymsxl6es9f3nbht7dw57dj2bl430pt8o0hoti00hal4ocyo10i9877elqf1y1l37kohfxvu035eo4pc33bg4k2v3lhsyxth03sjvywn6ojfje35of3i1\",\n      \"user\" : \"f14c77df41a6601b733c3fd77ca81d6d\"\n    }, {\n      \"date\" : \"2022-08-01T10:41:59.484271Z\",\n      \"action\" : \"approved\",\n      \"comment\" : \"ym2irqr6s00xwmsl6718tbhdb4ddb1cur3g0xvek\",\n      \"user\" : \"c826431200d5a9f18ddda0fdcde5cd10\"\n    }, {\n      \"date\" : \"2022-04-24T08:23:36.484379Z\",\n      \"action\" : \"signed\",\n      \"comment\" : \"lspoi0btptgknsg87y9\",\n      \"user\" : \"bb92a6f9bd2fedafaec4a41e6bc4a490\"\n    }, {\n      \"date\" : \"2021-10-25T21:49:09.484538Z\",\n      \"action\" : \"removed\",\n      \"comment\" : \"frrvqh5s074wdqz68\",\n      \"user\" : \"d0c06c08ef9d89674cf944e1da5933fa\"\n    }, {\n      \"date\" : \"2023-05-20T06:54:54.484647Z\",\n      \"action\" : \"confirmed\",\n      \"comment\" : \"1k1bah9rnt84esg1cua9uoydsfafanw7ghgeeuzb5c6yuwqloal58gjx2qcxard2yldof3h6vs8n3krg5jpx9e3p0rvhip23z48k57so0bd7ap9jatp58y6xk5r75ebexmey7zcxgeey6juq3spya3snl6194tk2272jui54nautp08580ib3ehpctopn25c071\",\n      \"user\" : \"e2a848eb33a3f668c5ee22d275d998e7\"\n    } ],\n    \"tags\" : [ \"56f3f0b46a6336bc1d98a6eb564f2390\", \"c7d269a63e676451d432dd573c43b923\", \"2101c09023e3c28bce5c17fe420d69ff\", \"873dc43d5a02fcfc9d738cb96a155bf0\" ],\n    \"vSize\" : 8378524571747749672,\n    \"entries\" : [ {\n      \"address\" : \"e77qlehne10tiudglocxdt9h5c0643xwmajlei6u6lczop9e2wb74sxv\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : true,\n      \"value\" : 9130067587121893323,\n      \"isChange\" : true,\n      \"token\" : \"drvc4dwaqo5ieogbe1907y8fanc1q4qurbou74pmj731vfxr47rv6qfpaxa6srs0m9d7mk9ensu44d5f55fq6kb32ru0tw\"\n    }, {\n      \"address\" : \"fpqxlw2ke3uyfs2wk5wesumshqjw6esleopjzv86jwatu55w8m7h2k2cxxta4n6sgj4a1udq722vae8ms4c8qcuk74hh872bfhwis9p7axs7g577wovu8neblclrwmont3wzjkch8tnpwlpbwpsbt90u0ko90cczctgpasdm5anlc3vtkx07k4ucc7mkfup413w8mk\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : false,\n      \"value\" : 510619867360463336,\n      \"isChange\" : false,\n      \"token\" : \"zj5fzbljposzvmaeiucmx9q3k3nd84lg0pp34q9lfvgpcxroidw5twt0pag09davxh7pwqve5\"\n    }, {\n      \"address\" : \"qmxfbfl3jemtgbkuq73yxgbvslxuyad0is2byzga02i3uxb40un11mgvy2y7u9xnc5xq\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : true,\n      \"value\" : 3473090860296292839,\n      \"isChange\" : true,\n      \"token\" : \"8yzggl32qpx31m87ry47uxvpznf7yeqeqi1nzkthyy0aclodf6ekb7ejlhntubljmyzgmplj5tqh02ourclvl4wmuzthghyifkx8tkbkmrabumbzebe2u97e4y775gc35km7cpz0iw6d49hplw8xk7qf71j6xgnqhcnc37qrwu7ue6qifhthcn5\"\n    }, {\n      \"address\" : \"91wf37vlgeq8cyikwxanvwgxlyule48rx92tvhr1ze\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : false,\n      \"value\" : 1582713704328417241,\n      \"isChange\" : true,\n      \"token\" : \"ojwq3l629ilapr029ikkgm0be9ulab1i5h3hp36umqqph2irrkguwwok5rhdx8b6jddbpx7s4cchgfproiyq8c3xnv39g5dbpnj2po8tsl79klqag4t5ebn75zk0qppavqh9zbxshyunrwwqyij5s3adbg7yx9x7a8rodfarchi7r\"\n    }, {\n      \"address\" : \"lcj1vp6gdtgcgtb2dia30fvfogubrr7tjmd\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : true,\n      \"value\" : 7578883224282825309,\n      \"isChange\" : false,\n      \"token\" : \"avf4xjs5nqloly8smdmgii7noy9mmx43zboltymyoos4obtnrhh27zr2fuxgskgqct6cg64l73ld3dmrq33clakrutx8x\"\n    }, {\n      \"address\" : \"y340du61qdvs03klrottsff5whsvcxepwbrflc4hp4v6mff3skyfcghzikovv3itoa6b2hc7jv1p7n1x8bf8c90v812az5k7xd7likrsr73l6tofrrle0z5qrc28fxttvvqcbd9f5rhmxfbsip\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : false,\n      \"value\" : 4420351122092081716,\n      \"isChange\" : true,\n      \"token\" : \"0me6t18d9d3o86rr4oic9eu4t94ne1raimzsez2ugwwprrviw7zs9c4mfyyvtk1st4dtn7ph57w17qbc2mj8\"\n    }, {\n      \"address\" : \"7lf1kelmdelb5t0vri9stkkk5kmvzus3x5f\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : true,\n      \"value\" : 8262973436910265107,\n      \"isChange\" : false,\n      \"token\" : \"6xbh2lelew74dcoecm67v02\"\n    } ],\n    \"valueString\" : { },\n    \"usersNotified\" : true,\n    \"heightId\" : \"2629\",\n    \"comment\" : \"jdz8j8l3gvkxjdnwy4pd2j3a0ofpalu711d8erti2ic5jq4lsov3055rgw200k0eoxp9s4pqtn8730r4sqap75u87j0nrvyzz64ohx399e4g20x7jmmi7hh1q9fjo5btjbuk4om9rhzcaakdx56vfrd2kvrrjg90jsqe7bm8aay\",\n    \"nSegwitInputs\" : 6759786336418161431,\n    \"coin\" : \"xw4ooe58i2k4xnevvd0jlh3fl010keljqdrh7mw02fajwkxqa5dgf0rwypvjpp4gg1oodgyxd8nhjv838pexz3cxvq2goyhuv3mff5cf9kt0r6lntq7tw3gr0hece1yhfvul5x3sk7mq4dqxhebw3ja06dad6htcpor3a75y1p6bxoljl2euskqgb66e\",\n    \"coinSpecific\" : { }\n  },\n  \"tx\" : \"orfw312bcjq0oq5kg9dpi34\",\n  \"txid\" : \"2p79\",\n  \"status\" : \"signed\"\n}",
-    "headers" : {
-      "Content-Type" : "application/json"
+  "response": {
+    "status": 200,
+    "body": "{\n  \"transfer\" : {\n    \"date\" : \"2022-10-26T16:46:23.480874Z\",\n    \"enterprise\" : \"2eb3e05239466d1772b6eaffc1409e2c\",\n    \"usd\" : 6.490359919501596E307,\n    \"type\" : \"receive\",\n    \"sequenceId\" : \"97fi\",\n    \"baseValue\" : 651956469052390203,\n    \"usdRate\" : 3.2016532347776947E307,\n    \"id\" : \"d5f3c7babe3526226c6a0375e5a40937\",\n    \"state\" : \"rejected\",\n    \"value\" : 2772182646372643059,\n    \"feeString\" : \"dwx8ais3u1mjgotvi9ftjcznnz738d1d7pwakidyk6befrox12bayz2zyqikth290qt2x9s79nsh6e1klpjmie6p3v1lkz9lcfx0diq4axrjaf62p9yjzq6uxzts56p96gl88h55ishchgigqcqgxan9xyms7e6cudgz2jskishw011p785s02g7ig4l8wtf2it773g\",\n    \"height\" : 4994435294422184141,\n    \"payGoFee\" : 7934559613080209904,\n    \"payGoFeeString\" : \"iaxiwhd9p72olo8f6q9qaal1jszspvyhaxy88x1wjkx0huybwcp5wrnyaj8thff24r8i88xogbu0z48bveta40m5r8t910umsym7ipsf1m4cbduc2s34n3eulq2vyfk5mhhrw9qrattxsn4qtfwoauzyxi3oa8v7811b7ggv16ujko6pdij2fqir2vj7yv9lf\",\n    \"wallet\" : \"43df435a66f24b6bf9e057bec0e61ff6\",\n    \"txid\" : \"i524\",\n    \"baseValueString\" : \"\",\n    \"history\" : [ {\n      \"date\" : \"2022-09-17T14:57:41.481507Z\",\n      \"action\" : \"commented\",\n      \"comment\" : \"slfwm7wfdjyebh1mreru8d73zdmcs85ognkk8v49w40ezpn3jjxyxf3v231jthnd8htubo4bwthl14pp1ys2h9pcclyfxvfdtekdmfop9vrv1q1ctm1x830glcqolq6spun2d9sf3mu3eq1g7\",\n      \"user\" : \"e9f0a92a1f7ccb40c1442ea6314f7f58\"\n    }, {\n      \"date\" : \"2022-12-21T15:18:35.481611Z\",\n      \"action\" : \"commented\",\n      \"comment\" : \"lle1k7mdna6sj365b4ao7w66q77l6vi0mjco499sk32zurn3gre80gio2mnqp1bhggaybbzec18q5s9igjg939wjp8rpm2q9b5qieu1fh3ctplv8m9lqeljn5kwphac8alaa3knsnq1kc0xbgdt5j3n90mwbix44ipvcwuv7w9py4oo73alc9ft4m7cbdr6jnk1dwpj\",\n      \"user\" : \"9a69b3469a18ebb42f3b0d448876506a\"\n    }, {\n      \"date\" : \"2022-09-10T10:38:31.481706Z\",\n      \"action\" : \"unconfirmed\",\n      \"comment\" : \"ypupxa46qrfavby6k4g3nen3z8mmr5\",\n      \"user\" : \"36b06059cfa86e5b2c40b3b69c8b7d0d\"\n    }, {\n      \"date\" : \"2022-04-11T08:31:19.484151Z\",\n      \"action\" : \"removed\",\n      \"comment\" : \"0zl6cqymsxl6es9f3nbht7dw57dj2bl430pt8o0hoti00hal4ocyo10i9877elqf1y1l37kohfxvu035eo4pc33bg4k2v3lhsyxth03sjvywn6ojfje35of3i1\",\n      \"user\" : \"f14c77df41a6601b733c3fd77ca81d6d\"\n    }, {\n      \"date\" : \"2022-08-01T10:41:59.484271Z\",\n      \"action\" : \"approved\",\n      \"comment\" : \"ym2irqr6s00xwmsl6718tbhdb4ddb1cur3g0xvek\",\n      \"user\" : \"c826431200d5a9f18ddda0fdcde5cd10\"\n    }, {\n      \"date\" : \"2022-04-24T08:23:36.484379Z\",\n      \"action\" : \"signed\",\n      \"comment\" : \"lspoi0btptgknsg87y9\",\n      \"user\" : \"bb92a6f9bd2fedafaec4a41e6bc4a490\"\n    }, {\n      \"date\" : \"2021-10-25T21:49:09.484538Z\",\n      \"action\" : \"removed\",\n      \"comment\" : \"frrvqh5s074wdqz68\",\n      \"user\" : \"d0c06c08ef9d89674cf944e1da5933fa\"\n    }, {\n      \"date\" : \"2023-05-20T06:54:54.484647Z\",\n      \"action\" : \"confirmed\",\n      \"comment\" : \"1k1bah9rnt84esg1cua9uoydsfafanw7ghgeeuzb5c6yuwqloal58gjx2qcxard2yldof3h6vs8n3krg5jpx9e3p0rvhip23z48k57so0bd7ap9jatp58y6xk5r75ebexmey7zcxgeey6juq3spya3snl6194tk2272jui54nautp08580ib3ehpctopn25c071\",\n      \"user\" : \"e2a848eb33a3f668c5ee22d275d998e7\"\n    } ],\n    \"tags\" : [ \"56f3f0b46a6336bc1d98a6eb564f2390\", \"c7d269a63e676451d432dd573c43b923\", \"2101c09023e3c28bce5c17fe420d69ff\", \"873dc43d5a02fcfc9d738cb96a155bf0\" ],\n    \"vSize\" : 8378524571747749672,\n    \"entries\" : [ {\n      \"address\" : \"e77qlehne10tiudglocxdt9h5c0643xwmajlei6u6lczop9e2wb74sxv\",\n      \"wallet\" : \"\",\n      \"valueString\" : \"\",\n      \"isPayGo\" : true,\n      \"value\" : 9130067587121893323,\n      \"isChange\" : true,\n      \"token\" : \"drvc4dwaqo5ieogbe1907y8fanc1q4qurbou74pmj731vfxr47rv6qfpaxa6srs0m9d7mk9ensu44d5f55fq6kb32ru0tw\"\n    }, {\n      \"address\" : \"fpqxlw2ke3uyfs2wk5wesumshqjw6esleopjzv86jwatu55w8m7h2k2cxxta4n6sgj4a1udq722vae8ms4c8qcuk74hh872bfhwis9p7axs7g577wovu8neblclrwmont3wzjkch8tnpwlpbwpsbt90u0ko90cczctgpasdm5anlc3vtkx07k4ucc7mkfup413w8mk\",\n      \"wallet\" : \"\",\n      \"valueString\" : \"\",\n      \"isPayGo\" : false,\n      \"value\" : 510619867360463336,\n      \"isChange\" : false,\n      \"token\" : \"zj5fzbljposzvmaeiucmx9q3k3nd84lg0pp34q9lfvgpcxroidw5twt0pag09davxh7pwqve5\"\n    }, {\n      \"address\" : \"qmxfbfl3jemtgbkuq73yxgbvslxuyad0is2byzga02i3uxb40un11mgvy2y7u9xnc5xq\",\n      \"wallet\" : \"\",\n      \"valueString\" : \"\",\n      \"isPayGo\" : true,\n      \"value\" : 3473090860296292839,\n      \"isChange\" : true,\n      \"token\" : \"8yzggl32qpx31m87ry47uxvpznf7yeqeqi1nzkthyy0aclodf6ekb7ejlhntubljmyzgmplj5tqh02ourclvl4wmuzthghyifkx8tkbkmrabumbzebe2u97e4y775gc35km7cpz0iw6d49hplw8xk7qf71j6xgnqhcnc37qrwu7ue6qifhthcn5\"\n    }, {\n      \"address\" : \"91wf37vlgeq8cyikwxanvwgxlyule48rx92tvhr1ze\",\n      \"wallet\" : \"\",\n      \"valueString\" : \"\",\n      \"isPayGo\" : false,\n      \"value\" : 1582713704328417241,\n      \"isChange\" : true,\n      \"token\" : \"ojwq3l629ilapr029ikkgm0be9ulab1i5h3hp36umqqph2irrkguwwok5rhdx8b6jddbpx7s4cchgfproiyq8c3xnv39g5dbpnj2po8tsl79klqag4t5ebn75zk0qppavqh9zbxshyunrwwqyij5s3adbg7yx9x7a8rodfarchi7r\"\n    }, {\n      \"address\" : \"lcj1vp6gdtgcgtb2dia30fvfogubrr7tjmd\",\n      \"wallet\" : \"\",\n      \"valueString\" : \"\",\n      \"isPayGo\" : true,\n      \"value\" : 7578883224282825309,\n      \"isChange\" : false,\n      \"token\" : \"avf4xjs5nqloly8smdmgii7noy9mmx43zboltymyoos4obtnrhh27zr2fuxgskgqct6cg64l73ld3dmrq33clakrutx8x\"\n    }, {\n      \"address\" : \"y340du61qdvs03klrottsff5whsvcxepwbrflc4hp4v6mff3skyfcghzikovv3itoa6b2hc7jv1p7n1x8bf8c90v812az5k7xd7likrsr73l6tofrrle0z5qrc28fxttvvqcbd9f5rhmxfbsip\",\n      \"wallet\" : \"\",\n      \"valueString\" : \"\",\n      \"isPayGo\" : false,\n      \"value\" : 4420351122092081716,\n      \"isChange\" : true,\n      \"token\" : \"0me6t18d9d3o86rr4oic9eu4t94ne1raimzsez2ugwwprrviw7zs9c4mfyyvtk1st4dtn7ph57w17qbc2mj8\"\n    }, {\n      \"address\" : \"7lf1kelmdelb5t0vri9stkkk5kmvzus3x5f\",\n      \"wallet\" : \"\",\n      \"valueString\" : \"\",\n      \"isPayGo\" : true,\n      \"value\" : 8262973436910265107,\n      \"isChange\" : false,\n      \"token\" : \"6xbh2lelew74dcoecm67v02\"\n    } ],\n    \"valueString\" : \"\",\n    \"usersNotified\" : true,\n    \"heightId\" : \"2629\",\n    \"comment\" : \"jdz8j8l3gvkxjdnwy4pd2j3a0ofpalu711d8erti2ic5jq4lsov3055rgw200k0eoxp9s4pqtn8730r4sqap75u87j0nrvyzz64ohx399e4g20x7jmmi7hh1q9fjo5btjbuk4om9rhzcaakdx56vfrd2kvrrjg90jsqe7bm8aay\",\n    \"nSegwitInputs\" : 6759786336418161431,\n    \"coin\" : \"xw4ooe58i2k4xnevvd0jlh3fl010keljqdrh7mw02fajwkxqa5dgf0rwypvjpp4gg1oodgyxd8nhjv838pexz3cxvq2goyhuv3mff5cf9kt0r6lntq7tw3gr0hece1yhfvul5x3sk7mq4dqxhebw3ja06dad6htcpor3a75y1p6bxoljl2euskqgb66e\",\n    \"coinSpecific\" : \"\"\n  },\n  \"tx\" : \"orfw312bcjq0oq5kg9dpi34\",\n  \"txid\" : \"2p79\",\n  \"status\" : \"signed\"\n}",
+    "headers": {
+      "Content-Type": "application/json"
     }
   },
-  "uuid" : "4f242ad2-f96a-4b91-b276-e85dd969f608",
-  "persistent" : true,
-  "metadata" : {
-    "mocklab" : {
-      "created" : {
-        "at" : "2022-10-10T07:44:41.486942Z",
-        "via" : "OAS3_IMPORT"
+  "uuid": "4f242ad2-f96a-4b91-b276-e85dd969f608",
+  "persistent": true,
+  "metadata": {
+    "mocklab": {
+      "created": {
+        "at": "2022-10-10T07:44:41.486942Z",
+        "via": "OAS3_IMPORT"
       },
-      "oas" : {
-        "operationId" : "express.wallet.acceleratetx",
-        "schema" : {
-          "type" : "object",
-          "properties" : {
-            "transfer" : {
-              "allOf" : [ {
-                "description" : "New transfer"
-              }, {
-                "$ref" : "#/components/schemas/Transfer"
-              } ]
+      "oas": {
+        "operationId": "express.wallet.acceleratetx",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "transfer": {
+              "allOf": [
+                {
+                  "description": "New transfer"
+                },
+                {
+                  "$ref": "#/components/schemas/Transfer"
+                }
+              ]
             },
-            "txid" : {
-              "type" : "string",
-              "description" : "Unique transaction identifier"
+            "txid": {
+              "type": "string",
+              "description": "Unique transaction identifier"
             },
-            "tx" : {
-              "type" : "string",
-              "description" : "Encoded transaction hex (or base64 for XLM)"
+            "tx": {
+              "type": "string",
+              "description": "Encoded transaction hex (or base64 for XLM)"
             },
-            "status" : {
-              "type" : "string",
-              "description" : "Transfer status",
-              "enum" : [ "signed", "signed (suppressed)", "pendingApproval" ]
+            "status": {
+              "type": "string",
+              "description": "Transfer status",
+              "enum": [
+                "signed",
+                "signed (suppressed)",
+                "pendingApproval"
+              ]
             }
           }
         }
       }
     }
   },
-  "insertionIndex" : 189
+  "insertionIndex": 189
 }

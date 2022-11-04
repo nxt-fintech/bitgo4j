@@ -1,40 +1,31 @@
 package bitgo4j.express.common;
 
+import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 class PolicyRuleRequestTest {
-  @Mock Update update;
+    @InjectMocks
+    PolicyRuleRequest policyRuleRequest;
 
-  @Mock UpdateEnterpriseRequest updateEnterpriseRequest;
+    @Test
+    void testToString(){
+        String result = policyRuleRequest.toString();
+        Assertions.assertEquals("PolicyRuleRequest[action=<null>,update=<null>]", result);
+    }
 
-  @InjectMocks PolicyRuleRequest policyRuleRequest;
+    @Test
+    void testSetAction(){
+        policyRuleRequest.setAction("action");
+    }
 
-  @Test
-  void testToString() {
-    String result = policyRuleRequest.toString();
-    String expected =
-        "PolicyRuleRequest[action=<null>,update=update,updateEnterpriseRequest=updateEnterpriseRequest]";
-    Assertions.assertEquals(expected, result);
-  }
-
-  @Test
-  void testSetAction() {
-    policyRuleRequest.setAction("action");
-  }
-
-  @Test
-  void testSetUpdate() {
-    policyRuleRequest.setUpdate(new Update());
-  }
-
-  @Test
-  void testSetUpdateEnterpriseRequest() {
-    policyRuleRequest.setUpdateEnterpriseRequest(new UpdateEnterpriseRequest());
-  }
+    @Test
+    void testSetUpdate(){
+        policyRuleRequest.setUpdate(new Update(new Action("type", 0, List.of("String")), "coin", new Condition("amountString",
+            0, List.of("String"), List.of("String"), List.of("String"), List.of(new Entry("item", new MetaData("label", "owner", "propertyName"), "type")), "url"), "id", "type"));
+    }
 }

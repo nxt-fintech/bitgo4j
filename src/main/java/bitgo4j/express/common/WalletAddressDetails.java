@@ -1,14 +1,20 @@
 package bitgo4j.express.common;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import bitgo4j.BitGo4jConstant;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class WalletAddressDetails {
   private String id;
 
@@ -24,7 +30,9 @@ public class WalletAddressDetails {
 
   private String wallet;
 
-  private CoinSpecific coinSpecific;
+  private AddressCoinSpecific coinSpecific;
+
+  private AddressBalance balance;
 
   private String label;
 
@@ -41,6 +49,7 @@ public class WalletAddressDetails {
         .append("lastNonce", lastNonce)
         .append("wallet", wallet)
         .append("coinSpecific", coinSpecific)
+        .append("balance", balance)
         .append("label", label)
         .append("addressType", addressType)
         .toString();

@@ -2,11 +2,9 @@ package bitgo4j.express.common;
 
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
@@ -16,8 +14,7 @@ class TxInfoRequestTest {
   @Test
   void testToString() {
     String result = txInfoRequest.toString();
-    String expected =
-        "TxInfoRequest[changeAddresses=<null>,nOutputs=<null>,nP2SHInputs=<null>,unspents=<null>,walletAddressDetails=<null>,fee=<null>,operations=<null>,sequence=<null>,source=<null>]";
+    String expected = "TxInfoRequest[changeAddresses=<null>,nOutputs=<null>,nP2SHInputs=<null>,nSegwitInputs=<null>,unspents=<null>,walletAddressDetails=<null>,fee=<null>,operations=<null>,sequence=<null>,source=<null>]";
     Assertions.assertEquals(expected, result);
   }
 
@@ -35,6 +32,9 @@ class TxInfoRequestTest {
   void testSetNP2SHInputs() {
     txInfoRequest.setNP2SHInputs(0);
   }
+
+  @Test
+  void testNSegwitInputs() { txInfoRequest.setNSegwitInputs(0); }
 
   @Test
   void testSetUnspents() {

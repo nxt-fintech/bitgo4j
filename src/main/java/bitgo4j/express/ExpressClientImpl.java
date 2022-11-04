@@ -18,6 +18,7 @@ import bitgo4j.express.request.ResolvePendingApprovalRequest;
 import bitgo4j.express.request.SendToManyRequest;
 import bitgo4j.express.request.SendTransactionRequest;
 import bitgo4j.express.request.ShareWalletRequest;
+import bitgo4j.express.request.SignTSSTransactionRequest;
 import bitgo4j.express.request.SignTransactionRequest;
 import bitgo4j.express.request.SignWalletTransactionRequest;
 import bitgo4j.express.request.SweepFundsRequest;
@@ -36,6 +37,7 @@ import bitgo4j.express.response.PingResponse;
 import bitgo4j.express.response.RecoverETHTokenResponse;
 import bitgo4j.express.response.ResolvePendingApprovalResponse;
 import bitgo4j.express.response.ShareWalletResponse;
+import bitgo4j.express.response.SignTSSTransactionResponse;
 import bitgo4j.express.response.SignTransactionResponse;
 import bitgo4j.express.response.TransactionResponse;
 import bitgo4j.express.response.VerifyAddressResponse;
@@ -77,12 +79,12 @@ public class ExpressClientImpl implements ExpressClient {
   }
 
   @Override
-  public EncryptResponse encryptMessage(CryptRequest cryptRequest) {
+  public EncryptResponse encryptMessages(CryptRequest cryptRequest) {
     return executeSync(service.encryptMessages(cryptRequest));
   }
 
   @Override
-  public DecryptResponse decryptMessage(CryptRequest cryptRequest) {
+  public DecryptResponse decryptMessages(CryptRequest cryptRequest) {
     return executeSync(service.decryptMessages(cryptRequest));
   }
 
@@ -130,9 +132,15 @@ public class ExpressClientImpl implements ExpressClient {
   }
 
   @Override
-  public RecoverETHTokenResponse recoverToken(
+  public SignTSSTransactionResponse signTSSTransaction(
+      String coin, String walletId, SignTSSTransactionRequest signTSSTransactionRequest) {
+    return executeSync(service.signTSSTransaction(coin, walletId, signTSSTransactionRequest));
+  }
+
+  @Override
+  public RecoverETHTokenResponse recoverETHToken(
       String coin, String walletId, RecoverTokenRequest recoverTokenRequest) {
-    return executeSync(service.recoverToken(coin, walletId, recoverTokenRequest));
+    return executeSync(service.recoverETHToken(coin, walletId, recoverTokenRequest));
   }
 
   @Override

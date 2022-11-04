@@ -21,17 +21,17 @@ class BalanceTest {
 
   @Test
   void testSetBalance() {
-    balance.setBalance(0);
+    balance.setBalance(0L);
   }
 
   @Test
   void testSetTotalReceived() {
-    balance.setTotalReceived(0);
+    balance.setTotalReceived(0L);
   }
 
   @Test
   void testSetTotalSent() {
-    balance.setTotalSent(0);
+    balance.setTotalSent(0L);
   }
 
   @Test

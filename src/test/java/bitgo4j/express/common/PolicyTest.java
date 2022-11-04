@@ -5,19 +5,16 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 class PolicyTest {
-  @Mock List<Rule> rules;
-
   @InjectMocks Policy policy;
 
   @Test
   void testToString() {
     String result = policy.toString();
-    String expected = "Policy[id=<null>,date=<null>,label=<null>,latest=<null>,version=<null>]";
+    String expected = "Policy[id=<null>,date=<null>,label=<null>,latest=<null>,rules=<null>,version=<null>]";
     Assertions.assertEquals(expected, result);
   }
 

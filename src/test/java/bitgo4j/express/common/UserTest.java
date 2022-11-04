@@ -8,27 +8,17 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 class UserTest {
-  @Mock Name name;
-
-  @Mock Email email;
-
-  @Mock Phone phone;
-
-  @Mock List<String> permissions;
-
-  @InjectMocks User user;
+  @InjectMocks
+  User user;
 
   @Test
   void testToString() {
     String result = user.toString();
-    String expected =
-        "User[id=<null>,isActive=<null>,name=name,username=<null>,email=email,phone=phone,country=<null>,user=<null>,permissions=permissions]";
-    Assertions.assertEquals(expected, result);
+    Assertions.assertEquals("User[id=<null>,isActive=<null>,name=<null>,username=<null>,email=<null>,phone=<null>,country=<null>,state=<null>,user=<null>,permissions=<null>]", result);
   }
 
   @Test
@@ -43,7 +33,7 @@ class UserTest {
 
   @Test
   void testSetName() {
-    user.setName(new Name());
+    user.setName(new Name("first", "full", "last"));
   }
 
   @Test
@@ -53,17 +43,22 @@ class UserTest {
 
   @Test
   void testSetEmail() {
-    user.setEmail(new Email());
+    user.setEmail(new Email("email", Boolean.TRUE));
   }
 
   @Test
   void testSetPhone() {
-    user.setPhone(new Phone());
+    user.setPhone(new Phone("phone", Boolean.TRUE));
   }
 
   @Test
   void testSetCountry() {
     user.setCountry("country");
+  }
+
+  @Test
+  void testSetState() {
+    user.setState("state");
   }
 
   @Test

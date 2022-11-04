@@ -1,26 +1,32 @@
 package bitgo4j.express.common;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import bitgo4j.BitGo4jConstant;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class HalfSigned {
-  private Integer contractSequenceId;
+  private Long contractSequenceId;
 
-  private Integer expireTime;
+  private Long expireTime;
 
-  private Integer gasLimit;
+  private Long gasLimit;
 
-  private Integer gasPrice;
+  private Long gasPrice;
 
   private String operationHash;
 
-  //  Recipient recipient;
+  private Recipient recipient;
 
   private String signature;
 
@@ -40,6 +46,7 @@ public class HalfSigned {
         .append("gasLimit", gasLimit)
         .append("gasPrice", gasPrice)
         .append("operationHash", operationHash)
+        .append("recipient", recipient)
         .append("signature", signature)
         .append("tokenContractAddress", tokenContractAddress)
         .append("walletId", walletId)

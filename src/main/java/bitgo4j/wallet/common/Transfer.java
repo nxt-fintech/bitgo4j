@@ -1,11 +1,9 @@
 package bitgo4j.wallet.common;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import bitgo4j.BitGo4jConstant;
 import bitgo4j.transfer.common.Entry;
-import bitgo4j.transfer.common.History;
-import bitgo4j.transfer.common.InOut;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import java.math.BigDecimal;
 import java.util.List;
 import lombok.AllArgsConstructor;
@@ -73,6 +71,7 @@ public class Transfer {
 
   private String sequenceId;
 
+  // TODO: remove other module dependency
   private List<Entry> entries;
 
   private Boolean usersNotified;

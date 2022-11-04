@@ -1,8 +1,10 @@
-package bitgo4j.wallet.common;
+package bitgo4j.express.common;
 
+import bitgo4j.BitGo4jConstant;
+import bitgo4j.policy.common.Amount;
+import bitgo4j.policy.common.TxAddress;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import bitgo4j.BitGo4jConstant;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,17 +17,22 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class FunctionArgs {
-  private String type;
+public class RecipientEntry {
+  private TxAddress address;
 
-  // TODO: has another definition
-  private String val;
+  private Amount amount;
+
+  private String data;
+
+  private TokenData tokenData;
 
   @Override
   public String toString() {
     return new ToStringBuilder(this, BitGo4jConstant.TO_STRING_BUILDER_STYLE)
-        .append("type", type)
-        .append("val", val)
+        .append("address", address)
+        .append("amount", amount)
+        .append("data", data)
+        .append("tokenData", tokenData)
         .toString();
   }
 }

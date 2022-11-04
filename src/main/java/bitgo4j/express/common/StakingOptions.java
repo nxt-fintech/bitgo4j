@@ -1,28 +1,42 @@
 package bitgo4j.express.common;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import bitgo4j.BitGo4jConstant;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class StakingOptions {
-  private Integer amount;
+  // CSPRStakingOptions
+  private String amount;
 
   private String validator;
+
+  // STXStakingOptions
+  private String contractName;
+
+  private String functionName;
+
+  private List<FunctionArg> functionArgs;
 
   @Override
   public String toString() {
     return new ToStringBuilder(this, BitGo4jConstant.TO_STRING_BUILDER_STYLE)
         .append("amount", amount)
         .append("validator", validator)
+        .append("contractName", contractName)
+        .append("functionName", functionName)
+        .append("functionArgs", functionArgs)
         .toString();
   }
 }

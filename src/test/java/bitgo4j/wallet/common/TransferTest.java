@@ -1,49 +1,23 @@
 package bitgo4j.wallet.common;
 
 import bitgo4j.transfer.common.Entry;
-import bitgo4j.transfer.common.History;
-import bitgo4j.transfer.common.InOut;
 import java.math.BigDecimal;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 class TransferTest {
-  @Mock BigDecimal value;
-
-  @Mock BigDecimal baseValue;
-
-  @Mock BigDecimal payGoFee;
-
-  @Mock List<String> tags;
-
-  @Mock List<History> history;
-
-  @Mock List<Entry> entries;
-
-  @Mock List<InOut> inputs;
-
-  @Mock List<InOut> outputs;
-
   @InjectMocks Transfer transfer;
-
-  @BeforeEach
-  void setUp() {
-    MockitoAnnotations.openMocks(this);
-  }
 
   @Test
   void testToString() {
     String result = transfer.toString();
     Assertions.assertEquals(
-        "Transfer[coin=<null>,id=<null>,wallet=<null>,enterprise=<null>,txid=<null>,height=<null>,heightId=<null>,date=<null>,type=<null>,value=value,valueString=<null>,baseValue=baseValue,baseValueString=<null>,feeString=<null>,payGoFee=payGoFee,payGoFeeString=<null>,usd=<null>,usdRate=<null>,state=<null>,tags=tags,history=history,comment=<null>,vSize=<null>,nSegwitInputs=<null>,sequenceId=<null>,entries=entries,usersNotified=<null>]",
+        "Transfer[coin=<null>,id=<null>,wallet=<null>,enterprise=<null>,txid=<null>,height=<null>,heightId=<null>,date=<null>,type=<null>,value=<null>,valueString=<null>,baseValue=<null>,baseValueString=<null>,feeString=<null>,payGoFee=<null>,payGoFeeString=<null>,usd=<null>,usdRate=<null>,state=<null>,tags=<null>,history=<null>,comment=<null>,vSize=<null>,nSegwitInputs=<null>,sequenceId=<null>,entries=<null>,usersNotified=<null>]",
         result);
   }
 

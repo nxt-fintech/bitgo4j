@@ -14,6 +14,7 @@ import bitgo4j.express.request.ResolvePendingApprovalRequest;
 import bitgo4j.express.request.SendToManyRequest;
 import bitgo4j.express.request.SendTransactionRequest;
 import bitgo4j.express.request.ShareWalletRequest;
+import bitgo4j.express.request.SignTSSTransactionRequest;
 import bitgo4j.express.request.SignTransactionRequest;
 import bitgo4j.express.request.SignWalletTransactionRequest;
 import bitgo4j.express.request.SweepFundsRequest;
@@ -32,6 +33,7 @@ import bitgo4j.express.response.PingResponse;
 import bitgo4j.express.response.RecoverETHTokenResponse;
 import bitgo4j.express.response.ResolvePendingApprovalResponse;
 import bitgo4j.express.response.ShareWalletResponse;
+import bitgo4j.express.response.SignTSSTransactionResponse;
 import bitgo4j.express.response.SignTransactionResponse;
 import bitgo4j.express.response.TransactionResponse;
 import bitgo4j.express.response.VerifyAddressResponse;
@@ -50,9 +52,9 @@ public interface ExpressClient {
 
   TransactionResponse sendToMany(String coin, String walletId, SendToManyRequest sendToManyRequest);
 
-  EncryptResponse encryptMessage(CryptRequest cryptRequest);
+  EncryptResponse encryptMessages(CryptRequest cryptRequest);
 
-  DecryptResponse decryptMessage(CryptRequest cryptRequest);
+  DecryptResponse decryptMessages(CryptRequest cryptRequest);
 
   CalculateMiningFeeResponse calculateMiningFee(
       CalculateMiningFeeRequest calculateMiningFeeRequest);
@@ -74,7 +76,8 @@ public interface ExpressClient {
   SignTransactionResponse signWalletTransaction(
       String coin, String walletId, SignWalletTransactionRequest signWalletTransactionRequest);
 
-  RecoverETHTokenResponse recoverToken(
+  SignTSSTransactionResponse signTSSTransaction(String coin, String walletId, SignTSSTransactionRequest signTSSTransactionRequest);
+  RecoverETHTokenResponse recoverETHToken(
       String coin, String walletId, RecoverTokenRequest recoverTokenRequest);
 
   ConsolidateAccountResponse consolidateAccount(
