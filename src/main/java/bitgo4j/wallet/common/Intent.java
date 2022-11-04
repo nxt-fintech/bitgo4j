@@ -1,13 +1,13 @@
 package bitgo4j.wallet.common;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import bitgo4j.BitGo4jConstant;
 import bitgo4j.policy.common.Amount;
 import bitgo4j.policy.common.EnableToken;
 import bitgo4j.policy.common.FeeOptions;
 import bitgo4j.policy.common.HopParams;
 import bitgo4j.policy.common.RecipientEntry;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

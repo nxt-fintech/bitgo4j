@@ -1,9 +1,9 @@
 package bitgo4j.wallet.request;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import bitgo4j.BitGo4jConstant;
 import bitgo4j.wallet.common.Changes;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

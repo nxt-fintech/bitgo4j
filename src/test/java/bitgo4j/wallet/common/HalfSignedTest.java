@@ -1,28 +1,20 @@
 package bitgo4j.wallet.common;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
-
-import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class HalfSignedTest {
-  @Mock
-  Recipient recipient;
-
   @InjectMocks
   HalfSigned halfSigned;
 
   @Test
   void testToString() {
     String result = halfSigned.toString();
-    Assertions.assertEquals("HalfSigned[contractSequenceId=<null>,expireTime=<null>,gasLimit=<null>,gasPrice=<null>,operationHash=<null>,recipient=recipient,signature=<null>,tokenContractAddress=<null>,walletId=<null>,txBase64=<null>,txHex=<null>]", result);
+    Assertions.assertEquals("HalfSigned[contractSequenceId=<null>,expireTime=<null>,gasLimit=<null>,gasPrice=<null>,operationHash=<null>,recipient=<null>,signature=<null>,tokenContractAddress=<null>,walletId=<null>,txBase64=<null>,txHex=<null>]", result);
   }
 
   @Test

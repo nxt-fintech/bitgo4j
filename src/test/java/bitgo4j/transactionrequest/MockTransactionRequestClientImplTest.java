@@ -15,9 +15,7 @@ import bitgo4j.transactionrequest.response.ListTransactionRequestResponse;
 import bitgo4j.transactionrequest.response.SignatureShareResponse;
 import bitgo4j.transactionrequest.response.TransactionRequestResponse;
 import bitgo4j.transactionrequest.response.TransferResponse;
-import java.io.IOException;
 import java.util.List;
-import java.util.Properties;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -25,7 +23,7 @@ public class MockTransactionRequestClientImplTest {
   private static TransactionRequestClientImpl client;
 
   @BeforeAll
-  static void setUp() throws IOException {
+  static void setUp() {
     BitGo4jConfig config = BitGo4jConfig.builder().token("BitGo_API_TOKEN").build();
     BitGo4j.api().initialize(config);
     client = BitGo4j.api().transactionRequest();
@@ -562,7 +560,6 @@ public class MockTransactionRequestClientImplTest {
 
   @Test
   void createTransferResponseTest_400() {
-    SignatureShareRequest request = new SignatureShareRequest();
     BitGo4jException exception =
         assertThrows(
             BitGo4jException.class,

@@ -1,11 +1,11 @@
 package bitgo4j.transactionrequest.response;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import bitgo4j.BitGo4jConstant;
 import bitgo4j.transactionrequest.common.Intent;
 import bitgo4j.transactionrequest.common.Transaction;
 import bitgo4j.transactionrequest.common.UnsignedTransaction;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

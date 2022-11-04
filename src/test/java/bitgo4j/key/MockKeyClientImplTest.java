@@ -12,8 +12,6 @@ import bitgo4j.exception.BitGo4jException;
 import bitgo4j.key.request.CreateKeyRequest;
 import bitgo4j.key.response.KeyResponse;
 import bitgo4j.key.response.ListKeysResponse;
-import java.io.IOException;
-import java.util.Properties;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -22,7 +20,7 @@ public class MockKeyClientImplTest {
   private static KeyClientImpl client;
 
   @BeforeAll
-  static void setUp() throws IOException {
+  static void setUp()  {
     BitGo4jConfig config = BitGo4jConfig.builder().token("BitGo_API_TOKEN").build();
     BitGo4j.api().initialize(config);
     client = BitGo4j.api().key();

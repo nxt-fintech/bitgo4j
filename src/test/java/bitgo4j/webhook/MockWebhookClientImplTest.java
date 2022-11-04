@@ -23,8 +23,6 @@ import bitgo4j.webhook.response.RemoveWalletWebhookResponse;
 import bitgo4j.webhook.response.SimulateBlockWebhookResponse;
 import bitgo4j.webhook.response.SimulateWalletWebhookResponse;
 import bitgo4j.webhook.response.WalletWebhookResponse;
-import java.io.IOException;
-import java.util.Properties;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -32,7 +30,7 @@ public class MockWebhookClientImplTest {
   private static WebhookClientImpl client;
 
   @BeforeAll
-  static void setUp() throws IOException {
+  static void setUp() {
     BitGo4jConfig config = BitGo4jConfig.builder().token("BitGo_API_TOKEN").build();
     BitGo4j.api().initialize(config);
     client = BitGo4j.api().webhook();

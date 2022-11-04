@@ -1,24 +1,19 @@
 package bitgo4j.policy.common;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 class EntryTest {
-  @Mock MetaData metaData;
-
   @InjectMocks Entry entry;
 
   @Test
   void testToString() {
     String result = entry.toString();
-    String expected = "Entry[item=<null>,metaData=metaData,type=<null>]";
+    String expected = "Entry[item=<null>,metaData=<null>,type=<null>]";
     Assertions.assertEquals(expected, result);
   }
 
