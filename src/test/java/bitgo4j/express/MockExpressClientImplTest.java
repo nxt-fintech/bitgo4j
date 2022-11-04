@@ -305,4 +305,26 @@ public class MockExpressClientImplTest {
     assertNull(error.getRequestId());
     assertNull(error.getName());
   }
+
+  @Test
+  public void fanOutUnspentsTest_200() {
+    UnspentsRequest request = new UnspentsRequest();
+    TransactionResponse response = client.fanOutUnspents("hoyq0gqmlpbyov5g8yjhwfqap5i67a6sx553suot440u5zo8sf41nto7htcz74zobdofu8hi9v9uplz69rpl559k0r5moqakzkd9erp7gpydcof6tosm","81797c155ed67084c62b81d7ade85616", request);
+    assertNotNull(response);
+  }
+
+  @Test
+  public void fanOutUnspentsTest_400() {
+    UnspentsRequest request = new UnspentsRequest();
+    BitGo4jException exception =
+        assertThrows(
+            BitGo4jException.class,
+            () -> client.fanOutUnspents("k3zq8dy92y3dd0zki96va4o9wh358v62v6f3r7v1wkqixg20o74v4cdk1wcnndef03421a9gol3afjf0txlaygio6555v3qv7rqqwjwjz2tzllmhewocwzhqnj67fx6e7is3aa95sj9i2tc278rdau8atkf9hfebhcgh9izb40zw9fosflox0c3n0", "2c2d0f5272f0696611d6e0eea3fd9192", request));
+    assertNotNull(exception);
+
+    BitGo4jError error = exception.getError();
+    assertNull(error.getError());
+    assertNull(error.getRequestId());
+    assertNull(error.getName());
+  }
 }
