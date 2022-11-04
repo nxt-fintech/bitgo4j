@@ -26,6 +26,7 @@ import bitgo4j.express.request.SignTransactionRequest;
 import bitgo4j.express.request.SignWalletTransactionRequest;
 import bitgo4j.express.request.SweepFundsRequest;
 import bitgo4j.express.request.UnspentsRequest;
+import bitgo4j.express.request.VerifyAddressRequest;
 import bitgo4j.express.response.AcceptWalletShareResponse;
 import bitgo4j.express.response.AddressResponse;
 import bitgo4j.express.response.CanonicalizeAddressResponse;
@@ -40,6 +41,7 @@ import bitgo4j.express.response.ShareWalletResponse;
 import bitgo4j.express.response.SignTSSTransactionResponse;
 import bitgo4j.express.response.SignTransactionResponse;
 import bitgo4j.express.response.TransactionResponse;
+import bitgo4j.express.response.VerifyAddressResponse;
 import bitgo4j.express.response.WalletResponse;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
@@ -380,6 +382,13 @@ public class MockExpressClientImplTest {
   public void canonicalizeAddressTest_200() {
     CanonicalizeAddressRequest request = new CanonicalizeAddressRequest();
     CanonicalizeAddressResponse response = client.canonicalizeAddress("xyyvvijq9yn9oec2wshyayujjn9vyqjxtkk0orxygn8mk9m7vg5pqr3nzm3ayxrxgb4yfp3175wtbi9f7qc818av5dtzwl56yf4acwcf9y6gkawzbk2irjm", request);
+    assertNotNull(response);
+  }
+
+  @Test
+  public void verifyAddressTest_200() {
+    VerifyAddressRequest request = new VerifyAddressRequest();
+    VerifyAddressResponse response = client.verifyAddress("ootsooojkzyg694qd9rsf0jgureufhfv7uqf2rzzu0cpuczlc9l81j94jr5w9gv8f2bw57ld37b0zxugbdq4x1bmtju7y41y5zopfp9qap3s8izvx4wpi09k7nxwh63ys50bttjzkhvn", request);
     assertNotNull(response);
   }
 }
