@@ -83,7 +83,7 @@ public interface ExpressService {
   @POST("/api/v2/decrypt")
   Call<DecryptResponse> decryptMessages(@Body CryptRequest cryptRequest);
 
-  // TODO: remove
+  // TODO: Deprecated
   @Headers({"Accept: application/json"})
   @POST("/api/v2/calculateminerfeeinfo")
   Call<CalculateMiningFeeResponse> calculateMiningFee(

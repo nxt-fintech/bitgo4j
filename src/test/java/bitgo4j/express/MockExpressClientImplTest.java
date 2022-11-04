@@ -17,6 +17,7 @@ import bitgo4j.express.request.SendTransactionRequest;
 import bitgo4j.express.response.AddressResponse;
 import bitgo4j.express.response.DecryptResponse;
 import bitgo4j.express.response.EncryptResponse;
+import bitgo4j.express.response.KeyResponse;
 import bitgo4j.express.response.LoginResponse;
 import bitgo4j.express.response.PingResponse;
 import bitgo4j.express.response.TransactionResponse;
@@ -170,6 +171,12 @@ public class MockExpressClientImplTest {
   public void decryptMessagesTest_500() {
     CryptRequest request = new CryptRequest();
     DecryptResponse response = client.decryptMessages(request);
+    assertNotNull(response);
+  }
+
+  @Test
+  public void createKeyTest_200() {
+    KeyResponse response = client.createKey("9kudeo1613suua1b7tkf");
     assertNotNull(response);
   }
 }
