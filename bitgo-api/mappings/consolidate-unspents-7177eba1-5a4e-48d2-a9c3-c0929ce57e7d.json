@@ -1,54 +1,61 @@
 {
-  "id" : "7177eba1-5a4e-48d2-a9c3-c0929ce57e7d",
-  "name" : "Consolidate unspents",
-  "request" : {
-    "urlPath" : "/api/v2/s4qgj12ft6k67bjihs3yh1cohkobr15nqtt9t6m78vmgj1b9fmt1cdo25nx5stibxci72eo1lm6c28uchn95wbst236am4gdf8kcuzj52c1kh4gpv3lssrggbv4q66awv5v40f0ny0fhv0gehulk9pw3ugy58udggg090oj0/wallet/ff5dbcb489565297886a653b6a67d54f/consolidateunspents",
-    "method" : "POST"
+  "id": "7177eba1-5a4e-48d2-a9c3-c0929ce57e7d",
+  "name": "Consolidate unspents",
+  "request": {
+    "urlPath": "/api/v2/s4qgj12ft6k67bjihs3yh1cohkobr15nqtt9t6m78vmgj1b9fmt1cdo25nx5stibxci72eo1lm6c28uchn95wbst236am4gdf8kcuzj52c1kh4gpv3lssrggbv4q66awv5v40f0ny0fhv0gehulk9pw3ugy58udggg090oj0/wallet/ff5dbcb489565297886a653b6a67d54f/consolidateunspents",
+    "method": "POST"
   },
-  "response" : {
-    "status" : 200,
-    "body" : "{\n  \"transfer\" : {\n    \"date\" : \"2022-08-14T21:44:30.471664Z\",\n    \"enterprise\" : \"9d0e20cdd3142bd487c5c08c87730188\",\n    \"usd\" : 1.7413402697289925E308,\n    \"type\" : \"receive\",\n    \"sequenceId\" : \"r1p4\",\n    \"baseValue\" : 7146802058594656626,\n    \"usdRate\" : 9.21493251430151E307,\n    \"id\" : \"dd1ecb0a90060a4b486ef4e2f25ece5c\",\n    \"state\" : \"rejected\",\n    \"value\" : 6125819708284241329,\n    \"feeString\" : \"m8g5qx5t6qecmxr9gqz2m663inkjop9dmlv5zlj6384lgncgi5xsg2kch24latyrbrhf35dea198cdp7u0va1qm4sambdrshsid27s1iacle29t7ydyot\",\n    \"height\" : 1463938329494272023,\n    \"payGoFee\" : 6566297866110436724,\n    \"payGoFeeString\" : \"xzv4an61gbrwurid947dx587hajau0tt17ah8mfxowz8dsttzsiz00vdid3w4dtk9k8xi5qrmdztcanfzxs8d8rmn6899wlz7hhavkn5quzkv37rraaq3xe2bssm0dq4i1djspqr473nihusphpezwtojcq55t4e57dkoiiq8cfses8znoaxhkr\",\n    \"wallet\" : \"5184b70f144f1377a8cbb7388c183d71\",\n    \"txid\" : \"bo04\",\n    \"baseValueString\" : { },\n    \"history\" : [ {\n      \"date\" : \"2023-01-28T15:32:10.472354Z\",\n      \"action\" : \"unconfirmed\",\n      \"comment\" : \"omnsj06o8o13u2nunssrtap5\",\n      \"user\" : \"9ff711d8416fc7b8d70088f3fb4d246b\"\n    }, {\n      \"date\" : \"2023-08-11T16:29:59.472466Z\",\n      \"action\" : \"failed\",\n      \"comment\" : \"ib6huyhrf82nwx10fvli7k0x\",\n      \"user\" : \"93adeb427a6647261a94e6acbb14b1ae\"\n    } ],\n    \"tags\" : [ \"75b1b64b193dfaa262682a6f48e8a917\" ],\n    \"vSize\" : 5214626278859144555,\n    \"entries\" : [ {\n      \"address\" : \"pq1evqfm5p\",\n      \"wallet\" : { },\n      \"valueString\" : { },\n      \"isPayGo\" : true,\n      \"value\" : 1453164529730189996,\n      \"isChange\" : false,\n      \"token\" : \"upfr3av4q6sgnmn7pzh86iap4ood5nsgbahqa0637126fh3eil41exs18ch5l31lh11q\"\n    } ],\n    \"valueString\" : { },\n    \"usersNotified\" : false,\n    \"heightId\" : \"h135\",\n    \"comment\" : \"8luo0jyk1mxsq007dt1jtov8rlqomzic96rjppwrhpsduezzzsdmu2qvifa\",\n    \"nSegwitInputs\" : 1106185546834374038,\n    \"coin\" : \"4q3j5lddx2qwhc0tt6icin7bkqispmx1u6nfn50pdlteppmzor1wzckbgvrie4f23l3404aomk9usuj1cdvb8xyrnlvdp9cs7zr3j95agb6hjr3hebuay4xnp1utg3pc0m\",\n    \"coinSpecific\" : { }\n  },\n  \"tx\" : \"knhk5v91qvn1a5gk2ppnhusf4prmpp9m7svevlc907q7gv1don6cjl5gcyvvhs340gkf1mkk6bks4d5p597lgh1ltik\",\n  \"txid\" : \"zjwy\",\n  \"status\" : \"signed\"\n}",
-    "headers" : {
-      "Content-Type" : "application/json"
+  "response": {
+    "status": 200,
+    "body": "{\n  \"transfer\" : {\n    \"date\" : \"2022-08-14T21:44:30.471664Z\",\n    \"enterprise\" : \"9d0e20cdd3142bd487c5c08c87730188\",\n    \"usd\" : 1.7413402697289925E308,\n    \"type\" : \"receive\",\n    \"sequenceId\" : \"r1p4\",\n    \"baseValue\" : 7146802058594656626,\n    \"usdRate\" : 9.21493251430151E307,\n    \"id\" : \"dd1ecb0a90060a4b486ef4e2f25ece5c\",\n    \"state\" : \"rejected\",\n    \"value\" : 6125819708284241329,\n    \"feeString\" : \"m8g5qx5t6qecmxr9gqz2m663inkjop9dmlv5zlj6384lgncgi5xsg2kch24latyrbrhf35dea198cdp7u0va1qm4sambdrshsid27s1iacle29t7ydyot\",\n    \"height\" : 1463938329494272023,\n    \"payGoFee\" : 6566297866110436724,\n    \"payGoFeeString\" : \"xzv4an61gbrwurid947dx587hajau0tt17ah8mfxowz8dsttzsiz00vdid3w4dtk9k8xi5qrmdztcanfzxs8d8rmn6899wlz7hhavkn5quzkv37rraaq3xe2bssm0dq4i1djspqr473nihusphpezwtojcq55t4e57dkoiiq8cfses8znoaxhkr\",\n    \"wallet\" : \"5184b70f144f1377a8cbb7388c183d71\",\n    \"txid\" : \"bo04\",\n    \"baseValueString\" : \"\",\n    \"history\" : [ {\n      \"date\" : \"2023-01-28T15:32:10.472354Z\",\n      \"action\" : \"unconfirmed\",\n      \"comment\" : \"omnsj06o8o13u2nunssrtap5\",\n      \"user\" : \"9ff711d8416fc7b8d70088f3fb4d246b\"\n    }, {\n      \"date\" : \"2023-08-11T16:29:59.472466Z\",\n      \"action\" : \"failed\",\n      \"comment\" : \"ib6huyhrf82nwx10fvli7k0x\",\n      \"user\" : \"93adeb427a6647261a94e6acbb14b1ae\"\n    } ],\n    \"tags\" : [ \"75b1b64b193dfaa262682a6f48e8a917\" ],\n    \"vSize\" : 5214626278859144555,\n    \"entries\" : [ {\n      \"address\" : \"pq1evqfm5p\",\n      \"wallet\" : \"\",\n      \"valueString\" : \"\",\n      \"isPayGo\" : true,\n      \"value\" : 1453164529730189996,\n      \"isChange\" : false,\n      \"token\" : \"upfr3av4q6sgnmn7pzh86iap4ood5nsgbahqa0637126fh3eil41exs18ch5l31lh11q\"\n    } ],\n    \"valueString\" : \"\",\n    \"usersNotified\" : false,\n    \"heightId\" : \"h135\",\n    \"comment\" : \"8luo0jyk1mxsq007dt1jtov8rlqomzic96rjppwrhpsduezzzsdmu2qvifa\",\n    \"nSegwitInputs\" : 1106185546834374038,\n    \"coin\" : \"4q3j5lddx2qwhc0tt6icin7bkqispmx1u6nfn50pdlteppmzor1wzckbgvrie4f23l3404aomk9usuj1cdvb8xyrnlvdp9cs7zr3j95agb6hjr3hebuay4xnp1utg3pc0m\",\n    \"coinSpecific\" : \"\"\n  },\n  \"tx\" : \"knhk5v91qvn1a5gk2ppnhusf4prmpp9m7svevlc907q7gv1don6cjl5gcyvvhs340gkf1mkk6bks4d5p597lgh1ltik\",\n  \"txid\" : \"zjwy\",\n  \"status\" : \"signed\"\n}",
+    "headers": {
+      "Content-Type": "application/json"
     }
   },
-  "uuid" : "7177eba1-5a4e-48d2-a9c3-c0929ce57e7d",
-  "persistent" : true,
-  "metadata" : {
-    "mocklab" : {
-      "created" : {
-        "at" : "2022-10-10T07:44:41.474097Z",
-        "via" : "OAS3_IMPORT"
+  "uuid": "7177eba1-5a4e-48d2-a9c3-c0929ce57e7d",
+  "persistent": true,
+  "metadata": {
+    "mocklab": {
+      "created": {
+        "at": "2022-10-10T07:44:41.474097Z",
+        "via": "OAS3_IMPORT"
       },
-      "oas" : {
-        "operationId" : "express.wallet.consolidateunspents",
-        "schema" : {
-          "type" : "object",
-          "properties" : {
-            "transfer" : {
-              "allOf" : [ {
-                "description" : "New transfer"
-              }, {
-                "$ref" : "#/components/schemas/Transfer"
-              } ]
+      "oas": {
+        "operationId": "express.wallet.consolidateunspents",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "transfer": {
+              "allOf": [
+                {
+                  "description": "New transfer"
+                },
+                {
+                  "$ref": "#/components/schemas/Transfer"
+                }
+              ]
             },
-            "txid" : {
-              "type" : "string",
-              "description" : "Unique transaction identifier"
+            "txid": {
+              "type": "string",
+              "description": "Unique transaction identifier"
             },
-            "tx" : {
-              "type" : "string",
-              "description" : "Encoded transaction hex (or base64 for XLM)"
+            "tx": {
+              "type": "string",
+              "description": "Encoded transaction hex (or base64 for XLM)"
             },
-            "status" : {
-              "type" : "string",
-              "description" : "Transfer status",
-              "enum" : [ "signed", "signed (suppressed)", "pendingApproval" ]
+            "status": {
+              "type": "string",
+              "description": "Transfer status",
+              "enum": [
+                "signed",
+                "signed (suppressed)",
+                "pendingApproval"
+              ]
             }
           }
         }
       }
     }
   },
-  "insertionIndex" : 195
+  "insertionIndex": 195
 }

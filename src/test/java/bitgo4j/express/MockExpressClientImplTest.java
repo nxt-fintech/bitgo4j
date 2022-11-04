@@ -22,6 +22,7 @@ import bitgo4j.express.request.ShareWalletRequest;
 import bitgo4j.express.request.SignTSSTransactionRequest;
 import bitgo4j.express.request.SignTransactionRequest;
 import bitgo4j.express.request.SignWalletTransactionRequest;
+import bitgo4j.express.request.UnspentsRequest;
 import bitgo4j.express.response.AcceptWalletShareResponse;
 import bitgo4j.express.response.AddressResponse;
 import bitgo4j.express.response.ConsolidateAccountResponse;
@@ -275,6 +276,28 @@ public class MockExpressClientImplTest {
         assertThrows(
             BitGo4jException.class,
             () -> client.consolidateAccount("txtz", "3a88cd1b2f51823657c79c87844cef89", request));
+    assertNotNull(exception);
+
+    BitGo4jError error = exception.getError();
+    assertNull(error.getError());
+    assertNull(error.getRequestId());
+    assertNull(error.getName());
+  }
+
+  @Test
+  public void consolidateUnspentsTest_200() {
+    UnspentsRequest request = new UnspentsRequest();
+    TransactionResponse response = client.consolidateUnspents("s4qgj12ft6k67bjihs3yh1cohkobr15nqtt9t6m78vmgj1b9fmt1cdo25nx5stibxci72eo1lm6c28uchn95wbst236am4gdf8kcuzj52c1kh4gpv3lssrggbv4q66awv5v40f0ny0fhv0gehulk9pw3ugy58udggg090oj0","ff5dbcb489565297886a653b6a67d54f", request);
+    assertNotNull(response);
+  }
+
+  @Test
+  public void consolidateUnspentsTest_400() {
+    UnspentsRequest request = new UnspentsRequest();
+    BitGo4jException exception =
+        assertThrows(
+            BitGo4jException.class,
+            () -> client.consolidateUnspents("4338t3vjio59dbpm3c1zqaxgvihhig12lkwqht7b4hut8os96tcgb7kko21f8gpsardox3n6dg5ua257jys307u2067cai0o0ru6ji8", "0742b7c29bc4188cb2a90ae13e27176f", request));
     assertNotNull(exception);
 
     BitGo4jError error = exception.getError();

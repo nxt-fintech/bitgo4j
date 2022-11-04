@@ -20,9 +20,9 @@ public class UnspentsRequest {
 
   private String xprv;
 
-  private Integer feeRate;
+  private String feeRate;
 
-  private Integer maxFeeRate;
+  private String maxFeeRate;
 
   private Integer maxFeePercentage;
 

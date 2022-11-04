@@ -4,7 +4,6 @@ import bitgo4j.BitGo4jConstant;
 import bitgo4j.transfer.common.Entry;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import java.math.BigDecimal;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -37,17 +36,17 @@ public class Transfer {
 
   private String type;
 
-  private BigDecimal value;
+  private Long value;
 
   private String valueString;
 
-  private BigDecimal baseValue;
+  private Long baseValue;
 
   private String baseValueString;
 
   private String feeString;
 
-  private BigDecimal payGoFee;
+  private Long payGoFee;
 
   private String payGoFeeString;
 
