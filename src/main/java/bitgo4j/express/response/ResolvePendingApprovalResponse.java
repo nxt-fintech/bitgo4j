@@ -26,8 +26,6 @@ public class ResolvePendingApprovalResponse {
 
   private String enterprise;
 
-  private String keyId;
-
   private String creator;
 
   private String createDate;
@@ -40,7 +38,7 @@ public class ResolvePendingApprovalResponse {
 
   private List<String> userIds;
 
-  private Integer approvalsRequired;
+  private Long approvalsRequired;
 
   private String walletLabel;
 
@@ -51,7 +49,6 @@ public class ResolvePendingApprovalResponse {
         .append("coin", coin)
         .append("wallet", wallet)
         .append("enterprise", enterprise)
-        .append("keyId", keyId)
         .append("creator", creator)
         .append("createDate", createDate)
         .append("info", info)

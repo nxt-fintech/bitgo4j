@@ -18,6 +18,7 @@ import bitgo4j.express.request.CryptRequest;
 import bitgo4j.express.request.GenerateWalletRequest;
 import bitgo4j.express.request.LoginRequest;
 import bitgo4j.express.request.RecoverTokenRequest;
+import bitgo4j.express.request.ResolvePendingApprovalRequest;
 import bitgo4j.express.request.SendToManyRequest;
 import bitgo4j.express.request.SendTransactionRequest;
 import bitgo4j.express.request.ShareWalletRequest;
@@ -37,6 +38,7 @@ import bitgo4j.express.response.KeyResponse;
 import bitgo4j.express.response.LoginResponse;
 import bitgo4j.express.response.PingResponse;
 import bitgo4j.express.response.RecoverETHTokenResponse;
+import bitgo4j.express.response.ResolvePendingApprovalResponse;
 import bitgo4j.express.response.ShareWalletResponse;
 import bitgo4j.express.response.SignTSSTransactionResponse;
 import bitgo4j.express.response.SignTransactionResponse;
@@ -389,6 +391,13 @@ public class MockExpressClientImplTest {
   public void verifyAddressTest_200() {
     VerifyAddressRequest request = new VerifyAddressRequest();
     VerifyAddressResponse response = client.verifyAddress("ootsooojkzyg694qd9rsf0jgureufhfv7uqf2rzzu0cpuczlc9l81j94jr5w9gv8f2bw57ld37b0zxugbdq4x1bmtju7y41y5zopfp9qap3s8izvx4wpi09k7nxwh63ys50bttjzkhvn", request);
+    assertNotNull(response);
+  }
+
+  @Test
+  public void resolvePendingApprovalTest_200() {
+    ResolvePendingApprovalRequest request = new ResolvePendingApprovalRequest();
+    ResolvePendingApprovalResponse response = client.resolvePendingApproval("46pmd2yhamb3qq8znui7sg01rfgls6jyihhgf15x18dn0vyujwrj63ocd1u98t6odubpwnoxg1on54x5llcthkn5vb5jn04prh41y2sgthhb5s395adcdwlozp9y6m5lphzgs0t7mw1ghzilvzv4hli835n03kq33k0iv5exc5p", "ca978e24dcddacfbe06621bea7437c01",request);
     assertNotNull(response);
   }
 }

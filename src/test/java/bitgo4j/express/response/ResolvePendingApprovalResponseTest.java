@@ -6,22 +6,16 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 class ResolvePendingApprovalResponseTest {
-  @Mock Info info;
-
-  @Mock List<String> userIds;
-
   @InjectMocks ResolvePendingApprovalResponse resolvePendingApprovalResponse;
 
   @Test
   void testToString() {
     String result = resolvePendingApprovalResponse.toString();
-    String expected =
-        "ResolvePendingApprovalResponse[id=<null>,coin=<null>,wallet=<null>,enterprise=<null>,keyId=<null>,creator=<null>,createDate=<null>,info=info,state=<null>,scope=<null>,userIds=userIds,approvalsRequired=<null>,walletLabel=<null>]";
+    String expected = "ResolvePendingApprovalResponse[id=<null>,coin=<null>,wallet=<null>,enterprise=<null>,creator=<null>,createDate=<null>,info=<null>,state=<null>,scope=<null>,userIds=<null>,approvalsRequired=<null>,walletLabel=<null>]";
     Assertions.assertEquals(expected, result);
   }
 
@@ -43,11 +37,6 @@ class ResolvePendingApprovalResponseTest {
   @Test
   void testSetEnterprise() {
     resolvePendingApprovalResponse.setEnterprise("enterprise");
-  }
-
-  @Test
-  void testSetKeyId() {
-    resolvePendingApprovalResponse.setKeyId("keyId");
   }
 
   @Test
@@ -82,7 +71,7 @@ class ResolvePendingApprovalResponseTest {
 
   @Test
   void testSetApprovalsRequired() {
-    resolvePendingApprovalResponse.setApprovalsRequired(0);
+    resolvePendingApprovalResponse.setApprovalsRequired(0L);
   }
 
   @Test

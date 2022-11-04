@@ -43,6 +43,7 @@ import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
@@ -187,7 +188,7 @@ public interface ExpressService {
       @Path("coin") String coin, @Body VerifyAddressRequest verifyAddressRequest);
 
   @Headers({"Accept: application/json"})
-  @POST("/api/v2/{coin}/pendingapprovals/{approvalId}")
+  @PUT("/api/v2/{coin}/pendingapprovals/{approvalId}")
   Call<ResolvePendingApprovalResponse> resolvePendingApproval(
       @Path("coin") String coin,
       @Path("approvalId") String approvalId,
