@@ -6,6 +6,7 @@ import bitgo4j.enterprise.common.UpdateEnterpriseRequest;
 import bitgo4j.express.common.Action;
 import bitgo4j.express.common.AddressBalance;
 import bitgo4j.express.common.AddressCoinSpecific;
+import bitgo4j.express.common.AddressCoinSpecificXlm;
 import bitgo4j.express.common.Admin;
 import bitgo4j.express.common.Condition;
 import bitgo4j.express.common.Entry;
@@ -17,7 +18,6 @@ import bitgo4j.express.common.Policy;
 import bitgo4j.express.common.ReceiveAddress;
 import bitgo4j.express.common.Rule;
 import bitgo4j.express.common.User;
-import bitgo4j.policy.common.AddressCoinSpecificXlm;
 import bitgo4j.user.common.Email;
 import bitgo4j.user.common.Name;
 import bitgo4j.user.common.Phone;
@@ -87,14 +87,14 @@ class WalletResponseTest {
 
     @Test
     void testSetReceiveAddress(){
-        walletResponse.setReceiveAddress(new ReceiveAddress("id", "address", 0, 1L, "coin",
-            1L, "wallet", new AddressCoinSpecific(new AddressCoinSpecificXlm("memoId", "rootAddress"), new AddressCoinSpecificXlm("memoId", "rootAddress")), new AddressBalance("updated",
-            1L, "balanceString", 1L, 1L, "confirmedBalanceString", "spendableBalanceString"), "label", "addressType"));
+        walletResponse.setReceiveAddress(new ReceiveAddress("id", "address", 0, 1L, "coin", 1L, "wallet", new AddressCoinSpecific(new AddressCoinSpecificXlm("memoId", "rootAddress"), new AddressCoinSpecificXlm("memoId", "rootAddress")), new AddressBalance("updated",
+            1L, "balanceString",
+            1L, 1L, "confirmedBalanceString", "spendableBalanceString"), "label", "addressType"));
     }
 
     @Test
     void testSetBalance(){
-        walletResponse.setBalance(0L);
+        walletResponse.setBalance(1L);
     }
 
     @Test
@@ -104,7 +104,7 @@ class WalletResponseTest {
 
     @Test
     void testSetConfirmedBalance(){
-        walletResponse.setConfirmedBalance(0L);
+        walletResponse.setConfirmedBalance(1L);
     }
 
     @Test
@@ -114,7 +114,7 @@ class WalletResponseTest {
 
     @Test
     void testSetSpendableBalance(){
-        walletResponse.setSpendableBalance(0L);
+        walletResponse.setSpendableBalance(1L);
     }
 
     @Test
@@ -146,13 +146,12 @@ class WalletResponseTest {
     void testSetAdmin(){
         walletResponse.setAdmin(new Admin(new Policy("id", "date", "label", Boolean.TRUE, List.of(new Rule("id", "lockDate", "mutabilityConstraint", "coin", "type", new Condition("amountString",
             0, List.of("String"), List.of("String"), List.of("String"), List.of(new Entry("item", new MetaData("label", "owner", "propertyName"), "type")), "url"), new Action("type",
-            0, List.of("String")))),
-            0)));
+            0, List.of("String")))), 0)));
     }
 
     @Test
     void testSetApprovalsRequired(){
-        walletResponse.setApprovalsRequired(0L);
+        walletResponse.setApprovalsRequired(1L);
     }
 
     @Test

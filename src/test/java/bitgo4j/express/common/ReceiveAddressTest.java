@@ -1,6 +1,5 @@
 package bitgo4j.express.common;
 
-import bitgo4j.policy.common.AddressCoinSpecificXlm;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

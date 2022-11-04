@@ -15,16 +15,16 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class AddressCoinSpecific {
-  private AddressCoinSpecificXlm xlm;
+public class AddressCoinSpecificXlm {
+  private String memoId;
 
-  private AddressCoinSpecificXlm txlm;
+  private String rootAddress;
 
   @Override
   public String toString() {
     return new ToStringBuilder(this, BitGo4jConstant.TO_STRING_BUILDER_STYLE)
-        .append("xlm", xlm)
-        .append("txlm", txlm)
+        .append("memoId", memoId)
+        .append("rootAddress", rootAddress)
         .toString();
   }
 }

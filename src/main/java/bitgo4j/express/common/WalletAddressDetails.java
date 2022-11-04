@@ -30,7 +30,9 @@ public class WalletAddressDetails {
 
   private String wallet;
 
-  private CoinSpecific coinSpecific;
+  private AddressCoinSpecific coinSpecific;
+
+  private AddressBalance balance;
 
   private String label;
 
@@ -47,6 +49,7 @@ public class WalletAddressDetails {
         .append("lastNonce", lastNonce)
         .append("wallet", wallet)
         .append("coinSpecific", coinSpecific)
+        .append("balance", balance)
         .append("label", label)
         .append("addressType", addressType)
         .toString();
