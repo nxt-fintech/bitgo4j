@@ -9,6 +9,7 @@ import bitgo4j.BitGo4j;
 import bitgo4j.BitGo4jConfig;
 import bitgo4j.BitGo4jError;
 import bitgo4j.exception.BitGo4jException;
+import bitgo4j.express.request.AccelerateTransactionRequest;
 import bitgo4j.express.request.AcceptWalletShareRequest;
 import bitgo4j.express.request.ConsolidateAccountRequest;
 import bitgo4j.express.request.CreateAddressRequest;
@@ -343,6 +344,28 @@ public class MockExpressClientImplTest {
         assertThrows(
             BitGo4jException.class,
             () -> client.sweepFunds("1461smgs11m3qsacnphi5chjpfn9wfxn342lgp46rejz077klwwpwnc88xv3x0ui7edqy47bcygg072eo5dsrr46s7qwr77rlj1zoqqo43m79nqn78oycc", "038289759d62006dd5551ab6ad0e31ac", request));
+    assertNotNull(exception);
+
+    BitGo4jError error = exception.getError();
+    assertNull(error.getError());
+    assertNull(error.getRequestId());
+    assertNull(error.getName());
+  }
+
+  @Test
+  public void accelerateTransactionTest_200() {
+    AccelerateTransactionRequest request = new AccelerateTransactionRequest();
+    TransactionResponse response = client.accelerateTransaction("btc","f1a2c7ee582abe82ff15129bc6fb70ba", request);
+    assertNotNull(response);
+  }
+
+  @Test
+  public void accelerateTransactionTest_400() {
+    AccelerateTransactionRequest request = new AccelerateTransactionRequest();
+    BitGo4jException exception =
+        assertThrows(
+            BitGo4jException.class,
+            () -> client.accelerateTransaction("tbtc", "d157b25e09abaf9715d270c57ace35be", request));
     assertNotNull(exception);
 
     BitGo4jError error = exception.getError();
