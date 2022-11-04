@@ -15,12 +15,14 @@ import bitgo4j.express.request.GenerateWalletRequest;
 import bitgo4j.express.request.LoginRequest;
 import bitgo4j.express.request.SendToManyRequest;
 import bitgo4j.express.request.SendTransactionRequest;
+import bitgo4j.express.request.ShareWalletRequest;
 import bitgo4j.express.response.AddressResponse;
 import bitgo4j.express.response.DecryptResponse;
 import bitgo4j.express.response.EncryptResponse;
 import bitgo4j.express.response.KeyResponse;
 import bitgo4j.express.response.LoginResponse;
 import bitgo4j.express.response.PingResponse;
+import bitgo4j.express.response.ShareWalletResponse;
 import bitgo4j.express.response.TransactionResponse;
 import bitgo4j.express.response.WalletResponse;
 import org.junit.jupiter.api.BeforeAll;
@@ -189,4 +191,10 @@ public class MockExpressClientImplTest {
     assertNotNull(response);
   }
 
+  @Test
+  public void shareWalletTest_200() {
+    ShareWalletRequest request = new ShareWalletRequest();
+    ShareWalletResponse response = client.shareWallet("4r75v7kb2nc6gkb196l8rrjep4z1zbxsfkuomc2qizmlk9hlbi0vj42j16x90ybh9rxzs22iand8j54fhmxbwwn1u6yg73sulqo95hhtiw9zbngc", "e4a370fe645fb21673da7c9dea55426d", request);
+    assertNotNull(response);
+  }
 }
