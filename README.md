@@ -1,6 +1,8 @@
 # BitGo4j
+
 BitGo Wallets API Client Library for Java.  
-For more information on API definitions, please refer to [BitGo API document](https://api.bitgo.com/docs/).
+For more information on API definitions, please refer
+to [BitGo API document](https://api.bitgo.com/docs/).
 
 ## Introduction
 
@@ -9,9 +11,9 @@ For more information on API definitions, please refer to [BitGo API document](ht
 Please refer to [BitGo4jConfig.java](src/main/java/bitgo4j/BitGo4jConfig.java).
 
 ```java
-BitGo4jConfig config = BitGo4jConfig.builder().token(<BITGO_API_TOKEN>).build(); // For WireMock 
-BitGo4jConfig config = BitGo4jConfig.builder().token(<BITGO_API_TOKEN>).useTest().build(); // For BitGo Test API
-BitGo4jConfig config = BitGo4jConfig.builder().token(<BITGO_API_TOKEN>).useProd().build(); // For BitGo Prod API
+BitGo4jConfig config=BitGo4jConfig.builder().token(<BITGO_API_TOKEN>).build(); // For WireMock 
+    BitGo4jConfig config=BitGo4jConfig.builder().token(<BITGO_API_TOKEN>).useTest().build(); // For BitGo Test API
+    BitGo4jConfig config=BitGo4jConfig.builder().token(<BITGO_API_TOKEN>).useProd().build(); // For BitGo Prod API
 ```
 
 ### Initialize client
@@ -20,8 +22,8 @@ Please refer to [BitGo4j.java](src/main/java/bitgo4j/BitGo4j.java).
 
 ```java
 BitGo4j.api().initialize(config); // initialize
-client = BitGo4j.api().address();
-client = BitGo4j.api().auditLog();
+    client=BitGo4j.api().address();
+    client=BitGo4j.api().auditLog();
 ```
 
 ## Download
@@ -36,24 +38,15 @@ client = BitGo4j.api().auditLog();
 implementation 'com.nxt-fintech.bitgo4j:bitgo4j:(insert latest version)'
 ```
 
-## Caution
-`express` module is under maintenance.
-
 ## Test
-
-### BitGo Express docker
-
-Please refer to [BitGo official document](https://github.com/BitGo/BitGoJS/blob/master/modules/express/README.md).
-
-```bash
-docker run -it -p 4000:4000 bitgosdk/express:latest --port 4000 
-# curl localhost:4000/api/v2/ping # for health check
-```
 
 ### WireMock docker
 
-Please refer to [WireMock official document](https://wiremock.org/studio/docs/getting-started/docker/).
-Download OpenAPI specification from [BitGo](blob:https://api.bitgo.com/1ca850bc-7812-4fb3-b385-b643c9b5b40b) and it was modified to apply to WireMock.
+Please refer
+to [WireMock official document](https://wiremock.org/studio/docs/getting-started/docker/).
+Download OpenAPI specification
+from [BitGo](blob:https://api.bitgo.com/1ca850bc-7812-4fb3-b385-b643c9b5b40b) and it was modified to
+apply to WireMock.
 
 ```bash
 docker run -it --rm -p 4040:8080 --name wiremock -v $PWD/bitgo-api:/home/wiremock wiremock/wiremock:2.34.0 --verbose      
