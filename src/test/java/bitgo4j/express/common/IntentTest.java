@@ -1,10 +1,5 @@
 package bitgo4j.express.common;
 
-import bitgo4j.policy.common.Amount;
-import bitgo4j.policy.common.EnableToken;
-import bitgo4j.policy.common.FeeOptions;
-import bitgo4j.policy.common.HopParams;
-import bitgo4j.policy.common.RecipientEntry;
 import bitgo4j.policy.common.TxAddress;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
@@ -21,12 +16,17 @@ class IntentTest {
     @Test
     void testToString(){
         String result = intent.toString();
-        Assertions.assertEquals("Intent[nonce=<null>,memo=<null>,intentType=<null>,sequenceId=<null>,comment=<null>,stakingRequestId=<null>,stakingAddress=<null>,amount=<null>,enableTokens=<null>,recipients=<null>,proxy=<null>,feeOptions=<null>,hopParams=<null>,isTss=<null>,selfSend=<null>,txid=<null>]", result);
+        Assertions.assertEquals("Intent[nonce=<null>,memo=<null>,intentType=<null>,sequenceId=<null>,comment=<null>,stakingRequestId=<null>,stakingAddress=<null>,validatorAddress=<null>,amount=<null>,enableTokens=<null>,recipients=<null>,proxy=<null>,feeOptions=<null>,hopParams=<null>,isTss=<null>,selfSend=<null>,txid=<null>,custodianTransactionId=<null>,pubKey=<null>,withdrawalCredentials=<null>,signature=<null>,depositDataRoot=<null>,poolKeyHash=<null>]", result);
     }
 
     @Test
     void testSetNonce(){
         intent.setNonce("nonce");
+    }
+
+    @Test
+    void testSetFee(){
+        intent.setFee(new DOTFeeOptions("amount", "unit", "formula", "type"));
     }
 
     @Test
@@ -60,6 +60,11 @@ class IntentTest {
     }
 
     @Test
+    void testSetValidatorAddress(){
+        intent.setValidatorAddress("validatorAddress");
+    }
+
+    @Test
     void testSetAmount(){
         intent.setAmount(new Amount("value", "symbol"));
     }
@@ -71,8 +76,7 @@ class IntentTest {
 
     @Test
     void testSetRecipients(){
-        intent.setRecipients(
-            List.of(new RecipientEntry(new TxAddress("address"), new Amount("value", "symbol"), "data")));
+        intent.setRecipients(List.of(new RecipientEntry(new TxAddress("address"), new bitgo4j.policy.common.Amount("value", "symbol"), "data", new TokenData("tokenType", "tokenQuantity", "tokenContractAddress", "tokenName", "tokenId", 0))));
     }
 
     @Test
@@ -82,7 +86,7 @@ class IntentTest {
 
     @Test
     void testSetFeeOptions(){
-        intent.setFeeOptions(new FeeOptions("unit", "formula", "feeType", 0, 0));
+        intent.setFeeOptions(new FeeOptions("unit", "formula", "feeType", 0, 0, 0, 0));
     }
 
     @Test
@@ -101,7 +105,37 @@ class IntentTest {
     }
 
     @Test
+    void testSetCustodianTransactionId(){
+        intent.setCustodianTransactionId("custodianTransactionId");
+    }
+
+    @Test
     void testSetTxid(){
         intent.setTxid("txid");
+    }
+
+    @Test
+    void testSetPubKey(){
+        intent.setPubKey("pubKey");
+    }
+
+    @Test
+    void testSetWithdrawalCredentials(){
+        intent.setWithdrawalCredentials("withdrawalCredentials");
+    }
+
+    @Test
+    void testSetSignature(){
+        intent.setSignature("signature");
+    }
+
+    @Test
+    void testSetDepositDataRoot(){
+        intent.setDepositDataRoot("depositDataRoot");
+    }
+
+    @Test
+    void testSetPoolKeyHash(){
+        intent.setPoolKeyHash("poolKeyHash");
     }
 }

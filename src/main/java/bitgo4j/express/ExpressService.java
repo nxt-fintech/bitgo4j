@@ -33,6 +33,7 @@ import bitgo4j.express.response.PingResponse;
 import bitgo4j.express.response.RecoverETHTokenResponse;
 import bitgo4j.express.response.ResolvePendingApprovalResponse;
 import bitgo4j.express.response.ShareWalletResponse;
+import bitgo4j.express.response.SignTSSTransactionResponse;
 import bitgo4j.express.response.SignTransactionResponse;
 import bitgo4j.express.response.TransactionResponse;
 import bitgo4j.express.response.VerifyAddressResponse;
@@ -128,7 +129,7 @@ public interface ExpressService {
 
   @Headers({"Accept: application/json"})
   @POST("/api/v2/{coin}/wallet/{walletId}/signtxtss")
-  Call<SignTransactionResponse> signTSSTransaction(
+  Call<SignTSSTransactionResponse> signTSSTransaction(
       @Path("coin") String coin,
       @Path("walletId") String walletId,
       @Body SignTSSTransactionRequest signTSSTransactionRequest);

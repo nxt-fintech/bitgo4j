@@ -33,6 +33,7 @@ import bitgo4j.express.response.PingResponse;
 import bitgo4j.express.response.RecoverETHTokenResponse;
 import bitgo4j.express.response.ResolvePendingApprovalResponse;
 import bitgo4j.express.response.ShareWalletResponse;
+import bitgo4j.express.response.SignTSSTransactionResponse;
 import bitgo4j.express.response.SignTransactionResponse;
 import bitgo4j.express.response.TransactionResponse;
 import bitgo4j.express.response.VerifyAddressResponse;
@@ -75,7 +76,7 @@ public interface ExpressClient {
   SignTransactionResponse signWalletTransaction(
       String coin, String walletId, SignWalletTransactionRequest signWalletTransactionRequest);
 
-  SignTransactionResponse signTSSTransaction(String coin, String walletId, SignTSSTransactionRequest signTSSTransactionRequest);
+  SignTSSTransactionResponse signTSSTransaction(String coin, String walletId, SignTSSTransactionRequest signTSSTransactionRequest);
   RecoverETHTokenResponse recoverETHToken(
       String coin, String walletId, RecoverTokenRequest recoverTokenRequest);
 

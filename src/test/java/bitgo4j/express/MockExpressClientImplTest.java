@@ -17,6 +17,7 @@ import bitgo4j.express.request.LoginRequest;
 import bitgo4j.express.request.SendToManyRequest;
 import bitgo4j.express.request.SendTransactionRequest;
 import bitgo4j.express.request.ShareWalletRequest;
+import bitgo4j.express.request.SignTSSTransactionRequest;
 import bitgo4j.express.request.SignTransactionRequest;
 import bitgo4j.express.request.SignWalletTransactionRequest;
 import bitgo4j.express.response.AcceptWalletShareResponse;
@@ -27,6 +28,7 @@ import bitgo4j.express.response.KeyResponse;
 import bitgo4j.express.response.LoginResponse;
 import bitgo4j.express.response.PingResponse;
 import bitgo4j.express.response.ShareWalletResponse;
+import bitgo4j.express.response.SignTSSTransactionResponse;
 import bitgo4j.express.response.SignTransactionResponse;
 import bitgo4j.express.response.TransactionResponse;
 import bitgo4j.express.response.WalletResponse;
@@ -221,6 +223,15 @@ public class MockExpressClientImplTest {
   public void signWalletTransactionTest_200() {
     SignWalletTransactionRequest request = new SignWalletTransactionRequest();
     SignTransactionResponse response = client.signWalletTransaction("yqxiu4ktk445ujatsymy64b69yz1bhtx9i93j91ip3b8t1y73yhseautyaw680eabkhvmx8l356vnvd1t3mtq1eauks3paglw0cck0izyjz086na74qv7t2ucn3iveglx0s7wiqfd1h8dk9mke7gvm7ri8w9ngpy218kuz855qs34jqm6tiqblwfledozs3", "858cf3c9725dcd3e6b9a3f9107b12d6e", request);
+    assertNotNull(response);
+  }
+
+  // TODO: missing json file
+  @Disabled
+  @Test
+  public void signTSSTransactionTest_200() {
+    SignTSSTransactionRequest request = new SignTSSTransactionRequest();
+    SignTSSTransactionResponse response = client.signTSSTransaction("yqxiu4ktk445ujatsymy64b69yz1bhtx9i93j91ip3b8t1y73yhseautyaw680eabkhvmx8l356vnvd1t3mtq1eauks3paglw0cck0izyjz086na74qv7t2ucn3iveglx0s7wiqfd1h8dk9mke7gvm7ri8w9ngpy218kuz855qs34jqm6tiqblwfledozs3", "858cf3c9725dcd3e6b9a3f9107b12d6e", request);
     assertNotNull(response);
   }
 }

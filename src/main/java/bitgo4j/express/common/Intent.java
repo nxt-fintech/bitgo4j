@@ -1,11 +1,6 @@
 package bitgo4j.express.common;
 
 import bitgo4j.BitGo4jConstant;
-import bitgo4j.policy.common.Amount;
-import bitgo4j.policy.common.EnableToken;
-import bitgo4j.policy.common.FeeOptions;
-import bitgo4j.policy.common.HopParams;
-import bitgo4j.policy.common.RecipientEntry;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
@@ -24,6 +19,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 public class Intent {
   private String nonce;
 
+  private DOTFeeOptions fee;
   private String memo;
 
   private String intentType;
@@ -35,6 +31,8 @@ public class Intent {
   private String stakingRequestId;
 
   private String stakingAddress;
+
+  private String validatorAddress;
 
   private Amount amount;
 
@@ -52,7 +50,19 @@ public class Intent {
 
   private Boolean selfSend;
 
+  private String custodianTransactionId;
+
   private String txid;
+
+  private String pubKey;
+
+  private String withdrawalCredentials;
+
+  private String signature;
+
+  private String depositDataRoot;
+
+  private String poolKeyHash;
 
   @Override
   public String toString() {
@@ -64,6 +74,7 @@ public class Intent {
         .append("comment", comment)
         .append("stakingRequestId", stakingRequestId)
         .append("stakingAddress", stakingAddress)
+        .append("validatorAddress", validatorAddress)
         .append("amount", amount)
         .append("enableTokens", enableTokens)
         .append("recipients", recipients)
@@ -73,6 +84,12 @@ public class Intent {
         .append("isTss", isTss)
         .append("selfSend", selfSend)
         .append("txid", txid)
+        .append("custodianTransactionId", custodianTransactionId)
+        .append("pubKey", pubKey)
+        .append("withdrawalCredentials", withdrawalCredentials)
+        .append("signature", signature)
+        .append("depositDataRoot", depositDataRoot)
+        .append("poolKeyHash", poolKeyHash)
         .toString();
   }
 }

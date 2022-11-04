@@ -1,4 +1,4 @@
-package bitgo4j.express.request;
+package bitgo4j.express.response;
 
 import bitgo4j.BitGo4jConstant;
 import bitgo4j.express.common.Intent;
@@ -20,7 +20,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class SignTSSTransactionRequest {
+public class SignTSSTransactionResponse {
   private String txRequestId;
 
   private Integer version;

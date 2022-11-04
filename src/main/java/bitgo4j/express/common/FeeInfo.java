@@ -16,6 +16,8 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class FeeInfo {
+  private String feeString;
+
   // UtxoFeeInfo
   private Integer size;
 
@@ -37,6 +39,7 @@ public class FeeInfo {
   @Override
   public String toString() {
     return new ToStringBuilder(this, BitGo4jConstant.TO_STRING_BUILDER_STYLE)
+        .append("feeString", feeString)
         .append("size", size)
         .append("fee", fee)
         .append("feeRate", feeRate)

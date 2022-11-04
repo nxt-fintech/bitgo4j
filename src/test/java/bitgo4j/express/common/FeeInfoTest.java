@@ -3,12 +3,17 @@ package bitgo4j.express.common;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 class FeeInfoTest {
-    FeeInfo feeInfo= new FeeInfo(0, 0, "feeRate", 0, "payGoFeeString", 0, "xlmBaseFee", "xlmBaseReserve");
+    FeeInfo feeInfo= new FeeInfo("feeString", 0, 0, "feeRate", 0, "payGoFeeString", 0, "xlmBaseFee", "xlmBaseReserve");
 
     @Test
     void testToString(){
         String result = feeInfo.toString();
-        Assertions.assertEquals("FeeInfo[size=0,fee=0,feeRate=feeRate,payGoFee=0,payGoFeeString=payGoFeeString,height=0,xlmBaseFee=xlmBaseFee,xlmBaseReserve=xlmBaseReserve]", result);
+        Assertions.assertEquals("FeeInfo[feeString=feeString,size=0,fee=0,feeRate=feeRate,payGoFee=0,payGoFeeString=payGoFeeString,height=0,xlmBaseFee=xlmBaseFee,xlmBaseReserve=xlmBaseReserve]", result);
+    }
+
+    @Test
+    void testSetFeeString(){
+        feeInfo.setFeeString("feeString");
     }
 
     @Test

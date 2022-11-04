@@ -37,6 +37,7 @@ import bitgo4j.express.response.PingResponse;
 import bitgo4j.express.response.RecoverETHTokenResponse;
 import bitgo4j.express.response.ResolvePendingApprovalResponse;
 import bitgo4j.express.response.ShareWalletResponse;
+import bitgo4j.express.response.SignTSSTransactionResponse;
 import bitgo4j.express.response.SignTransactionResponse;
 import bitgo4j.express.response.TransactionResponse;
 import bitgo4j.express.response.VerifyAddressResponse;
@@ -131,7 +132,7 @@ public class ExpressClientImpl implements ExpressClient {
   }
 
   @Override
-  public SignTransactionResponse signTSSTransaction(
+  public SignTSSTransactionResponse signTSSTransaction(
       String coin, String walletId, SignTSSTransactionRequest signTSSTransactionRequest) {
     return executeSync(service.signTSSTransaction(coin, walletId, signTSSTransactionRequest));
   }
