@@ -16,17 +16,17 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class HalfSigned {
-  private Integer contractSequenceId;
+  private Long contractSequenceId;
 
-  private Integer expireTime;
+  private Long expireTime;
 
-  private Integer gasLimit;
+  private Long gasLimit;
 
-  private Integer gasPrice;
+  private Long gasPrice;
 
   private String operationHash;
 
-  //  Recipient recipient;
+  private Recipient recipient;
 
   private String signature;
 
@@ -46,6 +46,7 @@ public class HalfSigned {
         .append("gasLimit", gasLimit)
         .append("gasPrice", gasPrice)
         .append("operationHash", operationHash)
+        .append("recipient", recipient)
         .append("signature", signature)
         .append("tokenContractAddress", tokenContractAddress)
         .append("walletId", walletId)

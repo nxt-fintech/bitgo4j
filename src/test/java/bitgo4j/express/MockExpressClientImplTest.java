@@ -14,6 +14,7 @@ import bitgo4j.express.request.CreateAddressRequest;
 import bitgo4j.express.request.CryptRequest;
 import bitgo4j.express.request.GenerateWalletRequest;
 import bitgo4j.express.request.LoginRequest;
+import bitgo4j.express.request.RecoverTokenRequest;
 import bitgo4j.express.request.SendToManyRequest;
 import bitgo4j.express.request.SendTransactionRequest;
 import bitgo4j.express.request.ShareWalletRequest;
@@ -27,6 +28,7 @@ import bitgo4j.express.response.EncryptResponse;
 import bitgo4j.express.response.KeyResponse;
 import bitgo4j.express.response.LoginResponse;
 import bitgo4j.express.response.PingResponse;
+import bitgo4j.express.response.RecoverETHTokenResponse;
 import bitgo4j.express.response.ShareWalletResponse;
 import bitgo4j.express.response.SignTSSTransactionResponse;
 import bitgo4j.express.response.SignTransactionResponse;
@@ -233,5 +235,27 @@ public class MockExpressClientImplTest {
     SignTSSTransactionRequest request = new SignTSSTransactionRequest();
     SignTSSTransactionResponse response = client.signTSSTransaction("yqxiu4ktk445ujatsymy64b69yz1bhtx9i93j91ip3b8t1y73yhseautyaw680eabkhvmx8l356vnvd1t3mtq1eauks3paglw0cck0izyjz086na74qv7t2ucn3iveglx0s7wiqfd1h8dk9mke7gvm7ri8w9ngpy218kuz855qs34jqm6tiqblwfledozs3", "858cf3c9725dcd3e6b9a3f9107b12d6e", request);
     assertNotNull(response);
+  }
+
+  @Test
+  public void recoverETHTokenTest_200() {
+    RecoverTokenRequest request = new RecoverTokenRequest();
+    RecoverETHTokenResponse response = client.recoverETHToken("2f1dkdcisx5qty75m4d7j2wgzlim707qnuyyh22rnp0jxkka4oz3cqeftl6pgnhwo5iarum657pels1vmrpxw3qmb8rgf6yw3scz3oi35ovx7v9f7n09x7qmxmm52r0d3i5z54cn6fomgyuu31jn1ocfgummy88ok8oz1y21368nw0vpi4bb9gq771jh3r", "7fff7da1ebf07478ed35462603dc7fa6", request);
+    assertNotNull(response);
+  }
+
+  @Test
+  public void recoverETHTokenTest_400() {
+    RecoverTokenRequest request = new RecoverTokenRequest();
+    BitGo4jException exception =
+        assertThrows(
+            BitGo4jException.class,
+            () -> client.recoverETHToken("ywr6xfic5epqojnkpduvip5nggu8y6omxgzj4b4bmk8395tjq6kef919rg2gwgc4z0gav8txk4e7l5359y2qvt", "dcde5da732ac6bb5d82f9163646ad18b", request));
+    assertNotNull(exception);
+
+    BitGo4jError error = exception.getError();
+    assertNull(error.getError());
+    assertNull(error.getRequestId());
+    assertNull(error.getName());
   }
 }
